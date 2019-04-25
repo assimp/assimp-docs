@@ -23,7 +23,7 @@ Indices and tables
 <img src="dragonsplash.png"></img>
 
 .. _ai_introduction:
-============
+
 Introduction
 ============
 
@@ -99,7 +99,7 @@ You can find test models for almost all formats in the <assimp_root>/test/models
 but not all of them are *open-source*. If there's an accompagning '<file>\source.txt' file don't forget to read it.
 
 .. _ai_main_install:
-============
+
 Installation
 ============
 
@@ -116,7 +116,7 @@ If you want to use assimp on Ubuntu you can install it via the following command
 If you want to use the python-assimp-port just follow these instructions: https://github.com/assimp/assimp/tree/master/port/PyAssimp
 
 .. _ai_main_usage:
-=====
+
 Usage
 =====
 
@@ -126,7 +126,7 @@ is easier to handle, the latter also forms a point where other programming langu
 there are no bindings for any other language provided. Have a look at the @link usage Usage page @endlink for a detailed explanation and code examples.
 
 .. _ai_main_data:
-===============
+
 Data Structures
 ===============
 
@@ -135,7 +135,7 @@ point from where you can access all the various data types that a scene/model fi
 @link data Data Structures page @endlink describes how to interpret this data.
 
 .. _ai_ext:
-=====================
+
 Extending the library
 =====================
 
@@ -146,7 +146,7 @@ See the @link extend Extending the library @endlink page for more information.
 
 
 .. _ai_main_support:
-==================
+
 Support & Feedback
 ==================
 
@@ -228,7 +228,8 @@ for itsself. If the importer is destroyed, all the data that was created/read by
 destroyed, too. So the easiest way to use the Importer is to create an instance locally, use its
 results and then simply let it go out of scope.
 
-C++ example:
+*C++ example:*
+
 ::
 
     #include <assimp/Importer.hpp>      // C++ importer interface
@@ -271,7 +272,7 @@ these 5 letters with a simple cast. Yes, you may do that. No, it's not recommend
 suicide in DLL builds if you try to use new or delete on any of the arrays in the scene).
 
 .. _ai_access_c:
-====================================
+
 Access by plain-c function interface
 ====================================
 
@@ -282,7 +283,8 @@ is successful, an aiScene pointer with the imported data is handed back to you. 
 done with the extraction of the data you're interested in, call aiReleaseImport() on the
 imported scene to clean up all resources associated with the import.
 
-C example:
+*C-Example:*
+
 ::
 
     #include <assimp/cimport.h>        // Plain-C interface
@@ -394,7 +396,7 @@ An example:
     }
 
 .. _ai_custom_io_c:
-=========================================================
+
 Using custom IO logic with the plain-c function interface
 =========================================================
 
@@ -407,7 +409,7 @@ surely enough for almost any purpose. The process is simple:
 * .. and pass it as parameter to #aiImportFileEx
 
 .. _ai_logging:
-=======
+
 Logging
 =======
 
@@ -487,9 +489,8 @@ The normal logging severity supports just the basic stuff like, info, warnings a
 In the verbose level very fine-grained debug messages will be logged, too. Note that this
 kind kind of logging might decrease import performance.
 
-/**
 .. _ai_data:
-===============
+
 Data Structures
 ===============
 
@@ -510,6 +511,7 @@ DirectX. If you need the imported data to be in a left-handed coordinate system,
 The output face winding is counter clockwise. Use #aiProcess_FlipWindingOrder to get CW data.
 
 ::
+
     x2
 
                 x1
@@ -521,6 +523,7 @@ although our built-in triangulation (#aiProcess_Triangulate postprocessing step)
 The output UV coordinate system has its origin in the lower-left corner:
 
 ::
+
     0x|1y ---------- 1x|1y
      |                |
      |                |
@@ -532,6 +535,7 @@ Use the #aiProcess_FlipUVs flag to get UV coordinates with the upper-left corner
 A typical 4x4 matrix including a translational part looks like this:
 
 ::
+
     X1  Y1  Z1  T1
     X2  Y2  Z2  T2
     X3  Y3  Z3  T3
@@ -557,7 +561,7 @@ However, if you're a previous user of Assimp and you update the library to revis
 you have to adapt your animation loading code to match the new quaternion orientation.
 
 .. _ai_hierarchy:
-==================
+
 The Node Hierarchy
 ==================
 
@@ -579,34 +583,35 @@ hierarchy of nodes and meshes. I for myself would suggest a recursive filter fun
 following pseudocode:
 
 ::
-    void CopyNodesWithMeshes( aiNode node, SceneObject targetParent, Matrix4x4 accTransform)
-    {
-      SceneObject parent;
-      Matrix4x4 transform;
 
-      // if node has meshes, create a new scene object for it
-      if( node.mNumMeshes > 0)
-      {
-        SceneObjekt newObject = new SceneObject;
-        targetParent.addChild( newObject);
-        // copy the meshes
-        CopyMeshes( node, newObject);
+	void CopyNodesWithMeshes( aiNode node, SceneObject targetParent, Matrix4x4 accTransform)
+	{
+	  SceneObject parent;
+	  Matrix4x4 transform;
 
-        // the new object is the parent for all child nodes
-        parent = newObject;
-        transform.SetUnity();
-      } else
-      {
-        // if no meshes, skip the node, but keep its transformation
-        parent = targetParent;
-        transform = node.mTransformation * accTransform;
-      }
+	  // if node has meshes, create a new scene object for it
+	  if( node.mNumMeshes > 0)
+	  {
+		SceneObjekt newObject = new SceneObject;
+		targetParent.addChild( newObject);
+		// copy the meshes
+		CopyMeshes( node, newObject);
 
-      // continue for all child nodes
-      for( all node.mChildren)
-        CopyNodesWithMeshes( node.mChildren[a], parent, transform);
-    }
+		// the new object is the parent for all child nodes
+		parent = newObject;
+		transform.SetUnity();
+	  } else
+	  {
+		// if no meshes, skip the node, but keep its transformation
+		parent = targetParent;
+		transform = node.mTransformation * accTransform;
+	  }
 
+	  // continue for all child nodes
+	  for( all node.mChildren)
+		CopyNodesWithMeshes( node.mChildren[a], parent, transform);
+	}
+	
 This function copies a node into the scene graph if it has children. If yes, a new scene object
 is created for the import node and the node's meshes are copied over. If not, no object is created.
 Potential child objects will be added to the old targetParent, but there transformation will be correct
@@ -614,7 +619,7 @@ in respect to the global space. This function also works great in filtering the 
 that form the bone hierarchy for another mesh/node, but don't have any mesh themselves.
 
 .. _ai_meshes:
-======
+
 Meshes
 ======
 
@@ -639,14 +644,14 @@ a mesh may or may not have a set of bones described by an array of aiBone struct
 the bone information is described later on.
 
 .. _ai_material:
-=========
+
 Materials
 =========
 
 See the @link materials Material System Page. @endlink
 
 .. _ai_bones:
-=====
+
 Bones
 =====
 
@@ -680,7 +685,7 @@ that's why the algorithm skips the whole branch if the node is marked as "not ne
 You should now have a mesh in your engine with a skeleton that is a subset of the imported hierarchy.
 
 .. _ai_anims:
-==========
+
 Animations
 ==========
 
@@ -704,10 +709,10 @@ should not be the case in your every-day data.
 
 To apply such an animation you need to identify the animation tracks that refer to actual bones
 in your mesh. Then for every track: <br>
-a) Find the keys that lay right before the current anim time. <br>
-b) Optional: interpolate between these and the following keys. <br>
-c) Combine the calculated position, rotation and scaling to a transformation matrix <br>
-d) Set the affected node's transformation to the calculated matrix. <br>
+* Find the keys that lay right before the current anim time. <br>
+* Optional: interpolate between these and the following keys. <br>
+* Combine the calculated position, rotation and scaling to a transformation matrix <br>
+* Set the affected node's transformation to the calculated matrix. <br>
 
 If you need hints on how to convert to or from quaternions, have a look at the
 <a href="http://www.j3d.org/matrix_faq/matrfaq_latest.html">Matrix&Quaternion FAQ</a>. I suggest
@@ -715,7 +720,7 @@ using logarithmic interpolation for the scaling keys if you happen to need them 
 need them at all.
 
 .. _ai_textures:
-========
+
 Textures
 ========
 
@@ -750,7 +755,7 @@ There are two cases:
 
    
 .. _ai_materials:
-===============
+
 Material System
 ===============
 
@@ -764,52 +769,66 @@ a set of properties accessible by their names. Have a look at assimp/material.h 
 properties are defined. In this file there are also various functions defined to test for the
 presence of certain properties in a material and retrieve their values.
 
-@section mat_tex Textures
+.. _ai_mat_tex:
 
-Textures are organized in stacks, each stack being evaluated independently. The final color value from a particular texture stack is used in the shading equation. For example, the computed color value of the diffuse texture stack (aiTextureType_DIFFUSE) is multiplied with the amount of incoming diffuse light to obtain the final diffuse color of a pixel.
+Textures
+========
 
-@code
+Textures are organized in stacks, each stack being evaluated independently. The final color value from a particular texture stack is used in the shading equation. 
+For example, the computed color value of the diffuse texture stack (aiTextureType_DIFFUSE) is multiplied with the amount of incoming diffuse light to obtain the 
+final diffuse color of a pixel.
 
- Stack                               Resulting equation
+.. list-table::
+	:widths: auto
+	:header-rows: 1
+	
+	* - Stack
+	  - Resulting equation
+	  
+	* - Constant base color
+	  - color
+	  
+	* - Blend operation 0
+	  - +
+	  
+	* - Strength factor 0
+	  - 0.25*
+	  
+	* - Texture 0
+	  - texture_0
+	  
+	* - Blend operation 1
+	  - x
+	  
+	* - Strength factor 1
+	  - 1.0*
+	  
+	* - Texture 1
+	  - texture_1
 
-------------------------
-| Constant base color  |             color
-------------------------
-| Blend operation 0    |             +
-------------------------
-| Strength factor 0    |             0.25*
-------------------------
-| Texture 0            |             texture_0
-------------------------
-| Blend operation 1    |             *
-------------------------
-| Strength factor 1    |             1.0*
-------------------------
-| Texture 1            |             texture_1
-------------------------
-  ...                                ...
+	  
+.. _ai_keys:
 
-@endcode
+Constants
+=========
 
-@section keys Constants
+All material key constants start with 'AI_MATKEY' as a prefix.
 
-All material key constants start with 'AI_MATKEY' (it's an ugly macro for historical reasons, don't ask).
+.. list-table::
+	:widths: auto
+	:header-rows: 1
+	* - Name
+      - Data Type
+      - Default Value
+      - Meaning
+      - Notes
+	  
+	* - NAME
+	  - aiString
+	  - n/a
+	  - The name of the material, if available.
+	  - Ignored by <tt>aiProcess_RemoveRedundantMaterials. Materials are considered equal even if their names are different.
 
-<table border="1">
-  <tr>
-    <th>Name</th>
-    <th>Data Type</th>
-    <th>Default Value</th>
-    <th>Meaning</th>
-    <th>Notes</th>
-  </tr>
-  <tr>
-    <td><tt>NAME</tt></td>
-    <td>aiString</td>
-    <td>n/a</td>
-    <td>The name of the material, if available. </td>
-    <td>Ignored by <tt>aiProcess_RemoveRedundantMaterials</tt>. Materials are considered equal even if their names are different.</td>
-  </tr>
   <tr>
     <td><tt>COLOR_DIFFUSE</tt></td>
     <td>aiColor3D</td>
