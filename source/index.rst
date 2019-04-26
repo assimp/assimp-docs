@@ -25,7 +25,7 @@ Indices and tables
 .. _ai_introduction:
 
 Introduction
-============
+************
 
 assimp is a library to load and process geometric scenes from various data formats. It is tailored at typical game
 scenarios by supporting a node hierarchy, static or skinned meshes, materials, bone animations and potential texture data.
@@ -157,7 +157,7 @@ assimp-discussions</a>.
 
 
 .. _ai_install_prebuilt:
-=================================================
+
 Using the pre-built libraries with Visual C++ 8/9
 =================================================
 
@@ -184,7 +184,7 @@ Now just add the assimp-dependency to your application:
 If done correctly you should now be able to compile, link, run and use the application. 
 
 .. _ai_install_own:
-=================================
+
 Building the library from scratch
 =================================
 
@@ -199,14 +199,14 @@ A project-file of your default make-system ( like gnu-make on linux or Visual-St
 Run the build and you are done. You can find the libs at assimp/lib and the dll's / so's at bin.
 
 .. _ai_assimp_dll:
-=================
+
 Windows DLL Build
 =================
 
 The Assimp-package can be built as DLL. You just need to run the default cmake run.
 
 .. _ai_static_lib:
-=================
+
 Assimp static lib
 =================
 
@@ -215,7 +215,7 @@ to off during the cmake run.
 
 
 .. _ai_access_cpp:
-=============================
+
 Access by C++ class interface
 =============================
 
@@ -318,7 +318,7 @@ imported scene to clean up all resources associated with the import.
     }
 
 .. _ai_custom_io:
-==================================================
+
 Using custom IO logic with the C++ class interface
 ==================================================
 
@@ -817,11 +817,12 @@ All material key constants start with 'AI_MATKEY' as a prefix.
 .. list-table::
 	:widths: auto
 	:header-rows: 1
+
 	* - Name
-      - Data Type
-      - Default Value
-      - Meaning
-      - Notes
+	  - Data Type
+	  - Default Value
+	  - Meaning
+	  - Notes
 	  
 	* - NAME
 	  - aiString
@@ -829,270 +830,217 @@ All material key constants start with 'AI_MATKEY' as a prefix.
 	  - The name of the material, if available.
 	  - Ignored by <tt>aiProcess_RemoveRedundantMaterials. Materials are considered equal even if their names are different.
 
-  <tr>
-    <td><tt>COLOR_DIFFUSE</tt></td>
-    <td>aiColor3D</td>
-    <td>black (0,0,0)</td>
-    <td>Diffuse color of the material. This is typically scaled by the amount of incoming diffuse light (e.g. using gouraud shading) </td>
-    <td>---</td>
-  </tr>
-  <tr>
-    <td><tt>COLOR_SPECULAR</tt></td>
-    <td>aiColor3D</td>
-    <td>black (0,0,0)</td>
-    <td>Specular color of the material. This is typically scaled by the amount of incoming specular light (e.g. using phong shading) </td>
-    <td>---</td>
-  </tr>
-  <tr>
-    <td><tt>COLOR_AMBIENT</tt></td>
-    <td>aiColor3D</td>
-    <td>black (0,0,0)</td>
-    <td>Ambient color of the material. This is typically scaled by the amount of ambient light </td>
-    <td>---</td>
-  </tr>
-  <tr>
-    <td><tt>COLOR_EMISSIVE</tt></td>
-    <td>aiColor3D</td>
-    <td>black (0,0,0)</td>
-    <td>Emissive color of the material. This is the amount of light emitted by the object. In real time applications it will usually not affect surrounding objects, but raytracing applications may wish to treat emissive objects as light sources. </td>
-    <td>---</td>
-  </tr>
+	* - COLOR_DIFFUSE
+	  - aiColor3D
+	  - black (0,0,0)
+	  - Diffuse color of the material. This is typically scaled by the amount of incoming diffuse light (e.g. using gouraud shading)
+	  - n/a
 
-  <tr>
-    <td><tt>COLOR_TRANSPARENT</tt></td>
-    <td>aiColor3D</td>
-    <td>black (0,0,0)</td>
-    <td>Defines the transparent color of the material, this is the color to be multiplied with the color of translucent light to construct the final 'destination color' for a particular position in the screen buffer.</td>
-    <td>---</td>
-  </tr>
+	* - COLOR_SPECULAR
+	  - aiColor3D
+	  - black (0,0,0)
+	  - Specular color of the material. This is typically scaled by the amount of incoming specular light (e.g. using phong shading)
+	  - n/a
 
-  <tr>
-    <td><tt>COLOR_REFLECTIVE</tt></td>
-    <td>aiColor3D</td>
-    <td>black (0,0,0)</td>
-    <td>Defines the reflective color of the material. This is typically scaled by the amount of incoming light from the direction of mirror reflection. Usually combined with an environment lightmap of some kind for real-time applications.</td>
-    <td>---</td>
-  </tr>
+	* - COLOR_AMBIENT
+	  - aiColor3D
+	  - black (0,0,0)
+	  - Ambient color of the material. This is typically scaled by the amount of ambient light
+	  - n/a
 
-  <tr>
-    <td><tt>REFLECTIVITY</tt></td>
-    <td>float</td>
-    <td>0.0</td>
-    <td>Scales the reflective color of the material.</td>
-    <td>---</td>
-  </tr>
+	* - COLOR_EMISSIVE
+	  - aiColor3D
+	  - black (0,0,0)
+	  - Emissive color of the material. This is the amount of light emitted by the object. In real time applications it will usually not affect surrounding objects, but raytracing applications may wish to treat emissive objects as light sources.
+	  - n/a
 
-  <tr>
-    <td><tt>WIREFRAME</tt></td>
-    <td>int</td>
-    <td>false</td>
-    <td>Specifies whether wireframe rendering must be turned on for the material. 0 for false, !0 for true. </td>
-    <td>---</td>
-  </tr>
+	* - COLOR_TRANSPARENT
+	  - aiColor3D
+	  - black (0,0,0)
+	  - Defines the transparent color of the material, this is the color to be multiplied with the color of translucent light to construct the final 'destination color' for a particular position in the screen buffer.
+	  - n/a
 
-  <tr>
-    <td><tt>TWOSIDED</tt></td>
-    <td>int</td>
-    <td>false</td>
-    <td>Specifies whether meshes using this material must be rendered without backface culling. 0 for false, !0 for true. </td>
-    <td>Some importers set this property if they don't know whether the output face order is right. As long as it is not set, you may safely enable backface culling.</tt></td>
-  </tr>
+	* - COLOR_REFLECTIVE
+	  - aiColor3D
+	  - <td>black (0,0,0)
+	  - Defines the reflective color of the material. This is typically scaled by the amount of incoming light from the direction of mirror reflection. Usually combined with an environment lightmap of some kind for real-time applications.
+	  - n/a
 
-  <tr>
-    <td><tt>SHADING_MODEL</tt></td>
-    <td>int</td>
-    <td>gouraud</td>
-    <td>One of the #aiShadingMode enumerated values. Defines the library shading model to use for (real time) rendering to approximate the original look of the material as closely as possible. </td>
-    <td>The presence of this key might indicate a more complex material. If absent, assume phong shading only if a specular exponent is given.</tt></td>
-  </tr>
+	* - REFLECTIVITY
+	  - float
+	  - 0.0
+	  - Scales the reflective color of the material.
+	  - n/a
 
-  <tr>
-    <td><tt>BLEND_FUNC</tt></td>
-    <td>int</td>
-    <td>false</td>
-    <td>One of the #aiBlendMode enumerated values. Defines how the final color value in the screen buffer is computed from the given color at that position and the newly computed color from the material. Simply said, alpha blending settings.</td>
-    <td>-</td>
-  </tr>
+	* - WIREFRAME
+	  - int
+	  - false
+	  - Specifies whether wireframe rendering must be turned on for the material. 0 for false, !0 for true.
+	  - n/a
 
-  <tr>
-    <td><tt>OPACITY</tt></td>
-    <td>float</td>
-    <td>1.0</td>
-    <td>Defines the opacity of the material in a range between 0..1.</td>
-    <td>Use this value to decide whether you have to activate alpha blending for rendering. <tt>OPACITY</tt> != 1 usually also implies TWOSIDED=1 to avoid cull artifacts.</td>
-  </tr>
+	* - TWOSIDED
+	  - int
+	  - false
+	  - Specifies whether meshes using this material must be rendered without backface culling. 0 for false, !0 for true.
+	  - Some importers set this property if they don't know whether the output face order is right. As long as it is not set, you may safely enable backface culling.
 
-  <tr>
-    <td><tt>SHININESS</tt></td>
-    <td>float</td>
-    <td>0.f</td>
-    <td>Defines the shininess of a phong-shaded material. This is actually the exponent of the phong specular equation</td>
-    <td><tt>SHININESS</tt>=0 is equivalent to <tt>SHADING_MODEL</tt>=<tt>aiShadingMode_Gouraud</tt>.</td>
-  </tr>
+	* - SHADING_MODEL
+	  - int
+	  - gouraud
+	  - One of the #aiShadingMode enumerated values. Defines the library shading model to use for (real time) rendering to approximate the original look of the material as closely as possible.
+	  - The presence of this key might indicate a more complex material. If absent, assume phong shading only if a specular exponent is given.
 
-  <tr>
-    <td><tt>SHININESS_STRENGTH</tt></td>
-    <td>float</td>
-    <td>1.0</td>
-    <td>Scales the specular color of the material.</td>
-    <td>This value is kept separate from the specular color by most modelers, and so do we.</td>
-  </tr>
+	* - BLEND_FUNC
+	  - int
+	  - false
+	  - One of the #aiBlendMode enumerated values. Defines how the final color value in the screen buffer is computed from the given color at that position and the newly computed color from the material. Simply said, alpha blending settings.
+	  - n/a
 
-  <tr>
-    <td><tt>REFRACTI</tt></td>
-    <td>float</td>
-    <td>1.0</td>
-    <td>Defines the Index Of Refraction for the material. That's not supported by most file formats.</td>
-    <td>Might be of interest for raytracing.</td>
-  </tr>
+	* - OPACITY
+	  - float
+	  - 1.0
+	  - Defines the opacity of the material in a range between 0..1.
+	  - Use this value to decide whether you have to activate alpha blending for rendering. <tt>OPACITY</tt> != 1 usually also implies TWOSIDED=1 to avoid cull artifacts.
 
-  <tr>
-    <td><tt>TEXTURE(t,n)</tt></td>
-    <td>aiString</td>
-    <td>n/a</td>
-    <td>Defines the path of the n'th texture on the stack 't', where 'n' is any value >= 0 and 't'
-    is one of the #aiTextureType enumerated values. A file path to an external file or an embedded
-    texture. Use aiScene::GetEmbeddedTexture to test if it is embedded for FBX files, in other cases
-    embedded textures start with '*' followed by an index into aiScene::mTextures.</td>
-    <td>See the @ref mat_tex section above. Also see @ref textures for a more information about texture retrieval.</td>
-  </tr>
+	* - SHININESS
+	  - float
+	  - 0.f
+	  - Defines the shininess of a phong-shaded material. This is actually the exponent of the phong specular equation
+	  - SHININESS</tt>=0 is equivalent to <tt>SHADING_MODEL</tt>=<tt>aiShadingMode_Gouraud
 
-  <tr>
-    <td><tt>TEXBLEND(t,n)</tt></td>
-    <td>float</td>
-    <td>n/a</td>
-    <td>Defines the strength the n'th texture on the stack 't'. All color components (rgb) are multiplied with this factor *before* any further processing is done.</td>
-    <td>-</td>
-  </tr>
+	* - SHININESS_STRENGTH
+	  - float
+	  - 1.0
+	  - Scales the specular color of the material.
+	  - This value is kept separate from the specular color by most modelers, and so do we.
 
-  <tr>
-    <td><tt>TEXOP(t,n)</tt></td>
-    <td>int</td>
-    <td>n/a</td>
-    <td>One of the #aiTextureOp enumerated values. Defines the arithmetic operation to be used to combine the n'th texture on the stack 't' with the n-1'th. <tt>TEXOP(t,0)</tt> refers to the blend operation between the base color for this stack (e.g. <tt>COLOR_DIFFUSE</tt> for the diffuse stack) and the first texture.</td>
-    <td>-</td>
-  </tr>
+	* - REFRACTI
+	  - float
+	  - 1.0
+	  - Defines the Index Of Refraction for the material. That's not supported by most file formats.
+	  - Might be of interest for raytracing.
 
-  <tr>
-    <td><tt>MAPPING(t,n)</tt></td>
-    <td>int</td>
-    <td>n/a</td>
-    <td>Defines how the input mapping coordinates for sampling the n'th texture on the stack 't' are computed. Usually explicit UV coordinates are provided, but some model file formats might also be using basic shapes, such as spheres or cylinders, to project textures onto meshes.</td>
-    <td>See the 'Textures' section below. #aiProcess_GenUVCoords can be used to let Assimp compute proper UV coordinates from projective mappings.</td>
-  </tr>
+	* - TEXTURE(t,n)
+	  - aiString
+	  - n/a
+	  - Defines the path of the n'th texture on the stack 't', where 'n' is any value >= 0 and 't' is one of the #aiTextureType enumerated values. A file path to an external file or an embedded texture. Use aiScene::GetEmbeddedTexture to test if it is embedded for FBX files, in other cases embedded textures start with '*' followed by an index into aiScene::mTextures.</td>
+	  - See the @ref mat_tex section above. Also see @ref textures for a more information about texture retrieval.
 
-  <tr>
-    <td><tt>UVWSRC(t,n)</tt></td>
-    <td>int</td>
-    <td>n/a</td>
-    <td>Defines the UV channel to be used as input mapping coordinates for sampling the n'th texture on the stack 't'. All meshes assigned to this material share the same UV channel setup</td>
-    <td>Presence of this key implies <tt>MAPPING(t,n)</tt> to be #aiTextureMapping_UV. See @ref uvwsrc for more details. </td>
-  </tr>
+	* - TEXBLEND(t,n)
+	  - float</td>
+	  - n/a
+	  - Defines the strength the n'th texture on the stack 't'. All color components (rgb) are multiplied with this factor *before* any further processing is done.
+	  - n/a
 
-  <tr>
-    <td><tt>MAPPINGMODE_U(t,n)</tt></td>
-    <td>int</td>
-    <td>n/a</td>
-    <td>Any of the #aiTextureMapMode enumerated values. Defines the texture wrapping mode on the x axis for sampling the n'th texture on the stack 't'. 'Wrapping' occurs whenever UVs lie outside the 0..1 range. </td>
-    <td>-</td>
-  </tr>
+	* - TEXOP(t,n)
+	  - int
+	  - n/a
+	  - One of the #aiTextureOp enumerated values. Defines the arithmetic operation to be used to combine the n'th texture on the stack 't' with the n-1'th. <tt>TEXOP(t,0)</tt> refers to the blend operation between the base color for this stack (e.g. <tt>COLOR_DIFFUSE</tt> for the diffuse stack) and the first texture.
+	  - n/a
 
-  <tr>
-    <td><tt>MAPPINGMODE_V(t,n)</tt></td>
-    <td>int</td>
-    <td>n/a</td>
-    <td>Wrap mode on the v axis. See <tt>MAPPINGMODE_U</tt>. </td>
-    <td>-</td>
-  </tr>
+	* - MAPPING(t,n)
+	  - int
+	  - n/a
+	  - Defines how the input mapping coordinates for sampling the n'th texture on the stack 't' are computed. Usually explicit UV coordinates are provided, but some model file formats might also be using basic shapes, such as spheres or cylinders, to project textures onto meshes.
+	  - See the 'Textures' section below. #aiProcess_GenUVCoords can be used to let Assimp compute proper UV coordinates from projective mappings.
 
-   <tr>
-    <td><tt>TEXMAP_AXIS(t,n)</tt></td>
-    <td>aiVector3D</td>
-    <td>n/a</td>
-    <td></tt> Defines the base axis to to compute the mapping coordinates for the n'th texture on the stack 't' from. This is not required for UV-mapped textures. For instance, if <tt>MAPPING(t,n)</tt> is #aiTextureMapping_SPHERE, U and V would map to longitude and latitude of a sphere around the given axis. The axis is given in local mesh space.</td>
-    <td>-</td>
-  </tr>
+	* - UVWSRC(t,n)
+	  - int
+	  - n/a
+	  - Defines the UV channel to be used as input mapping coordinates for sampling the n'th texture on the stack 't'. All meshes assigned to this material share the same UV channel setup
+	  - Presence of this key implies <tt>MAPPING(t,n)</tt> to be #aiTextureMapping_UV. See @ref uvwsrc for more details.
 
-  <tr>
-    <td><tt>TEXFLAGS(t,n)</tt></td>
-    <td>int</td>
-    <td>n/a</td>
-    <td></tt> Defines miscellaneous flag for the n'th texture on the stack 't'. This is a bitwise combination of the #aiTextureFlags enumerated values.</td>
-    <td>-</td>
-  </tr>
+	* - MAPPINGMODE_U(t,n)
+	  - int
+	  - n/a
+	  - Any of the #aiTextureMapMode enumerated values. Defines the texture wrapping mode on the x axis for sampling the n'th texture on the stack 't'. 'Wrapping' occurs whenever UVs lie outside the 0..1 range.
+	  - n/a
 
-</table>
+	* - MAPPINGMODE_V(t,n)
+	  - int
+	  - n/a
+	  - Wrap mode on the v axis. See *MAPPINGMODE_U*.
+	  - n/a
 
-@section cpp C++-API
+	* - TEXMAP_AXIS(t,n)
+	  - aiVector3D
+	  - n/a
+	  - Defines the base axis to to compute the mapping coordinates for the n'th texture on the stack 't' from. This is not required for UV-mapped textures. For instance, if <tt>MAPPING(t,n)</tt> is #aiTextureMapping_SPHERE, U and V would map to longitude and latitude of a sphere around the given axis. The axis is given in local mesh space.
+	  - n/a
+
+	* - TEXFLAGS(t,n)
+	  - int
+	  - n/a
+	  - Defines miscellaneous flag for the n'th texture on the stack 't'. This is a bitwise combination of the #aiTextureFlags enumerated values.
+	  - n/a
+
+.. _ai_cpp:
+
+C++-API
+=======
 
 Retrieving a property from a material is done using various utility functions. For C++ it's simply calling aiMaterial::Get()
 
-@code
+::
 
-aiMaterial* mat = .....
-
-// The generic way
-if(AI_SUCCESS != mat->Get(<material-key>,<where-to-store>)) {
-   // handle epic failure here
-}
-
-@endcode
+	aiMaterial* mat = .....
+	
+	// The generic way
+	if(AI_SUCCESS != mat->Get(<material-key>,<where-to-store>)) {
+	   // handle epic failure here
+	}
 
 Simple, isn't it? To get the name of a material you would use
 
-@code
+::
 
-aiString name;
-mat->Get(AI_MATKEY_NAME,name);
-
-@endcode
+	aiString name;
+	mat->Get(AI_MATKEY_NAME,name);
 
 Or for the diffuse color ('color' won't be modified if the property is not set)
 
-@code
+::
 
-aiColor3D color (0.f,0.f,0.f);
-mat->Get(AI_MATKEY_COLOR_DIFFUSE,color);
-
-@endcode
+	aiColor3D color (0.f,0.f,0.f);
+	mat->Get(AI_MATKEY_COLOR_DIFFUSE,color);
 
 <b>Note:</b> Get() is actually a template with explicit specializations for aiColor3D, aiColor4D, aiString, float, int and some others.
 Make sure that the type of the second parameter matches the expected data type of the material property (no compile-time check yet!).
 Don't follow this advice if you wish to encounter very strange results.
 
-@section C C-API
+.. _ai_c:
+
+C-API
+=====
 
 For good old C it's slightly different. Take a look at the aiGetMaterialGet<data-type> functions.
 
-@code
+::
 
-aiMaterial* mat = .....
-
-if(AI_SUCCESS != aiGetMaterialFloat(mat,<material-key>,<where-to-store>)) {
-   // handle epic failure here
-}
-
-@endcode
+	aiMaterial* mat = .....
+	
+	if(AI_SUCCESS != aiGetMaterialFloat(mat,<material-key>,<where-to-store>)) {
+	   // handle epic failure here
+	}
 
 To get the name of a material you would use
 
-@code
+::
 
-aiString name;
-aiGetMaterialString(mat,AI_MATKEY_NAME,&name);
-
-@endcode
+	aiString name;
+	aiGetMaterialString(mat,AI_MATKEY_NAME,&name);
 
 Or for the diffuse color ('color' won't be modified if the property is not set)
 
-@code
+::
 
-aiColor3D color (0.f,0.f,0.f);
-aiGetMaterialColor(mat,AI_MATKEY_COLOR_DIFFUSE,&color);
+	aiColor3D color (0.f,0.f,0.f);
+	aiGetMaterialColor(mat,AI_MATKEY_COLOR_DIFFUSE,&color);
 
-@endcode
-
-@section uvwsrc How to map UV channels to textures (MATKEY_UVWSRC)
+.. _ai_uvsrc;
+   
+How to map UV channels to textures (MATKEY_UVWSRC)
+==================================================
 
 The MATKEY_UVWSRC property is only present if the source format doesn't specify an explicit mapping from
 textures to UV channels. Many formats don't do this and assimp is not aware of a perfect rule either.
@@ -1100,20 +1048,21 @@ textures to UV channels. Many formats don't do this and assimp is not aware of a
 Your handling of UV channels needs to be flexible therefore. Our recommendation is to use logic like this
 to handle most cases properly:
 
-@verbatim
-have only one uv channel?
-   assign channel 0 to all textures and break
+::
+	have only one uv channel?
+	   assign channel 0 to all textures and break
 
-for all textures
-   have uvwsrc for this texture?
-      assign channel specified in uvwsrc
-   else
-      assign channels in ascending order for all texture stacks,
-      i.e. diffuse1 gets channel 1, opacity0 gets channel 0.
+	for all textures
+	   have uvwsrc for this texture?
+	      assign channel specified in uvwsrc
+	   else
+	      assign channels in ascending order for all texture stacks,
+	      i.e. diffuse1 gets channel 1, opacity0 gets channel 0.
 
-@endverbatim
+.. _ai_pseudo:
 
-@section pseudo Pseudo Code Listing
+Pseudo Code Listing
+===================
 
 For completeness, the following is a very rough pseudo-code sample showing how to evaluate Assimp materials in your
 shading pipeline. You'll probably want to limit your handling of all those material keys to a reasonable subset suitable for your purposes
@@ -1121,161 +1070,165 @@ shading pipeline. You'll probably want to limit your handling of all those mater
 
 Also note that this sample is targeted at a (shader-based) rendering pipeline for real time graphics.
 
-@code
+::
 
-// ---------------------------------------------------------------------------------------
-// Evaluate multiple textures stacked on top of each other
-float3 EvaluateStack(stack)
-{
-  // For the 'diffuse' stack stack.base_color would be COLOR_DIFFUSE
-  // and TEXTURE(aiTextureType_DIFFUSE,n) the n'th texture.
+	// ---------------------------------------------------------------------------------------
+	// Evaluate multiple textures stacked on top of each other
+	float3 EvaluateStack(stack)
+	{
+      // For the 'diffuse' stack stack.base_color would be COLOR_DIFFUSE
+	  // and TEXTURE(aiTextureType_DIFFUSE,n) the n'th texture.
 
-  float3 base = stack.base_color;
-  for (every texture in stack)
-  {
-    // assuming we have explicit & pretransformed UVs for this texture
-    float3 color = SampleTexture(texture,uv);
+	  float3 base = stack.base_color;
+	  for (every texture in stack)
+	  {
+	    // assuming we have explicit & pretransformed UVs for this texture
+	    float3 color = SampleTexture(texture,uv);
+	
+	    // scale by texture blend factor
+	    color *= texture.blend;
+	
+	    if (texture.op == add)
+	      base += color;
+	    else if (texture.op == multiply)
+	      base *= color;
+	    else // other blend ops go here
+	  }
+	  return base;
+	}
+	
+	// ---------------------------------------------------------------------------------------
+	// Compute the diffuse contribution for a pixel
+	float3 ComputeDiffuseContribution()
+	{
+	  if (shading == none)
+	     return float3(1,1,1);
 
-    // scale by texture blend factor
-    color *= texture.blend;
+	  float3 intensity (0,0,0);
+	  for (all lights in range)
+	  {
+	    float fac = 1.f;
+	    if (shading == gouraud)
+	      fac =  lambert-term ..
+	    else // other shading modes go here
+	
+	    // handling of different types of lights, such as point or spot lights
+	    // ...
 
-    if (texture.op == add)
-      base += color;
-    else if (texture.op == multiply)
-      base *= color;
-    else // other blend ops go here
-  }
-  return base;
-}
+	    // and finally sum the contribution of this single light ...
+	    intensity += light.diffuse_color * fac;
+	  }
+	  // ... and combine the final incoming light with the diffuse color
+	  return EvaluateStack(diffuse) * intensity;
+	}
+	
+	// ---------------------------------------------------------------------------------------
+	// Compute the specular contribution for a pixel
+	float3 ComputeSpecularContribution()
+	{
+	  if (shading == gouraud || specular_strength == 0 || specular_exponent == 0)
+	    return float3(0,0,0);
 
-// ---------------------------------------------------------------------------------------
-// Compute the diffuse contribution for a pixel
-float3 ComputeDiffuseContribution()
-{
-  if (shading == none)
-     return float3(1,1,1);
+	  float3 intensity (0,0,0);
+	  for (all lights in range)
+	  {
+	    float fac = 1.f;
+	    if (shading == phong)
+	      fac =  phong-term ..
+	    else // other specular shading modes go here
+	
+	    // handling of different types of lights, such as point or spot lights
+	    // ...
 
-  float3 intensity (0,0,0);
-  for (all lights in range)
-  {
-    float fac = 1.f;
-    if (shading == gouraud)
-      fac =  lambert-term ..
-    else // other shading modes go here
+	    // and finally sum the specular contribution of this single light ...
+	    intensity += light.specular_color * fac;
+	  }
+	  // ... and combine the final specular light with the specular color
+	  return EvaluateStack(specular) * intensity * specular_strength;
+	}
+	
+	// ---------------------------------------------------------------------------------------
+	// Compute the ambient contribution for a pixel
+	float3 ComputeAmbientContribution()
+	{
+	  if (shading == none)
+	     return float3(0,0,0);
+	
+	  float3 intensity (0,0,0);
+	  for (all lights in range)
+	  {
+	    float fac = 1.f;
+	
+	    // handling of different types of lights, such as point or spot lights
+	    // ...
+	
+	    // and finally sum the ambient contribution of this single light ...
+	    intensity += light.ambient_color * fac;
+	  }
+	  // ... and combine the final ambient light with the ambient color
+	  return EvaluateStack(ambient) * intensity;
+	}
+	
+	// ---------------------------------------------------------------------------------------
+	// Compute the final color value for a pixel
+	// @param prev Previous color at that position in the framebuffer
+	float4 PimpMyPixel (float4 prev)
+	{
+	  // .. handle displacement mapping per vertex
+	  // .. handle bump/normal mapping
+	
+	  // Get all single light contribution terms
+	  float3 diff = ComputeDiffuseContribution();
+	  float3 spec = ComputeSpecularContribution();
+	  float3 ambi = ComputeAmbientContribution();
 
-    // handling of different types of lights, such as point or spot lights
-    // ...
+	  // .. and compute the final color value for this pixel
+	  float3 color = diff + spec + ambi;
+	  float3 opac  = EvaluateStack(opacity);
+	
+	  // note the *slightly* strange meaning of additive and multiplicative blending here ...
+	  // those names will most likely be changed in future versions
+	  if (blend_func == add)
+	       return prev+color*opac;
+	  else if (blend_func == multiply)
+	       return prev*(1.0-opac)+prev*opac;
 
-    // and finally sum the contribution of this single light ...
-    intensity += light.diffuse_color * fac;
-  }
-  // ... and combine the final incoming light with the diffuse color
-  return EvaluateStack(diffuse) * intensity;
-}
+	   return color;
+	}
 
-// ---------------------------------------------------------------------------------------
-// Compute the specular contribution for a pixel
-float3 ComputeSpecularContribution()
-{
-  if (shading == gouraud || specular_strength == 0 || specular_exponent == 0)
-    return float3(0,0,0);
+.. _ai_shdacc:
 
-  float3 intensity (0,0,0);
-  for (all lights in range)
-  {
-    float fac = 1.f;
-    if (shading == phong)
-      fac =  phong-term ..
-    else // other specular shading modes go here
-
-    // handling of different types of lights, such as point or spot lights
-    // ...
-
-    // and finally sum the specular contribution of this single light ...
-    intensity += light.specular_color * fac;
-  }
-  // ... and combine the final specular light with the specular color
-  return EvaluateStack(specular) * intensity * specular_strength;
-}
-
-// ---------------------------------------------------------------------------------------
-// Compute the ambient contribution for a pixel
-float3 ComputeAmbientContribution()
-{
-  if (shading == none)
-     return float3(0,0,0);
-
-  float3 intensity (0,0,0);
-  for (all lights in range)
-  {
-    float fac = 1.f;
-
-    // handling of different types of lights, such as point or spot lights
-    // ...
-
-    // and finally sum the ambient contribution of this single light ...
-    intensity += light.ambient_color * fac;
-  }
-  // ... and combine the final ambient light with the ambient color
-  return EvaluateStack(ambient) * intensity;
-}
-
-// ---------------------------------------------------------------------------------------
-// Compute the final color value for a pixel
-// @param prev Previous color at that position in the framebuffer
-float4 PimpMyPixel (float4 prev)
-{
-  // .. handle displacement mapping per vertex
-  // .. handle bump/normal mapping
-
-  // Get all single light contribution terms
-  float3 diff = ComputeDiffuseContribution();
-  float3 spec = ComputeSpecularContribution();
-  float3 ambi = ComputeAmbientContribution();
-
-  // .. and compute the final color value for this pixel
-  float3 color = diff + spec + ambi;
-  float3 opac  = EvaluateStack(opacity);
-
-  // note the *slightly* strange meaning of additive and multiplicative blending here ...
-  // those names will most likely be changed in future versions
-  if (blend_func == add)
-       return prev+color*opac;
-  else if (blend_func == multiply)
-       return prev*(1.0-opac)+prev*opac;
-
-   return color;
-}
-
-@endcode
-
-@section shdacc How to access shader-code from a texture (AI_MATKEY_GLOBAL_SHADERLANG and AI_MATKEY_SHADER_VERTEX, ...)
+How to access shader-code from a texture (AI_MATKEY_GLOBAL_SHADERLANG and AI_MATKEY_SHADER_VERTEX, ...)
+=======================================================================================================
 
 You can get assigned shader sources by using the following material keys:
 
-<li>AI_MATKEY_GLOBAL_SHADERLANG</li>To get the used shader language.
-<li>AI_MATKEY_SHADER_VERTEX</li> Assigned vertex shader code stored as a string.
-<li>AI_MATKEY_SHADER_FRAGMENT</li> Assigned fragment shader code stored as a string.
-<li>AI_MATKEY_SHADER_GEO</li> Assigned geometry shader code stored as a string.
-<li>AI_MATKEY_SHADER_TESSELATION</li> Assigned tesselation shader code stored as a string.
-<li>AI_MATKEY_SHADER_PRIMITIVE</li> Assigned primitive shader code stored as a string.
-<li>AI_MATKEY_SHADER_COMPUTE</li> Assigned compute shader code stored as a string.
+*  *AI_MATKEY_GLOBAL_SHADERLANG* To get the used shader language.
+* *AI_MATKEY_SHADER_VERTEX*      Assigned vertex shader code stored as a string.
+* *AI_MATKEY_SHADER_FRAGMENT*    Assigned fragment shader code stored as a string.
+* *AI_MATKEY_SHADER_GEO*         Assigned geometry shader code stored as a string.
+* *AI_MATKEY_SHADER_TESSELATION* Assigned tesselation shader code stored as a string.
+* *AI_MATKEY_SHADER_PRIMITIVE*   Assigned primitive shader code stored as a string.
+* *AI_MATKEY_SHADER_COMPUTE*     Assigned compute shader code stored as a string.
 
-*/
+.. _ai_perf:
 
+Performance
+===========
 
+.. _ai_perf_overview:
 
-
-/**
-@page perf Performance
-
-@section perf_overview Overview
+Overview
+================
 
 This page discusses general performance issues related to assimp.
 
-@section perf_profile Profiling
+.. _ai_perf_profile:
 
-assimp has built-in support for <i>very</i> basic profiling and time measurement. To turn it on, set the <tt>GLOB_MEASURE_TIME</tt>
+Profiling
+==================
+
+Assimp has built-in support for <i>very</i> basic profiling and time measurement. To turn it on, set the <tt>GLOB_MEASURE_TIME</tt>
 configuration switch to <tt>true</tt> (nonzero). Results are dumped to the log file, so you need to setup
 an appropriate logger implementation with at least one output stream first (see the @link logging Logging Page @endlink
 for the details.).
@@ -1287,132 +1240,145 @@ for smaller files.
 
 A sample report looks like this (some unrelated log messages omitted, entries grouped for clarity):
 
-@verbatim
-Debug, T5488: START `total`
-Info,  T5488: Found a matching importer for this file format
+::
 
-
-Debug, T5488: START `import`
-Info,  T5488: BlendModifier: Applied the `Subdivision` modifier to `OBMonkey`
-Debug, T5488: END   `import`, dt= 3.516 s
-
-
-Debug, T5488: START `preprocess`
-Debug, T5488: END   `preprocess`, dt= 0.001 s
-Info,  T5488: Entering post processing pipeline
-
-
-Debug, T5488: START `postprocess`
-Debug, T5488: RemoveRedundantMatsProcess begin
-Debug, T5488: RemoveRedundantMatsProcess finished
-Debug, T5488: END   `postprocess`, dt= 0.001 s
-
-
-Debug, T5488: START `postprocess`
-Debug, T5488: TriangulateProcess begin
-Info,  T5488: TriangulateProcess finished. All polygons have been triangulated.
-Debug, T5488: END   `postprocess`, dt= 3.415 s
-
-
-Debug, T5488: START `postprocess`
-Debug, T5488: SortByPTypeProcess begin
-Info,  T5488: Points: 0, Lines: 0, Triangles: 1, Polygons: 0 (Meshes, X = removed)
-Debug, T5488: SortByPTypeProcess finished
-
-Debug, T5488: START `postprocess`
-Debug, T5488: JoinVerticesProcess begin
-Debug, T5488: Mesh 0 (unnamed) | Verts in: 503808 out: 126345 | ~74.922
-Info,  T5488: JoinVerticesProcess finished | Verts in: 503808 out: 126345 | ~74.9
-Debug, T5488: END   `postprocess`, dt= 2.052 s
-
-Debug, T5488: START `postprocess`
-Debug, T5488: FlipWindingOrderProcess begin
-Debug, T5488: FlipWindingOrderProcess finished
-Debug, T5488: END   `postprocess`, dt= 0.006 s
-
-
-Debug, T5488: START `postprocess`
-Debug, T5488: LimitBoneWeightsProcess begin
-Debug, T5488: LimitBoneWeightsProcess end
-Debug, T5488: END   `postprocess`, dt= 0.001 s
-
-
-Debug, T5488: START `postprocess`
-Debug, T5488: ImproveCacheLocalityProcess begin
-Debug, T5488: Mesh 0 | ACMR in: 0.851622 out: 0.718139 | ~15.7
-Info,  T5488: Cache relevant are 1 meshes (251904 faces). Average output ACMR is 0.718139
-Debug, T5488: ImproveCacheLocalityProcess finished.
-Debug, T5488: END   `postprocess`, dt= 1.903 s
-
-
-Info,  T5488: Leaving post processing pipeline
-Debug, T5488: END   `total`, dt= 11.269 s
-@endverbatim
+	Debug, T5488: START `total`
+	Info,  T5488: Found a matching importer for this file format
+	
+	
+	Debug, T5488: START `import`
+	Info,  T5488: BlendModifier: Applied the `Subdivision` modifier to `OBMonkey`
+	Debug, T5488: END   `import`, dt= 3.516 s
+	
+	
+	Debug, T5488: START `preprocess`
+	Debug, T5488: END   `preprocess`, dt= 0.001 s
+	Info,  T5488: Entering post processing pipeline
+	
+	
+	Debug, T5488: START `postprocess`
+	Debug, T5488: RemoveRedundantMatsProcess begin
+	Debug, T5488: RemoveRedundantMatsProcess finished
+	Debug, T5488: END   `postprocess`, dt= 0.001 s
+	
+	
+	Debug, T5488: START `postprocess`
+	Debug, T5488: TriangulateProcess begin
+	Info,  T5488: TriangulateProcess finished. All polygons have been triangulated.
+	Debug, T5488: END   `postprocess`, dt= 3.415 s
+	
+	
+	Debug, T5488: START `postprocess`
+	Debug, T5488: SortByPTypeProcess begin
+	Info,  T5488: Points: 0, Lines: 0, Triangles: 1, Polygons: 0 (Meshes, X = removed)
+	Debug, T5488: SortByPTypeProcess finished
+	
+	Debug, T5488: START `postprocess`
+	Debug, T5488: JoinVerticesProcess begin
+	Debug, T5488: Mesh 0 (unnamed) | Verts in: 503808 out: 126345 | ~74.922
+	Info,  T5488: JoinVerticesProcess finished | Verts in: 503808 out: 126345 | ~74.9
+	Debug, T5488: END   `postprocess`, dt= 2.052 s
+	
+	Debug, T5488: START `postprocess`
+	Debug, T5488: FlipWindingOrderProcess begin
+	Debug, T5488: FlipWindingOrderProcess finished
+	Debug, T5488: END   `postprocess`, dt= 0.006 s
+	
+	
+	Debug, T5488: START `postprocess`
+	Debug, T5488: LimitBoneWeightsProcess begin
+	Debug, T5488: LimitBoneWeightsProcess end
+	Debug, T5488: END   `postprocess`, dt= 0.001 s
+	
+	
+	Debug, T5488: START `postprocess`
+	Debug, T5488: ImproveCacheLocalityProcess begin
+	Debug, T5488: Mesh 0 | ACMR in: 0.851622 out: 0.718139 | ~15.7
+	Info,  T5488: Cache relevant are 1 meshes (251904 faces). Average output ACMR is 0.718139
+	Debug, T5488: ImproveCacheLocalityProcess finished.
+	Debug, T5488: END   `postprocess`, dt= 1.903 s
+	
+	
+	Info,  T5488: Leaving post processing pipeline
+	Debug, T5488: END   `total`, dt= 11.269 s
 
 In this particular example only one fourth of the total import time was spent on the actual importing, while the rest of the
 time got consumed by the #aiProcess_Triangulate, #aiProcess_JoinIdenticalVertices and #aiProcess_ImproveCacheLocality
 postprocessing steps. A wise selection of postprocessing steps is therefore essential to getting good performance.
 Of course this depends on the individual requirements of your application, in many of the typical use cases of assimp performance won't
 matter (i.e. in an offline content pipeline).
-*/
 
-/**
-@page threading Threading
+.._ai_threading:
 
-@section overview Overview
+Threading
+=========
+
+.. _ai_overview:
+
+Overview
+==================
 
 This page discusses both assimps scalability in threaded environments and the precautions to be taken in order to
 use it from multiple threads concurrently.
 
-@section threadsafety Thread-safety / using Assimp concurrently from several threads
+.. _ai_threadsafety:
+
+Thread-safety / using Assimp concurrently from several threads
+============================================================================================================================
 
 The library can be accessed by multiple threads simultaneously, as long as the
 following prerequisites are fulfilled:
 
- - Users of the C++-API should ensure that they use a dedicated #Assimp::Importer instance for each thread. Constructing instances of #Assimp::Importer is expensive, so it might be a good idea to
+ * Users of the C++-API should ensure that they use a dedicated #Assimp::Importer instance for each thread. Constructing instances of #Assimp::Importer is expensive, so it might be a good idea to
    let every thread maintain its own thread-local instance (which can be used to
    load as many files as necessary).
- - The C-API is thread safe.
- - When supplying custom IO logic, one must make sure the underlying implementation is thread-safe.
- - Custom log streams or logger replacements have to be thread-safe, too.
-
-
-
+ * The C-API is thread safe.
+ * When supplying custom IO logic, one must make sure the underlying implementation is thread-safe.
+ * Custom log streams or logger replacements have to be thread-safe, too.
 
 Multiple concurrent imports may or may not be beneficial, however. For certain file formats in conjunction with
 little or no post processing IO times tend to be the performance bottleneck. Intense post processing together
 with 'slow' file formats like X or Collada might scale well with multiple concurrent imports.
 
 
-@section automt Internal threading
+.. _ai_automt:
+
+Internal threading
+====================================
 
 Internal multi-threading is not currently implemented.
-*/
 
-/**
-@page res Resources
+.. _ai_res:
+
+Resources
+=========
 
 This page lists some useful resources for assimp. Note that, even though the core team has an eye on them,
 we cannot guarantee the accuracy of third-party information. If in doubt, it's best to ask either on the
 mailing list or on our forums on SF.net.
 
- - assimp comes with some sample applications, these can be found in the <i>./samples</i> folder. Don't forget to read the <i>README</i> file.
- - http://www.drivenbynostalgia.com/files/AssimpOpenGLDemo.rar - OpenGl animation sample using the library's animation import facilities.
- - http://nolimitsdesigns.com/game-design/open-asset-import-library-animation-loader/ is another utility to
+ * assimp comes with some sample applications, these can be found in the <i>./samples</i> folder. Don't forget to read the <i>README</i> file.
+ * http://www.drivenbynostalgia.com/files/AssimpOpenGLDemo.rar - OpenGl animation sample using the library's animation import facilities.
+ * http://nolimitsdesigns.com/game-design/open-asset-import-library-animation-loader/ is another utility to
    simplify animation playback.
- - http://ogldev.atspace.co.uk/www/tutorial22/tutorial22.html - Tutorial "Loading models using the Open Asset Import Library", out of a series of OpenGl tutorials.
+ * http://ogldev.atspace.co.uk/www/tutorial22/tutorial22.html - Tutorial "Loading models using the Open Asset Import Library", out of a series of OpenGl tutorials.
 
-*/
+.. _ai_importer_notes 
 
+Importer Notes
+==============
 
-/**
-@page importer_notes Importer Notes
+.. _ai_blender:
 
-<hr>
-@section blender Blender
+Blender
+==============
 
 This section contains implementation notes for the Blender3D importer.
-@subsection bl_overview Overview
+
+.. _aibl_overview 
+
+Overview
+========================
 
 assimp provides a self-contained reimplementation of Blender's so called SDNA system (http://www.blender.org/development/architecture/notes-on-sdna/).
 SDNA allows Blender to be fully backward and forward compatible and to exchange
@@ -1421,7 +1387,10 @@ naturally limited by the scope of the #aiScene output data structure.
 Consequently, if Blender is the only modeling tool in your asset work flow, consider writing a
 custom exporter from Blender if assimps format coverage does not meet the requirements.
 
-@subsection bl_status Current status
+.. _ai_bl_status 
+
+Current status
+==========================================
 
 The Blender loader does not support animations yet, but is apart from that considered relatively stable.
 
