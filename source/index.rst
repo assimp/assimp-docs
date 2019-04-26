@@ -38,44 +38,44 @@ assimp currently supports the following file formats (note that some loaders lac
 some file formats contain data not supported by assimp, some stuff would require so much conversion work
 that it has not been implemented yet and some (most ...) formats lack proper specifications):
 
-* **Collada** ( *.dae, *.xml )
-* **Blender** ( *.blend )
-* **Biovision BVH** ( *.bvh ) 
-* **3D Studio Max 3DS** ( *.3ds )
-* **3D Studio Max ASE** ( *.ase )
-* **Wavefront Object** ( *.obj ) 
-* **Stanford Polygon Library** ( *.ply )
-* **AutoCAD DXF** ( *.dxf )
-* **IFC-STEP** ( *.ifc )
-* **Neutral File Format** ( *.nff )
-* **Sense8 WorldToolkit** ( *.nff )
-* **Valve Model** ( *.smd,*.vta )
-* **Quake I** ( *.mdl )
-* **Quake II** ( *.md2 )
-* **Quake III** ( *.md3 
-* **Quake 3 BSP** ( *.pk3 )
-* **RtCW** ( *.mdc</i> )
-* **Doom 3** ( *.md5mesh;*.md5anim;*.md5camera )
-* **DirectX X** ( *.x )
-* **Quick3D** ( *.q3o;*q3s )
-* **Raw Triangles** ( *.raw )
-* **AC3D** ( *.ac )
-* **Stereolithography** ( *.stl )
-* **Autodesk DXF** ( *.dxf )
-* **Irrlicht Mesh** ( *.irrmesh;*.xml )
-* **Irrlicht Scene** ( *.irr;*.xml )
-* **Object File Format** ( *.off )
-* **Terragen Terrain** ( *.ter )
-* **3D GameStudio Model** ( *.mdl )
-* **3D GameStudio Terrain** ( *.hmp )
-* **Ogre** ( *.mesh.xml, *.skeleton.xml, *.material )
-* **Milkshape 3D** ( *.ms3d )
-* **LightWave Model** ( *.lwo )
-* **LightWave Scene** ( *.lws )
-* **Modo Model** ( *.lxo )
-* **CharacterStudio Motion** ( *.csm )
-* **Stanford Ply** ( *.ply )
-* **TrueSpace** ( *.cob, *.scn )
+* **Collada** ( .dae, .xml )
+* **Blender** ( .blend )
+* **Biovision BVH** ( .bvh ) 
+* **3D Studio Max 3DS** ( .3ds )
+* **3D Studio Max ASE** ( .ase )
+* **Wavefront Object** ( .obj ) 
+* **Stanford Polygon Library** ( .ply )
+* **AutoCAD DXF** ( .dxf )
+* **IFC-STEP** ( .ifc )
+* **Neutral File Format** ( .nff )
+* **Sense8 WorldToolkit** ( .nff )
+* **Valve Model** ( .smd, .vta )
+* **Quake I** ( .mdl )
+* **Quake II** ( .md2 )
+* **Quake III** ( .md3 
+* **Quake 3 BSP** ( .pk3 )
+* **RtCW** ( .mdc )
+* **Doom 3** ( .md5mesh, .md5anim, .md5camera )
+* **DirectX X** ( .x )
+* **Quick3D** ( .q3o, .q3s )
+* **Raw Triangles** ( .raw )
+* **AC3D** ( .ac )
+* **Stereolithography** ( .stl )
+* **Autodesk DXF** ( .dxf )
+* **Irrlicht Mesh** ( .irrmesh, .xml )
+* **Irrlicht Scene** ( .irr, .xml )
+* **Object File Format** ( .off )
+* **Terragen Terrain** ( .ter )
+* **3D GameStudio Model** ( .mdl )
+* **3D GameStudio Terrain** ( .hmp )
+* **Ogre** ( .mesh.xml, .skeleton.xml, .material )
+* **Milkshape 3D** ( .ms3d )
+* **LightWave Model** ( .lwo )
+* **LightWave Scene** ( .lws )
+* **Modo Model** ( .lxo )
+* **CharacterStudio Motion** ( .csm )
+* **Stanford Ply** ( .ply )
+* **TrueSpace** ( .cob, .scn )
 
 See the @link importer_notes Importer Notes Page @endlink for information, what a specific importer can do and what not.
 Note that although this paper claims to be the official documentation,
@@ -738,13 +738,14 @@ If your rely on the old behaviour, you can use Assimp::Importer::SetPropertyBool
 #AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING to force the old behaviour.
 
 There are two cases:
-1. The texture is NOT compressed. Its color data is directly stored in the aiTexture structure as an
-   array of aiTexture::mWidth * aiTexture::mHeight aiTexel structures. Each aiTexel represents a
+ * The texture is NOT compressed. Its color data is directly stored in the aiTexture structure as an array of 
+   aiTexture::mWidth * aiTexture::mHeight 
+   aiTexel structures. Each aiTexel represents a
    pixel (or "texel") of the texture image. The color data is stored in an unsigned RGBA8888 format,
    which can be easily used for both Direct3D and OpenGL (swizzling the order of the color
    components might be necessary).  RGBA8888 has been chosen because it is well-known, easy to use
    and natively supported by nearly all graphics APIs.
-2. This applies if aiTexture::mHeight == 0 is fulfilled. Then, texture is stored in a "compressed"
+ * This applies if aiTexture::mHeight == 0 is fulfilled. Then, texture is stored in a compressed
    format such as DDS or PNG. The term "compressed" does not mean that the texture data must
    actually be compressed, however the texture was found in the model file as if it was stored in a
    separate file on the harddisk. Appropriate decoders (such as libjpeg, libpng, D3DX, DevIL) are
@@ -752,7 +753,6 @@ There are two cases:
    bytes, aiTexture::pcData is a pointer to the raw image data and aiTexture::achFormatHint is
    either zeroed or contains the most common file extension of the embedded texture's format. This
    value is only set if assimp is able to determine the file format.
-
    
 .. _ai_materials:
 
@@ -1037,7 +1037,7 @@ Or for the diffuse color ('color' won't be modified if the property is not set)
 	aiColor3D color (0.f,0.f,0.f);
 	aiGetMaterialColor(mat,AI_MATKEY_COLOR_DIFFUSE,&color);
 
-.. _ai_uvsrc;
+.. _ai_uvsrc:
    
 How to map UV channels to textures (MATKEY_UVWSRC)
 ==================================================
@@ -1363,7 +1363,7 @@ mailing list or on our forums on SF.net.
    simplify animation playback.
  * http://ogldev.atspace.co.uk/www/tutorial22/tutorial22.html - Tutorial "Loading models using the Open Asset Import Library", out of a series of OpenGl tutorials.
 
-.. _ai_importer_notes 
+.. _ai_importer_notes:
 
 Importer Notes
 ==============
@@ -1375,7 +1375,7 @@ Blender
 
 This section contains implementation notes for the Blender3D importer.
 
-.. _aibl_overview 
+.. _aibl_overview:
 
 Overview
 ========================
@@ -1387,7 +1387,7 @@ naturally limited by the scope of the #aiScene output data structure.
 Consequently, if Blender is the only modeling tool in your asset work flow, consider writing a
 custom exporter from Blender if assimps format coverage does not meet the requirements.
 
-.. _ai_bl_status 
+.. _ai_bl_status:
 
 Current status
 ==========================================
@@ -1398,46 +1398,73 @@ The Blender loader does not support animations yet, but is apart from that consi
 
 When filing bugs on the Blender loader, always give the Blender version (or, even better, post the file caused the error).
 
-<hr>
-@section ifc IFC
+.. _ai_ifc:
+
+IFC
+======
 
 This section contains implementation notes on the IFC-STEP importer.
-@subsection ifc_overview Overview
+
+
+.. _ai_ifc_overview:
+
+Overview
+========================
 
 The library provides a partial implementation of the IFC2x3 industry standard for automatized exchange of CAE/architectural
 data sets. See http://en.wikipedia.org/wiki/Industry_Foundation_Classes for more information on the format. We aim
 at getting as much 3D data out of the files as possible.
 
-@subsection ifc_status Current status
+.. _ai_ifc_status:
+
+Current status
+==========================================
 
 IFC support is new and considered experimental. Please report any bugs you may encounter.
 
-@subsection ifc_notes Notes
+.. _ai_ifc_notes:
+
+Notes
+===============
 
 - Only the STEP-based encoding is supported. IFCZIP and IFCXML are not (but IFCZIP can simply be unzipped to get a STEP file).
 - The importer leaves vertex coordinates untouched, but applies a global scaling to the root transform to
   convert from whichever unit the IFC file uses to <i>metres</i>.
 - If multiple geometric representations are provided, the choice which one to load is based on how expensive a representation seems
- to be in terms of import time. The loader also avoids representation types for which it has known deficits.
+  to be in terms of import time. The loader also avoids representation types for which it has known deficits.
 - Not supported are arbitrary binary operations (binary clipping is implemented, though).
 - Of the various relationship types that IFC knows, only aggregation, containment and material assignment are resolved and mapped to
   the output graph.
 - The implementation knows only about IFC2X3 and applies this rule set to all models it encounters,
   regardless of their actual version. Loading of older or newer files may fail with parsing errors.
 
-@subsection ifc_metadata Metadata
+.. _ai_ifc_metadata:
+
+Metadata
+========================
 
 IFC file properties (IfcPropertySet) are kept as per-node metadata, see aiNode::mMetaData.
 
-<hr>
-@section ogre Ogre
+.. _ai_ogre:
+
+Ogre
+========
+
 *ATTENTION*: The Ogre-Loader is currently under development, many things have changed after this documentation was written, but they are not final enough to rewrite the documentation. So things may have changed by now!
 
 This section contains implementations notes for the OgreXML importer.
-@subsection overview Overview
+
+.. _ai_ogre_overview:
+
+Overview
+========================
+
 Ogre importer is currently optimized for the Blender Ogre exporter, because that's the only one that I use. You can find the Blender Ogre exporter at: http://www.ogre3d.org/forums/viewtopic.php?f=8&t=45922
 
-@subsection what What will be loaded?
+.. _ai_what:
+
+What will be loaded?
+============================================================
 
 Mesh: Faces, Positions, Normals and all TexCoords. The Materialname will be used to load the material.
 
@@ -1448,20 +1475,29 @@ materialcolors (but not in custom materials) will be loaded. Also, the materialn
 Skeleton: Skeleton with Bone hierarchy (Position and Rotation, but no Scaling in the skeleton is supported), names and transformations,
 animations with rotation, translation and scaling keys.
 
-@subsection export_Blender How to export Files from Blender
+.. _ai_export_Blender:
+
+How to export Files from Blender
+================================
+
 You can find information about how to use the Ogreexporter by your own, so here are just some options that you need, so the assimp
 importer will load everything correctly:
+
 - Use either "Rendering Material" or "Custom Material" see @ref material
 - do not use "Flip Up Axies to Y"
 - use "Skeleton name follow mesh"
 
 
-@subsection xml XML Format
+.. _ai_xml:
+
+XML Format
+====================
+
 There is a binary and a XML mesh Format from Ogre. This loader can only
 Handle xml files, but don't panic, there is a command line converter, which you can use
 to create XML files from Binary Files. Just look on the Ogre page for it.
 
-Currently you can only load meshes. So you will need to import the *.mesh.xml file, the loader will
+Currently you can only load meshes. So you will need to import the .mesh.xml file, the loader will
 try to find the appendant material and skeleton file.
 
 The skeleton file must have the same name as the mesh file, e.g. fish.mesh.xml and fish.skeleton.xml.
@@ -1469,7 +1505,12 @@ The skeleton file must have the same name as the mesh file, e.g. fish.mesh.xml a
 @subsection material Materials
 The material file can have the same name as the mesh file (if the file is model.mesh or model.mesh.xml the
 loader will try to load model.material),
-or you can use Importer::Importer::SetPropertyString(AI_CONFIG_IMPORT_OGRE_MATERIAL_FILE, "materiafile.material")
+or you can use 
+
+::
+
+	Importer::Importer::SetPropertyString(AI_CONFIG_IMPORT_OGRE_MATERIAL_FILE, "materiafile.material")
+    
 to specify the name of the material file. This is especially useful if multiply materials a stored in a single file.
 The importer will first try to load the material with the same name as the mesh and only if this can't be open try
 to load the alternate material file. The default material filename is "Scene.material".
@@ -1481,7 +1522,11 @@ can find in scripts/OgreImpoter/Assimp.tlp in the assimp source. If you don't se
 If you want more properties in custom materials, you can easily expand the ogre material loader, it will be just a few lines for each property.
 Just look in OgreImporterMaterial.cpp
 
-@subsection Importer Properties
+.. ai_importer:
+
+Properties
+====================
+
 -	IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME: Normally, a texture is loaded as a colormap, if no
 	target is specified in the
 	materialfile. Is this switch is enabled, texture names ending with _n, _l, _s
@@ -1495,19 +1540,16 @@ Just look in OgreImporterMaterial.cpp
 	<br>
 	Property type: String. Default value: guessed.
 
-@subsection todo Todo
-- Load colors in custom materials
-- extend custom and normal material loading
-- fix bone hierarchy bug
-- test everything elaboratly
-- check for non existent animation keys (what happens if a one time not all bones have a key?)
-*/
 
+.. _ai_extend:
 
-/**
-@page extend Extending the Library
+Extending the Library
+=====================
 
-@section General
+.. _ai_general:
+
+General
+==============
 
 Or - how to write your own loaders. It's easy. You just need to implement the #Assimp::BaseImporter class,
 which defines a few abstract methods, register your loader, test it carefully and provide test models for it.
@@ -1521,41 +1563,37 @@ source group for your importer and put them also to ADD_LIBRARY( assimp SHARED))
 <li>Include <i>AssimpPCH.h</i> - this is the PCH file, and it includes already most Assimp-internal stuff. </li>
 <li>Open Importer.cpp and include your header just below the <i>(include_new_importers_here)</i> line,
 guarded by a #define
-@code
-#if (!defined assimp_BUILD_NO_FormatName_IMPORTER)
-	...
-#endif
-@endcode
-Wrap the same guard around your .cpp!</li>
 
-<li>Now advance to the <i>(register_new_importers_here)</i> line in the Importer.cpp and register your importer there - just like all the others do.</li>
-<li>Setup a suitable test environment (i.e. use AssimpView or your own application), make sure to enable
-the #aiProcess_ValidateDataStructure flag and enable verbose logging. That is, simply call before you import anything:
-@code
-DefaultLogger::create("AssimpLog.txt",Logger::VERBOSE)
-@endcode
-</li>
-<li>
-Implement the Assimp::BaseImporter::CanRead(), Assimp::BaseImporter::InternReadFile() and Assimp::BaseImporter::GetExtensionList().
-Just copy'n'paste the template from Appendix A and adapt it for your needs.
-</li>
-<li>For error handling, throw a dynamic allocated ImportErrorException (see Appendix A) for critical errors, and log errors, warnings, infos and debuginfos
-with DefaultLogger::get()->[error, warn, debug, info].
-</li>
-<li>
-Make sure that your loader compiles against all build configurations on all supported platforms. You can use our CI-build to check several platforms 
-like Windows and Linux ( 32 bit and 64 bit ).
-</li>
-<li>
-Provide some _free_ test models in <tt>&lt;root&gt;/test/models/&lt;FormatName&gt;/</tt> and credit their authors.
-Test files for a file format shouldn't be too large (<i>~500 KiB in total</i>), and not too repetive. Try to cover all format features with test data.
-</li>
-<li>
-Done! Please, share your loader that everyone can profit from it!
-</li>
-</ul>
+::
 
-@section properties Properties
+    #if (!defined assimp_BUILD_NO_FormatName_IMPORTER)
+        ...
+    #endif
+
+Wrap the same guard around your .cpp!
+
+* Now advance to the <i>(register_new_importers_here)</i> line in the Importer.cpp and register your importer there - just like all the others do.</li>
+* Setup a suitable test environment (i.e. use AssimpView or your own application), make sure to enable
+  the #aiProcess_ValidateDataStructure flag and enable verbose logging. That is, simply call before you import anything:
+
+:: 
+
+    DefaultLogger::create("AssimpLog.txt",Logger::VERBOSE)
+    
+* Implement the Assimp::BaseImporter::CanRead(), Assimp::BaseImporter::InternReadFile() and Assimp::BaseImporter::GetExtensionList().
+  Just copy'n'paste the template from Appendix A and adapt it for your needs.
+* For error handling, throw a dynamic allocated ImportErrorException (see Appendix A) for critical errors, and log errors, warnings, infos and debuginfos
+  with DefaultLogger::get()->[error, warn, debug, info].
+* Make sure that your loader compiles against all build configurations on all supported platforms. You can use our CI-build to check several platforms 
+  like Windows and Linux ( 32 bit and 64 bit ).
+* Provide some _free_ test models in <tt>&lt;root&gt;/test/models/&lt;FormatName&gt;/</tt> and credit their authors.
+  Test files for a file format shouldn't be too large (<i>~500 KiB in total</i>), and not too repetive. Try to cover all format features with test data.
+* Done! Please, share your loader that everyone can profit from it!
+
+.. _ai_properties:
+
+Properties
+====================
 
 You can use properties to chance the behavior of you importer. In order to do so, you have to override BaseImporter::SetupProperties, and specify
 you custom properties in config.h. Just have a look to the other AI_CONFIG_IMPORT_* defines and you will understand, how it works.
@@ -1563,130 +1601,141 @@ you custom properties in config.h. Just have a look to the other AI_CONFIG_IMPOR
 The properties can be set with Importer::SetProperty***() and can be accessed in your SetupProperties function with Importer::GetProperty***(). You can
 store the properties as a member variable of your importer, they are thread safe.
 
-@section tnote Notes for text importers
+.. _ai_tnote:
 
-<ul>
-<li>Try to make your parser as flexible as possible. Don't rely on particular layout, whitespace/tab style,
-except if the file format has a strict definition, in which case you should always warn about spec violations.
-But the general rule of thumb is <i>be strict in what you write and tolerant in what you accept</i>.</li>
-<li>Call Assimp::BaseImporter::ConvertToUTF8() before you parse anything to convert foreign encodings to UTF-8.
- That's not necessary for XML importers, which must use the provided IrrXML for reading. </li>
-</ul>
+Notes for text importers
+================================================
 
-@section bnote Notes for binary importers
+* Try to make your parser as flexible as possible. Don't rely on particular layout, whitespace/tab style,
+  except if the file format has a strict definition, in which case you should always warn about spec violations.
+  But the general rule of thumb is <i>be strict in what you write and tolerant in what you accept</i>.
+* Call Assimp::BaseImporter::ConvertToUTF8() before you parse anything to convert foreign encodings to UTF-8.
+  That's not necessary for XML importers, which must use the provided IrrXML for reading. </li>
 
-<ul>
-<li>
-Take care of endianness issues! Assimp importers mostly support big-endian platforms, which define the <tt>AI_BUILD_BIG_ENDIAN</tt> constant.
-See the next section for a list of utilities to simplify this task.
-</li>
-<li>
-Don't trust the input data! Check all offsets!
-</li>
-</ul>
 
-@section util Utilities
+.. _ai_bnote:
+
+Notes for binary importers
+====================================================
+
+* Take care of endianness issues! Assimp importers mostly support big-endian platforms, which define the <tt>AI_BUILD_BIG_ENDIAN</tt> constant.
+  See the next section for a list of utilities to simplify this task.
+* Don't trust the input data! Check all offsets!
+
+
+.. _ai_util:
+
+Utilities
+==================
 
 Mixed stuff for internal use by loaders, mostly documented (most of them are already included by <i>AssimpPCH.h</i>):
-<ul>
-<li><b>ByteSwapper</b> (<i>ByteSwapper.h</i>) - manual byte swapping stuff for binary loaders.</li>
-<li><b>StreamReader</b> (<i>StreamReader.h</i>) - safe, endianess-correct, binary reading.</li>
-<li><b>IrrXML</b> (<i>irrXMLWrapper.h</i>)  - for XML-parsing (SAX.</li>
-<li><b>CommentRemover</b> (<i>RemoveComments.h</i>) - remove single-line and multi-line comments from a text file.</li>
-<li>fast_atof, strtoul10, strtoul16, SkipSpaceAndLineEnd, SkipToNextToken .. large family of low-level
-parsing functions, mostly declared in <i>fast_atof.h</i>, <i>StringComparison.h</i> and <i>ParsingUtils.h</i> (a collection that grew
-historically, so don't expect perfect organization). </li>
-<li><b>ComputeNormalsWithSmoothingsGroups()</b> (<i>SmoothingGroups.h</i>) - Computes normal vectors from plain old smoothing groups. </li>
-<li><b>SkeletonMeshBuilder</b> (<i>SkeletonMeshBuilder.h</i>) - generate a dummy mesh from a given (animation) skeleton. </li>
-<li><b>StandardShapes</b> (<i>StandardShapes.h</i>) - generate meshes for standard solids, such as platonic primitives, cylinders or spheres. </li>
-<li><b>BatchLoader</b> (<i>BaseImporter.h</i>) - manage imports from external files. Useful for file formats
-which spread their data across multiple files. </li>
-<li><b>SceneCombiner</b> (<i>SceneCombiner.h</i>) - exhaustive toolset to merge multiple scenes. Useful for file formats
-which spread their data across multiple files. </li>
-</ul>
 
-@section mat Filling materials
+* **ByteSwapper** (*ByteSwapper.h*) - manual byte swapping stuff for binary loaders.
+* **StreamReader** (*StreamReader.h*) - safe, endianess-correct, binary reading.
+* **IrrXML** (*irrXMLWrapper.h*)  - for XML-parsing (SAX.
+* **CommentRemover** (*RemoveComments.h*) - remove single-line and multi-line comments from a text file.
+* fast_atof, strtoul10, strtoul16, SkipSpaceAndLineEnd, SkipToNextToken .. large family of low-level
+  parsing functions, mostly declared in <i>fast_atof.h</i>, <i>StringComparison.h</i> and <i>ParsingUtils.h</i> (a collection that grew
+  historically, so don't expect perfect organization).
+* **ComputeNormalsWithSmoothingsGroups()** (*SmoothingGroups.h*) - Computes normal vectors from plain old smoothing groups.
+* **SkeletonMeshBuilder** (*SkeletonMeshBuilder.h*) - generate a dummy mesh from a given (animation) skeleton.
+* **StandardShapes** (*StandardShapes.h*) - generate meshes for standard solids, such as platonic primitives, cylinders or spheres.
+* **BatchLoader** (*BaseImporter.h*) - manage imports from external files. Useful for file formats
+  which spread their data across multiple files.
+* **SceneCombiner** (*SceneCombiner.h*) - exhaustive toolset to merge multiple scenes. Useful for file formats
+  which spread their data across multiple files. </li>
+
+.. _ai_mat:
+
+Filling materials
+==================================
 
 The required definitions zo set/remove/query keys in #aiMaterial structures are declared in <i>MaterialSystem.h</i>, in a
 #aiMaterial derivate called #aiMaterial. The header is included by AssimpPCH.h, so you don't need to bother.
 
-@code
-aiMaterial* mat = new aiMaterial();
+::
 
-const float spec = 16.f;
-mat->AddProperty(&spec, 1, AI_MATKEY_SHININESS);
+    aiMaterial* mat = new aiMaterial();
 
-//set the name of the material:
-NewMaterial->AddProperty(&aiString(MaterialName.c_str()), AI_MATKEY_NAME);//MaterialName is a std::string
+    const float spec = 16.f;
+    mat->AddProperty(&spec, 1, AI_MATKEY_SHININESS);
 
-//set the first diffuse texture
-NewMaterial->AddProperty(&aiString(Texturename.c_str()), AI_MATKEY_TEXTURE(aiTextureType_DIFFUSE, 0));//again, Texturename is a std::string
-@endcode
+    //set the name of the material:
+    NewMaterial->AddProperty(&aiString(MaterialName.c_str()), AI_MATKEY_NAME);//MaterialName is a std::string
 
-@section appa Appendix A - Template for BaseImporter's abstract methods
+    //set the first diffuse texture
+    NewMaterial->AddProperty(&aiString(Texturename.c_str()), AI_MATKEY_TEXTURE(aiTextureType_DIFFUSE, 0));//again, Texturename is a std::string
 
-@code
-// -------------------------------------------------------------------------------
-// Returns whether the class can handle the format of the given file.
-bool xxxxImporter::CanRead( const std::string& pFile, IOSystem* pIOHandler,
-	bool checkSig) const
-{
-	const std::string extension = GetExtension(pFile);
-	if(extension == "xxxx") {
-		return true;
-	}
-	if (!extension.length() || checkSig) {
-		// no extension given, or we're called a second time because no
-		// suitable loader was found yet. This means, we're trying to open
-		// the file and look for and hints to identify the file format.
-		// #Assimp::BaseImporter provides some utilities:
-		//
-		// #Assimp::BaseImporter::SearchFileHeaderForToken - for text files.
-		// It reads the first lines of the file and does a substring check
-		// against a given list of 'magic' strings.
-		//
-		// #Assimp::BaseImporter::CheckMagicToken - for binary files. It goes
-		// to a particular offset in the file and and compares the next words
-		// against a given list of 'magic' tokens.
+    
+.. _ai_appa:
 
-		// These checks MUST be done (even if !checkSig) if the file extension
-		// is not exclusive to your format. For example, .xml is very common
-		// and (co)used by many formats.
-	}
-	return false;
-}
+Appendix A - Template for BaseImporter's abstract methods
+==================================================================================================================
 
-// -------------------------------------------------------------------------------
-// Get list of file extensions handled by this loader
-void xxxxImporter::GetExtensionList(std::set<std::string>& extensions)
-{
-	extensions.insert("xxx");
-}
+::
 
-// -------------------------------------------------------------------------------
-void xxxxImporter::InternReadFile( const std::string& pFile,
-	aiScene* pScene, IOSystem* pIOHandler)
-{
-	std::unique_ptr<IOStream> file( pIOHandler->Open( pFile, "rb"));
+    // -------------------------------------------------------------------------------
+    // Returns whether the class can handle the format of the given file.
+    bool xxxxImporter::CanRead( const std::string& pFile, IOSystem* pIOHandler,
+        bool checkSig) const
+    {
+        const std::string extension = GetExtension(pFile);
+        if(extension == "xxxx") {
+            return true;
+        }
+        if (!extension.length() || checkSig) {
+            // no extension given, or we're called a second time because no
+            // suitable loader was found yet. This means, we're trying to open
+            // the file and look for and hints to identify the file format.
+            // #Assimp::BaseImporter provides some utilities:
+            //
+            // #Assimp::BaseImporter::SearchFileHeaderForToken - for text files.
+            // It reads the first lines of the file and does a substring check
+            // against a given list of 'magic' strings.
+            //
+            // #Assimp::BaseImporter::CheckMagicToken - for binary files. It goes
+            // to a particular offset in the file and and compares the next words
+            // against a given list of 'magic' tokens.
 
-	// Check whether we can read from the file
-	if( file.get() == NULL) {
-		throw DeadlyImportError( "Failed to open xxxx file " + pFile + ".");
-	}
+            // These checks MUST be done (even if !checkSig) if the file extension
+            // is not exclusive to your format. For example, .xml is very common
+            // and (co)used by many formats.
+        }
+        return false;
+    }
 
-	// Your task: fill pScene
-	// Throw a ImportErrorException with a meaningful (!) error message if
-	// something goes wrong.
-}
+    // -------------------------------------------------------------------------------
+    // Get list of file extensions handled by this loader
+    void xxxxImporter::GetExtensionList(std::set<std::string>& extensions)
+    {
+        extensions.insert("xxx");
+    }
 
-@endcode
- */
+    // -------------------------------------------------------------------------------
+    void xxxxImporter::InternReadFile( const std::string& pFile,
+        aiScene* pScene, IOSystem* pIOHandler)
+    {
+        std::unique_ptr<IOStream> file( pIOHandler->Open( pFile, "rb"));
 
+        // Check whether we can read from the file
+        if( file.get() == NULL) {
+            throw DeadlyImportError( "Failed to open xxxx file " + pFile + ".");
+        }
 
- /**
- @page AnimationOverview Animation Overview
- \section Transformations
+        // Your task: fill pScene
+        // Throw a ImportErrorException with a meaningful (!) error message if
+        // something goes wrong.
+    }
+
+.. _ai_AnimationOverview:
+
+Animation Overview
+==================
+
+.. _ai_Transformations:
+
+Transformations
+==============================
+
  This diagram shows how you can calculate your transformationmatrices for an animated character:
  <img src="AnimationOverview.png" />
-
- **/
