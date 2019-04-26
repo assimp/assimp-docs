@@ -8,7 +8,6 @@ Welcome to Asset-Importer-Lib's aka assimp
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
 
 
