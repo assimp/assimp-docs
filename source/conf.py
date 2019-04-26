@@ -14,6 +14,12 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+# You can specify multiple suffix as a list of string: ['.rst', '.md']
+source_suffix = '.rst'
+source_encoding = 'utf-8-sig'
+
+# The master toctree document
+master_doc = 'index'
 
 # -- Project information -----------------------------------------------------
 
