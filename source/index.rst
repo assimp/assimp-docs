@@ -8,7 +8,10 @@ Welcome to Asset-Importer-Lib's aka assimp
 
 .. toctree::
    :maxdepth: 2
-
+   :caption: General
+   :name: sec-general
+   
+   about/index
 
 
 Indices and tables
