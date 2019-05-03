@@ -11,7 +11,7 @@ Welcome to Asset-Importer-Lib's aka assimp
    :caption: General
    :name: sec-general
    
-   about/index
+   source/about/intoduction
 
 
 Indices and tables
