@@ -11,7 +11,7 @@ Welcome to Asset-Importer-Lib
    :caption: General
    :name: sec-general
    
-   source/about/intoduction
+   about/intoduction
 
 
 Indices and tables
