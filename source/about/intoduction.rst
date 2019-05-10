@@ -134,10 +134,10 @@ assimp-discussions</a>.
 
 .. _ai_install_prebuilt:
 
-Using the pre-built libraries with Visual C++ 8/9
-=================================================
+Using the pre-built libraries with Visual C++
+=============================================
 
-If you develop at Visual Studio 2015 or 2017, you can simply use the pre-built linker libraries provided in the distribution.
+If you develop at Visual Studio 2015, 2017 or 2019, you can simply use the pre-built linker libraries provided in the distribution.
 Extract all files to a place of your choice. A directory called "assimp" will be created there. Add the assimp/include path
 to your include paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Include files)
 and the assimp/lib/&lt;Compiler&gt; path to your linker paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Library files).
