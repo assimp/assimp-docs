@@ -12,6 +12,7 @@ Welcome to Asset-Importer-Lib
    :name: sec-general
    
    about/intoduction
+   usage/use_the_lib
 
 
 Indices and tables
