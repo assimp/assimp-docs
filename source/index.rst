@@ -6,22 +6,26 @@
 Welcome to the Asset-Importer-Lib
 =================================
 
+.. image:: https://github.com/assimp/assimp-web/blob/master/images/splash.png
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: General
    :name: sec-general
    
    about/intoduction
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Getting started
+   :name: sec-learn
+
    usage/use_the_lib
 
 
-Indices and tables
-==================
+.. Indices and tables
+.. ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-
-<img src="dragonsplash.png"></img>
-
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
