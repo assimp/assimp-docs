@@ -77,7 +77,7 @@ but not all of them are *open-source*. If there's an accompagning '<file>\source
 .. _ai_main_install:
 
 Installation
-============
+------------
 
 assimp can be used in two ways: linking against the pre-built libraries or building the library on your own. The former
 option is the easiest, but the assimp distribution contains pre-built libraries only for Visual C++ 2013, 2015 and 2017. 
@@ -94,7 +94,7 @@ If you want to use the python-assimp-port just follow these instructions: https:
 .. _ai_main_usage:
 
 Usage
-=====
+-----
 
 When you're done integrating the library into your IDE / project, you can now start using it. There are two separate
 interfaces by which you can access the library: a C++ interface and a C interface using flat functions. While the former
@@ -104,7 +104,7 @@ there are no bindings for any other language provided. Have a look at the @link 
 .. _ai_main_data:
 
 Data Structures
-===============
+---------------
 
 When the importer successfully completed its job, the imported data is returned in an aiScene structure. This is the root
 point from where you can access all the various data types that a scene/model file can possibly contain. The
@@ -113,7 +113,7 @@ point from where you can access all the various data types that a scene/model fi
 .. _ai_ext:
 
 Extending the library
-=====================
+---------------------
 
 There are many 3d file formats in the world, and we're happy to support as many as possible. If you need support for
 a particular file format, why not implement it yourself and add it to the library? Writing importer plugins for
@@ -124,18 +124,18 @@ See the @link extend Extending the library @endlink page for more information.
 .. _ai_main_support:
 
 Support & Feedback
-==================
+------------------
 
 If you have any questions/comments/suggestions/bug reports you're welcome to post them in our
-<a href="https://sourceforge.net/forum/forum.php?forum_id=817653">forums</a>. Alternatively there's
+<a href="https://github.com/assimp/assimp/issues">Github Issues for Assimp</a>. Alternatively there's
 a mailing list, <a href="https://sourceforge.net/mailarchive/forum.php?forum_name=assimp-discussions">
 assimp-discussions</a>.
 
 
 .. _ai_install_prebuilt:
 
-Using the pre-built libraries with Visual C++
-=============================================
+Using the pre-built libraries with Visual-Studio
+------------------------------------------------
 
 If you develop at Visual Studio 2015, 2017 or 2019, you can simply use the pre-built linker libraries provided in the distribution.
 Extract all files to a place of your choice. A directory called "assimp" will be created there. Add the assimp/include path
@@ -162,7 +162,7 @@ If done correctly you should now be able to compile, link, run and use the appli
 .. _ai_install_own:
 
 Building the library from scratch
-=================================
+---------------------------------
 
 First you need to install cmake. Now just get the code from github or download the latest version from the webside.
 to build the library just open a command-prompt / bash, navigate into the repo-folder and run cmake via:
@@ -177,14 +177,14 @@ Run the build and you are done. You can find the libs at assimp/lib and the dll'
 .. _ai_assimp_dll:
 
 Windows DLL Build
-=================
+-----------------
 
 The Assimp-package can be built as DLL. You just need to run the default cmake run.
 
 .. _ai_static_lib:
 
 Assimp static lib
-=================
+-----------------
 
 The Assimp-package can be build as a static library as well. Do do so just set the configuration variable <b>BUILD_SHARED_LIBS</b>
 to off during the cmake run.
