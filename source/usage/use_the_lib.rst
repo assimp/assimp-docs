@@ -58,7 +58,7 @@ suicide in DLL builds if you try to use new or delete on any of the arrays in th
 .. _ai_access_c:
 
 Access by plain-c function interface
-====================================
+------------------------------------
 
 The plain function interface is just as simple, but requires you to manually call the clean-up
 after you're done with the imported data. To start the import process, call aiImportFile()
@@ -104,7 +104,7 @@ imported scene to clean up all resources associated with the import.
 .. _ai_custom_io:
 
 Using custom IO logic with the C++ class interface
-==================================================
+--------------------------------------------------
 
 The assimp library needs to access files internally. This of course applies to the file you want
 to read, but also to additional files in the same folder for certain file formats. By default,
@@ -182,7 +182,7 @@ An example:
 .. _ai_custom_io_c:
 
 Using custom IO logic with the plain-c function interface
-=========================================================
+---------------------------------------------------------
 
 The C interface also provides a way to override the file system. Control is not as fine-grained as for C++ although
 surely enough for almost any purpose. The process is simple:
@@ -195,7 +195,7 @@ surely enough for almost any purpose. The process is simple:
 .. _ai_logging:
 
 Logging
-=======
+-------
 
 The assimp library provides an easy mechanism to log messages. For instance if you want to check the state of your
 import and you just want to see, after which preprocessing step the import-process was aborted you can take a look
@@ -276,7 +276,7 @@ kind kind of logging might decrease import performance.
 .. _ai_data:
 
 Data Structures
-===============
+---------------
 
 The assimp library returns the imported data in a collection of structures. aiScene forms the root
 of the data, from here you gain access to all the nodes, meshes, materials, animations or textures
@@ -346,8 +346,8 @@ you have to adapt your animation loading code to match the new quaternion orient
 
 .. _ai_hierarchy:
 
-The Node Hierarchy
-==================
+The Node-Hierarchy
+------------------
 
 Nodes are little named entities in the scene that have a place and orientation relative to their parents.
 Starting from the scene's root node all nodes can have 0 to x child nodes, thus forming a hierarchy.
@@ -405,7 +405,7 @@ that form the bone hierarchy for another mesh/node, but don't have any mesh them
 .. _ai_meshes:
 
 Meshes
-======
+------
 
 All meshes of an imported scene are stored in an array of aiMesh* inside the aiScene. Nodes refer
 to them by their index in the array and providing the coordinate system for them, too. One mesh uses
@@ -430,14 +430,14 @@ the bone information is described later on.
 .. _ai_material:
 
 Materials
-=========
+---------
 
 See the @link materials Material System Page. @endlink
 
 .. _ai_bones:
 
 Bones
-=====
+-----
 
 A mesh may have a set of bones in the form of aiBone objects. Bones are a means to deform a mesh
 according to the movement of a skeleton. Each bone has a name and a set of vertices on which it has influence.
@@ -471,7 +471,7 @@ You should now have a mesh in your engine with a skeleton that is a subset of th
 .. _ai_anims:
 
 Animations
-==========
+----------
 
 An imported scene may contain zero to x aiAnimation entries. An animation in this context is a set
 of keyframe sequences where each sequence describes the orientation of a single node in the hierarchy
@@ -505,8 +505,14 @@ need them at all.
 
 .. _ai_textures:
 
+Blenshapes
+----------
+
+ToDo
+
+
 Textures
-========
+--------
 
 Normally textures used by assets are stored in separate files, however,
 there are file formats embedding their textures directly into the model file.
@@ -540,8 +546,8 @@ There are two cases:
    
 .. _ai_materials:
 
-Material System
-===============
+Material-System
+---------------
 
 @section General Overview
 All materials are stored in an array of aiMaterial inside the aiScene.
@@ -556,7 +562,7 @@ presence of certain properties in a material and retrieve their values.
 .. _ai_mat_tex:
 
 Textures
-========
+--------
 
 Textures are organized in stacks, each stack being evaluated independently. The final color value from a particular texture stack is used in the shading equation. 
 For example, the computed color value of the diffuse texture stack (aiTextureType_DIFFUSE) is multiplied with the amount of incoming diffuse light to obtain the 
@@ -594,7 +600,7 @@ final diffuse color of a pixel.
 .. _ai_keys:
 
 Constants
-=========
+---------
 
 All material key constants start with 'AI_MATKEY' as a prefix.
 
@@ -795,7 +801,7 @@ Don't follow this advice if you wish to encounter very strange results.
 .. _ai_c:
 
 C-API
-=====
+-----
 
 For good old C it's slightly different. Take a look at the aiGetMaterialGet<data-type> functions.
 
@@ -824,7 +830,7 @@ Or for the diffuse color ('color' won't be modified if the property is not set)
 .. _ai_uvsrc:
    
 How to map UV channels to textures (MATKEY_UVWSRC)
-==================================================
+--------------------------------------------------
 
 The MATKEY_UVWSRC property is only present if the source format doesn't specify an explicit mapping from
 textures to UV channels. Many formats don't do this and assimp is not aware of a perfect rule either.
@@ -846,7 +852,7 @@ to handle most cases properly:
 .. _ai_pseudo:
 
 Pseudo Code Listing
-===================
+-------------------
 
 For completeness, the following is a very rough pseudo-code sample showing how to evaluate Assimp materials in your
 shading pipeline. You'll probably want to limit your handling of all those material keys to a reasonable subset suitable for your purposes
@@ -983,7 +989,7 @@ Also note that this sample is targeted at a (shader-based) rendering pipeline fo
 .. _ai_shdacc:
 
 How to access shader-code from a texture (AI_MATKEY_GLOBAL_SHADERLANG and AI_MATKEY_SHADER_VERTEX, ...)
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
 
 You can get assigned shader sources by using the following material keys:
 
@@ -998,19 +1004,19 @@ You can get assigned shader sources by using the following material keys:
 .. _ai_perf:
 
 Performance
-===========
+-----------
 
 .. _ai_perf_overview:
 
 Overview
-================
+--------
 
 This page discusses general performance issues related to assimp.
 
 .. _ai_perf_profile:
 
 Profiling
-==================
+---------
 
 Assimp has built-in support for <i>very</i> basic profiling and time measurement. To turn it on, set the <tt>GLOB_MEASURE_TIME</tt>
 configuration switch to <tt>true</tt> (nonzero). Results are dumped to the log file, so you need to setup
@@ -1095,12 +1101,12 @@ matter (i.e. in an offline content pipeline).
 .._ai_threading:
 
 Threading
-=========
+---------
 
 .. _ai_overview:
 
 Overview
-==================
+--------
 
 This page discusses both assimps scalability in threaded environments and the precautions to be taken in order to
 use it from multiple threads concurrently.
@@ -1108,7 +1114,7 @@ use it from multiple threads concurrently.
 .. _ai_threadsafety:
 
 Thread-safety / using Assimp concurrently from several threads
-============================================================================================================================
+--------------------------------------------------------------
 
 The library can be accessed by multiple threads simultaneously, as long as the
 following prerequisites are fulfilled:
@@ -1128,14 +1134,14 @@ with 'slow' file formats like X or Collada might scale well with multiple concur
 .. _ai_automt:
 
 Internal threading
-====================================
+------------------
 
 Internal multi-threading is not currently implemented.
 
 .. _ai_res:
 
 Resources
-=========
+---------
 
 This page lists some useful resources for assimp. Note that, even though the core team has an eye on them,
 we cannot guarantee the accuracy of third-party information. If in doubt, it's best to ask either on the
@@ -1155,14 +1161,14 @@ Importer Notes
 .. _ai_blender:
 
 Blender
-==============
+-------
 
 This section contains implementation notes for the Blender3D importer.
 
 .. _aibl_overview:
 
 Overview
-========================
+--------
 
 assimp provides a self-contained reimplementation of Blender's so called SDNA system (http://www.blender.org/development/architecture/notes-on-sdna/).
 SDNA allows Blender to be fully backward and forward compatible and to exchange
@@ -1174,7 +1180,7 @@ custom exporter from Blender if assimps format coverage does not meet the requir
 .. _ai_bl_status:
 
 Current status
-==========================================
+--------------
 
 The Blender loader does not support animations yet, but is apart from that considered relatively stable.
 
@@ -1185,7 +1191,7 @@ When filing bugs on the Blender loader, always give the Blender version (or, eve
 .. _ai_ifc:
 
 IFC
-======
+---
 
 This section contains implementation notes on the IFC-STEP importer.
 
@@ -1193,7 +1199,7 @@ This section contains implementation notes on the IFC-STEP importer.
 .. _ai_ifc_overview:
 
 Overview
-========================
+--------
 
 The library provides a partial implementation of the IFC2x3 industry standard for automatized exchange of CAE/architectural
 data sets. See http://en.wikipedia.org/wiki/Industry_Foundation_Classes for more information on the format. We aim
@@ -1202,14 +1208,14 @@ at getting as much 3D data out of the files as possible.
 .. _ai_ifc_status:
 
 Current status
-==========================================
+--------------
 
 IFC support is new and considered experimental. Please report any bugs you may encounter.
 
 .. _ai_ifc_notes:
 
 Notes
-===============
+-----
 
 - Only the STEP-based encoding is supported. IFCZIP and IFCXML are not (but IFCZIP can simply be unzipped to get a STEP file).
 - The importer leaves vertex coordinates untouched, but applies a global scaling to the root transform to
@@ -1225,14 +1231,14 @@ Notes
 .. _ai_ifc_metadata:
 
 Metadata
-========================
+--------
 
 IFC file properties (IfcPropertySet) are kept as per-node metadata, see aiNode::mMetaData.
 
 .. _ai_ogre:
 
 Ogre
-========
+----
 
 *ATTENTION*: The Ogre-Loader is currently under development, many things have changed after this documentation was written, but they are not final enough to rewrite the documentation. So things may have changed by now!
 
@@ -1241,14 +1247,14 @@ This section contains implementations notes for the OgreXML importer.
 .. _ai_ogre_overview:
 
 Overview
-========================
+--------
 
 Ogre importer is currently optimized for the Blender Ogre exporter, because that's the only one that I use. You can find the Blender Ogre exporter at: http://www.ogre3d.org/forums/viewtopic.php?f=8&t=45922
 
 .. _ai_what:
 
 What will be loaded?
-============================================================
+--------------------
 
 Mesh: Faces, Positions, Normals and all TexCoords. The Materialname will be used to load the material.
 
@@ -1262,7 +1268,7 @@ animations with rotation, translation and scaling keys.
 .. _ai_export_Blender:
 
 How to export Files from Blender
-================================
+--------------------------------
 
 You can find information about how to use the Ogreexporter by your own, so here are just some options that you need, so the assimp
 importer will load everything correctly:
@@ -1274,8 +1280,8 @@ importer will load everything correctly:
 
 .. _ai_xml:
 
-XML Format
-====================
+XML-Format
+----------
 
 There is a binary and a XML mesh Format from Ogre. This loader can only
 Handle xml files, but don't panic, there is a command line converter, which you can use
@@ -1309,7 +1315,7 @@ Just look in OgreImporterMaterial.cpp
 .. ai_importer:
 
 Properties
-====================
+----------
 
 -	IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME: Normally, a texture is loaded as a colormap, if no
 	target is specified in the
@@ -1328,12 +1334,12 @@ Properties
 .. _ai_extend:
 
 Extending the Library
-=====================
+---------------------
 
 .. _ai_general:
 
 General
-==============
+-------
 
 Or - how to write your own loaders. It's easy. You just need to implement the #Assimp::BaseImporter class,
 which defines a few abstract methods, register your loader, test it carefully and provide test models for it.
@@ -1377,7 +1383,7 @@ Wrap the same guard around your .cpp!
 .. _ai_properties:
 
 Properties
-====================
+----------
 
 You can use properties to chance the behavior of you importer. In order to do so, you have to override BaseImporter::SetupProperties, and specify
 you custom properties in config.h. Just have a look to the other AI_CONFIG_IMPORT_* defines and you will understand, how it works.
@@ -1388,7 +1394,7 @@ store the properties as a member variable of your importer, they are thread safe
 .. _ai_tnote:
 
 Notes for text importers
-================================================
+------------------------
 
 * Try to make your parser as flexible as possible. Don't rely on particular layout, whitespace/tab style,
   except if the file format has a strict definition, in which case you should always warn about spec violations.
@@ -1400,7 +1406,7 @@ Notes for text importers
 .. _ai_bnote:
 
 Notes for binary importers
-====================================================
+--------------------------
 
 * Take care of endianness issues! Assimp importers mostly support big-endian platforms, which define the <tt>AI_BUILD_BIG_ENDIAN</tt> constant.
   See the next section for a list of utilities to simplify this task.
@@ -1410,7 +1416,7 @@ Notes for binary importers
 .. _ai_util:
 
 Utilities
-==================
+---------
 
 Mixed stuff for internal use by loaders, mostly documented (most of them are already included by <i>AssimpPCH.h</i>):
 
@@ -1432,7 +1438,7 @@ Mixed stuff for internal use by loaders, mostly documented (most of them are alr
 .. _ai_mat:
 
 Filling materials
-==================================
+-----------------
 
 The required definitions zo set/remove/query keys in #aiMaterial structures are declared in <i>MaterialSystem.h</i>, in a
 #aiMaterial derivate called #aiMaterial. The header is included by AssimpPCH.h, so you don't need to bother.
@@ -1454,7 +1460,7 @@ The required definitions zo set/remove/query keys in #aiMaterial structures are 
 .. _ai_appa:
 
 Appendix A - Template for BaseImporter's abstract methods
-==================================================================================================================
+---------------------------------------------------------
 
 ::
 
@@ -1514,12 +1520,12 @@ Appendix A - Template for BaseImporter's abstract methods
 .. _ai_AnimationOverview:
 
 Animation Overview
-==================
+-------------------
 
 .. _ai_Transformations:
 
 Transformations
-==============================
+---------------
 
  This diagram shows how you can calculate your transformationmatrices for an animated character:
  <img src="AnimationOverview.png" />
