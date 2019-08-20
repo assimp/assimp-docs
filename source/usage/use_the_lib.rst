@@ -492,14 +492,14 @@ There might be cases where animation tracks refer to a non-existent node by thei
 should not be the case in your every-day data.
 
 To apply such an animation you need to identify the animation tracks that refer to actual bones
-in your mesh. Then for every track: <br>
-* Find the keys that lay right before the current anim time. <br>
-* Optional: interpolate between these and the following keys. <br>
-* Combine the calculated position, rotation and scaling to a transformation matrix <br>
-* Set the affected node's transformation to the calculated matrix. <br>
+in your mesh. Then for every track:
+* Find the keys that lay right before the current anim time.
+* Optional: interpolate between these and the following keys.
+* Combine the calculated position, rotation and scaling to a transformation matrix
+* Set the affected node's transformation to the calculated matrix.
 
 If you need hints on how to convert to or from quaternions, have a look at the
-`Matrix & Quaternion FAQ http://www.j3d.org/matrix_faq/matrfaq_latest.html`_. I suggest
+`Matrix & Quaternion FAQ <http://www.j3d.org/matrix_faq/matrfaq_latest.html>`_. I suggest
 using logarithmic interpolation for the scaling keys if you happen to need them - usually you don't
 need them at all.
 
@@ -1148,10 +1148,10 @@ we cannot guarantee the accuracy of third-party information. If in doubt, it's b
 mailing list or on our forums on SF.net.
 
  * assimp comes with some sample applications, these can be found in the <i>./samples</i> folder. Don't forget to read the <i>README</i> file.
- * `Assimp-GL-Demo http://www.drivenbynostalgia.com/files/AssimpOpenGLDemo.rar`_ - OpenGl animation sample using the library's animation import facilities.
- * `Assimp-Animation-Loader http://nolimitsdesigns.com/game-design/open-asset-import-library-animation-loader/`_ is another utility to
+ * `Assimp-GL-Demo <http://www.drivenbynostalgia.com/files/AssimpOpenGLDemo.rar>`_ - OpenGl animation sample using the library's animation import facilities.
+ * `Assimp-Animation-Loader <http://nolimitsdesigns.com/game-design/open-asset-import-library-animation-loader/>`_ is another utility to
    simplify animation playback.
- * `Assimp-Animations http://ogldev.atspace.co.uk/www/tutorial22/tutorial22.html`_ - Tutorial "Loading models using the Open Asset Import Library", out of a series of OpenGl tutorials.
+ * `Assimp-Animations <http://ogldev.atspace.co.uk/www/tutorial22/tutorial22.html>`_ - Tutorial "Loading models using the Open Asset Import Library", out of a series of OpenGl tutorials.
 
 .. _ai_importer_notes:
 
@@ -1202,7 +1202,7 @@ Overview
 --------
 
 The library provides a partial implementation of the IFC2x3 industry standard for automatized exchange of CAE/architectural
-data sets. See `IFC http://en.wikipedia.org/wiki/Industry_Foundation_Classes`_ for more information on the format. We aim
+data sets. See `IFC <http://en.wikipedia.org/wiki/Industry_Foundation_Classes>`_ for more information on the format. We aim
 at getting as much 3D data out of the files as possible.
 
 .. _ai_ifc_status:
@@ -1249,7 +1249,7 @@ This section contains implementations notes for the OgreXML importer.
 Overview
 --------
 
-Ogre importer is currently optimized for the Blender Ogre exporter, because that's the only one that I use. You can find the Blender Ogre exporter at: `OGRE3D forum http://www.ogre3d.org/forums/viewtopic.php?f=8&t=45922`_
+Ogre importer is currently optimized for the Blender Ogre exporter, because that's the only one that I use. You can find the Blender Ogre exporter at: `OGRE3D forum <http://www.ogre3d.org/forums/viewtopic.php?f=8&t=45922>`_
 
 .. _ai_what:
 
