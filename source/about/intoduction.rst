@@ -55,7 +55,7 @@ that it has not been implemented yet and some (most ...) formats lack proper spe
 
 See the @link importer_notes Importer Notes Page @endlink for information, what a specific importer can do and what not.
 Note that although this paper claims to be the official documentation,
-https://github.com/assimp/assimp/blob/master/Readme.md
+README.md `https://github.com/assimp/assimp/blob/master/Readme.md`_
 <br>is usually the most up-to-date list of file formats supported by the library. <br>
 
 Assimp is independent of the Operating System by nature, providing a C++ interface for easy integration
