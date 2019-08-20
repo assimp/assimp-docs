@@ -28,7 +28,7 @@ copyright = '2019, Kim Kulling'
 author = 'Kim Kulling'
 
 # The full version, including alpha/beta/rc tags
-release = 'May 2019'
+release = 'September 2019'
 
 
 # -- General configuration ---------------------------------------------------
