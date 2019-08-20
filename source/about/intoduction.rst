@@ -56,7 +56,7 @@ that it has not been implemented yet and some (most ...) formats lack proper spe
 See the @link importer_notes Importer Notes Page @endlink for information, what a specific importer can do and what not.
 Note that although this paper claims to be the official documentation,
 `README.md <https://github.com/assimp/assimp/blob/master/Readme.md>`_
-<br>is usually the most up-to-date list of file formats supported by the library. <br>
+is usually the most up-to-date list of file formats supported by the library. <br>
 
 Assimp is independent of the Operating System by nature, providing a C++ interface for easy integration
 with game engines and a C interface to allow bindings to other programming languages. At the moment the library runs
@@ -90,7 +90,7 @@ If you want to use assimp on Ubuntu you can install it via the following command
     sudo apt-get install assimp
 
 If you want to use the python-assimp-port just follow these instructions: 
-`PyAssimp Doc https://github.com/assimp/assimp/tree/master/port/PyAssimp`_
+`PyAssimp Doc <https://github.com/assimp/assimp/tree/master/port/PyAssimp>`_
 
 .. _ai_main_usage:
 
@@ -100,7 +100,8 @@ Usage
 When you're done integrating the library into your IDE / project, you can now start using it. There are two separate
 interfaces by which you can access the library: a C++ interface and a C interface using flat functions. While the former
 is easier to handle, the latter also forms a point where other programming languages can connect to. Up to the moment, though,
-there are no bindings for any other language provided. Have a look at the @link usage Usage page @endlink for a detailed explanation and code examples.
+there are no bindings for any other language provided. Have a look at the @link usage Usage page @endlink for a detailed
+explanation and code examples.
 
 .. _ai_main_data:
 
@@ -128,8 +129,8 @@ Support & Feedback
 ------------------
 
 If you have any questions/comments/suggestions/bug reports you're welcome to post them in our
-`Github Issues for Assimp https://github.com/assimp/assimp/issues`_. Alternatively there's
-a mailing list, `assimp-discussions https://sourceforge.net/mailarchive/forum.php?forum_name=assimp-discussions`_
+`Github-Issue-Tracker <https://github.com/assimp/assimp/issues>`_. Alternatively there's
+a mailing list, `assimp-discussions <https://sourceforge.net/mailarchive/forum.php?forum_name=assimp-discussions>`_
 .
 
 
@@ -138,7 +139,7 @@ a mailing list, `assimp-discussions https://sourceforge.net/mailarchive/forum.ph
 Using the pre-built libraries with Visual-Studio
 ------------------------------------------------
 
-If you develop at Visual Studio 2015, 2017 or 2019, you can simply use the pre-built linker libraries provided in the distribution.
+If you develop at Visual Studio 2013, 2015, 2017 or 2019, you can simply use the pre-built linker libraries provided in the distribution.
 Extract all files to a place of your choice. A directory called "assimp" will be created there. Add the assimp/include path
 to your include paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Include files)
 and the assimp/lib/&lt;Compiler&gt; path to your linker paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Library files).
