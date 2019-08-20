@@ -499,7 +499,7 @@ in your mesh. Then for every track: <br>
 * Set the affected node's transformation to the calculated matrix. <br>
 
 If you need hints on how to convert to or from quaternions, have a look at the
-<a href="http://www.j3d.org/matrix_faq/matrfaq_latest.html">Matrix&Quaternion FAQ</a>. I suggest
+`Matrix & Quaternion FAQ http://www.j3d.org/matrix_faq/matrfaq_latest.html`_. I suggest
 using logarithmic interpolation for the scaling keys if you happen to need them - usually you don't
 need them at all.
 
@@ -508,7 +508,7 @@ need them at all.
 Blenshapes
 ----------
 
-ToDo
+ToDo!
 
 
 Textures
@@ -866,7 +866,7 @@ Also note that this sample is targeted at a (shader-based) rendering pipeline fo
 	// Evaluate multiple textures stacked on top of each other
 	float3 EvaluateStack(stack)
 	{
-      // For the 'diffuse' stack stack.base_color would be COLOR_DIFFUSE
+          // For the 'diffuse' stack stack.base_color would be COLOR_DIFFUSE
 	  // and TEXTURE(aiTextureType_DIFFUSE,n) the n'th texture.
 
 	  float3 base = stack.base_color;
@@ -1148,10 +1148,10 @@ we cannot guarantee the accuracy of third-party information. If in doubt, it's b
 mailing list or on our forums on SF.net.
 
  * assimp comes with some sample applications, these can be found in the <i>./samples</i> folder. Don't forget to read the <i>README</i> file.
- * http://www.drivenbynostalgia.com/files/AssimpOpenGLDemo.rar - OpenGl animation sample using the library's animation import facilities.
- * http://nolimitsdesigns.com/game-design/open-asset-import-library-animation-loader/ is another utility to
+ * `Assimp-GL-Demo http://www.drivenbynostalgia.com/files/AssimpOpenGLDemo.rar`_ - OpenGl animation sample using the library's animation import facilities.
+ * `Assimp-Animation-Loader http://nolimitsdesigns.com/game-design/open-asset-import-library-animation-loader/`_ is another utility to
    simplify animation playback.
- * http://ogldev.atspace.co.uk/www/tutorial22/tutorial22.html - Tutorial "Loading models using the Open Asset Import Library", out of a series of OpenGl tutorials.
+ * `Assimp-Animations http://ogldev.atspace.co.uk/www/tutorial22/tutorial22.html`_ - Tutorial "Loading models using the Open Asset Import Library", out of a series of OpenGl tutorials.
 
 .. _ai_importer_notes:
 
@@ -1170,7 +1170,7 @@ This section contains implementation notes for the Blender3D importer.
 Overview
 --------
 
-assimp provides a self-contained reimplementation of Blender's so called SDNA system (http://www.blender.org/development/architecture/notes-on-sdna/).
+assimp provides a self-contained reimplementation of Blender's so called SDNA system ( `Notes on SDNA http://www.blender.org/development/architecture/notes-on-sdna/`_ ).
 SDNA allows Blender to be fully backward and forward compatible and to exchange
 files across all platforms. The BLEND format is thus a non-trivial binary monster and the loader tries to read the most of it,
 naturally limited by the scope of the #aiScene output data structure.
@@ -1202,7 +1202,7 @@ Overview
 --------
 
 The library provides a partial implementation of the IFC2x3 industry standard for automatized exchange of CAE/architectural
-data sets. See http://en.wikipedia.org/wiki/Industry_Foundation_Classes for more information on the format. We aim
+data sets. See `IFC http://en.wikipedia.org/wiki/Industry_Foundation_Classes`_ for more information on the format. We aim
 at getting as much 3D data out of the files as possible.
 
 .. _ai_ifc_status:
@@ -1249,7 +1249,7 @@ This section contains implementations notes for the OgreXML importer.
 Overview
 --------
 
-Ogre importer is currently optimized for the Blender Ogre exporter, because that's the only one that I use. You can find the Blender Ogre exporter at: http://www.ogre3d.org/forums/viewtopic.php?f=8&t=45922
+Ogre importer is currently optimized for the Blender Ogre exporter, because that's the only one that I use. You can find the Blender Ogre exporter at: `OGRE3D forum http://www.ogre3d.org/forums/viewtopic.php?f=8&t=45922`_
 
 .. _ai_what:
 
