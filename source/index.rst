@@ -6,7 +6,7 @@
 Welcome to the Asset-Importer-Lib
 =================================
 
-.. image:: https://github.com/assimp/assimp-web/blob/master/images/splash.png
+.. image:: http://assimp.org/images/splash.png
 
 .. toctree::
    :maxdepth: 2
