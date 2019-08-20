@@ -89,7 +89,8 @@ If you want to use assimp on Ubuntu you can install it via the following command
 
     sudo apt-get install assimp
 
-If you want to use the python-assimp-port just follow these instructions: https://github.com/assimp/assimp/tree/master/port/PyAssimp
+If you want to use the python-assimp-port just follow these instructions: 
+`PyAssimp Doc https://github.com/assimp/assimp/tree/master/port/PyAssimp`_
 
 .. _ai_main_usage:
 
@@ -127,9 +128,9 @@ Support & Feedback
 ------------------
 
 If you have any questions/comments/suggestions/bug reports you're welcome to post them in our
-<a href="https://github.com/assimp/assimp/issues">Github Issues for Assimp</a>. Alternatively there's
-a mailing list, <a href="https://sourceforge.net/mailarchive/forum.php?forum_name=assimp-discussions">
-assimp-discussions</a>.
+`Github Issues for Assimp https://github.com/assimp/assimp/issues`_. Alternatively there's
+a mailing list, `assimp-discussions https://sourceforge.net/mailarchive/forum.php?forum_name=assimp-discussions`_
+.
 
 
 .. _ai_install_prebuilt:
