@@ -9,14 +9,14 @@ Welcome to the Asset-Importer-Lib
 .. image:: http://assimp.org/images/splash.png
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: General
    :name: sec-general
    
    about/intoduction
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Getting started
    :name: sec-learn
 
