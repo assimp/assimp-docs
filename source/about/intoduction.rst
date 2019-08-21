@@ -56,11 +56,11 @@ that it has not been implemented yet and some (most ...) formats lack proper spe
 See the :ref:`_ai_importer_notes <importer_notes>` for information, what a specific importer can do and what not.
 Note that although this paper claims to be the official documentation,
 `README.md <https://github.com/assimp/assimp/blob/master/Readme.md>`_
-is usually the most up-to-date list of file formats supported by the library. <br>
+is usually the most up-to-date list of file formats supported by the library.
 
 Assimp is independent of the Operating System by nature, providing a C++ interface for easy integration
 with game engines and a C interface to allow bindings to other programming languages. At the moment the library runs
-on any little-endian platform including X86/Windows/Linux/Mac and X64/Windows/Linux/Mac. Special attention
+on any little-endian platform including **X86/Windows/Linux/Mac** and **X64/Windows/Linux/Mac**. Special attention
 was paid to keep the library as free as possible from dependencies.
 
 Big endian systems such as PPC-Macs or PPC-Linux systems are not officially supported at the moment. However, most
@@ -72,7 +72,7 @@ as long as you retain the license information and take own responsibility for wh
 the LICENSE file.
 
 You can find test models for almost all formats in the <assimp_root>/test/models directory. Beware, they're *free*,
-but not all of them are *open-source*. If there's an accompagning '<file>\source.txt' file don't forget to read it.
+but not all of them are **open-source**. If there's an accompagning **'<file>\source.txt'** file don't forget to read it.
 
 .. _ai_main_install:
 
