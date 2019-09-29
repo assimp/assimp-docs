@@ -133,7 +133,6 @@ If you have any questions/comments/suggestions/bug reports you're welcome to pos
 a mailing list, `assimp-discussions <https://sourceforge.net/mailarchive/forum.php?forum_name=assimp-discussions>`_
 .
 
-
 .. _ai_install_prebuilt:
 
 Using the pre-built libraries with Visual-Studio
@@ -160,6 +159,24 @@ Now just add the assimp-dependency to your application:
 
 
 If done correctly you should now be able to compile, link, run and use the application. 
+
+.. _ai_install_prebuilt_vcpg:
+
+Build on all platforms using vcpkg
+----------------------------------
+
+You can download and install assimp using the [vcpkg](https://github.com/Microsoft/vcpkg/) dependency manager:
+::
+
+    bash
+    git clone https://github.com/Microsoft/vcpkg.git
+    cd vcpkg
+    ./bootstrap-vcpkg.sh
+    ./vcpkg integrate install
+    vcpkg install assimp
+
+The assimp port in vcpkg is kept up to date by Microsoft team members and community contributors. If the version is out of date, please [create an issue or pull request](https://github.com/Microsoft/vcpkg) on the vcpkg repository.
+
 
 .. _ai_install_own:
 
