@@ -549,7 +549,9 @@ There are two cases:
 Material-System
 ---------------
 
-@section General Overview
+General Overview
+################################
+
 All materials are stored in an array of aiMaterial inside the aiScene.
 
 Each aiMesh refers to one
@@ -562,7 +564,7 @@ presence of certain properties in a material and retrieve their values.
 .. _ai_mat_tex:
 
 Textures
---------
+################
 
 Textures are organized in stacks, each stack being evaluated independently. The final color value from a particular texture stack is used in the shading equation. 
 For example, the computed color value of the diffuse texture stack (aiTextureType_DIFFUSE) is multiplied with the amount of incoming diffuse light to obtain the 
@@ -600,7 +602,7 @@ final diffuse color of a pixel.
 .. _ai_keys:
 
 Constants
----------
+##################
 
 All material key constants start with 'AI_MATKEY' as a prefix.
 
@@ -767,7 +769,7 @@ All material key constants start with 'AI_MATKEY' as a prefix.
 .. _ai_cpp:
 
 C++-API
-=======
+##############
 
 Retrieving a property from a material is done using various utility functions. For C++ it's simply calling aiMaterial::Get()
 
@@ -801,7 +803,7 @@ Don't follow this advice if you wish to encounter very strange results.
 .. _ai_c:
 
 C-API
------
+#########
 
 For good old C it's slightly different. Take a look at the aiGetMaterialGet<data-type> functions.
 
@@ -852,7 +854,7 @@ to handle most cases properly:
 .. _ai_pseudo:
 
 Pseudo Code Listing
--------------------
+######################################
 
 For completeness, the following is a very rough pseudo-code sample showing how to evaluate Assimp materials in your
 shading pipeline. You'll probably want to limit your handling of all those material keys to a reasonable subset suitable for your purposes
@@ -989,7 +991,7 @@ Also note that this sample is targeted at a (shader-based) rendering pipeline fo
 .. _ai_shdacc:
 
 How to access shader-code from a texture (AI_MATKEY_GLOBAL_SHADERLANG and AI_MATKEY_SHADER_VERTEX, ...)
--------------------------------------------------------------------------------------------------------
+##############################################################################################################################################################################################################
 
 You can get assigned shader sources by using the following material keys:
 
