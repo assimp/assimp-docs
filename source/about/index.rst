@@ -5,7 +5,7 @@ About
    :maxdepth: 1
    :name: toc-about
 
-   intoduction
+   introduction
  
 .. history
 .. authors
