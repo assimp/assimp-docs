@@ -20,8 +20,7 @@ results and then simply let it go out of scope.
     #include <assimp/scene.h>           // Output data structure
     #include <assimp/postprocess.h>     // Post processing flags
 
-    bool DoTheImportThing( const std::string& pFile)
-    {
+    bool DoTheImportThing( const std::string& pFile) {
       // Create an instance of the Importer class
       Assimp::Importer importer;
 
@@ -35,8 +34,7 @@ results and then simply let it go out of scope.
         aiProcess_SortByPType);
 
       // If the import failed, report it
-      if( !scene)
-      {
+      if( !scene) {
         DoTheErrorLogging( importer.GetErrorString());
         return false;
       }
@@ -75,8 +73,7 @@ imported scene to clean up all resources associated with the import.
     #include <assimp/scene.h>          // Output data structure
     #include <assimp/postprocess.h>    // Post processing flags
 
-    bool DoTheImportThing( const char* pFile)
-    {
+    bool DoTheImportThing( const char* pFile) {
       // Start the import on the given file with some example postprocessing
       // Usually - if speed is not the most important aspect for you - you'll t
       // probably to request more postprocessing than we do in this example.
@@ -87,8 +84,7 @@ imported scene to clean up all resources associated with the import.
         aiProcess_SortByPType);
 
       // If the import failed, report it
-      if( !scene)
-      {
+      if( nullptr != scene) {
         DoTheErrorLogging( aiGetErrorString());
         return false;
       }
@@ -118,16 +114,15 @@ custom implementations of IOStream and IOSystem. A shortened example might look 
     #include <assimp/IOSystem.hpp>
 
     // My own implementation of IOStream
-    class MyIOStream : public Assimp::IOStream
-    {
+    class MyIOStream : public Assimp::IOStream {
       friend class MyIOSystem;
 
     protected:
       // Constructor protected for private usage by MyIOSystem
-      MyIOStream(void);
+      MyIOStream();
 
     public:
-      ~MyIOStream(void);
+      ~MyIOStream();
       size_t Read( void* pvBuffer, size_t pSize, size_t pCount) { ... }
       size_t Write( const void* pvBuffer, size_t pSize, size_t pCount) { ... }
       aiReturn Seek( size_t pOffset, aiOrigin pOrigin) { ... }
@@ -137,8 +132,7 @@ custom implementations of IOStream and IOSystem. A shortened example might look 
     };
 
     // Fisher Price - My First Filesystem
-    class MyIOSystem : public Assimp::IOSystem
-    {
+    class MyIOSystem : public Assimp::IOSystem {
       MyIOSystem() { ... }
       ~MyIOSystem() { ... }
 
@@ -169,8 +163,7 @@ An example:
 
 ::
 
-    void DoTheImportThing( const std::string& pFile)
-    {
+    void DoTheImportThing( const std::string& pFile) {
       Assimp::Importer importer;
       // put my custom IO handling in place
       importer.SetIOHandler( new MyIOSystem());
@@ -227,12 +220,10 @@ Just derivate your own logger from the abstract base class LogStream and overwri
 ::
 
     // Example stream
-    class myStream : public LogStream
-    {
+    class myStream : public LogStream {
     public:
         // Write womethink using your own functionality
-        void write(const char* message)
-        {
+        void write(const char* message) {
             ::printf("%s\n", message);
         }
     };
@@ -368,14 +359,12 @@ following pseudocode:
 
 ::
 
-	void CopyNodesWithMeshes( aiNode node, SceneObject targetParent, Matrix4x4 accTransform)
-	{
+	void CopyNodesWithMeshes( aiNode node, SceneObject targetParent, Matrix4x4 accTransform) {
 	  SceneObject parent;
 	  Matrix4x4 transform;
 
 	  // if node has meshes, create a new scene object for it
-	  if( node.mNumMeshes > 0)
-	  {
+	  if( node.mNumMeshes > 0) {
 		SceneObjekt newObject = new SceneObject;
 		targetParent.addChild( newObject);
 		// copy the meshes
@@ -384,16 +373,16 @@ following pseudocode:
 		// the new object is the parent for all child nodes
 		parent = newObject;
 		transform.SetUnity();
-	  } else
-	  {
+	  } else {
 		// if no meshes, skip the node, but keep its transformation
 		parent = targetParent;
 		transform = node.mTransformation * accTransform;
 	  }
 
 	  // continue for all child nodes
-	  for( all node.mChildren)
+	  for( all node.mChildren) {
 		CopyNodesWithMeshes( node.mChildren[a], parent, transform);
+          }
 	}
 	
 This function copies a node into the scene graph if it has children. If yes, a new scene object
@@ -866,14 +855,12 @@ Also note that this sample is targeted at a (shader-based) rendering pipeline fo
 
 	// ---------------------------------------------------------------------------------------
 	// Evaluate multiple textures stacked on top of each other
-	float3 EvaluateStack(stack)
-	{
+	float3 EvaluateStack(stack) {
           // For the 'diffuse' stack stack.base_color would be COLOR_DIFFUSE
 	  // and TEXTURE(aiTextureType_DIFFUSE,n) the n'th texture.
 
 	  float3 base = stack.base_color;
-	  for (every texture in stack)
-	  {
+	  for (every texture in stack) {
 	    // assuming we have explicit & pretransformed UVs for this texture
 	    float3 color = SampleTexture(texture,uv);
 	
@@ -891,14 +878,12 @@ Also note that this sample is targeted at a (shader-based) rendering pipeline fo
 	
 	// ---------------------------------------------------------------------------------------
 	// Compute the diffuse contribution for a pixel
-	float3 ComputeDiffuseContribution()
-	{
+	float3 ComputeDiffuseContribution() {
 	  if (shading == none)
 	     return float3(1,1,1);
 
 	  float3 intensity (0,0,0);
-	  for (all lights in range)
-	  {
+	  for (all lights in range) {
 	    float fac = 1.f;
 	    if (shading == gouraud)
 	      fac =  lambert-term ..
@@ -916,14 +901,12 @@ Also note that this sample is targeted at a (shader-based) rendering pipeline fo
 	
 	// ---------------------------------------------------------------------------------------
 	// Compute the specular contribution for a pixel
-	float3 ComputeSpecularContribution()
-	{
+	float3 ComputeSpecularContribution() {
 	  if (shading == gouraud || specular_strength == 0 || specular_exponent == 0)
 	    return float3(0,0,0);
 
 	  float3 intensity (0,0,0);
-	  for (all lights in range)
-	  {
+	  for (all lights in range) {
 	    float fac = 1.f;
 	    if (shading == phong)
 	      fac =  phong-term ..
@@ -941,14 +924,12 @@ Also note that this sample is targeted at a (shader-based) rendering pipeline fo
 	
 	// ---------------------------------------------------------------------------------------
 	// Compute the ambient contribution for a pixel
-	float3 ComputeAmbientContribution()
-	{
+	float3 ComputeAmbientContribution() {
 	  if (shading == none)
 	     return float3(0,0,0);
 	
 	  float3 intensity (0,0,0);
-	  for (all lights in range)
-	  {
+	  for (all lights in range) {
 	    float fac = 1.f;
 	
 	    // handling of different types of lights, such as point or spot lights
@@ -964,8 +945,7 @@ Also note that this sample is targeted at a (shader-based) rendering pipeline fo
 	// ---------------------------------------------------------------------------------------
 	// Compute the final color value for a pixel
 	// @param prev Previous color at that position in the framebuffer
-	float4 PimpMyPixel (float4 prev)
-	{
+	float4 PimpMyPixel (float4 prev) {
 	  // .. handle displacement mapping per vertex
 	  // .. handle bump/normal mapping
 	
@@ -1469,8 +1449,7 @@ Appendix A - Template for BaseImporter's abstract methods
     // -------------------------------------------------------------------------------
     // Returns whether the class can handle the format of the given file.
     bool xxxxImporter::CanRead( const std::string& pFile, IOSystem* pIOHandler,
-        bool checkSig) const
-    {
+          bool checkSig) const {
         const std::string extension = GetExtension(pFile);
         if(extension == "xxxx") {
             return true;
@@ -1498,15 +1477,13 @@ Appendix A - Template for BaseImporter's abstract methods
 
     // -------------------------------------------------------------------------------
     // Get list of file extensions handled by this loader
-    void xxxxImporter::GetExtensionList(std::set<std::string>& extensions)
-    {
+    void xxxxImporter::GetExtensionList(std::set<std::string>& extensions) {
         extensions.insert("xxx");
     }
 
     // -------------------------------------------------------------------------------
     void xxxxImporter::InternReadFile( const std::string& pFile,
-        aiScene* pScene, IOSystem* pIOHandler)
-    {
+          aiScene* pScene, IOSystem* pIOHandler) {
         std::unique_ptr<IOStream> file( pIOHandler->Open( pFile, "rb"));
 
         // Check whether we can read from the file
