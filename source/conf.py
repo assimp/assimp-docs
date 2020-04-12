@@ -24,11 +24,11 @@ master_doc = 'index'
 # -- Project information -----------------------------------------------------
 
 project = 'Asset-Importer-Lib'
-copyright = '2019, Kim Kulling'
+copyright = '2020, Kim Kulling'
 author = 'Kim Kulling'
 
 # The full version, including alpha/beta/rc tags
-release = 'September 2019'
+release = 'April 2020'
 
 
 # -- General configuration ---------------------------------------------------
