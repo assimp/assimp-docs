@@ -10,7 +10,7 @@ Welcome to the Asset-Importer-Lib Documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: General
+   :caption: Introduction
    :name: sec-general
    
    about/introduction
