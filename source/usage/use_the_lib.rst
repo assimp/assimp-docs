@@ -1,7 +1,7 @@
 .. _ai_access_cpp:
 
 Access by C++ class interface
-=============================
+-----------------------------
 
 The assimp library can be accessed by both a class or flat function interface. The C++ class
 interface is the preferred way of interaction: you create an instance of class Assimp::Importer,
