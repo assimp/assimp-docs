@@ -976,12 +976,12 @@ Also note that this sample is targeted at a (shader-based) rendering pipeline fo
 
 .. _ai_shdacc:
 
-How to access shader-code from a texture (AI_MATKEY_GLOBAL_SHADERLANG and AI_MATKEY_SHADER_VERTEX, ...)
-##############################################################################################################################################################################################################
-
+How to access shader-code
+-------------------------
+You can get the shadercode like a texture (AI_MATKEY_GLOBAL_SHADERLANG and AI_MATKEY_SHADER_VERTEX, ...)
 You can get assigned shader sources by using the following material keys:
 
-*  *AI_MATKEY_GLOBAL_SHADERLANG* To get the used shader language.
+* *AI_MATKEY_GLOBAL_SHADERLANG*  To get the used shader language.
 * *AI_MATKEY_SHADER_VERTEX*      Assigned vertex shader code stored as a string.
 * *AI_MATKEY_SHADER_FRAGMENT*    Assigned fragment shader code stored as a string.
 * *AI_MATKEY_SHADER_GEO*         Assigned geometry shader code stored as a string.
@@ -992,7 +992,7 @@ You can get assigned shader sources by using the following material keys:
 .. _ai_perf:
 
 Performance
------------
+===========
 
 .. _ai_perf_overview:
 
