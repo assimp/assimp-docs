@@ -989,6 +989,21 @@ You can get assigned shader sources by using the following material keys:
 * *AI_MATKEY_SHADER_PRIMITIVE*   Assigned primitive shader code stored as a string.
 * *AI_MATKEY_SHADER_COMPUTE*     Assigned compute shader code stored as a string.
 
+.. _ai_AnimationOverview:
+
+Animation Overview
+==================
+
+
+.. _ai_Transformations:
+
+Transformations
+---------------
+
+ This diagram shows how you can calculate your transformationmatrices for an animated character:
+ <img src="AnimationOverview.png" />
+
+
 .. _ai_perf:
 
 Performance
@@ -1447,8 +1462,10 @@ The required definitions zo set/remove/query keys in #aiMaterial structures are 
     
 .. _ai_appa:
 
-Appendix A - Template for BaseImporter's abstract methods
-=========================================================
+Appendix A 
+===========
+Template for BaseImporter's abstract methods
+--------------------------------------------
 
 ::
 
@@ -1501,16 +1518,3 @@ Appendix A - Template for BaseImporter's abstract methods
         // Throw a ImportErrorException with a meaningful (!) error message if
         // something goes wrong.
     }
-
-.. _ai_AnimationOverview:
-
-Animation Overview
--------------------
-
-.. _ai_Transformations:
-
-Transformations
----------------
-
- This diagram shows how you can calculate your transformationmatrices for an animated character:
- <img src="AnimationOverview.png" />
