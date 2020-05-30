@@ -1448,7 +1448,7 @@ The required definitions zo set/remove/query keys in #aiMaterial structures are 
 .. _ai_appa:
 
 Appendix A - Template for BaseImporter's abstract methods
----------------------------------------------------------
+=========================================================
 
 ::
 
