@@ -1,5 +1,8 @@
 .. _ai_access_cpp:
 
+Importing Data
+==============
+
 Access by C++ class interface
 -----------------------------
 
@@ -267,7 +270,10 @@ kind kind of logging might decrease import performance.
 .. _ai_data:
 
 Data Structures
----------------
+===============
+
+Introduction
+------------
 
 The assimp library returns the imported data in a collection of structures. aiScene forms the root
 of the data, from here you gain access to all the nodes, meshes, materials, animations or textures
@@ -536,7 +542,7 @@ There are two cases:
 .. _ai_materials:
 
 Material-System
----------------
+===============
 
 General Overview
 ################################
@@ -553,7 +559,7 @@ presence of certain properties in a material and retrieve their values.
 .. _ai_mat_tex:
 
 Textures
-################
+--------
 
 Textures are organized in stacks, each stack being evaluated independently. The final color value from a particular texture stack is used in the shading equation. 
 For example, the computed color value of the diffuse texture stack (aiTextureType_DIFFUSE) is multiplied with the amount of incoming diffuse light to obtain the 
@@ -591,7 +597,7 @@ final diffuse color of a pixel.
 .. _ai_keys:
 
 Constants
-##################
+---------
 
 All material key constants start with 'AI_MATKEY' as a prefix.
 
@@ -758,7 +764,7 @@ All material key constants start with 'AI_MATKEY' as a prefix.
 .. _ai_cpp:
 
 C++-API
-##############
+-------
 
 Retrieving a property from a material is done using various utility functions. For C++ it's simply calling aiMaterial::Get()
 
@@ -792,7 +798,7 @@ Don't follow this advice if you wish to encounter very strange results.
 .. _ai_c:
 
 C-API
-#########
+-----
 
 For good old C it's slightly different. Take a look at the aiGetMaterialGet<data-type> functions.
 
