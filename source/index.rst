@@ -17,11 +17,17 @@ The Asset-Importer-Lib Documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: Getting started
+   :caption: Using Assimp
    :name: sec-learn
 
    usage/use_the_lib
 
+.. toctree::
+    :maxdepth: 2
+    :caption: API-Reference
+    :name: sec-api
+    
+    API/API-Documentation.rst
 
 .. Indices and tables
 .. ==================
