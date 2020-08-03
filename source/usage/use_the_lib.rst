@@ -80,14 +80,14 @@ imported scene to clean up all resources associated with the import.
       // Start the import on the given file with some example postprocessing
       // Usually - if speed is not the most important aspect for you - you'll t
       // probably to request more postprocessing than we do in this example.
-      const aiScene* scene = aiImportFile( pFile,
+      const struct aiScene* scene = aiImportFile( pFile,
         aiProcess_CalcTangentSpace       |
         aiProcess_Triangulate            |
         aiProcess_JoinIdenticalVertices  |
         aiProcess_SortByPType);
 
       // If the import failed, report it
-      if( nullptr != scene) {
+      if( NULL != scene) {
         DoTheErrorLogging( aiGetErrorString());
         return false;
       }
