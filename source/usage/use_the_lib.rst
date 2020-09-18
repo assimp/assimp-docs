@@ -444,15 +444,26 @@ nodes which are not used by a bone in the mesh, but still affect the pose of the
 they have child nodes which are bones. So when creating the skeleton hierarchy for a mesh I
 suggest the following method:
 
-a) Create a map or a similar container to store which nodes are necessary for the skeleton.
-Pre-initialise it for all nodes with a "no". <br>
-b) For each bone in the mesh: <br>
-b1) Find the corresponding node in the scene's hierarchy by comparing their names. <br>
-b2) Mark this node as "yes" in the necessityMap. <br>
-b3) Mark all of its parents the same way until you 1) find the mesh's node or 2) the parent of the mesh's node. <br>
-c) Recursively iterate over the node hierarchy <br>
-c1) If the node is marked as necessary, copy it into the skeleton and check its children <br>
-c2) If the node is marked as not necessary, skip it and do not iterate over its children. <br>
+a. Create a map or a similar container to store which nodes are necessary for
+the skeleton. Pre-initialise it for all nodes with a "no".
+
+b. For each bone in the mesh:
+
+    b1. Find the corresponding node in the scene's hierarchy by comparing their names.
+
+    b2. Mark this node as "yes" in the necessityMap.
+
+    b3. Mark all of its parents the same way until you
+
+        1. find the mesh's node or
+        2. the parent of the mesh's node.
+
+c. Recursively iterate over the node hierarchy.
+
+c1. If the node is marked as necessary, copy it into the skeleton and check its children.
+
+c2. If the node is marked as not necessary, skip it and do not iterate over its children.
+
 
 Reasons: you need all the parent nodes to keep the transformation chain intact. For most
 file formats and modelling packages the node hierarchy of the skeleton is either a child
@@ -518,7 +529,8 @@ In previous versions, the path from the query for `AI_MATKEY_TEXTURE(textureType
 return a file path for embedded textures in FBX files. To test if it is an embedded texture use
 aiScene::GetEmbeddedTexture. If the returned pointer is not null, it is embedded und can be loaded
 from the data structure. If it is null, search for a separate file. Other file types still use the
-old behaviour.<br>
+old behaviour.
+
 If your rely on the old behaviour, you can use Assimp::Importer::SetPropertyBool with the key
 #AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING to force the old behaviour.
 
@@ -1324,13 +1336,14 @@ Properties
 	target is specified in the
 	materialfile. Is this switch is enabled, texture names ending with _n, _l, _s
 	are used as normalmaps, lightmaps or specularmaps.
-	<br>
+
+
 	Property type: Bool. Default value: false.
 -	IMPORT_OGRE_MATERIAL_FILE: Ogre Meshes contain only the MaterialName, not the MaterialFile.
 	If there
 	is no material file with the same name as the material, Ogre Importer will
 	try to load this file and search the material in it.
-	<br>
+
 	Property type: String. Default value: guessed.
 
 
