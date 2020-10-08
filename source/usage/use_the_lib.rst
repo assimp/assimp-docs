@@ -1416,7 +1416,7 @@ Notes for text importers
   except if the file format has a strict definition, in which case you should always warn about spec violations.
   But the general rule of thumb is <i>be strict in what you write and tolerant in what you accept</i>.
 * Call Assimp::BaseImporter::ConvertToUTF8() before you parse anything to convert foreign encodings to UTF-8.
-  That's not necessary for XML importers, which must use the provided IrrXML for reading. </li>
+  That's not necessary for XML importers, which must use the provided XML-Parser for reading. </li>
 
 
 .. _ai_bnote:
@@ -1436,9 +1436,9 @@ Utilities
 
 Mixed stuff for internal use by loaders, mostly documented (most of them are already included by <i>AssimpPCH.h</i>):
 
-* **ByteSwapper** (*ByteSwapper.h*) - manual byte swapping stuff for binary loaders.
+* **ByteSwapper** (*ByteSwapper.h*)   - manual byte swapping stuff for binary loaders.
 * **StreamReader** (*StreamReader.h*) - safe, endianess-correct, binary reading.
-* **IrrXML** (*irrXMLWrapper.h*)  - for XML-parsing (SAX.
+* **XmlParser** (*XmlParser.hh*)      - The XML-Parser used in Asset-importer-Lib
 * **CommentRemover** (*RemoveComments.h*) - remove single-line and multi-line comments from a text file.
 * fast_atof, strtoul10, strtoul16, SkipSpaceAndLineEnd, SkipToNextToken .. large family of low-level
   parsing functions, mostly declared in <i>fast_atof.h</i>, <i>StringComparison.h</i> and <i>ParsingUtils.h</i> (a collection that grew
