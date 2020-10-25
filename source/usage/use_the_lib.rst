@@ -1375,7 +1375,7 @@ OK, that sounds too easy :-). The whole procedure for a new loader merely looks 
 
 Wrap the same guard around your .cpp!
 
-* Now advance to the *(register_new_importers_here)* line in the Importer.cpp and register your importer there - just like all the others do.
+* Now advance to the *(register_new_importers_here)* line in the ImporterRegistry.cpp and register your importer there - just like all the others do.
 * Setup a suitable test environment (i.e. use AssimpView or your own application), make sure to enable
   the #aiProcess_ValidateDataStructure flag and enable verbose logging. That is, simply call before you import anything:
 
