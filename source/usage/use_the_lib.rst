@@ -1365,7 +1365,7 @@ OK, that sounds too easy :-). The whole procedure for a new loader merely looks 
 * Create a header (*FormatNameImporter.h*) and a unit (*FormatNameImporter.cpp*) in the *<root>/code/AssetLib/* directory
 * Add them to the following workspaces: vc8 and vc9 (the files are in the workspaces directory), CMAKE (code/CMakeLists.txt, create a new source group for your importer and put them also to ADD_LIBRARY( assimp SHARED))
 * Include *AssimpPCH.h* - this is the PCH file, and it includes already most Assimp-internal stuff.
-* Open Importer.cpp and include your header just below the *(include_new_importers_here)* line, guarded by a #define
+* Open ImporterRegistry.cpp.cpp and include your header just below the *(include_new_importers_here)* line, guarded by a #define
 
 ::
 
