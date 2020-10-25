@@ -1362,13 +1362,10 @@ which defines a few abstract methods, register your loader, test it carefully an
 
 OK, that sounds too easy :-). The whole procedure for a new loader merely looks like this:
 
-<ul>
-<li>Create a header (<tt><i>FormatName</i>Importer.h</tt>) and a unit (<tt><i>FormatName</i>Importer.cpp</tt>) in the <tt>&lt;root&gt;/code/</tt> directory</li>
-<li>Add them to the following workspaces: vc8 and vc9 (the files are in the workspaces directory), CMAKE (code/CMakeLists.txt, create a new
-source group for your importer and put them also to ADD_LIBRARY( assimp SHARED))</li>
-<li>Include <i>AssimpPCH.h</i> - this is the PCH file, and it includes already most Assimp-internal stuff. </li>
-<li>Open Importer.cpp and include your header just below the <i>(include_new_importers_here)</i> line,
-guarded by a #define
+* Create a header (*FormatNameImporter.h*) and a unit (*FormatNameImporter.cpp*) in the *<root>/code/* directory
+* Add them to the following workspaces: vc8 and vc9 (the files are in the workspaces directory), CMAKE (code/CMakeLists.txt, create a new source group for your importer and put them also to ADD_LIBRARY( assimp SHARED))
+* Include *AssimpPCH.h* - this is the PCH file, and it includes already most Assimp-internal stuff.
+* Open Importer.cpp and include your header just below the *(include_new_importers_here)* line, guarded by a #define
 
 ::
 
