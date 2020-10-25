@@ -1375,7 +1375,7 @@ OK, that sounds too easy :-). The whole procedure for a new loader merely looks 
 
 Wrap the same guard around your .cpp!
 
-* Now advance to the <i>(register_new_importers_here)</i> line in the Importer.cpp and register your importer there - just like all the others do.</li>
+* Now advance to the *(register_new_importers_here)* line in the Importer.cpp and register your importer there - just like all the others do.
 * Setup a suitable test environment (i.e. use AssimpView or your own application), make sure to enable
   the #aiProcess_ValidateDataStructure flag and enable verbose logging. That is, simply call before you import anything:
 
@@ -1389,8 +1389,8 @@ Wrap the same guard around your .cpp!
   with DefaultLogger::get()->[error, warn, debug, info].
 * Make sure that your loader compiles against all build configurations on all supported platforms. You can use our CI-build to check several platforms 
   like Windows and Linux ( 32 bit and 64 bit ).
-* Provide some _free_ test models in <tt>&lt;root&gt;/test/models/&lt;FormatName&gt;/</tt> and credit their authors.
-  Test files for a file format shouldn't be too large (<i>~500 KiB in total</i>), and not too repetive. Try to cover all format features with test data.
+* Provide some _free_ test models in <root>/test/models/<FormatName> and credit their authors.
+  Test files for a file format shouldn't be too large (*~500 KiB in total*), and not too repetive. Try to cover all format features with test data.
 * Done! Please, share your loader that everyone can profit from it!
 
 .. _ai_properties:
@@ -1411,9 +1411,9 @@ Notes for text importers
 
 * Try to make your parser as flexible as possible. Don't rely on particular layout, whitespace/tab style,
   except if the file format has a strict definition, in which case you should always warn about spec violations.
-  But the general rule of thumb is <i>be strict in what you write and tolerant in what you accept</i>.
+  But the general rule of thumb is *be strict in what you write and tolerant in what you accept*.
 * Call Assimp::BaseImporter::ConvertToUTF8() before you parse anything to convert foreign encodings to UTF-8.
-  That's not necessary for XML importers, which must use the provided XML-Parser for reading. </li>
+  That's not necessary for XML importers, which must use the provided XML-Parser for reading. 
 
 
 .. _ai_bnote:
@@ -1431,14 +1431,14 @@ Notes for binary importers
 Utilities
 ---------
 
-Mixed stuff for internal use by loaders, mostly documented (most of them are already included by <i>AssimpPCH.h</i>):
+Mixed stuff for internal use by loaders, mostly documented (most of them are already included by *AssimpPCH.h*):
 
 * **ByteSwapper** (*ByteSwapper.h*)   - manual byte swapping stuff for binary loaders.
 * **StreamReader** (*StreamReader.h*) - safe, endianess-correct, binary reading.
 * **XmlParser** (*XmlParser.hh*)      - The XML-Parser used in Asset-importer-Lib
 * **CommentRemover** (*RemoveComments.h*) - remove single-line and multi-line comments from a text file.
 * fast_atof, strtoul10, strtoul16, SkipSpaceAndLineEnd, SkipToNextToken .. large family of low-level
-  parsing functions, mostly declared in <i>fast_atof.h</i>, <i>StringComparison.h</i> and <i>ParsingUtils.h</i> (a collection that grew
+  parsing functions, mostly declared in *fast_atof.h*, *StringComparison.h* and *ParsingUtils.h* (a collection that grew
   historically, so don't expect perfect organization).
 * **ComputeNormalsWithSmoothingsGroups()** (*SmoothingGroups.h*) - Computes normal vectors from plain old smoothing groups.
 * **SkeletonMeshBuilder** (*SkeletonMeshBuilder.h*) - generate a dummy mesh from a given (animation) skeleton.
@@ -1446,14 +1446,14 @@ Mixed stuff for internal use by loaders, mostly documented (most of them are alr
 * **BatchLoader** (*BaseImporter.h*) - manage imports from external files. Useful for file formats
   which spread their data across multiple files.
 * **SceneCombiner** (*SceneCombiner.h*) - exhaustive toolset to merge multiple scenes. Useful for file formats
-  which spread their data across multiple files. </li>
+  which spread their data across multiple files. 
 
 .. _ai_mat:
 
 Filling materials
 -----------------
 
-The required definitions zo set/remove/query keys in #aiMaterial structures are declared in <i>MaterialSystem.h</i>, in a
+The required definitions zo set/remove/query keys in #aiMaterial structures are declared in *MaterialSystem.h*, in a
 #aiMaterial derivate called #aiMaterial. The header is included by AssimpPCH.h, so you don't need to bother.
 
 ::
