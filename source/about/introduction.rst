@@ -3,12 +3,13 @@
 Introduction
 ============
 
-assimp is a library to load and process geometric scenes from various data formats. It is tailored at typical game
-scenarios by supporting a node hierarchy, static or skinned meshes, materials, bone animations and potential texture data.
-The library is *not* designed for speed, it is primarily useful for importing assets from various sources once and
-storing it in a engine-specific format for easy and fast every-day-loading. assimp is also able to apply various post
-processing steps to the imported data such as conversion to indexed meshes, calculation of normals or tangents/bitangents
-or conversion from right-handed to left-handed coordinate systems.
+The Asset-Importer-Lib ( in short assimp ) is a library to load and process geometric scenes from various 3d-data-formats. It 
+is mostly tailored at typical game scenarios by supporting a node hierarchy, static or skinned meshes, materials, bone animations 
+and potential texture data. But also some 3D-printing- and CAD-format are supported.
+The library is *not* designed for speed, it is primarily useful for importing assets from various 
+sources once and storing it in a engine-specific format for easy and fast every-day-loading. assimp is also able to apply 
+various post processing steps to the imported data such as conversion to indexed meshes, calculation of normals or 
+tangents/bitangents or conversion from right-handed to left-handed coordinate systems.
 
 assimp currently supports the following file formats (note that some loaders lack some features of their formats because
 some file formats contain data not supported by assimp, some stuff would require so much conversion work
@@ -149,7 +150,7 @@ as a subdirectory via the cmake-command
 
 ::
 
-    addsubdiectory(assimp)
+    ADD_SUBDIRECTORY(assimp)
 
 Now just add the assimp-dependency to your application:
 
