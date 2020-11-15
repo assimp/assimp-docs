@@ -9,21 +9,21 @@ The Asset-Importer-Lib Documentation
 .. image:: http://assimp.org/images/splash.png
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Introduction
    :name: sec-general
    
    about/introduction
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Using Assimp
    :name: sec-learn
 
    usage/use_the_lib
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: API-Reference
     :name: sec-api
     
