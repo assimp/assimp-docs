@@ -217,8 +217,8 @@ Building
 To use this module please provide following cmake defines:
 
 ::
--DASSIMP_ANDROID_JNIIOSYSTEM=ON
--DCMAKE_TOOLCHAIN_FILE=$SOME_PATH/android.toolchain.cmake
+    -DASSIMP_ANDROID_JNIIOSYSTEM=ON
+    -DCMAKE_TOOLCHAIN_FILE=$SOME_PATH/android.toolchain.cmake
 ::
 
 "SOME_PATH" is a path to your cmake android toolchain script.
@@ -231,13 +231,13 @@ Code
 A small example how to wrap assimp for Android:
 
 ::
-#include <assimp/port/AndroidJNI/AndroidJNIIOSystem.h>
+    #include <assimp/port/AndroidJNI/AndroidJNIIOSystem.h>
 
-Assimp::Importer* importer = new Assimp::Importer();
-Assimp::AndroidJNIIOSystem *ioSystem = new Assimp::AndroidJNIIOSystem(app->activity);
-if ( nullptr != iosSystem ) {
-  importer->SetIOHandler(ioSystem);
-}  
+    Assimp::Importer* importer = new Assimp::Importer();
+    Assimp::AndroidJNIIOSystem *ioSystem = new Assimp::AndroidJNIIOSystem(app->activity);
+    if ( nullptr != iosSystem ) {
+      importer->SetIOHandler(ioSystem);
+    }  
 ::
 
 The Assimp-package can be built as DLL. You just need to run the default cmake run.
