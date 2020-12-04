@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_export_data_blob" kind="struct" language="C++" prot="public">
+    <compoundname>aiExportDataBlob</compoundname>
+    <includes local="no">cexport.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_export_data_blob_1ac080c780dad92077b42447d77a1a9ed1" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* aiExportDataBlob::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>The data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="205" column="1" bodyfile="include/assimp/cexport.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_export_data_blob_1af7f006ac5ad818c0d81d520a84f74c3e" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
+        <definition>C_STRUCT aiString aiExportDataBlob::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para><ref refid="struct_name" kindref="compound">Name</ref> of the blob. </para>        </briefdescription>
+        <detaileddescription>
+<para>An empty string always indicates the first (and primary) blob, which contains the actual file data. Any other blobs are auxiliary files produced by exporters (i.e. material files). Existence of such files depends on the file format. Most formats don&apos;t split assets across multiple files.</para><para>If used, blob names usually contain the file extension that should be used when writing the data to disc. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="219" column="1" bodyfile="include/assimp/cexport.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_export_data_blob_1a3e98fa760f45983ff1bccec6715f3817" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref> *</type>
+        <definition>C_STRUCT aiExportDataBlob* aiExportDataBlob::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+<para>Pointer to the next blob in the chain or NULL if there is none. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="222" column="1" bodyfile="include/assimp/cexport.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_export_data_blob_1a339bfaacc70396b2f99f94c1bc3b808f" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t aiExportDataBlob::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Size of the data in bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="202" column="1" bodyfile="include/assimp/cexport.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_export_data_blob_1ace04b45cf3fdaa6b4ed7f43370e87408" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiExportDataBlob::aiExportDataBlob</definition>
+        <argsstring>()</argsstring>
+        <name>aiExportDataBlob</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="226" column="1" bodyfile="include/assimp/cexport.h" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_export_data_blob_1aa350528c779d99522a77d2db7763a585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aiExportDataBlob::aiExportDataBlob</definition>
+        <argsstring>(const aiExportDataBlob &amp;)=delete</argsstring>
+        <name>aiExportDataBlob</name>
+        <param>
+          <type>const <ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_export_data_blob_1a1049269eb019cb9c935cbeb2d9e30387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref> &amp;</type>
+        <definition>aiExportDataBlob&amp; aiExportDataBlob::operator=</definition>
+        <argsstring>(const aiExportDataBlob &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_export_data_blob_1adcf6c28f8c4b14e1c779007d45b9ce7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiExportDataBlob::~aiExportDataBlob</definition>
+        <argsstring>()</argsstring>
+        <name>~aiExportDataBlob</name>
+        <briefdescription>
+<para>Releases the data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="231" column="1" bodyfile="include/assimp/cexport.h" bodystart="231" bodyend="234"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes a blob of exported scene data. </para>    </briefdescription>
+    <detaileddescription>
+<para>Use <ref refid="_assimp_c_export_8cpp_1a84e9d3df6c684a78381cce78654c0348" kindref="member">aiExportSceneToBlob()</ref> to create a blob containing an exported scene. The memory referred by this structure is owned by <ref refid="namespace_assimp" kindref="compound">Assimp</ref>. to free its resources. Don&apos;t try to free the memory on your side - it will crash for most build configurations due to conflicting heaps.</para><para>Blobs can be nested - each blob may reference another blob, which may in turn reference another blob and so on. This is used when exporters write more than one output file for a given <ref refid="structai_scene" kindref="compound">aiScene</ref>. See the remarks for <ref refid="structai_export_data_blob_1af7f006ac5ad818c0d81d520a84f74c3e" kindref="member">aiExportDataBlob::name</ref> for more information. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="111">
+        <label>aiExportDataBlob</label>
+        <link refid="structai_export_data_blob"/>
+        <childnode refid="112" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="111" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="112">
+        <label>aiString</label>
+        <link refid="structai_string"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/cexport.h" line="200" column="1" bodyfile="include/assimp/cexport.h" bodystart="200" bodyend="240"/>
+    <listofallmembers>
+      <member refid="structai_export_data_blob_1ace04b45cf3fdaa6b4ed7f43370e87408" prot="public" virt="non-virtual"><scope>aiExportDataBlob</scope><name>aiExportDataBlob</name></member>
+      <member refid="structai_export_data_blob_1aa350528c779d99522a77d2db7763a585" prot="public" virt="non-virtual"><scope>aiExportDataBlob</scope><name>aiExportDataBlob</name></member>
+      <member refid="structai_export_data_blob_1ac080c780dad92077b42447d77a1a9ed1" prot="public" virt="non-virtual"><scope>aiExportDataBlob</scope><name>data</name></member>
+      <member refid="structai_export_data_blob_1af7f006ac5ad818c0d81d520a84f74c3e" prot="public" virt="non-virtual"><scope>aiExportDataBlob</scope><name>name</name></member>
+      <member refid="structai_export_data_blob_1a3e98fa760f45983ff1bccec6715f3817" prot="public" virt="non-virtual"><scope>aiExportDataBlob</scope><name>next</name></member>
+      <member refid="structai_export_data_blob_1a1049269eb019cb9c935cbeb2d9e30387" prot="public" virt="non-virtual"><scope>aiExportDataBlob</scope><name>operator=</name></member>
+      <member refid="structai_export_data_blob_1a339bfaacc70396b2f99f94c1bc3b808f" prot="public" virt="non-virtual"><scope>aiExportDataBlob</scope><name>size</name></member>
+      <member refid="structai_export_data_blob_1adcf6c28f8c4b14e1c779007d45b9ce7e" prot="public" virt="non-virtual"><scope>aiExportDataBlob</scope><name>~aiExportDataBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct__pack" kind="struct" language="C++" prot="public">
+    <compoundname>_pack</compoundname>
+    <includes local="no">m3d.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__pack_1adb87fc41170d996ff52b1de82446a82c" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t _pack::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/M3D/m3d.h" line="150" column="1" bodyfile="code/AssetLib/M3D/m3d.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pack_1a870246ead155d20f37c2a77927c5ba5b" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _pack::magic</definition>
+        <argsstring>[4]</argsstring>
+        <name>magic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/M3D/m3d.h" line="149" column="1" bodyfile="code/AssetLib/M3D/m3d.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pack_1ac46999ee2a84d306972bb5cf68b0d4eb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _pack::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/M3D/m3d.h" line="151" column="1" bodyfile="code/AssetLib/M3D/m3d.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pack_1ae0a37f89497e31bc9ab8ca79f00b7bb9" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t _pack::types</definition>
+        <argsstring></argsstring>
+        <name>types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/M3D/m3d.h" line="152" column="1" bodyfile="code/AssetLib/M3D/m3d.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>M3D file format structure 3DMO m3dchunk_t file header chunk, may followed by compressed data HEAD m3dhdr_t model header chunk n x m3dchunk_t more chunks follow PRVW preview chunk (optional) CMAP color map chunk (optional) TMAP texture map chunk (optional) VRTS vertex data chunk (optional if it&apos;s a material library) BONE bind-pose skeleton, bone hierarchy chunk (optional) n x <ref refid="structm3db__t" kindref="compound">m3db_t</ref> contains propably more, but at least one bone n x <ref refid="structm3ds__t" kindref="compound">m3ds_t</ref> skin group records MTRL* material chunk(s), can be more (optional) n x <ref refid="structm3dp__t" kindref="compound">m3dp_t</ref> each material contains propapbly more, but at least one property the properties are configurable with a static array, see m3d_propertytypes n x m3dchunk_t at least one, but maybe more face chunks PROC* procedural face, or MESH* triangle mesh (vertex index list) or SHPE* mathematical shapes like parameterized surfaces LBLS* annotation label chunks, can be more (optional) ACTN* action chunk(s), animation-pose skeletons, can be more (optional) n x <ref refid="structm3dfr__t" kindref="compound">m3dfr_t</ref> each action contains probably more, but at least one frame n x <ref refid="structm3dtr__t" kindref="compound">m3dtr_t</ref> each frame contains probably more, but at least one transformation ASET* inlined asset chunk(s), can be more (optional) OMD3 end chunk. </para>    </briefdescription>
+    <detaileddescription>
+<para>Typical chunks for a game engine: 3DMO, HEAD, CMAP, TMAP, VRTS, BONE, MTRL, MESH, ACTN, OMD3 Typical chunks for CAD software: 3DMO, HEAD, PRVW, CMAP, TMAP, VRTS, MTRL, SHPE, LBLS, OMD3 </para>    </detaileddescription>
+    <location file="code/AssetLib/M3D/m3d.h" line="148" column="1" bodyfile="code/AssetLib/M3D/m3d.h" bodystart="148" bodyend="153"/>
+    <listofallmembers>
+      <member refid="struct__pack_1adb87fc41170d996ff52b1de82446a82c" prot="public" virt="non-virtual"><scope>_pack</scope><name>length</name></member>
+      <member refid="struct__pack_1a870246ead155d20f37c2a77927c5ba5b" prot="public" virt="non-virtual"><scope>_pack</scope><name>magic</name></member>
+      <member refid="struct__pack_1ac46999ee2a84d306972bb5cf68b0d4eb" prot="public" virt="non-virtual"><scope>_pack</scope><name>scale</name></member>
+      <member refid="struct__pack_1ae0a37f89497e31bc9ab8ca79f00b7bb9" prot="public" virt="non-virtual"><scope>_pack</scope><name>types</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

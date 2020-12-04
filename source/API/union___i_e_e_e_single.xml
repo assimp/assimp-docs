@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="union___i_e_e_e_single" kind="union" language="C++" prot="public">
+    <compoundname>_IEEESingle</compoundname>
+    <includes local="no">qnan.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union___i_e_e_e_single_1a25a112d44e8141e8d48d19ee9b04c1a6" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t _IEEESingle::Exp</definition>
+        <argsstring></argsstring>
+        <name>Exp</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="74" column="1" bodyfile="include/assimp/qnan.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union___i_e_e_e_single_1a2bcb6ba7009268e6bba2224df222c3e9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _IEEESingle::Float</definition>
+        <argsstring></argsstring>
+        <name>Float</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="70" column="1" bodyfile="include/assimp/qnan.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union___i_e_e_e_single_1adcd54aa25c466765e6373a7d30c75ba8" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t _IEEESingle::Frac</definition>
+        <argsstring></argsstring>
+        <name>Frac</name>
+        <bitfield> 23</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="73" column="1" bodyfile="include/assimp/qnan.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union___i_e_e_e_single_1a46cfa13069e346a72f3630c57843ac76" prot="public" static="no" mutable="no">
+        <type>struct _IEEESingle::@68</type>
+        <definition>struct _IEEESingle::@68  _IEEESingle::IEEE</definition>
+        <argsstring></argsstring>
+        <name>IEEE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union___i_e_e_e_single_1a7b114f4e020630ceffceaba8a2afadab" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t _IEEESingle::Sign</definition>
+        <argsstring></argsstring>
+        <name>Sign</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="75" column="1" bodyfile="include/assimp/qnan.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure to represent the bit pattern of a 32 Bit IEEE 754 floating-point number. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/qnan.h" line="69" column="1" bodyfile="include/assimp/qnan.h" bodystart="69" bodyend="77"/>
+    <listofallmembers>
+      <member refid="union___i_e_e_e_single_1a25a112d44e8141e8d48d19ee9b04c1a6" prot="public" virt="non-virtual"><scope>_IEEESingle</scope><name>Exp</name></member>
+      <member refid="union___i_e_e_e_single_1a2bcb6ba7009268e6bba2224df222c3e9" prot="public" virt="non-virtual"><scope>_IEEESingle</scope><name>Float</name></member>
+      <member refid="union___i_e_e_e_single_1adcd54aa25c466765e6373a7d30c75ba8" prot="public" virt="non-virtual"><scope>_IEEESingle</scope><name>Frac</name></member>
+      <member refid="union___i_e_e_e_single_1a46cfa13069e346a72f3630c57843ac76" prot="public" virt="non-virtual"><scope>_IEEESingle</scope><name>IEEE</name></member>
+      <member refid="union___i_e_e_e_single_1a7b114f4e020630ceffceaba8a2afadab" prot="public" virt="non-virtual"><scope>_IEEESingle</scope><name>Sign</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

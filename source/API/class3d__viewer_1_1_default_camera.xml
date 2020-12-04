@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class3d__viewer_1_1_default_camera" kind="class" language="Python" prot="public">
+    <compoundname>3d_viewer::DefaultCamera</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class3d__viewer_1_1_default_camera_1a5e08a78cf6a447f9899e29c0f72ae8ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer.DefaultCamera::aspect</definition>
+        <argsstring></argsstring>
+        <name>aspect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer.py" line="438" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer.py" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer_1_1_default_camera_1a36494cfc370ab8f7c9e4065030473a97" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer.DefaultCamera::clipplanefar</definition>
+        <argsstring></argsstring>
+        <name>clipplanefar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer.py" line="437" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer.py" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer_1_1_default_camera_1afc29d8955452dd0ae736333e6a7c5c64" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer.DefaultCamera::clipplanenear</definition>
+        <argsstring></argsstring>
+        <name>clipplanenear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer.py" line="436" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer.py" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer_1_1_default_camera_1a386ade4d1468b42677ffff8d36102d61" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer.DefaultCamera::horizontalfov</definition>
+        <argsstring></argsstring>
+        <name>horizontalfov</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer.py" line="439" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer.py" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer_1_1_default_camera_1a165d7f52214287f569d26de5c1041c4a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer.DefaultCamera::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer.py" line="434" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer.py" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer_1_1_default_camera_1a947131b8b30271c03ecf745fad285ce1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer.DefaultCamera::transformation</definition>
+        <argsstring></argsstring>
+        <name>transformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer.py" line="440" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer.py" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer_1_1_default_camera_1afeaaba69a84395ee2300c080ed2cccbd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer.DefaultCamera::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer.py" line="435" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer.py" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class3d__viewer_1_1_default_camera_1a9028e0657a8e22cca008ec8b4b1ff682" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer.DefaultCamera.__init__</definition>
+        <argsstring>(self, w, h, fov)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>w</type>
+          <defname>w</defname>
+        </param>
+        <param>
+          <type>h</type>
+          <defname>h</defname>
+        </param>
+        <param>
+          <type>fov</type>
+          <defname>fov</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer.py" line="433" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer.py" bodystart="433" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer_1_1_default_camera_1a9fec99a1935f14cfebfc263afbd42d87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer.DefaultCamera.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer.py" line="447" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer.py" bodystart="447" bodyend="450"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="port/PyAssimp/scripts/3d_viewer.py" line="432" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer.py" bodystart="432" bodyend="451"/>
+    <listofallmembers>
+      <member refid="class3d__viewer_1_1_default_camera_1a9028e0657a8e22cca008ec8b4b1ff682" prot="public" virt="non-virtual"><scope>3d_viewer::DefaultCamera</scope><name>__init__</name></member>
+      <member refid="class3d__viewer_1_1_default_camera_1a9fec99a1935f14cfebfc263afbd42d87" prot="public" virt="non-virtual"><scope>3d_viewer::DefaultCamera</scope><name>__str__</name></member>
+      <member refid="class3d__viewer_1_1_default_camera_1a5e08a78cf6a447f9899e29c0f72ae8ba" prot="public" virt="non-virtual"><scope>3d_viewer::DefaultCamera</scope><name>aspect</name></member>
+      <member refid="class3d__viewer_1_1_default_camera_1a36494cfc370ab8f7c9e4065030473a97" prot="public" virt="non-virtual"><scope>3d_viewer::DefaultCamera</scope><name>clipplanefar</name></member>
+      <member refid="class3d__viewer_1_1_default_camera_1afc29d8955452dd0ae736333e6a7c5c64" prot="public" virt="non-virtual"><scope>3d_viewer::DefaultCamera</scope><name>clipplanenear</name></member>
+      <member refid="class3d__viewer_1_1_default_camera_1a386ade4d1468b42677ffff8d36102d61" prot="public" virt="non-virtual"><scope>3d_viewer::DefaultCamera</scope><name>horizontalfov</name></member>
+      <member refid="class3d__viewer_1_1_default_camera_1a165d7f52214287f569d26de5c1041c4a" prot="public" virt="non-virtual"><scope>3d_viewer::DefaultCamera</scope><name>name</name></member>
+      <member refid="class3d__viewer_1_1_default_camera_1a947131b8b30271c03ecf745fad285ce1" prot="public" virt="non-virtual"><scope>3d_viewer::DefaultCamera</scope><name>transformation</name></member>
+      <member refid="class3d__viewer_1_1_default_camera_1afeaaba69a84395ee2300c080ed2cccbd" prot="public" virt="non-virtual"><scope>3d_viewer::DefaultCamera</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

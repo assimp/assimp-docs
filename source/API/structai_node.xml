@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_node" kind="struct" language="C++" prot="public">
+    <compoundname>aiNode</compoundname>
+    <includes local="no">scene.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_node_1ac700679f0d4971f124e8444f68057291" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_node" kindref="compound">aiNode</ref> **</type>
+        <definition>C_STRUCT aiNode** aiNode::mChildren</definition>
+        <argsstring></argsstring>
+        <name>mChildren</name>
+        <briefdescription>
+<para>The child nodes of this node. </para>        </briefdescription>
+        <detaileddescription>
+<para>nullptr if mNumChildren is 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="120" column="1" bodyfile="include/assimp/scene.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_1acd1706d6508b31916c18e39b7085ca63" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+        <definition>unsigned int* aiNode::mMeshes</definition>
+        <argsstring></argsstring>
+        <name>mMeshes</name>
+        <briefdescription>
+<para>The meshes of this node. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each entry is an index into the mesh list of the <ref refid="structai_scene" kindref="compound">aiScene</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="128" column="1" bodyfile="include/assimp/scene.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_1a111b5a6cbc5dccde0cf2a17a6e5c3b67" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_metadata" kindref="compound">aiMetadata</ref> *</type>
+        <definition>C_STRUCT aiMetadata* aiNode::mMetaData</definition>
+        <argsstring></argsstring>
+        <name>mMetaData</name>
+        <briefdescription>
+<para>Metadata associated with this node or nullptr if there is no metadata. </para>        </briefdescription>
+        <detaileddescription>
+<para>Whether any metadata is generated depends on the source file format. See the <ref refid="importer_notes" kindref="compound">importer_notes</ref> page for more information on every source file format. Importers that don&apos;t document any metadata don&apos;t write any. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="135" column="1" bodyfile="include/assimp/scene.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_1afa528a7e43e15d92a920229b1ff094f6" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
+        <definition>C_STRUCT aiString aiNode::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <briefdescription>
+<para>The name of the node. </para>        </briefdescription>
+        <detaileddescription>
+<para>The name might be empty (length of zero) but all nodes which need to be referenced by either bones or animations are named. Multiple nodes may have the same name, except for nodes which are referenced by bones (see <ref refid="structai_bone" kindref="compound">aiBone</ref> and <ref refid="structai_mesh_1a0c0582a7f45b340b6a33552c53232539" kindref="member">aiMesh::mBones</ref>). Their names <emphasis>must</emphasis> be unique.</para><para>Cameras and lights reference a specific node by name - if there are multiple nodes with this name, they are assigned to each of them. <linebreak/>
+ There are no limitations with regard to the characters contained in the name string as it is usually taken directly from the source file.</para><para>Implementations should be able to handle tokens such as whitespace, tabs, line feeds, quotation marks, ampersands etc.</para><para>Sometimes assimp introduces new nodes not present in the source file into the hierarchy (usually out of necessity because sometimes the source hierarchy format is simply not compatible). Their names are surrounded by<verbatim>&lt;&gt; </verbatim> e.g. <verbatim>&lt;DummyRootNode&gt; </verbatim>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="108" column="1" bodyfile="include/assimp/scene.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_1af5030494b156ec54632e6182a6e386ca" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiNode::mNumChildren</definition>
+        <argsstring></argsstring>
+        <name>mNumChildren</name>
+        <briefdescription>
+<para>The number of child nodes of this node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="117" column="1" bodyfile="include/assimp/scene.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_1a7a411079096f86d1e96b6368d237d897" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiNode::mNumMeshes</definition>
+        <argsstring></argsstring>
+        <name>mNumMeshes</name>
+        <briefdescription>
+<para>The number of meshes of this node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="123" column="1" bodyfile="include/assimp/scene.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_1aa6896b42c78e784db85d822a4c8dd404" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+        <definition>C_STRUCT aiNode* aiNode::mParent</definition>
+        <argsstring></argsstring>
+        <name>mParent</name>
+        <briefdescription>
+<para>Parent node. </para>        </briefdescription>
+        <detaileddescription>
+<para>nullptr if this node is the root node. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="114" column="1" bodyfile="include/assimp/scene.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_1aadb69c766c7658bba9d2195af16d6831" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref></type>
+        <definition>C_STRUCT aiMatrix4x4 aiNode::mTransformation</definition>
+        <argsstring></argsstring>
+        <name>mTransformation</name>
+        <briefdescription>
+<para>The transformation relative to the node&apos;s parent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="111" column="1" bodyfile="include/assimp/scene.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_node_1a246d4b878904db88e8b54fa86dd1994e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aiNode::addChildren</definition>
+        <argsstring>(unsigned int numChildren, aiNode **children)</argsstring>
+        <name>addChildren</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>numChildren</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> **</type>
+          <declname>children</declname>
+        </param>
+        <briefdescription>
+<para>Will add new children. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numChildren</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of children to add. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>children</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array with pointers showing to the children. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="173" column="1" bodyfile="code/Common/scene.cpp" bodystart="111" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_node_1a195a3edc9c6236d5518ca62a61b02564" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aiNode::aiNode</definition>
+        <argsstring>()</argsstring>
+        <name>aiNode</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="139" column="1" bodyfile="code/Common/scene.cpp" bodystart="45" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_node_1af67142aefcb8e040c3aa403d1c0260b6" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aiNode::aiNode</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>aiNode</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Construction from a specific name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="142" column="1" bodyfile="code/Common/scene.cpp" bodystart="56" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_node_1ab46607405b6b4fc192ff8cb734cef9b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+        <definition>const aiNode* aiNode::FindNode</definition>
+        <argsstring>(const aiString &amp;name) const</argsstring>
+        <name>FindNode</name>
+        <param>
+          <type>const <ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Searches for a node with a specific name, beginning at this nodes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Normally you will call this method on the root node of the scene.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_name" kindref="compound">Name</ref> to search for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>nullptr or a valid Node if the search was successful. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="155" column="1" bodyfile="include/assimp/scene.h" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_node_1a3c9108c96869a6268cf65713f801bd30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+        <definition>aiNode* aiNode::FindNode</definition>
+        <argsstring>(const aiString &amp;name)</argsstring>
+        <name>FindNode</name>
+        <param>
+          <type>const <ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="160" column="1" bodyfile="include/assimp/scene.h" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_node_1a80973417a58bca446972dc8e3c7b1b41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+        <definition>const aiNode * aiNode::FindNode</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>FindNode</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="164" column="1" bodyfile="code/Common/scene.cpp" bodystart="81" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_node_1a275c98ccf0373126ea1d972d9afefb27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+        <definition>aiNode * aiNode::FindNode</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>FindNode</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="166" column="1" bodyfile="code/Common/scene.cpp" bodystart="98" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_node_1a2a4938fc247de3dd40dc1c1425811708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aiNode::~aiNode</definition>
+        <argsstring>()</argsstring>
+        <name>~aiNode</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/scene.h" line="145" column="1" bodyfile="code/Common/scene.cpp" bodystart="68" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A node in the imported hierarchy. </para>    </briefdescription>
+    <detaileddescription>
+<para>Each node has name, a parent node (except for the root node), a transformation relative to its parent and possibly several child nodes. Simple file formats don&apos;t support hierarchical structures - for these formats the imported scene does consist of only a single root node without children. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="176">
+        <label>aiNode</label>
+        <link refid="structai_node"/>
+        <childnode refid="177" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="178" relation="usage">
+          <edgelabel>mMetaData</edgelabel>
+        </childnode>
+        <childnode refid="176" relation="usage">
+          <edgelabel>mChildren</edgelabel>
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="180" relation="usage">
+          <edgelabel>mTransformation</edgelabel>
+        </childnode>
+      </node>
+      <node id="179">
+        <label>aiMetadataEntry</label>
+        <link refid="structai_metadata_entry"/>
+      </node>
+      <node id="180">
+        <label>aiMatrix4x4t&lt; TReal &gt;</label>
+        <link refid="classai_matrix4x4t"/>
+      </node>
+      <node id="178">
+        <label>aiMetadata</label>
+        <link refid="structai_metadata"/>
+        <childnode refid="177" relation="usage">
+          <edgelabel>mKeys</edgelabel>
+        </childnode>
+        <childnode refid="179" relation="usage">
+          <edgelabel>mValues</edgelabel>
+        </childnode>
+      </node>
+      <node id="177">
+        <label>aiString</label>
+        <link refid="structai_string"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/scene.h" line="85" column="1" bodyfile="include/assimp/scene.h" bodystart="84" bodyend="175"/>
+    <listofallmembers>
+      <member refid="structai_node_1a246d4b878904db88e8b54fa86dd1994e" prot="public" virt="non-virtual"><scope>aiNode</scope><name>addChildren</name></member>
+      <member refid="structai_node_1a195a3edc9c6236d5518ca62a61b02564" prot="public" virt="non-virtual"><scope>aiNode</scope><name>aiNode</name></member>
+      <member refid="structai_node_1af67142aefcb8e040c3aa403d1c0260b6" prot="public" virt="non-virtual"><scope>aiNode</scope><name>aiNode</name></member>
+      <member refid="structai_node_1ab46607405b6b4fc192ff8cb734cef9b8" prot="public" virt="non-virtual"><scope>aiNode</scope><name>FindNode</name></member>
+      <member refid="structai_node_1a3c9108c96869a6268cf65713f801bd30" prot="public" virt="non-virtual"><scope>aiNode</scope><name>FindNode</name></member>
+      <member refid="structai_node_1a80973417a58bca446972dc8e3c7b1b41" prot="public" virt="non-virtual"><scope>aiNode</scope><name>FindNode</name></member>
+      <member refid="structai_node_1a275c98ccf0373126ea1d972d9afefb27" prot="public" virt="non-virtual"><scope>aiNode</scope><name>FindNode</name></member>
+      <member refid="structai_node_1ac700679f0d4971f124e8444f68057291" prot="public" virt="non-virtual"><scope>aiNode</scope><name>mChildren</name></member>
+      <member refid="structai_node_1acd1706d6508b31916c18e39b7085ca63" prot="public" virt="non-virtual"><scope>aiNode</scope><name>mMeshes</name></member>
+      <member refid="structai_node_1a111b5a6cbc5dccde0cf2a17a6e5c3b67" prot="public" virt="non-virtual"><scope>aiNode</scope><name>mMetaData</name></member>
+      <member refid="structai_node_1afa528a7e43e15d92a920229b1ff094f6" prot="public" virt="non-virtual"><scope>aiNode</scope><name>mName</name></member>
+      <member refid="structai_node_1af5030494b156ec54632e6182a6e386ca" prot="public" virt="non-virtual"><scope>aiNode</scope><name>mNumChildren</name></member>
+      <member refid="structai_node_1a7a411079096f86d1e96b6368d237d897" prot="public" virt="non-virtual"><scope>aiNode</scope><name>mNumMeshes</name></member>
+      <member refid="structai_node_1aa6896b42c78e784db85d822a4c8dd404" prot="public" virt="non-virtual"><scope>aiNode</scope><name>mParent</name></member>
+      <member refid="structai_node_1aadb69c766c7658bba9d2195af16d6831" prot="public" virt="non-virtual"><scope>aiNode</scope><name>mTransformation</name></member>
+      <member refid="structai_node_1a2a4938fc247de3dd40dc1c1425811708" prot="public" virt="non-virtual"><scope>aiNode</scope><name>~aiNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

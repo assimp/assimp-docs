@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_vertex_weight" kind="struct" language="C++" prot="public">
+    <compoundname>aiVertexWeight</compoundname>
+    <includes local="no">mesh.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_vertex_weight_1af6269cf6a0f02e5ae870a72046d58f4f" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiVertexWeight::mVertexId</definition>
+        <argsstring></argsstring>
+        <name>mVertexId</name>
+        <briefdescription>
+<para>Index of the vertex which is influenced by the bone. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="219" column="1" bodyfile="include/assimp/mesh.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_vertex_weight_1a9a11636b76b90fccb204296aa2db07a7" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real aiVertexWeight::mWeight</definition>
+        <argsstring></argsstring>
+        <name>mWeight</name>
+        <briefdescription>
+<para>The strength of the influence in the range (0...1). </para>        </briefdescription>
+        <detaileddescription>
+<para>The influence from all bones at one vertex amounts to 1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="223" column="1" bodyfile="include/assimp/mesh.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_vertex_weight_1af5b028023bac9e8e77d15e10f8a6adbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiVertexWeight::aiVertexWeight</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiVertexWeight</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="228" column="1" bodyfile="include/assimp/mesh.h" bodystart="228" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_vertex_weight_1ad2df7afa292f896dcec4a0eb4e28897a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiVertexWeight::aiVertexWeight</definition>
+        <argsstring>(unsigned int pID, float pWeight)</argsstring>
+        <name>aiVertexWeight</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>pID</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pWeight</declname>
+        </param>
+        <briefdescription>
+<para>Initialization from a given index and vertex weight factor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pWeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_vertex" kindref="compound">Vertex</ref> weight factor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="237" column="1" bodyfile="include/assimp/mesh.h" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_vertex_weight_1a07b264931c44818d66a6012c8d0cf8c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiVertexWeight::operator!=</definition>
+        <argsstring>(const aiVertexWeight &amp;rhs) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structai_vertex_weight" kindref="compound">aiVertexWeight</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="246" column="1" bodyfile="include/assimp/mesh.h" bodystart="246" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_vertex_weight_1aa44c2ad503cc0d3a4d3449ba38d71f17" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiVertexWeight::operator==</definition>
+        <argsstring>(const aiVertexWeight &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structai_vertex_weight" kindref="compound">aiVertexWeight</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="242" column="1" bodyfile="include/assimp/mesh.h" bodystart="242" bodyend="244"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A single influence of a bone on a vertex. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/mesh.h" line="217" column="1" bodyfile="include/assimp/mesh.h" bodystart="217" bodyend="251"/>
+    <listofallmembers>
+      <member refid="structai_vertex_weight_1af5b028023bac9e8e77d15e10f8a6adbb" prot="public" virt="non-virtual"><scope>aiVertexWeight</scope><name>aiVertexWeight</name></member>
+      <member refid="structai_vertex_weight_1ad2df7afa292f896dcec4a0eb4e28897a" prot="public" virt="non-virtual"><scope>aiVertexWeight</scope><name>aiVertexWeight</name></member>
+      <member refid="structai_vertex_weight_1af6269cf6a0f02e5ae870a72046d58f4f" prot="public" virt="non-virtual"><scope>aiVertexWeight</scope><name>mVertexId</name></member>
+      <member refid="structai_vertex_weight_1a9a11636b76b90fccb204296aa2db07a7" prot="public" virt="non-virtual"><scope>aiVertexWeight</scope><name>mWeight</name></member>
+      <member refid="structai_vertex_weight_1a07b264931c44818d66a6012c8d0cf8c9" prot="public" virt="non-virtual"><scope>aiVertexWeight</scope><name>operator!=</name></member>
+      <member refid="structai_vertex_weight_1aa44c2ad503cc0d3a4d3449ba38d71f17" prot="public" virt="non-virtual"><scope>aiVertexWeight</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

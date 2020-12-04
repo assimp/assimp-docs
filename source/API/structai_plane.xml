@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_plane" kind="struct" language="C++" prot="public">
+    <compoundname>aiPlane</compoundname>
+    <includes local="no">types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_plane_1a0e2f46be0d810fef7633c9d4b77c5556" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real aiPlane::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+<para>Plane equation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="141" column="1" bodyfile="include/assimp/types.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_plane_1aac7052fbb5bb20714031a65c9cc5865d" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real aiPlane::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="141" column="1" bodyfile="include/assimp/types.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_plane_1a5640a9648412543e704c0a8f4623a401" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real aiPlane::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="141" column="1" bodyfile="include/assimp/types.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_plane_1a3a1fee6c44184dfd0bba7f82deae1dd2" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real aiPlane::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="141" column="1" bodyfile="include/assimp/types.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_plane_1aa87e222dda0b737ea32135ced62ecbc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiPlane::aiPlane</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiPlane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="131" column="1" bodyfile="include/assimp/types.h" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_plane_1ad673d3ad26f7e9b628d2cacaabe84101" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiPlane::aiPlane</definition>
+        <argsstring>(ai_real _a, ai_real _b, ai_real _c, ai_real _d)</argsstring>
+        <name>aiPlane</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>_a</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>_b</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>_c</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>_d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="132" column="1" bodyfile="include/assimp/types.h" bodystart="132" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_plane_1a44984c1a567771bf7adddd0f3e22316c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiPlane::aiPlane</definition>
+        <argsstring>(const aiPlane &amp;o)</argsstring>
+        <name>aiPlane</name>
+        <param>
+          <type>const <ref refid="structai_plane" kindref="compound">aiPlane</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="135" column="1" bodyfile="include/assimp/types.h" bodystart="135" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a plane in a three-dimensional, euclidean space. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/types.h" line="129" column="1" bodyfile="include/assimp/types.h" bodystart="129" bodyend="142"/>
+    <listofallmembers>
+      <member refid="structai_plane_1a0e2f46be0d810fef7633c9d4b77c5556" prot="public" virt="non-virtual"><scope>aiPlane</scope><name>a</name></member>
+      <member refid="structai_plane_1aa87e222dda0b737ea32135ced62ecbc0" prot="public" virt="non-virtual"><scope>aiPlane</scope><name>aiPlane</name></member>
+      <member refid="structai_plane_1ad673d3ad26f7e9b628d2cacaabe84101" prot="public" virt="non-virtual"><scope>aiPlane</scope><name>aiPlane</name></member>
+      <member refid="structai_plane_1a44984c1a567771bf7adddd0f3e22316c" prot="public" virt="non-virtual"><scope>aiPlane</scope><name>aiPlane</name></member>
+      <member refid="structai_plane_1aac7052fbb5bb20714031a65c9cc5865d" prot="public" virt="non-virtual"><scope>aiPlane</scope><name>b</name></member>
+      <member refid="structai_plane_1a5640a9648412543e704c0a8f4623a401" prot="public" virt="non-virtual"><scope>aiPlane</scope><name>c</name></member>
+      <member refid="structai_plane_1a3a1fee6c44184dfd0bba7f82deae1dd2" prot="public" virt="non-virtual"><scope>aiPlane</scope><name>d</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

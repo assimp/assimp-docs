@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_a_a_b_b" kind="struct" language="C++" prot="public">
+    <compoundname>aiAABB</compoundname>
+    <includes local="no">aabb.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_a_a_b_b_1ae2228ef71f86573865affe0b54881433" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>C_STRUCT aiVector3D aiAABB::mMax</definition>
+        <argsstring></argsstring>
+        <name>mMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/aabb.h" line="54" column="1" bodyfile="include/assimp/aabb.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_a_a_b_b_1af0f45858a8e2454c99db0e68663db48f" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>C_STRUCT aiVector3D aiAABB::mMin</definition>
+        <argsstring></argsstring>
+        <name>mMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/aabb.h" line="53" column="1" bodyfile="include/assimp/aabb.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_a_a_b_b_1a790deeba41314e432c91ab71661c6a65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiAABB::aiAABB</definition>
+        <argsstring>()</argsstring>
+        <name>aiAABB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/aabb.h" line="58" column="1" bodyfile="include/assimp/aabb.h" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_a_a_b_b_1af1f867c5709e39fe3314fa6f5c201e47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiAABB::aiAABB</definition>
+        <argsstring>(const aiVector3D &amp;min, const aiVector3D &amp;max)</argsstring>
+        <name>aiAABB</name>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/aabb.h" line="64" column="1" bodyfile="include/assimp/aabb.h" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_a_a_b_b_1adc258de19d4f68433b3930070fc217ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiAABB::~aiAABB</definition>
+        <argsstring>()</argsstring>
+        <name>~aiAABB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/aabb.h" line="70" column="1" bodyfile="include/assimp/aabb.h" bodystart="70" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="74">
+        <label>aiAABB</label>
+        <link refid="structai_a_a_b_b"/>
+        <childnode refid="75" relation="usage">
+          <edgelabel>mMin</edgelabel>
+          <edgelabel>mMax</edgelabel>
+        </childnode>
+      </node>
+      <node id="75">
+        <label>aiVector3t&lt; TReal &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/aabb.h" line="52" column="1" bodyfile="include/assimp/aabb.h" bodystart="52" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structai_a_a_b_b_1a790deeba41314e432c91ab71661c6a65" prot="public" virt="non-virtual"><scope>aiAABB</scope><name>aiAABB</name></member>
+      <member refid="structai_a_a_b_b_1af1f867c5709e39fe3314fa6f5c201e47" prot="public" virt="non-virtual"><scope>aiAABB</scope><name>aiAABB</name></member>
+      <member refid="structai_a_a_b_b_1ae2228ef71f86573865affe0b54881433" prot="public" virt="non-virtual"><scope>aiAABB</scope><name>mMax</name></member>
+      <member refid="structai_a_a_b_b_1af0f45858a8e2454c99db0e68663db48f" prot="public" virt="non-virtual"><scope>aiAABB</scope><name>mMin</name></member>
+      <member refid="structai_a_a_b_b_1adc258de19d4f68433b3930070fc217ea" prot="public" virt="non-virtual"><scope>aiAABB</scope><name>~aiAABB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

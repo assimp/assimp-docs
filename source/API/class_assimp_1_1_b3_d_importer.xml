@@ -1,0 +1,792 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_assimp_1_1_b3_d_importer" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::B3DImporter</compoundname>
+    <basecompoundref refid="class_assimp_1_1_base_importer" prot="public" virt="non-virtual">Assimp::BaseImporter</basecompoundref>
+    <includes local="no">B3DImporter.h</includes>
+    <innerclass refid="struct_assimp_1_1_b3_d_importer_1_1_vertex" prot="private">Assimp::B3DImporter::Vertex</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1a7c55c941dad791316d79176facf88964" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="structai_animation" kindref="compound">aiAnimation</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;aiAnimation&gt; &gt; Assimp::B3DImporter::_animations</definition>
+        <argsstring></argsstring>
+        <name>_animations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="129" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1a615056ee7d814c2f24b9785a10db6b95" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>std::vector&lt;unsigned char&gt; Assimp::B3DImporter::_buf</definition>
+        <argsstring></argsstring>
+        <name>_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="117" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1a2f755912dcd47741c18158f8648219a6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="structai_material" kindref="compound">aiMaterial</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;aiMaterial&gt; &gt; Assimp::B3DImporter::_materials</definition>
+        <argsstring></argsstring>
+        <name>_materials</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="121" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1ad4beaf3a5cc57a6d90f3a7f2ddb33901" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="structai_mesh" kindref="compound">aiMesh</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;aiMesh&gt; &gt; Assimp::B3DImporter::_meshes</definition>
+        <argsstring></argsstring>
+        <name>_meshes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="127" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1aa428942e92277847320398ebb864fed6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="structai_node_anim" kindref="compound">aiNodeAnim</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;aiNodeAnim&gt; &gt; Assimp::B3DImporter::_nodeAnims</definition>
+        <argsstring></argsstring>
+        <name>_nodeAnims</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="128" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1a7b6977f20a2c26f1e95e00b335cf0a99" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structai_node" kindref="compound">aiNode</ref> * &gt;</type>
+        <definition>std::vector&lt;aiNode*&gt; Assimp::B3DImporter::_nodes</definition>
+        <argsstring></argsstring>
+        <name>_nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="126" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1aa214adfb5cec45922223b8a28ea72b47" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::B3DImporter::_pos</definition>
+        <argsstring></argsstring>
+        <name>_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="115" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1a6b68c91a86c32673a96534d2cea1f09a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>std::vector&lt;size_t&gt; Assimp::B3DImporter::_stack</definition>
+        <argsstring></argsstring>
+        <name>_stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="118" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1a9f16d36efa8c89425929f2a061a7295c" prot="private" static="no" mutable="no">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>int Assimp::B3DImporter::_tcsets</definition>
+        <argsstring></argsstring>
+        <name>_tcsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="123" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1a582c9d2ce0750ce03bbc42afb54af9ea" prot="private" static="no" mutable="no">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>int Assimp::B3DImporter::_tcsize</definition>
+        <argsstring></argsstring>
+        <name>_tcsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="123" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1ab2f582a83ef3263b3657d08abfd7907b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Assimp::B3DImporter::_textures</definition>
+        <argsstring></argsstring>
+        <name>_textures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="120" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1a237889e146094a1b87ec8025a3f46984" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt;Vertex&gt; Assimp::B3DImporter::_vertices</definition>
+        <argsstring></argsstring>
+        <name>_vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="124" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_b3_d_importer_1a070e4ce67ddcd46eed97a8f8c91da888" prot="private" static="no" mutable="no">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>int Assimp::B3DImporter::_vflags</definition>
+        <argsstring></argsstring>
+        <name>_vflags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="123" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a0a3528749f6206c1692f9d50f1e4f1f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::B3DImporter::B3DImporter</definition>
+        <argsstring>()=default</argsstring>
+        <name>B3DImporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1ac11dbae36ca892f5ef5f9f3ecdada4f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool B3DImporter::CanRead</definition>
+        <argsstring>(const std::string &amp;pFile, IOSystem *pIOHandler, bool checkSig) const</argsstring>
+        <name>CanRead</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1a13588d3396ba5b7ed1f1cb46e0945cfd">CanRead</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>checkSig</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether the class can handle the format of the given file. </para>        </briefdescription>
+        <detaileddescription>
+<para>The implementation should be as quick as possible. A check for the file extension is enough. If no suitable loader is found with this strategy, <ref refid="class_assimp_1_1_b3_d_importer_1ac11dbae36ca892f5ef5f9f3ecdada4f4" kindref="member">CanRead()</ref> is called again, the &apos;checkSig&apos; parameter set to true this time. Now the implementation is expected to perform a full check of the file structure, possibly searching the first bytes of the file for magic identifiers or keywords.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path and file name of the file to be examined. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pIOHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IO handler to use for accessing any file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>checkSig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to true if this method is called a second time. This time, the implementation may take more time to examine the contents of the file to be loaded for magic bytes, keywords, etc to be able to load files with unknown/not existent file extensions. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the class can read this file, false if not. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="67" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="95" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a8774ff662989723c4a5538587487517d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>B3DImporter::~B3DImporter</definition>
+        <argsstring>()</argsstring>
+        <name>~B3DImporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="65" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="91" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a6a884a1e322be2fb3a6751717c1a6a8b" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref> *</type>
+        <definition>const aiImporterDesc * B3DImporter::GetInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInfo</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1a070b8c3f63767ad535c8ac509b725fc4">GetInfo</reimplements>
+        <briefdescription>
+<para>Called by #Importer::GetImporterInfo to get a description of some loader features. </para>        </briefdescription>
+        <detaileddescription>
+<para>Importers must provide this information. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="71" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1aaeb1d48d9254e53f53772f0b0bcf764f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void B3DImporter::InternReadFile</definition>
+        <argsstring>(const std::string &amp;pFile, aiScene *pScene, IOSystem *pIOHandler)</argsstring>
+        <name>InternReadFile</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1ac67d9f5ceb26353d27d6be06cccad398">InternReadFile</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <briefdescription>
+<para>Imports the given file into the given scene structure. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function is expected to throw an ImportErrorException if there is an error. If it terminates normally, the data in <ref refid="structai_scene" kindref="compound">aiScene</ref> is expected to be correct. Override this function to implement the actual importing. <linebreak/>
+ The output scene must meet the following requirements:<linebreak/>
+ <itemizedlist>
+<listitem>
+<para>At least a root node must be there, even if its only purpose is to reference one mesh. </para></listitem>
+<listitem>
+<para><ref refid="structai_mesh_1a99d66ac0a444068c1b252b30265cbf53" kindref="member">aiMesh::mPrimitiveTypes</ref> may be 0. The types of primitives in the mesh are determined automatically in this case. </para></listitem>
+<listitem>
+<para>the vertex data is stored in a pseudo-indexed &quot;verbose&quot; format. In fact this means that every vertex that is referenced by a face is unique. Or the other way round: a vertex index may not occur twice in a single <ref refid="structai_mesh" kindref="compound">aiMesh</ref>. </para></listitem>
+<listitem>
+<para><ref refid="structai_animation_1ae2bbc49320b4b75c05e23e0ab704ece7" kindref="member">aiAnimation::mDuration</ref> may be -1. <ref refid="namespace_assimp" kindref="compound">Assimp</ref> determines the length of the animation automatically in this case as the length of the longest animation channel. </para></listitem>
+<listitem>
+<para><ref refid="structai_mesh_1ab2a81bfe1731f01271ebab274a8f01c4" kindref="member">aiMesh::mBitangents</ref> may be nullptr if tangents and normals are given. In this case bitangents are computed as the cross product between normal and tangent. </para></listitem>
+<listitem>
+<para>There needn&apos;t be a material. If none is there a default material is generated. However, it is recommended practice for loaders to generate a default material for yourself that matches the default material setting for the file format better than <ref refid="namespace_assimp" kindref="compound">Assimp</ref>&apos;s generic default material. Note that default materials <emphasis>should</emphasis> be named AI_DEFAULT_MATERIAL_NAME if they&apos;re just color-shaded or AI_DEFAULT_TEXTURED_MATERIAL_NAME if they define a (dummy) texture.  </para></listitem>
+</itemizedlist>
+If the AI_SCENE_FLAGS_INCOMPLETE-Flag is <bold>not</bold> set:<itemizedlist>
+<listitem>
+<para>at least one mesh must be there </para></listitem>
+<listitem>
+<para>there may be no meshes with 0 vertices or faces </para></listitem>
+</itemizedlist>
+This won&apos;t be checked (except by the validation step): <ref refid="namespace_assimp" kindref="compound">Assimp</ref> will crash if one of the conditions is not met!</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path of the file to be imported. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pScene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene object to hold the imported data. nullptr is not a valid parameter. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pIOHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IO handler to use for any file access. nullptr is not a valid parameter. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="72" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="117" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1adbb1b949661f86f109102f356f7a760b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t B3DImporter::ChunkSize</definition>
+        <argsstring>()</argsstring>
+        <name>ChunkSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="85" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="250" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a2ee0885c27cd1403f6d919dabac9d2b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void B3DImporter::ExitChunk</definition>
+        <argsstring>()</argsstring>
+        <name>ExitChunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="84" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="244" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a0f418da27d820c28b0b6043ba9d0b472" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a6ce513786318507600657cebc16e2d36" kindref="member">AI_WONT_RETURN</ref> void</type>
+        <definition>AI_WONT_RETURN void B3DImporter::Fail</definition>
+        <argsstring>(std::string str) AI_WONT_RETURN_SUFFIX</argsstring>
+        <name>Fail</name>
+        <param>
+          <type>std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="99" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="146" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a69414c3211062c5b6d1fd065978d1b87" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a6ce513786318507600657cebc16e2d36" kindref="member">AI_WONT_RETURN</ref> void</type>
+        <definition>AI_WONT_RETURN void B3DImporter::Oops</definition>
+        <argsstring>() AI_WONT_RETURN_SUFFIX</argsstring>
+        <name>Oops</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="98" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1ae465341dc71a41596969f84e55e77d40" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void B3DImporter::ReadANIM</definition>
+        <argsstring>()</argsstring>
+        <name>ReadANIM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="109" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="509" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a85dac2fd31a3610c6be7433a71bd3644" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void B3DImporter::ReadBB3D</definition>
+        <argsstring>(aiScene *scene)</argsstring>
+        <name>ReadBB3D</name>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="113" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="588" bodyend="742"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a4641458b4742386ed542b1e5d2783a99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void B3DImporter::ReadBONE</definition>
+        <argsstring>(int id)</argsstring>
+        <name>ReadBONE</name>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="107" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="455" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1ac58c432c1d1fedfee5fab4bce5dde291" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void B3DImporter::ReadBRUS</definition>
+        <argsstring>()</argsstring>
+        <name>ReadBRUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="102" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="295" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a0249307ff0216e497249ed1762f44b56" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>int B3DImporter::ReadByte</definition>
+        <argsstring>()</argsstring>
+        <name>ReadByte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="76" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="154" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1ac0cdf4161aa2b5fef38426f92e42e16f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>string B3DImporter::ReadChunk</definition>
+        <argsstring>()</argsstring>
+        <name>ReadChunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="83" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="230" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1add0c3cb27c5b07a8512991d4dfd02e1e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float B3DImporter::ReadFloat</definition>
+        <argsstring>()</argsstring>
+        <name>ReadFloat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="78" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="176" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a8008753bbea5d4a297d55a509d34b2df" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>int B3DImporter::ReadInt</definition>
+        <argsstring>()</argsstring>
+        <name>ReadInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="77" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="163" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a23f2854bbc05245a069226d71c91a0c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void B3DImporter::ReadKEYS</definition>
+        <argsstring>(aiNodeAnim *nodeAnim)</argsstring>
+        <name>ReadKEYS</name>
+        <param>
+          <type><ref refid="structai_node_anim" kindref="compound">aiNodeAnim</ref> *</type>
+          <declname>nodeAnim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="108" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="475" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1af0850bea335da6be7ee4ad92303d23e1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void B3DImporter::ReadMESH</definition>
+        <argsstring>()</argsstring>
+        <name>ReadMESH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="106" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="438" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a199c58bdae41d7657a372ca34ed41a7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+        <definition>aiNode * B3DImporter::ReadNODE</definition>
+        <argsstring>(aiNode *parent)</argsstring>
+        <name>ReadNODE</name>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="111" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="522" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1aebae75be8b0205e6af8eaeda13d2afcb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="quaternion_8h_1a90332e4974fbd571493e0f9b3b5ce707" kindref="member">aiQuaternion</ref></type>
+        <definition>aiQuaternion B3DImporter::ReadQuat</definition>
+        <argsstring>()</argsstring>
+        <name>ReadQuat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="81" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="204" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1aa410cd9fbbbe81fd4b798c1c42a9f454" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>string B3DImporter::ReadString</definition>
+        <argsstring>()</argsstring>
+        <name>ReadString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="82" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="214" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1acb19aaab8712e548c156f7ed9b30c909" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void B3DImporter::ReadTEXS</definition>
+        <argsstring>()</argsstring>
+        <name>ReadTEXS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="101" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="281" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a315694d7f5d3ce7b285476cfb0d2d270" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void B3DImporter::ReadTRIS</definition>
+        <argsstring>(int v0)</argsstring>
+        <name>ReadTRIS</name>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>v0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="105" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="394" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1a0c704d1345e68a29fe0dd2dc50668c83" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vector2_8h_1a0ac1a29f53f3c10ae2e522525f8e311f" kindref="member">aiVector2D</ref></type>
+        <definition>aiVector2D B3DImporter::ReadVec2</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVec2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="79" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="189" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1afaad89b7532d92f78bfd1e24a696b449" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>aiVector3D B3DImporter::ReadVec3</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVec3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="80" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="196" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1afa71b2c73ac6c70b7086ecf2032655c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void B3DImporter::ReadVRTS</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVRTS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="104" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="350" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_b3_d_importer_1aa6ee5624a97a915a2fe13d35dee257b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * B3DImporter::to_array</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;v)</argsstring>
+        <name>to_array</name>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/B3D/B3DImporter.h" line="88" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.cpp" bodystart="256" bodyend="265"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="545">
+        <label>Assimp::B3DImporter</label>
+        <link refid="class_assimp_1_1_b3_d_importer"/>
+        <childnode refid="546" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="546">
+        <label>Assimp::BaseImporter</label>
+        <link refid="class_assimp_1_1_base_importer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="547">
+        <label>Assimp::B3DImporter</label>
+        <link refid="class_assimp_1_1_b3_d_importer"/>
+        <childnode refid="548" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="548">
+        <label>Assimp::BaseImporter</label>
+        <link refid="class_assimp_1_1_base_importer"/>
+        <childnode refid="549" relation="usage">
+          <edgelabel>m_progress</edgelabel>
+        </childnode>
+      </node>
+      <node id="549">
+        <label>Assimp::ProgressHandler</label>
+        <link refid="class_assimp_1_1_progress_handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/B3D/B3DImporter.h" line="62" column="1" bodyfile="code/AssetLib/B3D/B3DImporter.h" bodystart="62" bodyend="130"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_b3_d_importer_1a7c55c941dad791316d79176facf88964" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_animations</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a615056ee7d814c2f24b9785a10db6b95" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_buf</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a2f755912dcd47741c18158f8648219a6" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_materials</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1ad4beaf3a5cc57a6d90f3a7f2ddb33901" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_meshes</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1aa428942e92277847320398ebb864fed6" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_nodeAnims</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a7b6977f20a2c26f1e95e00b335cf0a99" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_nodes</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1aa214adfb5cec45922223b8a28ea72b47" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_pos</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a6b68c91a86c32673a96534d2cea1f09a" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_stack</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a9f16d36efa8c89425929f2a061a7295c" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_tcsets</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a582c9d2ce0750ce03bbc42afb54af9ea" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_tcsize</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1ab2f582a83ef3263b3657d08abfd7907b" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_textures</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a237889e146094a1b87ec8025a3f46984" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_vertices</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a070e4ce67ddcd46eed97a8f8c91da888" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>_vflags</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7af10ad62259d2e54eff440019b345e309" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ALLOW_EMPTY</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a15fb4512ad41a241a3b8de3fa63c0434" prot="protected" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>applicationUnits</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a0a3528749f6206c1692f9d50f1e4f1f1" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>B3DImporter</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3a26428f61d7bebdc477c4d0add9da30" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>BaseImporter</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1ac11dbae36ca892f5ef5f9f3ecdada4f4" prot="public" virt="virtual"><scope>Assimp::B3DImporter</scope><name>CanRead</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a32623af462fcf73fd3c665ca4d866d0f" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>CheckMagicToken</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1adbb1b949661f86f109102f356f7a760b" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ChunkSize</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af5fe8cb0ad373c368ac0d87e9141a833" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>CM</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3cd8c81533de987dd7acea6874ad918c" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ConvertToUTF8</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ad9a7c9788930c44aa40c7448d61a862d" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ConvertUTF8toISO8859_1</name></member>
+      <member refid="class_assimp_1_1_base_importer_1abc1067a6780d7d6dbe457fef8abdb66a" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>CopyVector</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3ce01553ca65d8cc8f1efc2174845d67" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>CopyVector</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a2ee0885c27cd1403f6d919dabac9d2b7" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ExitChunk</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a0f418da27d820c28b0b6043ba9d0b472" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>Fail</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ae90aa4e961f527f988365ee77d476118" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>FEET</name></member>
+      <member refid="class_assimp_1_1_base_importer_1af85971f80c5f45fef8c3a3395e4bbe14" prot="protected" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>fileScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7ae507341521279743797bdce9f7a21081" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>FORBID_EMPTY</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a51876206d286fb5804a2e99ad1fcae12" prot="public" virt="virtual"><scope>Assimp::B3DImporter</scope><name>GetApplicationUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a15c379ec3a8399551d7b379de7fc3bc1" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>GetErrorText</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a05f9397b157ff1b56d7d360a39ca41ac" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>GetException</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3954284d75f9fe30f5ff1758ecd2faeb" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>GetExtension</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a7ac75d5fcfe8784173bf117a912bafeb" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>GetExtensionList</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a21e52bc7b3d7833000737018a8301efc" prot="public" virt="virtual"><scope>Assimp::B3DImporter</scope><name>GetFileScale</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a6a884a1e322be2fb3a6751717c1a6a8b" prot="protected" virt="virtual"><scope>Assimp::B3DImporter</scope><name>GetInfo</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ad5bb9d0bff964c79b625c754b3adb04c" prot="protected" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>importerScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ImporterUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ac43f3495d597a22da47ea894f5432016" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>importerUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ace3a659f5caad10cf4ac6f2de87d35c3" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>INCHES</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1aaeb1d48d9254e53f53772f0b0bcf764f" prot="protected" virt="virtual"><scope>Assimp::B3DImporter</scope><name>InternReadFile</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af84e338c6e9a678ed63b8b2b7de9ef02" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>M</name></member>
+      <member refid="class_assimp_1_1_base_importer_1abd2c9b86479c0c165e5d84d733e53373" prot="protected" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>m_ErrorText</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a7bf84fb733992558272add378e7d9525" prot="protected" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>m_Exception</name></member>
+      <member refid="class_assimp_1_1_base_importer_1aeb17ba9eee14fcdfe2c6f45bf940139d" prot="protected" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>m_progress</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451a1633eb908b6889de4de75080bbf13229" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>MM</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a69414c3211062c5b6d1fd065978d1b87" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>Oops</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1ae465341dc71a41596969f84e55e77d40" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadANIM</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a85dac2fd31a3610c6be7433a71bd3644" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadBB3D</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a4641458b4742386ed542b1e5d2783a99" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadBONE</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1ac58c432c1d1fedfee5fab4bce5dde291" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadBRUS</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a0249307ff0216e497249ed1762f44b56" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadByte</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1ac0cdf4161aa2b5fef38426f92e42e16f" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadChunk</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a047f06945fa656ebedde67819945b28c" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadFile</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1add0c3cb27c5b07a8512991d4dfd02e1e" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadFloat</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a8008753bbea5d4a297d55a509d34b2df" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadInt</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a23f2854bbc05245a069226d71c91a0c7" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadKEYS</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1af0850bea335da6be7ee4ad92303d23e1" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadMESH</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a199c58bdae41d7657a372ca34ed41a7c" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadNODE</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1aebae75be8b0205e6af8eaeda13d2afcb" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadQuat</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1aa410cd9fbbbe81fd4b798c1c42a9f454" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadString</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1acb19aaab8712e548c156f7ed9b30c909" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadTEXS</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a315694d7f5d3ce7b285476cfb0d2d270" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadTRIS</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a0c704d1345e68a29fe0dd2dc50668c83" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadVec2</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1afaad89b7532d92f78bfd1e24a696b449" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadVec3</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1afa71b2c73ac6c70b7086ecf2032655c0" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>ReadVRTS</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6caed29cb9fa2d1e0aa0da2a17851ca2" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>SearchFileHeaderForToken</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9c5e10c82316e3afd685732e8f734f87" prot="public" virt="virtual"><scope>Assimp::B3DImporter</scope><name>SetApplicationUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a8faf1d4f1475e98f96f95fa46aad44c1" prot="public" virt="virtual"><scope>Assimp::B3DImporter</scope><name>SetFileScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a2ecaa6b808b2b282cb6aa321970a2ad3" prot="public" virt="virtual"><scope>Assimp::B3DImporter</scope><name>SetupProperties</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a2de9d21d35c9060480142dc536ce5352" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>SimpleExtensionCheck</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>TextFileMode</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a1c43dc005eb52d2902d13f1a475ec9cd" prot="public" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>TextFileToBuffer</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1aa6ee5624a97a915a2fe13d35dee257b8" prot="private" virt="non-virtual"><scope>Assimp::B3DImporter</scope><name>to_array</name></member>
+      <member refid="class_assimp_1_1_b3_d_importer_1a8774ff662989723c4a5538587487517d" prot="public" virt="virtual"><scope>Assimp::B3DImporter</scope><name>~B3DImporter</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a809ce474153402b8fc8c5a1add89a855" prot="public" virt="virtual"><scope>Assimp::B3DImporter</scope><name>~BaseImporter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

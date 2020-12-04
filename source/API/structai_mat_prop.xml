@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_mat_prop" kind="struct" language="C++" prot="public">
+    <compoundname>aiMatProp</compoundname>
+    <includes local="no">M3DMaterials.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_mat_prop_1a915763ed59936d2290809639cc8d7dc1" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiMatProp::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/M3D/M3DMaterials.h" line="59" column="1" bodyfile="code/AssetLib/M3D/M3DMaterials.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_mat_prop_1a0c341f1f1cf2f1a6041c3b02b097046c" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* aiMatProp::pKey</definition>
+        <argsstring></argsstring>
+        <name>pKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/M3D/M3DMaterials.h" line="57" column="1" bodyfile="code/AssetLib/M3D/M3DMaterials.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_mat_prop_1a56f47ace014822c72ca8ccce2d917b89" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiMatProp::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/M3D/M3DMaterials.h" line="58" column="1" bodyfile="code/AssetLib/M3D/M3DMaterials.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/AssetLib/M3D/M3DMaterials.h" line="56" column="1" bodyfile="code/AssetLib/M3D/M3DMaterials.h" bodystart="56" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structai_mat_prop_1a915763ed59936d2290809639cc8d7dc1" prot="public" virt="non-virtual"><scope>aiMatProp</scope><name>index</name></member>
+      <member refid="structai_mat_prop_1a0c341f1f1cf2f1a6041c3b02b097046c" prot="public" virt="non-virtual"><scope>aiMatProp</scope><name>pKey</name></member>
+      <member refid="structai_mat_prop_1a56f47ace014822c72ca8ccce2d917b89" prot="public" virt="non-virtual"><scope>aiMatProp</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

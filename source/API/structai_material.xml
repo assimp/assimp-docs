@@ -1,0 +1,1200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_material" kind="struct" language="C++" prot="public">
+    <compoundname>aiMaterial</compoundname>
+    <includes local="no">material.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_material_1a84a0016a263362c52b27a9d8d76dc449" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiMaterial::mNumAllocated</definition>
+        <argsstring></argsstring>
+        <name>mNumAllocated</name>
+        <briefdescription>
+<para>Storage allocated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="916" column="1" bodyfile="include/assimp/material.h" bodystart="916" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_material_1a243b07afdc6507f8878c93a2cafe4963" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiMaterial::mNumProperties</definition>
+        <argsstring></argsstring>
+        <name>mNumProperties</name>
+        <briefdescription>
+<para>Number of properties in the data base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="913" column="1" bodyfile="include/assimp/material.h" bodystart="913" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_material_1af32b125d54bff5bc1fc54a1007487cab" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> aiMaterialProperty **</type>
+        <definition>C_STRUCT aiMaterialProperty** aiMaterial::mProperties</definition>
+        <argsstring></argsstring>
+        <name>mProperties</name>
+        <briefdescription>
+<para>List of all material properties loaded. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="910" column="1" bodyfile="include/assimp/material.h" bodystart="910" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_material_1a925f7106289ab3513fe2a59fc4c18038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::AddBinaryProperty</definition>
+        <argsstring>(const void *pInput, unsigned int pSizeInBytes, const char *pKey, unsigned int type, unsigned int index, aiPropertyTypeInfo pType)</argsstring>
+        <name>AddBinaryProperty</name>
+        <param>
+          <type>const void *</type>
+          <declname>pInput</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>pSizeInBytes</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>aiPropertyTypeInfo</type>
+          <declname>pType</declname>
+        </param>
+        <briefdescription>
+<para>Add a property with a given key and type info to the material structure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to input data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pSizeInBytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of input data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key/Usage of the property (AI_MATKEY_XXX) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set by the AI_MATKEY_XXX macro </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set by the AI_MATKEY_XXX macro </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_type" kindref="compound">Type</ref> information hint </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="805" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="449" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a0432dbdfd97ffe71838daf967a6b087e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::AddProperty</definition>
+        <argsstring>(const aiString *pInput, const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
+        <name>AddProperty</name>
+        <param>
+          <type>const <ref refid="structai_string" kindref="compound">aiString</ref> *</type>
+          <declname>pInput</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Add a string property with a given key and type info to the material structure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key/Usage of the property (AI_MATKEY_XXX) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set by the AI_MATKEY_XXX macro </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set by the AI_MATKEY_XXX macro </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="820" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="523" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a615a7af80f5d2b9f6f3ea66431017b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class <ref refid="inflate_8h_1a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084" kindref="member">TYPE</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::AddProperty</definition>
+        <argsstring>(const TYPE *pInput, unsigned int pNumValues, const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
+        <name>AddProperty</name>
+        <param>
+          <type>const <ref refid="inflate_8h_1a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084" kindref="member">TYPE</ref> *</type>
+          <declname>pInput</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>pNumValues</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Add a property with a given key to the material structure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the input data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pNumValues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of values in the array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key/Usage of the property (AI_MATKEY_XXX) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set by the AI_MATKEY_XXX macro </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set by the AI_MATKEY_XXX macro </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="833" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1af72a124ef3c98d8bc65b461dbd286e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::AddProperty</definition>
+        <argsstring>(const aiVector3D *pInput, unsigned int pNumValues, const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
+        <name>AddProperty</name>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
+          <declname>pInput</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>pNumValues</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="839" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1ae060dd36170aec41416f40ecf3965d02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::AddProperty</definition>
+        <argsstring>(const aiColor3D *pInput, unsigned int pNumValues, const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
+        <name>AddProperty</name>
+        <param>
+          <type>const <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref> *</type>
+          <declname>pInput</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>pNumValues</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="845" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1aaadc122ae6a4bb4681761cabc63cd178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::AddProperty</definition>
+        <argsstring>(const aiColor4D *pInput, unsigned int pNumValues, const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
+        <name>AddProperty</name>
+        <param>
+          <type>const <ref refid="color4_8h_1a4badb8c19633de8f741ba2089ab79189" kindref="member">aiColor4D</ref> *</type>
+          <declname>pInput</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>pNumValues</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="851" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a18c15249aa8acec6318ff96d98e9b39b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::AddProperty</definition>
+        <argsstring>(const int *pInput, unsigned int pNumValues, const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
+        <name>AddProperty</name>
+        <param>
+          <type>const <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <declname>pInput</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>pNumValues</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="857" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1abb637125631e92221586730d33c23df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::AddProperty</definition>
+        <argsstring>(const float *pInput, unsigned int pNumValues, const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
+        <name>AddProperty</name>
+        <param>
+          <type>const float *</type>
+          <declname>pInput</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>pNumValues</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="863" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a9e7ced117a07c8c1d0c84e2a7fb15839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::AddProperty</definition>
+        <argsstring>(const double *pInput, unsigned int pNumValues, const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
+        <name>AddProperty</name>
+        <param>
+          <type>const double *</type>
+          <declname>pInput</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>pNumValues</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="869" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a2de21022a6abdfaad073115a02fdb977" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::AddProperty</definition>
+        <argsstring>(const aiUVTransform *pInput, unsigned int pNumValues, const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
+        <name>AddProperty</name>
+        <param>
+          <type>const <ref refid="structai_u_v_transform" kindref="compound">aiUVTransform</ref> *</type>
+          <declname>pInput</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>pNumValues</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="875" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a3c350f89834a7cd3dbc4b4490a0a09dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aiMaterial::aiMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>aiMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="678" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="391" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a9e66c8d6da65d5ef14b06876d93ba8ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aiMaterial::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Removes all properties from the material. </para>        </briefdescription>
+        <detaileddescription>
+<para>The data array remains allocated so adding new properties is quite fast. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="896" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="413" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1aac3ab4c47d5acce7f8813c1111198a9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="struct_type" kindref="compound">Type</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::Get</definition>
+        <argsstring>(const char *pKey, unsigned int type, unsigned int idx, Type *pOut, unsigned int *pMax) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_type" kindref="compound">Type</ref> *</type>
+          <declname>pOut</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <declname>pMax</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve an array of <ref refid="struct_type" kindref="compound">Type</ref> values with a specific key from the material. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key to search for. One of the AI_MATKEY_XXX constants. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.. set by AI_MATKEY_XXX </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.. set by AI_MATKEY_XXX </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a buffer to receive the result. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the size of the given buffer, in <ref refid="struct_type" kindref="compound">Type</ref>&apos;s. Receives the number of values (not bytes!) read. NULL is a valid value for this parameter. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="702" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a4ee0d147251822fa783dd1d3eb6ef60a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::Get</definition>
+        <argsstring>(const char *pKey, unsigned int type, unsigned int idx, int *pOut, unsigned int *pMax) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <declname>pOut</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <declname>pMax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="705" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1aba9f4c0f541d9cbbe0c9738d1e0fc2ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::Get</definition>
+        <argsstring>(const char *pKey, unsigned int type, unsigned int idx, ai_real *pOut, unsigned int *pMax) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref> *</type>
+          <declname>pOut</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <declname>pMax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="708" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a62bfb3a1d55bc9808220d20824394e0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="struct_type" kindref="compound">Type</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::Get</definition>
+        <argsstring>(const char *pKey, unsigned int type, unsigned int idx, Type &amp;pOut) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_type" kindref="compound">Type</ref> &amp;</type>
+          <declname>pOut</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve a <ref refid="struct_type" kindref="compound">Type</ref> value with a specific key from the material. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key to search for. One of the AI_MATKEY_XXX constants. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the type of the texture to be retrieved ( e.g. diffuse, specular, height map ...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the texture to be retrieved. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_reference" kindref="compound">Reference</ref> to receive the output value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="722" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a21144db3756c243cee326c7934653277" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::Get</definition>
+        <argsstring>(const char *pKey, unsigned int type, unsigned int idx, int &amp;pOut) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> &amp;</type>
+          <declname>pOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="726" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1aa8f0f978407dfa0d79adfff66f1a337c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::Get</definition>
+        <argsstring>(const char *pKey, unsigned int type, unsigned int idx, ai_real &amp;pOut) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref> &amp;</type>
+          <declname>pOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="729" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a147bf5b406d4066ee206688d1e4c5079" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::Get</definition>
+        <argsstring>(const char *pKey, unsigned int type, unsigned int idx, aiString &amp;pOut) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
+          <declname>pOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="732" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1abb3709ed3452c33c7319d1b100025112" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::Get</definition>
+        <argsstring>(const char *pKey, unsigned int type, unsigned int idx, aiColor3D &amp;pOut) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref> &amp;</type>
+          <declname>pOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="735" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a34fd7998d599b1d949b9f725b088a3a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::Get</definition>
+        <argsstring>(const char *pKey, unsigned int type, unsigned int idx, aiColor4D &amp;pOut) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="color4_8h_1a4badb8c19633de8f741ba2089ab79189" kindref="member">aiColor4D</ref> &amp;</type>
+          <declname>pOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="738" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1ae5d0bfa9a52a76beaa0db933bffd936c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::Get</definition>
+        <argsstring>(const char *pKey, unsigned int type, unsigned int idx, aiUVTransform &amp;pOut) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_u_v_transform" kindref="compound">aiUVTransform</ref> &amp;</type>
+          <declname>pOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="741" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a2e238577eb73917777eb64b804aa2863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_string" kindref="compound">aiString</ref></type>
+        <definition>aiString aiMaterial::GetName</definition>
+        <argsstring>()</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+<para>Returns the name of the material. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the material. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="687" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="405" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1aaba490ca3a2d10caeee155027ce7327c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::GetTexture</definition>
+        <argsstring>(aiTextureType type, unsigned int index, C_STRUCT aiString *path, aiTextureMapping *mapping=NULL, unsigned int *uvindex=NULL, ai_real *blend=NULL, aiTextureOp *op=NULL, aiTextureMapMode *mapmode=NULL) const</argsstring>
+        <name>GetTexture</name>
+        <param>
+          <type><ref refid="material_8h_1a7dd415ff703a2cc53d1c22ddbbd7dde0" kindref="member">aiTextureType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="material_8h_1a6186e909f1ae28133ab10f1b4635b0f9" kindref="member">aiTextureMapping</ref> *</type>
+          <declname>mapping</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <declname>uvindex</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref> *</type>
+          <declname>blend</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="material_8h_1afcd3096d69affba13114cedfc6f9ee6b" kindref="member">aiTextureOp</ref> *</type>
+          <declname>op</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="material_8h_1a6cbe56056751aa80e8dd714632a49de0" kindref="member">aiTextureMapMode</ref> *</type>
+          <declname>mapmode</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Helper function to get all parameters pertaining to a particular texture slot from a material. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is provided just for convenience, you could also read the single material properties manually. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the type of the texture to be retrieved ( e.g. diffuse, specular, height map ...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the texture to be retrieved. The function fails if there is no texture of that type with this index. <ref refid="structai_material_1afbdfc4d4f180f865abf3c5303b50ef7b" kindref="member">GetTextureCount()</ref> can be used to determine the number of textures per texture type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the path to the texture. If the texture is embedded, receives a &apos;*&apos; followed by the id of the texture (for the textures stored in the corresponding scene) which can be converted to an int using a function like atoi. NULL is a valid value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mapping</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture mapping. NULL is allowed as value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uvindex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the UV index of the texture. NULL is a valid value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the blend factor for the texture NULL is a valid value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>op</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the texture operation to be performed between this texture and the previous texture. NULL is allowed as value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mapmode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the mapping modes to be used for the texture. The parameter may be NULL but if it is a valid pointer it MUST point to an array of 3 aiTextureMapMode&apos;s (one for each axis: UVW order (=XYZ)). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="782" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1afbdfc4d4f180f865abf3c5303b50ef7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiMaterial::GetTextureCount</definition>
+        <argsstring>(aiTextureType type) const</argsstring>
+        <name>GetTextureCount</name>
+        <param>
+          <type><ref refid="material_8h_1a7dd415ff703a2cc53d1c22ddbbd7dde0" kindref="member">aiTextureType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of textures for a particular texture type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_texture" kindref="compound">Texture</ref> type to check for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of textures for this type. </para></simplesect>
+<simplesect kind="note"><para>A texture can be easily queried using <ref refid="structai_material_1aaba490ca3a2d10caeee155027ce7327c" kindref="member">GetTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="749" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a21e18879d3e3c76a0a38791635667f5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn aiMaterial::RemoveProperty</definition>
+        <argsstring>(const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
+        <name>RemoveProperty</name>
+        <param>
+          <type>const char *</type>
+          <declname>pKey</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Remove a given key from the list. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function fails if the key isn&apos;t found <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key to be deleted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set by the AI_MATKEY_XXX macro </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set by the AI_MATKEY_XXX macro </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="888" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="425" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_material_1a9c4c1c8fd7580777ffffe96b63d4b3f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aiMaterial::~aiMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>~aiMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="679" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="398" bodyend="402"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structai_material_1ac21e2db2048df2531053b18f45a9e393" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aiMaterial::CopyPropertyList</definition>
+        <argsstring>(aiMaterial *pcDest, const aiMaterial *pcSrc)</argsstring>
+        <name>CopyPropertyList</name>
+        <param>
+          <type><ref refid="structai_material" kindref="compound">aiMaterial</ref> *</type>
+          <declname>pcDest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_material" kindref="compound">aiMaterial</ref> *</type>
+          <declname>pcSrc</declname>
+        </param>
+        <briefdescription>
+<para>Copy the property list of a material. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pcDest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination material </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pcSrc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source material </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="903" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="559" bodyend="609"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure for a material. </para>    </briefdescription>
+    <detaileddescription>
+<para>Material data is stored using a key-value structure. A single key-value pair is called a &apos;material property&apos;. C++ users should use the provided member functions of <ref refid="structai_material" kindref="compound">aiMaterial</ref> to process material properties, C users have to stick with the aiMaterialGetXXX family of unbound functions. The library defines a set of standard keys (AI_MATKEY_XXX). </para>    </detaileddescription>
+    <location file="include/assimp/material.h" line="672" column="1" bodyfile="include/assimp/material.h" bodystart="668" bodyend="917"/>
+    <listofallmembers>
+      <member refid="structai_material_1a925f7106289ab3513fe2a59fc4c18038" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddBinaryProperty</name></member>
+      <member refid="structai_material_1a0432dbdfd97ffe71838daf967a6b087e" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddProperty</name></member>
+      <member refid="structai_material_1a615a7af80f5d2b9f6f3ea66431017b4d" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddProperty</name></member>
+      <member refid="structai_material_1af72a124ef3c98d8bc65b461dbd286e06" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddProperty</name></member>
+      <member refid="structai_material_1ae060dd36170aec41416f40ecf3965d02" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddProperty</name></member>
+      <member refid="structai_material_1aaadc122ae6a4bb4681761cabc63cd178" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddProperty</name></member>
+      <member refid="structai_material_1a18c15249aa8acec6318ff96d98e9b39b" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddProperty</name></member>
+      <member refid="structai_material_1abb637125631e92221586730d33c23df9" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddProperty</name></member>
+      <member refid="structai_material_1a9e7ced117a07c8c1d0c84e2a7fb15839" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddProperty</name></member>
+      <member refid="structai_material_1a2de21022a6abdfaad073115a02fdb977" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddProperty</name></member>
+      <member refid="structai_material_1a3c350f89834a7cd3dbc4b4490a0a09dd" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>aiMaterial</name></member>
+      <member refid="structai_material_1a9e66c8d6da65d5ef14b06876d93ba8ec" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Clear</name></member>
+      <member refid="structai_material_1ac21e2db2048df2531053b18f45a9e393" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>CopyPropertyList</name></member>
+      <member refid="structai_material_1aac3ab4c47d5acce7f8813c1111198a9a" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
+      <member refid="structai_material_1a4ee0d147251822fa783dd1d3eb6ef60a" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
+      <member refid="structai_material_1aba9f4c0f541d9cbbe0c9738d1e0fc2ec" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
+      <member refid="structai_material_1a62bfb3a1d55bc9808220d20824394e0c" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
+      <member refid="structai_material_1a21144db3756c243cee326c7934653277" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
+      <member refid="structai_material_1aa8f0f978407dfa0d79adfff66f1a337c" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
+      <member refid="structai_material_1a147bf5b406d4066ee206688d1e4c5079" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
+      <member refid="structai_material_1abb3709ed3452c33c7319d1b100025112" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
+      <member refid="structai_material_1a34fd7998d599b1d949b9f725b088a3a7" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
+      <member refid="structai_material_1ae5d0bfa9a52a76beaa0db933bffd936c" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
+      <member refid="structai_material_1a2e238577eb73917777eb64b804aa2863" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>GetName</name></member>
+      <member refid="structai_material_1aaba490ca3a2d10caeee155027ce7327c" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>GetTexture</name></member>
+      <member refid="structai_material_1afbdfc4d4f180f865abf3c5303b50ef7b" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>GetTextureCount</name></member>
+      <member refid="structai_material_1a84a0016a263362c52b27a9d8d76dc449" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>mNumAllocated</name></member>
+      <member refid="structai_material_1a243b07afdc6507f8878c93a2cafe4963" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>mNumProperties</name></member>
+      <member refid="structai_material_1af32b125d54bff5bc1fc54a1007487cab" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>mProperties</name></member>
+      <member refid="structai_material_1a21e18879d3e3c76a0a38791635667f5d" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>RemoveProperty</name></member>
+      <member refid="structai_material_1a9c4c1c8fd7580777ffffe96b63d4b3f7" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>~aiMaterial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_assimp_1_1_a_s_e_1_1_camera" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::ASE::Camera</compoundname>
+    <basecompoundref refid="struct_assimp_1_1_a_s_e_1_1_base_node" prot="public" virt="non-virtual">Assimp::ASE::BaseNode</basecompoundref>
+    <includes local="no">ASEParser.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_assimp_1_1_a_s_e_1_1_camera_1af01d4a3ef28c0def77a86deb1dcd42b4" prot="public" static="no">
+        <name>CameraType</name>
+        <enumvalue id="struct_assimp_1_1_a_s_e_1_1_camera_1af01d4a3ef28c0def77a86deb1dcd42b4a355db257c0be45d183f2f79ac170c742" prot="public">
+          <name>FREE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_assimp_1_1_a_s_e_1_1_camera_1af01d4a3ef28c0def77a86deb1dcd42b4af38ff19adb628e120d2a1805b3f349f0" prot="public">
+          <name>TARGET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="344" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="344" bodyend="347"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_a_s_e_1_1_camera_1adcf3d6d068a29a2f4307e0e6797cdcda" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_assimp_1_1_a_s_e_1_1_camera_1af01d4a3ef28c0def77a86deb1dcd42b4" kindref="member">CameraType</ref></type>
+        <definition>CameraType Assimp::ASE::Camera::mCameraType</definition>
+        <argsstring></argsstring>
+        <name>mCameraType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="363" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_s_e_1_1_camera_1a5b69f71724a5abb3d9a4b3c4dfbe9ffa" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real Assimp::ASE::Camera::mFar</definition>
+        <argsstring></argsstring>
+        <name>mFar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="362" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_s_e_1_1_camera_1aa8bb21f565d4f4b6f62bf8a1a4962810" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real Assimp::ASE::Camera::mFOV</definition>
+        <argsstring></argsstring>
+        <name>mFOV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="362" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_s_e_1_1_camera_1a68581f1477a1f87c3f3b5ba6edc4d120" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real Assimp::ASE::Camera::mNear</definition>
+        <argsstring></argsstring>
+        <name>mNear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="362" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_a_s_e_1_1_camera_1a6068c352d3aaaad1d745794a2c91cb77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ASE::Camera::Camera</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Camera</name>
+        <briefdescription>
+<para>Default constructor has been deleted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="350" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_assimp_1_1_a_s_e_1_1_camera_1a048a6942fb3ef5d623611fef29cc586a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ASE::Camera::Camera</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>Camera</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Construction from an existing name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="353" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="353" bodyend="360"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper structure to represent an <ref refid="namespace_assimp_1_1_a_s_e" kindref="compound">ASE</ref> camera. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="406">
+        <label>Assimp::ASE::BaseNode</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_base_node"/>
+      </node>
+      <node id="405">
+        <label>Assimp::ASE::Camera</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_camera"/>
+        <childnode refid="406" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="412">
+        <label>aiVector3t&lt; ai_real &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+      <node id="409">
+        <label>aiMatrix4x4t&lt; ai_real &gt;</label>
+        <link refid="classai_matrix4x4t"/>
+      </node>
+      <node id="411">
+        <label>Assimp::ASE::InheritanceInfo</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_inheritance_info"/>
+      </node>
+      <node id="408">
+        <label>Assimp::ASE::BaseNode</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_base_node"/>
+        <childnode refid="409" relation="usage">
+          <edgelabel>mTransform</edgelabel>
+        </childnode>
+        <childnode refid="410" relation="usage">
+          <edgelabel>mAnim</edgelabel>
+          <edgelabel>mTargetAnim</edgelabel>
+        </childnode>
+        <childnode refid="411" relation="usage">
+          <edgelabel>inherit</edgelabel>
+        </childnode>
+        <childnode refid="412" relation="usage">
+          <edgelabel>mTargetPosition</edgelabel>
+        </childnode>
+      </node>
+      <node id="410">
+        <label>Assimp::ASE::Animation</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_animation"/>
+      </node>
+      <node id="407">
+        <label>Assimp::ASE::Camera</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_camera"/>
+        <childnode refid="408" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/ASE/ASEParser.h" line="343" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="343" bodyend="364"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a9419581c9d76241f938a45772fd39129" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>BaseNode</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_camera_1a6068c352d3aaaad1d745794a2c91cb77" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>Camera</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_camera_1a048a6942fb3ef5d623611fef29cc586a" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>Camera</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a23f5e4fe52cccc599c42823b766e7bb0a44b64488492912d6777e22f758fee64e" prot="public" virt="non-virtual" ambiguityscope="Assimp::ASE::BaseNode::"><scope>Assimp::ASE::Camera</scope><name>Camera</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_camera_1af01d4a3ef28c0def77a86deb1dcd42b4" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>CameraType</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a23f5e4fe52cccc599c42823b766e7bb0a26643d9e6cd30b5501f394675fdae129" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>Dummy</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_camera_1af01d4a3ef28c0def77a86deb1dcd42b4a355db257c0be45d183f2f79ac170c742" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>FREE</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a3ba9514175a7012d01f182d4150bf136" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>inherit</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a23f5e4fe52cccc599c42823b766e7bb0a80083659d752bdc7db9c8a8fd441d2fe" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>Light</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a7f1c087a6e0791a7b25c77c323e35611" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mAnim</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_camera_1adcf3d6d068a29a2f4307e0e6797cdcda" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mCameraType</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a23f5e4fe52cccc599c42823b766e7bb0a02838abf952736a8efbcabb64a3ac2ea" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>Mesh</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_camera_1a5b69f71724a5abb3d9a4b3c4dfbe9ffa" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mFar</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_camera_1aa8bb21f565d4f4b6f62bf8a1a4962810" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mFOV</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a1ee5b846983351d3dfc682df4fbc1807" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mName</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_camera_1a68581f1477a1f87c3f3b5ba6edc4d120" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mNear</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a65c3ff02a4f7a4f7548dbab107b0e026" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mParent</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a36a4bfc678fc6d9506cb266ddb59601c" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mProcessed</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a414f10a3fca66246abf5e111414d90b0" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mTargetAnim</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a8d6ca90c2c2a985a295cab16a6770ed6" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mTargetPosition</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a84de0c31678f49a7242b25b2f0b3556c" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mTransform</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1acd7f2fd60c9259dc3c278f4c6e708300" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>mType</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_camera_1af01d4a3ef28c0def77a86deb1dcd42b4af38ff19adb628e120d2a1805b3f349f0" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>TARGET</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a23f5e4fe52cccc599c42823b766e7bb0" prot="public" virt="non-virtual"><scope>Assimp::ASE::Camera</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

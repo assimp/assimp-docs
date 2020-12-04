@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_mesh_morph_anim" kind="struct" language="C++" prot="public">
+    <compoundname>aiMeshMorphAnim</compoundname>
+    <includes local="no">anim.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_mesh_morph_anim_1a0d4f98ee7eb4e2aaabf31eba48bd14c2" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_mesh_morph_key" kindref="compound">aiMeshMorphKey</ref> *</type>
+        <definition>C_STRUCT aiMeshMorphKey* aiMeshMorphAnim::mKeys</definition>
+        <argsstring></argsstring>
+        <name>mKeys</name>
+        <briefdescription>
+<para>Key frames of the animation. </para>        </briefdescription>
+        <detaileddescription>
+<para>May not be nullptr. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="380" column="1" bodyfile="include/assimp/anim.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_mesh_morph_anim_1a21de91fb9c9fcf58a0bd0c761ea25cf5" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
+        <definition>C_STRUCT aiString aiMeshMorphAnim::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <briefdescription>
+<para><ref refid="struct_name" kindref="compound">Name</ref> of the mesh to be animated. </para>        </briefdescription>
+        <detaileddescription>
+<para>An empty string is not allowed, animated meshes need to be named (not necessarily uniquely, the name can basically serve as wildcard to select a group of meshes with similar animation setup) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="374" column="1" bodyfile="include/assimp/anim.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_mesh_morph_anim_1af9c8a3e37613a196ed33d2746cf6f0c8" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiMeshMorphAnim::mNumKeys</definition>
+        <argsstring></argsstring>
+        <name>mNumKeys</name>
+        <briefdescription>
+<para>Size of the <ref refid="structai_mesh_morph_anim_1a0d4f98ee7eb4e2aaabf31eba48bd14c2" kindref="member">mKeys</ref> array. </para>        </briefdescription>
+        <detaileddescription>
+<para>Must be 1, at least. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="377" column="1" bodyfile="include/assimp/anim.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_mesh_morph_anim_1aa105ff688e281619f7ffb096dba3d031" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiMeshMorphAnim::aiMeshMorphAnim</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiMeshMorphAnim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="384" column="1" bodyfile="include/assimp/anim.h" bodystart="384" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_mesh_morph_anim_1a39c10ff4784d1e917d0f36b97b1bcd93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiMeshMorphAnim::~aiMeshMorphAnim</definition>
+        <argsstring>()</argsstring>
+        <name>~aiMeshMorphAnim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="388" column="1" bodyfile="include/assimp/anim.h" bodystart="388" bodyend="390"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes a morphing animation of a given mesh. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="166">
+        <label>aiMeshMorphKey</label>
+        <link refid="structai_mesh_morph_key"/>
+      </node>
+      <node id="165">
+        <label>aiString</label>
+        <link refid="structai_string"/>
+      </node>
+      <node id="164">
+        <label>aiMeshMorphAnim</label>
+        <link refid="structai_mesh_morph_anim"/>
+        <childnode refid="165" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="166" relation="usage">
+          <edgelabel>mKeys</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/anim.h" line="369" column="1" bodyfile="include/assimp/anim.h" bodystart="369" bodyend="393"/>
+    <listofallmembers>
+      <member refid="structai_mesh_morph_anim_1aa105ff688e281619f7ffb096dba3d031" prot="public" virt="non-virtual"><scope>aiMeshMorphAnim</scope><name>aiMeshMorphAnim</name></member>
+      <member refid="structai_mesh_morph_anim_1a0d4f98ee7eb4e2aaabf31eba48bd14c2" prot="public" virt="non-virtual"><scope>aiMeshMorphAnim</scope><name>mKeys</name></member>
+      <member refid="structai_mesh_morph_anim_1a21de91fb9c9fcf58a0bd0c761ea25cf5" prot="public" virt="non-virtual"><scope>aiMeshMorphAnim</scope><name>mName</name></member>
+      <member refid="structai_mesh_morph_anim_1af9c8a3e37613a196ed33d2746cf6f0c8" prot="public" virt="non-virtual"><scope>aiMeshMorphAnim</scope><name>mNumKeys</name></member>
+      <member refid="structai_mesh_morph_anim_1a39c10ff4784d1e917d0f36b97b1bcd93" prot="public" virt="non-virtual"><scope>aiMeshMorphAnim</scope><name>~aiMeshMorphAnim</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

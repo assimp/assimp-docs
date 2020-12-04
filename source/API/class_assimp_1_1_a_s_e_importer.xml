@@ -1,0 +1,885 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_assimp_1_1_a_s_e_importer" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::ASEImporter</compoundname>
+    <basecompoundref refid="class_assimp_1_1_base_importer" prot="public" virt="non-virtual">Assimp::BaseImporter</basecompoundref>
+    <includes local="no">ASELoader.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_importer_1a917adc76013c307d6896fb4e71658354" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::ASEImporter::configRecomputeNormals</definition>
+        <argsstring></argsstring>
+        <name>configRecomputeNormals</name>
+        <briefdescription>
+<para>Config options: Recompute the normals in every case - WA for 3DS Max broken <ref refid="namespace_assimp_1_1_a_s_e" kindref="compound">ASE</ref> normal export. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="198" column="1" bodyfile="code/AssetLib/ASE/ASELoader.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_importer_1a1ad4f1b3c0277112264368cb5535a922" prot="protected" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* Assimp::ASEImporter::mBuffer</definition>
+        <argsstring></argsstring>
+        <name>mBuffer</name>
+        <briefdescription>
+<para>Buffer to hold the loaded file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="191" column="1" bodyfile="code/AssetLib/ASE/ASELoader.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_importer_1af102f01e30484afd056e3b518fb9752b" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_assimp_1_1_a_s_e_1_1_parser" kindref="compound">ASE::Parser</ref> *</type>
+        <definition>ASE::Parser* Assimp::ASEImporter::mParser</definition>
+        <argsstring></argsstring>
+        <name>mParser</name>
+        <briefdescription>
+<para>Parser instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="188" column="1" bodyfile="code/AssetLib/ASE/ASELoader.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_importer_1a8acb6201d9df82737fe4ddee66d321a9" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::ASEImporter::noSkeletonMesh</definition>
+        <argsstring></argsstring>
+        <name>noSkeletonMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="199" column="1" bodyfile="code/AssetLib/ASE/ASELoader.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_importer_1aeb0f353b00138c1c502e4475c9dc7162" prot="protected" static="no" mutable="no">
+        <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+        <definition>aiScene* Assimp::ASEImporter::pcScene</definition>
+        <argsstring></argsstring>
+        <name>pcScene</name>
+        <briefdescription>
+<para>Scene to be filled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="194" column="1" bodyfile="code/AssetLib/ASE/ASELoader.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a6e49458b956e1f7f3c0c708074993e77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ASEImporter::ASEImporter</definition>
+        <argsstring>()</argsstring>
+        <name>ASEImporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="64" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1ae9c26344003dfe948ed61e183f8e3b1e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ASEImporter::CanRead</definition>
+        <argsstring>(const std::string &amp;pFile, IOSystem *pIOHandler, bool checkSig) const</argsstring>
+        <name>CanRead</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1a13588d3396ba5b7ed1f1cb46e0945cfd">CanRead</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>checkSig</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether the class can handle the format of the given file. </para>        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_assimp_1_1_base_importer_1a13588d3396ba5b7ed1f1cb46e0945cfd" kindref="member">BaseImporter::CanRead()</ref> for details. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="71" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="100" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a62185ff0d76d9fd917f16ea0c214ec43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ASEImporter::~ASEImporter</definition>
+        <argsstring>()</argsstring>
+        <name>~ASEImporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="65" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="94" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a20db9618a4d70df7acd1af54667a4316" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref> *</type>
+        <definition>const aiImporterDesc * ASEImporter::GetInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInfo</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1a070b8c3f63767ad535c8ac509b725fc4">GetInfo</reimplements>
+        <briefdescription>
+<para>Return importer meta information. </para>        </briefdescription>
+        <detaileddescription>
+<para>See #BaseImporter::GetInfo for the details </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="80" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a9e7b1964d1476cfaf6f45e3ce37b2a78" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ASEImporter::InternReadFile</definition>
+        <argsstring>(const std::string &amp;pFile, aiScene *pScene, IOSystem *pIOHandler)</argsstring>
+        <name>InternReadFile</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1ac67d9f5ceb26353d27d6be06cccad398">InternReadFile</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <briefdescription>
+<para>Imports the given file into the given scene structure. </para>        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_assimp_1_1_base_importer_1ac67d9f5ceb26353d27d6be06cccad398" kindref="member">BaseImporter::InternReadFile()</ref> for details </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="87" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="134" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a71d33277500d8b4c300e2b36eb94d472" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ASEImporter::SetupProperties</definition>
+        <argsstring>(const Importer *pImp)</argsstring>
+        <name>SetupProperties</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1a2ecaa6b808b2b282cb6aa321970a2ad3">SetupProperties</reimplements>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> *</type>
+          <declname>pImp</declname>
+        </param>
+        <briefdescription>
+<para>Called prior to <ref refid="class_assimp_1_1_base_importer_1a047f06945fa656ebedde67819945b28c" kindref="member">ReadFile()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function is a request to the importer to update its configuration basing on the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref>&apos;s configuration property list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="96" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="123" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1adba301594573fec62775d19d00cd5a97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::AddMeshes</definition>
+        <argsstring>(const ASE::BaseNode *snode, aiNode *node)</argsstring>
+        <name>AddMeshes</name>
+        <param>
+          <type>const <ref refid="struct_assimp_1_1_a_s_e_1_1_base_node" kindref="compound">ASE::BaseNode</ref> *</type>
+          <declname>snode</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="176" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="491" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1afa53dd35e8fecfdd12f535dccca565dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::AddNodes</definition>
+        <argsstring>(const std::vector&lt; ASE::BaseNode *&gt; &amp;nodes, aiNode *pcParent, const char *szName)</argsstring>
+        <name>AddNodes</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="struct_assimp_1_1_a_s_e_1_1_base_node" kindref="compound">ASE::BaseNode</ref> *&gt; &amp;</type>
+          <declname>nodes</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>pcParent</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <briefdescription>
+<para>Add sub nodes to a node. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pcParent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parent node to be filled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>szName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_name" kindref="compound">Name</ref> of the parent node </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current transform </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="169" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="483" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a8b6524b5ebb5def8dd730b23adef23bc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::AddNodes</definition>
+        <argsstring>(const std::vector&lt; ASE::BaseNode *&gt; &amp;nodes, aiNode *pcParent, const char *szName, const aiMatrix4x4 &amp;matrix)</argsstring>
+        <name>AddNodes</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="struct_assimp_1_1_a_s_e_1_1_base_node" kindref="compound">ASE::BaseNode</ref> *&gt; &amp;</type>
+          <declname>nodes</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>pcParent</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="172" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="543" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a69c9430f69dc9de9aa18f89c3d51fcc7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::BuildAnimations</definition>
+        <argsstring>(const std::vector&lt; ASE::BaseNode *&gt; &amp;nodes)</argsstring>
+        <name>BuildAnimations</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="struct_assimp_1_1_a_s_e_1_1_base_node" kindref="compound">ASE::BaseNode</ref> *&gt; &amp;</type>
+          <declname>nodes</declname>
+        </param>
+        <briefdescription>
+<para>Build output animations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="160" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="291" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1ae6587ddad84823b3edf0680d498a6c52" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::BuildCameras</definition>
+        <argsstring>()</argsstring>
+        <name>BuildCameras</name>
+        <briefdescription>
+<para>Build output cameras. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="148" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="425" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a536aaf23cda5ef94ccbb48ebbdd3a1b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::BuildLights</definition>
+        <argsstring>()</argsstring>
+        <name>BuildLights</name>
+        <briefdescription>
+<para>Build output lights. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="154" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="446" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a870b6419aef0af9f23d4034d52238089" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::BuildMaterialIndices</definition>
+        <argsstring>()</argsstring>
+        <name>BuildMaterialIndices</name>
+        <briefdescription>
+<para>Setup the final material indices for each mesh. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="136" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="1205" bodyend="1278"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a6c3ee6fbdb9eb2e4d66194cb2a9aec7a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::BuildNodes</definition>
+        <argsstring>(std::vector&lt; ASE::BaseNode *&gt; &amp;nodes)</argsstring>
+        <name>BuildNodes</name>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_assimp_1_1_a_s_e_1_1_base_node" kindref="compound">ASE::BaseNode</ref> *&gt; &amp;</type>
+          <declname>nodes</declname>
+        </param>
+        <briefdescription>
+<para>Build the node graph. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="142" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="636" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a8f21c6cd252b12996a772c1295e4c71c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::BuildUniqueRepresentation</definition>
+        <argsstring>(ASE::Mesh &amp;mesh)</argsstring>
+        <name>BuildUniqueRepresentation</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">ASE::Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Create valid vertex/normal/UV/color/face lists. </para>        </briefdescription>
+        <detaileddescription>
+<para>All elements are unique, faces have only one set of indices after this step occurs. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_mesh" kindref="compound">Mesh</ref> to work on </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="116" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="732" bodyend="802"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a48775c5fc00267ff2d1f4b3e5a6e72c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::ConvertMaterial</definition>
+        <argsstring>(ASE::Material &amp;mat)</argsstring>
+        <name>ConvertMaterial</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_material" kindref="compound">ASE::Material</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Convert a material to a <ref refid="structai_material" kindref="compound">aiMaterial</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input material </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="130" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="822" bodyend="929"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a5d24d54c68084c330142dc6be9967b93" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::ConvertMeshes</definition>
+        <argsstring>(ASE::Mesh &amp;mesh, std::vector&lt; aiMesh *&gt; &amp;avOut)</argsstring>
+        <name>ConvertMeshes</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">ASE::Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_mesh" kindref="compound">aiMesh</ref> *&gt; &amp;</type>
+          <declname>avOut</declname>
+        </param>
+        <briefdescription>
+<para>Create one-material-per-mesh meshes ;-) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_mesh" kindref="compound">Mesh</ref> to work with </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Receives</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of all created meshes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="123" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="933" bodyend="1201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a9b524222e541f1cc87e455cb3bf499a2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASEImporter::GenerateDefaultMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateDefaultMaterial</name>
+        <briefdescription>
+<para>Generate a default material and add it to the parser&apos;s list Called if no material has been found in the file (rare for <ref refid="namespace_assimp_1_1_a_s_e" kindref="compound">ASE</ref>, but not impossible) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="183" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="267" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_importer_1a940bdcc51d956cd2b381c125dc5778a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ASEImporter::GenerateNormals</definition>
+        <argsstring>(ASE::Mesh &amp;mesh)</argsstring>
+        <name>GenerateNormals</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">ASE::Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Generate normal vectors basing on smoothing groups (in some cases the normal are already contained in the file) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_mesh" kindref="compound">Mesh</ref> to work on </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false if the normals have been recomputed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASELoader.h" line="107" column="1" bodyfile="code/AssetLib/ASE/ASELoader.cpp" bodystart="1282" bodyend="1296"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> class for the 3DS <ref refid="namespace_assimp_1_1_a_s_e" kindref="compound">ASE</ref> <ref refid="struct_a_s_c_i_i" kindref="compound">ASCII</ref> format. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="456">
+        <label>Assimp::ASEImporter</label>
+        <link refid="class_assimp_1_1_a_s_e_importer"/>
+        <childnode refid="457" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="457">
+        <label>Assimp::BaseImporter</label>
+        <link refid="class_assimp_1_1_base_importer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="469">
+        <label>aiAABB</label>
+        <link refid="structai_a_a_b_b"/>
+        <childnode refid="466" relation="usage">
+          <edgelabel>mMin</edgelabel>
+          <edgelabel>mMax</edgelabel>
+        </childnode>
+      </node>
+      <node id="472">
+        <label>aiNode</label>
+        <link refid="structai_node"/>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="473" relation="usage">
+          <edgelabel>mMetaData</edgelabel>
+        </childnode>
+        <childnode refid="472" relation="usage">
+          <edgelabel>mChildren</edgelabel>
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="475" relation="usage">
+          <edgelabel>mTransformation</edgelabel>
+        </childnode>
+      </node>
+      <node id="474">
+        <label>aiMetadataEntry</label>
+        <link refid="structai_metadata_entry"/>
+      </node>
+      <node id="482">
+        <label>aiQuatKey</label>
+        <link refid="structai_quat_key"/>
+        <childnode refid="483" relation="usage">
+          <edgelabel>mValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="490">
+        <label>aiTexel</label>
+        <link refid="structai_texel"/>
+      </node>
+      <node id="481">
+        <label>aiNodeAnim</label>
+        <link refid="structai_node_anim"/>
+        <childnode refid="482" relation="usage">
+          <edgelabel>mRotationKeys</edgelabel>
+        </childnode>
+        <childnode refid="484" relation="usage">
+          <edgelabel>mScalingKeys</edgelabel>
+          <edgelabel>mPositionKeys</edgelabel>
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mNodeName</edgelabel>
+        </childnode>
+      </node>
+      <node id="491">
+        <label>Assimp::ASE::Parser</label>
+        <link refid="class_assimp_1_1_a_s_e_1_1_parser"/>
+        <childnode refid="478" relation="usage">
+          <edgelabel>m_clrAmbient</edgelabel>
+          <edgelabel>m_clrBackground</edgelabel>
+        </childnode>
+      </node>
+      <node id="485">
+        <label>aiMeshAnim</label>
+        <link refid="structai_mesh_anim"/>
+        <childnode refid="486" relation="usage">
+          <edgelabel>mKeys</edgelabel>
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+      </node>
+      <node id="486">
+        <label>aiMeshKey</label>
+        <link refid="structai_mesh_key"/>
+      </node>
+      <node id="475">
+        <label>aiMatrix4x4t&lt; TReal &gt;</label>
+        <link refid="classai_matrix4x4t"/>
+      </node>
+      <node id="471">
+        <label>aiVertexWeight</label>
+        <link refid="structai_vertex_weight"/>
+      </node>
+      <node id="461">
+        <label>aiScene</label>
+        <link refid="structai_scene"/>
+        <childnode refid="462" relation="usage">
+          <edgelabel>mMaterials</edgelabel>
+        </childnode>
+        <childnode refid="463" relation="usage">
+          <edgelabel>mMeshes</edgelabel>
+        </childnode>
+        <childnode refid="473" relation="usage">
+          <edgelabel>mMetaData</edgelabel>
+        </childnode>
+        <childnode refid="476" relation="usage">
+          <edgelabel>mCameras</edgelabel>
+        </childnode>
+        <childnode refid="477" relation="usage">
+          <edgelabel>mLights</edgelabel>
+        </childnode>
+        <childnode refid="480" relation="usage">
+          <edgelabel>mAnimations</edgelabel>
+        </childnode>
+        <childnode refid="472" relation="usage">
+          <edgelabel>mRootNode</edgelabel>
+        </childnode>
+        <childnode refid="489" relation="usage">
+          <edgelabel>mTextures</edgelabel>
+        </childnode>
+      </node>
+      <node id="489">
+        <label>aiTexture</label>
+        <link refid="structai_texture"/>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mFilename</edgelabel>
+        </childnode>
+        <childnode refid="490" relation="usage">
+          <edgelabel>pcData</edgelabel>
+        </childnode>
+      </node>
+      <node id="488">
+        <label>aiMeshMorphKey</label>
+        <link refid="structai_mesh_morph_key"/>
+      </node>
+      <node id="477">
+        <label>aiLight</label>
+        <link refid="structai_light"/>
+        <childnode refid="478" relation="usage">
+          <edgelabel>mColorDiffuse</edgelabel>
+          <edgelabel>mColorSpecular</edgelabel>
+          <edgelabel>mColorAmbient</edgelabel>
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="466" relation="usage">
+          <edgelabel>mUp</edgelabel>
+          <edgelabel>mPosition</edgelabel>
+          <edgelabel>mDirection</edgelabel>
+        </childnode>
+        <childnode refid="479" relation="usage">
+          <edgelabel>mSize</edgelabel>
+        </childnode>
+      </node>
+      <node id="473">
+        <label>aiMetadata</label>
+        <link refid="structai_metadata"/>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mKeys</edgelabel>
+        </childnode>
+        <childnode refid="474" relation="usage">
+          <edgelabel>mValues</edgelabel>
+        </childnode>
+      </node>
+      <node id="458">
+        <label>Assimp::ASEImporter</label>
+        <link refid="class_assimp_1_1_a_s_e_importer"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+        <childnode refid="461" relation="usage">
+          <edgelabel>pcScene</edgelabel>
+        </childnode>
+        <childnode refid="491" relation="usage">
+          <edgelabel>mParser</edgelabel>
+        </childnode>
+      </node>
+      <node id="470">
+        <label>aiBone</label>
+        <link refid="structai_bone"/>
+        <childnode refid="471" relation="usage">
+          <edgelabel>mWeights</edgelabel>
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="472" relation="usage">
+          <edgelabel>mArmature</edgelabel>
+          <edgelabel>mNode</edgelabel>
+        </childnode>
+        <childnode refid="475" relation="usage">
+          <edgelabel>mOffsetMatrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="484">
+        <label>aiVectorKey</label>
+        <link refid="structai_vector_key"/>
+        <childnode refid="466" relation="usage">
+          <edgelabel>mValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="462">
+        <label>aiMaterial</label>
+        <link refid="structai_material"/>
+      </node>
+      <node id="478">
+        <label>aiColor3D</label>
+        <link refid="structai_color3_d"/>
+      </node>
+      <node id="483">
+        <label>aiQuaterniont&lt; TReal &gt;</label>
+        <link refid="classai_quaterniont"/>
+      </node>
+      <node id="463">
+        <label>aiMesh</label>
+        <link refid="structai_mesh"/>
+        <childnode refid="464" relation="usage">
+          <edgelabel>mAnimMeshes</edgelabel>
+        </childnode>
+        <childnode refid="468" relation="usage">
+          <edgelabel>mFaces</edgelabel>
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="466" relation="usage">
+          <edgelabel>mTextureCoords</edgelabel>
+          <edgelabel>mVertices</edgelabel>
+          <edgelabel>mBitangents</edgelabel>
+          <edgelabel>mNormals</edgelabel>
+          <edgelabel>mTangents</edgelabel>
+        </childnode>
+        <childnode refid="467" relation="usage">
+          <edgelabel>mColors</edgelabel>
+        </childnode>
+        <childnode refid="469" relation="usage">
+          <edgelabel>mAABB</edgelabel>
+        </childnode>
+        <childnode refid="470" relation="usage">
+          <edgelabel>mBones</edgelabel>
+        </childnode>
+      </node>
+      <node id="465">
+        <label>aiString</label>
+        <link refid="structai_string"/>
+      </node>
+      <node id="459">
+        <label>Assimp::BaseImporter</label>
+        <link refid="class_assimp_1_1_base_importer"/>
+        <childnode refid="460" relation="usage">
+          <edgelabel>m_progress</edgelabel>
+        </childnode>
+      </node>
+      <node id="487">
+        <label>aiMeshMorphAnim</label>
+        <link refid="structai_mesh_morph_anim"/>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="488" relation="usage">
+          <edgelabel>mKeys</edgelabel>
+        </childnode>
+      </node>
+      <node id="480">
+        <label>aiAnimation</label>
+        <link refid="structai_animation"/>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="481" relation="usage">
+          <edgelabel>mChannels</edgelabel>
+        </childnode>
+        <childnode refid="485" relation="usage">
+          <edgelabel>mMeshChannels</edgelabel>
+        </childnode>
+        <childnode refid="487" relation="usage">
+          <edgelabel>mMorphMeshChannels</edgelabel>
+        </childnode>
+      </node>
+      <node id="479">
+        <label>aiVector2t&lt; TReal &gt;</label>
+        <link refid="classai_vector2t"/>
+      </node>
+      <node id="467">
+        <label>aiColor4t&lt; TReal &gt;</label>
+        <link refid="classai_color4t"/>
+      </node>
+      <node id="476">
+        <label>aiCamera</label>
+        <link refid="structai_camera"/>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="466" relation="usage">
+          <edgelabel>mUp</edgelabel>
+          <edgelabel>mLookAt</edgelabel>
+          <edgelabel>mPosition</edgelabel>
+        </childnode>
+      </node>
+      <node id="466">
+        <label>aiVector3t&lt; TReal &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+      <node id="464">
+        <label>aiAnimMesh</label>
+        <link refid="structai_anim_mesh"/>
+        <childnode refid="465" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="466" relation="usage">
+          <edgelabel>mTextureCoords</edgelabel>
+          <edgelabel>mVertices</edgelabel>
+          <edgelabel>mBitangents</edgelabel>
+          <edgelabel>mNormals</edgelabel>
+          <edgelabel>mTangents</edgelabel>
+        </childnode>
+        <childnode refid="467" relation="usage">
+          <edgelabel>mColors</edgelabel>
+        </childnode>
+      </node>
+      <node id="460">
+        <label>Assimp::ProgressHandler</label>
+        <link refid="class_assimp_1_1_progress_handler"/>
+      </node>
+      <node id="468">
+        <label>aiFace</label>
+        <link refid="structai_face"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/ASE/ASELoader.h" line="62" column="1" bodyfile="code/AssetLib/ASE/ASELoader.h" bodystart="62" bodyend="200"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_a_s_e_importer_1adba301594573fec62775d19d00cd5a97" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>AddMeshes</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1afa53dd35e8fecfdd12f535dccca565dc" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>AddNodes</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a8b6524b5ebb5def8dd730b23adef23bc" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>AddNodes</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7af10ad62259d2e54eff440019b345e309" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>ALLOW_EMPTY</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a15fb4512ad41a241a3b8de3fa63c0434" prot="protected" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>applicationUnits</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a6e49458b956e1f7f3c0c708074993e77" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>ASEImporter</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3a26428f61d7bebdc477c4d0add9da30" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>BaseImporter</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a69c9430f69dc9de9aa18f89c3d51fcc7" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>BuildAnimations</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1ae6587ddad84823b3edf0680d498a6c52" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>BuildCameras</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a536aaf23cda5ef94ccbb48ebbdd3a1b0" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>BuildLights</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a870b6419aef0af9f23d4034d52238089" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>BuildMaterialIndices</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a6c3ee6fbdb9eb2e4d66194cb2a9aec7a" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>BuildNodes</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a8f21c6cd252b12996a772c1295e4c71c" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>BuildUniqueRepresentation</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1ae9c26344003dfe948ed61e183f8e3b1e" prot="public" virt="virtual"><scope>Assimp::ASEImporter</scope><name>CanRead</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a32623af462fcf73fd3c665ca4d866d0f" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>CheckMagicToken</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af5fe8cb0ad373c368ac0d87e9141a833" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>CM</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a917adc76013c307d6896fb4e71658354" prot="protected" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>configRecomputeNormals</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a48775c5fc00267ff2d1f4b3e5a6e72c3" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>ConvertMaterial</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a5d24d54c68084c330142dc6be9967b93" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>ConvertMeshes</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3cd8c81533de987dd7acea6874ad918c" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>ConvertToUTF8</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ad9a7c9788930c44aa40c7448d61a862d" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>ConvertUTF8toISO8859_1</name></member>
+      <member refid="class_assimp_1_1_base_importer_1abc1067a6780d7d6dbe457fef8abdb66a" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>CopyVector</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3ce01553ca65d8cc8f1efc2174845d67" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>CopyVector</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ae90aa4e961f527f988365ee77d476118" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>FEET</name></member>
+      <member refid="class_assimp_1_1_base_importer_1af85971f80c5f45fef8c3a3395e4bbe14" prot="protected" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>fileScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7ae507341521279743797bdce9f7a21081" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>FORBID_EMPTY</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a9b524222e541f1cc87e455cb3bf499a2" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>GenerateDefaultMaterial</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a940bdcc51d956cd2b381c125dc5778a7" prot="private" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>GenerateNormals</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a51876206d286fb5804a2e99ad1fcae12" prot="public" virt="virtual"><scope>Assimp::ASEImporter</scope><name>GetApplicationUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a15c379ec3a8399551d7b379de7fc3bc1" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>GetErrorText</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a05f9397b157ff1b56d7d360a39ca41ac" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>GetException</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3954284d75f9fe30f5ff1758ecd2faeb" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>GetExtension</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a7ac75d5fcfe8784173bf117a912bafeb" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>GetExtensionList</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a21e52bc7b3d7833000737018a8301efc" prot="public" virt="virtual"><scope>Assimp::ASEImporter</scope><name>GetFileScale</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a20db9618a4d70df7acd1af54667a4316" prot="protected" virt="virtual"><scope>Assimp::ASEImporter</scope><name>GetInfo</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ad5bb9d0bff964c79b625c754b3adb04c" prot="protected" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>importerScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>ImporterUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ac43f3495d597a22da47ea894f5432016" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>importerUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ace3a659f5caad10cf4ac6f2de87d35c3" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>INCHES</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a9e7b1964d1476cfaf6f45e3ce37b2a78" prot="protected" virt="virtual"><scope>Assimp::ASEImporter</scope><name>InternReadFile</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af84e338c6e9a678ed63b8b2b7de9ef02" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>M</name></member>
+      <member refid="class_assimp_1_1_base_importer_1abd2c9b86479c0c165e5d84d733e53373" prot="protected" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>m_ErrorText</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a7bf84fb733992558272add378e7d9525" prot="protected" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>m_Exception</name></member>
+      <member refid="class_assimp_1_1_base_importer_1aeb17ba9eee14fcdfe2c6f45bf940139d" prot="protected" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>m_progress</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a1ad4f1b3c0277112264368cb5535a922" prot="protected" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>mBuffer</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451a1633eb908b6889de4de75080bbf13229" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>MM</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1af102f01e30484afd056e3b518fb9752b" prot="protected" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>mParser</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a8acb6201d9df82737fe4ddee66d321a9" prot="protected" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>noSkeletonMesh</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1aeb0f353b00138c1c502e4475c9dc7162" prot="protected" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>pcScene</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a047f06945fa656ebedde67819945b28c" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>ReadFile</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6caed29cb9fa2d1e0aa0da2a17851ca2" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>SearchFileHeaderForToken</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9c5e10c82316e3afd685732e8f734f87" prot="public" virt="virtual"><scope>Assimp::ASEImporter</scope><name>SetApplicationUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a8faf1d4f1475e98f96f95fa46aad44c1" prot="public" virt="virtual"><scope>Assimp::ASEImporter</scope><name>SetFileScale</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a71d33277500d8b4c300e2b36eb94d472" prot="protected" virt="virtual"><scope>Assimp::ASEImporter</scope><name>SetupProperties</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a2de9d21d35c9060480142dc536ce5352" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>SimpleExtensionCheck</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>TextFileMode</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a1c43dc005eb52d2902d13f1a475ec9cd" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>TextFileToBuffer</name></member>
+      <member refid="class_assimp_1_1_a_s_e_importer_1a62185ff0d76d9fd917f16ea0c214ec43" prot="public" virt="non-virtual"><scope>Assimp::ASEImporter</scope><name>~ASEImporter</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a809ce474153402b8fc8c5a1add89a855" prot="public" virt="virtual"><scope>Assimp::ASEImporter</scope><name>~BaseImporter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

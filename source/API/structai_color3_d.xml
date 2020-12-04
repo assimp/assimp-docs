@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_color3_d" kind="struct" language="C++" prot="public">
+    <compoundname>aiColor3D</compoundname>
+    <includes local="no">types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_color3_d_1a6ddfc96e5a77a1277687021494fbe844" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real aiColor3D::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="242" column="1" bodyfile="include/assimp/types.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_color3_d_1a1d0d24589ceb621da76b550a347859a5" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real aiColor3D::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="242" column="1" bodyfile="include/assimp/types.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_color3_d_1a9244c589dc4c8d95e4107951f2a9a386" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real aiColor3D::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+<para>Red, green and blue color values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="242" column="1" bodyfile="include/assimp/types.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_color3_d_1a443acfb588b0b5d2ef2e8b67328acf5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiColor3D::aiColor3D</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiColor3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="167" column="1" bodyfile="include/assimp/types.h" bodystart="167" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1a6fc8919d31a782ad9f258bfd0787aad9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiColor3D::aiColor3D</definition>
+        <argsstring>(ai_real _r, ai_real _g, ai_real _b)</argsstring>
+        <name>aiColor3D</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>_r</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>_g</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="168" column="1" bodyfile="include/assimp/types.h" bodystart="168" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1a56637d5169f256185a2e9d000b8bfcef" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiColor3D::aiColor3D</definition>
+        <argsstring>(ai_real _r)</argsstring>
+        <name>aiColor3D</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>_r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="170" column="1" bodyfile="include/assimp/types.h" bodystart="170" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1a71fb6c5f467dcfdd29f619517e2b0f7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiColor3D::aiColor3D</definition>
+        <argsstring>(const aiColor3D &amp;o)</argsstring>
+        <name>aiColor3D</name>
+        <param>
+          <type>const <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="172" column="1" bodyfile="include/assimp/types.h" bodystart="172" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1a749bf8921bd3d2958d59c0f033488639" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiColor3D::IsBlack</definition>
+        <argsstring>() const</argsstring>
+        <name>IsBlack</name>
+        <briefdescription>
+<para>Check whether a color is black. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="234" column="1" bodyfile="include/assimp/types.h" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1ac4d0b15cf15dd9621586fa707e9c3429" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiColor3D::operator!=</definition>
+        <argsstring>(const aiColor3D &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise inverse comparison. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="188" column="1" bodyfile="include/assimp/types.h" bodystart="188" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1ae2a0d574ddb3c3d3071d6512c8a535ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
+        <definition>aiColor3D aiColor3D::operator*</definition>
+        <argsstring>(const aiColor3D &amp;c) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise multiplication. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="207" column="1" bodyfile="include/assimp/types.h" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1a9c594955b057e2c2d0e297a56bc0141d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
+        <definition>aiColor3D aiColor3D::operator*</definition>
+        <argsstring>(ai_real f) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Multiply with a scalar. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="212" column="1" bodyfile="include/assimp/types.h" bodystart="212" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1aaafa123d50868c1ae8e5ed4ec1df62a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
+        <definition>aiColor3D aiColor3D::operator+</definition>
+        <argsstring>(const aiColor3D &amp;c) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise addition. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="197" column="1" bodyfile="include/assimp/types.h" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1a0707d20677c02b87665a0ca3e6d2fc89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
+        <definition>aiColor3D aiColor3D::operator-</definition>
+        <argsstring>(const aiColor3D &amp;c) const</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise subtraction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="202" column="1" bodyfile="include/assimp/types.h" bodystart="202" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1ae194db3c0c21841601a89b8f9cfa27a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiColor3D::operator&lt;</definition>
+        <argsstring>(const aiColor3D &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise comparison. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="192" column="1" bodyfile="include/assimp/types.h" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1a636411b987d81506e576481f119afc80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref> &amp;</type>
+        <definition>aiColor3D&amp; aiColor3D::operator=</definition>
+        <argsstring>(const aiColor3D &amp;o)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="175" column="1" bodyfile="include/assimp/types.h" bodystart="175" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1aa7d23bc975a0be24f9e885ba598d7bdd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiColor3D::operator==</definition>
+        <argsstring>(const aiColor3D &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise comparison. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="184" column="1" bodyfile="include/assimp/types.h" bodystart="184" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1a3aa260c7342cc25b58adc1b71ef01d3a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real aiColor3D::operator[]</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Access a specific color component. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="217" column="1" bodyfile="include/assimp/types.h" bodystart="217" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_color3_d_1a8ad6e37324ce76509e627578ec76123c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref> &amp;</type>
+        <definition>ai_real&amp; aiColor3D::operator[]</definition>
+        <argsstring>(unsigned int i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Access a specific color component. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="222" column="1" bodyfile="include/assimp/types.h" bodystart="222" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a color in Red-Green-Blue space. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/types.h" line="165" column="1" bodyfile="include/assimp/types.h" bodystart="165" bodyend="243"/>
+    <listofallmembers>
+      <member refid="structai_color3_d_1a443acfb588b0b5d2ef2e8b67328acf5f" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>aiColor3D</name></member>
+      <member refid="structai_color3_d_1a6fc8919d31a782ad9f258bfd0787aad9" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>aiColor3D</name></member>
+      <member refid="structai_color3_d_1a56637d5169f256185a2e9d000b8bfcef" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>aiColor3D</name></member>
+      <member refid="structai_color3_d_1a71fb6c5f467dcfdd29f619517e2b0f7e" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>aiColor3D</name></member>
+      <member refid="structai_color3_d_1a6ddfc96e5a77a1277687021494fbe844" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>b</name></member>
+      <member refid="structai_color3_d_1a1d0d24589ceb621da76b550a347859a5" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>g</name></member>
+      <member refid="structai_color3_d_1a749bf8921bd3d2958d59c0f033488639" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>IsBlack</name></member>
+      <member refid="structai_color3_d_1ac4d0b15cf15dd9621586fa707e9c3429" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>operator!=</name></member>
+      <member refid="structai_color3_d_1ae2a0d574ddb3c3d3071d6512c8a535ae" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>operator*</name></member>
+      <member refid="structai_color3_d_1a9c594955b057e2c2d0e297a56bc0141d" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>operator*</name></member>
+      <member refid="structai_color3_d_1aaafa123d50868c1ae8e5ed4ec1df62a8" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>operator+</name></member>
+      <member refid="structai_color3_d_1a0707d20677c02b87665a0ca3e6d2fc89" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>operator-</name></member>
+      <member refid="structai_color3_d_1ae194db3c0c21841601a89b8f9cfa27a0" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>operator&lt;</name></member>
+      <member refid="structai_color3_d_1a636411b987d81506e576481f119afc80" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>operator=</name></member>
+      <member refid="structai_color3_d_1aa7d23bc975a0be24f9e885ba598d7bdd" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>operator==</name></member>
+      <member refid="structai_color3_d_1a3aa260c7342cc25b58adc1b71ef01d3a" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>operator[]</name></member>
+      <member refid="structai_color3_d_1a8ad6e37324ce76509e627578ec76123c" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>operator[]</name></member>
+      <member refid="structai_color3_d_1a9244c589dc4c8d95e4107951f2a9a386" prot="public" virt="non-virtual"><scope>aiColor3D</scope><name>r</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

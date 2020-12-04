@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_metadata_entry" kind="struct" language="C++" prot="public">
+    <compoundname>aiMetadataEntry</compoundname>
+    <includes local="no">metadata.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_metadata_entry_1a97fe80a47846374edd38bda5b50b99b3" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* aiMetadataEntry::mData</definition>
+        <argsstring></argsstring>
+        <name>mData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/metadata.h" line="89" column="1" bodyfile="include/assimp/metadata.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_metadata_entry_1a075b29cd710e153f5402f479a7a10aee" prot="public" static="no" mutable="no">
+        <type><ref refid="metadata_8h_1aa910906c37416da57bb36335a4d04232" kindref="member">aiMetadataType</ref></type>
+        <definition>aiMetadataType aiMetadataEntry::mType</definition>
+        <argsstring></argsstring>
+        <name>mType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/metadata.h" line="88" column="1" bodyfile="include/assimp/metadata.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_metadata_entry_1a466ddbcaf3287d5e4b442a300b2705e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiMetadataEntry::aiMetadataEntry</definition>
+        <argsstring>()</argsstring>
+        <name>aiMetadataEntry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/metadata.h" line="92" column="1" bodyfile="include/assimp/metadata.h" bodystart="92" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Metadata entry. </para>    </briefdescription>
+    <detaileddescription>
+<para>The type field uniquely identifies the underlying type of the data field </para>    </detaileddescription>
+    <location file="include/assimp/metadata.h" line="87" column="1" bodyfile="include/assimp/metadata.h" bodystart="87" bodyend="98"/>
+    <listofallmembers>
+      <member refid="structai_metadata_entry_1a466ddbcaf3287d5e4b442a300b2705e4" prot="public" virt="non-virtual"><scope>aiMetadataEntry</scope><name>aiMetadataEntry</name></member>
+      <member refid="structai_metadata_entry_1a97fe80a47846374edd38bda5b50b99b3" prot="public" virt="non-virtual"><scope>aiMetadataEntry</scope><name>mData</name></member>
+      <member refid="structai_metadata_entry_1a075b29cd710e153f5402f479a7a10aee" prot="public" virt="non-virtual"><scope>aiMetadataEntry</scope><name>mType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

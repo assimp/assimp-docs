@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_assimp_1_1_assbin_importer" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::AssbinImporter</compoundname>
+    <basecompoundref refid="class_assimp_1_1_base_importer" prot="public" virt="non-virtual">Assimp::BaseImporter</basecompoundref>
+    <includes local="no">AssbinLoader.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_assbin_importer_1afaf27c7290fbd86fa9668817cf12110b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::AssbinImporter::compressed</definition>
+        <argsstring></argsstring>
+        <name>compressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="74" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_assbin_importer_1a6cac541b21423b35f894827d8d64e857" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::AssbinImporter::shortened</definition>
+        <argsstring></argsstring>
+        <name>shortened</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="73" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1a47c49ae2819f53dd44ab971913326214" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool AssbinImporter::CanRead</definition>
+        <argsstring>(const std::string &amp;pFile, IOSystem *pIOHandler, bool checkSig) const</argsstring>
+        <name>CanRead</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1a13588d3396ba5b7ed1f1cb46e0945cfd">CanRead</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>checkSig</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether the class can handle the format of the given file. </para>        </briefdescription>
+        <detaileddescription>
+<para>The implementation should be as quick as possible. A check for the file extension is enough. If no suitable loader is found with this strategy, <ref refid="class_assimp_1_1_assbin_importer_1a47c49ae2819f53dd44ab971913326214" kindref="member">CanRead()</ref> is called again, the &apos;checkSig&apos; parameter set to true this time. Now the implementation is expected to perform a full check of the file structure, possibly searching the first bytes of the file for magic identifiers or keywords.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path and file name of the file to be examined. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pIOHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IO handler to use for accessing any file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>checkSig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set to true if this method is called a second time. This time, the implementation may take more time to examine the contents of the file to be loaded for magic bytes, keywords, etc to be able to load files with unknown/not existent file extensions. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the class can read this file, false if not. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="77" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="87" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1a393d67e6cdc103a18a7ac87bceebef69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref> *</type>
+        <definition>const aiImporterDesc * AssbinImporter::GetInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInfo</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1a070b8c3f63767ad535c8ac509b725fc4">GetInfo</reimplements>
+        <briefdescription>
+<para>Called by #Importer::GetImporterInfo to get a description of some loader features. </para>        </briefdescription>
+        <detaileddescription>
+<para>Importers must provide this information. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="82" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1abfef4d8d6fbd49a9669487d3bdd84d4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::InternReadFile</definition>
+        <argsstring>(const std::string &amp;pFile, aiScene *pScene, IOSystem *pIOHandler)</argsstring>
+        <name>InternReadFile</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1ac67d9f5ceb26353d27d6be06cccad398">InternReadFile</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <briefdescription>
+<para>Imports the given file into the given scene structure. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function is expected to throw an ImportErrorException if there is an error. If it terminates normally, the data in <ref refid="structai_scene" kindref="compound">aiScene</ref> is expected to be correct. Override this function to implement the actual importing. <linebreak/>
+ The output scene must meet the following requirements:<linebreak/>
+ <itemizedlist>
+<listitem>
+<para>At least a root node must be there, even if its only purpose is to reference one mesh. </para></listitem>
+<listitem>
+<para><ref refid="structai_mesh_1a99d66ac0a444068c1b252b30265cbf53" kindref="member">aiMesh::mPrimitiveTypes</ref> may be 0. The types of primitives in the mesh are determined automatically in this case. </para></listitem>
+<listitem>
+<para>the vertex data is stored in a pseudo-indexed &quot;verbose&quot; format. In fact this means that every vertex that is referenced by a face is unique. Or the other way round: a vertex index may not occur twice in a single <ref refid="structai_mesh" kindref="compound">aiMesh</ref>. </para></listitem>
+<listitem>
+<para><ref refid="structai_animation_1ae2bbc49320b4b75c05e23e0ab704ece7" kindref="member">aiAnimation::mDuration</ref> may be -1. <ref refid="namespace_assimp" kindref="compound">Assimp</ref> determines the length of the animation automatically in this case as the length of the longest animation channel. </para></listitem>
+<listitem>
+<para><ref refid="structai_mesh_1ab2a81bfe1731f01271ebab274a8f01c4" kindref="member">aiMesh::mBitangents</ref> may be nullptr if tangents and normals are given. In this case bitangents are computed as the cross product between normal and tangent. </para></listitem>
+<listitem>
+<para>There needn&apos;t be a material. If none is there a default material is generated. However, it is recommended practice for loaders to generate a default material for yourself that matches the default material setting for the file format better than <ref refid="namespace_assimp" kindref="compound">Assimp</ref>&apos;s generic default material. Note that default materials <emphasis>should</emphasis> be named AI_DEFAULT_MATERIAL_NAME if they&apos;re just color-shaded or AI_DEFAULT_TEXTURED_MATERIAL_NAME if they define a (dummy) texture.  </para></listitem>
+</itemizedlist>
+If the AI_SCENE_FLAGS_INCOMPLETE-Flag is <bold>not</bold> set:<itemizedlist>
+<listitem>
+<para>at least one mesh must be there </para></listitem>
+<listitem>
+<para>there may be no meshes with 0 vertices or faces </para></listitem>
+</itemizedlist>
+This won&apos;t be checked (except by the validation step): <ref refid="namespace_assimp" kindref="compound">Assimp</ref> will crash if one of the conditions is not met!</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path of the file to be imported. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pScene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene object to hold the imported data. nullptr is not a valid parameter. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pIOHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IO handler to use for any file access. nullptr is not a valid parameter. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="83" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="671" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1a9e0f542b517625de94419942d46929cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::ReadBinaryAnim</definition>
+        <argsstring>(IOStream *stream, aiAnimation *anim)</argsstring>
+        <name>ReadBinaryAnim</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_animation" kindref="compound">aiAnimation</ref> *</type>
+          <declname>anim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="96" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="510" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1a7ca43b7bab3d1d5658251a95003c183b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::ReadBinaryBone</definition>
+        <argsstring>(IOStream *stream, aiBone *bone)</argsstring>
+        <name>ReadBinaryBone</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_bone" kindref="compound">aiBone</ref> *</type>
+          <declname>bone</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="92" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="291" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1aed148cc3e767ddb6bb78534542d89781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::ReadBinaryCamera</definition>
+        <argsstring>(IOStream *stream, aiCamera *cam)</argsstring>
+        <name>ReadBinaryCamera</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_camera" kindref="compound">aiCamera</ref> *</type>
+          <declname>cam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="99" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="576" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1a48c64124fcd82fb76bd1a34aef329b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::ReadBinaryLight</definition>
+        <argsstring>(IOStream *stream, aiLight *l)</argsstring>
+        <name>ReadBinaryLight</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_light" kindref="compound">aiLight</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="98" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="551" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1a15d5e5d37fd4d51ef21b0e859ec51bb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::ReadBinaryMaterial</definition>
+        <argsstring>(IOStream *stream, aiMaterial *mat)</argsstring>
+        <name>ReadBinaryMaterial</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_material" kindref="compound">aiMaterial</ref> *</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="93" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="446" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1ace0f9b87444bd4e73e45c882a95e30f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::ReadBinaryMaterialProperty</definition>
+        <argsstring>(IOStream *stream, aiMaterialProperty *prop)</argsstring>
+        <name>ReadBinaryMaterialProperty</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>aiMaterialProperty *</type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="94" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="430" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1a1c025d37df04321d436a3152a0bd0af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::ReadBinaryMesh</definition>
+        <argsstring>(IOStream *stream, aiMesh *mesh)</argsstring>
+        <name>ReadBinaryMesh</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="91" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="317" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1a05b9843ab07ecce76f4b738b69bf00f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::ReadBinaryNode</definition>
+        <argsstring>(IOStream *stream, aiNode **mRootNode, aiNode *parent)</argsstring>
+        <name>ReadBinaryNode</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> **</type>
+          <declname>mRootNode</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="90" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="215" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1ac2ace1f83943460e9392e070906f473e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::ReadBinaryNodeAnim</definition>
+        <argsstring>(IOStream *stream, aiNodeAnim *nd)</argsstring>
+        <name>ReadBinaryNodeAnim</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_node_anim" kindref="compound">aiNodeAnim</ref> *</type>
+          <declname>nd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="95" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="465" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1a4d723e94a6d08af6b49007f72b641924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::ReadBinaryScene</definition>
+        <argsstring>(IOStream *stream, aiScene *pScene)</argsstring>
+        <name>ReadBinaryScene</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="89" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="592" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1a42e9dd6c9b41bb984e11a54d9313d482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AssbinImporter::ReadBinaryTexture</definition>
+        <argsstring>(IOStream *stream, aiTexture *tex)</argsstring>
+        <name>ReadBinaryTexture</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_texture" kindref="compound">aiTexture</ref> *</type>
+          <declname>tex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="97" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.cpp" bodystart="530" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_importer_1a22d8c5b71dbddf3a8c9269ef44448fe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinImporter::ReadHeader</definition>
+        <argsstring>()</argsstring>
+        <name>ReadHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinLoader.h" line="88" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> class for 3D Studio r3 and r4 3DS files. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="498">
+        <label>Assimp::AssbinImporter</label>
+        <link refid="class_assimp_1_1_assbin_importer"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="499">
+        <label>Assimp::BaseImporter</label>
+        <link refid="class_assimp_1_1_base_importer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="500">
+        <label>Assimp::AssbinImporter</label>
+        <link refid="class_assimp_1_1_assbin_importer"/>
+        <childnode refid="501" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="501">
+        <label>Assimp::BaseImporter</label>
+        <link refid="class_assimp_1_1_base_importer"/>
+        <childnode refid="502" relation="usage">
+          <edgelabel>m_progress</edgelabel>
+        </childnode>
+      </node>
+      <node id="502">
+        <label>Assimp::ProgressHandler</label>
+        <link refid="class_assimp_1_1_progress_handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/Assbin/AssbinLoader.h" line="71" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.h" bodystart="70" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7af10ad62259d2e54eff440019b345e309" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ALLOW_EMPTY</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a15fb4512ad41a241a3b8de3fa63c0434" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>applicationUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3a26428f61d7bebdc477c4d0add9da30" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>BaseImporter</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a47c49ae2819f53dd44ab971913326214" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>CanRead</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a32623af462fcf73fd3c665ca4d866d0f" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>CheckMagicToken</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af5fe8cb0ad373c368ac0d87e9141a833" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>CM</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1afaf27c7290fbd86fa9668817cf12110b" prot="private" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>compressed</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3cd8c81533de987dd7acea6874ad918c" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ConvertToUTF8</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ad9a7c9788930c44aa40c7448d61a862d" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ConvertUTF8toISO8859_1</name></member>
+      <member refid="class_assimp_1_1_base_importer_1abc1067a6780d7d6dbe457fef8abdb66a" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>CopyVector</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3ce01553ca65d8cc8f1efc2174845d67" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>CopyVector</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ae90aa4e961f527f988365ee77d476118" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>FEET</name></member>
+      <member refid="class_assimp_1_1_base_importer_1af85971f80c5f45fef8c3a3395e4bbe14" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>fileScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7ae507341521279743797bdce9f7a21081" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>FORBID_EMPTY</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a51876206d286fb5804a2e99ad1fcae12" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>GetApplicationUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a15c379ec3a8399551d7b379de7fc3bc1" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>GetErrorText</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a05f9397b157ff1b56d7d360a39ca41ac" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>GetException</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3954284d75f9fe30f5ff1758ecd2faeb" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>GetExtension</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a7ac75d5fcfe8784173bf117a912bafeb" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>GetExtensionList</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a21e52bc7b3d7833000737018a8301efc" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>GetFileScale</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a393d67e6cdc103a18a7ac87bceebef69" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>GetInfo</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ad5bb9d0bff964c79b625c754b3adb04c" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>importerScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ImporterUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ac43f3495d597a22da47ea894f5432016" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>importerUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ace3a659f5caad10cf4ac6f2de87d35c3" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>INCHES</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1abfef4d8d6fbd49a9669487d3bdd84d4d" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>InternReadFile</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af84e338c6e9a678ed63b8b2b7de9ef02" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>M</name></member>
+      <member refid="class_assimp_1_1_base_importer_1abd2c9b86479c0c165e5d84d733e53373" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>m_ErrorText</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a7bf84fb733992558272add378e7d9525" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>m_Exception</name></member>
+      <member refid="class_assimp_1_1_base_importer_1aeb17ba9eee14fcdfe2c6f45bf940139d" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>m_progress</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451a1633eb908b6889de4de75080bbf13229" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>MM</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a9e0f542b517625de94419942d46929cc" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryAnim</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a7ca43b7bab3d1d5658251a95003c183b" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryBone</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1aed148cc3e767ddb6bb78534542d89781" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryCamera</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a48c64124fcd82fb76bd1a34aef329b53" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryLight</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a15d5e5d37fd4d51ef21b0e859ec51bb4" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryMaterial</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1ace0f9b87444bd4e73e45c882a95e30f2" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryMaterialProperty</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a1c025d37df04321d436a3152a0bd0af5" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryMesh</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a05b9843ab07ecce76f4b738b69bf00f1" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryNode</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1ac2ace1f83943460e9392e070906f473e" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryNodeAnim</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a4d723e94a6d08af6b49007f72b641924" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryScene</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a42e9dd6c9b41bb984e11a54d9313d482" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryTexture</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a047f06945fa656ebedde67819945b28c" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadFile</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a22d8c5b71dbddf3a8c9269ef44448fe8" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadHeader</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6caed29cb9fa2d1e0aa0da2a17851ca2" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>SearchFileHeaderForToken</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9c5e10c82316e3afd685732e8f734f87" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>SetApplicationUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a8faf1d4f1475e98f96f95fa46aad44c1" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>SetFileScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a2ecaa6b808b2b282cb6aa321970a2ad3" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>SetupProperties</name></member>
+      <member refid="class_assimp_1_1_assbin_importer_1a6cac541b21423b35f894827d8d64e857" prot="private" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>shortened</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a2de9d21d35c9060480142dc536ce5352" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>SimpleExtensionCheck</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>TextFileMode</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a1c43dc005eb52d2902d13f1a475ec9cd" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>TextFileToBuffer</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a809ce474153402b8fc8c5a1add89a855" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>~BaseImporter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

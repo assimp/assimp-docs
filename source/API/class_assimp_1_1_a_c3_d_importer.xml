@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_assimp_1_1_a_c3_d_importer" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::AC3DImporter</compoundname>
+    <basecompoundref refid="class_assimp_1_1_base_importer" prot="public" virt="non-virtual">Assimp::BaseImporter</basecompoundref>
+    <includes local="no">ACLoader.h</includes>
+    <innerclass refid="struct_assimp_1_1_a_c3_d_importer_1_1_material" prot="public">Assimp::AC3DImporter::Material</innerclass>
+    <innerclass refid="struct_assimp_1_1_a_c3_d_importer_1_1_object" prot="public">Assimp::AC3DImporter::Object</innerclass>
+    <innerclass refid="struct_assimp_1_1_a_c3_d_importer_1_1_surface" prot="public">Assimp::AC3DImporter::Surface</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_a_c3_d_importer_1aa0c598cb9eda2132df7fb046b4e3dac3" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Assimp::AC3DImporter::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="246" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_c3_d_importer_1a06bf1a8efefe9be56df8c7981ea807cd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::AC3DImporter::configEvalSubdivision</definition>
+        <argsstring></argsstring>
+        <name>configEvalSubdivision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="255" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_c3_d_importer_1ab8072ae6c710d17cfc712806545029ae" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::AC3DImporter::configSplitBFCull</definition>
+        <argsstring></argsstring>
+        <name>configSplitBFCull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="251" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_c3_d_importer_1a033e3e1d180af2a31629c126afc329db" prot="private" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int Assimp::AC3DImporter::mGroupsCounter</definition>
+        <argsstring></argsstring>
+        <name>mGroupsCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="266" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_c3_d_importer_1a90e9f8fc82f57c6d0490525557c95764" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structai_light" kindref="compound">aiLight</ref> * &gt; *</type>
+        <definition>std::vector&lt;aiLight *&gt;* Assimp::AC3DImporter::mLights</definition>
+        <argsstring></argsstring>
+        <name>mLights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="263" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_c3_d_importer_1a67322e09d83bb04a5fdbd0364c9b8c6c" prot="private" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int Assimp::AC3DImporter::mLightsCounter</definition>
+        <argsstring></argsstring>
+        <name>mLightsCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="266" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_c3_d_importer_1a7eada446adc90c14afa9dcbe8edda28e" prot="private" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int Assimp::AC3DImporter::mNumMeshes</definition>
+        <argsstring></argsstring>
+        <name>mNumMeshes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="260" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_c3_d_importer_1a3c5d5f698b9c9de7693073666a2c0e56" prot="private" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int Assimp::AC3DImporter::mPolysCounter</definition>
+        <argsstring></argsstring>
+        <name>mPolysCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="266" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_c3_d_importer_1aab93b0523edc7c087a3b5913f5955aeb" prot="private" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int Assimp::AC3DImporter::mWorldsCounter</definition>
+        <argsstring></argsstring>
+        <name>mWorldsCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="266" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_a_c3_d_importer_1ade577b7ef6b403315978156c331514ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AC3DImporter::AC3DImporter</definition>
+        <argsstring>()</argsstring>
+        <name>AC3DImporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="66" column="1" bodyfile="code/AssetLib/AC/ACLoader.cpp" bodystart="134" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_c3_d_importer_1ace96e5d1a21662b77f2a0bd01f83de6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool AC3DImporter::CanRead</definition>
+        <argsstring>(const std::string &amp;pFile, IOSystem *pIOHandler, bool checkSig) const</argsstring>
+        <name>CanRead</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1a13588d3396ba5b7ed1f1cb46e0945cfd">CanRead</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>checkSig</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether the class can handle the format of the given file. </para>        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_assimp_1_1_base_importer_1a13588d3396ba5b7ed1f1cb46e0945cfd" kindref="member">BaseImporter::CanRead()</ref> for details. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="188" column="1" bodyfile="code/AssetLib/AC/ACLoader.cpp" bodystart="155" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_c3_d_importer_1ad923ac54f3d06829aa167edbcfc28421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AC3DImporter::~AC3DImporter</definition>
+        <argsstring>()</argsstring>
+        <name>~AC3DImporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="67" column="1" bodyfile="code/AssetLib/AC/ACLoader.cpp" bodystart="149" bodyend="151"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_assimp_1_1_a_c3_d_importer_1abba876613c4e2f19f18120e560d891a3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref> *</type>
+        <definition>const aiImporterDesc * AC3DImporter::GetInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInfo</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1a070b8c3f63767ad535c8ac509b725fc4">GetInfo</reimplements>
+        <briefdescription>
+<para>Return importer meta information. </para>        </briefdescription>
+        <detaileddescription>
+<para>See #BaseImporter::GetInfo for the details </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="195" column="1" bodyfile="code/AssetLib/AC/ACLoader.cpp" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_c3_d_importer_1a88b27495efcf754f3dda7e4177aff902" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AC3DImporter::InternReadFile</definition>
+        <argsstring>(const std::string &amp;pFile, aiScene *pScene, IOSystem *pIOHandler)</argsstring>
+        <name>InternReadFile</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1ac67d9f5ceb26353d27d6be06cccad398">InternReadFile</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <briefdescription>
+<para>Imports the given file into the given scene structure. </para>        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_assimp_1_1_base_importer_1ac67d9f5ceb26353d27d6be06cccad398" kindref="member">BaseImporter::InternReadFile()</ref> for details </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="200" column="1" bodyfile="code/AssetLib/AC/ACLoader.cpp" bodystart="759" bodyend="872"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_c3_d_importer_1a59bf78ed30aa9de6e16d6ecfe5b3d1ad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AC3DImporter::SetupProperties</definition>
+        <argsstring>(const Importer *pImp)</argsstring>
+        <name>SetupProperties</name>
+        <reimplements refid="class_assimp_1_1_base_importer_1a2ecaa6b808b2b282cb6aa321970a2ad3">SetupProperties</reimplements>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> *</type>
+          <declname>pImp</declname>
+        </param>
+        <briefdescription>
+<para>Called prior to <ref refid="class_assimp_1_1_base_importer_1a047f06945fa656ebedde67819945b28c" kindref="member">ReadFile()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function is a request to the importer to update its configuration basing on the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref>&apos;s configuration property list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="207" column="1" bodyfile="code/AssetLib/AC/ACLoader.cpp" bodystart="752" bodyend="755"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_a_c3_d_importer_1a4f646ba16fbd663c10d662578100da74" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AC3DImporter::ConvertMaterial</definition>
+        <argsstring>(const Object &amp;object, const Material &amp;matSrc, aiMaterial &amp;matDest)</argsstring>
+        <name>ConvertMaterial</name>
+        <param>
+          <type>const <ref refid="struct_assimp_1_1_a_c3_d_importer_1_1_object" kindref="compound">Object</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_assimp_1_1_a_c3_d_importer_1_1_material" kindref="compound">Material</ref> &amp;</type>
+          <declname>matSrc</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_material" kindref="compound">aiMaterial</ref> &amp;</type>
+          <declname>matDest</declname>
+        </param>
+        <briefdescription>
+<para>Convert a material. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>matSrc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source material description </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>matDest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination material to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="240" column="1" bodyfile="code/AssetLib/AC/ACLoader.cpp" bodystart="356" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_c3_d_importer_1a4cad3db53fc2bda765472c68ebd5f38a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+        <definition>aiNode * AC3DImporter::ConvertObjectSection</definition>
+        <argsstring>(Object &amp;object, std::vector&lt; aiMesh *&gt; &amp;meshes, std::vector&lt; aiMaterial *&gt; &amp;outMaterials, const std::vector&lt; Material &gt; &amp;materials, aiNode *parent=nullptr)</argsstring>
+        <name>ConvertObjectSection</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_a_c3_d_importer_1_1_object" kindref="compound">Object</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_mesh" kindref="compound">aiMesh</ref> *&gt; &amp;</type>
+          <declname>meshes</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_material" kindref="compound">aiMaterial</ref> *&gt; &amp;</type>
+          <declname>outMaterials</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="struct_assimp_1_1_a_c3_d_importer_1_1_material" kindref="compound">Material</ref> &gt; &amp;</type>
+          <declname>materials</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>parent</declname>
+          <defval><ref refid="_open_d_d_l_common_8h_1ab979d9d4b4923f7c54d6caa6e1a61936" kindref="member">nullptr</ref></defval>
+        </param>
+        <briefdescription>
+<para>Convert all objects into meshes and nodes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current object to work on </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>meshes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the list of output meshes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outMaterials</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of output materials </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>materials</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_c3_d_importer_1_1_material" kindref="compound">Material</ref> list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Scenegraph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node for the object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="229" column="1" bodyfile="code/AssetLib/AC/ACLoader.cpp" bodystart="399" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_c3_d_importer_1a721fda90b1fc11a3b9f1ad3a1f520c49" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AC3DImporter::GetNextLine</definition>
+        <argsstring>()</argsstring>
+        <name>GetNextLine</name>
+        <briefdescription>
+<para>Get the next line from the file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>false if the end of the file was reached </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="213" column="1" bodyfile="code/AssetLib/AC/ACLoader.cpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_c3_d_importer_1a0f77071d585368084d5293be0ac05e2d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AC3DImporter::LoadObjectSection</definition>
+        <argsstring>(std::vector&lt; Object &gt; &amp;objects)</argsstring>
+        <name>LoadObjectSection</name>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_assimp_1_1_a_c3_d_importer_1_1_object" kindref="compound">Object</ref> &gt; &amp;</type>
+          <declname>objects</declname>
+        </param>
+        <briefdescription>
+<para>Load the object section. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is called recursively to load subobjects, the method returns after a &apos;kids 0&apos; was encountered.  List of output objects </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="220" column="1" bodyfile="code/AssetLib/AC/ACLoader.cpp" bodystart="184" bodyend="352"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>AC3D (*.ac) importer class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="346">
+        <label>Assimp::AC3DImporter</label>
+        <link refid="class_assimp_1_1_a_c3_d_importer"/>
+        <childnode refid="347" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="347">
+        <label>Assimp::BaseImporter</label>
+        <link refid="class_assimp_1_1_base_importer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="348">
+        <label>Assimp::AC3DImporter</label>
+        <link refid="class_assimp_1_1_a_c3_d_importer"/>
+        <childnode refid="349" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>Assimp::BaseImporter</label>
+        <link refid="class_assimp_1_1_base_importer"/>
+        <childnode refid="350" relation="usage">
+          <edgelabel>m_progress</edgelabel>
+        </childnode>
+      </node>
+      <node id="350">
+        <label>Assimp::ProgressHandler</label>
+        <link refid="class_assimp_1_1_progress_handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/AC/ACLoader.h" line="64" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="64" bodyend="267"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1ade577b7ef6b403315978156c331514ac" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>AC3DImporter</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7af10ad62259d2e54eff440019b345e309" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>ALLOW_EMPTY</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a15fb4512ad41a241a3b8de3fa63c0434" prot="protected" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>applicationUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3a26428f61d7bebdc477c4d0add9da30" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>BaseImporter</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1aa0c598cb9eda2132df7fb046b4e3dac3" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>buffer</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1ace96e5d1a21662b77f2a0bd01f83de6c" prot="public" virt="virtual"><scope>Assimp::AC3DImporter</scope><name>CanRead</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a32623af462fcf73fd3c665ca4d866d0f" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>CheckMagicToken</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af5fe8cb0ad373c368ac0d87e9141a833" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>CM</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a06bf1a8efefe9be56df8c7981ea807cd" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>configEvalSubdivision</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1ab8072ae6c710d17cfc712806545029ae" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>configSplitBFCull</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a4f646ba16fbd663c10d662578100da74" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>ConvertMaterial</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a4cad3db53fc2bda765472c68ebd5f38a" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>ConvertObjectSection</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3cd8c81533de987dd7acea6874ad918c" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>ConvertToUTF8</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ad9a7c9788930c44aa40c7448d61a862d" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>ConvertUTF8toISO8859_1</name></member>
+      <member refid="class_assimp_1_1_base_importer_1abc1067a6780d7d6dbe457fef8abdb66a" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>CopyVector</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3ce01553ca65d8cc8f1efc2174845d67" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>CopyVector</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ae90aa4e961f527f988365ee77d476118" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>FEET</name></member>
+      <member refid="class_assimp_1_1_base_importer_1af85971f80c5f45fef8c3a3395e4bbe14" prot="protected" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>fileScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7ae507341521279743797bdce9f7a21081" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>FORBID_EMPTY</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a51876206d286fb5804a2e99ad1fcae12" prot="public" virt="virtual"><scope>Assimp::AC3DImporter</scope><name>GetApplicationUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a15c379ec3a8399551d7b379de7fc3bc1" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>GetErrorText</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a05f9397b157ff1b56d7d360a39ca41ac" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>GetException</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a3954284d75f9fe30f5ff1758ecd2faeb" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>GetExtension</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a7ac75d5fcfe8784173bf117a912bafeb" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>GetExtensionList</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a21e52bc7b3d7833000737018a8301efc" prot="public" virt="virtual"><scope>Assimp::AC3DImporter</scope><name>GetFileScale</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1abba876613c4e2f19f18120e560d891a3" prot="protected" virt="virtual"><scope>Assimp::AC3DImporter</scope><name>GetInfo</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a721fda90b1fc11a3b9f1ad3a1f520c49" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>GetNextLine</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ad5bb9d0bff964c79b625c754b3adb04c" prot="protected" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>importerScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>ImporterUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1ac43f3495d597a22da47ea894f5432016" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>importerUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ace3a659f5caad10cf4ac6f2de87d35c3" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>INCHES</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a88b27495efcf754f3dda7e4177aff902" prot="protected" virt="virtual"><scope>Assimp::AC3DImporter</scope><name>InternReadFile</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a0f77071d585368084d5293be0ac05e2d" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>LoadObjectSection</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af84e338c6e9a678ed63b8b2b7de9ef02" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>M</name></member>
+      <member refid="class_assimp_1_1_base_importer_1abd2c9b86479c0c165e5d84d733e53373" prot="protected" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>m_ErrorText</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a7bf84fb733992558272add378e7d9525" prot="protected" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>m_Exception</name></member>
+      <member refid="class_assimp_1_1_base_importer_1aeb17ba9eee14fcdfe2c6f45bf940139d" prot="protected" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>m_progress</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a033e3e1d180af2a31629c126afc329db" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>mGroupsCounter</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a90e9f8fc82f57c6d0490525557c95764" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>mLights</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a67322e09d83bb04a5fdbd0364c9b8c6c" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>mLightsCounter</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451a1633eb908b6889de4de75080bbf13229" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>MM</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a7eada446adc90c14afa9dcbe8edda28e" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>mNumMeshes</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a3c5d5f698b9c9de7693073666a2c0e56" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>mPolysCounter</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1aab93b0523edc7c087a3b5913f5955aeb" prot="private" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>mWorldsCounter</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a047f06945fa656ebedde67819945b28c" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>ReadFile</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a6caed29cb9fa2d1e0aa0da2a17851ca2" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>SearchFileHeaderForToken</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9c5e10c82316e3afd685732e8f734f87" prot="public" virt="virtual"><scope>Assimp::AC3DImporter</scope><name>SetApplicationUnits</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a8faf1d4f1475e98f96f95fa46aad44c1" prot="public" virt="virtual"><scope>Assimp::AC3DImporter</scope><name>SetFileScale</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1a59bf78ed30aa9de6e16d6ecfe5b3d1ad" prot="protected" virt="virtual"><scope>Assimp::AC3DImporter</scope><name>SetupProperties</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a2de9d21d35c9060480142dc536ce5352" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>SimpleExtensionCheck</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>TextFileMode</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a1c43dc005eb52d2902d13f1a475ec9cd" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>TextFileToBuffer</name></member>
+      <member refid="class_assimp_1_1_a_c3_d_importer_1ad923ac54f3d06829aa167edbcfc28421" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter</scope><name>~AC3DImporter</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a809ce474153402b8fc8c5a1add89a855" prot="public" virt="virtual"><scope>Assimp::AC3DImporter</scope><name>~BaseImporter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

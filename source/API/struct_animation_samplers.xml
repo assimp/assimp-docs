@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_animation_samplers" kind="struct" language="C++" prot="public">
+    <compoundname>AnimationSamplers</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_animation_samplers_1a78ff20defb0171eab20576ef378d3b91" prot="public" static="no" mutable="no">
+        <type><ref refid="structgl_t_f2_1_1_animation_1_1_sampler" kindref="compound">Animation::Sampler</ref> *</type>
+        <definition>Animation::Sampler* AnimationSamplers::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/glTF2/glTF2Importer.cpp" line="1054" column="1" bodyfile="code/AssetLib/glTF2/glTF2Importer.cpp" bodystart="1054" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_animation_samplers_1a675640780e4eed2199d744d3f788c320" prot="public" static="no" mutable="no">
+        <type><ref refid="structgl_t_f2_1_1_animation_1_1_sampler" kindref="compound">Animation::Sampler</ref> *</type>
+        <definition>Animation::Sampler* AnimationSamplers::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/glTF2/glTF2Importer.cpp" line="1055" column="1" bodyfile="code/AssetLib/glTF2/glTF2Importer.cpp" bodystart="1055" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_animation_samplers_1ab866bda9a94eeb1ebf27936c38716554" prot="public" static="no" mutable="no">
+        <type><ref refid="structgl_t_f2_1_1_animation_1_1_sampler" kindref="compound">Animation::Sampler</ref> *</type>
+        <definition>Animation::Sampler* AnimationSamplers::translation</definition>
+        <argsstring></argsstring>
+        <name>translation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/glTF2/glTF2Importer.cpp" line="1053" column="1" bodyfile="code/AssetLib/glTF2/glTF2Importer.cpp" bodystart="1053" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_animation_samplers_1aea17b0a71e1c20db3c3ecc33b96c4cc9" prot="public" static="no" mutable="no">
+        <type><ref refid="structgl_t_f2_1_1_animation_1_1_sampler" kindref="compound">Animation::Sampler</ref> *</type>
+        <definition>Animation::Sampler* AnimationSamplers::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/glTF2/glTF2Importer.cpp" line="1056" column="1" bodyfile="code/AssetLib/glTF2/glTF2Importer.cpp" bodystart="1056" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_animation_samplers_1a79ef48ee643e8e58cdbc242b0a5f8452" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AnimationSamplers::AnimationSamplers</definition>
+        <argsstring>()</argsstring>
+        <name>AnimationSamplers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/glTF2/glTF2Importer.cpp" line="1045" column="1" bodyfile="code/AssetLib/glTF2/glTF2Importer.cpp" bodystart="1045" bodyend="1051"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="339">
+        <label>AnimationSamplers</label>
+        <link refid="struct_animation_samplers"/>
+        <childnode refid="340" relation="usage">
+          <edgelabel>scale</edgelabel>
+          <edgelabel>rotation</edgelabel>
+          <edgelabel>weight</edgelabel>
+          <edgelabel>translation</edgelabel>
+        </childnode>
+      </node>
+      <node id="340">
+        <label>glTF2::Animation::Sampler</label>
+        <link refid="structgl_t_f2_1_1_animation_1_1_sampler"/>
+        <childnode refid="341" relation="usage">
+          <edgelabel>output</edgelabel>
+          <edgelabel>input</edgelabel>
+        </childnode>
+      </node>
+      <node id="341">
+        <label>glTF2::Ref&lt; glTF2::Accessor &gt;</label>
+        <link refid="classgl_t_f2_1_1_ref"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/glTF2/glTF2Importer.cpp" line="1044" column="1" bodyfile="code/AssetLib/glTF2/glTF2Importer.cpp" bodystart="1044" bodyend="1057"/>
+    <listofallmembers>
+      <member refid="struct_animation_samplers_1a79ef48ee643e8e58cdbc242b0a5f8452" prot="public" virt="non-virtual"><scope>AnimationSamplers</scope><name>AnimationSamplers</name></member>
+      <member refid="struct_animation_samplers_1a78ff20defb0171eab20576ef378d3b91" prot="public" virt="non-virtual"><scope>AnimationSamplers</scope><name>rotation</name></member>
+      <member refid="struct_animation_samplers_1a675640780e4eed2199d744d3f788c320" prot="public" virt="non-virtual"><scope>AnimationSamplers</scope><name>scale</name></member>
+      <member refid="struct_animation_samplers_1ab866bda9a94eeb1ebf27936c38716554" prot="public" virt="non-virtual"><scope>AnimationSamplers</scope><name>translation</name></member>
+      <member refid="struct_animation_samplers_1aea17b0a71e1c20db3c3ecc33b96c4cc9" prot="public" virt="non-virtual"><scope>AnimationSamplers</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

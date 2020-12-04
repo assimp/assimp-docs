@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_assimp_1_1_a_s_e_1_1_bone" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::ASE::Bone</compoundname>
+    <includes local="no">ASEParser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_a_s_e_1_1_bone_1acd01a2aa66317a44ff67213f4ed25a80" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Assimp::ASE::Bone::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <briefdescription>
+<para><ref refid="struct_name" kindref="compound">Name</ref> of the bone. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="174" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_a_s_e_1_1_bone_1a49699428c8291e47e22cfb0d931b57b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ASE::Bone::Bone</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Bone</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_assimp_1_1_a_s_e_1_1_bone_1ade57feefb9b83cafa45b3ff341cc116a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ASE::Bone::Bone</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>Bone</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Construction from an existing name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="168" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="168" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper structure to represent an <ref refid="namespace_assimp_1_1_a_s_e" kindref="compound">ASE</ref> file bone. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/AssetLib/ASE/ASEParser.h" line="163" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="163" bodyend="175"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_bone_1a49699428c8291e47e22cfb0d931b57b4" prot="public" virt="non-virtual"><scope>Assimp::ASE::Bone</scope><name>Bone</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_bone_1ade57feefb9b83cafa45b3ff341cc116a" prot="public" virt="non-virtual"><scope>Assimp::ASE::Bone</scope><name>Bone</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_bone_1acd01a2aa66317a44ff67213f4ed25a80" prot="public" virt="non-virtual"><scope>Assimp::ASE::Bone</scope><name>mName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

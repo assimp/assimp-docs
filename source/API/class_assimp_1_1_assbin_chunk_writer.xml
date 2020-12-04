@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_assimp_1_1_assbin_chunk_writer" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::AssbinChunkWriter</compoundname>
+    <basecompoundref refid="class_assimp_1_1_i_o_stream" prot="public" virt="non-virtual">Assimp::IOStream</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_assbin_chunk_writer_1a77502d0c51f5c62b7dc084d1f266a27b" prot="private" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+        <definition>uint8_t* Assimp::AssbinChunkWriter::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="248" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_assbin_chunk_writer_1a71743d43d5b7ac886baf7bb3b61c6b90" prot="private" static="no" mutable="no">
+        <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+        <definition>IOStream* Assimp::AssbinChunkWriter::container</definition>
+        <argsstring></argsstring>
+        <name>container</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="250" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_assbin_chunk_writer_1ae7b8cbcdddf8c6e268205ba6433b8ab1" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::AssbinChunkWriter::cur_size</definition>
+        <argsstring></argsstring>
+        <name>cur_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="251" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_assbin_chunk_writer_1a1fc8c233b9bc5a055269486e976f2594" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::AssbinChunkWriter::cursor</definition>
+        <argsstring></argsstring>
+        <name>cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="251" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_assbin_chunk_writer_1a837ab0bfe8b5d392050b070567565f91" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::AssbinChunkWriter::initial</definition>
+        <argsstring></argsstring>
+        <name>initial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="251" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_assbin_chunk_writer_1a897647f3e6d0af92cb69fb04ece921ff" prot="private" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t Assimp::AssbinChunkWriter::magic</definition>
+        <argsstring></argsstring>
+        <name>magic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="249" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_assbin_chunk_writer_1a13bba97e78050ada80f3eb8fd49d95b2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinChunkWriter::Grow</definition>
+        <argsstring>(size_t need=0)</argsstring>
+        <name>Grow</name>
+        <param>
+          <type>size_t</type>
+          <declname>need</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="255" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="255" bodyend="267"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_assbin_chunk_writer_1a966edb60fb19b8a8ed435dd810ec0cc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::AssbinChunkWriter::AssbinChunkWriter</definition>
+        <argsstring>(IOStream *container, uint32_t magic, size_t initial=4096)</argsstring>
+        <name>AssbinChunkWriter</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+          <declname>magic</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>initial</declname>
+          <defval>4096</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="270" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="270" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_chunk_writer_1a73c06ae609fff79b783cd091722b2b0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t Assimp::AssbinChunkWriter::FileSize</definition>
+        <argsstring>() const</argsstring>
+        <name>FileSize</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1aaa01183d197fb714f28d6c611b6fa058">FileSize</reimplements>
+        <briefdescription>
+<para>Returns filesize Returns the filesize. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="305" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="305" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_chunk_writer_1a99ead88d71c36f31c5271ef8b600ea06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Assimp::AssbinChunkWriter::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1a7c19952446ece90924b246f087417899">Flush</reimplements>
+        <briefdescription>
+<para>Flush the contents of the file buffer (for writers) See fflush() for more details. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="301" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="301" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_chunk_writer_1a42a049e8034f6977d54a755f33159355" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* Assimp::AssbinChunkWriter::GetBufferPointer</definition>
+        <argsstring>()</argsstring>
+        <name>GetBufferPointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="289" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="289" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_chunk_writer_1a430603dba02793390af6abf4a93bce24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t Assimp::AssbinChunkWriter::Read</definition>
+        <argsstring>(void *, size_t, size_t)</argsstring>
+        <name>Read</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1ae376f641020989d61863b9c6f55c7abf">Read</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>pvBuffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pCount</declname>
+        </param>
+        <briefdescription>
+<para>Read from the file. </para>        </briefdescription>
+        <detaileddescription>
+<para>See fread() for more details This fails for write-only files </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="292" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="292" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_chunk_writer_1ac45a63c33d10456894c152c7a8309a1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>virtual aiReturn Assimp::AssbinChunkWriter::Seek</definition>
+        <argsstring>(size_t, aiOrigin)</argsstring>
+        <name>Seek</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1a5ed0dddf418ab08cf3fc21f3f3032220">Seek</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>pOffset</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1ac50fbaa57d78776ca99e42104d9b2786" kindref="member">aiOrigin</ref></type>
+          <declname>pOrigin</declname>
+        </param>
+        <briefdescription>
+<para>Set the read/write cursor of the file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that the offset is <emphasis>negative</emphasis> for aiOrigin_END. See fseek() for more details </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="295" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="295" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_chunk_writer_1a489cc0e48de2e24c2feea23eddb27518" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t Assimp::AssbinChunkWriter::Tell</definition>
+        <argsstring>() const</argsstring>
+        <name>Tell</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1a316ac6cd16b5a493d1313f792c806194">Tell</reimplements>
+        <briefdescription>
+<para>Get the current position of the read/write cursor. </para>        </briefdescription>
+        <detaileddescription>
+<para>See ftell() for more details </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="298" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="298" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_chunk_writer_1aaaf50d3ae10521508facb0e4dc74ab35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t Assimp::AssbinChunkWriter::Write</definition>
+        <argsstring>(const void *pvBuffer, size_t pSize, size_t pCount)</argsstring>
+        <name>Write</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1ad0ca4aae1b8c4d00db391ac3a4171f7b">Write</reimplements>
+        <param>
+          <type>const void *</type>
+          <declname>pvBuffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pCount</declname>
+        </param>
+        <briefdescription>
+<para>Write to the file. </para>        </briefdescription>
+        <detaileddescription>
+<para>See fwrite() for more details This fails for read-only files </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="310" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="310" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_chunk_writer_1a00d251ab40c5f35d83f8d653d0fac3aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Assimp::AssbinChunkWriter::~AssbinChunkWriter</definition>
+        <argsstring>()</argsstring>
+        <name>~AssbinChunkWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="280" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="280" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Chunk writer mechanism for the .assbin file structure. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is a standard in-memory <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> (most of the code is based on <ref refid="class_assimp_1_1_blob_i_o_stream" kindref="compound">BlobIOStream</ref>), the difference being that this takes another <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> as a &quot;container&quot; in the constructor, and when it is destroyed, it appends the magic number, the chunk size, and the chunk contents to the container stream. This allows relatively easy chunk chunk construction, even recursively. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="492">
+        <label>Assimp::AssbinChunkWriter</label>
+        <link refid="class_assimp_1_1_assbin_chunk_writer"/>
+        <childnode refid="493" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="493">
+        <label>Assimp::IOStream</label>
+        <link refid="class_assimp_1_1_i_o_stream"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="494">
+        <label>Assimp::AssbinChunkWriter</label>
+        <link refid="class_assimp_1_1_assbin_chunk_writer"/>
+        <childnode refid="495" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="495">
+        <label>Assimp::IOStream</label>
+        <link refid="class_assimp_1_1_i_o_stream"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="246" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="246" bodyend="321"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a966edb60fb19b8a8ed435dd810ec0cc3" prot="public" virt="non-virtual"><scope>Assimp::AssbinChunkWriter</scope><name>AssbinChunkWriter</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a77502d0c51f5c62b7dc084d1f266a27b" prot="private" virt="non-virtual"><scope>Assimp::AssbinChunkWriter</scope><name>buffer</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a71743d43d5b7ac886baf7bb3b61c6b90" prot="private" virt="non-virtual"><scope>Assimp::AssbinChunkWriter</scope><name>container</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1ae7b8cbcdddf8c6e268205ba6433b8ab1" prot="private" virt="non-virtual"><scope>Assimp::AssbinChunkWriter</scope><name>cur_size</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a1fc8c233b9bc5a055269486e976f2594" prot="private" virt="non-virtual"><scope>Assimp::AssbinChunkWriter</scope><name>cursor</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a73c06ae609fff79b783cd091722b2b0a" prot="public" virt="virtual"><scope>Assimp::AssbinChunkWriter</scope><name>FileSize</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a99ead88d71c36f31c5271ef8b600ea06" prot="public" virt="virtual"><scope>Assimp::AssbinChunkWriter</scope><name>Flush</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a42a049e8034f6977d54a755f33159355" prot="public" virt="non-virtual"><scope>Assimp::AssbinChunkWriter</scope><name>GetBufferPointer</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a13bba97e78050ada80f3eb8fd49d95b2" prot="private" virt="non-virtual"><scope>Assimp::AssbinChunkWriter</scope><name>Grow</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a837ab0bfe8b5d392050b070567565f91" prot="private" virt="non-virtual"><scope>Assimp::AssbinChunkWriter</scope><name>initial</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_1a0be5cf1642597edeffe5360025ddf50f" prot="protected" virt="non-virtual"><scope>Assimp::AssbinChunkWriter</scope><name>IOStream</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a897647f3e6d0af92cb69fb04ece921ff" prot="private" virt="non-virtual"><scope>Assimp::AssbinChunkWriter</scope><name>magic</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a430603dba02793390af6abf4a93bce24" prot="public" virt="virtual"><scope>Assimp::AssbinChunkWriter</scope><name>Read</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1ac45a63c33d10456894c152c7a8309a1d" prot="public" virt="virtual"><scope>Assimp::AssbinChunkWriter</scope><name>Seek</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a489cc0e48de2e24c2feea23eddb27518" prot="public" virt="virtual"><scope>Assimp::AssbinChunkWriter</scope><name>Tell</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1aaaf50d3ae10521508facb0e4dc74ab35" prot="public" virt="virtual"><scope>Assimp::AssbinChunkWriter</scope><name>Write</name></member>
+      <member refid="class_assimp_1_1_assbin_chunk_writer_1a00d251ab40c5f35d83f8d653d0fac3aa" prot="public" virt="virtual"><scope>Assimp::AssbinChunkWriter</scope><name>~AssbinChunkWriter</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_1ae4c9bcff461dba7e26631e691ad8ed2f" prot="public" virt="virtual"><scope>Assimp::AssbinChunkWriter</scope><name>~IOStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

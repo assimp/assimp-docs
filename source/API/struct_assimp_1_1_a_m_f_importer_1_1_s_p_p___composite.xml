@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___composite" kind="struct" language="C++" prot="private">
+    <compoundname>Assimp::AMFImporter::SPP_Composite</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___composite_1ae64a30ea9f1f2c432e3f4604e2411c78" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Assimp::AMFImporter::SPP_Composite::Formula</definition>
+        <argsstring></argsstring>
+        <name>Formula</name>
+        <briefdescription>
+<para>Formula for calculating ratio of Material. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="107" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___composite_1a28e8913bb29ddb2d065fdbe6de865c5e" prot="public" static="no" mutable="no">
+        <type>SPP_Material *</type>
+        <definition>SPP_Material* Assimp::AMFImporter::SPP_Composite::Material</definition>
+        <argsstring></argsstring>
+        <name>Material</name>
+        <briefdescription>
+<para>Pointer to material - part of composition. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="106" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data type for post-processing step. More suitable container for part of material&apos;s composition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/AssetLib/AMF/AMFImporter.hpp" line="105" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="105" bodyend="108"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___composite_1ae64a30ea9f1f2c432e3f4604e2411c78" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SPP_Composite</scope><name>Formula</name></member>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___composite_1a28e8913bb29ddb2d065fdbe6de865c5e" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SPP_Composite</scope><name>Material</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_assimp_1_1_armature_populate" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::ArmaturePopulate</compoundname>
+    <basecompoundref refid="class_assimp_1_1_base_process" prot="public" virt="non-virtual">Assimp::BaseProcess</basecompoundref>
+    <includes local="no">ArmaturePopulate.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_armature_populate_1a4e59a71335b967d2fedae916469508a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ArmaturePopulate::ArmaturePopulate</definition>
+        <argsstring>()</argsstring>
+        <name>ArmaturePopulate</name>
+        <briefdescription>
+<para>The default class constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="72" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_armature_populate_1a8bd3f82a40e8a48950dc2a8a807f63c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::ArmaturePopulate::Execute</definition>
+        <argsstring>(aiScene *pScene)</argsstring>
+        <name>Execute</name>
+        <reimplements refid="class_assimp_1_1_base_process_1ac2ec8dbb815e84a7af573fb3174279e7">Execute</reimplements>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <briefdescription>
+<para>Overwritten,. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_base_process" kindref="compound">BaseProcess</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="84" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="69" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_armature_populate_1addf974dcf8192a8d79f2718cc0eef097" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ArmaturePopulate::IsActive</definition>
+        <argsstring>(unsigned int pFlags) const</argsstring>
+        <name>IsActive</name>
+        <reimplements refid="class_assimp_1_1_base_process_1ae707ad643e9c45c265f4c03f4c50a219">IsActive</reimplements>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>pFlags</declname>
+        </param>
+        <briefdescription>
+<para>Overwritten,. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_base_process" kindref="compound">BaseProcess</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="78" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_armature_populate_1a6dc734829e8925c646387e11b79c381d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::ArmaturePopulate::SetupProperties</definition>
+        <argsstring>(const Importer *pImp)</argsstring>
+        <name>SetupProperties</name>
+        <reimplements refid="class_assimp_1_1_base_process_1aae14d0a8c5918642d4a272b7b74b5d70">SetupProperties</reimplements>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> *</type>
+          <declname>pImp</declname>
+        </param>
+        <briefdescription>
+<para>Overwritten,. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_base_process" kindref="compound">BaseProcess</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="81" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_armature_populate_1a3a5d51758c15401cfd0e68563aa6dc80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Assimp::ArmaturePopulate::~ArmaturePopulate</definition>
+        <argsstring>()</argsstring>
+        <name>~ArmaturePopulate</name>
+        <briefdescription>
+<para>The class destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="75" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="57" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_armature_populate_1ae41940a9fc722616c43d8d26736df204" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::ArmaturePopulate::BuildBoneList</definition>
+        <argsstring>(aiNode *current_node, const aiNode *root_node, const aiScene *scene, std::vector&lt; aiBone *&gt; &amp;bones)</argsstring>
+        <name>BuildBoneList</name>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>current_node</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>root_node</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_bone" kindref="compound">aiBone</ref> *&gt; &amp;</type>
+          <declname>bones</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="98" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="109" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_armature_populate_1a4cb537469e34577aa2558d859093de2b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::ArmaturePopulate::BuildBoneStack</definition>
+        <argsstring>(aiNode *current_node, const aiNode *root_node, const aiScene *scene, const std::vector&lt; aiBone *&gt; &amp;bones, std::map&lt; aiBone *, aiNode *&gt; &amp;bone_stack, std::vector&lt; aiNode *&gt; &amp;node_stack)</argsstring>
+        <name>BuildBoneStack</name>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>current_node</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>root_node</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structai_bone" kindref="compound">aiBone</ref> *&gt; &amp;</type>
+          <declname>bones</declname>
+        </param>
+        <param>
+          <type>std::map&lt; <ref refid="structai_bone" kindref="compound">aiBone</ref> *, <ref refid="structai_node" kindref="compound">aiNode</ref> *&gt; &amp;</type>
+          <declname>bone_stack</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_node" kindref="compound">aiNode</ref> *&gt; &amp;</type>
+          <declname>node_stack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="102" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="165" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_armature_populate_1ac6367628a52b5c3a30bb0d107f7ab456" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::ArmaturePopulate::BuildNodeList</definition>
+        <argsstring>(const aiNode *current_node, std::vector&lt; aiNode *&gt; &amp;nodes)</argsstring>
+        <name>BuildNodeList</name>
+        <param>
+          <type>const <ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>current_node</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_node" kindref="compound">aiNode</ref> *&gt; &amp;</type>
+          <declname>nodes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="95" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="146" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_armature_populate_1ae659d5b159f3ca8df9151e833cee17a4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+        <definition>aiNode * Assimp::ArmaturePopulate::GetArmatureRoot</definition>
+        <argsstring>(aiNode *bone_node, std::vector&lt; aiBone *&gt; &amp;bone_list)</argsstring>
+        <name>GetArmatureRoot</name>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>bone_node</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_bone" kindref="compound">aiBone</ref> *&gt; &amp;</type>
+          <declname>bone_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="86" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="200" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_armature_populate_1a820631c16d646e5a3a7a4510569fa292" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+        <definition>aiNode * Assimp::ArmaturePopulate::GetNodeFromStack</definition>
+        <argsstring>(const aiString &amp;node_name, std::vector&lt; aiNode *&gt; &amp;nodes)</argsstring>
+        <name>GetNodeFromStack</name>
+        <param>
+          <type>const <ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
+          <declname>node_name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_node" kindref="compound">aiNode</ref> *&gt; &amp;</type>
+          <declname>nodes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="92" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="233" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_armature_populate_1a672df6f0d8f421d6151b034e9f4dc2c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ArmaturePopulate::IsBoneNode</definition>
+        <argsstring>(const aiString &amp;bone_name, std::vector&lt; aiBone *&gt; &amp;bones)</argsstring>
+        <name>IsBoneNode</name>
+        <param>
+          <type>const <ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
+          <declname>bone_name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_bone" kindref="compound">aiBone</ref> *&gt; &amp;</type>
+          <declname>bones</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="89" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="217" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Armature Populate: This is a post process designed To save you time when importing models into your game engines This was originally designed only for fbx but will work with other formats it is intended to auto populate <ref refid="structai_bone" kindref="compound">aiBone</ref> data with armature and the <ref refid="structai_node" kindref="compound">aiNode</ref> This is very useful when dealing with skinned meshes or when dealing with many different skeletons It&apos;s off by default but recommend that you try it and use it It should reduce down any glue code you have in your importers You can contact RevoluPowered <ulink url="mailto:gordon@gordonite.tech">gordon@gordonite.tech</ulink> For more info about this. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="384">
+        <label>Assimp::BaseProcess</label>
+        <link refid="class_assimp_1_1_base_process"/>
+      </node>
+      <node id="383">
+        <label>Assimp::ArmaturePopulate</label>
+        <link refid="class_assimp_1_1_armature_populate"/>
+        <childnode refid="384" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="386">
+        <label>Assimp::BaseProcess</label>
+        <link refid="class_assimp_1_1_base_process"/>
+        <childnode refid="387" relation="usage">
+          <edgelabel>progress</edgelabel>
+        </childnode>
+        <childnode refid="388" relation="usage">
+          <edgelabel>shared</edgelabel>
+        </childnode>
+      </node>
+      <node id="385">
+        <label>Assimp::ArmaturePopulate</label>
+        <link refid="class_assimp_1_1_armature_populate"/>
+        <childnode refid="386" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="388">
+        <label>Assimp::SharedPostProcessInfo</label>
+        <link refid="class_assimp_1_1_shared_post_process_info"/>
+      </node>
+      <node id="387">
+        <label>Assimp::ProgressHandler</label>
+        <link refid="class_assimp_1_1_progress_handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/PostProcessing/ArmaturePopulate.h" line="69" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.h" bodystart="69" bodyend="107"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_armature_populate_1a4e59a71335b967d2fedae916469508a8" prot="public" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>ArmaturePopulate</name></member>
+      <member refid="class_assimp_1_1_base_process_1a032cf6a24f595077d7200468a7e3160f" prot="public" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>BaseProcess</name></member>
+      <member refid="class_assimp_1_1_armature_populate_1ae41940a9fc722616c43d8d26736df204" prot="public" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>BuildBoneList</name></member>
+      <member refid="class_assimp_1_1_armature_populate_1a4cb537469e34577aa2558d859093de2b" prot="public" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>BuildBoneStack</name></member>
+      <member refid="class_assimp_1_1_armature_populate_1ac6367628a52b5c3a30bb0d107f7ab456" prot="public" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>BuildNodeList</name></member>
+      <member refid="class_assimp_1_1_armature_populate_1a8bd3f82a40e8a48950dc2a8a807f63c2" prot="public" virt="virtual"><scope>Assimp::ArmaturePopulate</scope><name>Execute</name></member>
+      <member refid="class_assimp_1_1_base_process_1a21f3736d3f3a6df1b8edb5f2ab15c5ae" prot="public" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>ExecuteOnScene</name></member>
+      <member refid="class_assimp_1_1_armature_populate_1ae659d5b159f3ca8df9151e833cee17a4" prot="public" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>GetArmatureRoot</name></member>
+      <member refid="class_assimp_1_1_armature_populate_1a820631c16d646e5a3a7a4510569fa292" prot="public" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>GetNodeFromStack</name></member>
+      <member refid="class_assimp_1_1_base_process_1abff6709540454073db373e8c7e7cd916" prot="public" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>GetSharedData</name></member>
+      <member refid="class_assimp_1_1_armature_populate_1addf974dcf8192a8d79f2718cc0eef097" prot="public" virt="virtual"><scope>Assimp::ArmaturePopulate</scope><name>IsActive</name></member>
+      <member refid="class_assimp_1_1_armature_populate_1a672df6f0d8f421d6151b034e9f4dc2c0" prot="public" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>IsBoneNode</name></member>
+      <member refid="class_assimp_1_1_base_process_1ae991035bf032d0195d4105d6ae5cbccb" prot="protected" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>progress</name></member>
+      <member refid="class_assimp_1_1_base_process_1a03a7e084f9cf92230f4061ad23b7526d" prot="public" virt="virtual"><scope>Assimp::ArmaturePopulate</scope><name>RequireVerboseFormat</name></member>
+      <member refid="class_assimp_1_1_base_process_1aed894a145b058ee3bde213e04fcb2249" prot="public" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>SetSharedData</name></member>
+      <member refid="class_assimp_1_1_armature_populate_1a6dc734829e8925c646387e11b79c381d" prot="public" virt="virtual"><scope>Assimp::ArmaturePopulate</scope><name>SetupProperties</name></member>
+      <member refid="class_assimp_1_1_base_process_1a33a948aaeca9a6e237669188c0462bdd" prot="protected" virt="non-virtual"><scope>Assimp::ArmaturePopulate</scope><name>shared</name></member>
+      <member refid="class_assimp_1_1_armature_populate_1a3a5d51758c15401cfd0e68563aa6dc80" prot="public" virt="virtual"><scope>Assimp::ArmaturePopulate</scope><name>~ArmaturePopulate</name></member>
+      <member refid="class_assimp_1_1_base_process_1aec97e1ce73220aee3c941fe6bef0f6c8" prot="public" virt="virtual"><scope>Assimp::ArmaturePopulate</scope><name>~BaseProcess</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

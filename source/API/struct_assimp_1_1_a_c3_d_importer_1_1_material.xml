@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_assimp_1_1_a_c3_d_importer_1_1_material" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::AC3DImporter::Material</compoundname>
+    <includes local="no">ACLoader.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_a_c3_d_importer_1_1_material_1aa5f284fe0692d596c90e45ab462c4586" prot="public" static="no" mutable="no">
+        <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
+        <definition>aiColor3D Assimp::AC3DImporter::Material::amb</definition>
+        <argsstring></argsstring>
+        <name>amb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="81" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_c3_d_importer_1_1_material_1ae30defed8b3ea6b2530a853281e144b9" prot="public" static="no" mutable="no">
+        <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
+        <definition>aiColor3D Assimp::AC3DImporter::Material::emis</definition>
+        <argsstring></argsstring>
+        <name>emis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="84" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_c3_d_importer_1_1_material_1a8579d8e0ab5f21fcf46f5d5be3b365a3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Assimp::AC3DImporter::Material::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="96" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_c3_d_importer_1_1_material_1ae54fa10080546727caf717b0125fde30" prot="public" static="no" mutable="no">
+        <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
+        <definition>aiColor3D Assimp::AC3DImporter::Material::rgb</definition>
+        <argsstring></argsstring>
+        <name>rgb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="78" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_c3_d_importer_1_1_material_1a95811e78f910dde07873ac7ed672a421" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Assimp::AC3DImporter::Material::shin</definition>
+        <argsstring></argsstring>
+        <name>shin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="90" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_c3_d_importer_1_1_material_1a82f28aaeb6962903ee91232a89231eca" prot="public" static="no" mutable="no">
+        <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
+        <definition>aiColor3D Assimp::AC3DImporter::Material::spec</definition>
+        <argsstring></argsstring>
+        <name>spec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="87" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_c3_d_importer_1_1_material_1a880ab3f47ae1d83f834d64fc017dbb3e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Assimp::AC3DImporter::Material::trans</definition>
+        <argsstring></argsstring>
+        <name>trans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="93" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_a_c3_d_importer_1_1_material_1ac15664558704bb10a2fbe0133fac5325" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::AC3DImporter::Material::Material</definition>
+        <argsstring>()</argsstring>
+        <name>Material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AC/ACLoader.h" line="71" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="71" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="353">
+        <label>aiColor3D</label>
+        <link refid="structai_color3_d"/>
+      </node>
+      <node id="352">
+        <label>Assimp::AC3DImporter::Material</label>
+        <link refid="struct_assimp_1_1_a_c3_d_importer_1_1_material"/>
+        <childnode refid="353" relation="usage">
+          <edgelabel>emis</edgelabel>
+          <edgelabel>amb</edgelabel>
+          <edgelabel>rgb</edgelabel>
+          <edgelabel>spec</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/AC/ACLoader.h" line="70" column="1" bodyfile="code/AssetLib/AC/ACLoader.h" bodystart="70" bodyend="97"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_a_c3_d_importer_1_1_material_1aa5f284fe0692d596c90e45ab462c4586" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter::Material</scope><name>amb</name></member>
+      <member refid="struct_assimp_1_1_a_c3_d_importer_1_1_material_1ae30defed8b3ea6b2530a853281e144b9" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter::Material</scope><name>emis</name></member>
+      <member refid="struct_assimp_1_1_a_c3_d_importer_1_1_material_1ac15664558704bb10a2fbe0133fac5325" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter::Material</scope><name>Material</name></member>
+      <member refid="struct_assimp_1_1_a_c3_d_importer_1_1_material_1a8579d8e0ab5f21fcf46f5d5be3b365a3" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter::Material</scope><name>name</name></member>
+      <member refid="struct_assimp_1_1_a_c3_d_importer_1_1_material_1ae54fa10080546727caf717b0125fde30" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter::Material</scope><name>rgb</name></member>
+      <member refid="struct_assimp_1_1_a_c3_d_importer_1_1_material_1a95811e78f910dde07873ac7ed672a421" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter::Material</scope><name>shin</name></member>
+      <member refid="struct_assimp_1_1_a_c3_d_importer_1_1_material_1a82f28aaeb6962903ee91232a89231eca" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter::Material</scope><name>spec</name></member>
+      <member refid="struct_assimp_1_1_a_c3_d_importer_1_1_material_1a880ab3f47ae1d83f834d64fc017dbb3e" prot="public" virt="non-virtual"><scope>Assimp::AC3DImporter::Material</scope><name>trans</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

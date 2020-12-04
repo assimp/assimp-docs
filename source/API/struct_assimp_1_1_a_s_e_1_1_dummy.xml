@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_assimp_1_1_a_s_e_1_1_dummy" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::ASE::Dummy</compoundname>
+    <basecompoundref refid="struct_assimp_1_1_a_s_e_1_1_base_node" prot="public" virt="non-virtual">Assimp::ASE::BaseNode</basecompoundref>
+    <includes local="no">ASEParser.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_a_s_e_1_1_dummy_1a704ade5754c2c86dba79bcd3fd72ecb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ASE::Dummy::Dummy</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>Dummy</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="370" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="370" bodyend="373"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper structure to represent an <ref refid="namespace_assimp_1_1_a_s_e" kindref="compound">ASE</ref> helper object (dummy) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="413">
+        <label>Assimp::ASE::Dummy</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_dummy"/>
+        <childnode refid="414" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="414">
+        <label>Assimp::ASE::BaseNode</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_base_node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="420">
+        <label>aiVector3t&lt; ai_real &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+      <node id="417">
+        <label>aiMatrix4x4t&lt; ai_real &gt;</label>
+        <link refid="classai_matrix4x4t"/>
+      </node>
+      <node id="419">
+        <label>Assimp::ASE::InheritanceInfo</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_inheritance_info"/>
+      </node>
+      <node id="415">
+        <label>Assimp::ASE::Dummy</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_dummy"/>
+        <childnode refid="416" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>Assimp::ASE::BaseNode</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_base_node"/>
+        <childnode refid="417" relation="usage">
+          <edgelabel>mTransform</edgelabel>
+        </childnode>
+        <childnode refid="418" relation="usage">
+          <edgelabel>mAnim</edgelabel>
+          <edgelabel>mTargetAnim</edgelabel>
+        </childnode>
+        <childnode refid="419" relation="usage">
+          <edgelabel>inherit</edgelabel>
+        </childnode>
+        <childnode refid="420" relation="usage">
+          <edgelabel>mTargetPosition</edgelabel>
+        </childnode>
+      </node>
+      <node id="418">
+        <label>Assimp::ASE::Animation</label>
+        <link refid="struct_assimp_1_1_a_s_e_1_1_animation"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/ASE/ASEParser.h" line="368" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="368" bodyend="374"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a9419581c9d76241f938a45772fd39129" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>BaseNode</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a23f5e4fe52cccc599c42823b766e7bb0a44b64488492912d6777e22f758fee64e" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>Camera</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_dummy_1a704ade5754c2c86dba79bcd3fd72ecb4" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>Dummy</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a23f5e4fe52cccc599c42823b766e7bb0a26643d9e6cd30b5501f394675fdae129" prot="public" virt="non-virtual" ambiguityscope="Assimp::ASE::BaseNode::"><scope>Assimp::ASE::Dummy</scope><name>Dummy</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a3ba9514175a7012d01f182d4150bf136" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>inherit</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a23f5e4fe52cccc599c42823b766e7bb0a80083659d752bdc7db9c8a8fd441d2fe" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>Light</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a7f1c087a6e0791a7b25c77c323e35611" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>mAnim</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a23f5e4fe52cccc599c42823b766e7bb0a02838abf952736a8efbcabb64a3ac2ea" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>Mesh</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a1ee5b846983351d3dfc682df4fbc1807" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>mName</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a65c3ff02a4f7a4f7548dbab107b0e026" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>mParent</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a36a4bfc678fc6d9506cb266ddb59601c" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>mProcessed</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a414f10a3fca66246abf5e111414d90b0" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>mTargetAnim</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a8d6ca90c2c2a985a295cab16a6770ed6" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>mTargetPosition</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a84de0c31678f49a7242b25b2f0b3556c" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>mTransform</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1acd7f2fd60c9259dc3c278f4c6e708300" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>mType</name></member>
+      <member refid="struct_assimp_1_1_a_s_e_1_1_base_node_1a23f5e4fe52cccc599c42823b766e7bb0" prot="public" virt="non-virtual"><scope>Assimp::ASE::Dummy</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

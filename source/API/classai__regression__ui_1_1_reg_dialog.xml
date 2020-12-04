@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classai__regression__ui_1_1_reg_dialog" kind="class" language="Python" prot="public">
+    <compoundname>ai_regression_ui::RegDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classai__regression__ui_1_1_reg_dialog_1abce9d9cc97f6c3dd10347aec7ac330f3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.RegDialog::b_log_</definition>
+        <argsstring></argsstring>
+        <name>b_log_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="253" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_reg_dialog_1a3bdc88b19c67fc10344c7f68b690559e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.RegDialog::b_quit_</definition>
+        <argsstring></argsstring>
+        <name>b_quit_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="197" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_reg_dialog_1a8bfc19befbb9aafe07580bae662ada00" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.RegDialog::b_res_checker_</definition>
+        <argsstring></argsstring>
+        <name>b_res_checker_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="196" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_reg_dialog_1adae2f828917b6bf5abb580aa0121b8fe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.RegDialog::b_run_</definition>
+        <argsstring></argsstring>
+        <name>b_run_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="194" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_reg_dialog_1a7050f044d4cb37204b45357e37b7a0a7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.RegDialog::b_setup_</definition>
+        <argsstring></argsstring>
+        <name>b_setup_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="254" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_reg_dialog_1a371d636862542dbabb281dae34f74059" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.RegDialog::b_show_diff_</definition>
+        <argsstring></argsstring>
+        <name>b_show_diff_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="252" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_reg_dialog_1ab7c77f2aa879976ae8ba0e7d9bfdf55c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.RegDialog::b_update_</definition>
+        <argsstring></argsstring>
+        <name>b_update_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="195" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_reg_dialog_1a65a51b8403b58a86f0567b2a9a0ffaf8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.RegDialog::b_version_</definition>
+        <argsstring></argsstring>
+        <name>b_version_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="255" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_reg_dialog_1a58a29b8bbe2021e19fde8ff06543b2b8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.RegDialog::editor</definition>
+        <argsstring></argsstring>
+        <name>editor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="199" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_reg_dialog_1a43b9daa00cbf5bd3c9723248c4611e9a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.RegDialog::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="202" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_reg_dialog_1a68a879616d95cdb342289c9b3b27ecc9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.RegDialog::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="203" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classai__regression__ui_1_1_reg_dialog_1a61818517f4113ca080e71dffa7c41621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.RegDialog.__init__</definition>
+        <argsstring>(self, bin_path)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bin_path</type>
+          <defname>bin_path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Constructs the dialog, you can define which executable shal be used.
+@param  bin_path    [in] Path to assimp binary.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="188" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="188" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_reg_dialog_1a41db3f0f5954be43fd7c215b162c3e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.RegDialog.initUi</definition>
+        <argsstring>(self)</argsstring>
+        <name>initUi</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="246" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="246" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_reg_dialog_1ab3c0fa164c508ba535d2871f5ca62ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.RegDialog.open_log</definition>
+        <argsstring>(self)</argsstring>
+        <name>open_log</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="228" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="228" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_reg_dialog_1a7e6a8f355a3125a2e06e5ab2c204cd88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.RegDialog.quit</definition>
+        <argsstring>(self)</argsstring>
+        <name>quit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="242" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="242" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_reg_dialog_1a2d102602cd2d9fee6fe272891a09cd9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.RegDialog.reg_update</definition>
+        <argsstring>(self)</argsstring>
+        <name>reg_update</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="212" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="212" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_reg_dialog_1a4ed8abfb1e69ccef5a35b0affddc07f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.RegDialog.run_reg</definition>
+        <argsstring>(self)</argsstring>
+        <name>run_reg</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="205" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="205" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_reg_dialog_1a3626bf5404f4fbdab5ba8227f40ea75b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.RegDialog.setup</definition>
+        <argsstring>(self)</argsstring>
+        <name>setup</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="238" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="238" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_reg_dialog_1aa223da7bb5cbd4588a36107bb80b89ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.RegDialog.shop_diff</definition>
+        <argsstring>(self)</argsstring>
+        <name>shop_diff</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="224" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="224" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_reg_dialog_1a74cbb9c26d1ffcd834b47628824d4119" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.RegDialog.show_version</definition>
+        <argsstring>(self)</argsstring>
+        <name>show_version</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="234" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="234" bodyend="237"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>This class is used to create a simplified user interface for running the regression test suite.
+</verbatim> </para>    </detaileddescription>
+    <location file="test/regression/ai_regression_ui.py" line="183" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="183" bodyend="274"/>
+    <listofallmembers>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a61818517f4113ca080e71dffa7c41621" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>__init__</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1abce9d9cc97f6c3dd10347aec7ac330f3" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>b_log_</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a3bdc88b19c67fc10344c7f68b690559e" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>b_quit_</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a8bfc19befbb9aafe07580bae662ada00" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>b_res_checker_</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1adae2f828917b6bf5abb580aa0121b8fe" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>b_run_</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a7050f044d4cb37204b45357e37b7a0a7" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>b_setup_</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a371d636862542dbabb281dae34f74059" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>b_show_diff_</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1ab7c77f2aa879976ae8ba0e7d9bfdf55c" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>b_update_</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a65a51b8403b58a86f0567b2a9a0ffaf8" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>b_version_</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a58a29b8bbe2021e19fde8ff06543b2b8" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>editor</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a41db3f0f5954be43fd7c215b162c3e87" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>initUi</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1ab3c0fa164c508ba535d2871f5ca62ee8" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>open_log</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a7e6a8f355a3125a2e06e5ab2c204cd88" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>quit</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a2d102602cd2d9fee6fe272891a09cd9f" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>reg_update</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a43b9daa00cbf5bd3c9723248c4611e9a" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>root</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a4ed8abfb1e69ccef5a35b0affddc07f2" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>run_reg</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a3626bf5404f4fbdab5ba8227f40ea75b" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>setup</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1aa223da7bb5cbd4588a36107bb80b89ef" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>shop_diff</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a74cbb9c26d1ffcd834b47628824d4119" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>show_version</name></member>
+      <member refid="classai__regression__ui_1_1_reg_dialog_1a68a879616d95cdb342289c9b3b27ecc9" prot="public" virt="non-virtual"><scope>ai_regression_ui::RegDialog</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

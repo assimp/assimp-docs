@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_assimp_1_1_assimp_math_test" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::AssimpMathTest</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+    <derivedcompoundref refid="class_assimp_a_p_i_test__ai_matrix3x3" prot="public" virt="non-virtual">AssimpAPITest_aiMatrix3x3</derivedcompoundref>
+    <derivedcompoundref refid="class_assimp_a_p_i_test__ai_matrix4x4" prot="public" virt="non-virtual">AssimpAPITest_aiMatrix4x4</derivedcompoundref>
+    <derivedcompoundref refid="class_assimp_a_p_i_test__ai_quaternion" prot="public" virt="non-virtual">AssimpAPITest_aiQuaternion</derivedcompoundref>
+    <derivedcompoundref refid="class_assimp_a_p_i_test__ai_vector2_d" prot="public" virt="non-virtual">AssimpAPITest_aiVector2D</derivedcompoundref>
+    <derivedcompoundref refid="class_assimp_a_p_i_test__ai_vector3_d" prot="public" virt="non-virtual">AssimpAPITest_aiVector3D</derivedcompoundref>
+    <includes local="no">MathTest.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_assimp_math_test_1a2526c0bffafdc6d0fafe3fac4bfb2da0" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float Assimp::AssimpMathTest::Epsilon</definition>
+        <argsstring></argsstring>
+        <name>Epsilon</name>
+        <initializer>= <ref refid="namespace_assimp_1_1_math_1a4888f797601d1606f958740c3697e9bc" kindref="member">Math::getEpsilon</ref>&lt;float&gt;()</initializer>
+        <briefdescription>
+<para>Epsilon value to use in tests. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/MathTest.h" line="95" column="1" bodyfile="test/unit/MathTest.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_assimp_math_test_1af56ac6e2205961c2c022c705985db994" prot="public" static="yes" mutable="no">
+        <type><ref refid="namespace_assimp_1af356559634d8426e30a2307b68d7bf3b" kindref="member">RandomUniformFloatGenerator</ref></type>
+        <definition>RandomUniformFloatGenerator Assimp::AssimpMathTest::RandNonZero</definition>
+        <argsstring></argsstring>
+        <name>RandNonZero</name>
+        <briefdescription>
+<para>Random number generators. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/MathTest.h" line="98" column="1" bodyfile="test/unit/MathTest.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_assimp_math_test_1ab0a04565d4cdd3a1f235d637843a82e5" prot="public" static="yes" mutable="no">
+        <type><ref refid="namespace_assimp_1af356559634d8426e30a2307b68d7bf3b" kindref="member">RandomUniformFloatGenerator</ref></type>
+        <definition>RandomUniformFloatGenerator Assimp::AssimpMathTest::RandPI</definition>
+        <argsstring></argsstring>
+        <name>RandPI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/MathTest.h" line="98" column="1" bodyfile="test/unit/MathTest.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_assimp_math_test_1aaabc94a581a0a1c211dad5cc348191c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="matrix3x3_8h_1abdcfd6b60d3f8c3f90b3e914b55b8e17" kindref="member">aiMatrix3x3</ref></type>
+        <definition>static aiMatrix3x3 Assimp::AssimpMathTest::random_mat3</definition>
+        <argsstring>()</argsstring>
+        <name>random_mat3</name>
+        <briefdescription>
+<para>Return a random non-null 3x3 matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/MathTest.h" line="78" column="1" bodyfile="test/unit/MathTest.h" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assimp_math_test_1acb13d24ed8d435e248c15939c88332de" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref></type>
+        <definition>static aiMatrix4x4 Assimp::AssimpMathTest::random_mat4</definition>
+        <argsstring>()</argsstring>
+        <name>random_mat4</name>
+        <briefdescription>
+<para>Return a random non-null 4x4 matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/MathTest.h" line="86" column="1" bodyfile="test/unit/MathTest.h" bodystart="86" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assimp_math_test_1ad8294f2aaa37eb3c77c7139db8ee6275" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="quaternion_8h_1a90332e4974fbd571493e0f9b3b5ce707" kindref="member">aiQuaternion</ref></type>
+        <definition>static aiQuaternion Assimp::AssimpMathTest::random_quat</definition>
+        <argsstring>()</argsstring>
+        <name>random_quat</name>
+        <briefdescription>
+<para>Return a quaternion with random orientation and rotation angle around axis. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/MathTest.h" line="73" column="1" bodyfile="test/unit/MathTest.h" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assimp_math_test_1aca8dd3f04a609c40a4956c6a40b2adbd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>static aiVector3D Assimp::AssimpMathTest::random_unit_vec3</definition>
+        <argsstring>()</argsstring>
+        <name>random_unit_vec3</name>
+        <briefdescription>
+<para>Return a random unit 3D vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/MathTest.h" line="67" column="1" bodyfile="test/unit/MathTest.h" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assimp_math_test_1a95df4c75882b51ec25bf1d6aecd56469" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="vector2_8h_1a0ac1a29f53f3c10ae2e522525f8e311f" kindref="member">aiVector2D</ref></type>
+        <definition>static aiVector2D Assimp::AssimpMathTest::random_vec2</definition>
+        <argsstring>()</argsstring>
+        <name>random_vec2</name>
+        <briefdescription>
+<para>Return a random non-null 2D vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/MathTest.h" line="57" column="1" bodyfile="test/unit/MathTest.h" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assimp_math_test_1a0c119c0fcdad10be2cf92e8774305f82" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>static aiVector3D Assimp::AssimpMathTest::random_vec3</definition>
+        <argsstring>()</argsstring>
+        <name>random_vec3</name>
+        <briefdescription>
+<para>Return a random non-null 3D vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/MathTest.h" line="62" column="1" bodyfile="test/unit/MathTest.h" bodystart="62" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Custom test class providing several math related utilities. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="505">
+        <label>AssimpAPITest_aiMatrix3x3</label>
+        <link refid="class_assimp_a_p_i_test__ai_matrix3x3"/>
+        <childnode refid="503" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="504">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="507">
+        <label>AssimpAPITest_aiQuaternion</label>
+        <link refid="class_assimp_a_p_i_test__ai_quaternion"/>
+        <childnode refid="503" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="508">
+        <label>AssimpAPITest_aiVector2D</label>
+        <link refid="class_assimp_a_p_i_test__ai_vector2_d"/>
+        <childnode refid="503" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="509">
+        <label>AssimpAPITest_aiVector3D</label>
+        <link refid="class_assimp_a_p_i_test__ai_vector3_d"/>
+        <childnode refid="503" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="503">
+        <label>Assimp::AssimpMathTest</label>
+        <link refid="class_assimp_1_1_assimp_math_test"/>
+        <childnode refid="504" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="506">
+        <label>AssimpAPITest_aiMatrix4x4</label>
+        <link refid="class_assimp_a_p_i_test__ai_matrix4x4"/>
+        <childnode refid="503" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="512">
+        <label>Assimp::RandomUniformRealGenerator&lt; T &gt;</label>
+        <link refid="class_assimp_1_1_random_uniform_real_generator"/>
+      </node>
+      <node id="511">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="510">
+        <label>Assimp::AssimpMathTest</label>
+        <link refid="class_assimp_1_1_assimp_math_test"/>
+        <childnode refid="511" relation="public-inheritance">
+        </childnode>
+        <childnode refid="512" relation="usage">
+          <edgelabel>RandNonZero</edgelabel>
+          <edgelabel>RandPI</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="test/unit/MathTest.h" line="54" column="1" bodyfile="test/unit/MathTest.h" bodystart="54" bodyend="99"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_assimp_math_test_1a2526c0bffafdc6d0fafe3fac4bfb2da0" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>Epsilon</name></member>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>HasNonfatalFailure</name></member>
+      <member refid="class_assimp_1_1_assimp_math_test_1af56ac6e2205961c2c022c705985db994" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>RandNonZero</name></member>
+      <member refid="class_assimp_1_1_assimp_math_test_1aaabc94a581a0a1c211dad5cc348191c1" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>random_mat3</name></member>
+      <member refid="class_assimp_1_1_assimp_math_test_1acb13d24ed8d435e248c15939c88332de" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>random_mat4</name></member>
+      <member refid="class_assimp_1_1_assimp_math_test_1ad8294f2aaa37eb3c77c7139db8ee6275" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>random_quat</name></member>
+      <member refid="class_assimp_1_1_assimp_math_test_1aca8dd3f04a609c40a4956c6a40b2adbd" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>random_unit_vec3</name></member>
+      <member refid="class_assimp_1_1_assimp_math_test_1a95df4c75882b51ec25bf1d6aecd56469" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>random_vec2</name></member>
+      <member refid="class_assimp_1_1_assimp_math_test_1a0c119c0fcdad10be2cf92e8774305f82" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>random_vec3</name></member>
+      <member refid="class_assimp_1_1_assimp_math_test_1ab0a04565d4cdd3a1f235d637843a82e5" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>RandPI</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733" prot="protected" virt="virtual"><scope>Assimp::AssimpMathTest</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923" prot="protected" virt="virtual"><scope>Assimp::AssimpMathTest</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>Assimp::AssimpMathTest</scope><name>Test</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>Assimp::AssimpMathTest</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

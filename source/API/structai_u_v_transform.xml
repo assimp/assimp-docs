@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_u_v_transform" kind="struct" language="C++" prot="public">
+    <compoundname>aiUVTransform</compoundname>
+    <derivedcompoundref refid="struct_assimp_1_1_s_transform_vec_info" prot="public" virt="non-virtual">Assimp::STransformVecInfo</derivedcompoundref>
+    <includes local="no">material.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_u_v_transform_1a157005aadfdd145a56c7831c7b24f1ea" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real aiUVTransform::mRotation</definition>
+        <argsstring></argsstring>
+        <name>mRotation</name>
+        <briefdescription>
+<para>Rotation - in counter-clockwise direction. </para>        </briefdescription>
+        <detaileddescription>
+<para>The rotation angle is specified in radians. The rotation center is 0.5f|0.5f. The default value 0.f. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="508" column="1" bodyfile="include/assimp/material.h" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_u_v_transform_1a89429a027cbf914e7212e48149a957c8" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector2_8h_1a0ac1a29f53f3c10ae2e522525f8e311f" kindref="member">aiVector2D</ref></type>
+        <definition>C_STRUCT aiVector2D aiUVTransform::mScaling</definition>
+        <argsstring></argsstring>
+        <name>mScaling</name>
+        <briefdescription>
+<para>Scaling on the u and v axes. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default value is (1|1). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="500" column="1" bodyfile="include/assimp/material.h" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_u_v_transform_1a8c7f35959aa342bf0cef670246fbb813" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector2_8h_1a0ac1a29f53f3c10ae2e522525f8e311f" kindref="member">aiVector2D</ref></type>
+        <definition>C_STRUCT aiVector2D aiUVTransform::mTranslation</definition>
+        <argsstring></argsstring>
+        <name>mTranslation</name>
+        <briefdescription>
+<para>Translation on the u and v axes. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default value is (0|0). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="494" column="1" bodyfile="include/assimp/material.h" bodystart="494" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_u_v_transform_1a04ce4416ad2a09217b347c803e1bf94b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiUVTransform::aiUVTransform</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiUVTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/material.h" line="512" column="1" bodyfile="include/assimp/material.h" bodystart="512" bodyend="518"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines how an UV channel is transformed. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is just a helper structure for the <ref refid="material_8h_1ab24f58c983cf26acc9389ed2530316a9" kindref="member">AI_MATKEY_UVTRANSFORM</ref> key. See its documentation for more details.</para><para>Typically you&apos;ll want to build a matrix of this information. However, we keep separate scaling/translation/rotation values to make it easier to process and optimize UV transformations internally. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="240">
+        <label>Assimp::STransformVecInfo</label>
+        <link refid="struct_assimp_1_1_s_transform_vec_info"/>
+        <childnode refid="239" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>aiUVTransform</label>
+        <link refid="structai_u_v_transform"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="241">
+        <label>aiUVTransform</label>
+        <link refid="structai_u_v_transform"/>
+        <childnode refid="242" relation="usage">
+          <edgelabel>mTranslation</edgelabel>
+          <edgelabel>mScaling</edgelabel>
+        </childnode>
+      </node>
+      <node id="242">
+        <label>aiVector2t&lt; TReal &gt;</label>
+        <link refid="classai_vector2t"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/material.h" line="489" column="1" bodyfile="include/assimp/material.h" bodystart="488" bodyend="521"/>
+    <listofallmembers>
+      <member refid="structai_u_v_transform_1a04ce4416ad2a09217b347c803e1bf94b" prot="public" virt="non-virtual"><scope>aiUVTransform</scope><name>aiUVTransform</name></member>
+      <member refid="structai_u_v_transform_1a157005aadfdd145a56c7831c7b24f1ea" prot="public" virt="non-virtual"><scope>aiUVTransform</scope><name>mRotation</name></member>
+      <member refid="structai_u_v_transform_1a89429a027cbf914e7212e48149a957c8" prot="public" virt="non-virtual"><scope>aiUVTransform</scope><name>mScaling</name></member>
+      <member refid="structai_u_v_transform_1a8c7f35959aa342bf0cef670246fbb813" prot="public" virt="non-virtual"><scope>aiUVTransform</scope><name>mTranslation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

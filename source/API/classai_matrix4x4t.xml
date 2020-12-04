@@ -1,0 +1,1183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classai_matrix4x4t" kind="class" language="C++" prot="public">
+    <compoundname>aiMatrix4x4t</compoundname>
+    <includes local="no">vector3.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TReal</declname>
+        <defname>TReal</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classai_matrix4x4t_1aac24671aa7f1155e9e9f2c63e825c3ea" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::a1</definition>
+        <argsstring></argsstring>
+        <name>a1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="256" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1ab0f0a6d456ad8430555d30b8f2ec09e4" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::a2</definition>
+        <argsstring></argsstring>
+        <name>a2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="256" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1a5fa2f856df015c63fafc18f8b166839c" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::a3</definition>
+        <argsstring></argsstring>
+        <name>a3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="256" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1a714f52d2ec08808a19ab753eec3b0086" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::a4</definition>
+        <argsstring></argsstring>
+        <name>a4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="256" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1aacc93e987430e14e9697b7ca32bf92ea" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::b1</definition>
+        <argsstring></argsstring>
+        <name>b1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="257" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1a9eb2ebc319cdf8bbc59b4023216a9a9f" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::b2</definition>
+        <argsstring></argsstring>
+        <name>b2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="257" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1a7c12882549222d3bed5d0e6c18deac84" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::b3</definition>
+        <argsstring></argsstring>
+        <name>b3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="257" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1adc0c7992476d884067e474da9b9d908f" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::b4</definition>
+        <argsstring></argsstring>
+        <name>b4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="257" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1a1079852b4ac6cf05056d3fcfae570c4d" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::c1</definition>
+        <argsstring></argsstring>
+        <name>c1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="258" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1a1856e465411e9e3e71988eef1c47b399" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::c2</definition>
+        <argsstring></argsstring>
+        <name>c2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="258" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1a4ae057235cd88d3b4c48ee7d9ac632ed" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::c3</definition>
+        <argsstring></argsstring>
+        <name>c3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="258" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1ad205d617d5e863bdad4ca66275a1e080" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::c4</definition>
+        <argsstring></argsstring>
+        <name>c4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="258" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1aa709c601ce6fc98c92a8802e58d80fc2" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::d1</definition>
+        <argsstring></argsstring>
+        <name>d1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="259" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1a1becaa4733b3b666e1b631efbb5843b2" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::d2</definition>
+        <argsstring></argsstring>
+        <name>d2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="259" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1aea9e249dc63f328cd180a94e73043cc8" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::d3</definition>
+        <argsstring></argsstring>
+        <name>d3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="259" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix4x4t_1ab4533b358b7e1f56e9f3037b0fb8f1ae" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix4x4t&lt; TReal &gt;::d4</definition>
+        <argsstring></argsstring>
+        <name>d4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="259" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classai_matrix4x4t_1ad7df5d6d154bd90f77737ca940ad5fee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aiMatrix4x4t&lt; TReal &gt;::aiMatrix4x4t</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiMatrix4x4t</name>
+        <briefdescription>
+<para>set to identity </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="77" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a7b5ff3b5bd9f9334adde19365239b714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aiMatrix4x4t&lt; TReal &gt;::aiMatrix4x4t</definition>
+        <argsstring>(TReal _a1, TReal _a2, TReal _a3, TReal _a4, TReal _b1, TReal _b2, TReal _b3, TReal _b4, TReal _c1, TReal _c2, TReal _c3, TReal _c4, TReal _d1, TReal _d2, TReal _d3, TReal _d4)</argsstring>
+        <name>aiMatrix4x4t</name>
+        <param>
+          <type>TReal</type>
+          <declname>_a1</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_a2</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_a3</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_a4</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_b1</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_b2</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_b3</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_b4</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_c1</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_c2</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_c3</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_c4</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_d1</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_d2</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_d3</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_d4</declname>
+        </param>
+        <briefdescription>
+<para>construction from single values </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="80" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="72" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a6f6d3bfe9515b8a985f2f662159936e1" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt;::aiMatrix4x4t</definition>
+        <argsstring>(const aiMatrix3x3t&lt; TReal &gt; &amp;m)</argsstring>
+        <name>aiMatrix4x4t</name>
+        <param>
+          <type>const <ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>construction from 3x3 matrix, remaining elements are set to identity </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="87" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="97" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1aae36244577970bd5f216ced4c36d652b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt;::aiMatrix4x4t</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;scaling, const aiQuaterniont&lt; TReal &gt; &amp;rotation, const aiVector3t&lt; TReal &gt; &amp;position)</argsstring>
+        <name>aiMatrix4x4t</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>scaling</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref>&lt; TReal &gt; &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>construction from position, rotation and scaling components </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scaling</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling for the x,y,z axes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation as a hamilton quaternion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position for the x,y,z axes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="94" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="107" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a2aa8546c78e6efb21931c437a3fd3604" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>AI_FORCE_INLINE void aiMatrix4x4t&lt; TReal &gt;::Decompose</definition>
+        <argsstring>(aiVector3t&lt; TReal &gt; &amp;scaling, aiQuaterniont&lt; TReal &gt; &amp;rotation, aiVector3t&lt; TReal &gt; &amp;position) const</argsstring>
+        <name>Decompose</name>
+        <param>
+          <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>scaling</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref>&lt; TReal &gt; &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Decompose a trafo matrix into its original components. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scaling</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output scaling for the x,y,z axes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output rotation as a hamilton quaternion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output position for the x,y,z axes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="150" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="401" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a00034751429a1db290ac10db25592a03" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>AI_FORCE_INLINE void aiMatrix4x4t&lt; TReal &gt;::Decompose</definition>
+        <argsstring>(aiVector3t&lt; TReal &gt; &amp;pScaling, aiVector3t&lt; TReal &gt; &amp;pRotation, aiVector3t&lt; TReal &gt; &amp;pPosition) const</argsstring>
+        <name>Decompose</name>
+        <param>
+          <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pScaling</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pRotation</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pPosition</declname>
+        </param>
+        <briefdescription>
+<para>Decompose a trafo matrix into its original components. </para>        </briefdescription>
+        <detaileddescription>
+<para>Thx to good FAQ at <ulink url="http://www.gamedev.ru/code/articles/faq_matrix_quat">http://www.gamedev.ru/code/articles/faq_matrix_quat</ulink> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">pScaling</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Receives the output scaling for the x,y,z axes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pRotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Receives the output rotation as a Euler angles. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Receives the output position for the x,y,z axes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="161" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="416" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a874b2ec5880d580235e6f178ede62a8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>AI_FORCE_INLINE void aiMatrix4x4t&lt; TReal &gt;::Decompose</definition>
+        <argsstring>(aiVector3t&lt; TReal &gt; &amp;pScaling, aiVector3t&lt; TReal &gt; &amp;pRotationAxis, TReal &amp;pRotationAngle, aiVector3t&lt; TReal &gt; &amp;pPosition) const</argsstring>
+        <name>Decompose</name>
+        <param>
+          <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pScaling</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pRotationAxis</declname>
+        </param>
+        <param>
+          <type>TReal &amp;</type>
+          <declname>pRotationAngle</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pPosition</declname>
+        </param>
+        <briefdescription>
+<para>Decompose a trafo matrix into its original components Thx to good FAQ at <ulink url="http://www.gamedev.ru/code/articles/faq_matrix_quat">http://www.gamedev.ru/code/articles/faq_matrix_quat</ulink>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">pScaling</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Receives the output scaling for the x,y,z axes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pRotationAxis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Receives the output rotation axis. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pRotationAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Receives the output rotation angle for pRotationAxis. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Receives the output position for the x,y,z axes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="172" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="471" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1aad23f9488d17d5c163c59ddd08a1fa87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>AI_FORCE_INLINE void aiMatrix4x4t&lt; TReal &gt;::DecomposeNoScaling</definition>
+        <argsstring>(aiQuaterniont&lt; TReal &gt; &amp;rotation, aiVector3t&lt; TReal &gt; &amp;position) const</argsstring>
+        <name>DecomposeNoScaling</name>
+        <param>
+          <type><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref>&lt; TReal &gt; &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Decompose a trafo matrix with no scaling into its original components. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output rotation as a hamilton quaternion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output position for the x,y,z axes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="181" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="496" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1af7f1b5133c989c74e4570cbb0598b238" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TReal</type>
+        <definition>AI_FORCE_INLINE TReal aiMatrix4x4t&lt; TReal &gt;::Determinant</definition>
+        <argsstring>() const</argsstring>
+        <name>Determinant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="134" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="228" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a4c11efb37b1686c6c4ff3d48de35598d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool aiMatrix4x4t&lt; TReal &gt;::Equal</definition>
+        <argsstring>(const aiMatrix4x4t &amp;m, TReal epsilon=1e-6) const</argsstring>
+        <name>Equal</name>
+        <param>
+          <type>const <ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>epsilon</declname>
+          <defval>1e-6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="113" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="347" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1aabc60f572da97861d167b05d09a3cf54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::FromEulerAnglesXYZ</definition>
+        <argsstring>(TReal x, TReal y, TReal z)</argsstring>
+        <name>FromEulerAnglesXYZ</name>
+        <param>
+          <type>TReal</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Creates a trafo matrix from a set of euler angles. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation angle for the x-axis, in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation angle for the y-axis, in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation angle for the z-axis, in radians </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="190" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="519" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1ab5c1eba739caff4a53f7b034e5e0fc35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::FromEulerAnglesXYZ</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;blubb)</argsstring>
+        <name>FromEulerAnglesXYZ</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>blubb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="191" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="512" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1ae398d4516cf8d297f150c8817f6b71d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::Inverse</definition>
+        <argsstring>()</argsstring>
+        <name>Inverse</name>
+        <briefdescription>
+<para>Invert the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the matrix is not invertible all elements are set to qnan. Beware, use (f != f) to check whether a TReal f is qnan. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="133" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="240" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a8b2cacfd0733057daba12160b24bbd23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool aiMatrix4x4t&lt; TReal &gt;::IsIdentity</definition>
+        <argsstring>() const</argsstring>
+        <name>IsIdentity</name>
+        <briefdescription>
+<para>Returns true of the matrix is the identity matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para>The check is performed against a not so small epsilon. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="141" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="548" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1add46299116658f9f30c5f04306a35eb5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TOther</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>aiMatrix4x4t&lt; TReal &gt;::operator aiMatrix4x4t&lt; TOther &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator aiMatrix4x4t&lt; TOther &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="122" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="86" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a2d7b88fe50dad0f2a68a377e5faec94f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool aiMatrix4x4t&lt; TReal &gt;::operator!=</definition>
+        <argsstring>(const aiMatrix4x4t &amp;m) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="111" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="340" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a68cd60a63a7bf19b103f46dff9bb9677" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref></type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; aiMatrix4x4t&lt; TReal &gt;::operator*</definition>
+        <argsstring>(const aiMatrix4x4t &amp;m) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="117" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="206" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1ac1f5b69d492f357c7f2d70358479a625" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref></type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; aiMatrix4x4t&lt; TReal &gt;::operator*</definition>
+        <argsstring>(const TReal &amp;aFloat) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const TReal &amp;</type>
+          <declname>aFloat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="118" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="158" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a7bde7a38d2771b07fe964e66a2599997" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::operator*=</definition>
+        <argsstring>(const aiMatrix4x4t &amp;m)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const <ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="116" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="135" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a8f55b61cda62dfcf83f592d970b8899e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref></type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; aiMatrix4x4t&lt; TReal &gt;::operator+</definition>
+        <argsstring>(const aiMatrix4x4t &amp;aMatrix) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>aMatrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="119" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="182" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a1c4b0769ce92db066078922ef40f77ab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool aiMatrix4x4t&lt; TReal &gt;::operator==</definition>
+        <argsstring>(const aiMatrix4x4t &amp;m) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="110" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="330" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1ac1401c94d941835defd7799ee9c600e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TReal *</type>
+        <definition>AI_FORCE_INLINE TReal * aiMatrix4x4t&lt; TReal &gt;::operator[]</definition>
+        <argsstring>(unsigned int p_iIndex)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>p_iIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p_iIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- index of the row. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to pointed row. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="102" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="285" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1af63ccee08492b1be3c946db47217854f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const TReal *</type>
+        <definition>AI_FORCE_INLINE const TReal * aiMatrix4x4t&lt; TReal &gt;::operator[]</definition>
+        <argsstring>(unsigned int p_iIndex) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>p_iIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="107" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="307" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a6ddba727b978f74e862ecba33745825d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::Transpose</definition>
+        <argsstring>()</argsstring>
+        <name>Transpose</name>
+        <briefdescription>
+<para>Transpose the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="126" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="214" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classai_matrix4x4t_1a6fb7fe21fb2ceba9467e72642979a268" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::FromToMatrix</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;from, const aiVector3t&lt; TReal &gt; &amp;to, aiMatrix4x4t &amp;out)</argsstring>
+        <name>FromToMatrix</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>A function for creating a rotation matrix that rotates a vector called &quot;from&quot; into another vector called &quot;to&quot;. </para>        </briefdescription>
+        <detaileddescription>
+<para>Input : from[3], to[3] which both must be <emphasis>normalized</emphasis> non-zero vectors Output: mtx[3][3] <ndash/> a 3x3 matrix in column-major form Authors: Tomas Mueller, John Hughes &quot;Efficiently Building a Matrix to Rotate One Vector to Another&quot; Journal of Graphics Tools, 4(4):1-4, 1999</para><para>Input : from[3], to[3] which both must be <emphasis>normalized</emphasis> non-zero vectors Output: mtx[3][3] <ndash/> a 3x3 matrix in colum-major form Authors: Tomas Möller, John Hughes &quot;Efficiently Building a Matrix to Rotate One Vector to Another&quot; Journal of Graphics Tools, 4(4):1-4, 1999 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="253" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="668" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a3c15acce7e3c717153a0705f6bdc032d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::Rotation</definition>
+        <argsstring>(TReal a, const aiVector3t&lt; TReal &gt; &amp;axis, aiMatrix4x4t &amp;out)</argsstring>
+        <name>Rotation</name>
+        <param>
+          <type>TReal</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Returns a rotation matrix for a rotation around an arbitrary axis. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation angle, in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation axis, should be a normalized vector. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="224" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="620" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a020f1deeedfe27986ada0e6894014318" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::RotationX</definition>
+        <argsstring>(TReal a, aiMatrix4x4t &amp;out)</argsstring>
+        <name>RotationX</name>
+        <param>
+          <type>TReal</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Returns a rotation matrix for a rotation around the x axis. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation angle, in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="199" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="573" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1afd7512d141a3ffe9d1df0aeccd58ac4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::RotationY</definition>
+        <argsstring>(TReal a, aiMatrix4x4t &amp;out)</argsstring>
+        <name>RotationY</name>
+        <param>
+          <type>TReal</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Returns a rotation matrix for a rotation around the y axis. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation angle, in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="207" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="588" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a6d33ed3f5a46f733d86b186036968824" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::RotationZ</definition>
+        <argsstring>(TReal a, aiMatrix4x4t &amp;out)</argsstring>
+        <name>RotationZ</name>
+        <param>
+          <type>TReal</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Returns a rotation matrix for a rotation around the z axis. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation angle, in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="215" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="604" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a0ad873fd5fa86e44fa57901f1bc32d71" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::Scaling</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;v, aiMatrix4x4t &amp;out)</argsstring>
+        <name>Scaling</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Returns a scaling matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scaling vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="242" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="648" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix4x4t_1a35257396435143df32b04cf3b33b8daa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix4x4t&lt; TReal &gt; &amp; aiMatrix4x4t&lt; TReal &gt;::Translation</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;v, aiMatrix4x4t &amp;out)</argsstring>
+        <name>Translation</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Returns a translation matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Translation vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="233" column="1" bodyfile="include/assimp/matrix4x4.inl" bodystart="637" bodyend="643"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a row-major 4x4 matrix, use this for homogeneous coordinates. </para>    </briefdescription>
+    <detaileddescription>
+<para>There&apos;s much confusion about matrix layouts (column vs. row order). This is <emphasis>always</emphasis> a row-major matrix. Not even with the <ref refid="postprocess_8h_1acd2361a766665ce2dbfb3eae201b784d" kindref="member">aiProcess_ConvertToLeftHanded</ref> flag, which absolutely does not affect matrix order - it just affects the handedness of the coordinate system defined thereby. </para>    </detaileddescription>
+    <location file="include/assimp/matrix3x3.h" line="59" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="59" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classai_matrix4x4t_1aac24671aa7f1155e9e9f2c63e825c3ea" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>a1</name></member>
+      <member refid="classai_matrix4x4t_1ab0f0a6d456ad8430555d30b8f2ec09e4" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>a2</name></member>
+      <member refid="classai_matrix4x4t_1a5fa2f856df015c63fafc18f8b166839c" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>a3</name></member>
+      <member refid="classai_matrix4x4t_1a714f52d2ec08808a19ab753eec3b0086" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>a4</name></member>
+      <member refid="classai_matrix4x4t_1ad7df5d6d154bd90f77737ca940ad5fee" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>aiMatrix4x4t</name></member>
+      <member refid="classai_matrix4x4t_1a7b5ff3b5bd9f9334adde19365239b714" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>aiMatrix4x4t</name></member>
+      <member refid="classai_matrix4x4t_1a6f6d3bfe9515b8a985f2f662159936e1" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>aiMatrix4x4t</name></member>
+      <member refid="classai_matrix4x4t_1aae36244577970bd5f216ced4c36d652b" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>aiMatrix4x4t</name></member>
+      <member refid="classai_matrix4x4t_1aacc93e987430e14e9697b7ca32bf92ea" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>b1</name></member>
+      <member refid="classai_matrix4x4t_1a9eb2ebc319cdf8bbc59b4023216a9a9f" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>b2</name></member>
+      <member refid="classai_matrix4x4t_1a7c12882549222d3bed5d0e6c18deac84" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>b3</name></member>
+      <member refid="classai_matrix4x4t_1adc0c7992476d884067e474da9b9d908f" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>b4</name></member>
+      <member refid="classai_matrix4x4t_1a1079852b4ac6cf05056d3fcfae570c4d" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>c1</name></member>
+      <member refid="classai_matrix4x4t_1a1856e465411e9e3e71988eef1c47b399" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>c2</name></member>
+      <member refid="classai_matrix4x4t_1a4ae057235cd88d3b4c48ee7d9ac632ed" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>c3</name></member>
+      <member refid="classai_matrix4x4t_1ad205d617d5e863bdad4ca66275a1e080" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>c4</name></member>
+      <member refid="classai_matrix4x4t_1aa709c601ce6fc98c92a8802e58d80fc2" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>d1</name></member>
+      <member refid="classai_matrix4x4t_1a1becaa4733b3b666e1b631efbb5843b2" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>d2</name></member>
+      <member refid="classai_matrix4x4t_1aea9e249dc63f328cd180a94e73043cc8" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>d3</name></member>
+      <member refid="classai_matrix4x4t_1ab4533b358b7e1f56e9f3037b0fb8f1ae" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>d4</name></member>
+      <member refid="classai_matrix4x4t_1a2aa8546c78e6efb21931c437a3fd3604" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>Decompose</name></member>
+      <member refid="classai_matrix4x4t_1a00034751429a1db290ac10db25592a03" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>Decompose</name></member>
+      <member refid="classai_matrix4x4t_1a874b2ec5880d580235e6f178ede62a8b" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>Decompose</name></member>
+      <member refid="classai_matrix4x4t_1aad23f9488d17d5c163c59ddd08a1fa87" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>DecomposeNoScaling</name></member>
+      <member refid="classai_matrix4x4t_1af7f1b5133c989c74e4570cbb0598b238" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>Determinant</name></member>
+      <member refid="classai_matrix4x4t_1a4c11efb37b1686c6c4ff3d48de35598d" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>Equal</name></member>
+      <member refid="classai_matrix4x4t_1aabc60f572da97861d167b05d09a3cf54" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>FromEulerAnglesXYZ</name></member>
+      <member refid="classai_matrix4x4t_1ab5c1eba739caff4a53f7b034e5e0fc35" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>FromEulerAnglesXYZ</name></member>
+      <member refid="classai_matrix4x4t_1a6fb7fe21fb2ceba9467e72642979a268" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>FromToMatrix</name></member>
+      <member refid="classai_matrix4x4t_1ae398d4516cf8d297f150c8817f6b71d3" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>Inverse</name></member>
+      <member refid="classai_matrix4x4t_1a8b2cacfd0733057daba12160b24bbd23" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>IsIdentity</name></member>
+      <member refid="classai_matrix4x4t_1add46299116658f9f30c5f04306a35eb5" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>operator aiMatrix4x4t&lt; TOther &gt;</name></member>
+      <member refid="classai_matrix4x4t_1a2d7b88fe50dad0f2a68a377e5faec94f" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>operator!=</name></member>
+      <member refid="classai_matrix4x4t_1a68cd60a63a7bf19b103f46dff9bb9677" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>operator*</name></member>
+      <member refid="classai_matrix4x4t_1ac1f5b69d492f357c7f2d70358479a625" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>operator*</name></member>
+      <member refid="classai_matrix4x4t_1a7bde7a38d2771b07fe964e66a2599997" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>operator*=</name></member>
+      <member refid="classai_matrix4x4t_1a8f55b61cda62dfcf83f592d970b8899e" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>operator+</name></member>
+      <member refid="classai_matrix4x4t_1a1c4b0769ce92db066078922ef40f77ab" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>operator==</name></member>
+      <member refid="classai_matrix4x4t_1ac1401c94d941835defd7799ee9c600e7" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>operator[]</name></member>
+      <member refid="classai_matrix4x4t_1af63ccee08492b1be3c946db47217854f" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>operator[]</name></member>
+      <member refid="classai_matrix4x4t_1a3c15acce7e3c717153a0705f6bdc032d" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>Rotation</name></member>
+      <member refid="classai_matrix4x4t_1a020f1deeedfe27986ada0e6894014318" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>RotationX</name></member>
+      <member refid="classai_matrix4x4t_1afd7512d141a3ffe9d1df0aeccd58ac4c" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>RotationY</name></member>
+      <member refid="classai_matrix4x4t_1a6d33ed3f5a46f733d86b186036968824" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>RotationZ</name></member>
+      <member refid="classai_matrix4x4t_1a0ad873fd5fa86e44fa57901f1bc32d71" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>Scaling</name></member>
+      <member refid="classai_matrix4x4t_1a35257396435143df32b04cf3b33b8daa" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>Translation</name></member>
+      <member refid="classai_matrix4x4t_1a6ddba727b978f74e862ecba33745825d" prot="public" virt="non-virtual"><scope>aiMatrix4x4t</scope><name>Transpose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

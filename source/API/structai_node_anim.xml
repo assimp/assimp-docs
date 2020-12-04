@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_node_anim" kind="struct" language="C++" prot="public">
+    <compoundname>aiNodeAnim</compoundname>
+    <includes local="no">anim.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_node_anim_1a22a591381e75214ba03c6aaa770638f3" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
+        <definition>C_STRUCT aiString aiNodeAnim::mNodeName</definition>
+        <argsstring></argsstring>
+        <name>mNodeName</name>
+        <briefdescription>
+<para>The name of the node affected by this animation. </para>        </briefdescription>
+        <detaileddescription>
+<para>The node must exist and it must be unique. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="267" column="1" bodyfile="include/assimp/anim.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_anim_1aab725313d31db70adab778a3c125103f" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiNodeAnim::mNumPositionKeys</definition>
+        <argsstring></argsstring>
+        <name>mNumPositionKeys</name>
+        <briefdescription>
+<para>The number of position keys. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="270" column="1" bodyfile="include/assimp/anim.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_anim_1aca7c78b89c4c64dcdf7619e105e0708c" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiNodeAnim::mNumRotationKeys</definition>
+        <argsstring></argsstring>
+        <name>mNumRotationKeys</name>
+        <briefdescription>
+<para>The number of rotation keys. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="280" column="1" bodyfile="include/assimp/anim.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_anim_1a28fa0fd84571ac79cb45a537192738f6" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiNodeAnim::mNumScalingKeys</definition>
+        <argsstring></argsstring>
+        <name>mNumScalingKeys</name>
+        <briefdescription>
+<para>The number of scaling keys. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="291" column="1" bodyfile="include/assimp/anim.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_anim_1a983d0db426ac7e5fce442beb19552db3" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_vector_key" kindref="compound">aiVectorKey</ref> *</type>
+        <definition>C_STRUCT aiVectorKey* aiNodeAnim::mPositionKeys</definition>
+        <argsstring></argsstring>
+        <name>mPositionKeys</name>
+        <briefdescription>
+<para>The position keys of this animation channel. </para>        </briefdescription>
+        <detaileddescription>
+<para>Positions are specified as 3D vector. The array is mNumPositionKeys in size.</para><para>If there are position keys, there will also be at least one scaling and one rotation key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="277" column="1" bodyfile="include/assimp/anim.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_anim_1a93cefd440cbaf587c136eb224d4a0327" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1aa8c1788fd9d096036c9e3b6cfe4b1301" kindref="member">C_ENUM</ref> <ref refid="anim_8h_1a201b9e9429b82cd6423ff4a4daf01cef" kindref="member">aiAnimBehaviour</ref></type>
+        <definition>C_ENUM aiAnimBehaviour aiNodeAnim::mPostState</definition>
+        <argsstring></argsstring>
+        <name>mPostState</name>
+        <briefdescription>
+<para>Defines how the animation behaves after the last key was processed. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default value is aiAnimBehaviour_DEFAULT (the original transformation matrix of the affected node is taken). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="312" column="1" bodyfile="include/assimp/anim.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_anim_1a305c01b60886a07b69f04b1db6d7d3c5" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1aa8c1788fd9d096036c9e3b6cfe4b1301" kindref="member">C_ENUM</ref> <ref refid="anim_8h_1a201b9e9429b82cd6423ff4a4daf01cef" kindref="member">aiAnimBehaviour</ref></type>
+        <definition>C_ENUM aiAnimBehaviour aiNodeAnim::mPreState</definition>
+        <argsstring></argsstring>
+        <name>mPreState</name>
+        <briefdescription>
+<para>Defines how the animation behaves before the first key is encountered. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default value is aiAnimBehaviour_DEFAULT (the original transformation matrix of the affected node is used). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="305" column="1" bodyfile="include/assimp/anim.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_anim_1abe1b0b8b0b30a3950cf09023868a07ac" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_quat_key" kindref="compound">aiQuatKey</ref> *</type>
+        <definition>C_STRUCT aiQuatKey* aiNodeAnim::mRotationKeys</definition>
+        <argsstring></argsstring>
+        <name>mRotationKeys</name>
+        <briefdescription>
+<para>The rotation keys of this animation channel. </para>        </briefdescription>
+        <detaileddescription>
+<para>Rotations are given as quaternions, which are 4D vectors. The array is mNumRotationKeys in size.</para><para>If there are rotation keys, there will also be at least one scaling and one position key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="288" column="1" bodyfile="include/assimp/anim.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_node_anim_1a4588122722d5148d6e590da820bdf35f" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_vector_key" kindref="compound">aiVectorKey</ref> *</type>
+        <definition>C_STRUCT aiVectorKey* aiNodeAnim::mScalingKeys</definition>
+        <argsstring></argsstring>
+        <name>mScalingKeys</name>
+        <briefdescription>
+<para>The scaling keys of this animation channel. </para>        </briefdescription>
+        <detaileddescription>
+<para>Scalings are specified as 3D vector. The array is mNumScalingKeys in size.</para><para>If there are scaling keys, there will also be at least one position and one rotation key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="298" column="1" bodyfile="include/assimp/anim.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_node_anim_1a0eff126c1a1e3d486b80c1ac30b76e6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiNodeAnim::aiNodeAnim</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiNodeAnim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="315" column="1" bodyfile="include/assimp/anim.h" bodystart="315" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_node_anim_1a5d6a0e98630000eded220759b7fb2f04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiNodeAnim::~aiNodeAnim</definition>
+        <argsstring>()</argsstring>
+        <name>~aiNodeAnim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="327" column="1" bodyfile="include/assimp/anim.h" bodystart="327" bodyend="331"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes the animation of a single node. </para>    </briefdescription>
+    <detaileddescription>
+<para>The name specifies the bone/node which is affected by this animation channel. The keyframes are given in three separate series of values, one each for position, rotation and scaling. The transformation matrix computed from these values replaces the node&apos;s original transformation matrix at a specific time. This means all keys are absolute and not relative to the bone default pose. The order in which the transformations are applied is<itemizedlist>
+<listitem><para>as usual - scaling, rotation, translation.</para></listitem></itemizedlist>
+</para><para><simplesect kind="note"><para>All keys are returned in their correct, chronological order. Duplicate keys don&apos;t pass the validation step. Most likely there will be no negative time values, but they are not forbidden also ( so implementations need to cope with them! ) </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="183">
+        <label>aiQuatKey</label>
+        <link refid="structai_quat_key"/>
+        <childnode refid="184" relation="usage">
+          <edgelabel>mValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="182">
+        <label>aiNodeAnim</label>
+        <link refid="structai_node_anim"/>
+        <childnode refid="183" relation="usage">
+          <edgelabel>mRotationKeys</edgelabel>
+        </childnode>
+        <childnode refid="185" relation="usage">
+          <edgelabel>mScalingKeys</edgelabel>
+          <edgelabel>mPositionKeys</edgelabel>
+        </childnode>
+        <childnode refid="187" relation="usage">
+          <edgelabel>mNodeName</edgelabel>
+        </childnode>
+      </node>
+      <node id="185">
+        <label>aiVectorKey</label>
+        <link refid="structai_vector_key"/>
+        <childnode refid="186" relation="usage">
+          <edgelabel>mValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="184">
+        <label>aiQuaterniont&lt; TReal &gt;</label>
+        <link refid="classai_quaterniont"/>
+      </node>
+      <node id="187">
+        <label>aiString</label>
+        <link refid="structai_string"/>
+      </node>
+      <node id="186">
+        <label>aiVector3t&lt; TReal &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/anim.h" line="264" column="1" bodyfile="include/assimp/anim.h" bodystart="264" bodyend="333"/>
+    <listofallmembers>
+      <member refid="structai_node_anim_1a0eff126c1a1e3d486b80c1ac30b76e6c" prot="public" virt="non-virtual"><scope>aiNodeAnim</scope><name>aiNodeAnim</name></member>
+      <member refid="structai_node_anim_1a22a591381e75214ba03c6aaa770638f3" prot="public" virt="non-virtual"><scope>aiNodeAnim</scope><name>mNodeName</name></member>
+      <member refid="structai_node_anim_1aab725313d31db70adab778a3c125103f" prot="public" virt="non-virtual"><scope>aiNodeAnim</scope><name>mNumPositionKeys</name></member>
+      <member refid="structai_node_anim_1aca7c78b89c4c64dcdf7619e105e0708c" prot="public" virt="non-virtual"><scope>aiNodeAnim</scope><name>mNumRotationKeys</name></member>
+      <member refid="structai_node_anim_1a28fa0fd84571ac79cb45a537192738f6" prot="public" virt="non-virtual"><scope>aiNodeAnim</scope><name>mNumScalingKeys</name></member>
+      <member refid="structai_node_anim_1a983d0db426ac7e5fce442beb19552db3" prot="public" virt="non-virtual"><scope>aiNodeAnim</scope><name>mPositionKeys</name></member>
+      <member refid="structai_node_anim_1a93cefd440cbaf587c136eb224d4a0327" prot="public" virt="non-virtual"><scope>aiNodeAnim</scope><name>mPostState</name></member>
+      <member refid="structai_node_anim_1a305c01b60886a07b69f04b1db6d7d3c5" prot="public" virt="non-virtual"><scope>aiNodeAnim</scope><name>mPreState</name></member>
+      <member refid="structai_node_anim_1abe1b0b8b0b30a3950cf09023868a07ac" prot="public" virt="non-virtual"><scope>aiNodeAnim</scope><name>mRotationKeys</name></member>
+      <member refid="structai_node_anim_1a4588122722d5148d6e590da820bdf35f" prot="public" virt="non-virtual"><scope>aiNodeAnim</scope><name>mScalingKeys</name></member>
+      <member refid="structai_node_anim_1a5d6a0e98630000eded220759b7fb2f04" prot="public" virt="non-virtual"><scope>aiNodeAnim</scope><name>~aiNodeAnim</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_abstract_import_export_base" kind="class" language="C++" prot="public">
+    <compoundname>AbstractImportExportBase</compoundname>
+    <basecompoundref refid="classtesting_1_1_test" prot="public" virt="non-virtual">testing::Test</basecompoundref>
+    <derivedcompoundref refid="classut3_d_s_import_export" prot="public" virt="non-virtual">ut3DSImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_a_m_f_import_export" prot="public" virt="non-virtual">utAMFImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_a_s_e_import_export" prot="public" virt="non-virtual">utASEImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_assbin_import_export" prot="public" virt="non-virtual">utAssbinImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_assjson_import_export" prot="public" virt="non-virtual">utAssjsonImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_assxml_import_export" prot="public" virt="non-virtual">utAssxmlImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_b3_d_import_export" prot="public" virt="non-virtual">utB3DImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_blender_importer_exporter" prot="public" virt="non-virtual">utBlenderImporterExporter</derivedcompoundref>
+    <derivedcompoundref refid="classut_b_v_h_import_export" prot="public" virt="non-virtual">utBVHImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_collada_import_export" prot="public" virt="non-virtual">utColladaImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_collada_zae_import_export" prot="public" virt="non-virtual">utColladaZaeImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_c_s_m_import_export" prot="public" virt="non-virtual">utCSMImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_d3_m_f_importer_exporter" prot="public" virt="non-virtual">utD3MFImporterExporter</derivedcompoundref>
+    <derivedcompoundref refid="classut_d_x_f_importer_exporter" prot="public" virt="non-virtual">utDXFImporterExporter</derivedcompoundref>
+    <derivedcompoundref refid="classut_f_b_x_importer_exporter" prot="public" virt="non-virtual">utFBXImporterExporter</derivedcompoundref>
+    <derivedcompoundref refid="classutgl_t_f2_import_export" prot="public" virt="non-virtual">utglTF2ImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classutgl_t_f_import_export" prot="public" virt="non-virtual">utglTFImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_h_m_p_import_export" prot="public" virt="non-virtual">utHMPImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_i_f_c_import_export" prot="public" virt="non-virtual">utIFCImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_irr_import_export" prot="public" virt="non-virtual">utIrrImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_l_w_o_import_export" prot="public" virt="non-virtual">utLWOImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_l_w_s_import_export" prot="public" virt="non-virtual">utLWSImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_m3_d_import_export" prot="public" virt="non-virtual">utM3DImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_m_d_c_import_export" prot="public" virt="non-virtual">utMDCImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_m_d_l_importer" prot="public" virt="non-virtual">utMDLImporter</derivedcompoundref>
+    <derivedcompoundref refid="classut_n_f_f_import_export" prot="public" virt="non-virtual">utNFFImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_obj_import_export" prot="public" virt="non-virtual">utObjImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_o_f_f_import_export" prot="public" virt="non-virtual">utOFFImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_ogre_import_export" prot="public" virt="non-virtual">utOgreImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_open_g_e_x_import_export" prot="public" virt="non-virtual">utOpenGEXImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_p_l_y_import_export" prot="public" virt="non-virtual">utPLYImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_p_m_x_importer" prot="public" virt="non-virtual">utPMXImporter</derivedcompoundref>
+    <derivedcompoundref refid="classut_q3_b_s_p_import_export" prot="public" virt="non-virtual">utQ3BSPImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_q3_d_import_export" prot="public" virt="non-virtual">utQ3DImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_r_a_w_import_export" prot="public" virt="non-virtual">utRAWImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_s_i_b_importer" prot="public" virt="non-virtual">utSIBImporter</derivedcompoundref>
+    <derivedcompoundref refid="classut_s_m_d_importer" prot="public" virt="non-virtual">utSMDImporter</derivedcompoundref>
+    <derivedcompoundref refid="classut_s_t_l_importer_exporter" prot="public" virt="non-virtual">utSTLImporterExporter</derivedcompoundref>
+    <derivedcompoundref refid="classut_terragen_import_export" prot="public" virt="non-virtual">utTerragenImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_x3_d_import_export" prot="public" virt="non-virtual">utX3DImportExport</derivedcompoundref>
+    <derivedcompoundref refid="classut_x_importer_exporter" prot="public" virt="non-virtual">utXImporterExporter</derivedcompoundref>
+    <includes local="no">AbstractImportExportBase.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_abstract_import_export_base_1ae5b044549c5351b9026f7861b8b21d7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool AbstractImportExportBase::exporterTest</definition>
+        <argsstring>()</argsstring>
+        <name>exporterTest</name>
+        <reimplementedby refid="classut_assjson_import_export_1aa82afbb4195680f04e337a6c3ebb4ef3">exporterTest</reimplementedby>
+        <reimplementedby refid="classut_assxml_import_export_1acb802e38e692586acdabe4329714597d">exporterTest</reimplementedby>
+        <reimplementedby refid="classut_m3_d_import_export_1a239740c180873cf020081a00bd9c897f">exporterTest</reimplementedby>
+        <reimplementedby refid="classut_p_l_y_import_export_1afd38cf1e7c190f6d8e6ed693b3ba53b2">exporterTest</reimplementedby>
+        <reimplementedby refid="classut_d3_m_f_importer_exporter_1a30a1e58b4d600bd8ab31bb2c17f06246">exporterTest</reimplementedby>
+        <reimplementedby refid="classutgl_t_f2_import_export_1a65ecbd49fb363e22894d3e427aa66b8e">exporterTest</reimplementedby>
+        <reimplementedby refid="classut_obj_import_export_1ab28bb53782c579e487df1822cf0731e9">exporterTest</reimplementedby>
+        <briefdescription>
+<para>The exporter-test, will return true for successful import. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true for success, false for failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/AbstractImportExportBase.h" line="62" column="1" bodyfile="test/unit/AbstractImportExportBase.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_abstract_import_export_base_1acd19cbca14d904e68c2d0f7104361512" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool AbstractImportExportBase::importerTest</definition>
+        <argsstring>()</argsstring>
+        <name>importerTest</name>
+        <reimplementedby refid="classut_terragen_import_export_1ad7776c9d0e7910a954f8a8636b3d91a9">importerTest</reimplementedby>
+        <reimplementedby refid="classut_open_g_e_x_import_export_1abbeda25b99b1e015540204edc3f2553c">importerTest</reimplementedby>
+        <reimplementedby refid="classut_m_d_c_import_export_1a8211f0258757ca7c77722735ff5b4741">importerTest</reimplementedby>
+        <reimplementedby refid="classut_l_w_s_import_export_1a8882619d0344ff7121dbd36a03189a21">importerTest</reimplementedby>
+        <reimplementedby refid="classut_l_w_o_import_export_1a8468fe733a354cf364c844bc9ccf880f">importerTest</reimplementedby>
+        <reimplementedby refid="classut_i_f_c_import_export_1acbdcb8d72c76609e6c7ba3e577ed2375">importerTest</reimplementedby>
+        <reimplementedby refid="classut_h_m_p_import_export_1a767e5fbec3e1769e2d8952c43815df9d">importerTest</reimplementedby>
+        <reimplementedby refid="classut_c_s_m_import_export_1a330d336d03cd099f1ef9633b6d5aba92">importerTest</reimplementedby>
+        <reimplementedby refid="classut_b_v_h_import_export_1af18739e813ea93faac16ce581cf3ec37">importerTest</reimplementedby>
+        <reimplementedby refid="classut_o_f_f_import_export_1a62c327c88fa1dc0e018a35f902057129">importerTest</reimplementedby>
+        <reimplementedby refid="classut_n_f_f_import_export_1a5254765eac5bf71775f9642a28bd2b87">importerTest</reimplementedby>
+        <reimplementedby refid="classut_r_a_w_import_export_1ae999b556bd9e84eca7336ff00b5d0a6e">importerTest</reimplementedby>
+        <reimplementedby refid="classut_irr_import_export_1a21c03aeeb6095661b3de636afb879b24">importerTest</reimplementedby>
+        <reimplementedby refid="classut_x_importer_exporter_1a375a2cc924d9b50e5131b47f372850d3">importerTest</reimplementedby>
+        <reimplementedby refid="classut_x3_d_import_export_1abd65271e5a7a1bc27ac39bf091b1cf6a">importerTest</reimplementedby>
+        <reimplementedby refid="classut_s_m_d_importer_1a351b477cf3e1cfe57b2c5624c9bd4e40">importerTest</reimplementedby>
+        <reimplementedby refid="classut_q3_d_import_export_1a2aaa428105f81b5b85cfb931f673f884">importerTest</reimplementedby>
+        <reimplementedby refid="classut_p_m_x_importer_1a2da4ab468b64d86f88562bc1d2ca4daf">importerTest</reimplementedby>
+        <reimplementedby refid="classut_d_x_f_importer_exporter_1aedaf06bc1d3cec0eed87aba3a156bb23">importerTest</reimplementedby>
+        <reimplementedby refid="classut_b3_d_import_export_1a6fb4ef5b065b2b9fa0a636775f31c353">importerTest</reimplementedby>
+        <reimplementedby refid="classut_a_s_e_import_export_1a7d35deca00275b83510d8f1d29eef7a3">importerTest</reimplementedby>
+        <reimplementedby refid="classut_a_m_f_import_export_1ab5623745c23e2fd5416e88b8b5c147f7">importerTest</reimplementedby>
+        <reimplementedby refid="classut3_d_s_import_export_1a88f2efd81069794bbf3d23c11cafd982">importerTest</reimplementedby>
+        <reimplementedby refid="classut_q3_b_s_p_import_export_1a3dee687bc07f81d17c0ea3648ee023a5">importerTest</reimplementedby>
+        <reimplementedby refid="classut_ogre_import_export_1abae40778c47c228e4059f1b141b05d19">importerTest</reimplementedby>
+        <reimplementedby refid="classut_p_l_y_import_export_1a31cc5865a9f0986ec0b96dc40aba6b83">importerTest</reimplementedby>
+        <reimplementedby refid="classut_d3_m_f_importer_exporter_1a9cd032eac37ec8598230383da4f53389">importerTest</reimplementedby>
+        <reimplementedby refid="classut_blender_importer_exporter_1ac6e976568109b9833daf7620f6a4f1b3">importerTest</reimplementedby>
+        <reimplementedby refid="classut_assbin_import_export_1aaaacbb290e865b370e4598ae4825eb8c">importerTest</reimplementedby>
+        <reimplementedby refid="classut_s_i_b_importer_1a71c03b2455d6101986a04e44ad4ecea3">importerTest</reimplementedby>
+        <reimplementedby refid="classutgl_t_f_import_export_1ad4cc0ad63e1b792b37bba07ec37f9d82">importerTest</reimplementedby>
+        <reimplementedby refid="classut_assxml_import_export_1ac255afbd157bd7fe8d61441b6a77ec9e">importerTest</reimplementedby>
+        <reimplementedby refid="classut_m3_d_import_export_1ad5c433216697b6bb26937404a81fb13b">importerTest</reimplementedby>
+        <reimplementedby refid="classut_m_d_l_importer_1afe384fa7f64d48f0d450c7a9242a3bde">importerTest</reimplementedby>
+        <reimplementedby refid="classut_s_t_l_importer_exporter_1a1c322b47e4e237858276a98ba149cd47">importerTest</reimplementedby>
+        <reimplementedby refid="classut_f_b_x_importer_exporter_1a5e64b27c64d32e4189fc2ef426e67a8b">importerTest</reimplementedby>
+        <reimplementedby refid="classutgl_t_f2_import_export_1a85a99e6eb290994d3e002a5dab0cfab8">importerTest</reimplementedby>
+        <reimplementedby refid="classut_collada_import_export_1a51d1687f812dd10b29b60642d686be20">importerTest</reimplementedby>
+        <reimplementedby refid="classut_obj_import_export_1ade5a78edfb9fd34894f081bd6e22c140">importerTest</reimplementedby>
+        <reimplementedby refid="classut_collada_zae_import_export_1a0d4729fbf479fdf9e6ee99e546e59af0">importerTest</reimplementedby>
+        <briefdescription>
+<para>The importer-test, will return true for successful import. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true for success, false for failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/AbstractImportExportBase.h" line="58" column="1" bodyfile="test/unit/AbstractImportExportBase.h" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_abstract_import_export_base_1aa5eb9156825a915aa09b7f885ee4d4ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>AbstractImportExportBase::~AbstractImportExportBase</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractImportExportBase</name>
+        <briefdescription>
+<para>The class destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/AbstractImportExportBase.h" line="54" column="1" bodyfile="test/unit/AbstractImportExportBase.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract base class to test import and export. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="48">
+        <label>utQ3BSPImportExport</label>
+        <link refid="classut_q3_b_s_p_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>utNFFImportExport</label>
+        <link refid="classut_n_f_f_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>utObjImportExport</label>
+        <link refid="classut_obj_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>utAMFImportExport</label>
+        <link refid="classut_a_m_f_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>utColladaZaeImportExport</label>
+        <link refid="classut_collada_zae_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>utOpenGEXImportExport</label>
+        <link refid="classut_open_g_e_x_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>utMDCImportExport</label>
+        <link refid="classut_m_d_c_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>utX3DImportExport</label>
+        <link refid="classut_x3_d_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>utLWSImportExport</label>
+        <link refid="classut_l_w_s_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>utPMXImporter</label>
+        <link refid="classut_p_m_x_importer"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="54">
+        <label>utTerragenImportExport</label>
+        <link refid="classut_terragen_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>utglTF2ImportExport</label>
+        <link refid="classutgl_t_f2_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>utOFFImportExport</label>
+        <link refid="classut_o_f_f_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>utAssbinImportExport</label>
+        <link refid="classut_assbin_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>utIrrImportExport</label>
+        <link refid="classut_irr_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>utIFCImportExport</label>
+        <link refid="classut_i_f_c_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>utAssxmlImportExport</label>
+        <link refid="classut_assxml_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>utM3DImportExport</label>
+        <link refid="classut_m3_d_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>utPLYImportExport</label>
+        <link refid="classut_p_l_y_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>utQ3DImportExport</label>
+        <link refid="classut_q3_d_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>utMDLImporter</label>
+        <link refid="classut_m_d_l_importer"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>utSIBImporter</label>
+        <link refid="classut_s_i_b_importer"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>utSMDImporter</label>
+        <link refid="classut_s_m_d_importer"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>ut3DSImportExport</label>
+        <link refid="classut3_d_s_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>utHMPImportExport</label>
+        <link refid="classut_h_m_p_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>utSTLImporterExporter</label>
+        <link refid="classut_s_t_l_importer_exporter"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>utAssjsonImportExport</label>
+        <link refid="classut_assjson_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>utRAWImportExport</label>
+        <link refid="classut_r_a_w_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>utDXFImporterExporter</label>
+        <link refid="classut_d_x_f_importer_exporter"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>utASEImportExport</label>
+        <link refid="classut_a_s_e_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>utBVHImportExport</label>
+        <link refid="classut_b_v_h_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>utCSMImportExport</label>
+        <link refid="classut_c_s_m_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>utFBXImporterExporter</label>
+        <link refid="classut_f_b_x_importer_exporter"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>utXImporterExporter</label>
+        <link refid="classut_x_importer_exporter"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>utB3DImportExport</label>
+        <link refid="classut_b3_d_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>AbstractImportExportBase</label>
+        <link refid="class_abstract_import_export_base"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>utBlenderImporterExporter</label>
+        <link refid="classut_blender_importer_exporter"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>utglTFImportExport</label>
+        <link refid="classutgl_t_f_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>utColladaImportExport</label>
+        <link refid="classut_collada_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>utLWOImportExport</label>
+        <link refid="classut_l_w_o_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>utOgreImportExport</label>
+        <link refid="classut_ogre_import_export"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>utD3MFImporterExporter</label>
+        <link refid="classut_d3_m_f_importer_exporter"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="58">
+        <label>testing::Test</label>
+        <link refid="classtesting_1_1_test"/>
+      </node>
+      <node id="57">
+        <label>AbstractImportExportBase</label>
+        <link refid="class_abstract_import_export_base"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="test/unit/AbstractImportExportBase.h" line="51" column="1" bodyfile="test/unit/AbstractImportExportBase.h" bodystart="51" bodyend="63"/>
+    <listofallmembers>
+      <member refid="class_abstract_import_export_base_1ae5b044549c5351b9026f7861b8b21d7d" prot="public" virt="virtual"><scope>AbstractImportExportBase</scope><name>exporterTest</name></member>
+      <member refid="classtesting_1_1_test_1a7a00be7dd0a6bfdc8d47a1b784623613" prot="public" virt="non-virtual"><scope>AbstractImportExportBase</scope><name>HasFailure</name></member>
+      <member refid="classtesting_1_1_test_1a5e83604628ef542af888d631566ff60c" prot="public" virt="non-virtual"><scope>AbstractImportExportBase</scope><name>HasFatalFailure</name></member>
+      <member refid="classtesting_1_1_test_1a8c00e8cc6fe10616b480bd54d2a426cb" prot="public" virt="non-virtual"><scope>AbstractImportExportBase</scope><name>HasNonfatalFailure</name></member>
+      <member refid="class_abstract_import_export_base_1acd19cbca14d904e68c2d0f7104361512" prot="public" virt="virtual"><scope>AbstractImportExportBase</scope><name>importerTest</name></member>
+      <member refid="classtesting_1_1_test_1a1559ce1c83f56993b582650c091535a7" prot="public" virt="non-virtual"><scope>AbstractImportExportBase</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a373da47b491b1e64e355d22d6ec99b5b" prot="public" virt="non-virtual"><scope>AbstractImportExportBase</scope><name>RecordProperty</name></member>
+      <member refid="classtesting_1_1_test_1a190315150c303ddf801313fd1a777733" prot="protected" virt="virtual"><scope>AbstractImportExportBase</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1_test_1a5ccbac42fee8c5b00b0bfe89b6c49d79" prot="public" virt="non-virtual"><scope>AbstractImportExportBase</scope><name>SetUpTestCase</name></member>
+      <member refid="classtesting_1_1_test_1a5f2a051d1d99c9b784c666c586186cf9" prot="public" virt="non-virtual"><scope>AbstractImportExportBase</scope><name>SetUpTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a5f0ab439802cbe0ef7552f1a9f791923" prot="protected" virt="virtual"><scope>AbstractImportExportBase</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1_test_1af374706cbaf0ffc460f4fd04e7c150f1" prot="public" virt="non-virtual"><scope>AbstractImportExportBase</scope><name>TearDownTestCase</name></member>
+      <member refid="classtesting_1_1_test_1aa0f532e93b9f3500144c53f31466976c" prot="public" virt="non-virtual"><scope>AbstractImportExportBase</scope><name>TearDownTestCaseFunc</name></member>
+      <member refid="classtesting_1_1_test_1a99f2bbfac6c95612322b0f10e607ebe5" prot="protected" virt="non-virtual"><scope>AbstractImportExportBase</scope><name>Test</name></member>
+      <member refid="class_abstract_import_export_base_1aa5eb9156825a915aa09b7f885ee4d4ef" prot="public" virt="virtual"><scope>AbstractImportExportBase</scope><name>~AbstractImportExportBase</name></member>
+      <member refid="classtesting_1_1_test_1a2b0a62f1e667bbe8d8cb18d785bfa991" prot="public" virt="virtual"><scope>AbstractImportExportBase</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

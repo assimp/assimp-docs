@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classai_vector2t" kind="class" language="C++" prot="public">
+    <compoundname>aiVector2t</compoundname>
+    <includes local="no">vector2.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TReal</declname>
+        <defname>TReal</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classai_vector2t_1a47bc5e46d30f5344c7c7576cdb37359d" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiVector2t&lt; TReal &gt;::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="98" column="1" bodyfile="include/assimp/vector2.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_vector2t_1a90d0f375c61b76f03251a1e08b549d4c" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiVector2t&lt; TReal &gt;::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="98" column="1" bodyfile="include/assimp/vector2.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classai_vector2t_1a26b0e499dc45229a86034a950055f6a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiVector2t&lt; TReal &gt;::aiVector2t</definition>
+        <argsstring>()</argsstring>
+        <name>aiVector2t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="70" column="1" bodyfile="include/assimp/vector2.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1a480f8a38dfc0e566ca0108da914d4ef7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiVector2t&lt; TReal &gt;::aiVector2t</definition>
+        <argsstring>(TReal _x, TReal _y)</argsstring>
+        <name>aiVector2t</name>
+        <param>
+          <type>TReal</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="71" column="1" bodyfile="include/assimp/vector2.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1ae3959a92bbed0f1252b37c49fcf30a24" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiVector2t&lt; TReal &gt;::aiVector2t</definition>
+        <argsstring>(TReal _xyz)</argsstring>
+        <name>aiVector2t</name>
+        <param>
+          <type>TReal</type>
+          <declname>_xyz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="72" column="1" bodyfile="include/assimp/vector2.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1a1cfd39dbde7f796b144eb06a4750cec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aiVector2t&lt; TReal &gt;::aiVector2t</definition>
+        <argsstring>(const aiVector2t &amp;o)=default</argsstring>
+        <name>aiVector2t</name>
+        <param>
+          <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1ada18efffbfb919578e9a90c44c3455ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiVector2t&lt; TReal &gt;::Equal</definition>
+        <argsstring>(const aiVector2t &amp;other, TReal epsilon=1e-6) const</argsstring>
+        <name>Equal</name>
+        <param>
+          <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>epsilon</declname>
+          <defval>1e-6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="90" column="1" bodyfile="include/assimp/vector2.inl" bodystart="160" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1a3b7619eba4999bc82073df683bf9a5f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TReal</type>
+        <definition>TReal aiVector2t&lt; TReal &gt;::Length</definition>
+        <argsstring>() const</argsstring>
+        <name>Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="77" column="1" bodyfile="include/assimp/vector2.inl" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1a6058fe72ac1fffb4993cd003fb0ad177" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+        <definition>aiVector2t&lt; TReal &gt; &amp; aiVector2t&lt; TReal &gt;::Normalize</definition>
+        <argsstring>()</argsstring>
+        <name>Normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="78" column="1" bodyfile="include/assimp/vector2.inl" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1adb4bb08d6d06ded803bf0d3277f7d477" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TOther</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>aiVector2t&lt; TReal &gt;::operator aiVector2t&lt; TOther &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator aiVector2t&lt; TOther &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="96" column="1" bodyfile="include/assimp/vector2.inl" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1a2820a163b57ccfbe58fec42500b9361f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiVector2t&lt; TReal &gt;::operator!=</definition>
+        <argsstring>(const aiVector2t &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="88" column="1" bodyfile="include/assimp/vector2.inl" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1a8af7f48c4fb7b5ae6ae7717a5594f286" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+        <definition>const aiVector2t&lt; TReal &gt; &amp; aiVector2t&lt; TReal &gt;::operator*=</definition>
+        <argsstring>(TReal f)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>TReal</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="82" column="1" bodyfile="include/assimp/vector2.inl" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1a6eaa38e1f41c6d43b6966a6a44367e65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+        <definition>const aiVector2t&lt; TReal &gt; &amp; aiVector2t&lt; TReal &gt;::operator+=</definition>
+        <argsstring>(const aiVector2t &amp;o)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="80" column="1" bodyfile="include/assimp/vector2.inl" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1af0bf264de58d6e92d7e00742893d8fd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+        <definition>const aiVector2t&lt; TReal &gt; &amp; aiVector2t&lt; TReal &gt;::operator-=</definition>
+        <argsstring>(const aiVector2t &amp;o)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="81" column="1" bodyfile="include/assimp/vector2.inl" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1ab87f15786605fc12a6c1baa3f27dda53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+        <definition>const aiVector2t&lt; TReal &gt; &amp; aiVector2t&lt; TReal &gt;::operator/=</definition>
+        <argsstring>(TReal f)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>TReal</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="83" column="1" bodyfile="include/assimp/vector2.inl" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1a8746b8b4173b4d6e1f566affa3eebed3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+        <definition>aiVector2t&lt; TReal &gt; &amp; aiVector2t&lt; TReal &gt;::operator=</definition>
+        <argsstring>(TReal f)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>TReal</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="92" column="1" bodyfile="include/assimp/vector2.inl" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1adb1cc6cc0ca1d9da4459899f06a157b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiVector2t&lt; TReal &gt;::operator==</definition>
+        <argsstring>(const aiVector2t &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="87" column="1" bodyfile="include/assimp/vector2.inl" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1a263f0792ff7b09157951f6e8b5fc2812" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TReal</type>
+        <definition>TReal aiVector2t&lt; TReal &gt;::operator[]</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="85" column="1" bodyfile="include/assimp/vector2.inl" bodystart="130" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1a09dbd1cdca6d441a055e7ce7ea646833" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void aiVector2t&lt; TReal &gt;::Set</definition>
+        <argsstring>(TReal pX, TReal pY)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>TReal</type>
+          <declname>pX</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>pY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="75" column="1" bodyfile="include/assimp/vector2.inl" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1aeb34769a887922eb3e7ded56fa40c42a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TReal</type>
+        <definition>TReal aiVector2t&lt; TReal &gt;::SquareLength</definition>
+        <argsstring>() const</argsstring>
+        <name>SquareLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="76" column="1" bodyfile="include/assimp/vector2.inl" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_vector2t_1a267d7ac723d92ac2e9ab12935c2fbebe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref></type>
+        <definition>const aiVector2t&lt; TReal &gt; aiVector2t&lt; TReal &gt;::SymMul</definition>
+        <argsstring>(const aiVector2t &amp;o)</argsstring>
+        <name>SymMul</name>
+        <param>
+          <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector2.h" line="93" column="1" bodyfile="include/assimp/vector2.inl" bodystart="177" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a two-dimensional vector. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/matrix3x3.h" line="60" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="60" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classai_vector2t_1a26b0e499dc45229a86034a950055f6a3" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>aiVector2t</name></member>
+      <member refid="classai_vector2t_1a480f8a38dfc0e566ca0108da914d4ef7" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>aiVector2t</name></member>
+      <member refid="classai_vector2t_1ae3959a92bbed0f1252b37c49fcf30a24" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>aiVector2t</name></member>
+      <member refid="classai_vector2t_1a1cfd39dbde7f796b144eb06a4750cec2" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>aiVector2t</name></member>
+      <member refid="classai_vector2t_1ada18efffbfb919578e9a90c44c3455ec" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>Equal</name></member>
+      <member refid="classai_vector2t_1a3b7619eba4999bc82073df683bf9a5f4" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>Length</name></member>
+      <member refid="classai_vector2t_1a6058fe72ac1fffb4993cd003fb0ad177" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>Normalize</name></member>
+      <member refid="classai_vector2t_1adb4bb08d6d06ded803bf0d3277f7d477" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>operator aiVector2t&lt; TOther &gt;</name></member>
+      <member refid="classai_vector2t_1a2820a163b57ccfbe58fec42500b9361f" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>operator!=</name></member>
+      <member refid="classai_vector2t_1a8af7f48c4fb7b5ae6ae7717a5594f286" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>operator*=</name></member>
+      <member refid="classai_vector2t_1a6eaa38e1f41c6d43b6966a6a44367e65" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>operator+=</name></member>
+      <member refid="classai_vector2t_1af0bf264de58d6e92d7e00742893d8fd9" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>operator-=</name></member>
+      <member refid="classai_vector2t_1ab87f15786605fc12a6c1baa3f27dda53" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>operator/=</name></member>
+      <member refid="classai_vector2t_1a8746b8b4173b4d6e1f566affa3eebed3" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>operator=</name></member>
+      <member refid="classai_vector2t_1adb1cc6cc0ca1d9da4459899f06a157b4" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>operator==</name></member>
+      <member refid="classai_vector2t_1a263f0792ff7b09157951f6e8b5fc2812" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>operator[]</name></member>
+      <member refid="classai_vector2t_1a09dbd1cdca6d441a055e7ce7ea646833" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>Set</name></member>
+      <member refid="classai_vector2t_1aeb34769a887922eb3e7ded56fa40c42a" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>SquareLength</name></member>
+      <member refid="classai_vector2t_1a267d7ac723d92ac2e9ab12935c2fbebe" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>SymMul</name></member>
+      <member refid="classai_vector2t_1a47bc5e46d30f5344c7c7576cdb37359d" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>x</name></member>
+      <member refid="classai_vector2t_1a90d0f375c61b76f03251a1e08b549d4c" prot="public" virt="non-virtual"><scope>aiVector2t</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

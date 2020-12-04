@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_ray" kind="struct" language="C++" prot="public">
+    <compoundname>aiRay</compoundname>
+    <includes local="no">types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_ray_1a635d9120af2654716e5e7952d837282b" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>C_STRUCT aiVector3D aiRay::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="159" column="1" bodyfile="include/assimp/types.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_ray_1a312f663a7d2580b1b3beb52ffd4ab4c9" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>C_STRUCT aiVector3D aiRay::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+<para>Position and direction of the ray. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="159" column="1" bodyfile="include/assimp/types.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_ray_1a2b2aa06242fbc6bee0316ca98a755f38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiRay::aiRay</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiRay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="149" column="1" bodyfile="include/assimp/types.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_ray_1a6e05628929ef650694f3df7e232295df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiRay::aiRay</definition>
+        <argsstring>(const aiVector3D &amp;_pos, const aiVector3D &amp;_dir)</argsstring>
+        <name>aiRay</name>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &amp;</type>
+          <declname>_pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &amp;</type>
+          <declname>_dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="150" column="1" bodyfile="include/assimp/types.h" bodystart="150" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_ray_1aac07b7085bc48333d893a601f9d6e26c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiRay::aiRay</definition>
+        <argsstring>(const aiRay &amp;o)</argsstring>
+        <name>aiRay</name>
+        <param>
+          <type>const <ref refid="structai_ray" kindref="compound">aiRay</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="153" column="1" bodyfile="include/assimp/types.h" bodystart="153" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a ray. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="199">
+        <label>aiVector3t&lt; TReal &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+      <node id="198">
+        <label>aiRay</label>
+        <link refid="structai_ray"/>
+        <childnode refid="199" relation="usage">
+          <edgelabel>dir</edgelabel>
+          <edgelabel>pos</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/types.h" line="147" column="1" bodyfile="include/assimp/types.h" bodystart="147" bodyend="160"/>
+    <listofallmembers>
+      <member refid="structai_ray_1a2b2aa06242fbc6bee0316ca98a755f38" prot="public" virt="non-virtual"><scope>aiRay</scope><name>aiRay</name></member>
+      <member refid="structai_ray_1a6e05628929ef650694f3df7e232295df" prot="public" virt="non-virtual"><scope>aiRay</scope><name>aiRay</name></member>
+      <member refid="structai_ray_1aac07b7085bc48333d893a601f9d6e26c" prot="public" virt="non-virtual"><scope>aiRay</scope><name>aiRay</name></member>
+      <member refid="structai_ray_1a635d9120af2654716e5e7952d837282b" prot="public" virt="non-virtual"><scope>aiRay</scope><name>dir</name></member>
+      <member refid="structai_ray_1a312f663a7d2580b1b3beb52ffd4ab4c9" prot="public" virt="non-virtual"><scope>aiRay</scope><name>pos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

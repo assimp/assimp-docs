@@ -1,0 +1,1373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_assimp_1_1_a_s_e_1_1_parser" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::ASE::Parser</compoundname>
+    <includes local="no">ASEParser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a82349e13ab9171b968062f7978541798" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::ASE::Parser::bLastWasEndLine</definition>
+        <argsstring></argsstring>
+        <name>bLastWasEndLine</name>
+        <briefdescription>
+<para>true if the last character read was an end-line character </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="665" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1ab21ff74f644ae85e2317acb7b78ebccc" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Assimp::ASE::Parser::filePtr</definition>
+        <argsstring></argsstring>
+        <name>filePtr</name>
+        <briefdescription>
+<para>Pointer to current data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="624" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="624" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1ae65d37652816513ac1f019a095676b2a" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int Assimp::ASE::Parser::iFileFormat</definition>
+        <argsstring></argsstring>
+        <name>iFileFormat</name>
+        <briefdescription>
+<para>File format version. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="668" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a7733201eedb0829db6e5c848be953688" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int Assimp::ASE::Parser::iFirstFrame</definition>
+        <argsstring></argsstring>
+        <name>iFirstFrame</name>
+        <briefdescription>
+<para>First frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="653" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a05e7c5516cfa27a06a45684a53ab6394" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int Assimp::ASE::Parser::iFrameSpeed</definition>
+        <argsstring></argsstring>
+        <name>iFrameSpeed</name>
+        <briefdescription>
+<para>Frame speed - frames per second. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="659" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="659" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a147f55812b64e7f2e658b29e04db27f6" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int Assimp::ASE::Parser::iLastFrame</definition>
+        <argsstring></argsstring>
+        <name>iLastFrame</name>
+        <briefdescription>
+<para>Last frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="656" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="656" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a988c4edf1c3fa60fbdc9dcdc30803981" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int Assimp::ASE::Parser::iLineNumber</definition>
+        <argsstring></argsstring>
+        <name>iLineNumber</name>
+        <briefdescription>
+<para>Current line in the file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="650" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a320e1d1688899fea40bee730c075f07b" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int Assimp::ASE::Parser::iTicksPerFrame</definition>
+        <argsstring></argsstring>
+        <name>iTicksPerFrame</name>
+        <briefdescription>
+<para>Ticks per frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="662" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a4558b782fb5c7d6b0d71d2c6ccbb490f" prot="public" static="no" mutable="no">
+        <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
+        <definition>aiColor3D Assimp::ASE::Parser::m_clrAmbient</definition>
+        <argsstring></argsstring>
+        <name>m_clrAmbient</name>
+        <briefdescription>
+<para><ref refid="class_base" kindref="compound">Base</ref> ambient color to be passed to all materials QNAN if none was found. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="632" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="632" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a81bdd11dad2105b412e057e60c7164d0" prot="public" static="no" mutable="no">
+        <type><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
+        <definition>aiColor3D Assimp::ASE::Parser::m_clrBackground</definition>
+        <argsstring></argsstring>
+        <name>m_clrBackground</name>
+        <briefdescription>
+<para>background color to be passed to the viewer QNAN if none was found </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="628" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a22b30461cc3f596741f22d67eb3e25d6" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_assimp_1_1_a_s_e_1_1_camera" kindref="compound">Camera</ref> &gt;</type>
+        <definition>std::vector&lt;Camera&gt; Assimp::ASE::Parser::m_vCameras</definition>
+        <argsstring></argsstring>
+        <name>m_vCameras</name>
+        <briefdescription>
+<para>List of all cameras found in the file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="647" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a124c5a659cd90acfe2dee8765e957da7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_assimp_1_1_a_s_e_1_1_dummy" kindref="compound">Dummy</ref> &gt;</type>
+        <definition>std::vector&lt;Dummy&gt; Assimp::ASE::Parser::m_vDummies</definition>
+        <argsstring></argsstring>
+        <name>m_vDummies</name>
+        <briefdescription>
+<para>List of all dummies found in the file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="641" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="641" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a25fe72393c68061fe51544186ebc3a6d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_assimp_1_1_a_s_e_1_1_light" kindref="compound">Light</ref> &gt;</type>
+        <definition>std::vector&lt;Light&gt; Assimp::ASE::Parser::m_vLights</definition>
+        <argsstring></argsstring>
+        <name>m_vLights</name>
+        <briefdescription>
+<para>List of all lights found in the file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="644" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a3b9e980dbaaab9e09e2b11be7430d1e9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_assimp_1_1_d3_d_s_1_1_material" kindref="compound">Material</ref> &gt;</type>
+        <definition>std::vector&lt;Material&gt; Assimp::ASE::Parser::m_vMaterials</definition>
+        <argsstring></argsstring>
+        <name>m_vMaterials</name>
+        <briefdescription>
+<para>List of all materials found in the file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="635" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="635" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_a_s_e_1_1_parser_1a3688054bef31831c57c3b59c06eac4f7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &gt;</type>
+        <definition>std::vector&lt;Mesh&gt; Assimp::ASE::Parser::m_vMeshes</definition>
+        <argsstring></argsstring>
+        <name>m_vMeshes</name>
+        <briefdescription>
+<para>List of all meshes found in the file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="638" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a420b8d72a622d2f47ecc6ed307f0f13b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a6ce513786318507600657cebc16e2d36" kindref="member">AI_WONT_RETURN</ref> void</type>
+        <definition>AI_WONT_RETURN void Parser::LogError</definition>
+        <argsstring>(const char *szWarn) AI_WONT_RETURN_SUFFIX</argsstring>
+        <name>LogError</name>
+        <param>
+          <type>const char *</type>
+          <declname>szWarn</declname>
+        </param>
+        <briefdescription>
+<para>Output an error to the logger. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szWarn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error message </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="612" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="164" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1ac0219a8d83bc9abbbd4510e9ae52f8d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::LogInfo</definition>
+        <argsstring>(const char *szWarn)</argsstring>
+        <name>LogInfo</name>
+        <param>
+          <type>const char *</type>
+          <declname>szWarn</declname>
+        </param>
+        <briefdescription>
+<para>Output a message to the logger. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szWarn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="607" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="149" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1acc2d6bd4084fa53fc636a04ed2a0fbf6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::LogWarning</definition>
+        <argsstring>(const char *szWarn)</argsstring>
+        <name>LogWarning</name>
+        <param>
+          <type>const char *</type>
+          <declname>szWarn</declname>
+        </param>
+        <briefdescription>
+<para>Output a warning to the logger. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szWarn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Warn message </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="602" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="134" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1adae0447488969f04e30a438d705abead" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV1MaterialListBlock</definition>
+        <argsstring>()</argsstring>
+        <name>ParseLV1MaterialListBlock</name>
+        <briefdescription>
+<para>Parse the *MATERIAL_LIST block in a file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="418" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="471" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a28d7e079e6ce4d8689b057748b87e6b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV1ObjectBlock</definition>
+        <argsstring>(BaseNode &amp;mesh)</argsstring>
+        <name>ParseLV1ObjectBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_a_s_e_1_1_base_node" kindref="compound">BaseNode</ref> &amp;</type>
+          <declname>mesh</declname>
+          <defname>node</defname>
+        </param>
+        <briefdescription>
+<para>Parse a *&lt;xxx&gt;OBJECT block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="423" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="768" bodyend="852"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1ad51c3c572775cb8e75592964ddb201a1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV1SceneBlock</definition>
+        <argsstring>()</argsstring>
+        <name>ParseLV1SceneBlock</name>
+        <briefdescription>
+<para>Parse the *SCENE block in a file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="410" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="430" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1ac74ee8c3956e654aca2359e9c54677e5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV1SoftSkinBlock</definition>
+        <argsstring>()</argsstring>
+        <name>ParseLV1SoftSkinBlock</name>
+        <briefdescription>
+<para>Parse the *MESH_SOFTSKINVERTS block in a file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>FORMAT BEGIN</para><para>MESH_SOFTSKINVERTS { &lt;nodename&gt; &lt;number of=&quot;&quot; vertices&gt;=&quot;&quot;&gt;</para><para>[for &lt;number of=&quot;&quot; vertices&gt;=&quot;&quot;&gt; times:] &lt;number of=&quot;&quot; weights&gt;=&quot;&quot;&gt; [for &lt;number of=&quot;&quot; weights&gt;=&quot;&quot;&gt; times:] &lt;bone name&gt;=&quot;&quot;&gt; &lt;weight&gt; }</para><para>FORMAT END</para>        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="414" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="312" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1ad49c9ca61f0ee48782a5e2ffeb5f225f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV2AnimationBlock</definition>
+        <argsstring>(BaseNode &amp;mesh)</argsstring>
+        <name>ParseLV2AnimationBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_a_s_e_1_1_base_node" kindref="compound">BaseNode</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *TM_ANIMATION block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="438" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="907" bodyend="972"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a865bba1ccb0fa7ba3de01aaa1beab8d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV2CameraSettingsBlock</definition>
+        <argsstring>(Camera &amp;cam)</argsstring>
+        <name>ParseLV2CameraSettingsBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_a_s_e_1_1_camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>cam</declname>
+          <defname>camera</defname>
+        </param>
+        <briefdescription>
+<para>Parse a *CAMERA_SETTINGS block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_camera" kindref="compound">Camera</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="456" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="855" bodyend="876"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a7c9870de06dfac06e0cac6f0548c42a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV2LightSettingsBlock</definition>
+        <argsstring>(Light &amp;light)</argsstring>
+        <name>ParseLV2LightSettingsBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_a_s_e_1_1_light" kindref="compound">Light</ref> &amp;</type>
+          <declname>light</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *LIGHT_SETTINGS block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>light</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_light" kindref="compound">Light</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="451" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="879" bodyend="904"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a54c2c0b632b6eb593a43db7cb895ff57" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV2MaterialBlock</definition>
+        <argsstring>(Material &amp;mat)</argsstring>
+        <name>ParseLV2MaterialBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_material" kindref="compound">Material</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MATERIAL blocks in a material list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_material" kindref="compound">Material</ref> structure to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="428" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="507" bodyend="652"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a46812dffd35cae8e0cf56f358d4c8dcf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV2MeshBlock</definition>
+        <argsstring>(Mesh &amp;mesh)</argsstring>
+        <name>ParseLV2MeshBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="446" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1185" bodyend="1304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a438ddf24314d8d2bcb3f04634a002fa2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV2NodeTransformBlock</definition>
+        <argsstring>(BaseNode &amp;mesh)</argsstring>
+        <name>ParseLV2NodeTransformBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_a_s_e_1_1_base_node" kindref="compound">BaseNode</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *NODE_TM block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node (!) object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="433" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1096" bodyend="1183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1add2793a81e7cbbb2661638ae27c1a401" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3MapBlock</definition>
+        <argsstring>(Texture &amp;map)</argsstring>
+        <name>ParseLV3MapBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+<para>Parse the *MAP_XXXXXX blocks in a material. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_texture" kindref="compound">Texture</ref> structure to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="461" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="655" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a211603d255798ce7b72e679f938964eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3MappingChannel</definition>
+        <argsstring>(unsigned int iChannel, Mesh &amp;mesh)</argsstring>
+        <name>ParseLV3MappingChannel</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>iChannel</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Parse an additional mapping channel (specified via *MESH_MAPPINGCHANNEL) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iChannel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel index to be filled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="506" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1528" bodyend="1561"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a26d7262357d44631bfa21075994eea38" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3MeshCFaceListBlock</definition>
+        <argsstring>(unsigned int iNumFaces, Mesh &amp;mesh)</argsstring>
+        <name>ParseLV3MeshCFaceListBlock</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>iNumFaces</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_CFACELIST block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iNumFaces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_value" kindref="compound">Value</ref> of *MESH_NUMCVFACES, if present. Otherwise zero. This is used to check the consistency of the file. A warning is sent to the logger if the validations fails. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="524" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1591" bodyend="1617"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1ad485b84494b0b29d577af065deb3f5b6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3MeshCListBlock</definition>
+        <argsstring>(unsigned int iNumVertices, Mesh &amp;mesh)</argsstring>
+        <name>ParseLV3MeshCListBlock</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>iNumVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_CVERTLIST block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iNumVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_value" kindref="compound">Value</ref> of *MESH_NUMCVERTEX, if present. Otherwise zero. This is used to check the consistency of the file. A warning is sent to the logger if the validations fails. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="515" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1563" bodyend="1589"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1ad444e2eaa4adadf08a669585981c9252" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3MeshFaceListBlock</definition>
+        <argsstring>(unsigned int iNumFaces, Mesh &amp;mesh)</argsstring>
+        <name>ParseLV3MeshFaceListBlock</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>iNumFaces</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_FACE_LIST block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iNumFaces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_value" kindref="compound">Value</ref> of *MESH_NUMFACES, if present. Otherwise zero. This is used to check the consistency of the file. A warning is sent to the logger if the validations fails. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="478" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1439" bodyend="1464"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a23b72e5b5fc4f2c8b6306491f6b7a16d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3MeshNormalListBlock</definition>
+        <argsstring>(Mesh &amp;mesh)</argsstring>
+        <name>ParseLV3MeshNormalListBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+          <defname>sMesh</defname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_NORMALS block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="530" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1619" bodyend="1675"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a303af0babbd762ae57def0de38eba944" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3MeshTFaceListBlock</definition>
+        <argsstring>(unsigned int iNumFaces, Mesh &amp;mesh, unsigned int iChannel=0)</argsstring>
+        <name>ParseLV3MeshTFaceListBlock</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>iNumFaces</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>iChannel</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_TFACELIST block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iNumFaces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_value" kindref="compound">Value</ref> of *MESH_NUMTVFACES, if present. Otherwise zero. This is used to check the consistency of the file. A warning is sent to the logger if the validations fails. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iChannel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output UVW channel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="498" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1499" bodyend="1526"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1aa39f19fcd5225d1c6ce65c2b057ec152" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3MeshTListBlock</definition>
+        <argsstring>(unsigned int iNumVertices, Mesh &amp;mesh, unsigned int iChannel=0)</argsstring>
+        <name>ParseLV3MeshTListBlock</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>iNumVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>iChannel</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_TVERT_LIST block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iNumVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_value" kindref="compound">Value</ref> of *MESH_NUMTVERTEX, if present. Otherwise zero. This is used to check the consistency of the file. A warning is sent to the logger if the validations fails. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iChannel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output UVW channel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="488" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1466" bodyend="1497"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1af40e96c0ea50e358c440848bca73a6d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3MeshVertexListBlock</definition>
+        <argsstring>(unsigned int iNumVertices, Mesh &amp;mesh)</argsstring>
+        <name>ParseLV3MeshVertexListBlock</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>iNumVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_VERTEX_LIST block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iNumVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_value" kindref="compound">Value</ref> of *MESH_NUMVERTEX, if present. Otherwise zero. This is used to check the consistency of the file. A warning is sent to the logger if the validations fails. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="469" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1410" bodyend="1437"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a25a32932ccdbd023d05f0ed96ab93816" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3MeshWeightsBlock</definition>
+        <argsstring>(Mesh &amp;mesh)</argsstring>
+        <name>ParseLV3MeshWeightsBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_WEIGHTSblock in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="535" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1306" bodyend="1338"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1afcf4e6dbc7580881e8eaf7cda1ecf1c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3PosAnimationBlock</definition>
+        <argsstring>(ASE::Animation &amp;anim)</argsstring>
+        <name>ParseLV3PosAnimationBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_a_s_e_1_1_animation" kindref="compound">ASE::Animation</ref> &amp;</type>
+          <declname>anim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="439" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1014" bodyend="1051"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1aaf84b4767a0dcc32a31f0338f485a50e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3RotAnimationBlock</definition>
+        <argsstring>(ASE::Animation &amp;anim)</argsstring>
+        <name>ParseLV3RotAnimationBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_a_s_e_1_1_animation" kindref="compound">ASE::Animation</ref> &amp;</type>
+          <declname>anim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="441" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1053" bodyend="1094"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a96fa5741040f375fd476d535d313f6a5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV3ScaleAnimationBlock</definition>
+        <argsstring>(ASE::Animation &amp;anim)</argsstring>
+        <name>ParseLV3ScaleAnimationBlock</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_a_s_e_1_1_animation" kindref="compound">ASE::Animation</ref> &amp;</type>
+          <declname>anim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="440" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="974" bodyend="1012"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a5e8975ceed67adac67680123b0fc4869" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV4MeshBones</definition>
+        <argsstring>(unsigned int iNumBones, Mesh &amp;mesh)</argsstring>
+        <name>ParseLV4MeshBones</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>iNumBones</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Parse the bone list of a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iNumBones</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bones in the mesh </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="541" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1340" bodyend="1364"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a6d6c4d7e6f63b8f0e103c964d63bc5fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV4MeshBonesVertices</definition>
+        <argsstring>(unsigned int iNumVertices, Mesh &amp;mesh)</argsstring>
+        <name>ParseLV4MeshBonesVertices</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>iNumVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_mesh" kindref="compound">Mesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>Parse the bone vertices list of a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_assimp_1_1_a_s_e_1_1_mesh" kindref="compound">Mesh</ref> object to be filled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iNumVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vertices to be parsed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="547" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1366" bodyend="1408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1adf1e5e35ca629148a8957fe945eeaf77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV4MeshFace</definition>
+        <argsstring>(ASE::Face &amp;out)</argsstring>
+        <name>ParseLV4MeshFace</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_d3_d_s_1_1_face" kindref="compound">ASE::Face</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_FACE block in a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>receive the face data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="552" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1677" bodyend="1797"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a37f2f5c2fe8c61211291ec1acc60892d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV4MeshFloat</definition>
+        <argsstring>(ai_real &amp;fOut)</argsstring>
+        <name>ParseLV4MeshFloat</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref> &amp;</type>
+          <declname>fOut</declname>
+        </param>
+        <briefdescription>
+<para>Parse a single float element. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output float </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="583" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1833" bodyend="1844"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1ab62a655d1050b472c4491f9c915d8b3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV4MeshFloatTriple</definition>
+        <argsstring>(ai_real *apOut, unsigned int &amp;rIndexOut)</argsstring>
+        <name>ParseLV4MeshFloatTriple</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref> *</type>
+          <declname>apOut</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> &amp;</type>
+          <declname>rIndexOut</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_VERT block in a file (also works for MESH_TVERT, MESH_CFACE, MESH_VERTCOL ...) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>apOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer (3 floats) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rIndexOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="559" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1816" bodyend="1824"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1aa9e375968dee6792588c1c1c097970d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV4MeshFloatTriple</definition>
+        <argsstring>(ai_real *apOut)</argsstring>
+        <name>ParseLV4MeshFloatTriple</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref> *</type>
+          <declname>apOut</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_VERT block in a file (also works for MESH_TVERT, MESH_CFACE, MESH_VERTCOL ...) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>apOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer (3 floats) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="565" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1826" bodyend="1831"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a5900fec2cf27ee7357b5ac440c78970d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV4MeshLong</definition>
+        <argsstring>(unsigned int &amp;iOut)</argsstring>
+        <name>ParseLV4MeshLong</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> &amp;</type>
+          <declname>iOut</declname>
+        </param>
+        <briefdescription>
+<para>Parse a single int element. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output integer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="588" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1846" bodyend="1857"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1aabb05095ccebbf11c57eed2e503db67a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV4MeshLongTriple</definition>
+        <argsstring>(unsigned int *apOut, unsigned int &amp;rIndexOut)</argsstring>
+        <name>ParseLV4MeshLongTriple</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <declname>apOut</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> &amp;</type>
+          <declname>rIndexOut</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_TFACE block in a file (also works for MESH_CFACE) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>apOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer (3 ints) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rIndexOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="572" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1806" bodyend="1814"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1aa01e8579f0b7e9f305172bcfdf481e0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::ParseLV4MeshLongTriple</definition>
+        <argsstring>(unsigned int *apOut)</argsstring>
+        <name>ParseLV4MeshLongTriple</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <declname>apOut</declname>
+        </param>
+        <briefdescription>
+<para>Parse a *MESH_TFACE block in a file (also works for MESH_CFACE) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>apOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer (3 ints) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="578" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="1799" bodyend="1804"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a2d5781a87a2c1ebffaf90458a13b4075" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ASE::Parser::Parser</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>Parser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="389" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="389" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a496bd481be598ae8211035b80fa4ca72" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Parser::ParseString</definition>
+        <argsstring>(std::string &amp;out, const char *szName)</argsstring>
+        <name>ParseString</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <briefdescription>
+<para>Parse a string, enclosed in double quotation marks. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>szName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_name" kindref="compound">Name</ref> of the enclosing element -&gt; used in error messages. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false if an error occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="620" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="730" bodyend="765"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1a88a3a4a6232b6044c34f22088db44eae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Parser::SkipSection</definition>
+        <argsstring>()</argsstring>
+        <name>SkipSection</name>
+        <briefdescription>
+<para>Skip the current section until the token after the closing }. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function handles embedded subsections correctly </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="597" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="197" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1ab504f6c5dd3d5ca6c848bd5484ccd22b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Parser::SkipToNextToken</definition>
+        <argsstring>()</argsstring>
+        <name>SkipToNextToken</name>
+        <briefdescription>
+<para>Skip everything to the next: &apos;*&apos; or &apos;\0&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="592" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="179" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1aa55266b2875ee4ab02f8b311a56e7fc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Parser::Parse</definition>
+        <argsstring>()</argsstring>
+        <name>Parse</name>
+        <briefdescription>
+<para>Parses the file into the parsers internal representation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="405" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="221" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_a_s_e_1_1_parser_1ad105bd959358622ac0c2aab3ed7b9013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Parser::Parser</definition>
+        <argsstring>(const char *szFile, unsigned int fileFormatDefault)</argsstring>
+        <name>Parser</name>
+        <param>
+          <type>const char *</type>
+          <declname>szFile</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>fileFormatDefault</declname>
+        </param>
+        <briefdescription>
+<para>Construct a parser from a given input file which is guaranteed to be terminated with zero. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileFormatDefault</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Assumed file format version. If the file format is specified in the file the new value replaces the default value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/ASE/ASEParser.h" line="401" column="1" bodyfile="code/AssetLib/ASE/ASEParser.cpp" bodystart="115" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class to parse <ref refid="namespace_assimp_1_1_a_s_e" kindref="compound">ASE</ref> files. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="454">
+        <label>Assimp::ASE::Parser</label>
+        <link refid="class_assimp_1_1_a_s_e_1_1_parser"/>
+        <childnode refid="455" relation="usage">
+          <edgelabel>m_clrAmbient</edgelabel>
+          <edgelabel>m_clrBackground</edgelabel>
+        </childnode>
+      </node>
+      <node id="455">
+        <label>aiColor3D</label>
+        <link refid="structai_color3_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/ASE/ASEParser.h" line="387" column="1" bodyfile="code/AssetLib/ASE/ASEParser.h" bodystart="387" bodyend="669"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a82349e13ab9171b968062f7978541798" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>bLastWasEndLine</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1ab21ff74f644ae85e2317acb7b78ebccc" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>filePtr</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1ae65d37652816513ac1f019a095676b2a" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>iFileFormat</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a7733201eedb0829db6e5c848be953688" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>iFirstFrame</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a05e7c5516cfa27a06a45684a53ab6394" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>iFrameSpeed</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a147f55812b64e7f2e658b29e04db27f6" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>iLastFrame</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a988c4edf1c3fa60fbdc9dcdc30803981" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>iLineNumber</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a320e1d1688899fea40bee730c075f07b" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>iTicksPerFrame</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a420b8d72a622d2f47ecc6ed307f0f13b" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>LogError</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1ac0219a8d83bc9abbbd4510e9ae52f8d6" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>LogInfo</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1acc2d6bd4084fa53fc636a04ed2a0fbf6" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>LogWarning</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a4558b782fb5c7d6b0d71d2c6ccbb490f" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>m_clrAmbient</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a81bdd11dad2105b412e057e60c7164d0" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>m_clrBackground</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a22b30461cc3f596741f22d67eb3e25d6" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>m_vCameras</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a124c5a659cd90acfe2dee8765e957da7" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>m_vDummies</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a25fe72393c68061fe51544186ebc3a6d" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>m_vLights</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a3b9e980dbaaab9e09e2b11be7430d1e9" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>m_vMaterials</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a3688054bef31831c57c3b59c06eac4f7" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>m_vMeshes</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1aa55266b2875ee4ab02f8b311a56e7fc3" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>Parse</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1adae0447488969f04e30a438d705abead" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV1MaterialListBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a28d7e079e6ce4d8689b057748b87e6b1" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV1ObjectBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1ad51c3c572775cb8e75592964ddb201a1" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV1SceneBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1ac74ee8c3956e654aca2359e9c54677e5" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV1SoftSkinBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1ad49c9ca61f0ee48782a5e2ffeb5f225f" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV2AnimationBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a865bba1ccb0fa7ba3de01aaa1beab8d4" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV2CameraSettingsBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a7c9870de06dfac06e0cac6f0548c42a4" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV2LightSettingsBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a54c2c0b632b6eb593a43db7cb895ff57" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV2MaterialBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a46812dffd35cae8e0cf56f358d4c8dcf" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV2MeshBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a438ddf24314d8d2bcb3f04634a002fa2" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV2NodeTransformBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1add2793a81e7cbbb2661638ae27c1a401" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3MapBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a211603d255798ce7b72e679f938964eb" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3MappingChannel</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a26d7262357d44631bfa21075994eea38" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3MeshCFaceListBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1ad485b84494b0b29d577af065deb3f5b6" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3MeshCListBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1ad444e2eaa4adadf08a669585981c9252" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3MeshFaceListBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a23b72e5b5fc4f2c8b6306491f6b7a16d" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3MeshNormalListBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a303af0babbd762ae57def0de38eba944" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3MeshTFaceListBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1aa39f19fcd5225d1c6ce65c2b057ec152" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3MeshTListBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1af40e96c0ea50e358c440848bca73a6d9" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3MeshVertexListBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a25a32932ccdbd023d05f0ed96ab93816" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3MeshWeightsBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1afcf4e6dbc7580881e8eaf7cda1ecf1c9" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3PosAnimationBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1aaf84b4767a0dcc32a31f0338f485a50e" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3RotAnimationBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a96fa5741040f375fd476d535d313f6a5" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV3ScaleAnimationBlock</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a5e8975ceed67adac67680123b0fc4869" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV4MeshBones</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a6d6c4d7e6f63b8f0e103c964d63bc5fb" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV4MeshBonesVertices</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1adf1e5e35ca629148a8957fe945eeaf77" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV4MeshFace</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a37f2f5c2fe8c61211291ec1acc60892d" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV4MeshFloat</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1ab62a655d1050b472c4491f9c915d8b3f" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV4MeshFloatTriple</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1aa9e375968dee6792588c1c1c097970d8" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV4MeshFloatTriple</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a5900fec2cf27ee7357b5ac440c78970d" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV4MeshLong</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1aabb05095ccebbf11c57eed2e503db67a" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV4MeshLongTriple</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1aa01e8579f0b7e9f305172bcfdf481e0c" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseLV4MeshLongTriple</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a2d5781a87a2c1ebffaf90458a13b4075" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>Parser</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1ad105bd959358622ac0c2aab3ed7b9013" prot="public" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>Parser</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a496bd481be598ae8211035b80fa4ca72" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>ParseString</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1a88a3a4a6232b6044c34f22088db44eae" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>SkipSection</name></member>
+      <member refid="class_assimp_1_1_a_s_e_1_1_parser_1ab504f6c5dd3d5ca6c848bd5484ccd22b" prot="private" virt="non-virtual"><scope>Assimp::ASE::Parser</scope><name>SkipToNextToken</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classai__regression__ui_1_1_base_dialog" kind="class" language="Python" prot="public">
+    <compoundname>ai_regression_ui::BaseDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Toplevel</basecompoundref>
+    <derivedcompoundref refid="classai__regression__ui_1_1_setup_dialog" prot="public" virt="non-virtual">ai_regression_ui.SetupDialog</derivedcompoundref>
+    <derivedcompoundref refid="classai__regression__ui_1_1_version_dialog" prot="public" virt="non-virtual">ai_regression_ui.VersionDialog</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classai__regression__ui_1_1_base_dialog_1a022b12902609bce7e5969c4abfe12efb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.BaseDialog::initial_focus</definition>
+        <argsstring></argsstring>
+        <name>initial_focus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="88" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_base_dialog_1a0f8a48b0b39dc0a5c9c9762d91974d24" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.BaseDialog::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="85" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai__regression__ui_1_1_base_dialog_1a85303243971db4be8c743d033200e4a1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ai_regression_ui.BaseDialog::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="86" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classai__regression__ui_1_1_base_dialog_1a72c44b707b1dc22e4bc9bae5a4be0b61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.BaseDialog.__init__</definition>
+        <argsstring>(self, parent, title=None, buttons=&quot;&quot;)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classai__regression__ui_1_1_base_dialog_1a0f8a48b0b39dc0a5c9c9762d91974d24" kindref="member">parent</ref></type>
+          <defname>parent</defname>
+        </param>
+        <param>
+          <type>title</type>
+          <defname>title</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>buttons</type>
+          <defname>buttons</defname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Constructor
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="75" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="75" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_base_dialog_1a325d410f5db1ce8072a46fff921122d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.BaseDialog.apply</definition>
+        <argsstring>(self)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="132" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_base_dialog_1a1720b069cb3c6cef9ac9a16dec3c6984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.BaseDialog.body</definition>
+        <argsstring>(self, master)</argsstring>
+        <name>body</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>master</type>
+          <defname>master</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="100" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="100" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_base_dialog_1ae96eb4ebc7562001f2dc3842a9bc2240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.BaseDialog.buttonbox</definition>
+        <argsstring>(self, buttons)</argsstring>
+        <name>buttonbox</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>buttons</type>
+          <defname>buttons</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="105" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="105" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_base_dialog_1ae2e7f50381515a0b58a6f6c8a4abe26b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.BaseDialog.cancel</definition>
+        <argsstring>(self, event=None)</argsstring>
+        <name>cancel</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="124" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_base_dialog_1a04861ee2f725a36ba4da312f5351d7d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.BaseDialog.ok</definition>
+        <argsstring>(self, event=None)</argsstring>
+        <name>ok</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="114" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="114" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_base_dialog_1aa2f51acf5ec843ad2eb0593686865a78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.BaseDialog.validate</definition>
+        <argsstring>(self)</argsstring>
+        <name>validate</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="129" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="129" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Helper base class for dialogs used in the UI.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="59">
+        <label>ai_regression_ui.BaseDialog</label>
+        <link refid="classai__regression__ui_1_1_base_dialog"/>
+      </node>
+      <node id="60">
+        <label>ai_regression_ui.SetupDialog</label>
+        <link refid="classai__regression__ui_1_1_setup_dialog"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>ai_regression_ui.VersionDialog</label>
+        <link refid="classai__regression__ui_1_1_version_dialog"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="test/regression/ai_regression_ui.py" line="70" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="70" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a72c44b707b1dc22e4bc9bae5a4be0b61" prot="public" virt="non-virtual"><scope>ai_regression_ui::BaseDialog</scope><name>__init__</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a325d410f5db1ce8072a46fff921122d8" prot="public" virt="non-virtual"><scope>ai_regression_ui::BaseDialog</scope><name>apply</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a1720b069cb3c6cef9ac9a16dec3c6984" prot="public" virt="non-virtual"><scope>ai_regression_ui::BaseDialog</scope><name>body</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1ae96eb4ebc7562001f2dc3842a9bc2240" prot="public" virt="non-virtual"><scope>ai_regression_ui::BaseDialog</scope><name>buttonbox</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1ae2e7f50381515a0b58a6f6c8a4abe26b" prot="public" virt="non-virtual"><scope>ai_regression_ui::BaseDialog</scope><name>cancel</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a022b12902609bce7e5969c4abfe12efb" prot="public" virt="non-virtual"><scope>ai_regression_ui::BaseDialog</scope><name>initial_focus</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a04861ee2f725a36ba4da312f5351d7d9" prot="public" virt="non-virtual"><scope>ai_regression_ui::BaseDialog</scope><name>ok</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a0f8a48b0b39dc0a5c9c9762d91974d24" prot="public" virt="non-virtual"><scope>ai_regression_ui::BaseDialog</scope><name>parent</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a85303243971db4be8c743d033200e4a1" prot="public" virt="non-virtual"><scope>ai_regression_ui::BaseDialog</scope><name>result</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1aa2f51acf5ec843ad2eb0593686865a78" prot="public" virt="non-virtual"><scope>ai_regression_ui::BaseDialog</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

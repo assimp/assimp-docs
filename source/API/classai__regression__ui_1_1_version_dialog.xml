@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classai__regression__ui_1_1_version_dialog" kind="class" language="Python" prot="public">
+    <compoundname>ai_regression_ui::VersionDialog</compoundname>
+    <basecompoundref refid="classai__regression__ui_1_1_base_dialog" prot="public" virt="non-virtual">ai_regression_ui.BaseDialog</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classai__regression__ui_1_1_version_dialog_1a61648b49506cd00d4940ceefa307bc27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.VersionDialog.apply</definition>
+        <argsstring>(self)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="154" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classai__regression__ui_1_1_version_dialog_1a9bab55bdaabec67290f6dda07fe6efc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ai_regression_ui.VersionDialog.body</definition>
+        <argsstring>(self, master)</argsstring>
+        <name>body</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>master</type>
+          <defname>master</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/regression/ai_regression_ui.py" line="140" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="140" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>This class is used to create the info dialog.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="70">
+        <label>ai_regression_ui.BaseDialog</label>
+        <link refid="classai__regression__ui_1_1_base_dialog"/>
+      </node>
+      <node id="69">
+        <label>ai_regression_ui.VersionDialog</label>
+        <link refid="classai__regression__ui_1_1_version_dialog"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="72">
+        <label>ai_regression_ui.BaseDialog</label>
+        <link refid="classai__regression__ui_1_1_base_dialog"/>
+      </node>
+      <node id="71">
+        <label>ai_regression_ui.VersionDialog</label>
+        <link refid="classai__regression__ui_1_1_version_dialog"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="test/regression/ai_regression_ui.py" line="136" column="1" bodyfile="test/regression/ai_regression_ui.py" bodystart="136" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a72c44b707b1dc22e4bc9bae5a4be0b61" prot="public" virt="non-virtual"><scope>ai_regression_ui::VersionDialog</scope><name>__init__</name></member>
+      <member refid="classai__regression__ui_1_1_version_dialog_1a61648b49506cd00d4940ceefa307bc27" prot="public" virt="non-virtual"><scope>ai_regression_ui::VersionDialog</scope><name>apply</name></member>
+      <member refid="classai__regression__ui_1_1_version_dialog_1a9bab55bdaabec67290f6dda07fe6efc0" prot="public" virt="non-virtual"><scope>ai_regression_ui::VersionDialog</scope><name>body</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1ae96eb4ebc7562001f2dc3842a9bc2240" prot="public" virt="non-virtual"><scope>ai_regression_ui::VersionDialog</scope><name>buttonbox</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1ae2e7f50381515a0b58a6f6c8a4abe26b" prot="public" virt="non-virtual"><scope>ai_regression_ui::VersionDialog</scope><name>cancel</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a022b12902609bce7e5969c4abfe12efb" prot="public" virt="non-virtual"><scope>ai_regression_ui::VersionDialog</scope><name>initial_focus</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a04861ee2f725a36ba4da312f5351d7d9" prot="public" virt="non-virtual"><scope>ai_regression_ui::VersionDialog</scope><name>ok</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a0f8a48b0b39dc0a5c9c9762d91974d24" prot="public" virt="non-virtual"><scope>ai_regression_ui::VersionDialog</scope><name>parent</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1a85303243971db4be8c743d033200e4a1" prot="public" virt="non-virtual"><scope>ai_regression_ui::VersionDialog</scope><name>result</name></member>
+      <member refid="classai__regression__ui_1_1_base_dialog_1aa2f51acf5ec843ad2eb0593686865a78" prot="public" virt="non-virtual"><scope>ai_regression_ui::VersionDialog</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

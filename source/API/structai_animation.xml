@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_animation" kind="struct" language="C++" prot="public">
+    <compoundname>aiAnimation</compoundname>
+    <includes local="no">anim.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_animation_1a89244bb68b725ffbb85137174c28e757" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_node_anim" kindref="compound">aiNodeAnim</ref> **</type>
+        <definition>C_STRUCT aiNodeAnim** aiAnimation::mChannels</definition>
+        <argsstring></argsstring>
+        <name>mChannels</name>
+        <briefdescription>
+<para>The node animation channels. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each channel affects a single node. The array is mNumChannels in size. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="416" column="1" bodyfile="include/assimp/anim.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_animation_1ae2bbc49320b4b75c05e23e0ab704ece7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double aiAnimation::mDuration</definition>
+        <argsstring></argsstring>
+        <name>mDuration</name>
+        <briefdescription>
+<para>Duration of the animation in ticks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="405" column="1" bodyfile="include/assimp/anim.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_animation_1af05138121dbde8b31aa031505b454c85" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_mesh_anim" kindref="compound">aiMeshAnim</ref> **</type>
+        <definition>C_STRUCT aiMeshAnim** aiAnimation::mMeshChannels</definition>
+        <argsstring></argsstring>
+        <name>mMeshChannels</name>
+        <briefdescription>
+<para>The mesh animation channels. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each channel affects a single mesh. The array is mNumMeshChannels in size. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="424" column="1" bodyfile="include/assimp/anim.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_animation_1abcc055a00bed8ce3329fdf4a9c22ec9c" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_mesh_morph_anim" kindref="compound">aiMeshMorphAnim</ref> **</type>
+        <definition>C_STRUCT aiMeshMorphAnim** aiAnimation::mMorphMeshChannels</definition>
+        <argsstring></argsstring>
+        <name>mMorphMeshChannels</name>
+        <briefdescription>
+<para>The morph mesh animation channels. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each channel affects a single mesh. The array is mNumMorphMeshChannels in size. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="432" column="1" bodyfile="include/assimp/anim.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_animation_1a1be7d78d88694173a7ceef658fea77f1" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
+        <definition>C_STRUCT aiString aiAnimation::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <briefdescription>
+<para>The name of the animation. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the modeling package this data was exported from does support only a single animation channel, this name is usually empty (length is zero). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="402" column="1" bodyfile="include/assimp/anim.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_animation_1aebfccf9a9aefa6084566d21e8a30b7e5" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiAnimation::mNumChannels</definition>
+        <argsstring></argsstring>
+        <name>mNumChannels</name>
+        <briefdescription>
+<para>The number of bone animation channels. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each channel affects a single node. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="412" column="1" bodyfile="include/assimp/anim.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_animation_1ac43aacd8502020174e553501f0b6bf5f" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiAnimation::mNumMeshChannels</definition>
+        <argsstring></argsstring>
+        <name>mNumMeshChannels</name>
+        <briefdescription>
+<para>The number of mesh animation channels. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each channel affects a single mesh and defines vertex-based animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="420" column="1" bodyfile="include/assimp/anim.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_animation_1aed9aa50bdf38c9f6064f79f5aab38d59" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiAnimation::mNumMorphMeshChannels</definition>
+        <argsstring></argsstring>
+        <name>mNumMorphMeshChannels</name>
+        <briefdescription>
+<para>The number of mesh animation channels. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each channel affects a single mesh and defines morphing animation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="428" column="1" bodyfile="include/assimp/anim.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_animation_1afd26a40c3f16b6aa6e150effa3eaeab1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double aiAnimation::mTicksPerSecond</definition>
+        <argsstring></argsstring>
+        <name>mTicksPerSecond</name>
+        <briefdescription>
+<para>Ticks per second. </para>        </briefdescription>
+        <detaileddescription>
+<para>0 if not specified in the imported file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="408" column="1" bodyfile="include/assimp/anim.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_animation_1aa063bf99e044e04636d61d27f884f5ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiAnimation::aiAnimation</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="435" column="1" bodyfile="include/assimp/anim.h" bodystart="435" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_animation_1a3aa1a5d15dee306fa66e47ba534b43f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiAnimation::~aiAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>~aiAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="447" column="1" bodyfile="include/assimp/anim.h" bodystart="447" bodyend="470"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An animation consists of key-frame data for a number of nodes. </para>    </briefdescription>
+    <detaileddescription>
+<para>For each node affected by the animation a separate series of data is given. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="80">
+        <label>aiQuatKey</label>
+        <link refid="structai_quat_key"/>
+        <childnode refid="81" relation="usage">
+          <edgelabel>mValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="79">
+        <label>aiNodeAnim</label>
+        <link refid="structai_node_anim"/>
+        <childnode refid="80" relation="usage">
+          <edgelabel>mRotationKeys</edgelabel>
+        </childnode>
+        <childnode refid="82" relation="usage">
+          <edgelabel>mScalingKeys</edgelabel>
+          <edgelabel>mPositionKeys</edgelabel>
+        </childnode>
+        <childnode refid="78" relation="usage">
+          <edgelabel>mNodeName</edgelabel>
+        </childnode>
+      </node>
+      <node id="84">
+        <label>aiMeshAnim</label>
+        <link refid="structai_mesh_anim"/>
+        <childnode refid="85" relation="usage">
+          <edgelabel>mKeys</edgelabel>
+        </childnode>
+        <childnode refid="78" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+      </node>
+      <node id="85">
+        <label>aiMeshKey</label>
+        <link refid="structai_mesh_key"/>
+      </node>
+      <node id="87">
+        <label>aiMeshMorphKey</label>
+        <link refid="structai_mesh_morph_key"/>
+      </node>
+      <node id="82">
+        <label>aiVectorKey</label>
+        <link refid="structai_vector_key"/>
+        <childnode refid="83" relation="usage">
+          <edgelabel>mValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="81">
+        <label>aiQuaterniont&lt; TReal &gt;</label>
+        <link refid="classai_quaterniont"/>
+      </node>
+      <node id="78">
+        <label>aiString</label>
+        <link refid="structai_string"/>
+      </node>
+      <node id="86">
+        <label>aiMeshMorphAnim</label>
+        <link refid="structai_mesh_morph_anim"/>
+        <childnode refid="78" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="87" relation="usage">
+          <edgelabel>mKeys</edgelabel>
+        </childnode>
+      </node>
+      <node id="77">
+        <label>aiAnimation</label>
+        <link refid="structai_animation"/>
+        <childnode refid="78" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="79" relation="usage">
+          <edgelabel>mChannels</edgelabel>
+        </childnode>
+        <childnode refid="84" relation="usage">
+          <edgelabel>mMeshChannels</edgelabel>
+        </childnode>
+        <childnode refid="86" relation="usage">
+          <edgelabel>mMorphMeshChannels</edgelabel>
+        </childnode>
+      </node>
+      <node id="83">
+        <label>aiVector3t&lt; TReal &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/anim.h" line="398" column="1" bodyfile="include/assimp/anim.h" bodystart="398" bodyend="472"/>
+    <listofallmembers>
+      <member refid="structai_animation_1aa063bf99e044e04636d61d27f884f5ad" prot="public" virt="non-virtual"><scope>aiAnimation</scope><name>aiAnimation</name></member>
+      <member refid="structai_animation_1a89244bb68b725ffbb85137174c28e757" prot="public" virt="non-virtual"><scope>aiAnimation</scope><name>mChannels</name></member>
+      <member refid="structai_animation_1ae2bbc49320b4b75c05e23e0ab704ece7" prot="public" virt="non-virtual"><scope>aiAnimation</scope><name>mDuration</name></member>
+      <member refid="structai_animation_1af05138121dbde8b31aa031505b454c85" prot="public" virt="non-virtual"><scope>aiAnimation</scope><name>mMeshChannels</name></member>
+      <member refid="structai_animation_1abcc055a00bed8ce3329fdf4a9c22ec9c" prot="public" virt="non-virtual"><scope>aiAnimation</scope><name>mMorphMeshChannels</name></member>
+      <member refid="structai_animation_1a1be7d78d88694173a7ceef658fea77f1" prot="public" virt="non-virtual"><scope>aiAnimation</scope><name>mName</name></member>
+      <member refid="structai_animation_1aebfccf9a9aefa6084566d21e8a30b7e5" prot="public" virt="non-virtual"><scope>aiAnimation</scope><name>mNumChannels</name></member>
+      <member refid="structai_animation_1ac43aacd8502020174e553501f0b6bf5f" prot="public" virt="non-virtual"><scope>aiAnimation</scope><name>mNumMeshChannels</name></member>
+      <member refid="structai_animation_1aed9aa50bdf38c9f6064f79f5aab38d59" prot="public" virt="non-virtual"><scope>aiAnimation</scope><name>mNumMorphMeshChannels</name></member>
+      <member refid="structai_animation_1afd26a40c3f16b6aa6e150effa3eaeab1" prot="public" virt="non-virtual"><scope>aiAnimation</scope><name>mTicksPerSecond</name></member>
+      <member refid="structai_animation_1a3aa1a5d15dee306fa66e47ba534b43f3" prot="public" virt="non-virtual"><scope>aiAnimation</scope><name>~aiAnimation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

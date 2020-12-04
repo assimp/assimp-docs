@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_export_format_desc" kind="struct" language="C++" prot="public">
+    <compoundname>aiExportFormatDesc</compoundname>
+    <includes local="no">cexport.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_export_format_desc_1a9c84c4b07c5177fb6539b9bdf90236fb" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* aiExportFormatDesc::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+<para>A short description of the file format to present to users. </para>        </briefdescription>
+        <detaileddescription>
+<para>Useful if you want to allow the user to select an export format. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="80" column="1" bodyfile="include/assimp/cexport.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_export_format_desc_1a589d08d526f253176d09886787cd6b22" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* aiExportFormatDesc::fileExtension</definition>
+        <argsstring></argsstring>
+        <name>fileExtension</name>
+        <briefdescription>
+<para>Recommended file extension for the exported file in lower case. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="83" column="1" bodyfile="include/assimp/cexport.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_export_format_desc_1afe216eaea3a04abca041e5c253f94bbf" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* aiExportFormatDesc::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>a short string ID to uniquely identify the export format. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use this ID string to specify which file format you want to export to when calling <ref refid="_assimp_c_export_8cpp_1a742b4d8f6426a9930f81e3d33d7d4dc6" kindref="member">aiExportScene()</ref>. Example: &quot;dae&quot; or &quot;obj&quot; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="76" column="1" bodyfile="include/assimp/cexport.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes an file format which <ref refid="namespace_assimp" kindref="compound">Assimp</ref> can export to. </para>    </briefdescription>
+    <detaileddescription>
+<para>Use <ref refid="_assimp_c_export_8cpp_1a59cfffbc5b436da8ed8542108102b502" kindref="member">aiGetExportFormatCount()</ref> to learn how many export-formats are supported by the current Assimp-build and <ref refid="_assimp_c_export_8cpp_1ac38c6758e0ab37f68376b013b43e93c6" kindref="member">aiGetExportFormatDescription()</ref> to retrieve the description of the export format option. </para>    </detaileddescription>
+    <location file="include/assimp/cexport.h" line="72" column="1" bodyfile="include/assimp/cexport.h" bodystart="72" bodyend="84"/>
+    <listofallmembers>
+      <member refid="structai_export_format_desc_1a9c84c4b07c5177fb6539b9bdf90236fb" prot="public" virt="non-virtual"><scope>aiExportFormatDesc</scope><name>description</name></member>
+      <member refid="structai_export_format_desc_1a589d08d526f253176d09886787cd6b22" prot="public" virt="non-virtual"><scope>aiExportFormatDesc</scope><name>fileExtension</name></member>
+      <member refid="structai_export_format_desc_1afe216eaea3a04abca041e5c253f94bbf" prot="public" virt="non-virtual"><scope>aiExportFormatDesc</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

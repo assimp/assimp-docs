@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_a_m_f_coordinates" kind="struct" language="C++" prot="public">
+    <compoundname>AMFCoordinates</compoundname>
+    <basecompoundref refid="class_a_m_f_node_element_base" prot="public" virt="non-virtual">AMFNodeElementBase</basecompoundref>
+    <includes local="no">AMFImporter_Node.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_m_f_coordinates_1a5d0d5193609e3cfdea8002f04d237bc4" prot="public" static="no" mutable="no">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>aiVector3D AMFCoordinates::Coordinate</definition>
+        <argsstring></argsstring>
+        <name>Coordinate</name>
+        <briefdescription>
+<para>Coordinate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="254" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_a_m_f_coordinates_1a0d0a9db8573f26f3eb25044bdb4e88b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AMFCoordinates::AMFCoordinates</definition>
+        <argsstring>(AMFNodeElementBase *pParent)</argsstring>
+        <name>AMFCoordinates</name>
+        <param>
+          <type><ref refid="class_a_m_f_node_element_base" kindref="compound">AMFNodeElementBase</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pParent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to parent node. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="258" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="258" bodyend="259"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="262">
+        <label>AMFNodeElementBase</label>
+        <link refid="class_a_m_f_node_element_base"/>
+      </node>
+      <node id="261">
+        <label>AMFCoordinates</label>
+        <link refid="struct_a_m_f_coordinates"/>
+        <childnode refid="262" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="265">
+        <label>aiVector3t&lt; ai_real &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+      <node id="264">
+        <label>AMFNodeElementBase</label>
+        <link refid="class_a_m_f_node_element_base"/>
+        <childnode refid="264" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="263">
+        <label>AMFCoordinates</label>
+        <link refid="struct_a_m_f_coordinates"/>
+        <childnode refid="264" relation="public-inheritance">
+        </childnode>
+        <childnode refid="265" relation="usage">
+          <edgelabel>Coordinate</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="253" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="253" bodyend="260"/>
+    <listofallmembers>
+      <member refid="struct_a_m_f_coordinates_1a0d0a9db8573f26f3eb25044bdb4e88b9" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>AMFCoordinates</name></member>
+      <member refid="class_a_m_f_node_element_base_1a5e96a68807ec7f65159b9e1c22acd9eb" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1a2a8ee4ec608dbd77d9a4b0fe128c5876" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1ae846a4e47a80abb60f5c6cb4f9982170" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1a3490fce044f7c00735c3f1db12b70722" prot="protected" virt="non-virtual"><scope>AMFCoordinates</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1ac47ba0e156fe9388212452928d6388b3" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>Child</name></member>
+      <member refid="struct_a_m_f_coordinates_1a5d0d5193609e3cfdea8002f04d237bc4" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>Coordinate</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa2015759d11d341c3e01ef81457c3dfb2" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Color</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa56a0afb67a817c6cf7785f40b8d58826" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Constellation</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa33678b8220ebf03b03ee93df73e42859" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Coordinates</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aae292d573429f1cc0355e7947dbfe7306" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Edge</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa68385d35861c99bc833fe97e006ff22e" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Instance</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa29d905d7bb410ee408c8f6eb679cee66" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Invalid</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa52b9a0993fd26279a03fdecdfdba0cdb" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Material</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa254e95fcf2d1591e038ef7fc4e6af7f3" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Mesh</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa4c5353064dab13ed0e1f41a57b882a90" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Metadata</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aaa93a0c5903ab8aa885209b790a7468e8" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Object</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aad31c8318a2d001fb570b7a77e9a038ad" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Root</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa7d141b12dc34ee1cce702ca940a32a33" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_TexMap</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aacd58c07bfcca3ea414241099fe89cb3c" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Texture</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aaae7b58fb153740569ac11dcbe54ae104" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Triangle</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa998682eddeb88a2835ddc939a915e10c" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Vertex</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa8e679f55f1f1c09111fcb23a25830d13" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Vertices</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aac2d350005c3df0b11c97ba4d1e3800ac" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ENET_Volume</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0a" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>EType</name></member>
+      <member refid="class_a_m_f_node_element_base_1ae4a303cfe37dbefc0b7d1be7fbc96e63" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>ID</name></member>
+      <member refid="class_a_m_f_node_element_base_1ad703184b61992282876a36329e8cb524" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>operator=</name></member>
+      <member refid="class_a_m_f_node_element_base_1a333683397c0bdaa9d565674a4d5fb0f0" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>Parent</name></member>
+      <member refid="class_a_m_f_node_element_base_1af5f9709b266eab331b08998a88c4c270" prot="public" virt="non-virtual"><scope>AMFCoordinates</scope><name>Type</name></member>
+      <member refid="class_a_m_f_node_element_base_1aca411586d8f82af644355562a4dae5c7" prot="public" virt="virtual"><scope>AMFCoordinates</scope><name>~AMFNodeElementBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

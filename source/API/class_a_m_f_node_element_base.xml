@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_a_m_f_node_element_base" kind="class" language="C++" prot="public">
+    <compoundname>AMFNodeElementBase</compoundname>
+    <derivedcompoundref refid="struct_a_m_f_color" prot="public" virt="non-virtual">AMFColor</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_constellation" prot="public" virt="non-virtual">AMFConstellation</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_coordinates" prot="public" virt="non-virtual">AMFCoordinates</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_edge" prot="public" virt="non-virtual">AMFEdge</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_instance" prot="public" virt="non-virtual">AMFInstance</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_material" prot="public" virt="non-virtual">AMFMaterial</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_mesh" prot="public" virt="non-virtual">AMFMesh</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_metadata" prot="public" virt="non-virtual">AMFMetadata</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_object" prot="public" virt="non-virtual">AMFObject</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_root" prot="public" virt="non-virtual">AMFRoot</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_tex_map" prot="public" virt="non-virtual">AMFTexMap</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_texture" prot="public" virt="non-virtual">AMFTexture</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_triangle" prot="public" virt="non-virtual">AMFTriangle</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_vertex" prot="public" virt="non-virtual">AMFVertex</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_vertices" prot="public" virt="non-virtual">AMFVertices</derivedcompoundref>
+    <derivedcompoundref refid="struct_a_m_f_volume" prot="public" virt="non-virtual">AMFVolume</derivedcompoundref>
+    <includes local="no">AMFImporter_Node.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0a" prot="public" static="no">
+        <name>EType</name>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa2015759d11d341c3e01ef81457c3dfb2" prot="public">
+          <name>ENET_Color</name>
+          <briefdescription>
+<para>Color element: &lt;color&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa56a0afb67a817c6cf7785f40b8d58826" prot="public">
+          <name>ENET_Constellation</name>
+          <briefdescription>
+<para>Grouping element: &lt;constellation&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa33678b8220ebf03b03ee93df73e42859" prot="public">
+          <name>ENET_Coordinates</name>
+          <briefdescription>
+<para>Coordinates element: &lt;coordinates&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aae292d573429f1cc0355e7947dbfe7306" prot="public">
+          <name>ENET_Edge</name>
+          <briefdescription>
+<para>Edge element: &lt;edge&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa68385d35861c99bc833fe97e006ff22e" prot="public">
+          <name>ENET_Instance</name>
+          <briefdescription>
+<para>Grouping element: &lt;constellation&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa52b9a0993fd26279a03fdecdfdba0cdb" prot="public">
+          <name>ENET_Material</name>
+          <briefdescription>
+<para>Material element: &lt;material&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa4c5353064dab13ed0e1f41a57b882a90" prot="public">
+          <name>ENET_Metadata</name>
+          <briefdescription>
+<para>Metadata element: &lt;metadata&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa254e95fcf2d1591e038ef7fc4e6af7f3" prot="public">
+          <name>ENET_Mesh</name>
+          <briefdescription>
+<para>Metadata element: &lt;mesh&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aaa93a0c5903ab8aa885209b790a7468e8" prot="public">
+          <name>ENET_Object</name>
+          <briefdescription>
+<para>Element which hold object: &lt;object&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aad31c8318a2d001fb570b7a77e9a038ad" prot="public">
+          <name>ENET_Root</name>
+          <briefdescription>
+<para>Root element: &lt;amf&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aaae7b58fb153740569ac11dcbe54ae104" prot="public">
+          <name>ENET_Triangle</name>
+          <briefdescription>
+<para>Triangle element: &lt;triangle&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa7d141b12dc34ee1cce702ca940a32a33" prot="public">
+          <name>ENET_TexMap</name>
+          <briefdescription>
+<para><ref refid="struct_texture" kindref="compound">Texture</ref> coordinates element: &lt;texmap&gt; or &lt;map&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aacd58c07bfcca3ea414241099fe89cb3c" prot="public">
+          <name>ENET_Texture</name>
+          <briefdescription>
+<para><ref refid="struct_texture" kindref="compound">Texture</ref> element: &lt;texture&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa998682eddeb88a2835ddc939a915e10c" prot="public">
+          <name>ENET_Vertex</name>
+          <briefdescription>
+<para><ref refid="struct_vertex" kindref="compound">Vertex</ref> element: &lt;vertex&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa8e679f55f1f1c09111fcb23a25830d13" prot="public">
+          <name>ENET_Vertices</name>
+          <briefdescription>
+<para><ref refid="struct_vertex" kindref="compound">Vertex</ref> element: &lt;vertices&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aac2d350005c3df0b11c97ba4d1e3800ac" prot="public">
+          <name>ENET_Volume</name>
+          <briefdescription>
+<para>Volume element: &lt;volume&gt;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa29d905d7bb410ee408c8f6eb679cee66" prot="public">
+          <name>ENET_Invalid</name>
+          <briefdescription>
+<para>Element has invalid type and possible contain invalid data. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Define what data type contain node element. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="65" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="65" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_m_f_node_element_base_1ac47ba0e156fe9388212452928d6388b3" prot="public" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="class_a_m_f_node_element_base" kindref="compound">AMFNodeElementBase</ref> * &gt;</type>
+        <definition>std::list&lt;AMFNodeElementBase *&gt; AMFNodeElementBase::Child</definition>
+        <argsstring></argsstring>
+        <name>Child</name>
+        <briefdescription>
+<para>Child elements. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="89" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_m_f_node_element_base_1ae4a303cfe37dbefc0b7d1be7fbc96e63" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string AMFNodeElementBase::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+<para>ID of element. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="87" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_m_f_node_element_base_1a333683397c0bdaa9d565674a4d5fb0f0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_a_m_f_node_element_base" kindref="compound">AMFNodeElementBase</ref> *</type>
+        <definition>AMFNodeElementBase* AMFNodeElementBase::Parent</definition>
+        <argsstring></argsstring>
+        <name>Parent</name>
+        <briefdescription>
+<para>Parent element. If nullptr then this node is root. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="88" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_m_f_node_element_base_1af5f9709b266eab331b08998a88c4c270" prot="public" static="no" mutable="no">
+        <type>const <ref refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0a" kindref="member">EType</ref></type>
+        <definition>const EType AMFNodeElementBase::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+<para><ref refid="struct_type" kindref="compound">Type</ref> of element. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="86" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_m_f_node_element_base_1a5e96a68807ec7f65159b9e1c22acd9eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AMFNodeElementBase::AMFNodeElementBase</definition>
+        <argsstring>(const AMFNodeElementBase &amp;pNodeElement)=delete</argsstring>
+        <name>AMFNodeElementBase</name>
+        <param>
+          <type>const <ref refid="class_a_m_f_node_element_base" kindref="compound">AMFNodeElementBase</ref> &amp;</type>
+          <declname>pNodeElement</declname>
+        </param>
+        <briefdescription>
+<para>Disabled copy constructor and co. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_m_f_node_element_base_1a2a8ee4ec608dbd77d9a4b0fe128c5876" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AMFNodeElementBase::AMFNodeElementBase</definition>
+        <argsstring>(AMFNodeElementBase &amp;&amp;)=delete</argsstring>
+        <name>AMFNodeElementBase</name>
+        <param>
+          <type><ref refid="class_a_m_f_node_element_base" kindref="compound">AMFNodeElementBase</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_m_f_node_element_base_1ae846a4e47a80abb60f5c6cb4f9982170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AMFNodeElementBase::AMFNodeElementBase</definition>
+        <argsstring>()=delete</argsstring>
+        <name>AMFNodeElementBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_m_f_node_element_base_1ad703184b61992282876a36329e8cb524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_m_f_node_element_base" kindref="compound">AMFNodeElementBase</ref> &amp;</type>
+        <definition>AMFNodeElementBase&amp; AMFNodeElementBase::operator=</definition>
+        <argsstring>(const AMFNodeElementBase &amp;pNodeElement)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_a_m_f_node_element_base" kindref="compound">AMFNodeElementBase</ref> &amp;</type>
+          <declname>pNodeElement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_m_f_node_element_base_1aca411586d8f82af644355562a4dae5c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual AMFNodeElementBase::~AMFNodeElementBase</definition>
+        <argsstring>()</argsstring>
+        <name>~AMFNodeElementBase</name>
+        <briefdescription>
+<para>Destructor, virtual.. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="92" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="92" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_m_f_node_element_base_1a3490fce044f7c00735c3f1db12b70722" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AMFNodeElementBase::AMFNodeElementBase</definition>
+        <argsstring>(const EType pType, AMFNodeElementBase *pParent)</argsstring>
+        <name>AMFNodeElementBase</name>
+        <param>
+          <type>const <ref refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0a" kindref="member">EType</ref></type>
+          <declname>pType</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_m_f_node_element_base" kindref="compound">AMFNodeElementBase</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <briefdescription>
+<para>In constructor inheritor must set element type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- element type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pParent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- parent element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="106" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="300">
+        <label>AMFTriangle</label>
+        <link refid="struct_a_m_f_triangle"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>AMFRoot</label>
+        <link refid="struct_a_m_f_root"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>AMFConstellation</label>
+        <link refid="struct_a_m_f_constellation"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>AMFVertex</label>
+        <link refid="struct_a_m_f_vertex"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>AMFMetadata</label>
+        <link refid="struct_a_m_f_metadata"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>AMFColor</label>
+        <link refid="struct_a_m_f_color"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>AMFVertices</label>
+        <link refid="struct_a_m_f_vertices"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>AMFEdge</label>
+        <link refid="struct_a_m_f_edge"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>AMFMesh</label>
+        <link refid="struct_a_m_f_mesh"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>AMFNodeElementBase</label>
+        <link refid="class_a_m_f_node_element_base"/>
+      </node>
+      <node id="296">
+        <label>AMFObject</label>
+        <link refid="struct_a_m_f_object"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>AMFInstance</label>
+        <link refid="struct_a_m_f_instance"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>AMFCoordinates</label>
+        <link refid="struct_a_m_f_coordinates"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>AMFMaterial</label>
+        <link refid="struct_a_m_f_material"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>AMFTexMap</label>
+        <link refid="struct_a_m_f_tex_map"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>AMFVolume</label>
+        <link refid="struct_a_m_f_volume"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>AMFTexture</label>
+        <link refid="struct_a_m_f_texture"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="304">
+        <label>AMFNodeElementBase</label>
+        <link refid="class_a_m_f_node_element_base"/>
+        <childnode refid="304" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="62" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="62" bodyend="110"/>
+    <listofallmembers>
+      <member refid="class_a_m_f_node_element_base_1a5e96a68807ec7f65159b9e1c22acd9eb" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1a2a8ee4ec608dbd77d9a4b0fe128c5876" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1ae846a4e47a80abb60f5c6cb4f9982170" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1a3490fce044f7c00735c3f1db12b70722" prot="protected" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1ac47ba0e156fe9388212452928d6388b3" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>Child</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa2015759d11d341c3e01ef81457c3dfb2" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Color</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa56a0afb67a817c6cf7785f40b8d58826" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Constellation</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa33678b8220ebf03b03ee93df73e42859" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Coordinates</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aae292d573429f1cc0355e7947dbfe7306" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Edge</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa68385d35861c99bc833fe97e006ff22e" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Instance</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa29d905d7bb410ee408c8f6eb679cee66" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Invalid</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa52b9a0993fd26279a03fdecdfdba0cdb" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Material</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa254e95fcf2d1591e038ef7fc4e6af7f3" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Mesh</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa4c5353064dab13ed0e1f41a57b882a90" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Metadata</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aaa93a0c5903ab8aa885209b790a7468e8" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Object</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aad31c8318a2d001fb570b7a77e9a038ad" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Root</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa7d141b12dc34ee1cce702ca940a32a33" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_TexMap</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aacd58c07bfcca3ea414241099fe89cb3c" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Texture</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aaae7b58fb153740569ac11dcbe54ae104" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Triangle</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa998682eddeb88a2835ddc939a915e10c" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Vertex</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa8e679f55f1f1c09111fcb23a25830d13" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Vertices</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aac2d350005c3df0b11c97ba4d1e3800ac" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ENET_Volume</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0a" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>EType</name></member>
+      <member refid="class_a_m_f_node_element_base_1ae4a303cfe37dbefc0b7d1be7fbc96e63" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>ID</name></member>
+      <member refid="class_a_m_f_node_element_base_1ad703184b61992282876a36329e8cb524" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>operator=</name></member>
+      <member refid="class_a_m_f_node_element_base_1a333683397c0bdaa9d565674a4d5fb0f0" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>Parent</name></member>
+      <member refid="class_a_m_f_node_element_base_1af5f9709b266eab331b08998a88c4c270" prot="public" virt="non-virtual"><scope>AMFNodeElementBase</scope><name>Type</name></member>
+      <member refid="class_a_m_f_node_element_base_1aca411586d8f82af644355562a4dae5c7" prot="public" virt="virtual"><scope>AMFNodeElementBase</scope><name>~AMFNodeElementBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

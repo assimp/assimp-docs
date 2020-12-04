@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture" kind="struct" language="C++" prot="private">
+    <compoundname>Assimp::AMFImporter::SPP_Texture</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1a250afa504e2c04427f99212cf053cd2a" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+        <definition>uint8_t* Assimp::AMFImporter::SPP_Texture::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="132" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1a97efa26aff941e40c1cddbd4f52c0033" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::AMFImporter::SPP_Texture::Depth</definition>
+        <argsstring></argsstring>
+        <name>Depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="129" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1afb4809f5f4214e1a9a0152141683eb36" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Assimp::AMFImporter::SPP_Texture::FormatHint[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>FormatHint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="131" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1a18f2fe58cd3b0cde3a3f5e1f547a750d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::AMFImporter::SPP_Texture::Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="129" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1addd9e97de830a23d200fa34bb8b8417e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Assimp::AMFImporter::SPP_Texture::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="128" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1a6f585acce62dc0941b98e87bf4077c94" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::AMFImporter::SPP_Texture::Tiled</definition>
+        <argsstring></argsstring>
+        <name>Tiled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="130" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1a2d921d1cec8d2cc0cfa46d316262f5f0" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::AMFImporter::SPP_Texture::Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="129" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data type for post-processing step. More suitable container for texture. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="code/AssetLib/AMF/AMFImporter.hpp" line="127" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="127" bodyend="133"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1a250afa504e2c04427f99212cf053cd2a" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SPP_Texture</scope><name>Data</name></member>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1a97efa26aff941e40c1cddbd4f52c0033" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SPP_Texture</scope><name>Depth</name></member>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1afb4809f5f4214e1a9a0152141683eb36" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SPP_Texture</scope><name>FormatHint</name></member>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1a18f2fe58cd3b0cde3a3f5e1f547a750d" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SPP_Texture</scope><name>Height</name></member>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1addd9e97de830a23d200fa34bb8b8417e" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SPP_Texture</scope><name>ID</name></member>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1a6f585acce62dc0941b98e87bf4077c94" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SPP_Texture</scope><name>Tiled</name></member>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_p_p___texture_1a2d921d1cec8d2cc0cfa46d316262f5f0" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SPP_Texture</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

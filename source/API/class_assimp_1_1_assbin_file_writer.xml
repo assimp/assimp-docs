@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_assimp_1_1_assbin_file_writer" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::AssbinFileWriter</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_assbin_file_writer_1aed44017218ecea68baf861d563d8875c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::AssbinFileWriter::compressed</definition>
+        <argsstring></argsstring>
+        <name>compressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="332" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_assbin_file_writer_1a14c095941f3ff028a9684fe1992c1837" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::AssbinFileWriter::shortened</definition>
+        <argsstring></argsstring>
+        <name>shortened</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="331" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1a28e6576244478bcaf8bd179b9f81662c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryAnim</definition>
+        <argsstring>(IOStream *container, const aiAnimation *anim)</argsstring>
+        <name>WriteBinaryAnim</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_animation" kindref="compound">aiAnimation</ref> *</type>
+          <declname>anim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="623" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="623" bodyend="635"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1ab28046f0077b9bdbae2e1572295417dd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryBone</definition>
+        <argsstring>(IOStream *container, const aiBone *b)</argsstring>
+        <name>WriteBinaryBone</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_bone" kindref="compound">aiBone</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="413" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="413" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1a29ce3a6c29b017d12921b0469fcac12f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryCamera</definition>
+        <argsstring>(IOStream *container, const aiCamera *cam)</argsstring>
+        <name>WriteBinaryCamera</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_camera" kindref="compound">aiCamera</ref> *</type>
+          <declname>cam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="661" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="661" bodyend="672"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1a64a19cb6468681a8f7216bdac9c9ded6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryLight</definition>
+        <argsstring>(IOStream *container, const aiLight *l)</argsstring>
+        <name>WriteBinaryLight</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_light" kindref="compound">aiLight</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="638" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="638" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1a08b9ef0d09122916b1d12d4938a66c40" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryMaterial</definition>
+        <argsstring>(IOStream *container, const aiMaterial *mat)</argsstring>
+        <name>WriteBinaryMaterial</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_material" kindref="compound">aiMaterial</ref> *</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="576" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="576" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1a01a4ef64935463d6d3232387fb18c1f1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryMaterialProperty</definition>
+        <argsstring>(IOStream *container, const aiMaterialProperty *prop)</argsstring>
+        <name>WriteBinaryMaterialProperty</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const aiMaterialProperty *</type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="563" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="563" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1a5e33b991485088561d972bbaf8cf9a2d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryMesh</definition>
+        <argsstring>(IOStream *container, const aiMesh *mesh)</argsstring>
+        <name>WriteBinaryMesh</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="430" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="430" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1afd603aaea5cf67f9a6f3245feb70a60f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryNode</definition>
+        <argsstring>(IOStream *container, const aiNode *node)</argsstring>
+        <name>WriteBinaryNode</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="336" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="336" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1a389fa770b48d2d79003ff06e20719836" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryNodeAnim</definition>
+        <argsstring>(IOStream *container, const aiNodeAnim *nd)</argsstring>
+        <name>WriteBinaryNodeAnim</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_node_anim" kindref="compound">aiNodeAnim</ref> *</type>
+          <declname>nd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="586" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="586" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1a4b53e5b2c2f2b5b24be470f55c6a6ca0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryScene</definition>
+        <argsstring>(IOStream *container, const aiScene *scene)</argsstring>
+        <name>WriteBinaryScene</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="675" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="675" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1abd22dff0f5918e62fd824315986ef78d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryTexture</definition>
+        <argsstring>(IOStream *container, const aiTexture *tex)</argsstring>
+        <name>WriteBinaryTexture</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_texture" kindref="compound">aiTexture</ref> *</type>
+          <declname>tex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="395" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="395" bodyend="410"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1a614caa42925731d71cc25637a95e1747" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::AssbinFileWriter::AssbinFileWriter</definition>
+        <argsstring>(bool shortened, bool compressed)</argsstring>
+        <name>AssbinFileWriter</name>
+        <param>
+          <type>bool</type>
+          <declname>shortened</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>compressed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="728" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="728" bodyend="730"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_assbin_file_writer_1a074562f68c5f5f92839e0e1281895726" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::AssbinFileWriter::WriteBinaryDump</definition>
+        <argsstring>(const char *pFile, const char *cmd, IOSystem *pIOSystem, const aiScene *pScene)</argsstring>
+        <name>WriteBinaryDump</name>
+        <param>
+          <type>const char *</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>pIOSystem</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="734" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="734" bodyend="819"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Assbin file writer class. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class writes an .assbin file, and is responsible for the file layout. </para>    </detaileddescription>
+    <location file="code/AssetLib/Assbin/AssbinFileWriter.cpp" line="329" column="1" bodyfile="code/AssetLib/Assbin/AssbinFileWriter.cpp" bodystart="329" bodyend="820"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_assbin_file_writer_1a614caa42925731d71cc25637a95e1747" prot="public" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>AssbinFileWriter</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1aed44017218ecea68baf861d563d8875c" prot="private" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>compressed</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1a14c095941f3ff028a9684fe1992c1837" prot="private" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>shortened</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1a28e6576244478bcaf8bd179b9f81662c" prot="protected" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryAnim</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1ab28046f0077b9bdbae2e1572295417dd" prot="protected" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryBone</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1a29ce3a6c29b017d12921b0469fcac12f" prot="protected" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryCamera</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1a074562f68c5f5f92839e0e1281895726" prot="public" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryDump</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1a64a19cb6468681a8f7216bdac9c9ded6" prot="protected" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryLight</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1a08b9ef0d09122916b1d12d4938a66c40" prot="protected" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryMaterial</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1a01a4ef64935463d6d3232387fb18c1f1" prot="protected" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryMaterialProperty</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1a5e33b991485088561d972bbaf8cf9a2d" prot="protected" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryMesh</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1afd603aaea5cf67f9a6f3245feb70a60f" prot="protected" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryNode</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1a389fa770b48d2d79003ff06e20719836" prot="protected" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryNodeAnim</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1a4b53e5b2c2f2b5b24be470f55c6a6ca0" prot="protected" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryScene</name></member>
+      <member refid="class_assimp_1_1_assbin_file_writer_1abd22dff0f5918e62fd824315986ef78d" prot="protected" virt="non-virtual"><scope>Assimp::AssbinFileWriter</scope><name>WriteBinaryTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

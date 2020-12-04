@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_importer_desc" kind="struct" language="C++" prot="public">
+    <compoundname>aiImporterDesc</compoundname>
+    <includes local="no">importerdesc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_importer_desc_1a8e050453324b1e855701c7c082c1b24b" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* aiImporterDesc::mAuthor</definition>
+        <argsstring></argsstring>
+        <name>mAuthor</name>
+        <briefdescription>
+<para>Original author (left blank if unknown or whole assimp team) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="96" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_importer_desc_1a2d8ad562f6c18ee9e8bfdb2da4871118" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* aiImporterDesc::mComments</definition>
+        <argsstring></argsstring>
+        <name>mComments</name>
+        <briefdescription>
+<para>Implementation comments, i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>unimplemented features </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="102" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_importer_desc_1a074bd688ffd15d7f4df32e794111a413" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* aiImporterDesc::mFileExtensions</definition>
+        <argsstring></argsstring>
+        <name>mFileExtensions</name>
+        <briefdescription>
+<para>List of file extensions this importer can handle. </para>        </briefdescription>
+        <detaileddescription>
+<para>List entries are separated by space characters. All entries are lower case without a leading dot (i.e. &quot;xml dae&quot; would be a valid value. Note that multiple importers may respond to the same file extension - assimp calls all importers in the order in which they are registered and each importer gets the opportunity to load the file until one importer &quot;claims&quot; the file. Apart from file extension checks, importers typically use other methods to quickly reject files (i.e. magic words) so this does not mean that common or generic file extensions such as XML would be tediously slow. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="135" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_importer_desc_1a9939db58b9f95a537f9f5a749524b6b2" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiImporterDesc::mFlags</definition>
+        <argsstring></argsstring>
+        <name>mFlags</name>
+        <briefdescription>
+<para>These flags indicate some characteristics common to many importers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="106" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_importer_desc_1a53bf0ecb36ce0b97018b4b6bd2748f02" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* aiImporterDesc::mMaintainer</definition>
+        <argsstring></argsstring>
+        <name>mMaintainer</name>
+        <briefdescription>
+<para>Current maintainer, left blank if the author maintains. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="99" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_importer_desc_1a9d33eac3be20f7f4630f838a228ada63" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiImporterDesc::mMaxMajor</definition>
+        <argsstring></argsstring>
+        <name>mMaxMajor</name>
+        <briefdescription>
+<para>Maximum format version that can be loaded im major.minor format, both are set to 0 if there is either no version scheme or if the loader doesn&apos;t care. </para>        </briefdescription>
+        <detaileddescription>
+<para>Loaders that expect to be forward-compatible to potential future format versions should indicate zero, otherwise they should specify the current maximum version. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="120" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_importer_desc_1ae4c60eec7020af836b23537148f47f83" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiImporterDesc::mMaxMinor</definition>
+        <argsstring></argsstring>
+        <name>mMaxMinor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="121" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_importer_desc_1aee34d348f522807f0a36607664e92a57" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiImporterDesc::mMinMajor</definition>
+        <argsstring></argsstring>
+        <name>mMinMajor</name>
+        <briefdescription>
+<para>Minimum format version that can be loaded im major.minor format, both are set to 0 if there is either no version scheme or if the loader doesn&apos;t care. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="111" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_importer_desc_1adb265dee32c6533234c45638df66ddab" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>unsigned int aiImporterDesc::mMinMinor</definition>
+        <argsstring></argsstring>
+        <name>mMinMinor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="112" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_importer_desc_1a2a9d5fd818c01bba1a0a782722ab9495" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* aiImporterDesc::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <briefdescription>
+<para>Full name of the importer (i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>Blender3D importer) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="93" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Meta information about a particular importer. </para>    </briefdescription>
+    <detaileddescription>
+<para>Importers need to fill this structure, but they can freely decide how talkative they are. A common use case for loader meta info is a user interface in which the user can choose between various import/export file formats. Building such an UI by hand means a lot of maintenance as importers/exporters are added to <ref refid="namespace_assimp" kindref="compound">Assimp</ref>, so it might be useful to have a common mechanism to query some rough importer characteristics. </para>    </detaileddescription>
+    <location file="include/assimp/importerdesc.h" line="91" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="91" bodyend="136"/>
+    <listofallmembers>
+      <member refid="structai_importer_desc_1a8e050453324b1e855701c7c082c1b24b" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mAuthor</name></member>
+      <member refid="structai_importer_desc_1a2d8ad562f6c18ee9e8bfdb2da4871118" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mComments</name></member>
+      <member refid="structai_importer_desc_1a074bd688ffd15d7f4df32e794111a413" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mFileExtensions</name></member>
+      <member refid="structai_importer_desc_1a9939db58b9f95a537f9f5a749524b6b2" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mFlags</name></member>
+      <member refid="structai_importer_desc_1a53bf0ecb36ce0b97018b4b6bd2748f02" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mMaintainer</name></member>
+      <member refid="structai_importer_desc_1a9d33eac3be20f7f4630f838a228ada63" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mMaxMajor</name></member>
+      <member refid="structai_importer_desc_1ae4c60eec7020af836b23537148f47f83" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mMaxMinor</name></member>
+      <member refid="structai_importer_desc_1aee34d348f522807f0a36607664e92a57" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mMinMajor</name></member>
+      <member refid="structai_importer_desc_1adb265dee32c6533234c45638df66ddab" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mMinMinor</name></member>
+      <member refid="structai_importer_desc_1a2a9d5fd818c01bba1a0a782722ab9495" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

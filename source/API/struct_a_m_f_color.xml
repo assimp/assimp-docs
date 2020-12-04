@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_a_m_f_color" kind="struct" language="C++" prot="public">
+    <compoundname>AMFColor</compoundname>
+    <basecompoundref refid="class_a_m_f_node_element_base" prot="public" virt="non-virtual">AMFNodeElementBase</basecompoundref>
+    <includes local="no">AMFImporter_Node.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_m_f_color_1a2b62c7123048814789ee6f92548f660f" prot="public" static="no" mutable="no">
+        <type><ref refid="color4_8h_1a4badb8c19633de8f741ba2089ab79189" kindref="member">aiColor4D</ref></type>
+        <definition>aiColor4D AMFColor::Color</definition>
+        <argsstring></argsstring>
+        <name>Color</name>
+        <briefdescription>
+<para>Constant color. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="172" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_m_f_color_1a66bf8c73e7f5f2ae97c6cff3f5e3906f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string AMFColor::Color_Composed[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>Color_Composed</name>
+        <briefdescription>
+<para>By components formulas of composed color. [0..3] - RGBA. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="171" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_m_f_color_1a9959f0baf9e5031bdadd876b966c5874" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AMFColor::Composed</definition>
+        <argsstring></argsstring>
+        <name>Composed</name>
+        <briefdescription>
+<para><ref refid="struct_type" kindref="compound">Type</ref> of color stored: if true then look for formula in <ref refid="struct_a_m_f_color_1a66bf8c73e7f5f2ae97c6cff3f5e3906f" kindref="member">Color_Composed</ref>[4], else - in <ref refid="struct_a_m_f_color_1a2b62c7123048814789ee6f92548f660f" kindref="member">Color</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="170" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_m_f_color_1a662e928c251e38483bafe14684c083db" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string AMFColor::Profile</definition>
+        <argsstring></argsstring>
+        <name>Profile</name>
+        <briefdescription>
+<para>The ICC color space used to interpret the three color channels r, g and b.. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="173" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_a_m_f_color_1a65bda63b8eb8c9073567d99cb062de33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AMFColor::AMFColor</definition>
+        <argsstring>(AMFNodeElementBase *pParent)</argsstring>
+        <name>AMFColor</name>
+        <param>
+          <type><ref refid="class_a_m_f_node_element_base" kindref="compound">AMFNodeElementBase</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pParent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to parent node. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="177" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="252">
+        <label>AMFColor</label>
+        <link refid="struct_a_m_f_color"/>
+        <childnode refid="253" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>AMFNodeElementBase</label>
+        <link refid="class_a_m_f_node_element_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="254">
+        <label>AMFColor</label>
+        <link refid="struct_a_m_f_color"/>
+        <childnode refid="255" relation="public-inheritance">
+        </childnode>
+        <childnode refid="256" relation="usage">
+          <edgelabel>Color</edgelabel>
+        </childnode>
+      </node>
+      <node id="255">
+        <label>AMFNodeElementBase</label>
+        <link refid="class_a_m_f_node_element_base"/>
+        <childnode refid="255" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="256">
+        <label>aiColor4t&lt; ai_real &gt;</label>
+        <link refid="classai_color4t"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/AMF/AMFImporter_Node.hpp" line="169" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Node.hpp" bodystart="169" bodyend="181"/>
+    <listofallmembers>
+      <member refid="struct_a_m_f_color_1a65bda63b8eb8c9073567d99cb062de33" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>AMFColor</name></member>
+      <member refid="class_a_m_f_node_element_base_1a5e96a68807ec7f65159b9e1c22acd9eb" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1a2a8ee4ec608dbd77d9a4b0fe128c5876" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1ae846a4e47a80abb60f5c6cb4f9982170" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1a3490fce044f7c00735c3f1db12b70722" prot="protected" virt="non-virtual"><scope>AMFColor</scope><name>AMFNodeElementBase</name></member>
+      <member refid="class_a_m_f_node_element_base_1ac47ba0e156fe9388212452928d6388b3" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>Child</name></member>
+      <member refid="struct_a_m_f_color_1a2b62c7123048814789ee6f92548f660f" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>Color</name></member>
+      <member refid="struct_a_m_f_color_1a66bf8c73e7f5f2ae97c6cff3f5e3906f" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>Color_Composed</name></member>
+      <member refid="struct_a_m_f_color_1a9959f0baf9e5031bdadd876b966c5874" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>Composed</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa2015759d11d341c3e01ef81457c3dfb2" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Color</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa56a0afb67a817c6cf7785f40b8d58826" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Constellation</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa33678b8220ebf03b03ee93df73e42859" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Coordinates</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aae292d573429f1cc0355e7947dbfe7306" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Edge</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa68385d35861c99bc833fe97e006ff22e" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Instance</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa29d905d7bb410ee408c8f6eb679cee66" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Invalid</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa52b9a0993fd26279a03fdecdfdba0cdb" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Material</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa254e95fcf2d1591e038ef7fc4e6af7f3" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Mesh</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa4c5353064dab13ed0e1f41a57b882a90" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Metadata</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aaa93a0c5903ab8aa885209b790a7468e8" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Object</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aad31c8318a2d001fb570b7a77e9a038ad" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Root</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa7d141b12dc34ee1cce702ca940a32a33" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_TexMap</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aacd58c07bfcca3ea414241099fe89cb3c" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Texture</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aaae7b58fb153740569ac11dcbe54ae104" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Triangle</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa998682eddeb88a2835ddc939a915e10c" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Vertex</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa8e679f55f1f1c09111fcb23a25830d13" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Vertices</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aac2d350005c3df0b11c97ba4d1e3800ac" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ENET_Volume</name></member>
+      <member refid="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0a" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>EType</name></member>
+      <member refid="class_a_m_f_node_element_base_1ae4a303cfe37dbefc0b7d1be7fbc96e63" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>ID</name></member>
+      <member refid="class_a_m_f_node_element_base_1ad703184b61992282876a36329e8cb524" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>operator=</name></member>
+      <member refid="class_a_m_f_node_element_base_1a333683397c0bdaa9d565674a4d5fb0f0" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>Parent</name></member>
+      <member refid="struct_a_m_f_color_1a662e928c251e38483bafe14684c083db" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>Profile</name></member>
+      <member refid="class_a_m_f_node_element_base_1af5f9709b266eab331b08998a88c4c270" prot="public" virt="non-virtual"><scope>AMFColor</scope><name>Type</name></member>
+      <member refid="class_a_m_f_node_element_base_1aca411586d8f82af644355562a4dae5c7" prot="public" virt="virtual"><scope>AMFColor</scope><name>~AMFNodeElementBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

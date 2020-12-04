@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classai_matrix3x3t" kind="class" language="C++" prot="public">
+    <compoundname>aiMatrix3x3t</compoundname>
+    <includes local="no">vector3.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TReal</declname>
+        <defname>TReal</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classai_matrix3x3t_1aa14f0a3fcabd347fd056764dfdc30d8d" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix3x3t&lt; TReal &gt;::a1</definition>
+        <argsstring></argsstring>
+        <name>a1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="163" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix3x3t_1a6d3c9e3a8133b061e59f12ee603e59cb" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix3x3t&lt; TReal &gt;::a2</definition>
+        <argsstring></argsstring>
+        <name>a2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="163" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix3x3t_1a7ae74ce6d9a554dd2e4676cec06b3149" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix3x3t&lt; TReal &gt;::a3</definition>
+        <argsstring></argsstring>
+        <name>a3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="163" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix3x3t_1a8109df81ad20e8344165ba13cf6e4784" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix3x3t&lt; TReal &gt;::b1</definition>
+        <argsstring></argsstring>
+        <name>b1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="164" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix3x3t_1a351960b889ba9893476ef5e915fc0210" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix3x3t&lt; TReal &gt;::b2</definition>
+        <argsstring></argsstring>
+        <name>b2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="164" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix3x3t_1a19073cc823415566f501ff647f4c1d94" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix3x3t&lt; TReal &gt;::b3</definition>
+        <argsstring></argsstring>
+        <name>b3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="164" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix3x3t_1a80232a766f2d2b9b501fa595d5b3e385" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix3x3t&lt; TReal &gt;::c1</definition>
+        <argsstring></argsstring>
+        <name>c1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="165" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix3x3t_1aaad45bacec5b61095a1ed3c0d7770672" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix3x3t&lt; TReal &gt;::c2</definition>
+        <argsstring></argsstring>
+        <name>c2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="165" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_matrix3x3t_1aa262dcdc45069f299f070599054caa20" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiMatrix3x3t&lt; TReal &gt;::c3</definition>
+        <argsstring></argsstring>
+        <name>c3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="165" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classai_matrix3x3t_1a8358cad279a4503bf92113f32d9829c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiMatrix3x3t&lt; TReal &gt;::aiMatrix3x3t</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiMatrix3x3t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="75" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a206e3c4456bd29eb8e4d594228b0dff2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiMatrix3x3t&lt; TReal &gt;::aiMatrix3x3t</definition>
+        <argsstring>(TReal _a1, TReal _a2, TReal _a3, TReal _b1, TReal _b2, TReal _b3, TReal _c1, TReal _c2, TReal _c3)</argsstring>
+        <name>aiMatrix3x3t</name>
+        <param>
+          <type>TReal</type>
+          <declname>_a1</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_a2</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_a3</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_b1</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_b2</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_b3</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_c1</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_c2</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>_c3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="80" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="80" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a2dba5a84d1dcbeced2f9838c035c9943" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AI_FORCE_INLINE aiMatrix3x3t&lt; TReal &gt;::aiMatrix3x3t</definition>
+        <argsstring>(const aiMatrix4x4t&lt; TReal &gt; &amp;pMatrix)</argsstring>
+        <name>aiMatrix3x3t</name>
+        <param>
+          <type>const <ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pMatrix</declname>
+        </param>
+        <briefdescription>
+<para>Construction from a 4x4 matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para>The remaining parts of the matrix are ignored. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="109" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a03c3ed375bffd2c16f3370706cfa052b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TReal</type>
+        <definition>AI_FORCE_INLINE TReal aiMatrix3x3t&lt; TReal &gt;::Determinant</definition>
+        <argsstring>() const</argsstring>
+        <name>Determinant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="122" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="185" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a0f5836651aae5515e766521441137efc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool aiMatrix3x3t&lt; TReal &gt;::Equal</definition>
+        <argsstring>(const aiMatrix3x3t&lt; TReal &gt; &amp;m, TReal epsilon=1e-6) const</argsstring>
+        <name>Equal</name>
+        <param>
+          <type>const <ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>epsilon</declname>
+          <defval>1e-6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="100" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="158" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1ab336689b96291201a6e289bb18d2c8d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix3x3t&lt; TReal &gt; &amp; aiMatrix3x3t&lt; TReal &gt;::Inverse</definition>
+        <argsstring>()</argsstring>
+        <name>Inverse</name>
+        <briefdescription>
+<para>Invert the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the matrix is not invertible all elements are set to qnan. Beware, use (f != f) to check whether a TReal f is qnan. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="121" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="192" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1ae3161f42967ca6c17e7eeb127cedb300" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TOther</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>aiMatrix3x3t&lt; TReal &gt;::operator aiMatrix3x3t&lt; TOther &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator aiMatrix3x3t&lt; TOther &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="103" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a2e11218730d1dca3d1f40a47dd899b99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool aiMatrix3x3t&lt; TReal &gt;::operator!=</definition>
+        <argsstring>(const aiMatrix3x3t&lt; TReal &gt; &amp;m) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="98" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a2ef115160afc453dc6f4af29d4c8a8d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref></type>
+        <definition>AI_FORCE_INLINE aiMatrix3x3t&lt; TReal &gt; aiMatrix3x3t&lt; TReal &gt;::operator*</definition>
+        <argsstring>(const aiMatrix3x3t &amp;m) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="90" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a17bf091968525f5e6010fd6af224d066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix3x3t&lt; TReal &gt; &amp; aiMatrix3x3t&lt; TReal &gt;::operator*=</definition>
+        <argsstring>(const aiMatrix3x3t &amp;m)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const <ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="89" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="74" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a6bdc13d7edf0785599447ba37e4f9811" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool aiMatrix3x3t&lt; TReal &gt;::operator==</definition>
+        <argsstring>(const aiMatrix3x3t&lt; TReal &gt; &amp;m) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="97" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="142" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a5b2f21c811814a94fa78ac3c6410c7fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TReal *</type>
+        <definition>AI_FORCE_INLINE TReal * aiMatrix3x3t&lt; TReal &gt;::operator[]</definition>
+        <argsstring>(unsigned int p_iIndex)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>p_iIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="93" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="108" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a719c3a0aee6958be3f2ba0230ac8cf57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const TReal *</type>
+        <definition>AI_FORCE_INLINE const TReal * aiMatrix3x3t&lt; TReal &gt;::operator[]</definition>
+        <argsstring>(unsigned int p_iIndex) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>p_iIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="94" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="125" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1aad86f1a4ae753ea2bb47d4273ff3bf02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix3x3t&lt; TReal &gt; &amp; aiMatrix3x3t&lt; TReal &gt;::Transpose</definition>
+        <argsstring>()</argsstring>
+        <name>Transpose</name>
+        <briefdescription>
+<para>Transpose the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="114" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="174" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classai_matrix3x3t_1a712911598d24d57aebe941b1f6edf538" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix3x3t&lt; TReal &gt; &amp; aiMatrix3x3t&lt; TReal &gt;::FromToMatrix</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;from, const aiVector3t&lt; TReal &gt; &amp;to, aiMatrix3x3t &amp;out)</argsstring>
+        <name>FromToMatrix</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>A function for creating a rotation matrix that rotates a vector called &quot;from&quot; into another vector called &quot;to&quot;. </para>        </briefdescription>
+        <detaileddescription>
+<para>Input : from[3], to[3] which both must be <emphasis>normalized</emphasis> non-zero vectors Output: mtx[3][3] <ndash/> a 3x3 matrix in column-major form Authors: Tomas Möller, John Hughes &quot;Efficiently Building a Matrix to Rotate One Vector to Another&quot; Journal of Graphics Tools, 4(4):1-4, 1999</para><para>Input : from[3], to[3] which both must be <emphasis>normalized</emphasis> non-zero vectors Output: mtx[3][3] <ndash/> a 3x3 matrix in colum-major form Authors: Tomas Möller, John Hughes &quot;Efficiently Building a Matrix to Rotate One Vector to Another&quot; Journal of Graphics Tools, 4(4):1-4, 1999 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="159" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="275" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a142fef32c2c2b45981fc14758f5607a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix3x3t&lt; TReal &gt; &amp; aiMatrix3x3t&lt; TReal &gt;::Rotation</definition>
+        <argsstring>(TReal a, const aiVector3t&lt; TReal &gt; &amp;axis, aiMatrix3x3t &amp;out)</argsstring>
+        <name>Rotation</name>
+        <param>
+          <type>TReal</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Returns a rotation matrix for a rotation around an arbitrary axis. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation angle, in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Axis to rotate around </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>To be filled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="140" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="242" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1a82246d716458501a9874d97641544ff0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix3x3t&lt; TReal &gt; &amp; aiMatrix3x3t&lt; TReal &gt;::RotationZ</definition>
+        <argsstring>(TReal a, aiMatrix3x3t &amp;out)</argsstring>
+        <name>RotationZ</name>
+        <param>
+          <type>TReal</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Returns a rotation matrix for a rotation around z. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation angle, in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="130" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="227" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_matrix3x3t_1aa2d78cb37d66d122062ddc2c7ad62631" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiMatrix3x3t&lt; TReal &gt; &amp; aiMatrix3x3t&lt; TReal &gt;::Translation</definition>
+        <argsstring>(const aiVector2t&lt; TReal &gt; &amp;v, aiMatrix3x3t &amp;out)</argsstring>
+        <name>Translation</name>
+        <param>
+          <type>const <ref refid="classai_vector2t" kindref="compound">aiVector2t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Returns a translation matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Translation vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix3x3.h" line="148" column="1" bodyfile="include/assimp/matrix3x3.inl" bodystart="257" bodyend="262"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a row-major 3x3 matrix. </para>    </briefdescription>
+    <detaileddescription>
+<para>There&apos;s much confusion about matrix layouts (column vs. row order). This is <emphasis>always</emphasis> a row-major matrix. Not even with the <ref refid="postprocess_8h_1acd2361a766665ce2dbfb3eae201b784d" kindref="member">aiProcess_ConvertToLeftHanded</ref> flag, which absolutely does not affect matrix order - it just affects the handedness of the coordinate system defined thereby. </para>    </detaileddescription>
+    <location file="include/assimp/matrix3x3.h" line="73" column="1" bodyfile="include/assimp/matrix3x3.h" bodystart="73" bodyend="166"/>
+    <listofallmembers>
+      <member refid="classai_matrix3x3t_1aa14f0a3fcabd347fd056764dfdc30d8d" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>a1</name></member>
+      <member refid="classai_matrix3x3t_1a6d3c9e3a8133b061e59f12ee603e59cb" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>a2</name></member>
+      <member refid="classai_matrix3x3t_1a7ae74ce6d9a554dd2e4676cec06b3149" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>a3</name></member>
+      <member refid="classai_matrix3x3t_1a8358cad279a4503bf92113f32d9829c1" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>aiMatrix3x3t</name></member>
+      <member refid="classai_matrix3x3t_1a206e3c4456bd29eb8e4d594228b0dff2" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>aiMatrix3x3t</name></member>
+      <member refid="classai_matrix3x3t_1a2dba5a84d1dcbeced2f9838c035c9943" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>aiMatrix3x3t</name></member>
+      <member refid="classai_matrix3x3t_1a8109df81ad20e8344165ba13cf6e4784" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>b1</name></member>
+      <member refid="classai_matrix3x3t_1a351960b889ba9893476ef5e915fc0210" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>b2</name></member>
+      <member refid="classai_matrix3x3t_1a19073cc823415566f501ff647f4c1d94" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>b3</name></member>
+      <member refid="classai_matrix3x3t_1a80232a766f2d2b9b501fa595d5b3e385" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>c1</name></member>
+      <member refid="classai_matrix3x3t_1aaad45bacec5b61095a1ed3c0d7770672" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>c2</name></member>
+      <member refid="classai_matrix3x3t_1aa262dcdc45069f299f070599054caa20" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>c3</name></member>
+      <member refid="classai_matrix3x3t_1a03c3ed375bffd2c16f3370706cfa052b" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>Determinant</name></member>
+      <member refid="classai_matrix3x3t_1a0f5836651aae5515e766521441137efc" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>Equal</name></member>
+      <member refid="classai_matrix3x3t_1a712911598d24d57aebe941b1f6edf538" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>FromToMatrix</name></member>
+      <member refid="classai_matrix3x3t_1ab336689b96291201a6e289bb18d2c8d8" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>Inverse</name></member>
+      <member refid="classai_matrix3x3t_1ae3161f42967ca6c17e7eeb127cedb300" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>operator aiMatrix3x3t&lt; TOther &gt;</name></member>
+      <member refid="classai_matrix3x3t_1a2e11218730d1dca3d1f40a47dd899b99" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>operator!=</name></member>
+      <member refid="classai_matrix3x3t_1a2ef115160afc453dc6f4af29d4c8a8d2" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>operator*</name></member>
+      <member refid="classai_matrix3x3t_1a17bf091968525f5e6010fd6af224d066" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>operator*=</name></member>
+      <member refid="classai_matrix3x3t_1a6bdc13d7edf0785599447ba37e4f9811" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>operator==</name></member>
+      <member refid="classai_matrix3x3t_1a5b2f21c811814a94fa78ac3c6410c7fa" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>operator[]</name></member>
+      <member refid="classai_matrix3x3t_1a719c3a0aee6958be3f2ba0230ac8cf57" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>operator[]</name></member>
+      <member refid="classai_matrix3x3t_1a142fef32c2c2b45981fc14758f5607a7" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>Rotation</name></member>
+      <member refid="classai_matrix3x3t_1a82246d716458501a9874d97641544ff0" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>RotationZ</name></member>
+      <member refid="classai_matrix3x3t_1aa2d78cb37d66d122062ddc2c7ad62631" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>Translation</name></member>
+      <member refid="classai_matrix3x3t_1aad86f1a4ae753ea2bb47d4273ff3bf02" prot="public" virt="non-virtual"><scope>aiMatrix3x3t</scope><name>Transpose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

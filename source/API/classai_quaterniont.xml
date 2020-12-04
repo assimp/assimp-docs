@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classai_quaterniont" kind="class" language="C++" prot="public">
+    <compoundname>aiQuaterniont</compoundname>
+    <includes local="no">quaternion.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TReal</declname>
+        <defname>TReal</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classai_quaterniont_1a1d41620a1101e8bf9f3c06626b518062" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiQuaterniont&lt; TReal &gt;::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+<para>w,x,y,z components of the quaternion </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="121" column="1" bodyfile="include/assimp/quaternion.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_quaterniont_1ad3364d5c704a60123927b5a1927e6c14" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiQuaterniont&lt; TReal &gt;::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="121" column="1" bodyfile="include/assimp/quaternion.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_quaterniont_1af2ce303fbc1e2986a1d14acd2c48a6a5" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiQuaterniont&lt; TReal &gt;::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="121" column="1" bodyfile="include/assimp/quaternion.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classai_quaterniont_1a2a5c289e193c3952f1234beee37e5760" prot="public" static="no" mutable="no">
+        <type>TReal</type>
+        <definition>TReal aiQuaterniont&lt; TReal &gt;::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="121" column="1" bodyfile="include/assimp/quaternion.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classai_quaterniont_1a7b8bf3ffb58f4a5efac701730e09c0c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiQuaterniont&lt; TReal &gt;::aiQuaterniont</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiQuaterniont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="67" column="1" bodyfile="include/assimp/quaternion.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a570ba95c517f9b76f76a0bc4dddde510" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiQuaterniont&lt; TReal &gt;::aiQuaterniont</definition>
+        <argsstring>(TReal pw, TReal px, TReal py, TReal pz)</argsstring>
+        <name>aiQuaterniont</name>
+        <param>
+          <type>TReal</type>
+          <declname>pw</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>py</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>pz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="68" column="1" bodyfile="include/assimp/quaternion.h" bodystart="68" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1acc84e78a8dd2548ccf098c52ed9714b6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiQuaterniont&lt; TReal &gt;::aiQuaterniont</definition>
+        <argsstring>(const aiMatrix3x3t&lt; TReal &gt; &amp;pRotMatrix)</argsstring>
+        <name>aiQuaterniont</name>
+        <param>
+          <type>const <ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pRotMatrix</declname>
+        </param>
+        <briefdescription>
+<para>Construct from rotation matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para>Result is undefined if the matrix is not orthonormal. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="72" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="87" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a10dcd0936ddbafa30c5c4ef9715b0ea9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiQuaterniont&lt; TReal &gt;::aiQuaterniont</definition>
+        <argsstring>(TReal rotx, TReal roty, TReal rotz)</argsstring>
+        <name>aiQuaterniont</name>
+        <param>
+          <type>TReal</type>
+          <declname>rotx</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>roty</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>rotz</declname>
+        </param>
+        <briefdescription>
+<para>Construct from euler angles. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="75" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="131" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a6efab53b1a15f56b1a7275352c61b958" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiQuaterniont&lt; TReal &gt;::aiQuaterniont</definition>
+        <argsstring>(aiVector3t&lt; TReal &gt; axis, TReal angle)</argsstring>
+        <name>aiQuaterniont</name>
+        <param>
+          <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Construct from an axis-angle pair. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="78" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="169" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a4d4f012d62584e9a8b656081b70c5921" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiQuaterniont&lt; TReal &gt;::aiQuaterniont</definition>
+        <argsstring>(aiVector3t&lt; TReal &gt; normalized)</argsstring>
+        <name>aiQuaterniont</name>
+        <param>
+          <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+          <declname>normalized</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a normalized quaternion stored in a vec3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="81" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="183" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a5423571dc6d36fd134c61d6c6c2979fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
+        <definition>aiQuaterniont&lt; TReal &gt; &amp; aiQuaterniont&lt; TReal &gt;::Conjugate</definition>
+        <argsstring>()</argsstring>
+        <name>Conjugate</name>
+        <briefdescription>
+<para>Compute quaternion conjugate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="99" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="270" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a2f0d4a6c091413b9da7dd948b50a044b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiQuaterniont&lt; TReal &gt;::Equal</definition>
+        <argsstring>(const aiQuaterniont &amp;o, TReal epsilon=1e-6) const</argsstring>
+        <name>Equal</name>
+        <param>
+          <type>const <ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>epsilon</declname>
+          <defval>1e-6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="91" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a5f14f0491de62a24f9c66f7aa0504868" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref>&lt; TReal &gt;</type>
+        <definition>aiMatrix3x3t&lt; TReal &gt; aiQuaterniont&lt; TReal &gt;::GetMatrix</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMatrix</name>
+        <briefdescription>
+<para>Returns a matrix representation of the quaternion. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="84" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="150" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a476e48051aee949deeb44a8fd768b019" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
+        <definition>aiQuaterniont&lt; TReal &gt; &amp; aiQuaterniont&lt; TReal &gt;::Normalize</definition>
+        <argsstring>()</argsstring>
+        <name>Normalize</name>
+        <briefdescription>
+<para>Normalize the quaternion. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="96" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="243" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a34109b4b747fe41a2e69f0fd246e7bb5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiQuaterniont&lt; TReal &gt;::operator!=</definition>
+        <argsstring>(const aiQuaterniont &amp;o) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="89" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a785eca8688069b59a2062299b841df13" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref></type>
+        <definition>aiQuaterniont&lt; TReal &gt; aiQuaterniont&lt; TReal &gt;::operator*</definition>
+        <argsstring>(const aiQuaterniont &amp;two) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
+          <declname>two</declname>
+        </param>
+        <briefdescription>
+<para>Multiply two quaternions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="105" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="260" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1aa35d6473022bf87b1b07cc5395c3bb7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiQuaterniont&lt; TReal &gt;::operator==</definition>
+        <argsstring>(const aiQuaterniont &amp;o) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="88" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a43d31abfd6338eddec2c38f66c0d1777" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+        <definition>aiVector3t&lt; TReal &gt; aiQuaterniont&lt; TReal &gt;::Rotate</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;in) const</argsstring>
+        <name>Rotate</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Rotate a point by this quaternion. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="102" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="280" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classai_quaterniont_1a0ef9d1ce7a258e92ffb0ff117f48b9f6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void aiQuaterniont&lt; TReal &gt;::Interpolate</definition>
+        <argsstring>(aiQuaterniont &amp;pOut, const aiQuaterniont &amp;pStart, const aiQuaterniont &amp;pEnd, TReal pFactor)</argsstring>
+        <name>Interpolate</name>
+        <param>
+          <type><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
+          <declname>pOut</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
+          <declname>pStart</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
+          <declname>pEnd</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>pFactor</declname>
+        </param>
+        <briefdescription>
+<para>Performs a spherical interpolation between two quaternions and writes the result into the third. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target object to received the interpolated rotation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start rotation of the interpolation at factor == 0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pEnd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End rotation, factor == 1. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interpolation factor between 0 and 1. Values outside of this range yield undefined results. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="115" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="202" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a quaternion in a 4D vector. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/matrix4x4.h" line="60" column="1" bodyfile="include/assimp/matrix4x4.h" bodystart="60" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classai_quaterniont_1a7b8bf3ffb58f4a5efac701730e09c0c4" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>aiQuaterniont</name></member>
+      <member refid="classai_quaterniont_1a570ba95c517f9b76f76a0bc4dddde510" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>aiQuaterniont</name></member>
+      <member refid="classai_quaterniont_1acc84e78a8dd2548ccf098c52ed9714b6" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>aiQuaterniont</name></member>
+      <member refid="classai_quaterniont_1a10dcd0936ddbafa30c5c4ef9715b0ea9" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>aiQuaterniont</name></member>
+      <member refid="classai_quaterniont_1a6efab53b1a15f56b1a7275352c61b958" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>aiQuaterniont</name></member>
+      <member refid="classai_quaterniont_1a4d4f012d62584e9a8b656081b70c5921" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>aiQuaterniont</name></member>
+      <member refid="classai_quaterniont_1a5423571dc6d36fd134c61d6c6c2979fc" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>Conjugate</name></member>
+      <member refid="classai_quaterniont_1a2f0d4a6c091413b9da7dd948b50a044b" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>Equal</name></member>
+      <member refid="classai_quaterniont_1a5f14f0491de62a24f9c66f7aa0504868" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>GetMatrix</name></member>
+      <member refid="classai_quaterniont_1a0ef9d1ce7a258e92ffb0ff117f48b9f6" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>Interpolate</name></member>
+      <member refid="classai_quaterniont_1a476e48051aee949deeb44a8fd768b019" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>Normalize</name></member>
+      <member refid="classai_quaterniont_1a34109b4b747fe41a2e69f0fd246e7bb5" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>operator!=</name></member>
+      <member refid="classai_quaterniont_1a785eca8688069b59a2062299b841df13" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>operator*</name></member>
+      <member refid="classai_quaterniont_1aa35d6473022bf87b1b07cc5395c3bb7c" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>operator==</name></member>
+      <member refid="classai_quaterniont_1a43d31abfd6338eddec2c38f66c0d1777" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>Rotate</name></member>
+      <member refid="classai_quaterniont_1a1d41620a1101e8bf9f3c06626b518062" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>w</name></member>
+      <member refid="classai_quaterniont_1ad3364d5c704a60123927b5a1927e6c14" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>x</name></member>
+      <member refid="classai_quaterniont_1af2ce303fbc1e2986a1d14acd2c48a6a5" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>y</name></member>
+      <member refid="classai_quaterniont_1a2a5c289e193c3952f1234beee37e5760" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

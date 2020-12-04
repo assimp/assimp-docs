@@ -1,0 +1,1202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class3d__viewer__py3_1_1_py_assimp3_d_viewer" kind="class" language="Python" prot="public">
+    <compoundname>3d_viewer_py3::PyAssimp3DViewer</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a2c0a862ce133b8c7da24ac60397d9948" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string 3d_viewer_py3.PyAssimp3DViewer::base_name</definition>
+        <argsstring></argsstring>
+        <name>base_name</name>
+        <initializer>=  &quot;PyASSIMP 3D viewer&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="454" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ab4e800da6472ebb3b14ecb2bdb26654e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::BASIC_FRAGMENT_SHADER</definition>
+        <argsstring></argsstring>
+        <name>BASIC_FRAGMENT_SHADER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="510" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a13e203320250302f545681315d6e66a6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::BASIC_VERTEX_SHADER</definition>
+        <argsstring></argsstring>
+        <name>BASIC_VERTEX_SHADER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="505" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a047d22e26a8e7ee4d1ca1f7261b02c21" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::bb_max</definition>
+        <argsstring></argsstring>
+        <name>bb_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="694" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a6f6f90e16090c8b62476112db0520bfe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::cameras</definition>
+        <argsstring></argsstring>
+        <name>cameras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="490" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a70c142c01c2fa9dbd220a78816c9a55b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::colorid2node</definition>
+        <argsstring></argsstring>
+        <name>colorid2node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="483" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a09e74524ef660cc1d83592a510ae06de" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::current_cam</definition>
+        <argsstring></argsstring>
+        <name>current_cam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="493" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a5a8e5f4251242ce68dc8c55e2f4b2d43" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::current_cam_index</definition>
+        <argsstring></argsstring>
+        <name>current_cam_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="492" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ad7819b2d8889dd48969a7ea38b24e741" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::currently_selected</definition>
+        <argsstring></argsstring>
+        <name>currently_selected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="485" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a4166782b11ab5e1ac0a487633093b8d7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::default_camera</definition>
+        <argsstring></argsstring>
+        <name>default_camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="489" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a9c8f1a23ad6948199fd1319db51d7324" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::FLAT_VERTEX_SHADER</definition>
+        <argsstring></argsstring>
+        <name>FLAT_VERTEX_SHADER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="506" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a9383b5566d6147e6dfe6b6585e3ba0f5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::flatshader</definition>
+        <argsstring></argsstring>
+        <name>flatshader</name>
+        <briefdescription>
+<para>Flat shader. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="540" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ab2d01639ad6bc64969511d0ddd41139f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::focal_point</definition>
+        <argsstring></argsstring>
+        <name>focal_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="499" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a90086c64639fab0c20963f741200c308" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::GOOCH_FRAGMENT_SHADER</definition>
+        <argsstring></argsstring>
+        <name>GOOCH_FRAGMENT_SHADER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="511" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ad8138e48c94c5872e1a7f99bd4a1ff84" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::gooch_shader</definition>
+        <argsstring></argsstring>
+        <name>gooch_shader</name>
+        <briefdescription>
+<para>Gooch shader. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="563" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ac870a3fa10cdd368e5ad6f7f0188daf4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::GOOCH_VERTEX_SHADER</definition>
+        <argsstring></argsstring>
+        <name>GOOCH_VERTEX_SHADER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="508" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a34fedbbc2e3e438fad1c80c59789977a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="459" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a4597037e6bf2ad0b5e5b137c71a5add4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::is_panning</definition>
+        <argsstring></argsstring>
+        <name>is_panning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="501" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a866ef2699e3e8394d188799b171ac4c2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::is_rotating</definition>
+        <argsstring></argsstring>
+        <name>is_rotating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="500" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ab59df4f338af435a47a37af445f59530" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::is_zooming</definition>
+        <argsstring></argsstring>
+        <name>is_zooming</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="502" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a42e3dd9d687f7b16b007d71f847f2c94" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::meshes</definition>
+        <argsstring></argsstring>
+        <name>meshes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="480" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a934825c85862b8361c76315511cc4fc1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::moving</definition>
+        <argsstring></argsstring>
+        <name>moving</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="486" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a7193f00aa83f9eb45cad423bf33d5cb5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::moving_situation</definition>
+        <argsstring></argsstring>
+        <name>moving_situation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="487" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a054a18a90426777fed8ed7616ce8777c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::node2colorid</definition>
+        <argsstring></argsstring>
+        <name>node2colorid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="482" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a560db8d0550ebcbd2f83d0de766708da" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::projection_matrix</definition>
+        <argsstring></argsstring>
+        <name>projection_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="746" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="746" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a0ad9744d7accc150d9ece382b8d0407b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::scene</definition>
+        <argsstring></argsstring>
+        <name>scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="479" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a0af3f24e084b84c2f9de59942b44e03c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::scene_center</definition>
+        <argsstring></argsstring>
+        <name>scene_center</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="697" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a82c28089134e433eda769756721e595f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::shader</definition>
+        <argsstring></argsstring>
+        <name>shader</name>
+        <briefdescription>
+<para><ref refid="class_base" kindref="compound">Base</ref> shader. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="528" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a995b529c6d009be38bf9d80818d8e6cb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::silhouette_shader</definition>
+        <argsstring></argsstring>
+        <name>silhouette_shader</name>
+        <briefdescription>
+<para>Silhouette shader. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="549" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a94ac7d07c7e3f2ecb74bdbb228a07ac1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::SILHOUETTE_VERTEX_SHADER</definition>
+        <argsstring></argsstring>
+        <name>SILHOUETTE_VERTEX_SHADER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="507" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="507" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1af5d1d8cedb76ea80bfd4f2ad56a9a030" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::view_matrix</definition>
+        <argsstring></argsstring>
+        <name>view_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1244" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ab6861d5f9b3b8741050796918e5767a7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>3d_viewer_py3.PyAssimp3DViewer::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="458" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a8a30a69864bf1fd34f46dd06bdd69ff1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.__init__</definition>
+        <argsstring>(self, model, w=1024, h=768)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="namespace3d__viewer__py3_1ad686f11b555b630ab1b2b51aee9698e9" kindref="member">model</ref></type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type><ref refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ab6861d5f9b3b8741050796918e5767a7" kindref="member">w</ref></type>
+          <defname>w</defname>
+          <defval>1024</defval>
+        </param>
+        <param>
+          <type><ref refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a34fedbbc2e3e438fad1c80c59789977a" kindref="member">h</ref></type>
+          <defname>h</defname>
+          <defval>768</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="456" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="456" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a20d02b6643374d92b70a291fe0a5432c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.controls_3d</definition>
+        <argsstring>(self, dx, dy, zooming_one_shot=False)</argsstring>
+        <name>controls_3d</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dx</type>
+          <defname>dx</defname>
+        </param>
+        <param>
+          <type>dy</type>
+          <defname>dy</defname>
+        </param>
+        <param>
+          <type>zooming_one_shot</type>
+          <defname>zooming_one_shot</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Orbiting the camera is implemented the following way:
+
+- the rotation is split into a rotation around the *world* Z axis
+  (controlled by the horizontal mouse motion along X) and a
+  rotation around the *X* axis of the camera (pitch) *shifted to
+  the focal origin* (the world origin for now). This is controlled
+  by the vertical motion of the mouse (Y axis).
+- as a result, the resulting transformation of the camera in the
+  world frame C&apos; is:
+    C&apos; = (T · Rx · T⁻¹ · (Rz · C)⁻¹)⁻¹
+  where:
+  - C is the original camera transformation in the world frame,
+  - Rz is the rotation along the Z axis (in the world frame)
+  - T is the translation camera -&gt; world (ie, the inverse of the
+    translation part of C
+  - Rx is the rotation around X in the (translated) camera frame </verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1179" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1179" bodyend="1241"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a7bd900fcce6cd58465ba666d11163e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.cycle_cameras</definition>
+        <argsstring>(self)</argsstring>
+        <name>cycle_cameras</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="708" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="708" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1acea19c3802c2a8da67a0534e7ceb02b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.get_color_id</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_color_id</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="627" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="627" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a7124af9760ea26ebdcd8c9b9cd6da729" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.get_hovered_node</definition>
+        <argsstring>(self, mousex, mousey)</argsstring>
+        <name>get_hovered_node</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>mousex</type>
+          <defname>mousex</defname>
+        </param>
+        <param>
+          <type>mousey</type>
+          <defname>mousey</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Attention: The performances of this method relies heavily on the size of the display!
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="768" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="768" bodyend="794"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a5af2dd79d4c33e14a95cedf5c8115407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.glize</definition>
+        <argsstring>(self, scene, node)</argsstring>
+        <name>glize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a0ad9744d7accc150d9ece382b8d0407b" kindref="member">scene</ref></type>
+          <defname>scene</defname>
+        </param>
+        <param>
+          <type>node</type>
+          <defname>node</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="634" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="634" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a410c2715ace703cae57319192679ce1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.load_model</definition>
+        <argsstring>(self, path, postprocess=aiProcessPreset_TargetRealtime_MaxQuality)</argsstring>
+        <name>load_model</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <param>
+          <type>postprocess</type>
+          <defname>postprocess</defname>
+          <defval><ref refid="postprocess_8h_1aaa612ed3f167a8999405d53fc309594b" kindref="member">aiProcessPreset_TargetRealtime_MaxQuality</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="680" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="680" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ad6cd8512a3af005e0482783a381d9a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.loop</definition>
+        <argsstring>(self)</argsstring>
+        <name>loop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1088" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1088" bodyend="1098"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1aa419cb1e569679dd8a13cd743ef426d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.move_selected_node</definition>
+        <argsstring>(self, up, strafe)</argsstring>
+        <name>move_selected_node</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>up</type>
+          <defname>up</defname>
+        </param>
+        <param>
+          <type>strafe</type>
+          <defname>strafe</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1253" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1253" bodyend="1256"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a4819abd313da8c3f4443acc54e20c3f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.prepare_shaders</definition>
+        <argsstring>(self)</argsstring>
+        <name>prepare_shaders</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="522" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="522" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1accb72b620278725891902523ebc41101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.process_events</definition>
+        <argsstring>(self)</argsstring>
+        <name>process_events</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1099" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1099" bodyend="1149"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a418a296697efe2434f05df96f5a471ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.process_keystroke</definition>
+        <argsstring>(self, key, mod)</argsstring>
+        <name>process_keystroke</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>key</type>
+          <defname>key</defname>
+        </param>
+        <param>
+          <type>mod</type>
+          <defname>mod</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1150" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1150" bodyend="1178"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a01185ff940eb5173ccd7b3fa1c56d9bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.recursive_render</definition>
+        <argsstring>(self, node, shader, mode=BASE, with_normals=True)</argsstring>
+        <name>recursive_render</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>node</type>
+          <defname>node</defname>
+        </param>
+        <param>
+          <type><ref refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a82c28089134e433eda769756721e595f" kindref="member">shader</ref></type>
+          <defname>shader</defname>
+        </param>
+        <param>
+          <type><ref refid="unzip_2ioapi_8h_1a7e43d41c2fe013a373b540cba02505cf" kindref="member">mode</ref></type>
+          <defname>mode</defname>
+          <defval><ref refid="namespace3d__viewer__py3_1a160c88e2425a172c5546147cac382b32" kindref="member">BASE</ref></defval>
+        </param>
+        <param>
+          <type>with_normals</type>
+          <defname>with_normals</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Main recursive rendering method.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="966" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="966" bodyend="1066"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1abf534d39bc6df297926cfc45f34e2199" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.render</definition>
+        <argsstring>(self, wireframe=False, twosided=False)</argsstring>
+        <name>render</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>wireframe</type>
+          <defname>wireframe</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>twosided</type>
+          <defname>twosided</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="795" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="795" bodyend="853"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a5ff83c3f49cfb8f5e777307c4dbd7821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.render_axis</definition>
+        <argsstring>(self, transformation=numpy.identity(4, dtype=numpy.float32), label=None, size=0.2, selected=False)</argsstring>
+        <name>render_axis</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>transformation</type>
+          <defname>transformation</defname>
+          <defval>numpy.identity(4, dtype=numpy.float32)</defval>
+        </param>
+        <param>
+          <type>label</type>
+          <defname>label</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="unzip_2ioapi_8h_1a014d89bd76f74ef3a29c8f04b473eb76" kindref="member">size</ref></type>
+          <defname>size</defname>
+          <defval>0.2</defval>
+        </param>
+        <param>
+          <type>selected</type>
+          <defname>selected</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="854" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="858" bodyend="891"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1abf4f01d05f24d404c006615f027b55e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.render_colors</definition>
+        <argsstring>(self)</argsstring>
+        <name>render_colors</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="751" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="751" bodyend="767"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1aec1504f2c88ce4af0d6f696e2d4bf863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.select_node</definition>
+        <argsstring>(self, node)</argsstring>
+        <name>select_node</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>node</type>
+          <defname>node</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1075" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1075" bodyend="1078"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a405b9b67f8ba1f90a2ca213100554106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.set_camera_projection</definition>
+        <argsstring>(self, camera=None)</argsstring>
+        <name>set_camera_projection</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>camera</type>
+          <defname>camera</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="723" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="723" bodyend="750"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1af6a3ef63632b4c57974c39e48bbd32bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.set_overlay_projection</definition>
+        <argsstring>(self)</argsstring>
+        <name>set_overlay_projection</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="715" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="715" bodyend="722"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a124fce639f838f6768c463ac9be3fe52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.set_shaders_v120</definition>
+        <argsstring>(self)</argsstring>
+        <name>set_shaders_v120</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="504" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="504" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1aeb95a320f0a2307ddd65aa77749fbb14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.set_shaders_v130</definition>
+        <argsstring>(self)</argsstring>
+        <name>set_shaders_v130</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="513" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="513" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ab7a6b8875751e21eecdb304948f713c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.switch_from_overlay</definition>
+        <argsstring>(self)</argsstring>
+        <name>switch_from_overlay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1071" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1071" bodyend="1074"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a461a254115f45cdca9bbb7ed764c4668" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.switch_to_overlay</definition>
+        <argsstring>(self)</argsstring>
+        <name>switch_to_overlay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1067" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1067" bodyend="1070"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a2e9919e4064a73c8afbd08c59d84e805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.update_node_select</definition>
+        <argsstring>(self, node)</argsstring>
+        <name>update_node_select</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>node</type>
+          <defname>node</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1079" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1079" bodyend="1087"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a4d60fd4d1b84ebb3f2e710fdee22b636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.update_view_camera</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_view_camera</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1242" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1242" bodyend="1252"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a901e782c61643a87d35626f44b30c9a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.get_rgb_from_colorid</definition>
+        <argsstring>(colorid)</argsstring>
+        <name>get_rgb_from_colorid</name>
+        <param>
+          <type>colorid</type>
+          <defname>colorid</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="620" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="620" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a508f6ecf7b25fe6ec8012b96463c0f7d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.prepare_gl_buffers</definition>
+        <argsstring>(mesh)</argsstring>
+        <name>prepare_gl_buffers</name>
+        <param>
+          <type>mesh</type>
+          <defname>mesh</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="596" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="596" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a13b75f0e5dd75e6faa32d48a1c173154" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.render_camera</definition>
+        <argsstring>(camera, transformation)</argsstring>
+        <name>render_camera</name>
+        <param>
+          <type>camera</type>
+          <defname>camera</defname>
+        </param>
+        <param>
+          <type>transformation</type>
+          <defname>transformation</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="893" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="893" bodyend="950"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1abc6bb4b6b26dcde407ec323e3643fb5f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.render_grid</definition>
+        <argsstring>()</argsstring>
+        <name>render_grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="952" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="952" bodyend="965"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a75fa95a2bfff59249be88a3f9f576c0c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.set_shader_accessors</definition>
+        <argsstring>(uniforms, attributes, shader)</argsstring>
+        <name>set_shader_accessors</name>
+        <param>
+          <type>uniforms</type>
+          <defname>uniforms</defname>
+        </param>
+        <param>
+          <type>attributes</type>
+          <defname>attributes</defname>
+        </param>
+        <param>
+          <type><ref refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a82c28089134e433eda769756721e595f" kindref="member">shader</ref></type>
+          <defname>shader</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="579" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="579" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a700182469e0425b4b6224b389445c0a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def 3d_viewer_py3.PyAssimp3DViewer.showtext</definition>
+        <argsstring>(text, x=0, y=0, z=0, size=20)</argsstring>
+        <name>showtext</name>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="unzip_2ioapi_8h_1a014d89bd76f74ef3a29c8f04b473eb76" kindref="member">size</ref></type>
+          <defname>size</defname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="1258" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="1258" bodyend="1276"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="port/PyAssimp/scripts/3d_viewer_py3.py" line="453" column="1" bodyfile="port/PyAssimp/scripts/3d_viewer_py3.py" bodystart="453" bodyend="1277"/>
+    <listofallmembers>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a8a30a69864bf1fd34f46dd06bdd69ff1" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>__init__</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a2c0a862ce133b8c7da24ac60397d9948" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>base_name</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ab4e800da6472ebb3b14ecb2bdb26654e" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>BASIC_FRAGMENT_SHADER</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a13e203320250302f545681315d6e66a6" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>BASIC_VERTEX_SHADER</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a047d22e26a8e7ee4d1ca1f7261b02c21" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>bb_max</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a6f6f90e16090c8b62476112db0520bfe" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>cameras</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a70c142c01c2fa9dbd220a78816c9a55b" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>colorid2node</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a20d02b6643374d92b70a291fe0a5432c" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>controls_3d</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a09e74524ef660cc1d83592a510ae06de" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>current_cam</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a5a8e5f4251242ce68dc8c55e2f4b2d43" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>current_cam_index</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ad7819b2d8889dd48969a7ea38b24e741" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>currently_selected</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a7bd900fcce6cd58465ba666d11163e40" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>cycle_cameras</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a4166782b11ab5e1ac0a487633093b8d7" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>default_camera</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a9c8f1a23ad6948199fd1319db51d7324" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>FLAT_VERTEX_SHADER</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a9383b5566d6147e6dfe6b6585e3ba0f5" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>flatshader</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ab2d01639ad6bc64969511d0ddd41139f" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>focal_point</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1acea19c3802c2a8da67a0534e7ceb02b3" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>get_color_id</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a7124af9760ea26ebdcd8c9b9cd6da729" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>get_hovered_node</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a901e782c61643a87d35626f44b30c9a2" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>get_rgb_from_colorid</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a5af2dd79d4c33e14a95cedf5c8115407" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>glize</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a90086c64639fab0c20963f741200c308" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>GOOCH_FRAGMENT_SHADER</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ad8138e48c94c5872e1a7f99bd4a1ff84" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>gooch_shader</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ac870a3fa10cdd368e5ad6f7f0188daf4" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>GOOCH_VERTEX_SHADER</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a34fedbbc2e3e438fad1c80c59789977a" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>h</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a4597037e6bf2ad0b5e5b137c71a5add4" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>is_panning</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a866ef2699e3e8394d188799b171ac4c2" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>is_rotating</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ab59df4f338af435a47a37af445f59530" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>is_zooming</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a410c2715ace703cae57319192679ce1a" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>load_model</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ad6cd8512a3af005e0482783a381d9a40" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>loop</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a42e3dd9d687f7b16b007d71f847f2c94" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>meshes</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1aa419cb1e569679dd8a13cd743ef426d7" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>move_selected_node</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a934825c85862b8361c76315511cc4fc1" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>moving</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a7193f00aa83f9eb45cad423bf33d5cb5" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>moving_situation</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a054a18a90426777fed8ed7616ce8777c" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>node2colorid</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a508f6ecf7b25fe6ec8012b96463c0f7d" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>prepare_gl_buffers</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a4819abd313da8c3f4443acc54e20c3f0" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>prepare_shaders</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1accb72b620278725891902523ebc41101" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>process_events</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a418a296697efe2434f05df96f5a471ba" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>process_keystroke</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a560db8d0550ebcbd2f83d0de766708da" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>projection_matrix</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a01185ff940eb5173ccd7b3fa1c56d9bb" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>recursive_render</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1abf534d39bc6df297926cfc45f34e2199" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>render</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a5ff83c3f49cfb8f5e777307c4dbd7821" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>render_axis</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a13b75f0e5dd75e6faa32d48a1c173154" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>render_camera</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1abf4f01d05f24d404c006615f027b55e3" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>render_colors</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1abc6bb4b6b26dcde407ec323e3643fb5f" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>render_grid</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a0ad9744d7accc150d9ece382b8d0407b" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>scene</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a0af3f24e084b84c2f9de59942b44e03c" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>scene_center</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1aec1504f2c88ce4af0d6f696e2d4bf863" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>select_node</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a405b9b67f8ba1f90a2ca213100554106" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>set_camera_projection</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1af6a3ef63632b4c57974c39e48bbd32bc" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>set_overlay_projection</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a75fa95a2bfff59249be88a3f9f576c0c" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>set_shader_accessors</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a124fce639f838f6768c463ac9be3fe52" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>set_shaders_v120</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1aeb95a320f0a2307ddd65aa77749fbb14" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>set_shaders_v130</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a82c28089134e433eda769756721e595f" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>shader</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a700182469e0425b4b6224b389445c0a5" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>showtext</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a995b529c6d009be38bf9d80818d8e6cb" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>silhouette_shader</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a94ac7d07c7e3f2ecb74bdbb228a07ac1" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>SILHOUETTE_VERTEX_SHADER</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ab7a6b8875751e21eecdb304948f713c0" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>switch_from_overlay</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a461a254115f45cdca9bbb7ed764c4668" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>switch_to_overlay</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a2e9919e4064a73c8afbd08c59d84e805" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>update_node_select</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1a4d60fd4d1b84ebb3f2e710fdee22b636" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>update_view_camera</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1af5d1d8cedb76ea80bfd4f2ad56a9a030" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>view_matrix</name></member>
+      <member refid="class3d__viewer__py3_1_1_py_assimp3_d_viewer_1ab6861d5f9b3b8741050796918e5767a7" prot="public" virt="non-virtual"><scope>3d_viewer_py3::PyAssimp3DViewer</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

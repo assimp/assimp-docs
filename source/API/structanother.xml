@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structanother" kind="struct" language="C++" prot="public">
+    <compoundname>another</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structanother_1a396512927e3d3aac8c0527ae7bb41882" prot="public" static="no" mutable="no">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>int another::dummy</definition>
+        <argsstring></argsstring>
+        <name>dummy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/unit/utNoBoostTest.cpp" line="67" column="1" bodyfile="test/unit/utNoBoostTest.cpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="test/unit/utNoBoostTest.cpp" line="66" column="1" bodyfile="test/unit/utNoBoostTest.cpp" bodystart="65" bodyend="68"/>
+    <listofallmembers>
+      <member refid="structanother_1a396512927e3d3aac8c0527ae7bb41882" prot="public" virt="non-virtual"><scope>another</scope><name>dummy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

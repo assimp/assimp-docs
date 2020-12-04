@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_vector_key" kind="struct" language="C++" prot="public">
+    <compoundname>aiVectorKey</compoundname>
+    <includes local="no">anim.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structai_vector_key_1a8fd33dd13a0673c9947af23c37a673bc" prot="public" static="no">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>typedef aiVector3D aiVectorKey::elem_type</definition>
+        <argsstring></argsstring>
+        <name>elem_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="87" column="1" bodyfile="include/assimp/anim.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_vector_key_1ab3c43c166434c7a505083d1929f675bc" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double aiVectorKey::mTime</definition>
+        <argsstring></argsstring>
+        <name>mTime</name>
+        <briefdescription>
+<para>The time of this key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="66" column="1" bodyfile="include/assimp/anim.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_vector_key_1a6f73649028b136a193dac21de35188ad" prot="public" static="no" mutable="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>C_STRUCT aiVector3D aiVectorKey::mValue</definition>
+        <argsstring></argsstring>
+        <name>mValue</name>
+        <briefdescription>
+<para>The value of this key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="69" column="1" bodyfile="include/assimp/anim.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structai_vector_key_1a13d4945623842e3ac76352976bd2fbee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiVectorKey::aiVectorKey</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>aiVectorKey</name>
+        <briefdescription>
+<para>The default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="74" column="1" bodyfile="include/assimp/anim.h" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_vector_key_1ad62bafd6c7c0579adab58712180a9fc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiVectorKey::aiVectorKey</definition>
+        <argsstring>(double time, const aiVector3D &amp;value)</argsstring>
+        <name>aiVectorKey</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construction from a given time and key value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="82" column="1" bodyfile="include/assimp/anim.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_vector_key_1a4a9cf625d338217cf69fad8938c03de3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiVectorKey::operator!=</definition>
+        <argsstring>(const aiVectorKey &amp;rhs) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structai_vector_key" kindref="compound">aiVectorKey</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="93" column="1" bodyfile="include/assimp/anim.h" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_vector_key_1ae6c1e06614c5289f63f1abf831619bc8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiVectorKey::operator&lt;</definition>
+        <argsstring>(const aiVectorKey &amp;rhs) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="structai_vector_key" kindref="compound">aiVectorKey</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="98" column="1" bodyfile="include/assimp/anim.h" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_vector_key_1a05e69e40d3defbcf9de5f0b9fb71d304" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiVectorKey::operator==</definition>
+        <argsstring>(const aiVectorKey &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structai_vector_key" kindref="compound">aiVectorKey</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="90" column="1" bodyfile="include/assimp/anim.h" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_vector_key_1af6195ab46c0eafd7725191820103c809" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool aiVectorKey::operator&gt;</definition>
+        <argsstring>(const aiVectorKey &amp;rhs) const</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="structai_vector_key" kindref="compound">aiVectorKey</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="101" column="1" bodyfile="include/assimp/anim.h" bodystart="101" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A time-value pair specifying a certain 3D vector for the given time. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="248">
+        <label>aiVectorKey</label>
+        <link refid="structai_vector_key"/>
+        <childnode refid="249" relation="usage">
+          <edgelabel>mValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="249">
+        <label>aiVector3t&lt; TReal &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/anim.h" line="64" column="1" bodyfile="include/assimp/anim.h" bodystart="64" bodyend="105"/>
+    <listofallmembers>
+      <member refid="structai_vector_key_1a13d4945623842e3ac76352976bd2fbee" prot="public" virt="non-virtual"><scope>aiVectorKey</scope><name>aiVectorKey</name></member>
+      <member refid="structai_vector_key_1ad62bafd6c7c0579adab58712180a9fc3" prot="public" virt="non-virtual"><scope>aiVectorKey</scope><name>aiVectorKey</name></member>
+      <member refid="structai_vector_key_1a8fd33dd13a0673c9947af23c37a673bc" prot="public" virt="non-virtual"><scope>aiVectorKey</scope><name>elem_type</name></member>
+      <member refid="structai_vector_key_1ab3c43c166434c7a505083d1929f675bc" prot="public" virt="non-virtual"><scope>aiVectorKey</scope><name>mTime</name></member>
+      <member refid="structai_vector_key_1a6f73649028b136a193dac21de35188ad" prot="public" virt="non-virtual"><scope>aiVectorKey</scope><name>mValue</name></member>
+      <member refid="structai_vector_key_1a4a9cf625d338217cf69fad8938c03de3" prot="public" virt="non-virtual"><scope>aiVectorKey</scope><name>operator!=</name></member>
+      <member refid="structai_vector_key_1ae6c1e06614c5289f63f1abf831619bc8" prot="public" virt="non-virtual"><scope>aiVectorKey</scope><name>operator&lt;</name></member>
+      <member refid="structai_vector_key_1a05e69e40d3defbcf9de5f0b9fb71d304" prot="public" virt="non-virtual"><scope>aiVectorKey</scope><name>operator==</name></member>
+      <member refid="structai_vector_key_1af6195ab46c0eafd7725191820103c809" prot="public" virt="non-virtual"><scope>aiVectorKey</scope><name>operator&gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

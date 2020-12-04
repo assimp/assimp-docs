@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_assimp_1_1_a_m_f_importer_1_1_s_complex_face" kind="struct" language="C++" prot="private">
+    <compoundname>Assimp::AMFImporter::SComplexFace</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_complex_face_1aef187e83f7738cc6881c03e2a60ef9a2" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_m_f_color" kindref="compound">AMFColor</ref> *</type>
+        <definition>const AMFColor* Assimp::AMFImporter::SComplexFace::Color</definition>
+        <argsstring></argsstring>
+        <name>Color</name>
+        <briefdescription>
+<para>Face color. Equal to nullptr if color is not set for the face. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="138" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_complex_face_1a1599d69d7189036b8b4279e4d8bb67b1" prot="public" static="no" mutable="no">
+        <type><ref refid="structai_face" kindref="compound">aiFace</ref></type>
+        <definition>aiFace Assimp::AMFImporter::SComplexFace::Face</definition>
+        <argsstring></argsstring>
+        <name>Face</name>
+        <briefdescription>
+<para>Face vertices. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="137" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_a_m_f_importer_1_1_s_complex_face_1ac69ffc8d02ff4afe16a35670030939b4" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_a_m_f_tex_map" kindref="compound">AMFTexMap</ref> *</type>
+        <definition>const AMFTexMap* Assimp::AMFImporter::SComplexFace::TexMap</definition>
+        <argsstring></argsstring>
+        <name>TexMap</name>
+        <briefdescription>
+<para>Face texture mapping data. Equal to nullptr if texture mapping is not set for the face. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="139" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data type for post-processing step. Contain face data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="370">
+        <label>aiVector3t&lt; ai_real &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+      <node id="367">
+        <label>Assimp::AMFImporter::SComplexFace</label>
+        <childnode refid="368" relation="usage">
+          <edgelabel>TexMap</edgelabel>
+        </childnode>
+        <childnode refid="371" relation="usage">
+          <edgelabel>Face</edgelabel>
+        </childnode>
+        <childnode refid="372" relation="usage">
+          <edgelabel>Color</edgelabel>
+        </childnode>
+      </node>
+      <node id="372">
+        <label>AMFColor</label>
+        <link refid="struct_a_m_f_color"/>
+        <childnode refid="369" relation="public-inheritance">
+        </childnode>
+        <childnode refid="373" relation="usage">
+          <edgelabel>Color</edgelabel>
+        </childnode>
+      </node>
+      <node id="369">
+        <label>AMFNodeElementBase</label>
+        <link refid="class_a_m_f_node_element_base"/>
+        <childnode refid="369" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="373">
+        <label>aiColor4t&lt; ai_real &gt;</label>
+        <link refid="classai_color4t"/>
+      </node>
+      <node id="368">
+        <label>AMFTexMap</label>
+        <link refid="struct_a_m_f_tex_map"/>
+        <childnode refid="369" relation="public-inheritance">
+        </childnode>
+        <childnode refid="370" relation="usage">
+          <edgelabel>TextureCoordinate</edgelabel>
+        </childnode>
+      </node>
+      <node id="371">
+        <label>aiFace</label>
+        <link refid="structai_face"/>
+      </node>
+    </collaborationgraph>
+    <location file="code/AssetLib/AMF/AMFImporter.hpp" line="136" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="136" bodyend="140"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_complex_face_1aef187e83f7738cc6881c03e2a60ef9a2" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SComplexFace</scope><name>Color</name></member>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_complex_face_1a1599d69d7189036b8b4279e4d8bb67b1" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SComplexFace</scope><name>Face</name></member>
+      <member refid="struct_assimp_1_1_a_m_f_importer_1_1_s_complex_face_1ac69ffc8d02ff4afe16a35670030939b4" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter::SComplexFace</scope><name>TexMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

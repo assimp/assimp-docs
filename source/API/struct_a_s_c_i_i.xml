@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_a_s_c_i_i" kind="struct" language="C++" prot="public">
+    <compoundname>ASCII</compoundname>
+    <includes local="no">fwd.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename CharType</type>
+        <defval>char</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_a_s_c_i_i_1a81d8ec01d94ef8b81da7851d968b3075" prot="public" static="no">
+        <name>@44</name>
+        <enumvalue id="struct_a_s_c_i_i_1a81d8ec01d94ef8b81da7851d968b3075a672ec36bd3404c3050a9111a934cbe00" prot="public">
+          <name>supportUnicode</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/rapidjson/include/rapidjson/encodings.h" line="545" column="1" bodyfile="contrib/rapidjson/include/rapidjson/encodings.h" bodystart="545" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="typedef" id="struct_a_s_c_i_i_1a1baf6e7914f165be952c30db664cefb4" prot="public" static="no">
+        <type>CharType</type>
+        <definition>typedef CharType ASCII&lt; CharType &gt;::Ch</definition>
+        <argsstring></argsstring>
+        <name>Ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/rapidjson/include/rapidjson/encodings.h" line="543" column="1" bodyfile="contrib/rapidjson/include/rapidjson/encodings.h" bodystart="543" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_a_s_c_i_i_1a44844bbfd0a4fc282993fd72f3f58eee" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool ASCII&lt; CharType &gt;::Decode</definition>
+        <argsstring>(InputStream &amp;is, unsigned *codepoint)</argsstring>
+        <name>Decode</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>unsigned *</type>
+          <declname>codepoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/rapidjson/include/rapidjson/encodings.h" line="560" column="1" bodyfile="contrib/rapidjson/include/rapidjson/encodings.h" bodystart="560" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_a_s_c_i_i_1af56b1605fe233c54693facc7de457f72" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename OutputStream</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void ASCII&lt; CharType &gt;::Encode</definition>
+        <argsstring>(OutputStream &amp;os, unsigned codepoint)</argsstring>
+        <name>Encode</name>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>codepoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/rapidjson/include/rapidjson/encodings.h" line="548" column="1" bodyfile="contrib/rapidjson/include/rapidjson/encodings.h" bodystart="548" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_a_s_c_i_i_1afeb90d6f04771067b83b35a0f366af46" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename OutputStream</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void ASCII&lt; CharType &gt;::EncodeUnsafe</definition>
+        <argsstring>(OutputStream &amp;os, unsigned codepoint)</argsstring>
+        <name>EncodeUnsafe</name>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>codepoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/rapidjson/include/rapidjson/encodings.h" line="554" column="1" bodyfile="contrib/rapidjson/include/rapidjson/encodings.h" bodystart="554" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_a_s_c_i_i_1a218b244b9cd961ea6c5775a734cec20e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename OutputByteStream</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void ASCII&lt; CharType &gt;::Put</definition>
+        <argsstring>(OutputByteStream &amp;os, Ch c)</argsstring>
+        <name>Put</name>
+        <param>
+          <type>OutputByteStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_s_c_i_i_1a1baf6e7914f165be952c30db664cefb4" kindref="member">Ch</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/rapidjson/include/rapidjson/encodings.h" line="593" column="1" bodyfile="contrib/rapidjson/include/rapidjson/encodings.h" bodystart="593" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_a_s_c_i_i_1a3036dc1d604039c3224ca0a890ee0134" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename OutputByteStream</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void ASCII&lt; CharType &gt;::PutBOM</definition>
+        <argsstring>(OutputByteStream &amp;os)</argsstring>
+        <name>PutBOM</name>
+        <param>
+          <type>OutputByteStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/rapidjson/include/rapidjson/encodings.h" line="587" column="1" bodyfile="contrib/rapidjson/include/rapidjson/encodings.h" bodystart="587" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_a_s_c_i_i_1ab1b9fdf0a5c05658d62fded913d923a3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputByteStream</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_a_s_c_i_i_1a1baf6e7914f165be952c30db664cefb4" kindref="member">Ch</ref></type>
+        <definition>static Ch ASCII&lt; CharType &gt;::Take</definition>
+        <argsstring>(InputByteStream &amp;is)</argsstring>
+        <name>Take</name>
+        <param>
+          <type>InputByteStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/rapidjson/include/rapidjson/encodings.h" line="581" column="1" bodyfile="contrib/rapidjson/include/rapidjson/encodings.h" bodystart="581" bodyend="584"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_a_s_c_i_i_1aad78500eb98f45582a4df020e3fb2278" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputByteStream</type>
+          </param>
+        </templateparamlist>
+        <type>CharType</type>
+        <definition>static CharType ASCII&lt; CharType &gt;::TakeBOM</definition>
+        <argsstring>(InputByteStream &amp;is)</argsstring>
+        <name>TakeBOM</name>
+        <param>
+          <type>InputByteStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/rapidjson/include/rapidjson/encodings.h" line="574" column="1" bodyfile="contrib/rapidjson/include/rapidjson/encodings.h" bodystart="574" bodyend="578"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_a_s_c_i_i_1a398680588a09e6ce9b56e32195047c78" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename OutputStream</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool ASCII&lt; CharType &gt;::Validate</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>Validate</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/rapidjson/include/rapidjson/encodings.h" line="567" column="1" bodyfile="contrib/rapidjson/include/rapidjson/encodings.h" bodystart="567" bodyend="571"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="struct_a_s_c_i_i" kindref="compound">ASCII</ref> encoding. </para>    </briefdescription>
+    <detaileddescription>
+<para><ulink url="http://en.wikipedia.org/wiki/ASCII">http://en.wikipedia.org/wiki/ASCII</ulink> <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>CharType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Code unit for storing 7-bit <ref refid="struct_a_s_c_i_i" kindref="compound">ASCII</ref> data. Default is char. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>implements Encoding concept </para></simplesect>
+</para>    </detaileddescription>
+    <location file="contrib/rapidjson/include/rapidjson/encodings.h" line="542" column="1" bodyfile="contrib/rapidjson/include/rapidjson/encodings.h" bodystart="542" bodyend="597"/>
+    <listofallmembers>
+      <member refid="struct_a_s_c_i_i_1a1baf6e7914f165be952c30db664cefb4" prot="public" virt="non-virtual"><scope>ASCII</scope><name>Ch</name></member>
+      <member refid="struct_a_s_c_i_i_1a44844bbfd0a4fc282993fd72f3f58eee" prot="public" virt="non-virtual"><scope>ASCII</scope><name>Decode</name></member>
+      <member refid="struct_a_s_c_i_i_1af56b1605fe233c54693facc7de457f72" prot="public" virt="non-virtual"><scope>ASCII</scope><name>Encode</name></member>
+      <member refid="struct_a_s_c_i_i_1afeb90d6f04771067b83b35a0f366af46" prot="public" virt="non-virtual"><scope>ASCII</scope><name>EncodeUnsafe</name></member>
+      <member refid="struct_a_s_c_i_i_1a218b244b9cd961ea6c5775a734cec20e" prot="public" virt="non-virtual"><scope>ASCII</scope><name>Put</name></member>
+      <member refid="struct_a_s_c_i_i_1a3036dc1d604039c3224ca0a890ee0134" prot="public" virt="non-virtual"><scope>ASCII</scope><name>PutBOM</name></member>
+      <member refid="struct_a_s_c_i_i_1a81d8ec01d94ef8b81da7851d968b3075a672ec36bd3404c3050a9111a934cbe00" prot="public" virt="non-virtual"><scope>ASCII</scope><name>supportUnicode</name></member>
+      <member refid="struct_a_s_c_i_i_1ab1b9fdf0a5c05658d62fded913d923a3" prot="public" virt="non-virtual"><scope>ASCII</scope><name>Take</name></member>
+      <member refid="struct_a_s_c_i_i_1aad78500eb98f45582a4df020e3fb2278" prot="public" virt="non-virtual"><scope>ASCII</scope><name>TakeBOM</name></member>
+      <member refid="struct_a_s_c_i_i_1a398680588a09e6ce9b56e32195047c78" prot="public" virt="non-virtual"><scope>ASCII</scope><name>Validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

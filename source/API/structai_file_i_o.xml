@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structai_file_i_o" kind="struct" language="C++" prot="public">
+    <compoundname>aiFileIO</compoundname>
+    <includes local="no">cfileio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structai_file_i_o_1a7ec702672712b5a02dc49cb17f980a14" prot="public" static="no" mutable="no">
+        <type><ref refid="cfileio_8h_1ab6e7f26b63f2d1ed9655e97bd4ebd38c" kindref="member">aiFileCloseProc</ref></type>
+        <definition>aiFileCloseProc aiFileIO::CloseProc</definition>
+        <argsstring></argsstring>
+        <name>CloseProc</name>
+        <briefdescription>
+<para>Function used to close an existing file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="93" column="1" bodyfile="include/assimp/cfileio.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_file_i_o_1a819d9c7823039294125068d06949a6df" prot="public" static="no" mutable="no">
+        <type><ref refid="cfileio_8h_1ad61b536884b9b6b7e8673edb5539d37c" kindref="member">aiFileOpenProc</ref></type>
+        <definition>aiFileOpenProc aiFileIO::OpenProc</definition>
+        <argsstring></argsstring>
+        <name>OpenProc</name>
+        <briefdescription>
+<para>Function used to open a new file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="89" column="1" bodyfile="include/assimp/cfileio.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structai_file_i_o_1a9c62b7f3d70fbb2f41e33ad0b9933139" prot="public" static="no" mutable="no">
+        <type><ref refid="cfileio_8h_1a176132d0cd51c96302089ff3f8a8ee1c" kindref="member">aiUserData</ref></type>
+        <definition>aiUserData aiFileIO::UserData</definition>
+        <argsstring></argsstring>
+        <name>UserData</name>
+        <briefdescription>
+<para>User-defined, opaque data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="96" column="1" bodyfile="include/assimp/cfileio.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>C-API: File system callbacks. </para>    </briefdescription>
+    <detaileddescription>
+<para>Provided are functions to open and close files. Supply a custom structure to the import function. If you don&apos;t, a default implementation is used. Use custom file systems to enable reading from other sources, such as ZIPs or memory locations. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="122">
+        <label>aiFile</label>
+        <link refid="structai_file"/>
+        <childnode refid="122" relation="usage">
+          <edgelabel>SeekProc</edgelabel>
+          <edgelabel>FlushProc</edgelabel>
+        </childnode>
+      </node>
+      <node id="121">
+        <label>aiFileIO</label>
+        <link refid="structai_file_i_o"/>
+        <childnode refid="121" relation="usage">
+          <edgelabel>CloseProc</edgelabel>
+        </childnode>
+        <childnode refid="122" relation="usage">
+          <edgelabel>OpenProc</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/cfileio.h" line="86" column="1" bodyfile="include/assimp/cfileio.h" bodystart="85" bodyend="97"/>
+    <listofallmembers>
+      <member refid="structai_file_i_o_1a7ec702672712b5a02dc49cb17f980a14" prot="public" virt="non-virtual"><scope>aiFileIO</scope><name>CloseProc</name></member>
+      <member refid="structai_file_i_o_1a819d9c7823039294125068d06949a6df" prot="public" virt="non-virtual"><scope>aiFileIO</scope><name>OpenProc</name></member>
+      <member refid="structai_file_i_o_1a9c62b7f3d70fbb2f41e33ad0b9933139" prot="public" virt="non-virtual"><scope>aiFileIO</scope><name>UserData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
