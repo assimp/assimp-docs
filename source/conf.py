@@ -12,7 +12,7 @@
 #
 import os
 import sys
-sys.path.append( "/home/me/docproj/ext/breathe/" )
+
 
 # You can specify multiple suffix as a list of string: ['.rst', '.md']
 source_suffix = '.rst'
@@ -28,8 +28,7 @@ copyright = '2020, Kim Kulling'
 author = 'Kim Kulling'
 
 # The full version, including alpha/beta/rc tags
-release = 'April 2020'
-
+release = 'December 2020'
 
 # -- General configuration ---------------------------------------------------
 
