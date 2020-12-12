@@ -54,7 +54,7 @@ that it has not been implemented yet and some (most ...) formats lack proper spe
 * **Stanford Ply** ( .ply )
 * **TrueSpace** ( .cob, .scn )
 
-See the :ref:`_ai_importer_notes` for information, what a specific importer can do and what not.
+See the :ref:`ai_importer_notes` for information, what a specific importer can do and what not.
 Note that although this paper claims to be the official documentation,
 `README.md <https://github.com/assimp/assimp/blob/master/Readme.md>`_
 is usually the most up-to-date list of file formats supported by the library.
