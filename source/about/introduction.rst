@@ -60,12 +60,11 @@ Note that although this paper claims to be the official documentation,
 is usually the most up-to-date list of file formats supported by the library.
 
 Assimp is independent of the Operating System by nature, providing a C++ interface for easy integration
-with game engines and a C interface to allow bindings to other programming languages. At the moment the library runs
-on any little-endian platform including **X86/Windows/Linux/Mac** and **X64/Windows/Linux/Mac**. Special attention
+with game engines and a C-based interface to allow bindings to other programming languages. At the moment the library 
+runs on any little-endian platform including **X86/Windows/Linux/Mac** and **X64/Windows/Linux/Mac**. Special attention
 was paid to keep the library as free as possible from dependencies.
 
-Big endian systems such as PPC-Macs or PPC-Linux systems are not officially supported at the moment. However, most
-formats handle the required endian conversion correctly, so large parts of the library should work.
+Big-endian systems like PPC-based Macs ( if you still have one) or PPC-Linux systems are supported as well.
 
 The assimp linker library and viewer application are provided under the BSD 3-clause license. This basically means
 that you are free to use it in open- or closed-source projects, for commercial or non-commercial purposes as you like
