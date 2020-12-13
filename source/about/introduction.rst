@@ -1,3 +1,5 @@
+.. image:: http://assimp.org/images/splash.png
+
 .. _ai_introduction:
 
 Introduction
