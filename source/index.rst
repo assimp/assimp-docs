@@ -27,14 +27,14 @@ The Asset-Importer-Lib Documentation
     :caption: Develoer Guide
     :name: sec-developer
 
-    deverloper/developer.rst
+    deverloper/developer
     
 .. toctree::
     :maxdepth: 1
     :caption: API-Reference
     :name: sec-api
     
-    API/API-Documentation.rst
+    API/API-Documentation
 
 .. Indices and tables
 .. ==================
