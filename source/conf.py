@@ -39,7 +39,8 @@ extensions = [
   "breathe"
 ]
 
-breathe_projects = { "myproject": "API/" }
+breathe_projects = { "AssetImporterLib": "API/" }
+breathe_default_project = "AssetImporterLib"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
