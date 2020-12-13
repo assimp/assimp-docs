@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. image:: http://assimp.org/images/splash.png
+
 The Asset-Importer-Lib Documentation
 =====================================
-
-.. image:: http://assimp.org/images/splash.png
 
 .. toctree::
    :maxdepth: 1
