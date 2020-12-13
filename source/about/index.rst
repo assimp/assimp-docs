@@ -1,5 +1,3 @@
-.. image:: http://assimp.org/images/splash.png
-
 About
 =====
 
