@@ -112,7 +112,7 @@ Data Structures
 
 When the importer successfully completed its job, the imported data is returned in an aiScene structure. This is the root
 point from where you can access all the various data types that a scene/model file can possibly contain. The
-@link data Data Structures page @endlink describes how to interpret this data.
+:ref:'_ai_data' describes how to interpret this data.
 
 .. _ai_ext:
 
