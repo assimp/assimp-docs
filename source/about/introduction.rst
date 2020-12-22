@@ -132,7 +132,7 @@ Support & Feedback
 
 If you have any questions/comments/suggestions/bug reports you're welcome to post them in our
 `Github-Issue-Tracker <https://github.com/assimp/assimp/issues>`_. Alternatively there's
-a mailing list, `assimp-discussions <https://sourceforge.net/mailarchive/forum.php?forum_name=assimp-discussions>`_
+a mailing list, `assimp-discussions <https://github.com/assimp/assimp/discussions>`_
 .
 
 .. _ai_install_prebuilt:
