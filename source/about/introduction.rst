@@ -82,7 +82,7 @@ Installation
 ------------
 
 assimp can be used in two ways: linking against the pre-built libraries or building the library on your own. The former
-option is the easiest, but the assimp distribution contains pre-built libraries only for Visual C++ 2013, 2015 and 2017. 
+option is the easiest, but the assimp distribution contains pre-built libraries only for Visual C++ 2019. 
 For other compilers you'll have to build assimp for yourself. Which is hopefully as hassle-free as the other way, but 
 needs a bit more work. Both ways are described at the @link install Installation page. @endlink
 If you want to use assimp on Ubuntu you can install it via the following command:
@@ -112,7 +112,7 @@ Data Structures
 
 When the importer successfully completed its job, the imported data is returned in an aiScene structure. This is the root
 point from where you can access all the various data types that a scene/model file can possibly contain. The
-:ref:`_ai_data`. describes how to interpret this data.
+:ref:`_ai_data` describes how to interpret this data.
 
 .. _ai_ext:
 
