@@ -5,7 +5,7 @@
 Introduction
 ============
 
-The Asset-Importer-Lib ( in short assimp ) is a library to load and process geometric scenes from various 3d-data-formats. It 
+The Asset-Importer-Lib ( in short assimp ) is a library to load and process geometric scenes from various 3D-Dataformats. It 
 is mostly tailored at typical game scenarios by supporting a node hierarchy, static or skinned meshes, materials, bone animations 
 and potential texture data. But also some 3D-printing- and CAD-format are supported.
 The library is *not* designed for speed, it is primarily useful for importing assets from various 
@@ -73,7 +73,7 @@ that you are free to use it in open- or closed-source projects, for commercial o
 as long as you retain the license information and take own responsibility for what you do with it. For details see
 the LICENSE file.
 
-You can find test models for almost all formats in the <assimp_root>/test/models directory. Beware, they're *free*,
+You can find test models for almost all formats in the **<assimp_root>/test/models** directory. Beware, they're *free*,
 but not all of them are **open-source**. If there's an accompagning **'<file>\source.txt'** file don't forget to read it.
 
 .. _ai_main_install:
@@ -140,7 +140,7 @@ a mailing list, `assimp-discussions <https://github.com/assimp/assimp/discussion
 Using the pre-built libraries with Visual-Studio
 ------------------------------------------------
 
-If you develop at Visual Studio 2013, 2015, 2017 or 2019, you can simply use the pre-built linker libraries provided in the distribution.
+If you develop at Visual Studio 2015, 2017 or 2019, you can simply use the pre-built linker libraries provided in the distribution.
 Extract all files to a place of your choice. A directory called "assimp" will be created there. Add the assimp/include path
 to your include paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Include files)
 and the assimp/lib/&lt;Compiler&gt; path to your linker paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Library files).
@@ -167,7 +167,7 @@ If done correctly you should now be able to compile, link, run and use the appli
 Build on all platforms using vcpkg
 ----------------------------------
 
-You can download and install assimp using the [vcpkg](https://github.com/Microsoft/vcpkg/) dependency manager:
+You can download and install assimp using the `vcpkg <https://github.com/Microsoft/vcpkg/>`_ dependency manager:
 ::
 
     bash
@@ -177,7 +177,7 @@ You can download and install assimp using the [vcpkg](https://github.com/Microso
     ./vcpkg integrate install
     vcpkg install assimp
 
-The assimp port in vcpkg is kept up to date by Microsoft team members and community contributors. If the version is out of date, please [create an issue or pull request](https://github.com/Microsoft/vcpkg) on the vcpkg repository.
+The assimp port in vcpkg is kept up to date by Microsoft team members and community contributors. If the version is out of date, please <reate an issue or pull request on the `vcpkg repository <https://github.com/Microsoft/vcpkg>`_ .
 
 
 .. _ai_install_own:
@@ -224,7 +224,7 @@ To use this module please provide following cmake defines:
     
 "SOME_PATH" is a path to your cmake android toolchain script.
 
-The build script for this port is based on [android-cmake](https://github.com/taka-no-me/android-cmake).  
+The build script for this port is based on `Android-CMake <https://github.com/taka-no-me/android-cmake>`_.  
 See its documentation for more Android-specific cmake options (e.g. -DANDROID_ABI for the target ABI).
 
 Code
@@ -248,5 +248,5 @@ The Assimp-package can be built as DLL. You just need to run the default cmake r
 Assimp static lib
 -----------------
 
-The Assimp-package can be build as a static library as well. Do do so just set the configuration variable <b>BUILD_SHARED_LIBS</b>
+The Assimp-package can be build as a static library as well. Do do so just set the configuration variable **BUILD_SHARED_LIBS**
 to off during the cmake run.
