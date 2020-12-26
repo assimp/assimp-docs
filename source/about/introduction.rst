@@ -122,7 +122,7 @@ Extending the library
 There are many 3d file formats in the world, and we're happy to support as many as possible. If you need support for
 a particular file format, why not implement it yourself and add it to the library? Writing importer plugins for
 assimp is considerably easy, as the whole postprocessing infrastructure is available and does much of the work for you.
-See the @link extend Extending the library @endlink page for more information.
+See the :ref:`ai_extend` extend Extending the library @endlink page for more information.
 
 
 .. _ai_main_support:
