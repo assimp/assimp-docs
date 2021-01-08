@@ -1,3 +1,5 @@
+.. image:: https://assimp.org/images/splash.png
+
 API
 ===
 
