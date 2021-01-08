@@ -23,6 +23,7 @@ that it has not been implemented yet and some (most ...) formats lack proper spe
 * **3D Studio Max 3DS** ( .3ds )
 * **3D Studio Max ASE** ( .ase )
 * **Wavefront Object** ( .obj ) 
+* **glFT/glFT2.0** ( .glFT )
 * **Stanford Polygon Library** ( .ply )
 * **AutoCAD DXF** ( .dxf )
 * **IFC-STEP** ( .ifc )
