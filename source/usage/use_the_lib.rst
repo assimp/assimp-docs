@@ -1,4 +1,4 @@
-.. image:: http://assimp.org/images/splash.png
+.. image:: https://assimp.org/images/splash.png
 
 .. _ai_access_cpp:
 
@@ -8,7 +8,7 @@ Importing Data
 Access by C++ class interface
 -----------------------------
 
-The assimp library can be accessed by both a class or flat function interface. The C++ class
+The Asset-Importer-Lib can be accessed by both a class or flat function interface. The C++ class
 interface is the preferred way of interaction: you create an instance of class Assimp::Importer,
 maybe adjust some settings of it and then call Assimp::Importer::ReadFile(). The class will
 read the files and process its data, handing back the imported data as a pointer to an aiScene
