@@ -1,4 +1,4 @@
-.. image:: http://assimp.org/images/splash.png
+.. image:: https://assimp.org/images/splash.png
 
 .. _ai_introduction:
 
