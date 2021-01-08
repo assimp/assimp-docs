@@ -1,3 +1,5 @@
+.. image:: http://assimp.org/images/splash.png
+
 .. _developer_guide:
 
 The Developer Guide
