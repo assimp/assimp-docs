@@ -83,6 +83,7 @@ Installation
 ------------
 
 The Assimp-Lib can be used in two ways:
+
 * Linking against the pre-built libraries 
 * Building the library on your own via cmake.
 
