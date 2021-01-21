@@ -13,7 +13,7 @@ sources once and storing it in a engine-specific format for easy and fast every-
 various post processing steps to the imported data such as conversion to indexed meshes, calculation of normals or 
 tangents/bitangents or conversion from right-handed to left-handed coordinate systems.
 
-assimp currently supports the following file formats (note that some loaders lack some features of their formats because
+The Assimp-Lib currently supports the following file formats (note that some loaders lack some features of their formats because
 some file formats contain data not supported by assimp, some stuff would require so much conversion work
 that it has not been implemented yet and some (most ...) formats lack proper specifications):
 
@@ -82,18 +82,11 @@ but not all of them are **open-source**. If there's an accompagning **'<file>\so
 Installation
 ------------
 
-assimp can be used in two ways: linking against the pre-built libraries or building the library on your own. The former
-option is the easiest, but the assimp distribution contains pre-built libraries only for Visual C++ 2019. 
-For other compilers you'll have to build assimp for yourself. Which is hopefully as hassle-free as the other way, but 
-needs a bit more work. Both ways are described at the @link install Installation page. @endlink
-If you want to use assimp on Ubuntu you can install it via the following command:
+The Assimp-Lib can be used in two ways:
+* Linking against the pre-built libraries 
+* Building the library on your own via cmake.
 
-::
-
-    sudo apt-get install assimp
-
-If you want to use the python-assimp-port just follow these instructions: 
-`PyAssimp Doc <https://github.com/assimp/assimp/tree/master/port/PyAssimp>`_
+Both ways are descriped at `_Build instructions <https://github.com/assimp/assimp/blob/master/Build.md>`_
 
 .. _ai_main_usage:
 
