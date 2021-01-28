@@ -51,7 +51,8 @@ results and then simply let it go out of scope.
       return true;
     }
 
-What exactly is read from the files and how you interpret it is described at the @ref data page. @endlink The post processing steps that the assimp library can apply to the
+What exactly is read from the files and how you interpret it is described at the  :ref:`ai_data`.
+The post processing steps that the assimp library can apply to the
 imported data are listed at #aiPostProcessSteps. See the @ref pp Post processing page for more details.
 
 Note that the aiScene data structure returned is declared 'const'. Yes, you can get rid of
