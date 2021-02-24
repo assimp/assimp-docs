@@ -10,8 +10,12 @@ Access by C++ class interface
 
 The Asset-Importer-Lib can be accessed by both a class or flat function interface. The C++ class
 interface is the preferred way of interaction: you create an instance of class Assimp::Importer,
-maybe adjust some settings of it and then call Assimp::Importer::ReadFile(). The class will
-read the files and process its data, handing back the imported data as a pointer to an aiScene
+maybe adjust some settings of it and then just call 
+::
+
+    Assimp::Importer::ReadFile(). 
+    
+The class will read the files and process its data, handing back the imported data as a pointer to an aiScene
 to you. You can now extract the data you need from the file. The importer manages all the resources
 for itsself. If the importer is destroyed, all the data that was created/read by it will be
 destroyed, too. So the easiest way to use the Importer is to create an instance locally, use its
