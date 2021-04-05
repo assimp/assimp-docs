@@ -1018,6 +1018,10 @@ You can get assigned shader sources by using the following material keys:
 Animation Overview
 ==================
 
+<a href="http://ogldev.atspace.co.uk/www/tutorial38/tutorial38.html">This external tutorial</a>
+has working code to get started implementing animations using bone matrix array in the vertex shader.
+(If using glm OpenGL math library, cross-reference with <a href="http://www.xphere.me/2019/05/bones-animation-with-openglassimpglm/">this page</a>
+which has useful tips on converting between assimp and glm objects)
 
 .. _ai_Transformations:
 
