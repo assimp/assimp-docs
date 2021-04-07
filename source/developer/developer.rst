@@ -44,7 +44,7 @@ Wrap the same guard around your .cpp!
 * Implement **Assimp::BaseImporter::GetExtensionList()** : here you have to add the provided extensions (for the Wavefront-Files add .obj for instance).
 * For error handling, throw a dynamic allocated **ImportErrorException** (see Appendix A) for critical errors, and log errors, warnings, infos and debuginfos
   with **DefaultLogger::get()->[error, warn, debug, info]**.
-* Here an example:
+* A simple example:
 
 ::
 
