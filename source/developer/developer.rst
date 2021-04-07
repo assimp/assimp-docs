@@ -15,10 +15,8 @@ Extending the Library
 General
 -------
 
-Or - how to write your own loaders. It's easy. You just need to implement the #Assimp::BaseImporter class,
+In this chapter you will learn how to write your own importers. You just need to implement the #Assimp::BaseImporter class,
 which defines a few abstract methods, register your loader, test it carefully and provide test models for it.
-
-OK, that sounds too easy :-). The whole procedure for a new loader merely looks like this:
 
 * Create a header (*FormatNameImporter.h*) and a unit (*FormatNameImporter.cpp*) in the *<root>/code/AssetLib/* directory
 * Add them to the following workspaces: vc8 and vc9 (the files are in the workspaces directory), CMAKE (code/CMakeLists.txt, create a new source group for your importer and put them also to ADD_LIBRARY( assimp SHARED))
@@ -41,8 +39,9 @@ Wrap the same guard around your .cpp!
 
     DefaultLogger::create("AssimpLog.txt",Logger::VERBOSE)
     
-* Implement the Assimp::BaseImporter::CanRead(), Assimp::BaseImporter::InternReadFile() and Assimp::BaseImporter::GetExtensionList().
-  Just copy'n'paste the template from Appendix A and adapt it for your needs.
+* Implement the *Assimp::BaseImporter::CanRead()* : here the format detection will be perfoormed. You can detect the format by its extension or by parsing some token of the file content
+* Implement Assimp::BaseImporter::InternReadFile()* :
+* Implement *Assimp::BaseImporter::GetExtensionList()* : here you have to add the provided extensions (for the Wavefront-Files add .obj for instance).
 * For error handling, throw a dynamic allocated ImportErrorException (see Appendix A) for critical errors, and log errors, warnings, infos and debuginfos
   with DefaultLogger::get()->[error, warn, debug, info].
 * Make sure that your loader compiles against all build configurations on all supported platforms. You can use our CI-build to check several platforms 
