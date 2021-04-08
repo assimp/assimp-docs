@@ -1,7 +1,9 @@
 .. image:: https://assimp.org/images/splash.png
 
-API
-===
+
+=====================
+The API-Documentation
+=====================
 
 .. doxygenstruct:: classai_color4t
       :members:
