@@ -2,6 +2,10 @@
 
 .. _ai_access_cpp:
 
+==============================
+Working with Asset-ImporterLib
+==============================
+
 Importing Data
 ==============
 
@@ -275,6 +279,7 @@ In the verbose level very fine-grained debug messages will be logged, too. Note 
 kind kind of logging might decrease import performance.
 
 .. _ai_data:
+
 Exporting models
 ================
 
