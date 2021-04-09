@@ -3,7 +3,7 @@
 .. _ai_introduction:
 
 Introduction
-============
+------------
 
 The Asset-Importer-Lib (in short assimp) is a library to load and process geometric scenes from various 3D-Dataformats. It 
 is mostly tailored at typical game scenarios by supporting a node hierarchy, static or skinned meshes, materials, bone animations 
