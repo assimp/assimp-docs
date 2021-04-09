@@ -1,3 +1,5 @@
+.. image:: https://assimp.org/images/splash.png
+
 .. _ai_main_install:
 
 Installation
