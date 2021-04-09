@@ -6,6 +6,7 @@ Introduction
    :name: toc-about
 
    Introduction
+   Installation
  
 .. history
 .. authors
