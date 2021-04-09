@@ -1,5 +1,5 @@
-Introduction
-============
+General
+=======
 
 .. toctree::
    :maxdepth: 1
