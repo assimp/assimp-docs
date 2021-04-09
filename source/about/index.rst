@@ -1,11 +1,11 @@
-About
-=====
+Introduction
+============
 
 .. toctree::
    :maxdepth: 1
    :name: toc-about
 
-   introduction
+   Introduction
  
 .. history
 .. authors
