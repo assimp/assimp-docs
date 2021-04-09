@@ -16,7 +16,7 @@ The Asset-Importer-Lib Documentation
    about/index
    about/Introduction
    about/Installation
-   about/quickstart
+   about/Quickstart
    
 
 .. toctree::
