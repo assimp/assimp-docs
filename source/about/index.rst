@@ -5,8 +5,8 @@ Introduction
    :maxdepth: 1
    :name: toc-about
 
-   Introduction
-   Installation
+   introduction
+   installation
  
 .. history
 .. authors
