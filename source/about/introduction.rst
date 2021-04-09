@@ -2,7 +2,6 @@
 
 .. _ai_introduction:
 
-============
 Introduction
 ============
 
