@@ -7,6 +7,7 @@ Introduction
 
    introduction
    installation
+   quickstart
  
 .. history
 .. authors
