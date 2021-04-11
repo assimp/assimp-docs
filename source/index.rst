@@ -28,7 +28,7 @@ The Asset-Importer-Lib Documentation
 
 .. toctree::
     :maxdepth: 1
-    :caption: Develoer Guide
+    :caption: Developer Guide
     :name: sec-developer
 
     developer/developer
