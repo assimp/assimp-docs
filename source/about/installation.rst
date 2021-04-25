@@ -8,9 +8,9 @@ Installation
 The Assimp-Lib can be used in two ways:
 
 * Linking against the pre-built libraries 
-* Building the library on your own via cmake.
+* Integrate the library into your project via cmake.
 
-Both ways are descriped at `_Build instructions <https://github.com/assimp/assimp/blob/master/Build.md>`_
+Both ways are descriped at `Build instructions <https://github.com/assimp/assimp/blob/master/Build.md>`_
 
 .. _ai_main_usage:
 
