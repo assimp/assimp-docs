@@ -95,6 +95,19 @@ Windows DLL Build
 
 The Assimp-package can be built as DLL. You just need to run the default cmake run.
 
+.. _ai_static_lib:
+
+Assimp static lib
+-----------------
+
+The Assimp-package can be build as a static library as well. Do do so just set the configuration variable **BUILD_SHARED_LIBS**
+to off during the cmake run. For example:
+
+::
+
+    cmake CMakeLists.txt -G "Ninja" -BUILD_SHARED_LIBS=ON
+
+will generate a static library buid by Ninja.
 
 .. _ai_andorid_build:
 
@@ -135,11 +148,3 @@ A small example how to wrap assimp for Android:
     }  
 
 The Assimp-package can be built as DLL. You just need to run the default cmake run.
-
-.. _ai_static_lib:
-
-Assimp static lib
------------------
-
-The Assimp-package can be build as a static library as well. Do do so just set the configuration variable **BUILD_SHARED_LIBS**
-to off during the cmake run.
