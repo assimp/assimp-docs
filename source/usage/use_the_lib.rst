@@ -298,30 +298,30 @@ For instance:
     }
 
 The following file formats are currently supported:
-- collada
-- x
-- stp
-- obj
-- objnomtl
-- stl
-- stlb
-- ply
-- plyb
-- 3ds
-- gltf2
-- glb2
-- gltf
-- glb
-- assbin
-- assxml
-- x3d
-- fbx
-- fbxa
-- m3d
-- m3da
-- 3mf
-- pbrt
-- assjson
+* collada
+* x
+* stp
+* obj
+* objnomtl
+* stl
+* stlb
+* ply
+* plyb
+* 3ds
+* gltf2
+* glb2
+* gltf
+* glb
+* assbin
+* assxml
+* x3d
+* fbx
+* fbxa
+* m3d
+* m3da
+* 3mf
+* pbrt
+* assjson
 
 Data Structures
 ===============
