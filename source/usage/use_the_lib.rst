@@ -283,7 +283,19 @@ kind kind of logging might decrease import performance.
 Exporting models
 ================
 
-ToDo!
+A valid **aiScene** instance can be used to export into a requested assset-format.
+
+For instance:
+
+::
+
+    bool exporterTest() override {
+        ::Assimp::Importer importer;
+        ::Assimp::Exporter exporter;
+        const aiScene *scene = importer.ReadFile(ASSIMP_TEST_MODELS_DIR "/OBJ/spider.obj", aiProcess_ValidateDataStructure);
+        exporter.Export(scene, "obj", ASSIMP_TEST_MODELS_DIR "/OBJ/spider_out.obj");
+        return true;
+    }
 
 
 Data Structures
