@@ -197,7 +197,7 @@ surely enough for almost any purpose. The process is simple:
 
 * Include cfileio.h
 * Fill an aiFileIO structure with custom file system callbacks (they're self-explanatory as they work similar to the CRT's fXXX functions)
-* .. and pass it as parameter to #aiImportFileEx
+* and pass it as parameter to #aiImportFileEx
 
 .. _ai_logging:
 
@@ -298,6 +298,7 @@ For instance:
     }
 
 The following file formats are currently supported:
+
 * collada
 * x
 * stp
