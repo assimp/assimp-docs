@@ -119,8 +119,7 @@ an Android-native application.
 - It is built as a static library
 - It requires Android NDK with android API > 9 support.
 
-Building
-----------------
+- Building:
 To use this module please provide following cmake defines:
 
 ::
@@ -128,13 +127,12 @@ To use this module please provide following cmake defines:
     -DASSIMP_ANDROID_JNIIOSYSTEM=ON
     -DCMAKE_TOOLCHAIN_FILE=$SOME_PATH/android.toolchain.cmake
     
-"SOME_PATH" is a path to your cmake android toolchain script.
+**SOME_PATH** is the path containing your cmake android-toolchain script.
 
 The build script for this port is based on `Android-CMake <https://github.com/taka-no-me/android-cmake>`_.  
-See its documentation for more Android-specific cmake options (e.g. -DANDROID_ABI for the target ABI).
+See its documentation for more Android-specific cmake options (e.g. **-DANDROID_ABI** for the target ABI).
 
-Code
---------
+- Code-Example:
 A small example how to wrap assimp for Android:
 
 ::
