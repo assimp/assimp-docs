@@ -78,3 +78,49 @@ Wrap the same guard around your .cpp!
 * Provide some _free_ test models in <root>/test/models/<FormatName> and credit their authors.
   Test files for a file format shouldn't be too large (*~500 KiB in total*), and not too repetive. Try to cover all format features with test data.
 * Done! Please, share your loader that everyone can profit from it!
+
+Parser tools
+------------
+
+XML-Parser:
+###########
+To use the XML-Parser you need to follow these steps:
+- Include the header XmlParser.h
+- Create a XML-Parser instance
+- Load the data from an input stream into the parser
+- Perform the parsing
+- When this was succesful, iterate over the XML-Nodes:
+
+::
+
+    #include <assimp/XmlParser.h>
+    
+    void parse_and_validate_xml(Stream *mySteam) {
+      // Read the data and parse the XML-File
+      XMLParser xmlParser;
+      if (xmlParser.parse(stream)) {
+         // Get the root node
+         XmlNode node = xmlParser.getRootNode();
+         
+         // Find one special child node
+         XmlNode colladaNode = node.child("COLLADA");
+         
+         // Iterate over all children
+         for ( auto child : colladaNode.children()) {
+         }
+      }
+    }
+
+::
+
+You can also iterate over all children nodes via an Iterator interface:
+
+::
+
+    XmlNodeIterator xmlIt(node, XmlNodeIterator::PreOrderMode);
+    XmlNode currentNode;
+    while (xmlIt.getNext(currentNode)) {
+      // all node will be iterated level wise
+    }
+
+::
