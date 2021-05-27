@@ -91,15 +91,15 @@ Dependencies
 The following libs are needed to compile the Asset-Importer-Lib. When checking out the code you don't have to take care 
 about their installation. All of them are part of the repo or can be installed via Hunter.
 
-* zlib
-* zip-lib
-* unzip
-* pugi-xml
-* rapijson
-* clipper
-* draco
-* gtest
-* stb_image
-* utf8cpp
-* poly2tri
-* openddlparser
+* **zlib**
+* **zip-lib**
+* **unzip**
+* **pugi-xml**
+* **rapijson**
+* **clipper**
+* **draco**
+* **gtest**
+* **stb_image**
+* **utf8cpp**
+* **poly2tri**
+* **openddlparser**
