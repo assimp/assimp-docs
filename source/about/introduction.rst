@@ -86,3 +86,19 @@ the LICENSE file.
 You can find test models for almost all formats in the **<assimp_root>/test/models** directory. Beware, they're *free*,
 but not all of them are **open-source**. If there's an accompagning **'<file>\source.txt'** file don't forget to read it.
 
+Dependencies
+------------
+The following libs are needed to compile the Asset-Importer-Lib. When checking out the code you don't have to take care 
+about their installation. All of them are part of the repo or can be installed via Hunter.
+* zlib
+* zip-lib
+* unzip
+* pugi-xml
+* rapijson
+* clipper
+* draco
+* gtest
+* stb_image
+* utf8cpp
+* poly2tri
+* openddlparser
