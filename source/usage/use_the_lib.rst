@@ -754,13 +754,13 @@ All material key constants start with 'AI_MATKEY' as a prefix.
 	  - float
 	  - 1.0
 	  - Defines the opacity of the material in a range between 0..1.
-	  - Use this value to decide whether you have to activate alpha blending for rendering. <tt>OPACITY</tt> != 1 usually also implies TWOSIDED=1 to avoid cull artifacts.
+	  - Use this value to decide whether you have to activate alpha blending for rendering. **OPACITY!=1** usually also implies **TWOSIDED=1** to avoid cull artifacts.
 
 	* - SHININESS
 	  - float
 	  - 0.f
 	  - Defines the shininess of a phong-shaded material. This is actually the exponent of the phong specular equation
-	  - SHININESS</tt>=0 is equivalent to <tt>SHADING_MODEL</tt>=<tt>aiShadingMode_Gouraud
+	  - **SHININESS=0** is equivalent to **SHADING_MODEL = aiShadingMode_Gouraud**
 
 	* - SHININESS_STRENGTH
 	  - float
@@ -777,7 +777,7 @@ All material key constants start with 'AI_MATKEY' as a prefix.
 	* - TEXTURE(t,n)
 	  - aiString
 	  - n/a
-	  - Defines the path of the n'th texture on the stack 't', where 'n' is any value >= 0 and 't' is one of the #aiTextureType enumerated values. A file path to an external file or an embedded texture. Use aiScene::GetEmbeddedTexture to test if it is embedded for FBX files, in other cases embedded textures start with '*' followed by an index into aiScene::mTextures.</td>
+	  - Defines the path of the n'th texture on the stack 't', where 'n' is any value >= 0 and 't' is one of the #aiTextureType enumerated values. A file path to an external file or an embedded texture. Use aiScene::GetEmbeddedTexture to test if it is embedded for FBX files, in other cases embedded textures start with '*' followed by an index into aiScene::mTextures.
 	  - See the @ref mat_tex section above. Also see @ref textures for a more information about texture retrieval.
 
 	* - TEXBLEND(t,n)
@@ -789,25 +789,30 @@ All material key constants start with 'AI_MATKEY' as a prefix.
 	* - TEXOP(t,n)
 	  - int
 	  - n/a
-	  - One of the #aiTextureOp enumerated values. Defines the arithmetic operation to be used to combine the n'th texture on the stack 't' with the n-1'th. <tt>TEXOP(t,0)</tt> refers to the blend operation between the base color for this stack (e.g. <tt>COLOR_DIFFUSE</tt> for the diffuse stack) and the first texture.
+	  - One of the #aiTextureOp enumerated values. Defines the arithmetic operation to be used to combine the n'th texture on the stack 't' 
+	    with the n-1'th. **TEXOP(t,0)** refers to the blend operation between the base color for this stack (e.g. **COLOR_DIFFUSE** for the diffuse stack) 
+	    and the first texture.
 	  - n/a
 
 	* - MAPPING(t,n)
 	  - int
 	  - n/a
-	  - Defines how the input mapping coordinates for sampling the n'th texture on the stack 't' are computed. Usually explicit UV coordinates are provided, but some model file formats might also be using basic shapes, such as spheres or cylinders, to project textures onto meshes.
+	  - Defines how the input mapping coordinates for sampling the n'th texture on the stack 't' are computed. Usually explicit UV coordinates are provided, 
+	    but some model file formats might also be using basic shapes, such as spheres or cylinders, to project textures onto meshes.
 	  - See the 'Textures' section below. #aiProcess_GenUVCoords can be used to let Assimp compute proper UV coordinates from projective mappings.
 
 	* - UVWSRC(t,n)
 	  - int
 	  - n/a
-	  - Defines the UV channel to be used as input mapping coordinates for sampling the n'th texture on the stack 't'. All meshes assigned to this material share the same UV channel setup
-	  - Presence of this key implies <tt>MAPPING(t,n)</tt> to be #aiTextureMapping_UV. See @ref uvwsrc for more details.
+	  - Defines the UV channel to be used as input mapping coordinates for sampling the n'th texture on the stack 't'. All meshes assigned to this material 
+	    share the same UV channel setup
+	  - Presence of this key implies **MAPPING(t,n)** to be #aiTextureMapping_UV. See @ref uvwsrc for more details.
 
 	* - MAPPINGMODE_U(t,n)
 	  - int
 	  - n/a
-	  - Any of the #aiTextureMapMode enumerated values. Defines the texture wrapping mode on the x axis for sampling the n'th texture on the stack 't'. 'Wrapping' occurs whenever UVs lie outside the 0..1 range.
+	  - Any of the #aiTextureMapMode enumerated values. Defines the texture wrapping mode on the x axis for sampling the n'th texture on the stack 't'. 
+	    'Wrapping' occurs whenever UVs lie outside the **0..1** range.
 	  - n/a
 
 	* - MAPPINGMODE_V(t,n)
@@ -819,7 +824,9 @@ All material key constants start with 'AI_MATKEY' as a prefix.
 	* - TEXMAP_AXIS(t,n)
 	  - aiVector3D
 	  - n/a
-	  - Defines the base axis to to compute the mapping coordinates for the n'th texture on the stack 't' from. This is not required for UV-mapped textures. For instance, if <tt>MAPPING(t,n)</tt> is #aiTextureMapping_SPHERE, U and V would map to longitude and latitude of a sphere around the given axis. The axis is given in local mesh space.
+	  - Defines the base axis to to compute the mapping coordinates for the n'th texture on the stack 't' from. This is not required for UV-mapped textures. 
+	    For instance, if <tt>MAPPING(t,n)</tt> is #aiTextureMapping_SPHERE, U and V would map to longitude and latitude of a sphere around the given axis. 
+	    The axis is given in local mesh space.
 	  - n/a
 
 	* - TEXFLAGS(t,n)
