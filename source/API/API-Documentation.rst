@@ -35,13 +35,8 @@ Common Datatypes
 .. doxygenstruct:: aiPlane
       :members:
 
-
-Import/Export Datatypes 
------------------------
-
 .. doxygenstruct:: aiMetadata
       :members:
-
 
 
 Scene Datatypes
@@ -82,6 +77,13 @@ Animation Datatypes
       :members:
 
 
-      
+Import/Export API
+-----------------
+
+.. doxygenclass:: Assimp::BaseImporter
+      :members:
+
 
       
+
+ 
