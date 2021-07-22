@@ -25,7 +25,7 @@
         <argsstring></argsstring>
         <name>mFilename</name>
         <briefdescription>
-<para><ref refid="struct_texture" kindref="compound">Texture</ref> original filename. </para>        </briefdescription>
+<para>Texture original filename. </para>        </briefdescription>
         <detaileddescription>
 <para>Used to get the texture reference </para>        </detaileddescription>
         <inbodydescription>
@@ -33,7 +33,7 @@
         <location file="include/assimp/texture.h" line="187" column="1" bodyfile="include/assimp/texture.h" bodystart="187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_texture_1ac1e2fa6f1f646e9c55e3985d4418a752" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiTexture::mHeight</definition>
         <argsstring></argsstring>
         <name>mHeight</name>
@@ -46,7 +46,7 @@
         <location file="include/assimp/texture.h" line="149" column="1" bodyfile="include/assimp/texture.h" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_texture_1aaa3ad8cfe44fdc4dea2db91977d92234" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiTexture::mWidth</definition>
         <argsstring></argsstring>
         <name>mWidth</name>
@@ -133,21 +133,21 @@
 <listitem><para>Uncompressed textures. The color data is given in an uncompressed format.</para></listitem><listitem><para>Compressed textures stored in a file format like png or jpg. The raw file bytes are given so the application must utilize an image decoder (e.g. DevIL) to get access to the actual color data.</para></listitem></orderedlist>
 </para><para>Embedded textures are referenced from materials using strings like &quot;*0&quot;, &quot;*1&quot;, etc. as the texture paths (a single asterisk character followed by the zero-based index of the texture in the <ref refid="structai_scene_1a0fd0d29fbc439e3715b4975ccb68d2d3" kindref="member">aiScene::mTextures</ref> array). </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="238">
+      <node id="165">
         <label>aiTexel</label>
         <link refid="structai_texel"/>
       </node>
-      <node id="236">
+      <node id="163">
         <label>aiTexture</label>
         <link refid="structai_texture"/>
-        <childnode refid="237" relation="usage">
+        <childnode refid="164" relation="usage">
           <edgelabel>mFilename</edgelabel>
         </childnode>
-        <childnode refid="238" relation="usage">
+        <childnode refid="165" relation="usage">
           <edgelabel>pcData</edgelabel>
         </childnode>
       </node>
-      <node id="237">
+      <node id="164">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>

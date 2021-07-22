@@ -23,7 +23,7 @@
         <argsstring></argsstring>
         <name>mName</name>
         <briefdescription>
-<para><ref refid="struct_name" kindref="compound">Name</ref> of the mesh to be animated. </para>        </briefdescription>
+<para>Name of the mesh to be animated. </para>        </briefdescription>
         <detaileddescription>
 <para>An empty string is not allowed, animated meshes need to be named (not necessarily uniquely, the name can basically serve as wild-card to select a group of meshes with similar animation setup) </para>        </detaileddescription>
         <inbodydescription>
@@ -31,7 +31,7 @@
         <location file="include/assimp/anim.h" line="346" column="1" bodyfile="include/assimp/anim.h" bodystart="346" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_anim_1aa8702d42bf619ccc8414a556f41634d8" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMeshAnim::mNumKeys</definition>
         <argsstring></argsstring>
         <name>mNumKeys</name>
@@ -77,21 +77,21 @@
     <detaileddescription>
 <para>Meshes carry the animation data for each frame in their <ref refid="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" kindref="member">aiMesh::mAnimMeshes</ref> array. The purpose of <ref refid="structai_mesh_anim" kindref="compound">aiMeshAnim</ref> is to define keyframes linking each mesh attachment to a particular point in time. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="158">
+      <node id="85">
         <label>aiMeshAnim</label>
         <link refid="structai_mesh_anim"/>
-        <childnode refid="159" relation="usage">
+        <childnode refid="86" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
-        <childnode refid="160" relation="usage">
+        <childnode refid="87" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
       </node>
-      <node id="159">
+      <node id="86">
         <label>aiMeshKey</label>
         <link refid="structai_mesh_key"/>
       </node>
-      <node id="160">
+      <node id="87">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>

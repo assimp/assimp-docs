@@ -48,7 +48,7 @@
         <argsstring></argsstring>
         <name>Metadata</name>
         <briefdescription>
-<para>Metadata of material. </para>        </briefdescription>
+<para><ref refid="interface_metadata" kindref="compound">Metadata</ref> of material. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -103,7 +103,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="123" column="1" bodyfile="code/AMF/AMFImporter_Postprocess.cpp" bodystart="64" bodyend="92"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="123" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Postprocess.cpp" bodystart="59" bodyend="82"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -111,29 +111,29 @@
     <detaileddescription>
 <para>More suitable container for material. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="378">
+      <node id="384">
         <label>AMFColor</label>
         <link refid="struct_a_m_f_color"/>
-        <childnode refid="379" relation="public-inheritance">
+        <childnode refid="385" relation="public-inheritance">
         </childnode>
-        <childnode refid="380" relation="usage">
+        <childnode refid="386" relation="usage">
           <edgelabel>Color</edgelabel>
         </childnode>
       </node>
-      <node id="379">
+      <node id="385">
         <label>AMFNodeElementBase</label>
         <link refid="class_a_m_f_node_element_base"/>
-        <childnode refid="379" relation="usage">
+        <childnode refid="385" relation="usage">
           <edgelabel>Parent</edgelabel>
         </childnode>
       </node>
-      <node id="380">
+      <node id="386">
         <label>aiColor4t&lt; ai_real &gt;</label>
         <link refid="classai_color4t"/>
       </node>
-      <node id="377">
+      <node id="383">
         <label>Assimp::AMFImporter::SPP_Material</label>
-        <childnode refid="378" relation="usage">
+        <childnode refid="384" relation="usage">
           <edgelabel>Color</edgelabel>
         </childnode>
       </node>

@@ -155,14 +155,14 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="248">
+      <node id="174">
         <label>aiVectorKey</label>
         <link refid="structai_vector_key"/>
-        <childnode refid="249" relation="usage">
+        <childnode refid="175" relation="usage">
           <edgelabel>mValue</edgelabel>
         </childnode>
       </node>
-      <node id="249">
+      <node id="175">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>

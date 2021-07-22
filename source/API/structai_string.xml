@@ -15,7 +15,7 @@
 <para>Size limit is MAXLEN </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="390" column="1" bodyfile="include/assimp/types.h" bodystart="390" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="393" column="1" bodyfile="include/assimp/types.h" bodystart="393" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_string_1aed051e2996a96ca3a53e069f9b93da0c" prot="public" static="no" mutable="no">
         <type><ref refid="types_8h_1a62b54a3ae3ae350c86fe848e22cb5b0a" kindref="member">ai_uint32</ref></type>
@@ -28,7 +28,7 @@
 <para>This is NOT the logical length of strings containing UTF-8 multi-byte sequences! It&apos;s the number of bytes from the beginning of the string to its end. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="387" column="1" bodyfile="include/assimp/types.h" bodystart="387" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="390" column="1" bodyfile="include/assimp/types.h" bodystart="390" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="353" column="1" bodyfile="include/assimp/types.h" bodystart="353" bodyend="364"/>
+        <location file="include/assimp/types.h" line="356" column="1" bodyfile="include/assimp/types.h" bodystart="356" bodyend="367"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1a9cf5865516f6cb96df25c833d3fdfef0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const char *</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="378" column="1" bodyfile="include/assimp/types.h" bodystart="378" bodyend="380"/>
+        <location file="include/assimp/types.h" line="381" column="1" bodyfile="include/assimp/types.h" bodystart="381" bodyend="383"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1aa51cd987f420804340c75fd929b25b4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="367" column="1" bodyfile="include/assimp/types.h" bodystart="367" bodyend="375"/>
+        <location file="include/assimp/types.h" line="370" column="1" bodyfile="include/assimp/types.h" bodystart="370" bodyend="378"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1a292dadc0d6e2e0577925fa625c0e5558" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -137,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="348" column="1" bodyfile="include/assimp/types.h" bodystart="348" bodyend="350"/>
+        <location file="include/assimp/types.h" line="351" column="1" bodyfile="include/assimp/types.h" bodystart="351" bodyend="353"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1afd3945aafa4bb32101cce6a9024c65b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="318" column="1" bodyfile="include/assimp/types.h" bodystart="318" bodyend="328"/>
+        <location file="include/assimp/types.h" line="318" column="1" bodyfile="include/assimp/types.h" bodystart="318" bodyend="331"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1a1da831142e75271700267742677be0ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="331" column="1" bodyfile="include/assimp/types.h" bodystart="331" bodyend="334"/>
+        <location file="include/assimp/types.h" line="334" column="1" bodyfile="include/assimp/types.h" bodystart="334" bodyend="337"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1a0aca35abc50bf79952cd729d35d9dd4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
@@ -188,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="337" column="1" bodyfile="include/assimp/types.h" bodystart="337" bodyend="340"/>
+        <location file="include/assimp/types.h" line="340" column="1" bodyfile="include/assimp/types.h" bodystart="340" bodyend="343"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1ad4f052a18a0ee4e7fab8a254c009b969" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -205,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="343" column="1" bodyfile="include/assimp/types.h" bodystart="343" bodyend="345"/>
+        <location file="include/assimp/types.h" line="346" column="1" bodyfile="include/assimp/types.h" bodystart="346" bodyend="348"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1aea4f745fc87cc28175dbc3b7e33411f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -245,8 +245,8 @@
     <briefdescription>
 <para>Represents an UTF-8 string, zero byte terminated. </para>    </briefdescription>
     <detaileddescription>
-<para>The character set of an <ref refid="structai_string" kindref="compound">aiString</ref> is explicitly defined to be UTF-8. This Unicode transformation was chosen in the belief that most strings in 3d files are limited to <ref refid="struct_a_s_c_i_i" kindref="compound">ASCII</ref>, thus the character set needed to be strictly <ref refid="struct_a_s_c_i_i" kindref="compound">ASCII</ref> compatible.</para><para>Most text file loaders provide proper Unicode input file handling, special unicode characters are correctly transcoded to <ref refid="struct_u_t_f8" kindref="compound">UTF8</ref> and are kept throughout the libraries&apos; import pipeline.</para><para>For most applications, it will be absolutely sufficient to interpret the <ref refid="structai_string" kindref="compound">aiString</ref> as <ref refid="struct_a_s_c_i_i" kindref="compound">ASCII</ref> data and work with it as one would work with a plain char*. Windows users in need of proper support for i.e asian characters can use the MultiByteToWideChar(), WideCharToMultiByte() WinAPI functionality to convert the UTF-8 strings to their working character set (i.e. MBCS, WideChar).</para><para>We use this representation instead of std::string to be C-compatible. The (binary) length of such a string is limited to MAXLEN characters (including the the terminating zero). </para>    </detaileddescription>
-    <location file="include/assimp/types.h" line="266" column="1" bodyfile="include/assimp/types.h" bodystart="266" bodyend="391"/>
+<para>The character set of an <ref refid="structai_string" kindref="compound">aiString</ref> is explicitly defined to be UTF-8. This Unicode transformation was chosen in the belief that most strings in 3d files are limited to ASCII, thus the character set needed to be strictly ASCII compatible.</para><para>Most text file loaders provide proper Unicode input file handling, special unicode characters are correctly transcoded to UTF8 and are kept throughout the libraries&apos; import pipeline.</para><para>For most applications, it will be absolutely sufficient to interpret the <ref refid="structai_string" kindref="compound">aiString</ref> as ASCII data and work with it as one would work with a plain char*. Windows users in need of proper support for i.e asian characters can use the MultiByteToWideChar(), WideCharToMultiByte() WinAPI functionality to convert the UTF-8 strings to their working character set (i.e. MBCS, WideChar).</para><para>We use this representation instead of std::string to be C-compatible. The (binary) length of such a string is limited to MAXLEN characters (including the the terminating zero). </para>    </detaileddescription>
+    <location file="include/assimp/types.h" line="266" column="1" bodyfile="include/assimp/types.h" bodystart="266" bodyend="394"/>
     <listofallmembers>
       <member refid="structai_string_1a05c8eff36c3868199a7263b6d6b39b47" prot="public" virt="non-virtual"><scope>aiString</scope><name>aiString</name></member>
       <member refid="structai_string_1a7b202e9e72e65099a6df0de7bc879163" prot="public" virt="non-virtual"><scope>aiString</scope><name>aiString</name></member>

@@ -18,7 +18,7 @@
         <location file="include/assimp/qnan.h" line="83" column="1" bodyfile="include/assimp/qnan.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="union___i_e_e_e_double_1a64ddbe7950921cfb931e07b8e46fc13b" prot="public" static="no" mutable="no">
-        <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <type>uint64_t</type>
         <definition>uint64_t _IEEEDouble::Exp</definition>
         <argsstring></argsstring>
         <name>Exp</name>
@@ -32,7 +32,7 @@
         <location file="include/assimp/qnan.h" line="87" column="1" bodyfile="include/assimp/qnan.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="union___i_e_e_e_double_1a7ebfdf18ddf00a59e4d1c2258741dfa7" prot="public" static="no" mutable="no">
-        <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <type>uint64_t</type>
         <definition>uint64_t _IEEEDouble::Frac</definition>
         <argsstring></argsstring>
         <name>Frac</name>
@@ -45,9 +45,9 @@
         </inbodydescription>
         <location file="include/assimp/qnan.h" line="86" column="1" bodyfile="include/assimp/qnan.h" bodystart="86" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="union___i_e_e_e_double_1af7d1a32d87b2278fac053a613c32e8b1" prot="public" static="no" mutable="no">
-        <type>struct _IEEEDouble::@69</type>
-        <definition>struct _IEEEDouble::@69  _IEEEDouble::IEEE</definition>
+      <memberdef kind="variable" id="union___i_e_e_e_double_1ab18832cb39643b889bbd26f80115d038" prot="public" static="no" mutable="no">
+        <type>struct _IEEEDouble::@1</type>
+        <definition>struct _IEEEDouble::@1  _IEEEDouble::IEEE</definition>
         <argsstring></argsstring>
         <name>IEEE</name>
         <briefdescription>
@@ -59,7 +59,7 @@
         <location file="include/assimp/qnan.h" line="89" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="union___i_e_e_e_double_1ae9e25b85a3d7bf29f13cdf5fd3bc478f" prot="public" static="no" mutable="no">
-        <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <type>uint64_t</type>
         <definition>uint64_t _IEEEDouble::Sign</definition>
         <argsstring></argsstring>
         <name>Sign</name>
@@ -82,7 +82,7 @@
       <member refid="union___i_e_e_e_double_1a27117ca968c03c76473d67288a285488" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>Double</name></member>
       <member refid="union___i_e_e_e_double_1a64ddbe7950921cfb931e07b8e46fc13b" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>Exp</name></member>
       <member refid="union___i_e_e_e_double_1a7ebfdf18ddf00a59e4d1c2258741dfa7" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>Frac</name></member>
-      <member refid="union___i_e_e_e_double_1af7d1a32d87b2278fac053a613c32e8b1" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>IEEE</name></member>
+      <member refid="union___i_e_e_e_double_1ab18832cb39643b889bbd26f80115d038" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>IEEE</name></member>
       <member refid="union___i_e_e_e_double_1ae9e25b85a3d7bf29f13cdf5fd3bc478f" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>Sign</name></member>
     </listofallmembers>
   </compounddef>

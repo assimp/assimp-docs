@@ -72,301 +72,305 @@
     <detaileddescription>
 <para>Describes to which node a scene must be attached to. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="527">
+      <node id="192">
         <label>aiAABB</label>
         <link refid="structai_a_a_b_b"/>
-        <childnode refid="524" relation="usage">
+        <childnode refid="189" relation="usage">
           <edgelabel>mMin</edgelabel>
           <edgelabel>mMax</edgelabel>
         </childnode>
       </node>
-      <node id="515">
+      <node id="180">
         <label>aiNode</label>
         <link refid="structai_node"/>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="517" relation="usage">
+        <childnode refid="182" relation="usage">
           <edgelabel>mMetaData</edgelabel>
         </childnode>
-        <childnode refid="515" relation="usage">
+        <childnode refid="180" relation="usage">
           <edgelabel>mChildren</edgelabel>
           <edgelabel>mParent</edgelabel>
         </childnode>
-        <childnode refid="519" relation="usage">
+        <childnode refid="184" relation="usage">
           <edgelabel>mTransformation</edgelabel>
         </childnode>
       </node>
-      <node id="518">
+      <node id="183">
         <label>aiMetadataEntry</label>
         <link refid="structai_metadata_entry"/>
       </node>
-      <node id="536">
+      <node id="201">
         <label>aiQuatKey</label>
         <link refid="structai_quat_key"/>
-        <childnode refid="537" relation="usage">
+        <childnode refid="202" relation="usage">
           <edgelabel>mValue</edgelabel>
         </childnode>
       </node>
-      <node id="544">
+      <node id="209">
         <label>aiTexel</label>
         <link refid="structai_texel"/>
       </node>
-      <node id="535">
+      <node id="200">
         <label>aiNodeAnim</label>
         <link refid="structai_node_anim"/>
-        <childnode refid="536" relation="usage">
+        <childnode refid="201" relation="usage">
           <edgelabel>mRotationKeys</edgelabel>
         </childnode>
-        <childnode refid="538" relation="usage">
+        <childnode refid="203" relation="usage">
           <edgelabel>mScalingKeys</edgelabel>
           <edgelabel>mPositionKeys</edgelabel>
         </childnode>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mNodeName</edgelabel>
         </childnode>
       </node>
-      <node id="539">
+      <node id="204">
         <label>aiMeshAnim</label>
         <link refid="structai_mesh_anim"/>
-        <childnode refid="540" relation="usage">
+        <childnode refid="205" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
       </node>
-      <node id="540">
+      <node id="205">
         <label>aiMeshKey</label>
         <link refid="structai_mesh_key"/>
       </node>
-      <node id="519">
+      <node id="184">
         <label>aiMatrix4x4t&lt; TReal &gt;</label>
         <link refid="classai_matrix4x4t"/>
       </node>
-      <node id="529">
+      <node id="194">
         <label>aiVertexWeight</label>
         <link refid="structai_vertex_weight"/>
       </node>
-      <node id="520">
+      <node id="185">
         <label>aiScene</label>
         <link refid="structai_scene"/>
-        <childnode refid="521" relation="usage">
+        <childnode refid="186" relation="usage">
           <edgelabel>mMaterials</edgelabel>
         </childnode>
-        <childnode refid="522" relation="usage">
+        <childnode refid="181" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="187" relation="usage">
           <edgelabel>mMeshes</edgelabel>
         </childnode>
-        <childnode refid="517" relation="usage">
+        <childnode refid="182" relation="usage">
           <edgelabel>mMetaData</edgelabel>
         </childnode>
-        <childnode refid="530" relation="usage">
+        <childnode refid="195" relation="usage">
           <edgelabel>mCameras</edgelabel>
         </childnode>
-        <childnode refid="531" relation="usage">
+        <childnode refid="196" relation="usage">
           <edgelabel>mLights</edgelabel>
         </childnode>
-        <childnode refid="534" relation="usage">
+        <childnode refid="199" relation="usage">
           <edgelabel>mAnimations</edgelabel>
         </childnode>
-        <childnode refid="515" relation="usage">
+        <childnode refid="180" relation="usage">
           <edgelabel>mRootNode</edgelabel>
         </childnode>
-        <childnode refid="543" relation="usage">
+        <childnode refid="208" relation="usage">
           <edgelabel>mTextures</edgelabel>
         </childnode>
       </node>
-      <node id="543">
+      <node id="208">
         <label>aiTexture</label>
         <link refid="structai_texture"/>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mFilename</edgelabel>
         </childnode>
-        <childnode refid="544" relation="usage">
+        <childnode refid="209" relation="usage">
           <edgelabel>pcData</edgelabel>
         </childnode>
       </node>
-      <node id="542">
+      <node id="207">
         <label>aiMeshMorphKey</label>
         <link refid="structai_mesh_morph_key"/>
       </node>
-      <node id="531">
+      <node id="196">
         <label>aiLight</label>
         <link refid="structai_light"/>
-        <childnode refid="532" relation="usage">
+        <childnode refid="197" relation="usage">
           <edgelabel>mColorDiffuse</edgelabel>
           <edgelabel>mColorSpecular</edgelabel>
           <edgelabel>mColorAmbient</edgelabel>
         </childnode>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="524" relation="usage">
+        <childnode refid="189" relation="usage">
           <edgelabel>mUp</edgelabel>
           <edgelabel>mPosition</edgelabel>
           <edgelabel>mDirection</edgelabel>
         </childnode>
-        <childnode refid="533" relation="usage">
+        <childnode refid="198" relation="usage">
           <edgelabel>mSize</edgelabel>
         </childnode>
       </node>
-      <node id="517">
+      <node id="182">
         <label>aiMetadata</label>
         <link refid="structai_metadata"/>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
-        <childnode refid="518" relation="usage">
+        <childnode refid="183" relation="usage">
           <edgelabel>mValues</edgelabel>
         </childnode>
       </node>
-      <node id="528">
+      <node id="193">
         <label>aiBone</label>
         <link refid="structai_bone"/>
-        <childnode refid="529" relation="usage">
+        <childnode refid="194" relation="usage">
           <edgelabel>mWeights</edgelabel>
         </childnode>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="515" relation="usage">
+        <childnode refid="180" relation="usage">
           <edgelabel>mArmature</edgelabel>
           <edgelabel>mNode</edgelabel>
         </childnode>
-        <childnode refid="519" relation="usage">
+        <childnode refid="184" relation="usage">
           <edgelabel>mOffsetMatrix</edgelabel>
         </childnode>
       </node>
-      <node id="538">
+      <node id="203">
         <label>aiVectorKey</label>
         <link refid="structai_vector_key"/>
-        <childnode refid="524" relation="usage">
+        <childnode refid="189" relation="usage">
           <edgelabel>mValue</edgelabel>
         </childnode>
       </node>
-      <node id="521">
+      <node id="186">
         <label>aiMaterial</label>
         <link refid="structai_material"/>
       </node>
-      <node id="532">
+      <node id="197">
         <label>aiColor3D</label>
         <link refid="structai_color3_d"/>
       </node>
-      <node id="537">
+      <node id="202">
         <label>aiQuaterniont&lt; TReal &gt;</label>
         <link refid="classai_quaterniont"/>
       </node>
-      <node id="522">
+      <node id="187">
         <label>aiMesh</label>
         <link refid="structai_mesh"/>
-        <childnode refid="523" relation="usage">
+        <childnode refid="188" relation="usage">
           <edgelabel>mAnimMeshes</edgelabel>
         </childnode>
-        <childnode refid="526" relation="usage">
+        <childnode refid="191" relation="usage">
           <edgelabel>mFaces</edgelabel>
         </childnode>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mName</edgelabel>
+          <edgelabel>mTextureCoordsNames</edgelabel>
         </childnode>
-        <childnode refid="524" relation="usage">
+        <childnode refid="189" relation="usage">
           <edgelabel>mTextureCoords</edgelabel>
           <edgelabel>mVertices</edgelabel>
           <edgelabel>mBitangents</edgelabel>
           <edgelabel>mNormals</edgelabel>
           <edgelabel>mTangents</edgelabel>
         </childnode>
-        <childnode refid="525" relation="usage">
+        <childnode refid="190" relation="usage">
           <edgelabel>mColors</edgelabel>
         </childnode>
-        <childnode refid="527" relation="usage">
+        <childnode refid="192" relation="usage">
           <edgelabel>mAABB</edgelabel>
         </childnode>
-        <childnode refid="528" relation="usage">
+        <childnode refid="193" relation="usage">
           <edgelabel>mBones</edgelabel>
         </childnode>
       </node>
-      <node id="516">
+      <node id="181">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>
-      <node id="541">
+      <node id="206">
         <label>aiMeshMorphAnim</label>
         <link refid="structai_mesh_morph_anim"/>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="542" relation="usage">
+        <childnode refid="207" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
       </node>
-      <node id="534">
+      <node id="199">
         <label>aiAnimation</label>
         <link refid="structai_animation"/>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="535" relation="usage">
+        <childnode refid="200" relation="usage">
           <edgelabel>mChannels</edgelabel>
         </childnode>
-        <childnode refid="539" relation="usage">
+        <childnode refid="204" relation="usage">
           <edgelabel>mMeshChannels</edgelabel>
         </childnode>
-        <childnode refid="541" relation="usage">
+        <childnode refid="206" relation="usage">
           <edgelabel>mMorphMeshChannels</edgelabel>
         </childnode>
       </node>
-      <node id="514">
+      <node id="179">
         <label>Assimp::AttachmentInfo</label>
         <link refid="struct_assimp_1_1_attachment_info"/>
-        <childnode refid="515" relation="usage">
+        <childnode refid="180" relation="usage">
           <edgelabel>attachToNode</edgelabel>
         </childnode>
-        <childnode refid="520" relation="usage">
+        <childnode refid="185" relation="usage">
           <edgelabel>scene</edgelabel>
         </childnode>
       </node>
-      <node id="533">
+      <node id="198">
         <label>aiVector2t&lt; TReal &gt;</label>
         <link refid="classai_vector2t"/>
       </node>
-      <node id="525">
+      <node id="190">
         <label>aiColor4t&lt; TReal &gt;</label>
         <link refid="classai_color4t"/>
       </node>
-      <node id="530">
+      <node id="195">
         <label>aiCamera</label>
         <link refid="structai_camera"/>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="524" relation="usage">
+        <childnode refid="189" relation="usage">
           <edgelabel>mUp</edgelabel>
           <edgelabel>mLookAt</edgelabel>
           <edgelabel>mPosition</edgelabel>
         </childnode>
       </node>
-      <node id="524">
+      <node id="189">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>
-      <node id="523">
+      <node id="188">
         <label>aiAnimMesh</label>
         <link refid="structai_anim_mesh"/>
-        <childnode refid="516" relation="usage">
+        <childnode refid="181" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="524" relation="usage">
+        <childnode refid="189" relation="usage">
           <edgelabel>mTextureCoords</edgelabel>
           <edgelabel>mVertices</edgelabel>
           <edgelabel>mBitangents</edgelabel>
           <edgelabel>mNormals</edgelabel>
           <edgelabel>mTangents</edgelabel>
         </childnode>
-        <childnode refid="525" relation="usage">
+        <childnode refid="190" relation="usage">
           <edgelabel>mColors</edgelabel>
         </childnode>
       </node>
-      <node id="526">
+      <node id="191">
         <label>aiFace</label>
         <link refid="structai_face"/>
       </node>

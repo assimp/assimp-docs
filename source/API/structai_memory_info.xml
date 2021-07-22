@@ -5,7 +5,7 @@
     <includes local="no">types.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structai_memory_info_1af82394dc3a17a644061ed647817efa68" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMemoryInfo::animations</definition>
         <argsstring></argsstring>
         <name>animations</name>
@@ -15,10 +15,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="511" column="1" bodyfile="include/assimp/types.h" bodystart="511" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="514" column="1" bodyfile="include/assimp/types.h" bodystart="514" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1a3ddd36d7eabcf989ab72cda2dd3ff015" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMemoryInfo::cameras</definition>
         <argsstring></argsstring>
         <name>cameras</name>
@@ -28,10 +28,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="514" column="1" bodyfile="include/assimp/types.h" bodystart="514" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="517" column="1" bodyfile="include/assimp/types.h" bodystart="517" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1afcd2ccdfab49e2fce989413a362b8d35" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMemoryInfo::lights</definition>
         <argsstring></argsstring>
         <name>lights</name>
@@ -41,10 +41,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="517" column="1" bodyfile="include/assimp/types.h" bodystart="517" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="520" column="1" bodyfile="include/assimp/types.h" bodystart="520" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1a08b2ccd0cef8dec36e47fc1beeb168f1" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMemoryInfo::materials</definition>
         <argsstring></argsstring>
         <name>materials</name>
@@ -54,10 +54,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="502" column="1" bodyfile="include/assimp/types.h" bodystart="502" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="505" column="1" bodyfile="include/assimp/types.h" bodystart="505" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1ac24ed2b3c141f043765b6e34783d1e24" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMemoryInfo::meshes</definition>
         <argsstring></argsstring>
         <name>meshes</name>
@@ -67,10 +67,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="505" column="1" bodyfile="include/assimp/types.h" bodystart="505" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="508" column="1" bodyfile="include/assimp/types.h" bodystart="508" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1a5a084942c81a29f7bb03c9903430b033" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMemoryInfo::nodes</definition>
         <argsstring></argsstring>
         <name>nodes</name>
@@ -80,10 +80,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="508" column="1" bodyfile="include/assimp/types.h" bodystart="508" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="511" column="1" bodyfile="include/assimp/types.h" bodystart="511" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1a32817d13f0e280777e49769f8c46f168" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMemoryInfo::textures</definition>
         <argsstring></argsstring>
         <name>textures</name>
@@ -93,10 +93,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="499" column="1" bodyfile="include/assimp/types.h" bodystart="499" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="502" column="1" bodyfile="include/assimp/types.h" bodystart="502" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1a590739a4cef4876901d1cf6ff48f01b3" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMemoryInfo::total</definition>
         <argsstring></argsstring>
         <name>total</name>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="520" column="1" bodyfile="include/assimp/types.h" bodystart="520" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="523" column="1" bodyfile="include/assimp/types.h" bodystart="523" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="486" column="1" bodyfile="include/assimp/types.h" bodystart="486" bodyend="494"/>
+        <location file="include/assimp/types.h" line="489" column="1" bodyfile="include/assimp/types.h" bodystart="489" bodyend="497"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -129,7 +129,7 @@
     <detaileddescription>
 <para>meshes, materials, animations) of an import. All sizes are in bytes. <simplesect kind="see"><para>Importer::GetMemoryRequirements() </para></simplesect>
 </para>    </detaileddescription>
-    <location file="include/assimp/types.h" line="482" column="1" bodyfile="include/assimp/types.h" bodystart="482" bodyend="521"/>
+    <location file="include/assimp/types.h" line="485" column="1" bodyfile="include/assimp/types.h" bodystart="485" bodyend="524"/>
     <listofallmembers>
       <member refid="structai_memory_info_1ac33db49ed124ee37e8aa6da6ade03140" prot="public" virt="non-virtual"><scope>aiMemoryInfo</scope><name>aiMemoryInfo</name></member>
       <member refid="structai_memory_info_1af82394dc3a17a644061ed647817efa68" prot="public" virt="non-virtual"><scope>aiMemoryInfo</scope><name>animations</name></member>

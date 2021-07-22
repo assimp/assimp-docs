@@ -814,7 +814,7 @@
         <argsstring>(unsigned int p_iIndex)</argsstring>
         <name>operator[]</name>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>p_iIndex</declname>
         </param>
         <briefdescription>
@@ -840,7 +840,7 @@
         <argsstring>(unsigned int p_iIndex) const</argsstring>
         <name>operator[]</name>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>p_iIndex</declname>
         </param>
         <briefdescription>
@@ -933,7 +933,7 @@
 <para>Receives the output matrix </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+<simplesect kind="return"><para>Reference to the output matrix </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -970,7 +970,7 @@
 <para>Receives the output matrix </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+<simplesect kind="return"><para>Reference to the output matrix </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -1007,7 +1007,7 @@
 <para>Receives the output matrix </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+<simplesect kind="return"><para>Reference to the output matrix </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -1044,7 +1044,7 @@
 <para>Receives the output matrix </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+<simplesect kind="return"><para>Reference to the output matrix </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -1081,7 +1081,7 @@
 <para>Receives the output matrix </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+<simplesect kind="return"><para>Reference to the output matrix </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -1118,7 +1118,7 @@
 <para>Receives the output matrix </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><ref refid="struct_reference" kindref="compound">Reference</ref> to the output matrix </para></simplesect>
+<simplesect kind="return"><para>Reference to the output matrix </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>

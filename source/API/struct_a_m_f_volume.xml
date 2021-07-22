@@ -24,7 +24,7 @@
         <argsstring></argsstring>
         <name>Type</name>
         <briefdescription>
-<para>What this volume describes can be “region” or “support”. If none specified, “object” is assumed. </para>        </briefdescription>
+<para>What this volume describes can be &quot;region&quot; or &quot;support&quot;. If none specified, &quot;object&quot; is assumed. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>

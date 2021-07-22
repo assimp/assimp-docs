@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="298" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="298" bodyend="-1"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="297" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="297" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="305" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="305" bodyend="-1"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="304" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="304" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_assimp_1_1_a_m_f_importer_1aef7de0482677984a39d79dce565758a3" prot="private" static="no" mutable="no">
         <type><ref refid="class_a_m_f_node_element_base" kindref="compound">AMFNodeElementBase</ref> *</type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="300" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="300" bodyend="-1"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="299" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="299" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_assimp_1_1_a_m_f_importer_1aea60ab11c46fbfb41ae5d2da2769443b" prot="private" static="no" mutable="no">
         <type>std::list&lt; <ref refid="class_a_m_f_node_element_base" kindref="compound">AMFNodeElementBase</ref> * &gt;</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="301" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="301" bodyend="-1"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="300" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="300" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_assimp_1_1_a_m_f_importer_1a21d9ceefd78646dad36a9cf6f7ed036f" prot="private" static="no" mutable="no">
         <type>std::list&lt; SPP_Texture &gt;</type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="306" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="306" bodyend="-1"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="305" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="305" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_assimp_1_1_a_m_f_importer_1a328ba05ba9b5ed06ddaaf955464dc210" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="303" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="303" bodyend="-1"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="302" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="302" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_assimp_1_1_a_m_f_importer_1a5e1c45f2ccb689ac83a49f465efbcc21" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -153,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="304" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="304" bodyend="-1"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="303" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="303" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_assimp_1_1_a_m_f_importer_1a7ba4b0a07092f973a8f9c1c10663d6f0" prot="private" static="no" mutable="no">
         <type><ref refid="namespace_assimp_1a6295df0173c66269feae004611f499a2" kindref="member">XmlParser</ref> *</type>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="302" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="302" bodyend="-1"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="301" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="301" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="147" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="74" bodyend="87"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="147" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="69" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a0d517d7b22911bf20087351922c0591c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -217,7 +217,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="214" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="216" bodyend="263"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="214" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="211" bodyend="258"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1ab35ee340fccb7d16276be2304274e951" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -234,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="259" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Material.cpp" bodystart="67" bodyend="110"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="259" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Material.cpp" bodystart="67" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1ae5db3d6b246b2de883328d69ffc5b574" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -251,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="220" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="355" bodyend="384"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="220" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="352" bodyend="381"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1aecf2cf14c2da553bdd8e3cdf28e334e3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -268,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="238" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="167" bodyend="193"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="238" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="160" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a4d552bef0fbbe6234d06390ff2e95ac5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -302,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="223" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="393" bodyend="432"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="223" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="390" bodyend="429"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a65c55ffe48adcc289902d42cb33ba36f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -319,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="226" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Material.cpp" bodystart="119" bodyend="142"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="226" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Material.cpp" bodystart="116" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1aeab93b17442c3146d70132dcfa0c1cab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -336,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="244" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="61" bodyend="93"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="244" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="54" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a1ab0396ba463b3d7dfcbd510ba8a855b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -353,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="229" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="495" bodyend="507"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="229" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="492" bodyend="504"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a2e9add45929aa7a99e3583eec272f548" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -370,7 +370,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="232" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="441" bodyend="475"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="232" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="438" bodyend="472"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1adc01c7480ccc3ab59d9cb67dba909b2e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -383,7 +383,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="217" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="302" bodyend="346"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="217" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="298" bodyend="343"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a8aa096762f60c96296adaed3ee4ee5b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -413,7 +413,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="263" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Material.cpp" bodystart="230" bodyend="326"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="263" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Material.cpp" bodystart="227" bodyend="323"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a1debab9698977540e9f35a8a7412edb7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -430,7 +430,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="235" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Material.cpp" bodystart="160" bodyend="214"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="235" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Material.cpp" bodystart="157" bodyend="211"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1acb2aab7a9126cbcbfc3b867038b1fb1d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -447,7 +447,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="247" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="251" bodyend="285"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="247" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="242" bodyend="280"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a232d82f420e1a621005a214d5b3bf36a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -464,7 +464,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="250" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="126" bodyend="155"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="250" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="119" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a963b346b6913b895900f332278164f16" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -481,7 +481,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="253" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="100" bodyend="119"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="253" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="93" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1ada4a3620a8189568cef22bd0bf0b2eb7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -498,7 +498,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="256" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="204" bodyend="239"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="256" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Geometry.cpp" bodystart="195" bodyend="230"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a6abc1eb8eda4f3cbc1891a55c99d4062" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -534,7 +534,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="177" column="1" bodyfile="code/AMF/AMFImporter_Postprocess.cpp" bodystart="352" bodyend="367"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="177" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Postprocess.cpp" bodystart="321" bodyend="337"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1aa20be498c328b4665a5abe0e4088b840" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -570,7 +570,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="205" column="1" bodyfile="code/AMF/AMFImporter_Postprocess.cpp" bodystart="746" bodyend="800"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="205" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Postprocess.cpp" bodystart="673" bodyend="726"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1aaa7a0a22a7fad58a1704dbaba4c2b832" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -595,7 +595,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="200" column="1" bodyfile="code/AMF/AMFImporter_Postprocess.cpp" bodystart="725" bodyend="744"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="200" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Postprocess.cpp" bodystart="657" bodyend="671"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a1de9089c5c5b1d203706beea6bbd0bef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -681,8 +681,8 @@
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
-<para>TODO: clean unused vertices. &quot;* 2&quot;: in certain cases - mesh full of triangle colors - vert_arr will contain duplicated vertices for colored triangles and initial vertices (for colored vertices) which in real became unused. This part need more thinking about optimisation.</para><para>TODO: clean unused vertices. &quot;* 2&quot;: in certain cases - mesh full of triangle colors - vert_arr will contain duplicated vertices for colored triangles and initial vertices (for colored vertices) which in real became unused. This part need more thinking about optimization. </para>        </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="194" column="1" bodyfile="code/AMF/AMFImporter_Postprocess.cpp" bodystart="395" bodyend="723"/>
+<para>TODO: clean unused vertices. &quot;* 2&quot;: in certain cases - mesh full of triangle colors - vert_arr will contain duplicated vertices for colored triangles and initial vertices (for colored vertices) which in real became unused. This part need more thinking about optimization. </para>        </inbodydescription>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="194" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Postprocess.cpp" bodystart="364" bodyend="655"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a85a7b2af896f562a53b6aa3a56015d1d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -729,7 +729,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="183" column="1" bodyfile="code/AMF/AMFImporter_Postprocess.cpp" bodystart="369" bodyend="393"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="183" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Postprocess.cpp" bodystart="339" bodyend="362"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a32158ec90fd685d0f7b4a816c49fe427" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -754,7 +754,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="209" column="1" bodyfile="code/AMF/AMFImporter_Postprocess.cpp" bodystart="802" bodyend="974"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="209" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Postprocess.cpp" bodystart="728" bodyend="890"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a939bc350f29460b8280131e8d5df149c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -801,7 +801,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="154" column="1" bodyfile="code/AMF/AMFImporter_Postprocess.cpp" bodystart="94" bodyend="141"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="154" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Postprocess.cpp" bodystart="84" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1ab9891e1102887b77581ea1b6cd3bb374" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>size_t</type>
@@ -860,7 +860,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="166" column="1" bodyfile="code/AMF/AMFImporter_Postprocess.cpp" bodystart="143" bodyend="305"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="166" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Postprocess.cpp" bodystart="132" bodyend="281"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a435fadd3d6f5b78ff2ef9ee3d1914157" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -896,7 +896,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="172" column="1" bodyfile="code/AMF/AMFImporter_Postprocess.cpp" bodystart="307" bodyend="350"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="172" column="1" bodyfile="code/AssetLib/AMF/AMFImporter_Postprocess.cpp" bodystart="283" bodyend="319"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -911,7 +911,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="267" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="89" bodyend="97"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="267" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="84" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a7029ced8aacd6661286e747d9f6c08fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -928,7 +928,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="294" column="1"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="293" column="1"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a85a2e04a7d988def5ddc00c2f65532f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -977,7 +977,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="279" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="509" bodyend="522"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="279" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="506" bodyend="519"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a4f50ef50c8ce066cfa9c1034c2161948" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -998,7 +998,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="285" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="138" bodyend="150"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="284" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="133" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1af0fa072ffa46e867e23db2a9e2160daf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1023,7 +1023,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="284" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="123" bodyend="136"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="283" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="118" bodyend="131"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a38726efa592db2c8fdc51f7b2cfd1bf0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1048,24 +1048,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="283" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="109" bodyend="121"/>
-      </memberdef>
-      <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a925321c2c2fe2702854c1b1b86ad6639" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Assimp::AMFImporter::GetExtensionList</definition>
-        <argsstring>(std::set&lt; std::string &gt; &amp;pExtensionList)</argsstring>
-        <name>GetExtensionList</name>
-        <param>
-          <type>std::set&lt; std::string &gt; &amp;</type>
-          <declname>pExtensionList</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="280" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="524" bodyend="526"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="282" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="104" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a11e10b5a345ab82b1f740e3a6f0ed575" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>const <ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref> *</type>
@@ -1079,7 +1062,7 @@
 <para>Importers must provide this information. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="282" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="528" bodyend="530"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="281" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="521" bodyend="523"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a3c0559661295085fc31d3c2b9f6a3eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1149,7 +1132,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="281" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="532" bodyend="537"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="280" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="525" bodyend="530"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1af2110829b40afb0f82039289217879c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_assimp_1_1_a_m_f_importer" kindref="compound">AMFImporter</ref> &amp;</type>
@@ -1166,7 +1149,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="295" column="1"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="294" column="1"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1ae2f19d53310ef5b54f5bdce46bbd098f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1202,7 +1185,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="276" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="265" bodyend="284"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="276" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="260" bodyend="280"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a3082a3a110c6cf65d3c74b1977c037d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1223,7 +1206,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="293" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="190" bodyend="210"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="292" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="185" bodyend="205"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a0c14cbd0ddc699098a71e320588ae361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1240,7 +1223,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="277" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="286" bodyend="289"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="277" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="282" bodyend="285"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a297134f091bc15389459fe2bb31d46aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1253,7 +1236,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="278" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="291" bodyend="293"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="278" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="287" bodyend="289"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a94970abc42b694396afb300a45ffeb73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1270,7 +1253,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="286" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="156" bodyend="158"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="285" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="151" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a47c4f7d3bbc6de78b05aa851a96d209b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1287,7 +1270,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="290" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="172" bodyend="174"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="289" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="167" bodyend="169"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1abd0c2aa30037c715abc4b9f161bc0f97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1308,7 +1291,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="287" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="160" bodyend="162"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="286" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="155" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a79bcbbc4cb2a41522eb51435e2b2da3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1329,7 +1312,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="288" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="164" bodyend="166"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="287" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="159" bodyend="161"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a4a52e0c498a0e2fea1cdf31a08d8a7d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1354,7 +1337,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="289" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="168" bodyend="170"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="288" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="163" bodyend="165"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a393394ef52250e7ce09ef77455192684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1371,7 +1354,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="291" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="180" bodyend="184"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="290" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="175" bodyend="179"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1a3c57be60be98d108cabd6a784cf9aae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1388,7 +1371,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="292" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="186" bodyend="188"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="291" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="181" bodyend="183"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_a_m_f_importer_1ae7f9a71e68764d6e3d5b151173cda420" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1401,7 +1384,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="270" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="99" bodyend="103"/>
+        <location file="code/AssetLib/AMF/AMFImporter.hpp" line="270" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.cpp" bodystart="94" bodyend="98"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1413,77 +1396,67 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
 <listitem><para>Node &lt;composite&gt;, formulas in &lt;composite&gt; and &lt;color&gt;. For implementing this feature can be used expression parser &quot;muParser&quot; like in project &quot;amf_tools&quot;.</para></listitem><listitem><para>Attribute &quot;profile&quot; in node &lt;color&gt;.</para></listitem><listitem><para>Curved geometry: &lt;edge&gt;, &lt;normal&gt; and children nodes of them.</para></listitem><listitem><para>Attributes: &quot;unit&quot; and &quot;version&quot; in &lt;amf&gt; read but do nothing.</para></listitem><listitem><para>&lt;metadata&gt; stored only for root node &lt;amf&gt;.</para></listitem><listitem><para>Color averaging of vertices for which &lt;triangle&gt;&apos;s set different colors.</para></listitem></orderedlist>
 </para><para>Supported nodes: General: &lt;amf&gt;; &lt;constellation&gt;; &lt;instance&gt; and children &lt;deltax&gt;, &lt;deltay&gt;, &lt;deltaz&gt;, &lt;rx&gt;, &lt;ry&gt;, &lt;rz&gt;; &lt;metadata&gt;;</para><para>Geometry: &lt;object&gt;; &lt;mesh&gt;; &lt;vertices&gt;; &lt;vertex&gt;; &lt;coordinates&gt; and children &lt;x&gt;, &lt;y&gt;, &lt;z&gt;; &lt;volume&gt;; &lt;triangle&gt; and children &lt;v1&gt;, &lt;v2&gt;, &lt;v3&gt;;</para><para>Material: &lt;color&gt; and children &lt;r&gt;, &lt;g&gt;, <bold>, ; &lt;texture&gt;; &lt;material&gt;; two variants of texture coordinates: new - &lt;texmap&gt; and children &lt;utex1&gt;, &lt;utex2&gt;, &lt;utex3&gt;, &lt;vtex1&gt;, &lt;vtex2&gt;, &lt;vtex3&gt; old - &lt;map&gt; and children &lt;u1&gt;, &lt;u2&gt;, &lt;u3&gt;, &lt;v1&gt;, &lt;v2&gt;, &lt;v3&gt; </bold></para>    </detaileddescription>
     <inheritancegraph>
-      <node id="361">
+      <node id="367">
         <label>Assimp::AMFImporter</label>
         <link refid="class_assimp_1_1_a_m_f_importer"/>
-        <childnode refid="362" relation="public-inheritance">
+        <childnode refid="368" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="362">
+      <node id="368">
         <label>Assimp::BaseImporter</label>
         <link refid="class_assimp_1_1_base_importer"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="363">
+      <node id="369">
         <label>Assimp::AMFImporter</label>
         <link refid="class_assimp_1_1_a_m_f_importer"/>
-        <childnode refid="364" relation="public-inheritance">
+        <childnode refid="370" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="364">
+      <node id="370">
         <label>Assimp::BaseImporter</label>
         <link refid="class_assimp_1_1_base_importer"/>
-        <childnode refid="365" relation="usage">
+        <childnode refid="371" relation="usage">
           <edgelabel>m_progress</edgelabel>
         </childnode>
       </node>
-      <node id="365">
+      <node id="371">
         <label>Assimp::ProgressHandler</label>
         <link refid="class_assimp_1_1_progress_handler"/>
       </node>
     </collaborationgraph>
-    <location file="code/AssetLib/AMF/AMFImporter.hpp" line="100" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="100" bodyend="307"/>
+    <location file="code/AssetLib/AMF/AMFImporter.hpp" line="100" column="1" bodyfile="code/AssetLib/AMF/AMFImporter.hpp" bodystart="100" bodyend="306"/>
     <listofallmembers>
       <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7af10ad62259d2e54eff440019b345e309" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>ALLOW_EMPTY</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1a773ef728497dcfd14ae4df39304d3b3e" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>AMFImporter</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1a7029ced8aacd6661286e747d9f6c08fd" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>AMFImporter</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1a879168a4cc481955fb3c769ecc3dec86" prot="private" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>AMFMetaDataArray</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a15fb4512ad41a241a3b8de3fa63c0434" prot="protected" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>applicationUnits</name></member>
       <member refid="class_assimp_1_1_base_importer_1a3a26428f61d7bebdc477c4d0add9da30" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>BaseImporter</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1a85a2e04a7d988def5ddc00c2f65532f7" prot="public" virt="virtual"><scope>Assimp::AMFImporter</scope><name>CanRead</name></member>
       <member refid="class_assimp_1_1_base_importer_1a32623af462fcf73fd3c665ca4d866d0f" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>CheckMagicToken</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1a9bf8b7916ee711a3b95377a7b54e87c2" prot="private" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>Clear</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af5fe8cb0ad373c368ac0d87e9141a833" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>CM</name></member>
       <member refid="class_assimp_1_1_base_importer_1a3cd8c81533de987dd7acea6874ad918c" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>ConvertToUTF8</name></member>
       <member refid="class_assimp_1_1_base_importer_1ad9a7c9788930c44aa40c7448d61a862d" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>ConvertUTF8toISO8859_1</name></member>
       <member refid="class_assimp_1_1_base_importer_1abc1067a6780d7d6dbe457fef8abdb66a" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>CopyVector</name></member>
       <member refid="class_assimp_1_1_base_importer_1a3ce01553ca65d8cc8f1efc2174845d67" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>CopyVector</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1a0d7f6f7a8971bfcc30dc327daf8e03f5" prot="private" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>Description</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ae90aa4e961f527f988365ee77d476118" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>FEET</name></member>
       <member refid="class_assimp_1_1_base_importer_1af85971f80c5f45fef8c3a3395e4bbe14" prot="protected" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>fileScale</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1a4f50ef50c8ce066cfa9c1034c2161948" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>Find_ConvertedMaterial</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1af0fa072ffa46e867e23db2a9e2160daf" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>Find_ConvertedNode</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1a38726efa592db2c8fdc51f7b2cfd1bf0" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>Find_NodeElement</name></member>
       <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7ae507341521279743797bdce9f7a21081" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>FORBID_EMPTY</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a51876206d286fb5804a2e99ad1fcae12" prot="public" virt="virtual"><scope>Assimp::AMFImporter</scope><name>GetApplicationUnits</name></member>
       <member refid="class_assimp_1_1_base_importer_1a15c379ec3a8399551d7b379de7fc3bc1" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>GetErrorText</name></member>
       <member refid="class_assimp_1_1_base_importer_1a05f9397b157ff1b56d7d360a39ca41ac" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>GetException</name></member>
       <member refid="class_assimp_1_1_base_importer_1a3954284d75f9fe30f5ff1758ecd2faeb" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>GetExtension</name></member>
-      <member refid="class_assimp_1_1_a_m_f_importer_1a925321c2c2fe2702854c1b1b86ad6639" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>GetExtensionList</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a21e52bc7b3d7833000737018a8301efc" prot="public" virt="virtual"><scope>Assimp::AMFImporter</scope><name>GetFileScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a7ac75d5fcfe8784173bf117a912bafeb" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>GetExtensionList</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1a11e10b5a345ab82b1f740e3a6f0ed575" prot="public" virt="virtual"><scope>Assimp::AMFImporter</scope><name>GetInfo</name></member>
       <member refid="class_assimp_1_1_base_importer_1ad5bb9d0bff964c79b625c754b3adb04c" prot="protected" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>importerScale</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>ImporterUnits</name></member>
-      <member refid="class_assimp_1_1_base_importer_1ac43f3495d597a22da47ea894f5432016" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>importerUnits</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ace3a659f5caad10cf4ac6f2de87d35c3" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>INCHES</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1a3c0559661295085fc31d3c2b9f6a3eb9" prot="public" virt="virtual"><scope>Assimp::AMFImporter</scope><name>InternReadFile</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af84e338c6e9a678ed63b8b2b7de9ef02" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>M</name></member>
       <member refid="class_assimp_1_1_base_importer_1abd2c9b86479c0c165e5d84d733e53373" prot="protected" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>m_ErrorText</name></member>
       <member refid="class_assimp_1_1_base_importer_1a7bf84fb733992558272add378e7d9525" prot="protected" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>m_Exception</name></member>
       <member refid="class_assimp_1_1_base_importer_1aeb17ba9eee14fcdfe2c6f45bf940139d" prot="protected" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>m_progress</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1ac04a2e9feccd56ee71a812febac3d4ab" prot="private" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>MeshArray</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451a1633eb908b6889de4de75080bbf13229" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>MM</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1ae11f52d00bc07e633983ffe7c1beea22" prot="private" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>mMaterial_Converted</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1aef7de0482677984a39d79dce565758a3" prot="private" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>mNodeElement_Cur</name></member>
       <member refid="class_assimp_1_1_a_m_f_importer_1aea60ab11c46fbfb41ae5d2da2769443b" prot="private" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>mNodeElement_List</name></member>
@@ -1525,8 +1498,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
       <member refid="class_assimp_1_1_a_m_f_importer_1a435fadd3d6f5b78ff2ef9ee3d1914157" prot="private" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>PostprocessHelper_SplitFacesByTextureID</name></member>
       <member refid="class_assimp_1_1_base_importer_1a047f06945fa656ebedde67819945b28c" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>ReadFile</name></member>
       <member refid="class_assimp_1_1_base_importer_1a6caed29cb9fa2d1e0aa0da2a17851ca2" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>SearchFileHeaderForToken</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a9c5e10c82316e3afd685732e8f734f87" prot="public" virt="virtual"><scope>Assimp::AMFImporter</scope><name>SetApplicationUnits</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a8faf1d4f1475e98f96f95fa46aad44c1" prot="public" virt="virtual"><scope>Assimp::AMFImporter</scope><name>SetFileScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a11b61c90b472d900d4f7e2d2f2219dac" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>SetFileScale</name></member>
       <member refid="class_assimp_1_1_base_importer_1a2ecaa6b808b2b282cb6aa321970a2ad3" prot="public" virt="virtual"><scope>Assimp::AMFImporter</scope><name>SetupProperties</name></member>
       <member refid="class_assimp_1_1_base_importer_1a2de9d21d35c9060480142dc536ce5352" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>SimpleExtensionCheck</name></member>
       <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7" prot="public" virt="non-virtual"><scope>Assimp::AMFImporter</scope><name>TextFileMode</name></member>

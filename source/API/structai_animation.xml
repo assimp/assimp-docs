@@ -70,7 +70,7 @@
         <location file="include/assimp/anim.h" line="402" column="1" bodyfile="include/assimp/anim.h" bodystart="402" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_animation_1aebfccf9a9aefa6084566d21e8a30b7e5" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiAnimation::mNumChannels</definition>
         <argsstring></argsstring>
         <name>mNumChannels</name>
@@ -83,7 +83,7 @@
         <location file="include/assimp/anim.h" line="412" column="1" bodyfile="include/assimp/anim.h" bodystart="412" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_animation_1ac43aacd8502020174e553501f0b6bf5f" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiAnimation::mNumMeshChannels</definition>
         <argsstring></argsstring>
         <name>mNumMeshChannels</name>
@@ -96,7 +96,7 @@
         <location file="include/assimp/anim.h" line="420" column="1" bodyfile="include/assimp/anim.h" bodystart="420" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_animation_1aed9aa50bdf38c9f6064f79f5aab38d59" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiAnimation::mNumMorphMeshChannels</definition>
         <argsstring></argsstring>
         <name>mNumMorphMeshChannels</name>
@@ -155,87 +155,87 @@
     <detaileddescription>
 <para>For each node affected by the animation a separate series of data is given. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="80">
+      <node id="11">
         <label>aiQuatKey</label>
         <link refid="structai_quat_key"/>
-        <childnode refid="81" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>mValue</edgelabel>
         </childnode>
       </node>
-      <node id="79">
+      <node id="10">
         <label>aiNodeAnim</label>
         <link refid="structai_node_anim"/>
-        <childnode refid="80" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>mRotationKeys</edgelabel>
         </childnode>
-        <childnode refid="82" relation="usage">
+        <childnode refid="13" relation="usage">
           <edgelabel>mScalingKeys</edgelabel>
           <edgelabel>mPositionKeys</edgelabel>
         </childnode>
-        <childnode refid="78" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>mNodeName</edgelabel>
         </childnode>
       </node>
-      <node id="84">
+      <node id="15">
         <label>aiMeshAnim</label>
         <link refid="structai_mesh_anim"/>
-        <childnode refid="85" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
-        <childnode refid="78" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
       </node>
-      <node id="85">
+      <node id="16">
         <label>aiMeshKey</label>
         <link refid="structai_mesh_key"/>
       </node>
-      <node id="87">
+      <node id="18">
         <label>aiMeshMorphKey</label>
         <link refid="structai_mesh_morph_key"/>
       </node>
-      <node id="82">
+      <node id="13">
         <label>aiVectorKey</label>
         <link refid="structai_vector_key"/>
-        <childnode refid="83" relation="usage">
+        <childnode refid="14" relation="usage">
           <edgelabel>mValue</edgelabel>
         </childnode>
       </node>
-      <node id="81">
+      <node id="12">
         <label>aiQuaterniont&lt; TReal &gt;</label>
         <link refid="classai_quaterniont"/>
       </node>
-      <node id="78">
+      <node id="9">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>
-      <node id="86">
+      <node id="17">
         <label>aiMeshMorphAnim</label>
         <link refid="structai_mesh_morph_anim"/>
-        <childnode refid="78" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="87" relation="usage">
+        <childnode refid="18" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
       </node>
-      <node id="77">
+      <node id="8">
         <label>aiAnimation</label>
         <link refid="structai_animation"/>
-        <childnode refid="78" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="79" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>mChannels</edgelabel>
         </childnode>
-        <childnode refid="84" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>mMeshChannels</edgelabel>
         </childnode>
-        <childnode refid="86" relation="usage">
+        <childnode refid="17" relation="usage">
           <edgelabel>mMorphMeshChannels</edgelabel>
         </childnode>
       </node>
-      <node id="83">
+      <node id="14">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>

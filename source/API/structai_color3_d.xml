@@ -272,7 +272,7 @@
         <argsstring>(unsigned int i) const</argsstring>
         <name>operator[]</name>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>i</declname>
         </param>
         <briefdescription>
@@ -289,7 +289,7 @@
         <argsstring>(unsigned int i)</argsstring>
         <name>operator[]</name>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>i</declname>
         </param>
         <briefdescription>

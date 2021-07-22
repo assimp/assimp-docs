@@ -74,13 +74,13 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="552">
+      <node id="558">
         <label>aiVector3t&lt; ai_real &gt;</label>
         <link refid="classai_vector3t"/>
       </node>
-      <node id="551">
+      <node id="557">
         <label>Assimp::B3DImporter::Vertex</label>
-        <childnode refid="552" relation="usage">
+        <childnode refid="558" relation="usage">
           <edgelabel>vertex</edgelabel>
           <edgelabel>texcoords</edgelabel>
           <edgelabel>normal</edgelabel>

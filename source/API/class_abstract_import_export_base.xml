@@ -102,13 +102,12 @@
         <reimplementedby refid="classut_blender_importer_exporter_1ac6e976568109b9833daf7620f6a4f1b3">importerTest</reimplementedby>
         <reimplementedby refid="classut_assbin_import_export_1aaaacbb290e865b370e4598ae4825eb8c">importerTest</reimplementedby>
         <reimplementedby refid="classut_s_i_b_importer_1a71c03b2455d6101986a04e44ad4ecea3">importerTest</reimplementedby>
-        <reimplementedby refid="classutgl_t_f_import_export_1ad4cc0ad63e1b792b37bba07ec37f9d82">importerTest</reimplementedby>
+        <reimplementedby refid="classutgl_t_f_import_export_1a419ffc51328b1aa343a0316be4d58cc5">importerTest</reimplementedby>
         <reimplementedby refid="classut_assxml_import_export_1ac255afbd157bd7fe8d61441b6a77ec9e">importerTest</reimplementedby>
         <reimplementedby refid="classut_m3_d_import_export_1ad5c433216697b6bb26937404a81fb13b">importerTest</reimplementedby>
         <reimplementedby refid="classut_m_d_l_importer_1afe384fa7f64d48f0d450c7a9242a3bde">importerTest</reimplementedby>
         <reimplementedby refid="classut_s_t_l_importer_exporter_1a1c322b47e4e237858276a98ba149cd47">importerTest</reimplementedby>
         <reimplementedby refid="classut_f_b_x_importer_exporter_1a5e64b27c64d32e4189fc2ef426e67a8b">importerTest</reimplementedby>
-        <reimplementedby refid="classutgl_t_f2_import_export_1a85a99e6eb290994d3e002a5dab0cfab8">importerTest</reimplementedby>
         <reimplementedby refid="classut_collada_import_export_1a51d1687f812dd10b29b60642d686be20">importerTest</reimplementedby>
         <reimplementedby refid="classut_obj_import_export_1ade5a78edfb9fd34894f081bd6e22c140">importerTest</reimplementedby>
         <reimplementedby refid="classut_collada_zae_import_export_1a0d4729fbf479fdf9e6ee99e546e59af0">importerTest</reimplementedby>

@@ -18,7 +18,7 @@
         <location file="include/assimp/anim.h" line="267" column="1" bodyfile="include/assimp/anim.h" bodystart="267" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_node_anim_1aab725313d31db70adab778a3c125103f" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiNodeAnim::mNumPositionKeys</definition>
         <argsstring></argsstring>
         <name>mNumPositionKeys</name>
@@ -31,7 +31,7 @@
         <location file="include/assimp/anim.h" line="270" column="1" bodyfile="include/assimp/anim.h" bodystart="270" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_node_anim_1aca7c78b89c4c64dcdf7619e105e0708c" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiNodeAnim::mNumRotationKeys</definition>
         <argsstring></argsstring>
         <name>mNumRotationKeys</name>
@@ -44,7 +44,7 @@
         <location file="include/assimp/anim.h" line="280" column="1" bodyfile="include/assimp/anim.h" bodystart="280" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_node_anim_1a28fa0fd84571ac79cb45a537192738f6" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiNodeAnim::mNumScalingKeys</definition>
         <argsstring></argsstring>
         <name>mNumScalingKeys</name>
@@ -158,43 +158,43 @@
 </para><para><simplesect kind="note"><para>All keys are returned in their correct, chronological order. Duplicate keys don&apos;t pass the validation step. Most likely there will be no negative time values, but they are not forbidden also ( so implementations need to cope with them! ) </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="183">
+      <node id="110">
         <label>aiQuatKey</label>
         <link refid="structai_quat_key"/>
-        <childnode refid="184" relation="usage">
+        <childnode refid="111" relation="usage">
           <edgelabel>mValue</edgelabel>
         </childnode>
       </node>
-      <node id="182">
+      <node id="109">
         <label>aiNodeAnim</label>
         <link refid="structai_node_anim"/>
-        <childnode refid="183" relation="usage">
+        <childnode refid="110" relation="usage">
           <edgelabel>mRotationKeys</edgelabel>
         </childnode>
-        <childnode refid="185" relation="usage">
+        <childnode refid="112" relation="usage">
           <edgelabel>mScalingKeys</edgelabel>
           <edgelabel>mPositionKeys</edgelabel>
         </childnode>
-        <childnode refid="187" relation="usage">
+        <childnode refid="114" relation="usage">
           <edgelabel>mNodeName</edgelabel>
         </childnode>
       </node>
-      <node id="185">
+      <node id="112">
         <label>aiVectorKey</label>
         <link refid="structai_vector_key"/>
-        <childnode refid="186" relation="usage">
+        <childnode refid="113" relation="usage">
           <edgelabel>mValue</edgelabel>
         </childnode>
       </node>
-      <node id="184">
+      <node id="111">
         <label>aiQuaterniont&lt; TReal &gt;</label>
         <link refid="classai_quaterniont"/>
       </node>
-      <node id="187">
+      <node id="114">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>
-      <node id="186">
+      <node id="113">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>

@@ -49,21 +49,25 @@
     <detaileddescription>
 <para>Provided are functions to open and close files. Supply a custom structure to the import function. If you don&apos;t, a default implementation is used. Use custom file systems to enable reading from other sources, such as ZIPs or memory locations. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="122">
+      <node id="51">
         <label>aiFile</label>
         <link refid="structai_file"/>
-        <childnode refid="122" relation="usage">
+        <childnode refid="51" relation="usage">
+          <edgelabel>FileSizeProc</edgelabel>
+          <edgelabel>TellProc</edgelabel>
+          <edgelabel>ReadProc</edgelabel>
+          <edgelabel>WriteProc</edgelabel>
           <edgelabel>SeekProc</edgelabel>
           <edgelabel>FlushProc</edgelabel>
         </childnode>
       </node>
-      <node id="121">
+      <node id="50">
         <label>aiFileIO</label>
         <link refid="structai_file_i_o"/>
-        <childnode refid="121" relation="usage">
+        <childnode refid="50" relation="usage">
           <edgelabel>CloseProc</edgelabel>
         </childnode>
-        <childnode refid="122" relation="usage">
+        <childnode refid="51" relation="usage">
           <edgelabel>OpenProc</edgelabel>
         </childnode>
       </node>

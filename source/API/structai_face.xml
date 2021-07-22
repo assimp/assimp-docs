@@ -2,11 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structai_face" kind="struct" language="C++" prot="public">
     <compoundname>aiFace</compoundname>
-    <derivedcompoundref refid="struct_assimp_1_1_l_w_o_1_1_face" prot="public" virt="non-virtual">Assimp::LWO::Face</derivedcompoundref>
     <includes local="no">mesh.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structai_face_1a2026b434c40cf1636f9f464a592ec36c" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+        <type>unsigned int *</type>
         <definition>unsigned int* aiFace::mIndices</definition>
         <argsstring></argsstring>
         <name>mIndices</name>
@@ -19,14 +18,14 @@
         <location file="include/assimp/mesh.h" line="142" column="1" bodyfile="include/assimp/mesh.h" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_face_1adda2698cec0ebfe651572f4a5701360b" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiFace::mNumIndices</definition>
         <argsstring></argsstring>
         <name>mNumIndices</name>
         <briefdescription>
 <para>Number of indices defining this face. </para>        </briefdescription>
         <detaileddescription>
-<para>The maximum value for this member is <ref refid="include_2assimp_2mesh_8h_1a380f3ab069e89b3a1ed975577600438b" kindref="member">AI_MAX_FACE_INDICES</ref>. </para>        </detaileddescription>
+<para>The maximum value for this member is <ref refid="mesh_8h_1a380f3ab069e89b3a1ed975577600438b" kindref="member">AI_MAX_FACE_INDICES</ref>. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="include/assimp/mesh.h" line="139" column="1" bodyfile="include/assimp/mesh.h" bodystart="139" bodyend="-1"/>
@@ -133,20 +132,8 @@
     <detaileddescription>
 <para>If mNumIndices is 3, we call the face &apos;triangle&apos;, for mNumIndices &gt; 3 it&apos;s called &apos;polygon&apos; (hey, that&apos;s just a definition!). <linebreak/>
  <ref refid="structai_mesh_1a99d66ac0a444068c1b252b30265cbf53" kindref="member">aiMesh::mPrimitiveTypes</ref> can be queried to quickly examine which types of primitive are actually present in a mesh. The <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410ab4484f73635d633cd79973bac1431ed6" kindref="member">aiProcess_SortByPType</ref> flag executes a special post-processing algorithm which splits meshes with <emphasis>different</emphasis> primitive types mixed up (e.g. lines and triangles) in several &apos;clean&apos; submeshes. Furthermore there is a configuration option ( <ref refid="config_8h_1a971e337cb0d526861142586b8341cb98" kindref="member">AI_CONFIG_PP_SBP_REMOVE</ref>) to force <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410ab4484f73635d633cd79973bac1431ed6" kindref="member">aiProcess_SortByPType</ref> to remove specific kinds of primitives from the imported scene, completely and forever. In many cases you&apos;ll probably want to set this setting to <programlisting><codeline><highlight class="normal">aiPrimitiveType_LINE|aiPrimitiveType_POINT</highlight></codeline>
-</programlisting> Together with the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b" kindref="member">aiProcess_Triangulate</ref> flag you can then be sure that <ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">aiFace::mNumIndices</ref> is always 3. <simplesect kind="note"><para>Take a look at the <ref refid="data" kindref="compound">Data Structures page </ref> for more information on the layout and winding order of a face. </para></simplesect>
+</programlisting> Together with the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b" kindref="member">aiProcess_Triangulate</ref> flag you can then be sure that <ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">aiFace::mNumIndices</ref> is always 3. <simplesect kind="note"><para>Take a look at the <ref refid="" kindref="compound">Data Structures page </ref> for more information on the layout and winding order of a face. </para></simplesect>
 </para>    </detaileddescription>
-    <inheritancegraph>
-      <node id="116">
-        <label>Assimp::LWO::Face</label>
-        <link refid="struct_assimp_1_1_l_w_o_1_1_face"/>
-        <childnode refid="115" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="115">
-        <label>aiFace</label>
-        <link refid="structai_face"/>
-      </node>
-    </inheritancegraph>
     <location file="include/assimp/mesh.h" line="136" column="1" bodyfile="include/assimp/mesh.h" bodystart="136" bodyend="212"/>
     <listofallmembers>
       <member refid="structai_face_1a2591c15e2ce32bfac18298b9f309e0b6" prot="public" virt="non-virtual"><scope>aiFace</scope><name>aiFace</name></member>

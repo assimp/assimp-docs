@@ -23,7 +23,7 @@
         <argsstring></argsstring>
         <name>mName</name>
         <briefdescription>
-<para><ref refid="struct_name" kindref="compound">Name</ref> of the mesh to be animated. </para>        </briefdescription>
+<para>Name of the mesh to be animated. </para>        </briefdescription>
         <detaileddescription>
 <para>An empty string is not allowed, animated meshes need to be named (not necessarily uniquely, the name can basically serve as wildcard to select a group of meshes with similar animation setup) </para>        </detaileddescription>
         <inbodydescription>
@@ -31,7 +31,7 @@
         <location file="include/assimp/anim.h" line="374" column="1" bodyfile="include/assimp/anim.h" bodystart="374" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_morph_anim_1af9c8a3e37613a196ed33d2746cf6f0c8" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMeshMorphAnim::mNumKeys</definition>
         <argsstring></argsstring>
         <name>mNumKeys</name>
@@ -77,21 +77,21 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="166">
+      <node id="93">
         <label>aiMeshMorphKey</label>
         <link refid="structai_mesh_morph_key"/>
       </node>
-      <node id="165">
+      <node id="92">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>
-      <node id="164">
+      <node id="91">
         <label>aiMeshMorphAnim</label>
         <link refid="structai_mesh_morph_anim"/>
-        <childnode refid="165" relation="usage">
+        <childnode refid="92" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="166" relation="usage">
+        <childnode refid="93" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
       </node>

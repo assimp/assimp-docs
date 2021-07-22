@@ -136,62 +136,62 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="505">
+      <node id="511">
         <label>AssimpAPITest_aiMatrix3x3</label>
         <link refid="class_assimp_a_p_i_test__ai_matrix3x3"/>
-        <childnode refid="503" relation="public-inheritance">
+        <childnode refid="509" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="504">
+      <node id="510">
         <label>testing::Test</label>
         <link refid="classtesting_1_1_test"/>
       </node>
-      <node id="507">
+      <node id="513">
         <label>AssimpAPITest_aiQuaternion</label>
         <link refid="class_assimp_a_p_i_test__ai_quaternion"/>
-        <childnode refid="503" relation="public-inheritance">
+        <childnode refid="509" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="508">
+      <node id="514">
         <label>AssimpAPITest_aiVector2D</label>
         <link refid="class_assimp_a_p_i_test__ai_vector2_d"/>
-        <childnode refid="503" relation="public-inheritance">
+        <childnode refid="509" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>AssimpAPITest_aiVector3D</label>
+        <link refid="class_assimp_a_p_i_test__ai_vector3_d"/>
+        <childnode refid="509" relation="public-inheritance">
         </childnode>
       </node>
       <node id="509">
-        <label>AssimpAPITest_aiVector3D</label>
-        <link refid="class_assimp_a_p_i_test__ai_vector3_d"/>
-        <childnode refid="503" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="503">
         <label>Assimp::AssimpMathTest</label>
         <link refid="class_assimp_1_1_assimp_math_test"/>
-        <childnode refid="504" relation="public-inheritance">
+        <childnode refid="510" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="506">
+      <node id="512">
         <label>AssimpAPITest_aiMatrix4x4</label>
         <link refid="class_assimp_a_p_i_test__ai_matrix4x4"/>
-        <childnode refid="503" relation="public-inheritance">
+        <childnode refid="509" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="512">
+      <node id="518">
         <label>Assimp::RandomUniformRealGenerator&lt; T &gt;</label>
         <link refid="class_assimp_1_1_random_uniform_real_generator"/>
       </node>
-      <node id="511">
+      <node id="517">
         <label>testing::Test</label>
         <link refid="classtesting_1_1_test"/>
       </node>
-      <node id="510">
+      <node id="516">
         <label>Assimp::AssimpMathTest</label>
         <link refid="class_assimp_1_1_assimp_math_test"/>
-        <childnode refid="511" relation="public-inheritance">
+        <childnode refid="517" relation="public-inheritance">
         </childnode>
-        <childnode refid="512" relation="usage">
+        <childnode refid="518" relation="usage">
           <edgelabel>RandNonZero</edgelabel>
           <edgelabel>RandPI</edgelabel>
         </childnode>

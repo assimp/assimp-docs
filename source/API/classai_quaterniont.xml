@@ -5,9 +5,7 @@
     <includes local="no">quaternion.h</includes>
     <templateparamlist>
       <param>
-        <type>typename</type>
-        <declname>TReal</declname>
-        <defname>TReal</defname>
+        <type>typename TReal</type>
       </param>
     </templateparamlist>
       <sectiondef kind="public-attrib">
@@ -22,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="121" column="1" bodyfile="include/assimp/quaternion.h" bodystart="121" bodyend="-1"/>
+        <location file="include/assimp/quaternion.h" line="125" column="1" bodyfile="include/assimp/quaternion.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classai_quaterniont_1ad3364d5c704a60123927b5a1927e6c14" prot="public" static="no" mutable="no">
         <type>TReal</type>
@@ -35,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="121" column="1" bodyfile="include/assimp/quaternion.h" bodystart="121" bodyend="-1"/>
+        <location file="include/assimp/quaternion.h" line="125" column="1" bodyfile="include/assimp/quaternion.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classai_quaterniont_1af2ce303fbc1e2986a1d14acd2c48a6a5" prot="public" static="no" mutable="no">
         <type>TReal</type>
@@ -48,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="121" column="1" bodyfile="include/assimp/quaternion.h" bodystart="121" bodyend="-1"/>
+        <location file="include/assimp/quaternion.h" line="125" column="1" bodyfile="include/assimp/quaternion.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classai_quaterniont_1a2a5c289e193c3952f1234beee37e5760" prot="public" static="no" mutable="no">
         <type>TReal</type>
@@ -61,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="121" column="1" bodyfile="include/assimp/quaternion.h" bodystart="121" bodyend="-1"/>
+        <location file="include/assimp/quaternion.h" line="125" column="1" bodyfile="include/assimp/quaternion.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -76,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="67" column="1" bodyfile="include/assimp/quaternion.h" bodystart="67" bodyend="67"/>
+        <location file="include/assimp/quaternion.h" line="68" column="1" bodyfile="include/assimp/quaternion.h" bodystart="68" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1a570ba95c517f9b76f76a0bc4dddde510" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -105,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="68" column="1" bodyfile="include/assimp/quaternion.h" bodystart="68" bodyend="69"/>
+        <location file="include/assimp/quaternion.h" line="69" column="1" bodyfile="include/assimp/quaternion.h" bodystart="69" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1acc84e78a8dd2548ccf098c52ed9714b6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -122,7 +120,7 @@
 <para>Result is undefined if the matrix is not orthonormal. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="72" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="87" bodyend="126"/>
+        <location file="include/assimp/quaternion.h" line="73" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="107" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1a10dcd0936ddbafa30c5c4ef9715b0ea9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -147,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="75" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="131" bodyend="145"/>
+        <location file="include/assimp/quaternion.h" line="76" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="151" bodyend="165"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1a6efab53b1a15f56b1a7275352c61b958" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -168,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="78" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="169" bodyend="179"/>
+        <location file="include/assimp/quaternion.h" line="79" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="189" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1a4d4f012d62584e9a8b656081b70c5921" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -185,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="81" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="183" bodyend="195"/>
+        <location file="include/assimp/quaternion.h" line="82" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="203" bodyend="215"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1a5423571dc6d36fd134c61d6c6c2979fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
@@ -198,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="99" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="270" bodyend="276"/>
+        <location file="include/assimp/quaternion.h" line="103" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="290" bodyend="296"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1a2f0d4a6c091413b9da7dd948b50a044b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -220,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="91" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="76" bodyend="82"/>
+        <location file="include/assimp/quaternion.h" line="95" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="96" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1a5f14f0491de62a24f9c66f7aa0504868" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref>&lt; TReal &gt;</type>
@@ -233,7 +231,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="84" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="150" bodyend="164"/>
+        <location file="include/assimp/quaternion.h" line="85" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="170" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1a476e48051aee949deeb44a8fd768b019" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
@@ -246,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="96" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="243" bodyend="256"/>
+        <location file="include/assimp/quaternion.h" line="100" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="263" bodyend="276"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1a34109b4b747fe41a2e69f0fd246e7bb5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -263,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="89" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="69" bodyend="72"/>
+        <location file="include/assimp/quaternion.h" line="90" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="81" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1a785eca8688069b59a2062299b841df13" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref></type>
@@ -280,7 +278,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="105" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="260" bodyend="266"/>
+        <location file="include/assimp/quaternion.h" line="109" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="280" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_quaterniont_1a2057bd9ff3faea157f0504ac74747128" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE aiQuaterniont&lt; TReal &gt; &amp; aiQuaterniont&lt; TReal &gt;::operator*=</definition>
+        <argsstring>(const aiMatrix4x4t&lt; TReal &gt; &amp;mat)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const <ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/quaternion.h" line="93" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="89" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1aa35d6473022bf87b1b07cc5395c3bb7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -297,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="88" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="62" bodyend="65"/>
+        <location file="include/assimp/quaternion.h" line="89" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="74" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="classai_quaterniont_1a43d31abfd6338eddec2c38f66c0d1777" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
@@ -314,7 +329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="102" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="280" bodyend="287"/>
+        <location file="include/assimp/quaternion.h" line="106" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="300" bodyend="307"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -374,7 +389,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/quaternion.h" line="115" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="202" bodyend="239"/>
+        <location file="include/assimp/quaternion.h" line="119" column="1" bodyfile="include/assimp/quaternion.inl" bodystart="222" bodyend="259"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -396,6 +411,7 @@
       <member refid="classai_quaterniont_1a476e48051aee949deeb44a8fd768b019" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>Normalize</name></member>
       <member refid="classai_quaterniont_1a34109b4b747fe41a2e69f0fd246e7bb5" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>operator!=</name></member>
       <member refid="classai_quaterniont_1a785eca8688069b59a2062299b841df13" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>operator*</name></member>
+      <member refid="classai_quaterniont_1a2057bd9ff3faea157f0504ac74747128" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>operator*=</name></member>
       <member refid="classai_quaterniont_1aa35d6473022bf87b1b07cc5395c3bb7c" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>operator==</name></member>
       <member refid="classai_quaterniont_1a43d31abfd6338eddec2c38f66c0d1777" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>Rotate</name></member>
       <member refid="classai_quaterniont_1a1d41620a1101e8bf9f3c06626b518062" prot="public" virt="non-virtual"><scope>aiQuaterniont</scope><name>w</name></member>

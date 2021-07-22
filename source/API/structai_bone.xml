@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structai_bone" kind="struct" language="C++" prot="public">
     <compoundname>aiBone</compoundname>
-    <derivedcompoundref refid="struct_assimp_1_1_m_d_l_1_1_int_bone___m_d_l7" prot="public" virt="non-virtual">Assimp::MDL::IntBone_MDL7</derivedcompoundref>
     <includes local="no">mesh.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structai_bone_1ad8d977c1180d965e4cf6d576d156c4da" prot="public" static="no" mutable="no">
@@ -45,14 +44,14 @@
         <location file="include/assimp/mesh.h" line="279" column="1" bodyfile="include/assimp/mesh.h" bodystart="279" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiBone::mNumWeights</definition>
         <argsstring></argsstring>
         <name>mNumWeights</name>
         <briefdescription>
 <para>The number of vertices affected by this bone. </para>        </briefdescription>
         <detaileddescription>
-<para>The maximum value for this member is <ref refid="include_2assimp_2mesh_8h_1a565e88bbf36ef4957f1229609e51b7f6" kindref="member">AI_MAX_BONE_WEIGHTS</ref>. </para>        </detaileddescription>
+<para>The maximum value for this member is <ref refid="mesh_8h_1a565e88bbf36ef4957f1229609e51b7f6" kindref="member">AI_MAX_BONE_WEIGHTS</ref>. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="include/assimp/mesh.h" line="270" column="1" bodyfile="include/assimp/mesh.h" bodystart="270" bodyend="-1"/>
@@ -167,76 +166,64 @@
 <para>A single bone of a mesh. </para>    </briefdescription>
     <detaileddescription>
 <para>A bone has a name by which it can be found in the frame hierarchy and by which it can be addressed by animations. In addition it has a number of influences on vertices, and a matrix relating the mesh position to the position of the bone at the time of binding. </para>    </detaileddescription>
-    <inheritancegraph>
-      <node id="93">
-        <label>aiBone</label>
-        <link refid="structai_bone"/>
-      </node>
-      <node id="94">
-        <label>Assimp::MDL::IntBone_MDL7</label>
-        <link refid="struct_assimp_1_1_m_d_l_1_1_int_bone___m_d_l7"/>
-        <childnode refid="93" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
     <collaborationgraph>
-      <node id="98">
+      <node id="28">
         <label>aiNode</label>
         <link refid="structai_node"/>
-        <childnode refid="97" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="99" relation="usage">
+        <childnode refid="29" relation="usage">
           <edgelabel>mMetaData</edgelabel>
         </childnode>
-        <childnode refid="98" relation="usage">
+        <childnode refid="28" relation="usage">
           <edgelabel>mChildren</edgelabel>
           <edgelabel>mParent</edgelabel>
         </childnode>
-        <childnode refid="101" relation="usage">
+        <childnode refid="31" relation="usage">
           <edgelabel>mTransformation</edgelabel>
         </childnode>
       </node>
-      <node id="100">
+      <node id="30">
         <label>aiMetadataEntry</label>
         <link refid="structai_metadata_entry"/>
       </node>
-      <node id="101">
+      <node id="31">
         <label>aiMatrix4x4t&lt; TReal &gt;</label>
         <link refid="classai_matrix4x4t"/>
       </node>
-      <node id="96">
+      <node id="26">
         <label>aiVertexWeight</label>
         <link refid="structai_vertex_weight"/>
       </node>
-      <node id="99">
+      <node id="29">
         <label>aiMetadata</label>
         <link refid="structai_metadata"/>
-        <childnode refid="97" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
-        <childnode refid="100" relation="usage">
+        <childnode refid="30" relation="usage">
           <edgelabel>mValues</edgelabel>
         </childnode>
       </node>
-      <node id="95">
+      <node id="25">
         <label>aiBone</label>
         <link refid="structai_bone"/>
-        <childnode refid="96" relation="usage">
+        <childnode refid="26" relation="usage">
           <edgelabel>mWeights</edgelabel>
         </childnode>
-        <childnode refid="97" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="98" relation="usage">
+        <childnode refid="28" relation="usage">
           <edgelabel>mArmature</edgelabel>
           <edgelabel>mNode</edgelabel>
         </childnode>
-        <childnode refid="101" relation="usage">
+        <childnode refid="31" relation="usage">
           <edgelabel>mOffsetMatrix</edgelabel>
         </childnode>
       </node>
-      <node id="97">
+      <node id="27">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>

@@ -85,15 +85,15 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="74">
+      <node id="5">
         <label>aiAABB</label>
         <link refid="structai_a_a_b_b"/>
-        <childnode refid="75" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>mMin</edgelabel>
           <edgelabel>mMax</edgelabel>
         </childnode>
       </node>
-      <node id="75">
+      <node id="6">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>

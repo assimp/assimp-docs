@@ -164,45 +164,45 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="436">
+      <node id="442">
         <label>Assimp::ASE::Material</label>
         <link refid="struct_assimp_1_1_a_s_e_1_1_material"/>
-        <childnode refid="437" relation="public-inheritance">
+        <childnode refid="443" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="437">
+      <node id="443">
         <label>Assimp::D3DS::Material</label>
         <link refid="struct_assimp_1_1_d3_d_s_1_1_material"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="438">
+      <node id="444">
         <label>Assimp::ASE::Material</label>
         <link refid="struct_assimp_1_1_a_s_e_1_1_material"/>
-        <childnode refid="439" relation="public-inheritance">
+        <childnode refid="445" relation="public-inheritance">
         </childnode>
-        <childnode refid="442" relation="usage">
+        <childnode refid="448" relation="usage">
           <edgelabel>pcInstance</edgelabel>
         </childnode>
       </node>
-      <node id="442">
+      <node id="448">
         <label>aiMaterial</label>
         <link refid="structai_material"/>
       </node>
-      <node id="440">
+      <node id="446">
         <label>aiColor3D</label>
         <link refid="structai_color3_d"/>
       </node>
-      <node id="439">
+      <node id="445">
         <label>Assimp::D3DS::Material</label>
         <link refid="struct_assimp_1_1_d3_d_s_1_1_material"/>
-        <childnode refid="440" relation="usage">
+        <childnode refid="446" relation="usage">
           <edgelabel>mDiffuse</edgelabel>
           <edgelabel>mEmissive</edgelabel>
           <edgelabel>mSpecular</edgelabel>
           <edgelabel>mAmbient</edgelabel>
         </childnode>
-        <childnode refid="441" relation="usage">
+        <childnode refid="447" relation="usage">
           <edgelabel>sTexAmbient</edgelabel>
           <edgelabel>sTexBump</edgelabel>
           <edgelabel>sTexSpecular</edgelabel>
@@ -213,7 +213,7 @@
           <edgelabel>sTexDiffuse</edgelabel>
         </childnode>
       </node>
-      <node id="441">
+      <node id="447">
         <label>Assimp::D3DS::Texture</label>
         <link refid="struct_assimp_1_1_d3_d_s_1_1_texture"/>
       </node>

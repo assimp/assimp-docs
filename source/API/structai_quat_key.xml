@@ -155,14 +155,14 @@
     <detaileddescription>
 <para>Rotations are expressed with quaternions. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="195">
+      <node id="122">
         <label>aiQuatKey</label>
         <link refid="structai_quat_key"/>
-        <childnode refid="196" relation="usage">
+        <childnode refid="123" relation="usage">
           <edgelabel>mValue</edgelabel>
         </childnode>
       </node>
-      <node id="196">
+      <node id="123">
         <label>aiQuaterniont&lt; TReal &gt;</label>
         <link refid="classai_quaterniont"/>
       </node>

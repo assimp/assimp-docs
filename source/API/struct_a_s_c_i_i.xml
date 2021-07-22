@@ -10,9 +10,9 @@
       </param>
     </templateparamlist>
       <sectiondef kind="public-type">
-      <memberdef kind="enum" id="struct_a_s_c_i_i_1a81d8ec01d94ef8b81da7851d968b3075" prot="public" static="no">
-        <name>@44</name>
-        <enumvalue id="struct_a_s_c_i_i_1a81d8ec01d94ef8b81da7851d968b3075a672ec36bd3404c3050a9111a934cbe00" prot="public">
+      <memberdef kind="enum" id="struct_a_s_c_i_i_1ab5eb31c52809ef2e5c1fead9d5e03168" prot="public" static="no">
+        <name>@45</name>
+        <enumvalue id="struct_a_s_c_i_i_1ab5eb31c52809ef2e5c1fead9d5e03168a672ec36bd3404c3050a9111a934cbe00" prot="public">
           <name>supportUnicode</name>
           <initializer>= 0</initializer>
           <briefdescription>
@@ -264,7 +264,7 @@
       <member refid="struct_a_s_c_i_i_1afeb90d6f04771067b83b35a0f366af46" prot="public" virt="non-virtual"><scope>ASCII</scope><name>EncodeUnsafe</name></member>
       <member refid="struct_a_s_c_i_i_1a218b244b9cd961ea6c5775a734cec20e" prot="public" virt="non-virtual"><scope>ASCII</scope><name>Put</name></member>
       <member refid="struct_a_s_c_i_i_1a3036dc1d604039c3224ca0a890ee0134" prot="public" virt="non-virtual"><scope>ASCII</scope><name>PutBOM</name></member>
-      <member refid="struct_a_s_c_i_i_1a81d8ec01d94ef8b81da7851d968b3075a672ec36bd3404c3050a9111a934cbe00" prot="public" virt="non-virtual"><scope>ASCII</scope><name>supportUnicode</name></member>
+      <member refid="struct_a_s_c_i_i_1ab5eb31c52809ef2e5c1fead9d5e03168a672ec36bd3404c3050a9111a934cbe00" prot="public" virt="non-virtual"><scope>ASCII</scope><name>supportUnicode</name></member>
       <member refid="struct_a_s_c_i_i_1ab1b9fdf0a5c05658d62fded913d923a3" prot="public" virt="non-virtual"><scope>ASCII</scope><name>Take</name></member>
       <member refid="struct_a_s_c_i_i_1aad78500eb98f45582a4df020e3fb2278" prot="public" virt="non-virtual"><scope>ASCII</scope><name>TakeBOM</name></member>
       <member refid="struct_a_s_c_i_i_1a398680588a09e6ce9b56e32195047c78" prot="public" virt="non-virtual"><scope>ASCII</scope><name>Validate</name></member>

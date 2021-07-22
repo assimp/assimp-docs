@@ -38,7 +38,7 @@
         <briefdescription>
 <para>a short string ID to uniquely identify the export format. </para>        </briefdescription>
         <detaileddescription>
-<para>Use this ID string to specify which file format you want to export to when calling <ref refid="_assimp_c_export_8cpp_1a742b4d8f6426a9930f81e3d33d7d4dc6" kindref="member">aiExportScene()</ref>. Example: &quot;dae&quot; or &quot;obj&quot; </para>        </detaileddescription>
+<para>Use this ID string to specify which file format you want to export to when calling <ref refid="cexport_8h_1a9615510b8430a9da4f435a72148128dd" kindref="member">aiExportScene()</ref>. Example: &quot;dae&quot; or &quot;obj&quot; </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="include/assimp/cexport.h" line="76" column="1" bodyfile="include/assimp/cexport.h" bodystart="76" bodyend="-1"/>
@@ -47,7 +47,7 @@
     <briefdescription>
 <para>Describes an file format which <ref refid="namespace_assimp" kindref="compound">Assimp</ref> can export to. </para>    </briefdescription>
     <detaileddescription>
-<para>Use <ref refid="_assimp_c_export_8cpp_1a59cfffbc5b436da8ed8542108102b502" kindref="member">aiGetExportFormatCount()</ref> to learn how many export-formats are supported by the current Assimp-build and <ref refid="_assimp_c_export_8cpp_1ac38c6758e0ab37f68376b013b43e93c6" kindref="member">aiGetExportFormatDescription()</ref> to retrieve the description of the export format option. </para>    </detaileddescription>
+<para>Use <ref refid="cexport_8h_1a59cfffbc5b436da8ed8542108102b502" kindref="member">aiGetExportFormatCount()</ref> to learn how many export-formats are supported by the current Assimp-build and <ref refid="cexport_8h_1adda7f2e6611f719af6c8a4a0bef0a0a2" kindref="member">aiGetExportFormatDescription()</ref> to retrieve the description of the export format option. </para>    </detaileddescription>
     <location file="include/assimp/cexport.h" line="72" column="1" bodyfile="include/assimp/cexport.h" bodystart="72" bodyend="84"/>
     <listofallmembers>
       <member refid="structai_export_format_desc_1a9c84c4b07c5177fb6539b9bdf90236fb" prot="public" virt="non-virtual"><scope>aiExportFormatDesc</scope><name>description</name></member>

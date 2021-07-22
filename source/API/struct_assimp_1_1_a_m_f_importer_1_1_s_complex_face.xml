@@ -48,52 +48,52 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="370">
+      <node id="376">
         <label>aiVector3t&lt; ai_real &gt;</label>
         <link refid="classai_vector3t"/>
       </node>
-      <node id="367">
+      <node id="373">
         <label>Assimp::AMFImporter::SComplexFace</label>
-        <childnode refid="368" relation="usage">
+        <childnode refid="374" relation="usage">
           <edgelabel>TexMap</edgelabel>
         </childnode>
-        <childnode refid="371" relation="usage">
+        <childnode refid="377" relation="usage">
           <edgelabel>Face</edgelabel>
         </childnode>
-        <childnode refid="372" relation="usage">
+        <childnode refid="378" relation="usage">
           <edgelabel>Color</edgelabel>
         </childnode>
       </node>
-      <node id="372">
+      <node id="378">
         <label>AMFColor</label>
         <link refid="struct_a_m_f_color"/>
-        <childnode refid="369" relation="public-inheritance">
+        <childnode refid="375" relation="public-inheritance">
         </childnode>
-        <childnode refid="373" relation="usage">
+        <childnode refid="379" relation="usage">
           <edgelabel>Color</edgelabel>
         </childnode>
       </node>
-      <node id="369">
+      <node id="375">
         <label>AMFNodeElementBase</label>
         <link refid="class_a_m_f_node_element_base"/>
-        <childnode refid="369" relation="usage">
+        <childnode refid="375" relation="usage">
           <edgelabel>Parent</edgelabel>
         </childnode>
       </node>
-      <node id="373">
+      <node id="379">
         <label>aiColor4t&lt; ai_real &gt;</label>
         <link refid="classai_color4t"/>
       </node>
-      <node id="368">
+      <node id="374">
         <label>AMFTexMap</label>
         <link refid="struct_a_m_f_tex_map"/>
-        <childnode refid="369" relation="public-inheritance">
+        <childnode refid="375" relation="public-inheritance">
         </childnode>
-        <childnode refid="370" relation="usage">
+        <childnode refid="376" relation="usage">
           <edgelabel>TextureCoordinate</edgelabel>
         </childnode>
       </node>
-      <node id="371">
+      <node id="377">
         <label>aiFace</label>
         <link refid="structai_face"/>
       </node>

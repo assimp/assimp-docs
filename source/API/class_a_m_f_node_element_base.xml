@@ -67,14 +67,14 @@
         <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa4c5353064dab13ed0e1f41a57b882a90" prot="public">
           <name>ENET_Metadata</name>
           <briefdescription>
-<para>Metadata element: &lt;metadata&gt;. </para>          </briefdescription>
+<para><ref refid="interface_metadata" kindref="compound">Metadata</ref> element: &lt;metadata&gt;. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="class_a_m_f_node_element_base_1a8461de95fe616786ef54db126007eb0aa254e95fcf2d1591e038ef7fc4e6af7f3" prot="public">
           <name>ENET_Mesh</name>
           <briefdescription>
-<para>Metadata element: &lt;mesh&gt;. </para>          </briefdescription>
+<para><ref refid="interface_metadata" kindref="compound">Metadata</ref> element: &lt;mesh&gt;. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>

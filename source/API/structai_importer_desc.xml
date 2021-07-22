@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/importerdesc.h" line="96" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="96" bodyend="-1"/>
+        <location file="include/assimp/importerdesc.h" line="100" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_importer_desc_1a2d8ad562f6c18ee9e8bfdb2da4871118" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -28,7 +28,7 @@
 <para>unimplemented features </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/importerdesc.h" line="102" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="102" bodyend="-1"/>
+        <location file="include/assimp/importerdesc.h" line="106" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_importer_desc_1a074bd688ffd15d7f4df32e794111a413" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -41,10 +41,10 @@
 <para>List entries are separated by space characters. All entries are lower case without a leading dot (i.e. &quot;xml dae&quot; would be a valid value. Note that multiple importers may respond to the same file extension - assimp calls all importers in the order in which they are registered and each importer gets the opportunity to load the file until one importer &quot;claims&quot; the file. Apart from file extension checks, importers typically use other methods to quickly reject files (i.e. magic words) so this does not mean that common or generic file extensions such as XML would be tediously slow. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/importerdesc.h" line="135" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="135" bodyend="-1"/>
+        <location file="include/assimp/importerdesc.h" line="139" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_importer_desc_1a9939db58b9f95a537f9f5a749524b6b2" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiImporterDesc::mFlags</definition>
         <argsstring></argsstring>
         <name>mFlags</name>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/importerdesc.h" line="106" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="106" bodyend="-1"/>
+        <location file="include/assimp/importerdesc.h" line="110" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_importer_desc_1a53bf0ecb36ce0b97018b4b6bd2748f02" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -67,10 +67,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/importerdesc.h" line="99" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="99" bodyend="-1"/>
+        <location file="include/assimp/importerdesc.h" line="103" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_importer_desc_1a9d33eac3be20f7f4630f838a228ada63" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiImporterDesc::mMaxMajor</definition>
         <argsstring></argsstring>
         <name>mMaxMajor</name>
@@ -80,10 +80,10 @@
 <para>Loaders that expect to be forward-compatible to potential future format versions should indicate zero, otherwise they should specify the current maximum version. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/importerdesc.h" line="120" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="120" bodyend="-1"/>
+        <location file="include/assimp/importerdesc.h" line="124" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="124" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_importer_desc_1ae4c60eec7020af836b23537148f47f83" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiImporterDesc::mMaxMinor</definition>
         <argsstring></argsstring>
         <name>mMaxMinor</name>
@@ -93,10 +93,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/importerdesc.h" line="121" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="121" bodyend="-1"/>
+        <location file="include/assimp/importerdesc.h" line="125" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_importer_desc_1aee34d348f522807f0a36607664e92a57" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiImporterDesc::mMinMajor</definition>
         <argsstring></argsstring>
         <name>mMinMajor</name>
@@ -106,10 +106,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/importerdesc.h" line="111" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="111" bodyend="-1"/>
+        <location file="include/assimp/importerdesc.h" line="115" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_importer_desc_1adb265dee32c6533234c45638df66ddab" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiImporterDesc::mMinMinor</definition>
         <argsstring></argsstring>
         <name>mMinMinor</name>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/importerdesc.h" line="112" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="112" bodyend="-1"/>
+        <location file="include/assimp/importerdesc.h" line="116" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_importer_desc_1a2a9d5fd818c01bba1a0a782722ab9495" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -132,14 +132,14 @@
 <para>Blender3D importer) </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/importerdesc.h" line="93" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="93" bodyend="-1"/>
+        <location file="include/assimp/importerdesc.h" line="97" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="97" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Meta information about a particular importer. </para>    </briefdescription>
     <detaileddescription>
 <para>Importers need to fill this structure, but they can freely decide how talkative they are. A common use case for loader meta info is a user interface in which the user can choose between various import/export file formats. Building such an UI by hand means a lot of maintenance as importers/exporters are added to <ref refid="namespace_assimp" kindref="compound">Assimp</ref>, so it might be useful to have a common mechanism to query some rough importer characteristics. </para>    </detaileddescription>
-    <location file="include/assimp/importerdesc.h" line="91" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="91" bodyend="136"/>
+    <location file="include/assimp/importerdesc.h" line="95" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="95" bodyend="140"/>
     <listofallmembers>
       <member refid="structai_importer_desc_1a8e050453324b1e855701c7c082c1b24b" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mAuthor</name></member>
       <member refid="structai_importer_desc_1a2d8ad562f6c18ee9e8bfdb2da4871118" prot="public" virt="non-virtual"><scope>aiImporterDesc</scope><name>mComments</name></member>

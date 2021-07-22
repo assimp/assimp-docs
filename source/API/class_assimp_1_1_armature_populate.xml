@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/PostProcessing/ArmaturePopulate.h" line="102" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="165" bodyend="194"/>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="102" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="165" bodyend="196"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_armature_populate_1ac6367628a52b5c3a30bb0d107f7ab456" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/PostProcessing/ArmaturePopulate.h" line="86" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="200" bodyend="214"/>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="86" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="202" bodyend="216"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_armature_populate_1a820631c16d646e5a3a7a4510569fa292" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
@@ -217,7 +217,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/PostProcessing/ArmaturePopulate.h" line="92" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="233" bodyend="259"/>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="92" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="235" bodyend="261"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_armature_populate_1a672df6f0d8f421d6151b034e9f4dc2c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="code/PostProcessing/ArmaturePopulate.h" line="89" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="217" bodyend="226"/>
+        <location file="code/PostProcessing/ArmaturePopulate.h" line="89" column="1" bodyfile="code/PostProcessing/ArmaturePopulate.cpp" bodystart="219" bodyend="228"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -246,39 +246,39 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="384">
+      <node id="390">
         <label>Assimp::BaseProcess</label>
         <link refid="class_assimp_1_1_base_process"/>
       </node>
-      <node id="383">
+      <node id="389">
         <label>Assimp::ArmaturePopulate</label>
         <link refid="class_assimp_1_1_armature_populate"/>
-        <childnode refid="384" relation="public-inheritance">
+        <childnode refid="390" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="386">
+      <node id="392">
         <label>Assimp::BaseProcess</label>
         <link refid="class_assimp_1_1_base_process"/>
-        <childnode refid="387" relation="usage">
+        <childnode refid="393" relation="usage">
           <edgelabel>progress</edgelabel>
         </childnode>
-        <childnode refid="388" relation="usage">
+        <childnode refid="394" relation="usage">
           <edgelabel>shared</edgelabel>
         </childnode>
       </node>
-      <node id="385">
+      <node id="391">
         <label>Assimp::ArmaturePopulate</label>
         <link refid="class_assimp_1_1_armature_populate"/>
-        <childnode refid="386" relation="public-inheritance">
+        <childnode refid="392" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="388">
+      <node id="394">
         <label>Assimp::SharedPostProcessInfo</label>
         <link refid="class_assimp_1_1_shared_post_process_info"/>
       </node>
-      <node id="387">
+      <node id="393">
         <label>Assimp::ProgressHandler</label>
         <link refid="class_assimp_1_1_progress_handler"/>
       </node>

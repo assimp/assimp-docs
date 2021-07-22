@@ -420,32 +420,32 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="498">
+      <node id="504">
         <label>Assimp::AssbinImporter</label>
         <link refid="class_assimp_1_1_assbin_importer"/>
-        <childnode refid="499" relation="public-inheritance">
+        <childnode refid="505" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="499">
+      <node id="505">
         <label>Assimp::BaseImporter</label>
         <link refid="class_assimp_1_1_base_importer"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="500">
+      <node id="506">
         <label>Assimp::AssbinImporter</label>
         <link refid="class_assimp_1_1_assbin_importer"/>
-        <childnode refid="501" relation="public-inheritance">
+        <childnode refid="507" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="501">
+      <node id="507">
         <label>Assimp::BaseImporter</label>
         <link refid="class_assimp_1_1_base_importer"/>
-        <childnode refid="502" relation="usage">
+        <childnode refid="508" relation="usage">
           <edgelabel>m_progress</edgelabel>
         </childnode>
       </node>
-      <node id="502">
+      <node id="508">
         <label>Assimp::ProgressHandler</label>
         <link refid="class_assimp_1_1_progress_handler"/>
       </node>
@@ -453,36 +453,26 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
     <location file="code/AssetLib/Assbin/AssbinLoader.h" line="71" column="1" bodyfile="code/AssetLib/Assbin/AssbinLoader.h" bodystart="70" bodyend="100"/>
     <listofallmembers>
       <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7af10ad62259d2e54eff440019b345e309" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ALLOW_EMPTY</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a15fb4512ad41a241a3b8de3fa63c0434" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>applicationUnits</name></member>
       <member refid="class_assimp_1_1_base_importer_1a3a26428f61d7bebdc477c4d0add9da30" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>BaseImporter</name></member>
       <member refid="class_assimp_1_1_assbin_importer_1a47c49ae2819f53dd44ab971913326214" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>CanRead</name></member>
       <member refid="class_assimp_1_1_base_importer_1a32623af462fcf73fd3c665ca4d866d0f" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>CheckMagicToken</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af5fe8cb0ad373c368ac0d87e9141a833" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>CM</name></member>
       <member refid="class_assimp_1_1_assbin_importer_1afaf27c7290fbd86fa9668817cf12110b" prot="private" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>compressed</name></member>
       <member refid="class_assimp_1_1_base_importer_1a3cd8c81533de987dd7acea6874ad918c" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ConvertToUTF8</name></member>
       <member refid="class_assimp_1_1_base_importer_1ad9a7c9788930c44aa40c7448d61a862d" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ConvertUTF8toISO8859_1</name></member>
       <member refid="class_assimp_1_1_base_importer_1abc1067a6780d7d6dbe457fef8abdb66a" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>CopyVector</name></member>
       <member refid="class_assimp_1_1_base_importer_1a3ce01553ca65d8cc8f1efc2174845d67" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>CopyVector</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ae90aa4e961f527f988365ee77d476118" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>FEET</name></member>
       <member refid="class_assimp_1_1_base_importer_1af85971f80c5f45fef8c3a3395e4bbe14" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>fileScale</name></member>
       <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7ae507341521279743797bdce9f7a21081" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>FORBID_EMPTY</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a51876206d286fb5804a2e99ad1fcae12" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>GetApplicationUnits</name></member>
       <member refid="class_assimp_1_1_base_importer_1a15c379ec3a8399551d7b379de7fc3bc1" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>GetErrorText</name></member>
       <member refid="class_assimp_1_1_base_importer_1a05f9397b157ff1b56d7d360a39ca41ac" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>GetException</name></member>
       <member refid="class_assimp_1_1_base_importer_1a3954284d75f9fe30f5ff1758ecd2faeb" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>GetExtension</name></member>
       <member refid="class_assimp_1_1_base_importer_1a7ac75d5fcfe8784173bf117a912bafeb" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>GetExtensionList</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a21e52bc7b3d7833000737018a8301efc" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>GetFileScale</name></member>
       <member refid="class_assimp_1_1_assbin_importer_1a393d67e6cdc103a18a7ac87bceebef69" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>GetInfo</name></member>
       <member refid="class_assimp_1_1_base_importer_1ad5bb9d0bff964c79b625c754b3adb04c" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>importerScale</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ImporterUnits</name></member>
-      <member refid="class_assimp_1_1_base_importer_1ac43f3495d597a22da47ea894f5432016" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>importerUnits</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451ace3a659f5caad10cf4ac6f2de87d35c3" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>INCHES</name></member>
       <member refid="class_assimp_1_1_assbin_importer_1abfef4d8d6fbd49a9669487d3bdd84d4d" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>InternReadFile</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451af84e338c6e9a678ed63b8b2b7de9ef02" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>M</name></member>
       <member refid="class_assimp_1_1_base_importer_1abd2c9b86479c0c165e5d84d733e53373" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>m_ErrorText</name></member>
       <member refid="class_assimp_1_1_base_importer_1a7bf84fb733992558272add378e7d9525" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>m_Exception</name></member>
       <member refid="class_assimp_1_1_base_importer_1aeb17ba9eee14fcdfe2c6f45bf940139d" prot="protected" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>m_progress</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a6b225ea9aa92433ec03cb41492a0d451a1633eb908b6889de4de75080bbf13229" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>MM</name></member>
       <member refid="class_assimp_1_1_assbin_importer_1a9e0f542b517625de94419942d46929cc" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryAnim</name></member>
       <member refid="class_assimp_1_1_assbin_importer_1a7ca43b7bab3d1d5658251a95003c183b" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryBone</name></member>
       <member refid="class_assimp_1_1_assbin_importer_1aed148cc3e767ddb6bb78534542d89781" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadBinaryCamera</name></member>
@@ -497,8 +487,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
       <member refid="class_assimp_1_1_base_importer_1a047f06945fa656ebedde67819945b28c" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadFile</name></member>
       <member refid="class_assimp_1_1_assbin_importer_1a22d8c5b71dbddf3a8c9269ef44448fe8" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>ReadHeader</name></member>
       <member refid="class_assimp_1_1_base_importer_1a6caed29cb9fa2d1e0aa0da2a17851ca2" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>SearchFileHeaderForToken</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a9c5e10c82316e3afd685732e8f734f87" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>SetApplicationUnits</name></member>
-      <member refid="class_assimp_1_1_base_importer_1a8faf1d4f1475e98f96f95fa46aad44c1" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>SetFileScale</name></member>
+      <member refid="class_assimp_1_1_base_importer_1a11b61c90b472d900d4f7e2d2f2219dac" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>SetFileScale</name></member>
       <member refid="class_assimp_1_1_base_importer_1a2ecaa6b808b2b282cb6aa321970a2ad3" prot="public" virt="virtual"><scope>Assimp::AssbinImporter</scope><name>SetupProperties</name></member>
       <member refid="class_assimp_1_1_assbin_importer_1a6cac541b21423b35f894827d8d64e857" prot="private" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>shortened</name></member>
       <member refid="class_assimp_1_1_base_importer_1a2de9d21d35c9060480142dc536ce5352" prot="public" virt="non-virtual"><scope>Assimp::AssbinImporter</scope><name>SimpleExtensionCheck</name></member>

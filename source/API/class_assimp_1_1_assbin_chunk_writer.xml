@@ -278,25 +278,25 @@
     <detaileddescription>
 <para>This is a standard in-memory <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> (most of the code is based on <ref refid="class_assimp_1_1_blob_i_o_stream" kindref="compound">BlobIOStream</ref>), the difference being that this takes another <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> as a &quot;container&quot; in the constructor, and when it is destroyed, it appends the magic number, the chunk size, and the chunk contents to the container stream. This allows relatively easy chunk chunk construction, even recursively. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="492">
+      <node id="498">
         <label>Assimp::AssbinChunkWriter</label>
         <link refid="class_assimp_1_1_assbin_chunk_writer"/>
-        <childnode refid="493" relation="public-inheritance">
+        <childnode refid="499" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="493">
+      <node id="499">
         <label>Assimp::IOStream</label>
         <link refid="class_assimp_1_1_i_o_stream"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="494">
+      <node id="500">
         <label>Assimp::AssbinChunkWriter</label>
         <link refid="class_assimp_1_1_assbin_chunk_writer"/>
-        <childnode refid="495" relation="public-inheritance">
+        <childnode refid="501" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="495">
+      <node id="501">
         <label>Assimp::IOStream</label>
         <link refid="class_assimp_1_1_i_o_stream"/>
       </node>

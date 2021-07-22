@@ -89,14 +89,14 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="199">
+      <node id="126">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>
-      <node id="198">
+      <node id="125">
         <label>aiRay</label>
         <link refid="structai_ray"/>
-        <childnode refid="199" relation="usage">
+        <childnode refid="126" relation="usage">
           <edgelabel>dir</edgelabel>
           <edgelabel>pos</edgelabel>
         </childnode>

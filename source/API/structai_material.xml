@@ -5,7 +5,7 @@
     <includes local="no">material.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structai_material_1a84a0016a263362c52b27a9d8d76dc449" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMaterial::mNumAllocated</definition>
         <argsstring></argsstring>
         <name>mNumAllocated</name>
@@ -15,10 +15,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="916" column="1" bodyfile="include/assimp/material.h" bodystart="916" bodyend="-1"/>
+        <location file="include/assimp/material.h" line="935" column="1" bodyfile="include/assimp/material.h" bodystart="935" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_material_1a243b07afdc6507f8878c93a2cafe4963" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMaterial::mNumProperties</definition>
         <argsstring></argsstring>
         <name>mNumProperties</name>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="913" column="1" bodyfile="include/assimp/material.h" bodystart="913" bodyend="-1"/>
+        <location file="include/assimp/material.h" line="932" column="1" bodyfile="include/assimp/material.h" bodystart="932" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_material_1af32b125d54bff5bc1fc54a1007487cab" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> aiMaterialProperty **</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="910" column="1" bodyfile="include/assimp/material.h" bodystart="910" bodyend="-1"/>
+        <location file="include/assimp/material.h" line="929" column="1" bodyfile="include/assimp/material.h" bodystart="929" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -55,7 +55,7 @@
           <declname>pInput</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pSizeInBytes</declname>
         </param>
         <param>
@@ -63,11 +63,11 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
         </param>
         <param>
@@ -117,13 +117,13 @@
 <parametername>pType</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="struct_type" kindref="compound">Type</ref> information hint </para></parameterdescription>
+<para>Type information hint </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="805" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="449" bodyend="520"/>
+        <location file="include/assimp/material.h" line="825" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a0432dbdfd97ffe71838daf967a6b087e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -139,12 +139,12 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
           <defval>0</defval>
         </param>
@@ -183,12 +183,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="820" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="523" bodyend="534"/>
+        <location file="include/assimp/material.h" line="840" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a615a7af80f5d2b9f6f3ea66431017b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
-            <type>class <ref refid="inflate_8h_1a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084" kindref="member">TYPE</ref></type>
+            <type>class TYPE</type>
           </param>
         </templateparamlist>
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -196,11 +196,11 @@
         <argsstring>(const TYPE *pInput, unsigned int pNumValues, const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
         <name>AddProperty</name>
         <param>
-          <type>const <ref refid="inflate_8h_1a164ea0159d5f0b5f12a646f25f99eceaab47ea8bb955afd0adc0ef98517dd6084" kindref="member">TYPE</ref> *</type>
+          <type>const TYPE *</type>
           <declname>pInput</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pNumValues</declname>
         </param>
         <param>
@@ -208,12 +208,12 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
           <defval>0</defval>
         </param>
@@ -259,7 +259,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="833" column="1"/>
+        <location file="include/assimp/material.h" line="853" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1af72a124ef3c98d8bc65b461dbd286e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -271,7 +271,7 @@
           <declname>pInput</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pNumValues</declname>
         </param>
         <param>
@@ -279,12 +279,12 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
           <defval>0</defval>
         </param>
@@ -294,7 +294,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="839" column="1"/>
+        <location file="include/assimp/material.h" line="859" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1ae060dd36170aec41416f40ecf3965d02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -306,7 +306,7 @@
           <declname>pInput</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pNumValues</declname>
         </param>
         <param>
@@ -314,12 +314,12 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
           <defval>0</defval>
         </param>
@@ -329,7 +329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="845" column="1"/>
+        <location file="include/assimp/material.h" line="865" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1aaadc122ae6a4bb4681761cabc63cd178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -341,7 +341,7 @@
           <declname>pInput</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pNumValues</declname>
         </param>
         <param>
@@ -349,12 +349,12 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
           <defval>0</defval>
         </param>
@@ -364,7 +364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="851" column="1"/>
+        <location file="include/assimp/material.h" line="871" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a18c15249aa8acec6318ff96d98e9b39b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -372,11 +372,11 @@
         <argsstring>(const int *pInput, unsigned int pNumValues, const char *pKey, unsigned int type=0, unsigned int index=0)</argsstring>
         <name>AddProperty</name>
         <param>
-          <type>const <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <type>const int *</type>
           <declname>pInput</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pNumValues</declname>
         </param>
         <param>
@@ -384,12 +384,12 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
           <defval>0</defval>
         </param>
@@ -399,7 +399,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="857" column="1"/>
+        <location file="include/assimp/material.h" line="877" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1abb637125631e92221586730d33c23df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -411,7 +411,7 @@
           <declname>pInput</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pNumValues</declname>
         </param>
         <param>
@@ -419,12 +419,12 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
           <defval>0</defval>
         </param>
@@ -434,7 +434,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="863" column="1"/>
+        <location file="include/assimp/material.h" line="883" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a9e7ced117a07c8c1d0c84e2a7fb15839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -446,7 +446,7 @@
           <declname>pInput</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pNumValues</declname>
         </param>
         <param>
@@ -454,12 +454,12 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
           <defval>0</defval>
         </param>
@@ -469,7 +469,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="869" column="1"/>
+        <location file="include/assimp/material.h" line="889" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a2de21022a6abdfaad073115a02fdb977" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -481,7 +481,7 @@
           <declname>pInput</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pNumValues</declname>
         </param>
         <param>
@@ -489,12 +489,12 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
           <defval>0</defval>
         </param>
@@ -504,7 +504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="875" column="1"/>
+        <location file="include/assimp/material.h" line="895" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a3c350f89834a7cd3dbc4b4490a0a09dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -517,7 +517,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="678" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="391" bodyend="395"/>
+        <location file="include/assimp/material.h" line="701" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a9e66c8d6da65d5ef14b06876d93ba8ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -530,12 +530,12 @@
 <para>The data array remains allocated so adding new properties is quite fast. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="896" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="413" bodyend="422"/>
+        <location file="include/assimp/material.h" line="916" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1aac3ab4c47d5acce7f8813c1111198a9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
-            <type>typename <ref refid="struct_type" kindref="compound">Type</ref></type>
+            <type>typename Type</type>
           </param>
         </templateparamlist>
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -547,23 +547,23 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>idx</declname>
         </param>
         <param>
-          <type><ref refid="struct_type" kindref="compound">Type</ref> *</type>
+          <type>Type *</type>
           <declname>pOut</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <type>unsigned int *</type>
           <declname>pMax</declname>
         </param>
         <briefdescription>
-<para>Retrieve an array of <ref refid="struct_type" kindref="compound">Type</ref> values with a specific key from the material. </para>        </briefdescription>
+<para>Retrieve an array of Type values with a specific key from the material. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -598,13 +598,13 @@
 <parametername>pMax</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Specifies the size of the given buffer, in <ref refid="struct_type" kindref="compound">Type</ref>&apos;s. Receives the number of values (not bytes!) read. NULL is a valid value for this parameter. </para></parameterdescription>
+<para>Specifies the size of the given buffer, in Type&apos;s. Receives the number of values (not bytes!) read. NULL is a valid value for this parameter. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="702" column="1"/>
+        <location file="include/assimp/material.h" line="725" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a4ee0d147251822fa783dd1d3eb6ef60a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -616,19 +616,19 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>idx</declname>
         </param>
         <param>
-          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <type>int *</type>
           <declname>pOut</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <type>unsigned int *</type>
           <declname>pMax</declname>
         </param>
         <briefdescription>
@@ -637,7 +637,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="705" column="1"/>
+        <location file="include/assimp/material.h" line="728" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1aba9f4c0f541d9cbbe0c9738d1e0fc2ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -649,11 +649,11 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>idx</declname>
         </param>
         <param>
@@ -661,7 +661,7 @@
           <declname>pOut</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <type>unsigned int *</type>
           <declname>pMax</declname>
         </param>
         <briefdescription>
@@ -670,12 +670,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="708" column="1"/>
+        <location file="include/assimp/material.h" line="731" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a62bfb3a1d55bc9808220d20824394e0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
-            <type>typename <ref refid="struct_type" kindref="compound">Type</ref></type>
+            <type>typename Type</type>
           </param>
         </templateparamlist>
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -687,19 +687,19 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>idx</declname>
         </param>
         <param>
-          <type><ref refid="struct_type" kindref="compound">Type</ref> &amp;</type>
+          <type>Type &amp;</type>
           <declname>pOut</declname>
         </param>
         <briefdescription>
-<para>Retrieve a <ref refid="struct_type" kindref="compound">Type</ref> value with a specific key from the material. </para>        </briefdescription>
+<para>Retrieve a Type value with a specific key from the material. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -727,13 +727,13 @@
 <parametername>pOut</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="struct_reference" kindref="compound">Reference</ref> to receive the output value </para></parameterdescription>
+<para>Reference to receive the output value </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="722" column="1"/>
+        <location file="include/assimp/material.h" line="745" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a21144db3756c243cee326c7934653277" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -745,15 +745,15 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>idx</declname>
         </param>
         <param>
-          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> &amp;</type>
+          <type>int &amp;</type>
           <declname>pOut</declname>
         </param>
         <briefdescription>
@@ -762,7 +762,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="726" column="1"/>
+        <location file="include/assimp/material.h" line="748" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1aa8f0f978407dfa0d79adfff66f1a337c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -774,11 +774,11 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>idx</declname>
         </param>
         <param>
@@ -791,7 +791,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="729" column="1"/>
+        <location file="include/assimp/material.h" line="751" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a147bf5b406d4066ee206688d1e4c5079" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -803,11 +803,11 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>idx</declname>
         </param>
         <param>
@@ -820,7 +820,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="732" column="1"/>
+        <location file="include/assimp/material.h" line="754" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1abb3709ed3452c33c7319d1b100025112" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -832,11 +832,11 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>idx</declname>
         </param>
         <param>
@@ -849,7 +849,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="735" column="1"/>
+        <location file="include/assimp/material.h" line="757" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a34fd7998d599b1d949b9f725b088a3a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -861,11 +861,11 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>idx</declname>
         </param>
         <param>
@@ -878,7 +878,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="738" column="1"/>
+        <location file="include/assimp/material.h" line="760" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1ae5d0bfa9a52a76beaa0db933bffd936c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -890,11 +890,11 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>idx</declname>
         </param>
         <param>
@@ -907,12 +907,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="741" column="1"/>
+        <location file="include/assimp/material.h" line="763" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structai_material_1a2e238577eb73917777eb64b804aa2863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structai_material_1a1e7e1ad478a1a2dd5e52b50757f00653" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structai_string" kindref="compound">aiString</ref></type>
         <definition>aiString aiMaterial::GetName</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>GetName</name>
         <briefdescription>
 <para>Returns the name of the material. </para>        </briefdescription>
@@ -921,7 +921,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="687" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="405" bodyend="410"/>
+        <location file="include/assimp/material.h" line="710" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1aaba490ca3a2d10caeee155027ce7327c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -933,7 +933,7 @@
           <declname>type</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
         </param>
         <param>
@@ -946,7 +946,7 @@
           <defval>NULL</defval>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref> *</type>
+          <type>unsigned int *</type>
           <declname>uvindex</declname>
           <defval>NULL</defval>
         </param>
@@ -987,7 +987,7 @@
 <parametername>path</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Receives the path to the texture. If the texture is embedded, receives a &apos;*&apos; followed by the id of the texture (for the textures stored in the corresponding scene) which can be converted to an int using a function like atoi. NULL is a valid value. </para></parameterdescription>
+<para>Receives the path to the texture. Use <ref refid="structai_scene_1a54a618d47066f080a5dff9f177cc2cce" kindref="member">aiScene::GetEmbeddedTexture()</ref> method to determine if returned path is an image file to be opened or a string key of embedded texture stored in the corresponding scene (could be a &apos;*&apos; followed by the id of the texture in case of no name) NULL is a valid value. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -1028,10 +1028,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="782" column="1"/>
+        <location file="include/assimp/material.h" line="804" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1afbdfc4d4f180f865abf3c5303b50ef7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMaterial::GetTextureCount</definition>
         <argsstring>(aiTextureType type) const</argsstring>
         <name>GetTextureCount</name>
@@ -1047,7 +1047,7 @@
 <parametername>type</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="struct_texture" kindref="compound">Texture</ref> type to check for </para></parameterdescription>
+<para>Texture type to check for </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>Number of textures for this type. </para></simplesect>
@@ -1055,7 +1055,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="749" column="1"/>
+        <location file="include/assimp/material.h" line="771" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a21e18879d3e3c76a0a38791635667f5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
@@ -1067,12 +1067,12 @@
           <declname>pKey</declname>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>type</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>index</declname>
           <defval>0</defval>
         </param>
@@ -1104,7 +1104,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="888" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="425" bodyend="446"/>
+        <location file="include/assimp/material.h" line="908" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structai_material_1a9c4c1c8fd7580777ffffe96b63d4b3f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1117,13 +1117,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="679" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="398" bodyend="402"/>
+        <location file="include/assimp/material.h" line="702" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="structai_material_1ac21e2db2048df2531053b18f45a9e393" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structai_material_1ac6fe63be37f91e38174f192cfbdf22f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void aiMaterial::CopyPropertyList</definition>
+        <definition>static void aiMaterial::CopyPropertyList</definition>
         <argsstring>(aiMaterial *pcDest, const aiMaterial *pcSrc)</argsstring>
         <name>CopyPropertyList</name>
         <param>
@@ -1155,14 +1155,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/material.h" line="903" column="1" bodyfile="code/Material/MaterialSystem.cpp" bodystart="559" bodyend="609"/>
+        <location file="include/assimp/material.h" line="923" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Data structure for a material. </para>    </briefdescription>
     <detaileddescription>
 <para>Material data is stored using a key-value structure. A single key-value pair is called a &apos;material property&apos;. C++ users should use the provided member functions of <ref refid="structai_material" kindref="compound">aiMaterial</ref> to process material properties, C users have to stick with the aiMaterialGetXXX family of unbound functions. The library defines a set of standard keys (AI_MATKEY_XXX). </para>    </detaileddescription>
-    <location file="include/assimp/material.h" line="672" column="1" bodyfile="include/assimp/material.h" bodystart="668" bodyend="917"/>
+    <location file="include/assimp/material.h" line="696" column="1" bodyfile="include/assimp/material.h" bodystart="692" bodyend="936"/>
     <listofallmembers>
       <member refid="structai_material_1a925f7106289ab3513fe2a59fc4c18038" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddBinaryProperty</name></member>
       <member refid="structai_material_1a0432dbdfd97ffe71838daf967a6b087e" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddProperty</name></member>
@@ -1176,7 +1176,7 @@
       <member refid="structai_material_1a2de21022a6abdfaad073115a02fdb977" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>AddProperty</name></member>
       <member refid="structai_material_1a3c350f89834a7cd3dbc4b4490a0a09dd" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>aiMaterial</name></member>
       <member refid="structai_material_1a9e66c8d6da65d5ef14b06876d93ba8ec" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Clear</name></member>
-      <member refid="structai_material_1ac21e2db2048df2531053b18f45a9e393" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>CopyPropertyList</name></member>
+      <member refid="structai_material_1ac6fe63be37f91e38174f192cfbdf22f3" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>CopyPropertyList</name></member>
       <member refid="structai_material_1aac3ab4c47d5acce7f8813c1111198a9a" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
       <member refid="structai_material_1a4ee0d147251822fa783dd1d3eb6ef60a" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
       <member refid="structai_material_1aba9f4c0f541d9cbbe0c9738d1e0fc2ec" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
@@ -1187,7 +1187,7 @@
       <member refid="structai_material_1abb3709ed3452c33c7319d1b100025112" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
       <member refid="structai_material_1a34fd7998d599b1d949b9f725b088a3a7" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
       <member refid="structai_material_1ae5d0bfa9a52a76beaa0db933bffd936c" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>Get</name></member>
-      <member refid="structai_material_1a2e238577eb73917777eb64b804aa2863" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>GetName</name></member>
+      <member refid="structai_material_1a1e7e1ad478a1a2dd5e52b50757f00653" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>GetName</name></member>
       <member refid="structai_material_1aaba490ca3a2d10caeee155027ce7327c" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>GetTexture</name></member>
       <member refid="structai_material_1afbdfc4d4f180f865abf3c5303b50ef7b" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>GetTextureCount</name></member>
       <member refid="structai_material_1a84a0016a263362c52b27a9d8d76dc449" prot="public" virt="non-virtual"><scope>aiMaterial</scope><name>mNumAllocated</name></member>

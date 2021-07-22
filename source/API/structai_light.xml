@@ -210,39 +210,39 @@
     <detaileddescription>
 <para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> supports multiple sorts of light sources, including directional, point and spot lights. All of them are defined with just a single structure and distinguished by their parameters. Note - some file formats (such as 3DS, ASE) export a &quot;target point&quot; - the point a spot light is looking at (it can even be animated). <ref refid="namespace_assimp" kindref="compound">Assimp</ref> writes the target point as a subnode of a spotlights&apos;s main node, called &quot;&lt;spotName&gt;.Target&quot;. However, this is just additional information then, the transformation tracks of the main node make the spot light already point in the right direction. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="126">
+      <node id="55">
         <label>aiLight</label>
         <link refid="structai_light"/>
-        <childnode refid="127" relation="usage">
+        <childnode refid="56" relation="usage">
           <edgelabel>mColorDiffuse</edgelabel>
           <edgelabel>mColorSpecular</edgelabel>
           <edgelabel>mColorAmbient</edgelabel>
         </childnode>
-        <childnode refid="128" relation="usage">
+        <childnode refid="57" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="129" relation="usage">
+        <childnode refid="58" relation="usage">
           <edgelabel>mUp</edgelabel>
           <edgelabel>mPosition</edgelabel>
           <edgelabel>mDirection</edgelabel>
         </childnode>
-        <childnode refid="130" relation="usage">
+        <childnode refid="59" relation="usage">
           <edgelabel>mSize</edgelabel>
         </childnode>
       </node>
-      <node id="127">
+      <node id="56">
         <label>aiColor3D</label>
         <link refid="structai_color3_d"/>
       </node>
-      <node id="128">
+      <node id="57">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>
-      <node id="130">
+      <node id="59">
         <label>aiVector2t&lt; TReal &gt;</label>
         <link refid="classai_vector2t"/>
       </node>
-      <node id="129">
+      <node id="58">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>

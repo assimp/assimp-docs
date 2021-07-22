@@ -5,7 +5,7 @@
     <includes local="no">mesh.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structai_vertex_weight_1af6269cf6a0f02e5ae870a72046d58f4f" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiVertexWeight::mVertexId</definition>
         <argsstring></argsstring>
         <name>mVertexId</name>
@@ -51,7 +51,7 @@
         <argsstring>(unsigned int pID, float pWeight)</argsstring>
         <name>aiVertexWeight</name>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pID</declname>
         </param>
         <param>
@@ -73,7 +73,7 @@
 <parametername>pWeight</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="struct_vertex" kindref="compound">Vertex</ref> weight factor </para></parameterdescription>
+<para>Vertex weight factor </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>        </detaileddescription>

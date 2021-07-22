@@ -730,7 +730,7 @@
           <defname>shader</defname>
         </param>
         <param>
-          <type><ref refid="unzip_2ioapi_8h_1a7e43d41c2fe013a373b540cba02505cf" kindref="member">mode</ref></type>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a7e43d41c2fe013a373b540cba02505cf" kindref="member">mode</ref></type>
           <defname>mode</defname>
           <defval><ref refid="namespace3d__viewer__py3_1a160c88e2425a172c5546147cac382b32" kindref="member">BASE</ref></defval>
         </param>
@@ -795,7 +795,7 @@
           <defval>None</defval>
         </param>
         <param>
-          <type><ref refid="unzip_2ioapi_8h_1a014d89bd76f74ef3a29c8f04b473eb76" kindref="member">size</ref></type>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a014d89bd76f74ef3a29c8f04b473eb76" kindref="member">size</ref></type>
           <defname>size</defname>
           <defval>0.2</defval>
         </param>
@@ -1115,7 +1115,7 @@
           <defval>0</defval>
         </param>
         <param>
-          <type><ref refid="unzip_2ioapi_8h_1a014d89bd76f74ef3a29c8f04b473eb76" kindref="member">size</ref></type>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a014d89bd76f74ef3a29c8f04b473eb76" kindref="member">size</ref></type>
           <defname>size</defname>
           <defval>20</defval>
         </param>

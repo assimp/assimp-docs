@@ -94,25 +94,25 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="421">
+      <node id="427">
         <label>Assimp::ASE::Face</label>
         <link refid="struct_assimp_1_1_a_s_e_1_1_face"/>
-        <childnode refid="422" relation="public-inheritance">
+        <childnode refid="428" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="422">
+      <node id="428">
         <label>FaceWithSmoothingGroup</label>
         <link refid="struct_face_with_smoothing_group"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="423">
+      <node id="429">
         <label>Assimp::ASE::Face</label>
         <link refid="struct_assimp_1_1_a_s_e_1_1_face"/>
-        <childnode refid="424" relation="public-inheritance">
+        <childnode refid="430" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="424">
+      <node id="430">
         <label>FaceWithSmoothingGroup</label>
         <link refid="struct_face_with_smoothing_group"/>
       </node>

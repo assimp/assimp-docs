@@ -101,10 +101,14 @@
     <detaileddescription>
 <para>Actually, it&apos;s a data structure to wrap a set of fXXXX (e.g fopen) replacement functions.</para><para>The default implementation of the functions utilizes the fXXX functions from the CRT. However, you can supply a custom implementation to <ref refid="namespace_assimp" kindref="compound">Assimp</ref> by delivering a custom <ref refid="structai_file_i_o" kindref="compound">aiFileIO</ref>. Use this to enable reading from other sources, such as ZIP archives or memory locations. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="119">
+      <node id="48">
         <label>aiFile</label>
         <link refid="structai_file"/>
-        <childnode refid="119" relation="usage">
+        <childnode refid="48" relation="usage">
+          <edgelabel>FileSizeProc</edgelabel>
+          <edgelabel>TellProc</edgelabel>
+          <edgelabel>ReadProc</edgelabel>
+          <edgelabel>WriteProc</edgelabel>
           <edgelabel>SeekProc</edgelabel>
           <edgelabel>FlushProc</edgelabel>
         </childnode>

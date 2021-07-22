@@ -5,7 +5,7 @@
     <includes local="no">anim.h</includes>
       <sectiondef kind="public-type">
       <memberdef kind="typedef" id="structai_mesh_key_1a33a6e7a5290670ac93233fccf7f80bcb" prot="public" static="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>typedef unsigned int aiMeshKey::elem_type</definition>
         <argsstring></argsstring>
         <name>elem_type</name>
@@ -33,7 +33,7 @@
         <location file="include/assimp/anim.h" line="152" column="1" bodyfile="include/assimp/anim.h" bodystart="152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_key_1abdd5914697609a9d876f63b6ca090a18" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiMeshKey::mValue</definition>
         <argsstring></argsstring>
         <name>mValue</name>
@@ -70,7 +70,7 @@
           <declname>time</declname>
         </param>
         <param>
-          <type>const unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>const unsigned int</type>
           <declname>value</declname>
         </param>
         <briefdescription>

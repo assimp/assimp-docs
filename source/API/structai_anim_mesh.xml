@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="443" column="1" bodyfile="include/assimp/mesh.h" bodystart="443" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="461" column="1" bodyfile="include/assimp/mesh.h" bodystart="461" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_anim_mesh_1a4f062d9fac71c6b367fdf0f8638e1ca5" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="color4_8h_1a4badb8c19633de8f741ba2089ab79189" kindref="member">aiColor4D</ref> *</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="446" column="1" bodyfile="include/assimp/mesh.h" bodystart="446" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="464" column="1" bodyfile="include/assimp/mesh.h" bodystart="464" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_anim_mesh_1a09f0047d802db8b996b1a168eab0a533" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
@@ -36,12 +36,12 @@
         <argsstring></argsstring>
         <name>mName</name>
         <briefdescription>
-<para>Anim <ref refid="class_mesh" kindref="compound">Mesh</ref> name. </para>        </briefdescription>
+<para>Anim Mesh name. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="426" column="1" bodyfile="include/assimp/mesh.h" bodystart="426" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="444" column="1" bodyfile="include/assimp/mesh.h" bodystart="444" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_anim_mesh_1a64a07a8c5c419b1e006c5302bca4d334" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
@@ -54,10 +54,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="437" column="1" bodyfile="include/assimp/mesh.h" bodystart="437" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="455" column="1" bodyfile="include/assimp/mesh.h" bodystart="455" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_anim_mesh_1a6bb0d45317a1bbea7f2b7f8191d0c436" prot="public" static="no" mutable="no">
-        <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <type>unsigned int</type>
         <definition>unsigned int aiAnimMesh::mNumVertices</definition>
         <argsstring></argsstring>
         <name>mNumVertices</name>
@@ -67,7 +67,7 @@
 <para>This has always the same value as the mNumVertices property in the corresponding <ref refid="structai_mesh" kindref="compound">aiMesh</ref>. It is duplicated here merely to make the length of the member arrays accessible even if the <ref refid="structai_mesh" kindref="compound">aiMesh</ref> is not known, e.g. from language bindings. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="459" column="1" bodyfile="include/assimp/mesh.h" bodystart="459" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="477" column="1" bodyfile="include/assimp/mesh.h" bodystart="477" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_anim_mesh_1a95dcc49c6d5ecc570ceb54552a0a9625" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="440" column="1" bodyfile="include/assimp/mesh.h" bodystart="440" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="458" column="1" bodyfile="include/assimp/mesh.h" bodystart="458" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_anim_mesh_1ad24a0451adeb845a53eb2351b9462e0a" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="449" column="1" bodyfile="include/assimp/mesh.h" bodystart="449" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="467" column="1" bodyfile="include/assimp/mesh.h" bodystart="467" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_anim_mesh_1a0ac2dd4c1afd23e6a9293b1d0ded3060" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
@@ -106,7 +106,7 @@
 <para>If this array is non-nullptr, it <emphasis>must</emphasis> contain mNumVertices entries. The corresponding array in the host mesh must be non-nullptr as well - animation meshes may neither add or nor remove vertex components (if a replacement array is nullptr and the corresponding source array is not, the source data is taken instead) </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="434" column="1" bodyfile="include/assimp/mesh.h" bodystart="434" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="452" column="1" bodyfile="include/assimp/mesh.h" bodystart="452" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_anim_mesh_1a3554843cf6bb042369be1e75a2eff88a" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="464" column="1" bodyfile="include/assimp/mesh.h" bodystart="464" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="482" column="1" bodyfile="include/assimp/mesh.h" bodystart="482" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="468" column="1" bodyfile="include/assimp/mesh.h" bodystart="468" bodyend="484"/>
+        <location file="include/assimp/mesh.h" line="486" column="1" bodyfile="include/assimp/mesh.h" bodystart="486" bodyend="502"/>
       </memberdef>
       <memberdef kind="function" id="structai_anim_mesh_1a38199c86e7fe2fd62b8b244073548844" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -147,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="507" column="1" bodyfile="include/assimp/mesh.h" bodystart="507" bodyend="509"/>
+        <location file="include/assimp/mesh.h" line="525" column="1" bodyfile="include/assimp/mesh.h" bodystart="525" bodyend="527"/>
       </memberdef>
       <memberdef kind="function" id="structai_anim_mesh_1a48f34125fcbdabb04294f02d947f52bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="501" column="1" bodyfile="include/assimp/mesh.h" bodystart="501" bodyend="503"/>
+        <location file="include/assimp/mesh.h" line="519" column="1" bodyfile="include/assimp/mesh.h" bodystart="519" bodyend="521"/>
       </memberdef>
       <memberdef kind="function" id="structai_anim_mesh_1a40e1cef9f4112b5b723f2b010237dec9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -173,7 +173,7 @@
 <para>As for <ref refid="structai_mesh" kindref="compound">aiMesh</ref>, tangents and bitangents always go together. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="514" column="1" bodyfile="include/assimp/mesh.h" bodystart="514" bodyend="516"/>
+        <location file="include/assimp/mesh.h" line="532" column="1" bodyfile="include/assimp/mesh.h" bodystart="532" bodyend="534"/>
       </memberdef>
       <memberdef kind="function" id="structai_anim_mesh_1a87926d84fde01c1a8b73427d2b8411d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -181,7 +181,7 @@
         <argsstring>(unsigned int pIndex) const</argsstring>
         <name>HasTextureCoords</name>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pIndex</declname>
         </param>
         <briefdescription>
@@ -198,7 +198,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="528" column="1" bodyfile="include/assimp/mesh.h" bodystart="528" bodyend="530"/>
+        <location file="include/assimp/mesh.h" line="546" column="1" bodyfile="include/assimp/mesh.h" bodystart="546" bodyend="548"/>
       </memberdef>
       <memberdef kind="function" id="structai_anim_mesh_1a8e7f5da1d8de4a27291587d13167665b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -206,7 +206,7 @@
         <argsstring>(unsigned int pIndex) const</argsstring>
         <name>HasVertexColors</name>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>pIndex</declname>
         </param>
         <briefdescription>
@@ -223,7 +223,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="521" column="1" bodyfile="include/assimp/mesh.h" bodystart="521" bodyend="523"/>
+        <location file="include/assimp/mesh.h" line="539" column="1" bodyfile="include/assimp/mesh.h" bodystart="539" bodyend="541"/>
       </memberdef>
       <memberdef kind="function" id="structai_anim_mesh_1a229a1450b5a88a929602403eb2ea4750" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="486" column="1" bodyfile="include/assimp/mesh.h" bodystart="486" bodyend="497"/>
+        <location file="include/assimp/mesh.h" line="504" column="1" bodyfile="include/assimp/mesh.h" bodystart="504" bodyend="515"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -244,37 +244,37 @@
     <detaileddescription>
 <para>You may think of an <ref refid="structai_anim_mesh" kindref="compound">aiAnimMesh</ref> as a <computeroutput>patch</computeroutput> for the host mesh, which replaces only certain vertex data streams at a particular time. Each mesh stores n attached attached meshes (<ref refid="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" kindref="member">aiMesh::mAnimMeshes</ref>). The actual relationship between the time line and anim meshes is established by <ref refid="structai_mesh_anim" kindref="compound">aiMeshAnim</ref>, which references singular mesh attachments by their ID and binds them to a time offset. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="90">
+      <node id="21">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>
-      <node id="92">
+      <node id="23">
         <label>aiColor4t&lt; TReal &gt;</label>
         <link refid="classai_color4t"/>
       </node>
-      <node id="91">
+      <node id="22">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>
-      <node id="89">
+      <node id="20">
         <label>aiAnimMesh</label>
         <link refid="structai_anim_mesh"/>
-        <childnode refid="90" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="91" relation="usage">
+        <childnode refid="22" relation="usage">
           <edgelabel>mTextureCoords</edgelabel>
           <edgelabel>mVertices</edgelabel>
           <edgelabel>mBitangents</edgelabel>
           <edgelabel>mNormals</edgelabel>
           <edgelabel>mTangents</edgelabel>
         </childnode>
-        <childnode refid="92" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>mColors</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/assimp/mesh.h" line="424" column="1" bodyfile="include/assimp/mesh.h" bodystart="424" bodyend="533"/>
+    <location file="include/assimp/mesh.h" line="442" column="1" bodyfile="include/assimp/mesh.h" bodystart="442" bodyend="551"/>
     <listofallmembers>
       <member refid="structai_anim_mesh_1a8b7f246c13a528c79febbb75f342f6e7" prot="public" virt="non-virtual"><scope>aiAnimMesh</scope><name>aiAnimMesh</name></member>
       <member refid="structai_anim_mesh_1a38199c86e7fe2fd62b8b244073548844" prot="public" virt="non-virtual"><scope>aiAnimMesh</scope><name>HasNormals</name></member>

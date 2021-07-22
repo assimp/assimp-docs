@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="96" column="1" bodyfile="include/assimp/vector3.inl" bodystart="224" bodyend="229"/>
+        <location file="include/assimp/vector3.h" line="96" column="1" bodyfile="include/assimp/vector3.inl" bodystart="225" bodyend="230"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1ad194e6c2a938279499e367ffe7406577" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>TReal</type>
@@ -158,7 +158,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="113" column="1" bodyfile="include/assimp/vector3.inl" bodystart="102" bodyend="104"/>
+        <location file="include/assimp/vector3.h" line="113" column="1" bodyfile="include/assimp/vector3.inl" bodystart="100" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1ac1c8d0efc1295bc02f2dd56b8abcb9bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref> &amp;</type>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="117" column="1" bodyfile="include/assimp/vector3.inl" bodystart="108" bodyend="112"/>
+        <location file="include/assimp/vector3.h" line="117" column="1" bodyfile="include/assimp/vector3.inl" bodystart="106" bodyend="110"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1a7bbd7d0d9a35aee17a1a5c68d7299c7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref> &amp;</type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="120" column="1" bodyfile="include/assimp/vector3.inl" bodystart="116" bodyend="122"/>
+        <location file="include/assimp/vector3.h" line="120" column="1" bodyfile="include/assimp/vector3.inl" bodystart="114" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1a4c451315fd965a2506e3c66bdb9bd39a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -202,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="99" column="1" bodyfile="include/assimp/vector3.inl" bodystart="82" bodyend="84"/>
+        <location file="include/assimp/vector3.h" line="99" column="1" bodyfile="include/assimp/vector3.inl" bodystart="80" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1a7b592e19e675022cdb8f88c5aa558625" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -219,7 +219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="93" column="1" bodyfile="include/assimp/vector3.inl" bodystart="218" bodyend="220"/>
+        <location file="include/assimp/vector3.h" line="93" column="1" bodyfile="include/assimp/vector3.inl" bodystart="219" bodyend="221"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1aa4d2865038aedfd61041cc578a8fb886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref> &amp;</type>
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="80" column="1" bodyfile="include/assimp/vector3.inl" bodystart="146" bodyend="152"/>
+        <location file="include/assimp/vector3.h" line="80" column="1" bodyfile="include/assimp/vector3.inl" bodystart="144" bodyend="150"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1aeb03cd5afc775d9d72f553c823619e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref> &amp;</type>
@@ -253,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="84" column="1" bodyfile="include/assimp/vector3.inl" bodystart="167" bodyend="169"/>
+        <location file="include/assimp/vector3.h" line="84" column="1" bodyfile="include/assimp/vector3.inl" bodystart="168" bodyend="170"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1aca39754be71afee3d827f32e0bcfe78e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classai_vector3t" kindref="compound">aiVector3t</ref> &amp;</type>
@@ -270,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="85" column="1" bodyfile="include/assimp/vector3.inl" bodystart="173" bodyend="175"/>
+        <location file="include/assimp/vector3.h" line="85" column="1" bodyfile="include/assimp/vector3.inl" bodystart="174" bodyend="176"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1a79ab4d3c800fbcda49727e4e3884e7e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref> &amp;</type>
@@ -287,7 +287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="78" column="1" bodyfile="include/assimp/vector3.inl" bodystart="126" bodyend="132"/>
+        <location file="include/assimp/vector3.h" line="78" column="1" bodyfile="include/assimp/vector3.inl" bodystart="124" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1a2c7f4fe4189bc18c4df2b62a14514cb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref> &amp;</type>
@@ -304,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="79" column="1" bodyfile="include/assimp/vector3.inl" bodystart="136" bodyend="142"/>
+        <location file="include/assimp/vector3.h" line="79" column="1" bodyfile="include/assimp/vector3.inl" bodystart="134" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1a34d07f57df2579f8a68d8a16cf344671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref> &amp;</type>
@@ -321,7 +321,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="81" column="1" bodyfile="include/assimp/vector3.inl" bodystart="156" bodyend="163"/>
+        <location file="include/assimp/vector3.h" line="81" column="1" bodyfile="include/assimp/vector3.inl" bodystart="154" bodyend="164"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1a29dce57b038a6e342a9772cdf0f30459" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -338,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="94" column="1" bodyfile="include/assimp/vector3.inl" bodystart="233" bodyend="235"/>
+        <location file="include/assimp/vector3.h" line="94" column="1" bodyfile="include/assimp/vector3.inl" bodystart="234" bodyend="236"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1a694fb6371859314efa937c698bb01aa0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -355,7 +355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="92" column="1" bodyfile="include/assimp/vector3.inl" bodystart="212" bodyend="214"/>
+        <location file="include/assimp/vector3.h" line="92" column="1" bodyfile="include/assimp/vector3.inl" bodystart="213" bodyend="215"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1ac552ef2defc2ed1e28c188e0bc1d839b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>TReal</type>
@@ -363,7 +363,7 @@
         <argsstring>(unsigned int i) const</argsstring>
         <name>operator[]</name>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>i</declname>
         </param>
         <briefdescription>
@@ -372,7 +372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="88" column="1" bodyfile="include/assimp/vector3.inl" bodystart="179" bodyend="191"/>
+        <location file="include/assimp/vector3.h" line="88" column="1" bodyfile="include/assimp/vector3.inl" bodystart="180" bodyend="192"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1a90e346680a3fb5e176c46cfb352fb2ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TReal &amp;</type>
@@ -380,7 +380,7 @@
         <argsstring>(unsigned int i)</argsstring>
         <name>operator[]</name>
         <param>
-          <type>unsigned <ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <type>unsigned int</type>
           <declname>i</declname>
         </param>
         <briefdescription>
@@ -389,7 +389,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="89" column="1" bodyfile="include/assimp/vector3.inl" bodystart="195" bodyend="208"/>
+        <location file="include/assimp/vector3.h" line="89" column="1" bodyfile="include/assimp/vector3.inl" bodystart="196" bodyend="209"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1a3aa63b3a3b1220bf181e75475392666b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -436,7 +436,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="105" column="1" bodyfile="include/assimp/vector3.inl" bodystart="88" bodyend="92"/>
+        <location file="include/assimp/vector3.h" line="105" column="1" bodyfile="include/assimp/vector3.inl" bodystart="86" bodyend="90"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1a2dbd68c6e54fd1ce35a1cbcccc05794e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>TReal</type>
@@ -450,7 +450,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="109" column="1" bodyfile="include/assimp/vector3.inl" bodystart="96" bodyend="98"/>
+        <location file="include/assimp/vector3.h" line="109" column="1" bodyfile="include/assimp/vector3.inl" bodystart="94" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classai_vector3t_1adb78d0afcc0e65ad921aacde17da0557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref></type>
@@ -475,7 +475,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/vector3.h" line="126" column="1" bodyfile="include/assimp/vector3.inl" bodystart="239" bodyend="241"/>
+        <location file="include/assimp/vector3.h" line="126" column="1" bodyfile="include/assimp/vector3.inl" bodystart="240" bodyend="242"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

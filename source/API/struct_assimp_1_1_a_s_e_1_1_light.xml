@@ -148,61 +148,61 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="428">
+      <node id="434">
         <label>Assimp::ASE::BaseNode</label>
         <link refid="struct_assimp_1_1_a_s_e_1_1_base_node"/>
       </node>
-      <node id="427">
+      <node id="433">
         <label>Assimp::ASE::Light</label>
         <link refid="struct_assimp_1_1_a_s_e_1_1_light"/>
-        <childnode refid="428" relation="public-inheritance">
+        <childnode refid="434" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="434">
+      <node id="440">
         <label>aiVector3t&lt; ai_real &gt;</label>
         <link refid="classai_vector3t"/>
       </node>
-      <node id="431">
+      <node id="437">
         <label>aiMatrix4x4t&lt; ai_real &gt;</label>
         <link refid="classai_matrix4x4t"/>
       </node>
-      <node id="433">
+      <node id="439">
         <label>Assimp::ASE::InheritanceInfo</label>
         <link refid="struct_assimp_1_1_a_s_e_1_1_inheritance_info"/>
       </node>
-      <node id="435">
+      <node id="441">
         <label>aiColor3D</label>
         <link refid="structai_color3_d"/>
       </node>
-      <node id="430">
+      <node id="436">
         <label>Assimp::ASE::BaseNode</label>
         <link refid="struct_assimp_1_1_a_s_e_1_1_base_node"/>
-        <childnode refid="431" relation="usage">
+        <childnode refid="437" relation="usage">
           <edgelabel>mTransform</edgelabel>
         </childnode>
-        <childnode refid="432" relation="usage">
+        <childnode refid="438" relation="usage">
           <edgelabel>mAnim</edgelabel>
           <edgelabel>mTargetAnim</edgelabel>
         </childnode>
-        <childnode refid="433" relation="usage">
+        <childnode refid="439" relation="usage">
           <edgelabel>inherit</edgelabel>
         </childnode>
-        <childnode refid="434" relation="usage">
+        <childnode refid="440" relation="usage">
           <edgelabel>mTargetPosition</edgelabel>
         </childnode>
       </node>
-      <node id="432">
+      <node id="438">
         <label>Assimp::ASE::Animation</label>
         <link refid="struct_assimp_1_1_a_s_e_1_1_animation"/>
       </node>
-      <node id="429">
+      <node id="435">
         <label>Assimp::ASE::Light</label>
         <link refid="struct_assimp_1_1_a_s_e_1_1_light"/>
-        <childnode refid="430" relation="public-inheritance">
+        <childnode refid="436" relation="public-inheritance">
         </childnode>
-        <childnode refid="435" relation="usage">
+        <childnode refid="441" relation="usage">
           <edgelabel>mColor</edgelabel>
         </childnode>
       </node>
