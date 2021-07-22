@@ -8,7 +8,7 @@ The API-Documentation
 Common Datatypes
 ----------------
 
-.. doxygenclass:: aiString
+.. doxygenstruct:: aiString
       :members:
 
 .. doxygenclass:: aiVector2t
