@@ -110,11 +110,14 @@
         <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="15">
-        <label>cmath</label>
-      </node>
       <node id="28">
         <label>assimp/IOStream.hpp</label>
+        <link refid="_i_o_stream_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>cmath</label>
       </node>
       <node id="2">
         <label>stdexcept</label>

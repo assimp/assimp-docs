@@ -12,15 +12,25 @@
     <innerclass refid="class_assimp_1_1_comment_remover" prot="public">Assimp::CommentRemover</innerclass>
     <innerclass refid="class_assimp_1_1_default_i_o_stream" prot="public">Assimp::DefaultIOStream</innerclass>
     <innerclass refid="class_assimp_1_1_default_i_o_system" prot="public">Assimp::DefaultIOSystem</innerclass>
+    <innerclass refid="class_assimp_1_1_default_logger" prot="public">Assimp::DefaultLogger</innerclass>
+    <innerclass refid="class_assimp_1_1_exporter" prot="public">Assimp::Exporter</innerclass>
+    <innerclass refid="class_assimp_1_1_export_properties" prot="public">Assimp::ExportProperties</innerclass>
     <innerclass refid="struct_assimp_1_1find__node__by__name__predicate" prot="public">Assimp::find_node_by_name_predicate</innerclass>
+    <innerclass refid="class_assimp_1_1_importer" prot="public">Assimp::Importer</innerclass>
     <innerclass refid="struct_assimp_1_1_interpolator" prot="public">Assimp::Interpolator</innerclass>
+    <innerclass refid="class_assimp_1_1_i_o_stream" prot="public">Assimp::IOStream</innerclass>
     <innerclass refid="class_assimp_1_1_i_o_stream_buffer" prot="public">Assimp::IOStreamBuffer</innerclass>
+    <innerclass refid="class_assimp_1_1_i_o_system" prot="public">Assimp::IOSystem</innerclass>
     <innerclass refid="class_assimp_1_1_line_splitter" prot="public">Assimp::LineSplitter</innerclass>
     <innerclass refid="class_assimp_1_1_log_functions" prot="public">Assimp::LogFunctions</innerclass>
+    <innerclass refid="class_assimp_1_1_logger" prot="public">Assimp::Logger</innerclass>
+    <innerclass refid="class_assimp_1_1_log_stream" prot="public">Assimp::LogStream</innerclass>
     <innerclass refid="class_assimp_1_1_memory_i_o_stream" prot="public">Assimp::MemoryIOStream</innerclass>
     <innerclass refid="class_assimp_1_1_memory_i_o_system" prot="public">Assimp::MemoryIOSystem</innerclass>
     <innerclass refid="struct_assimp_1_1_node_attachment_info" prot="public">Assimp::NodeAttachmentInfo</innerclass>
     <innerclass refid="struct_assimp_1_1_node_converter" prot="public">Assimp::NodeConverter</innerclass>
+    <innerclass refid="class_assimp_1_1_null_logger" prot="public">Assimp::NullLogger</innerclass>
+    <innerclass refid="class_assimp_1_1_progress_handler" prot="public">Assimp::ProgressHandler</innerclass>
     <innerclass refid="class_assimp_1_1_scene_combiner" prot="public">Assimp::SceneCombiner</innerclass>
     <innerclass refid="struct_assimp_1_1_scene_helper" prot="public">Assimp::SceneHelper</innerclass>
     <innerclass refid="class_assimp_1_1_s_g_spatial_sort" prot="public">Assimp::SGSpatialSort</innerclass>
@@ -185,6 +195,24 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/assimp/ParsingUtils.h" line="71" column="27" bodyfile="include/assimp/ParsingUtils.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_assimp_1a81d358b0d2907db3ffe185d60f41aa83" prot="public" static="no" mutable="no">
+        <type>class <ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref></type>
+        <definition>class ASSIMP_API Assimp::ExportProperties</definition>
+        <argsstring></argsstring>
+        <name>ExportProperties</name>
+        <briefdescription>
+<para>CPP-API: The <ref refid="class_assimp_1_1_exporter" kindref="compound">Exporter</ref> class forms an C++ interface to the export functionality of the Open Asset Import Library. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that the export interface is available only if <ref refid="namespace_assimp" kindref="compound">Assimp</ref> has been built with ASSIMP_BUILD_NO_EXPORT not defined.</para>
+<para>The interface is modeled after the importer interface and mostly symmetric. The same rules for threading etc. apply.</para>
+<para>In a nutshell, there are two export interfaces: #Export, which writes the output file(s) either to the regular file system or to a user-supplied #IOSystem, and #ExportToBlob which returns a linked list of memory buffers (blob), each referring to one output file (in most cases there will be only one output file of course, but this extra complexity is needed since <ref refid="namespace_assimp" kindref="compound">Assimp</ref> aims at supporting a wide range of file formats).</para>
+<para>#ExportToBlob is especially useful if you intend to work with the data in-memory. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="1" column="0" bodyfile="include/assimp/Exporter.hpp" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespace_assimp_1a54a4f58b78bc7d84c70aad4cc5eb79d5" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -1523,6 +1551,7 @@
 <para>Some C++ utilities for inter- and extrapolation. </para>
     </briefdescription>
     <detaileddescription>
+<para><ref refid="namespace_assimp" kindref="compound">Assimp</ref>&apos;s CPP-API and all internal APIs. </para>
     </detaileddescription>
     <location file="include/assimp/anim.h" line="478" column="1"/>
   </compounddef>

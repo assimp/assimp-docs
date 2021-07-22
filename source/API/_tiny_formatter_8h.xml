@@ -5,6 +5,7 @@
     <includes local="no">sstream</includes>
     <includedby refid="_exceptional_8h" local="no">Exceptional.h</includedby>
     <includedby refid="_log_aux_8h" local="no">LogAux.h</includedby>
+    <includedby refid="_logger_8hpp" local="no">Logger.hpp</includedby>
     <includedby refid="_profiler_8h" local="no">Profiler.h</includedby>
     <incdepgraph>
       <node id="1">
@@ -18,11 +19,23 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="9">
+        <label>Logger.hpp</label>
+        <link refid="_logger_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
       <node id="3">
         <label>BaseImporter.h</label>
         <link refid="_base_importer_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
+      </node>
+      <node id="11">
+        <label>BlobIOSystem.h</label>
+        <link refid="_blob_i_o_system_8h"/>
       </node>
       <node id="1">
         <label>TinyFormatter.h</label>
@@ -32,6 +45,8 @@
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -48,9 +63,15 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="12">
         <label>Profiler.h</label>
         <link refid="_profiler_8h"/>
+      </node>
+      <node id="13">
+        <label>NullLogger.hpp</label>
+        <link refid="_null_logger_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>Exceptional.h</label>
@@ -71,6 +92,20 @@
       <node id="4">
         <label>XmlParser.h</label>
         <link refid="_xml_parser_8h"/>
+      </node>
+      <node id="10">
+        <label>DefaultLogger.hpp</label>
+        <link refid="_default_logger_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_assimp_1_1_formatter_1_1basic__formatter" prot="public">Assimp::Formatter::basic_formatter</innerclass>

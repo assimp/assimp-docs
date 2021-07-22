@@ -8,7 +8,7 @@
         <label>MemoryIOWrapper.h</label>
         <link refid="_memory_i_o_wrapper_8h"/>
       </node>
-      <node id="42">
+      <node id="54">
         <label>SpatialSort.h</label>
         <link refid="_spatial_sort_8h"/>
       </node>
@@ -16,17 +16,25 @@
         <label>GenericProperty.h</label>
         <link refid="_generic_property_8h"/>
       </node>
-      <node id="48">
+      <node id="60">
         <label>matrix4x4.h</label>
         <link refid="matrix4x4_8h"/>
-        <childnode refid="46" relation="include">
+        <childnode refid="58" relation="include">
         </childnode>
-        <childnode refid="47" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="53">
+      <node id="40">
+        <label>Logger.hpp</label>
+        <link refid="_logger_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
         <label>StringUtils.h</label>
         <link refid="_string_utils_8h"/>
         <childnode refid="12" relation="include">
@@ -34,20 +42,20 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="56">
+      <node id="68">
         <label>vector3.h</label>
         <link refid="vector3_8h"/>
-        <childnode refid="57" relation="include">
+        <childnode refid="69" relation="include">
         </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="60" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="53" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="70" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="59" relation="include">
+        <childnode refid="71" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
@@ -66,7 +74,7 @@
         <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="34">
+      <node id="45">
         <label>material.h</label>
         <link refid="material_8h"/>
         <childnode refid="22" relation="include">
@@ -76,33 +84,33 @@
         <label>BlobIOSystem.h</label>
         <link refid="_blob_i_o_system_8h"/>
       </node>
-      <node id="29">
+      <node id="31">
         <label>importerdesc.h</label>
         <link refid="importerdesc_8h"/>
-        <childnode refid="28" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="34">
         <label>LogAux.h</label>
         <link refid="_log_aux_8h"/>
       </node>
-      <node id="37">
+      <node id="48">
         <label>SkeletonMeshBuilder.h</label>
         <link refid="_skeleton_mesh_builder_8h"/>
       </node>
-      <node id="33">
+      <node id="39">
         <label>light.h</label>
         <link refid="light_8h"/>
         <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="58">
+      <node id="70">
         <label>StandardShapes.h</label>
         <link refid="_standard_shapes_8h"/>
       </node>
-      <node id="27">
+      <node id="28">
         <label>cfileio.h</label>
         <link refid="cfileio_8h"/>
       </node>
@@ -129,45 +137,77 @@
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
         <childnode refid="28" relation="include">
         </childnode>
         <childnode refid="29" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="35" relation="include">
         </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="51" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="43" relation="include">
+        <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
+        <childnode refid="56" relation="include">
         </childnode>
       </node>
-      <node id="36">
+      <node id="35">
+        <label>IOStream.hpp</label>
+        <link refid="_i_o_stream_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
         <label>CreateAnimMesh.h</label>
         <link refid="_create_anim_mesh_8h"/>
       </node>
-      <node id="45">
+      <node id="57">
         <label>matrix3x3.h</label>
         <link refid="matrix3x3_8h"/>
-        <childnode refid="46" relation="include">
+        <childnode refid="58" relation="include">
         </childnode>
-        <childnode refid="47" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
@@ -185,6 +225,10 @@
       <node id="17">
         <label>Bitmap.h</label>
         <link refid="_bitmap_8h"/>
+      </node>
+      <node id="42">
+        <label>Profiler.h</label>
+        <link refid="_profiler_8h"/>
       </node>
       <node id="11">
         <label>StringComparison.h</label>
@@ -210,19 +254,23 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="30">
+      <node id="27">
+        <label>Exporter.hpp</label>
+        <link refid="_exporter_8hpp"/>
+      </node>
+      <node id="32">
         <label>DefaultIOStream.h</label>
         <link refid="_default_i_o_stream_8h"/>
-        <childnode refid="31" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
       </node>
-      <node id="39">
+      <node id="51">
         <label>SGSpatialSort.h</label>
         <link refid="_s_g_spatial_sort_8h"/>
-        <childnode refid="40" relation="include">
+        <childnode refid="52" relation="include">
         </childnode>
       </node>
-      <node id="47">
+      <node id="59">
         <label>matrix4x4.inl</label>
         <link refid="matrix4x4_8inl"/>
       </node>
@@ -232,31 +280,31 @@
         <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="49">
+      <node id="61">
         <label>qnan.h</label>
         <link refid="qnan_8h"/>
       </node>
-      <node id="51">
+      <node id="63">
         <label>quaternion.inl</label>
         <link refid="quaternion_8inl"/>
       </node>
-      <node id="60">
+      <node id="72">
         <label>version.h</label>
         <link refid="version_8h"/>
       </node>
-      <node id="50">
+      <node id="62">
         <label>quaternion.h</label>
         <link refid="quaternion_8h"/>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="47" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="59">
+      <node id="71">
         <label>vector3.inl</label>
         <link refid="vector3_8inl"/>
       </node>
@@ -278,6 +326,12 @@
         <childnode refid="16" relation="include">
         </childnode>
       </node>
+      <node id="43">
+        <label>NullLogger.hpp</label>
+        <link refid="_null_logger_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
       <node id="2">
         <label>defs.h</label>
         <link refid="defs_8h"/>
@@ -289,60 +343,66 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="45" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="49" relation="include">
-        </childnode>
-        <childnode refid="50" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="53" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="56" relation="include">
+        <childnode refid="57" relation="include">
         </childnode>
         <childnode refid="60" relation="include">
         </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
       </node>
-      <node id="55">
+      <node id="67">
         <label>vector2.inl</label>
         <link refid="vector2_8inl"/>
       </node>
-      <node id="40">
+      <node id="52">
         <label>SmoothingGroups.inl</label>
         <link refid="_smoothing_groups_8inl"/>
-        <childnode refid="41" relation="include">
+        <childnode refid="53" relation="include">
         </childnode>
       </node>
-      <node id="31">
+      <node id="33">
         <label>Exceptional.h</label>
         <link refid="_exceptional_8h"/>
         <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="44">
+        <label>LogStream.hpp</label>
+        <link refid="_log_stream_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
         <label>texture.h</label>
         <link refid="texture_8h"/>
         <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>cimport.h</label>
         <link refid="cimport_8h"/>
       </node>
@@ -350,9 +410,23 @@
         <label>Vertex.h</label>
         <link refid="_vertex_8h"/>
       </node>
+      <node id="38">
+        <label>DefaultIOSystem.h</label>
+        <link refid="_default_i_o_system_8h"/>
+      </node>
       <node id="12">
         <label>fast_atof.h</label>
         <link refid="fast__atof_8h"/>
+      </node>
+      <node id="36">
+        <label>ZipArchiveIOSystem.h</label>
+        <link refid="_zip_archive_i_o_system_8h"/>
+      </node>
+      <node id="50">
+        <label>ProgressHandler.hpp</label>
+        <link refid="_progress_handler_8hpp"/>
+        <childnode refid="23" relation="include">
+        </childnode>
       </node>
       <node id="13">
         <label>ParsingUtils.h</label>
@@ -366,9 +440,27 @@
         <label>StreamWriter.h</label>
         <link refid="_stream_writer_8h"/>
       </node>
+      <node id="37">
+        <label>IOSystem.hpp</label>
+        <link refid="_i_o_system_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
       <node id="22">
         <label>scene.h</label>
         <link refid="scene_8h"/>
+      </node>
+      <node id="30">
+        <label>Importer.hpp</label>
+        <link refid="_importer_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="18">
         <label>color4.h</label>
@@ -378,30 +470,30 @@
         <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="54">
+      <node id="66">
         <label>vector2.h</label>
         <link refid="vector2_8h"/>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="55" relation="include">
+        <childnode refid="67" relation="include">
         </childnode>
       </node>
-      <node id="38">
+      <node id="49">
         <label>postprocess.h</label>
         <link refid="postprocess_8h"/>
       </node>
-      <node id="41">
+      <node id="53">
         <label>SmoothingGroups.h</label>
         <link refid="_smoothing_groups_8h"/>
       </node>
-      <node id="35">
+      <node id="46">
         <label>mesh.h</label>
         <link refid="mesh_8h"/>
-        <childnode refid="36" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
@@ -415,23 +507,39 @@
         <link refid="cexport_8h"/>
         <childnode refid="26" relation="include">
         </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
       </node>
-      <node id="52">
+      <node id="64">
         <label>RemoveComments.h</label>
         <link refid="_remove_comments_8h"/>
       </node>
-      <node id="43">
+      <node id="41">
+        <label>DefaultLogger.hpp</label>
+        <link refid="_default_logger_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
         <label>Subdivision.h</label>
         <link refid="_subdivision_8h"/>
       </node>
-      <node id="46">
+      <node id="58">
         <label>matrix3x3.inl</label>
         <link refid="matrix3x3_8inl"/>
       </node>
-      <node id="57">
+      <node id="69">
         <label>aabb.h</label>
         <link refid="aabb_8h"/>
-        <childnode refid="35" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -1904,7 +2012,7 @@ The default value is true (1) Property type: bool </para>
 <para>Defines constants for configurable properties for the library. </para>
     </briefdescription>
     <detaileddescription>
-<para>Typically these properties are set via #Assimp::Importer::SetPropertyFloat, #Assimp::Importer::SetPropertyInteger or #Assimp::Importer::SetPropertyString, depending on the data type of a property. All properties have a default value. See the doc for the mentioned methods for more details.</para>
+<para>Typically these properties are set via <ref refid="class_assimp_1_1_importer_1ad38af78d6fe4b1f132d2534d8a84deea" kindref="member">Assimp::Importer::SetPropertyFloat</ref>, <ref refid="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" kindref="member">Assimp::Importer::SetPropertyInteger</ref> or <ref refid="class_assimp_1_1_importer_1a854087b213981108e3e464cf4d293fed" kindref="member">Assimp::Importer::SetPropertyString</ref>, depending on the data type of a property. All properties have a default value. See the doc for the mentioned methods for more details.</para>
 <para><linebreak/>
 <linebreak/>
  The corresponding functions for use with the plain-c API are: <ref refid="cimport_8h_1a77fe5bf63f5b7811b10fb1ea072cd995" kindref="member">aiSetImportPropertyInteger</ref>, <ref refid="cimport_8h_1a7a3fdb2a587ce72c66182b87465d664d" kindref="member">aiSetImportPropertyFloat</ref>, <ref refid="cimport_8h_1a0c6f78241e9ec7b2470d193858baf22d" kindref="member">aiSetImportPropertyString</ref> </para>

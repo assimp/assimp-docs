@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_log_stream" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Assimp::LogStream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Intern::AllocateFromAssimpHeap</basecompoundref>
+    <includes local="no">LogStream.hpp</includes>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_assimp_1_1_log_stream_1aca07b1b2d95a8ffd4c3704e033facb26" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::LogStream::LogStream</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>LogStream</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LogStream.hpp" line="68" column="5" bodyfile="include/assimp/LogStream.hpp" bodystart="98" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_log_stream_1ab0bfcb5ab9988ef65d7222a50f6e8d37" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Assimp::LogStream::write</definition>
+        <argsstring>(const char *message)=0</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Overwrite this for your own output methods. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Log messages <emphasis>may</emphasis> consist of multiple lines and you shouldn&apos;t expect a consistent formatting. If you want custom formatting (e.g. generate HTML), supply a custom instance of <ref refid="class_assimp_1_1_logger" kindref="compound">Logger</ref> to #DefaultLogger:set(). Usually you can <emphasis>expect</emphasis> that a log message is exactly one line and terminated with a single <linebreak/>
+ character. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message to be written </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LogStream.hpp" line="83" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_log_stream_1a2cf7080efeb4999a02689f2a31843da2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>Assimp::LogStream::~LogStream</definition>
+        <argsstring>()</argsstring>
+        <name>~LogStream</name>
+        <briefdescription>
+<para>Virtual destructor <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LogStream.hpp" line="72" column="13" bodyfile="include/assimp/LogStream.hpp" bodystart="102" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_log_stream_1a60d741018b0f93d0e494e5e8a996b958" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_log_stream" kindref="compound">LogStream</ref> *</type>
+        <definition>static LogStream* Assimp::LogStream::createDefaultStream</definition>
+        <argsstring>(aiDefaultLogStream stream, const char *name=&quot;AssimpLog.txt&quot;, IOSystem *io=nullptr)</argsstring>
+        <name>createDefaultStream</name>
+        <param>
+          <type><ref refid="types_8h_1ae4271f61a7c06cd4770fc3e11f58f9c6" kindref="member">aiDefaultLogStream</ref></type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+          <defval>&quot;AssimpLog.txt&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>io</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Creates a default log stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>streams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the default stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>For aiDefaultLogStream_FILE: name of the output file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>io</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>For aiDefaultLogStream_FILE: <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> to be used to open the output file. Pass nullptr for the default implementation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New <ref refid="class_assimp_1_1_log_stream" kindref="compound">LogStream</ref> instance. <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LogStream.hpp" line="92" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CPP-API: Abstract interface for log stream implementations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Several default implementations are provided, see <ref refid="types_8h_1ae4271f61a7c06cd4770fc3e11f58f9c6" kindref="member">aiDefaultLogStream</ref> for more details. Writing your own implementation of <ref refid="class_assimp_1_1_log_stream" kindref="compound">LogStream</ref> is just necessary if these are not enough for your purpose. </para>
+    </detaileddescription>
+    <location file="include/assimp/LogStream.hpp" line="61" column="1" bodyfile="include/assimp/LogStream.hpp" bodystart="65" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_log_stream_1a60d741018b0f93d0e494e5e8a996b958" prot="public" virt="non-virtual"><scope>Assimp::LogStream</scope><name>createDefaultStream</name></member>
+      <member refid="class_assimp_1_1_log_stream_1aca07b1b2d95a8ffd4c3704e033facb26" prot="protected" virt="non-virtual"><scope>Assimp::LogStream</scope><name>LogStream</name></member>
+      <member refid="class_assimp_1_1_log_stream_1ab0bfcb5ab9988ef65d7222a50f6e8d37" prot="public" virt="pure-virtual"><scope>Assimp::LogStream</scope><name>write</name></member>
+      <member refid="class_assimp_1_1_log_stream_1a2cf7080efeb4999a02689f2a31843da2" prot="public" virt="virtual"><scope>Assimp::LogStream</scope><name>~LogStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

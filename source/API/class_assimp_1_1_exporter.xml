@@ -1,0 +1,557 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_exporter" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::Exporter</compoundname>
+    <includes local="no">Exporter.hpp</includes>
+    <innerclass refid="struct_assimp_1_1_exporter_1_1_export_format_entry" prot="public">Assimp::Exporter::ExportFormatEntry</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_assimp_1_1_exporter_1a37fc9550e48e51c26478c008835846d0" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* Assimp::Exporter::fpExportFunc) (const char *, IOSystem *, const aiScene *, const ExportProperties *)</definition>
+        <argsstring>)(const char *, IOSystem *, const aiScene *, const ExportProperties *)</argsstring>
+        <name>fpExportFunc</name>
+        <briefdescription>
+<para>Function pointer type of a Export worker function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="88" column="13" bodyfile="include/assimp/Exporter.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_exporter_1a75bc178ae29edc192e1c1935c31c42b2" prot="protected" static="no" mutable="no">
+        <type>ExporterPimpl *</type>
+        <definition>ExporterPimpl* Assimp::Exporter::pimpl</definition>
+        <argsstring></argsstring>
+        <name>pimpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="320" column="19" bodyfile="include/assimp/Exporter.hpp" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1a03adf017791ffc3694e382678f056e9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn Assimp::Exporter::Export</definition>
+        <argsstring>(const aiScene *pScene, const char *pFormatId, const char *pPath, unsigned int pPreprocessing=0u, const ExportProperties *pProperties=nullptr)</argsstring>
+        <name>Export</name>
+        <param>
+          <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pFormatId</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pPath</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pPreprocessing</declname>
+          <defval>0u</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_export_properties" kindref="compound">ExportProperties</ref> *</type>
+          <declname>pProperties</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Convenience function to export directly to a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use #SetIOSystem to supply a custom <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> to gain fine-grained control about the output data flow of the export process. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pBlob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A data blob obtained from a previous call to <ref refid="cexport_8h_1a9615510b8430a9da4f435a72148128dd" kindref="member">aiExportScene</ref>. Must not be nullptr. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full target file name. Target must be accessible. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pPreprocessing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Accepts any choice of the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410" kindref="member">aiPostProcessSteps</ref> enumerated flags, but in reality only a subset of them makes sense here. Specifying &apos;preprocessing&apos; flags is useful if the input scene does not conform to <ref refid="namespace_assimp" kindref="compound">Assimp</ref>&apos;s default conventions as specified in the <ref refid="" kindref="compound">Data Structures Page </ref>. In short, this means the geometry data should use a right-handed coordinate systems, face winding should be counter-clockwise and the UV coordinate origin is assumed to be in the upper left. The <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a133fd1162674e68bf8cd17070898a936" kindref="member">aiProcess_MakeLeftHanded</ref>, <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a06922b6a1f1cd8186f9fdafb471c813e" kindref="member">aiProcess_FlipUVs</ref> and <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a429a11bf7ace46f039f55de895505d4a" kindref="member">aiProcess_FlipWindingOrder</ref> flags are used in the import side to allow users to have those defaults automatically adapted to their conventions. Specifying those flags for exporting has the opposite effect, respectively. Some other of the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410" kindref="member">aiPostProcessSteps</ref> enumerated values may be useful as well, but you&apos;ll need to try out what their effect on the exported file is. Many formats impose their own restrictions on the structure of the geometry stored therein, so some preprocessing may have little or no effect at all, or may be redundant as exporters would apply them anyhow. A good example is triangulation - whilst you can enforce it by specifying the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b" kindref="member">aiProcess_Triangulate</ref> flag, most export formats support only triangulate data so they would run the step even if it wasn&apos;t requested.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+If assimp detects that the input scene was directly taken from the importer side of the library (i.e. not copied using aiCopyScene and potentially modified afterwards), any post-processing steps already applied to the scene will not be applied again, unless they show non-idempotent behavior (<ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a133fd1162674e68bf8cd17070898a936" kindref="member">aiProcess_MakeLeftHanded</ref>, <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a06922b6a1f1cd8186f9fdafb471c813e" kindref="member">aiProcess_FlipUVs</ref> and <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a429a11bf7ace46f039f55de895505d4a" kindref="member">aiProcess_FlipWindingOrder</ref>). <simplesect kind="return"><para>AI_SUCCESS if everything was fine. </para>
+</simplesect>
+<simplesect kind="note"><para>Use <ref refid="cexport_8h_1a3b462a882e970cd7f492e293e5dee4fe" kindref="member">aiCopyScene()</ref> to get a modifiable copy of a previously imported scene. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="231" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1af450a04bbbfa1c27a2e37e5f9bece5bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn Assimp::Exporter::Export</definition>
+        <argsstring>(const aiScene *pScene, const std::string &amp;pFormatId, const std::string &amp;pPath, unsigned int pPreprocessing=0u, const ExportProperties *pProperties=nullptr)</argsstring>
+        <name>Export</name>
+        <param>
+          <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pFormatId</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pPath</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pPreprocessing</declname>
+          <defval>0u</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_export_properties" kindref="compound">ExportProperties</ref> *</type>
+          <declname>pProperties</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="233" column="14" bodyfile="include/assimp/Exporter.hpp" bodystart="500" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1ac45a55fc178256576d2d21b58bd944a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::Exporter::Exporter</definition>
+        <argsstring>()</argsstring>
+        <name>Exporter</name>
+        <briefdescription>
+<para>The class constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="122" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1a08e277e67a64ac81e472ccfba5886aae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref> *</type>
+        <definition>const aiExportDataBlob* Assimp::Exporter::ExportToBlob</definition>
+        <argsstring>(const aiScene *pScene, const char *pFormatId, unsigned int pPreprocessing=0u, const ExportProperties *pProperties=nullptr)</argsstring>
+        <name>ExportToBlob</name>
+        <param>
+          <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pFormatId</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pPreprocessing</declname>
+          <defval>0u</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_export_properties" kindref="compound">ExportProperties</ref> *</type>
+          <declname>pProperties</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Exports the given scene to a chosen file format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the exported data as a binary blob which you can write into a file or something. When you&apos;re done with the data, simply let the <ref refid="class_assimp_1_1_exporter_1ac45a55fc178256576d2d21b58bd944a0" kindref="member">Exporter</ref> instance go out of scope to have it released automatically. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pScene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene to export. Stays in possession of the caller, is not changed by the function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pFormatId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID string to specify to which format you want to export to. Use <ref refid="class_assimp_1_1_exporter_1abc7d35254b0191ba97dccee597364084" kindref="member">GetExportFormatCount</ref> / <ref refid="class_assimp_1_1_exporter_1afd770d782263123f4d6c14f2f8648b04" kindref="member">GetExportFormatDescription</ref> to learn which export formats are available. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pPreprocessing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See the documentation for <ref refid="class_assimp_1_1_exporter_1a03adf017791ffc3694e382678f056e9c" kindref="member">Export</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the exported data or nullptr in case of error. </para>
+</simplesect>
+<simplesect kind="note"><para>If the <ref refid="class_assimp_1_1_exporter" kindref="compound">Exporter</ref> instance did already hold a blob from a previous call to <ref refid="class_assimp_1_1_exporter_1a08e277e67a64ac81e472ccfba5886aae" kindref="member">ExportToBlob</ref>, it will be disposed. Any IO handlers set via <ref refid="class_assimp_1_1_exporter_1a054201cf78fa352b1281ea8b484f6e3a" kindref="member">SetIOHandler</ref> are ignored here. </para>
+</simplesect>
+<simplesect kind="note"><para>Use <ref refid="cexport_8h_1a3b462a882e970cd7f492e293e5dee4fe" kindref="member">aiCopyScene()</ref> to get a modifiable copy of a previously imported scene. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="193" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1ad7783acdf84c9989567a8b80cb2b19b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref> *</type>
+        <definition>const aiExportDataBlob * Assimp::Exporter::ExportToBlob</definition>
+        <argsstring>(const aiScene *pScene, const std::string &amp;pFormatId, unsigned int pPreprocessing=0u, const ExportProperties *pProperties=nullptr)</argsstring>
+        <name>ExportToBlob</name>
+        <param>
+          <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pFormatId</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pPreprocessing</declname>
+          <defval>0u</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_export_properties" kindref="compound">ExportProperties</ref> *</type>
+          <declname>pProperties</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="195" column="28" bodyfile="include/assimp/Exporter.hpp" bodystart="494" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1a8200b618c21c272c839c37060a871d48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Exporter::FreeBlob</definition>
+        <argsstring>()</argsstring>
+        <name>FreeBlob</name>
+        <briefdescription>
+<para>Frees the current blob. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function does nothing if no blob has previously been previously produced via <ref refid="class_assimp_1_1_exporter_1a08e277e67a64ac81e472ccfba5886aae" kindref="member">ExportToBlob</ref>. <ref refid="class_assimp_1_1_exporter_1a8200b618c21c272c839c37060a871d48" kindref="member">FreeBlob</ref> is called automatically by the destructor. The only reason to call it manually would be to reclaim as much storage as possible without giving up the <ref refid="class_assimp_1_1_exporter_1ac45a55fc178256576d2d21b58bd944a0" kindref="member">Exporter</ref> instance yet. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="266" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1af6d84e8c9775de2d11666dad15c11f06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref> *</type>
+        <definition>const aiExportDataBlob* Assimp::Exporter::GetBlob</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBlob</name>
+        <briefdescription>
+<para>Return the blob obtained from the last call to <ref refid="class_assimp_1_1_exporter_1a08e277e67a64ac81e472ccfba5886aae" kindref="member">ExportToBlob</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="250" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1a5033fb7490dc2f4ac4d69d4d146a690a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* Assimp::Exporter::GetErrorString</definition>
+        <argsstring>() const</argsstring>
+        <name>GetErrorString</name>
+        <briefdescription>
+<para>Returns an error description of an error that occurred in <ref refid="class_assimp_1_1_exporter_1a03adf017791ffc3694e382678f056e9c" kindref="member">Export</ref> or <ref refid="class_assimp_1_1_exporter_1a08e277e67a64ac81e472ccfba5886aae" kindref="member">ExportToBlob</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an empty string if no error occurred. <simplesect kind="return"><para>A description of the last error, an empty string if no error occurred. The string is never nullptr.</para>
+</simplesect>
+<simplesect kind="note"><para>The returned function remains valid until one of the following methods is called: <ref refid="class_assimp_1_1_exporter_1a03adf017791ffc3694e382678f056e9c" kindref="member">Export</ref>, <ref refid="class_assimp_1_1_exporter_1a08e277e67a64ac81e472ccfba5886aae" kindref="member">ExportToBlob</ref>, <ref refid="class_assimp_1_1_exporter_1a8200b618c21c272c839c37060a871d48" kindref="member">FreeBlob</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="246" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1abc7d35254b0191ba97dccee597364084" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::Exporter::GetExportFormatCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetExportFormatCount</name>
+        <briefdescription>
+<para>Returns the number of export file formats available in the current <ref refid="namespace_assimp" kindref="compound">Assimp</ref> build. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use #Exporter::GetExportFormatDescription to retrieve infos of a specific export format.</para>
+<para>This includes built-in exporters as well as exporters registered using <ref refid="class_assimp_1_1_exporter_1ae65025d7c5a06a0c3e8655585f87e1c4" kindref="member">RegisterExporter</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="276" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1afd770d782263123f4d6c14f2f8648b04" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_export_format_desc" kindref="compound">aiExportFormatDesc</ref> *</type>
+        <definition>const aiExportFormatDesc* Assimp::Exporter::GetExportFormatDescription</definition>
+        <argsstring>(size_t pIndex) const</argsstring>
+        <name>GetExportFormatDescription</name>
+        <param>
+          <type>size_t</type>
+          <declname>pIndex</declname>
+        </param>
+        <briefdescription>
+<para>Returns a description of the nth export file format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use # #Exporter::GetExportFormatCount to learn how many export formats are supported.</para>
+<para>The returned pointer is of static storage duration if the pIndex pertains to a built-in exporter (i.e. one not registered via #RegistrerExporter). It is restricted to the life-time of the <ref refid="class_assimp_1_1_exporter_1ac45a55fc178256576d2d21b58bd944a0" kindref="member">Exporter</ref> instance otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the export format to retrieve information for. Valid range is 0 to #Exporter::GetExportFormatCount </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A description of that specific export format. NULL if pIndex is out of range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="292" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1a360f711e560410ce55f6bd2673a6cd85" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+        <definition>IOSystem* Assimp::Exporter::GetIOHandler</definition>
+        <argsstring>() const</argsstring>
+        <name>GetIOHandler</name>
+        <briefdescription>
+<para>Retrieves the IO handler that is currently set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>You can use <ref refid="class_assimp_1_1_exporter_1a78735bb79173a37f9d3126577244be7b" kindref="member">IsDefaultIOHandler()</ref> to check whether the returned interface is the default IO handler provided by ASSIMP. The default handler is active as long the application doesn&apos;t supply its own custom IO handler via <ref refid="class_assimp_1_1_exporter_1a054201cf78fa352b1281ea8b484f6e3a" kindref="member">SetIOHandler()</ref>. <simplesect kind="return"><para>A valid <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> interface, never NULL. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="153" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1acc64a9737f5d9e0efc03088cadce0096" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref> *</type>
+        <definition>const aiExportDataBlob* Assimp::Exporter::GetOrphanedBlob</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOrphanedBlob</name>
+        <briefdescription>
+<para>Orphan the blob from the last call to <ref refid="class_assimp_1_1_exporter_1a08e277e67a64ac81e472ccfba5886aae" kindref="member">ExportToBlob</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This means the caller takes ownership and is thus responsible for calling the C API function <ref refid="cexport_8h_1a0998064849f2ef5544f6fd30cda0b964" kindref="member">aiReleaseExportBlob</ref> to release it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="256" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1a78735bb79173a37f9d3126577244be7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::Exporter::IsDefaultIOHandler</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDefaultIOHandler</name>
+        <briefdescription>
+<para>Checks whether a default IO handler is active A default handler is active as long the application doesn&apos;t supply its own custom IO handler via <ref refid="class_assimp_1_1_exporter_1a054201cf78fa352b1281ea8b484f6e3a" kindref="member">SetIOHandler()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true by default </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="160" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1ae65025d7c5a06a0c3e8655585f87e1c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn Assimp::Exporter::RegisterExporter</definition>
+        <argsstring>(const ExportFormatEntry &amp;desc)</argsstring>
+        <name>RegisterExporter</name>
+        <param>
+          <type>const <ref refid="struct_assimp_1_1_exporter_1_1_export_format_entry" kindref="compound">ExportFormatEntry</ref> &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+<para>Register a custom exporter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom export formats are limited to to the current <ref refid="class_assimp_1_1_exporter_1ac45a55fc178256576d2d21b58bd944a0" kindref="member">Exporter</ref> instance and do not affect the library globally. The indexes under which the format&apos;s export format description can be queried are assigned monotonously. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_assimp_1_1_exporter" kindref="compound">Exporter</ref> description. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>aiReturn_SUCCESS if the export format was successfully registered. A common cause that would prevent an exporter from being registered is that its format id is already occupied by another format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="305" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1a054201cf78fa352b1281ea8b484f6e3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Exporter::SetIOHandler</definition>
+        <argsstring>(IOSystem *pIOHandler)</argsstring>
+        <name>SetIOHandler</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <briefdescription>
+<para>Supplies a custom IO handler to the exporter to use to open and access files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If you need <ref refid="class_assimp_1_1_exporter_1a03adf017791ffc3694e382678f056e9c" kindref="member">Export</ref> to use custom IO logic to access the files, you need to supply a custom implementation of <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> and IOFile to the exporter.</para>
+<para><ref refid="class_assimp_1_1_exporter_1ac45a55fc178256576d2d21b58bd944a0" kindref="member">Exporter</ref> takes ownership of the object and will destroy it afterwards. The previously assigned handler will be deleted. Pass NULL to take again ownership of your <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> and reset <ref refid="namespace_assimp" kindref="compound">Assimp</ref> to use its default implementation, which uses plain file IO.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pIOHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IO handler to be used in all file accesses of the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="144" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1ad62dcc1ed4fb9f2c17114e2f98b94d15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Exporter::SetProgressHandler</definition>
+        <argsstring>(ProgressHandler *pHandler)</argsstring>
+        <name>SetProgressHandler</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_progress_handler" kindref="compound">ProgressHandler</ref> *</type>
+          <declname>pHandler</declname>
+        </param>
+        <briefdescription>
+<para>Supplies a custom progress handler to the exporter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This interface exposes an #Update() callback, which is called more or less periodically (please don&apos;t sue us if it isn&apos;t as periodically as you&apos;d like it to have ...). This can be used to implement progress bars and loading timeouts. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Progress callback interface. Pass nullptr to disable progress reporting. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Progress handlers can be used to abort the loading at almost any time. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="173" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1afa5956ce18138b90396c505468d1e52b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Exporter::UnregisterExporter</definition>
+        <argsstring>(const char *id)</argsstring>
+        <name>UnregisterExporter</name>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Remove an export format previously registered with <ref refid="class_assimp_1_1_exporter_1ae65025d7c5a06a0c3e8655585f87e1c4" kindref="member">RegisterExporter</ref> from the <ref refid="class_assimp_1_1_exporter_1ac45a55fc178256576d2d21b58bd944a0" kindref="member">Exporter</ref> instance (this can also be used to drop built-in exporters because those are implicitly registered using <ref refid="class_assimp_1_1_exporter_1ae65025d7c5a06a0c3e8655585f87e1c4" kindref="member">RegisterExporter</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format id to be unregistered, this refers to the &apos;id&apos; field of <ref refid="structai_export_format_desc" kindref="compound">aiExportFormatDesc</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Calling this method on a format description not yet registered has no effect. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="316" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_exporter_1a52c3ba6c76c778fb5dd70ad30589fb2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::Exporter::~Exporter</definition>
+        <argsstring>()</argsstring>
+        <name>~Exporter</name>
+        <briefdescription>
+<para>The class destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="127" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/Exporter.hpp" line="85" column="1" bodyfile="include/assimp/Exporter.hpp" bodystart="85" bodyend="321"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_exporter_1a03adf017791ffc3694e382678f056e9c" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>Export</name></member>
+      <member refid="class_assimp_1_1_exporter_1af450a04bbbfa1c27a2e37e5f9bece5bd" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>Export</name></member>
+      <member refid="class_assimp_1_1_exporter_1ac45a55fc178256576d2d21b58bd944a0" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>Exporter</name></member>
+      <member refid="class_assimp_1_1_exporter_1a08e277e67a64ac81e472ccfba5886aae" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>ExportToBlob</name></member>
+      <member refid="class_assimp_1_1_exporter_1ad7783acdf84c9989567a8b80cb2b19b9" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>ExportToBlob</name></member>
+      <member refid="class_assimp_1_1_exporter_1a37fc9550e48e51c26478c008835846d0" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>fpExportFunc</name></member>
+      <member refid="class_assimp_1_1_exporter_1a8200b618c21c272c839c37060a871d48" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>FreeBlob</name></member>
+      <member refid="class_assimp_1_1_exporter_1af6d84e8c9775de2d11666dad15c11f06" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>GetBlob</name></member>
+      <member refid="class_assimp_1_1_exporter_1a5033fb7490dc2f4ac4d69d4d146a690a" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>GetErrorString</name></member>
+      <member refid="class_assimp_1_1_exporter_1abc7d35254b0191ba97dccee597364084" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>GetExportFormatCount</name></member>
+      <member refid="class_assimp_1_1_exporter_1afd770d782263123f4d6c14f2f8648b04" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>GetExportFormatDescription</name></member>
+      <member refid="class_assimp_1_1_exporter_1a360f711e560410ce55f6bd2673a6cd85" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>GetIOHandler</name></member>
+      <member refid="class_assimp_1_1_exporter_1acc64a9737f5d9e0efc03088cadce0096" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>GetOrphanedBlob</name></member>
+      <member refid="class_assimp_1_1_exporter_1a78735bb79173a37f9d3126577244be7b" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>IsDefaultIOHandler</name></member>
+      <member refid="class_assimp_1_1_exporter_1a75bc178ae29edc192e1c1935c31c42b2" prot="protected" virt="non-virtual"><scope>Assimp::Exporter</scope><name>pimpl</name></member>
+      <member refid="class_assimp_1_1_exporter_1ae65025d7c5a06a0c3e8655585f87e1c4" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>RegisterExporter</name></member>
+      <member refid="class_assimp_1_1_exporter_1a054201cf78fa352b1281ea8b484f6e3a" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>SetIOHandler</name></member>
+      <member refid="class_assimp_1_1_exporter_1ad62dcc1ed4fb9f2c17114e2f98b94d15" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>SetProgressHandler</name></member>
+      <member refid="class_assimp_1_1_exporter_1afa5956ce18138b90396c505468d1e52b" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>UnregisterExporter</name></member>
+      <member refid="class_assimp_1_1_exporter_1a52c3ba6c76c778fb5dd70ad30589fb2c" prot="public" virt="non-virtual"><scope>Assimp::Exporter</scope><name>~Exporter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

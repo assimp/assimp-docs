@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="class_assimp_1_1_blob_i_o_stream" kind="class" language="C++" prot="public">
     <compoundname>Assimp::BlobIOStream</compoundname>
-    <basecompoundref prot="public" virt="non-virtual">IOStream</basecompoundref>
+    <basecompoundref refid="class_assimp_1_1_i_o_stream" prot="public" virt="non-virtual">Assimp::IOStream</basecompoundref>
     <includes local="no">BlobIOSystem.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_assimp_1_1_blob_i_o_stream_1abee210171933e0a1cd2c220d71e3e3e7" prot="private" static="no" mutable="no">
@@ -129,7 +129,9 @@
         <definition>virtual size_t Assimp::BlobIOStream::FileSize</definition>
         <argsstring>() const</argsstring>
         <name>FileSize</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1aaa01183d197fb714f28d6c611b6fa058">FileSize</reimplements>
         <briefdescription>
+<para>Returns filesize Returns the filesize. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -142,7 +144,9 @@
         <definition>virtual void Assimp::BlobIOStream::Flush</definition>
         <argsstring>()</argsstring>
         <name>Flush</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1a7c19952446ece90924b246f087417899">Flush</reimplements>
         <briefdescription>
+<para>Flush the contents of the file buffer (for writers) See fflush() for more details. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -168,18 +172,24 @@
         <definition>virtual size_t Assimp::BlobIOStream::Read</definition>
         <argsstring>(void *, size_t, size_t)</argsstring>
         <name>Read</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1ae376f641020989d61863b9c6f55c7abf">Read</reimplements>
         <param>
           <type>void *</type>
+          <declname>pvBuffer</declname>
         </param>
         <param>
           <type>size_t</type>
+          <declname>pSize</declname>
         </param>
         <param>
           <type>size_t</type>
+          <declname>pCount</declname>
         </param>
         <briefdescription>
+<para>Read from the file. </para>
         </briefdescription>
         <detaileddescription>
+<para>See fread() for more details This fails for write-only files </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -190,6 +200,7 @@
         <definition>virtual aiReturn Assimp::BlobIOStream::Seek</definition>
         <argsstring>(size_t pOffset, aiOrigin pOrigin)</argsstring>
         <name>Seek</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1a5ed0dddf418ab08cf3fc21f3f3032220">Seek</reimplements>
         <param>
           <type>size_t</type>
           <declname>pOffset</declname>
@@ -199,8 +210,10 @@
           <declname>pOrigin</declname>
         </param>
         <briefdescription>
+<para>Set the read/write cursor of the file. </para>
         </briefdescription>
         <detaileddescription>
+<para>Note that the offset is <emphasis>negative</emphasis> for aiOrigin_END. See fseek() for more details </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -211,9 +224,12 @@
         <definition>virtual size_t Assimp::BlobIOStream::Tell</definition>
         <argsstring>() const</argsstring>
         <name>Tell</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1a316ac6cd16b5a493d1313f792c806194">Tell</reimplements>
         <briefdescription>
+<para>Get the current position of the read/write cursor. </para>
         </briefdescription>
         <detaileddescription>
+<para>See ftell() for more details </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -224,6 +240,7 @@
         <definition>virtual size_t Assimp::BlobIOStream::Write</definition>
         <argsstring>(const void *pvBuffer, size_t pSize, size_t pCount)</argsstring>
         <name>Write</name>
+        <reimplements refid="class_assimp_1_1_i_o_stream_1ad0ca4aae1b8c4d00db391ac3a4171f7b">Write</reimplements>
         <param>
           <type>const void *</type>
           <declname>pvBuffer</declname>
@@ -237,8 +254,10 @@
           <declname>pCount</declname>
         </param>
         <briefdescription>
+<para>Write to the file. </para>
         </briefdescription>
         <detaileddescription>
+<para>See fwrite() for more details This fails for read-only files </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -279,10 +298,34 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Redirect IOStream to a blob. </para>
+<para>Redirect <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> to a blob. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Assimp::IOStream</label>
+        <link refid="class_assimp_1_1_i_o_stream"/>
+      </node>
+      <node id="1">
+        <label>Assimp::BlobIOStream</label>
+        <link refid="class_assimp_1_1_blob_i_o_stream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Assimp::IOStream</label>
+        <link refid="class_assimp_1_1_i_o_stream"/>
+      </node>
+      <node id="1">
+        <label>Assimp::BlobIOStream</label>
+        <link refid="class_assimp_1_1_blob_i_o_stream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="include/assimp/BlobIOSystem.h" line="64" column="1" bodyfile="include/assimp/BlobIOSystem.h" bodystart="64" bodyend="185"/>
     <listofallmembers>
       <member refid="class_assimp_1_1_blob_i_o_stream_1a8f35d99f46306fe8e7b7fb02d8b09f38" prot="public" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>BlobIOStream</name></member>
@@ -297,11 +340,13 @@
       <member refid="class_assimp_1_1_blob_i_o_stream_1a2a56b4a3d41096ee4da98b859ba067fd" prot="public" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>GetBlob</name></member>
       <member refid="class_assimp_1_1_blob_i_o_stream_1a9cf9828edeb38e0d70c3ff0784f46216" prot="private" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>Grow</name></member>
       <member refid="class_assimp_1_1_blob_i_o_stream_1aea5ee46166027f83a377d8e9f1974628" prot="private" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>initial</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_1a0be5cf1642597edeffe5360025ddf50f" prot="protected" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>IOStream</name></member>
       <member refid="class_assimp_1_1_blob_i_o_stream_1a9752238a2b888f5aaa9f3cc9c94c80d6" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>Read</name></member>
       <member refid="class_assimp_1_1_blob_i_o_stream_1a0339ebce4ceff0d69da349643c00d861" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>Seek</name></member>
       <member refid="class_assimp_1_1_blob_i_o_stream_1a1a0cfc06c4c448c9054c6b3cfc661b74" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>Tell</name></member>
       <member refid="class_assimp_1_1_blob_i_o_stream_1aed9dda065eee635d2f8c9eeb8133461a" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>Write</name></member>
       <member refid="class_assimp_1_1_blob_i_o_stream_1ac7eb8b7b41296dd8003d08d4da81f95d" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>~BlobIOStream</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_1ae4c9bcff461dba7e26631e691ad8ed2f" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>~IOStream</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

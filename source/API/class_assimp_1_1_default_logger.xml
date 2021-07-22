@@ -1,0 +1,637 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_default_logger" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::DefaultLogger</compoundname>
+    <basecompoundref refid="class_assimp_1_1_logger" prot="public" virt="non-virtual">Assimp::Logger</basecompoundref>
+    <includes local="no">DefaultLogger.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_assimp_1_1_default_logger_1a12bc1531c8e28c5313e30dcf2efbe94a" prot="private" static="no">
+        <type>std::vector&lt; LogStreamInfo * &gt;::const_iterator</type>
+        <definition>typedef std::vector&lt;LogStreamInfo *&gt;::const_iterator Assimp::DefaultLogger::ConstStreamIt</definition>
+        <argsstring></argsstring>
+        <name>ConstStreamIt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="172" column="42" bodyfile="include/assimp/DefaultLogger.hpp" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_assimp_1_1_default_logger_1a20087aa6aabd4eaba5c8db4723b68400" prot="private" static="no">
+        <type>std::vector&lt; LogStreamInfo * &gt;</type>
+        <definition>typedef std::vector&lt;LogStreamInfo *&gt; Assimp::DefaultLogger::StreamArray</definition>
+        <argsstring></argsstring>
+        <name>StreamArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="170" column="25" bodyfile="include/assimp/DefaultLogger.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_assimp_1_1_default_logger_1af5bfbd915a0c660e2c11b85fc2e62fcc" prot="private" static="no">
+        <type>std::vector&lt; LogStreamInfo * &gt;::iterator</type>
+        <definition>typedef std::vector&lt;LogStreamInfo *&gt;::iterator Assimp::DefaultLogger::StreamIt</definition>
+        <argsstring></argsstring>
+        <name>StreamIt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="171" column="36" bodyfile="include/assimp/DefaultLogger.hpp" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_default_logger_1ac0171ff2eb01b9f101f61ca2cf6785bb" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_assimp_1_1_logger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger* Assimp::DefaultLogger::m_pLogger</definition>
+        <argsstring></argsstring>
+        <name>m_pLogger</name>
+        <briefdescription>
+<para>only logging instance </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="175" column="19" bodyfile="include/assimp/DefaultLogger.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_default_logger_1acf6fae3e53fe5ff63fddc00868f821d2" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_assimp_1_1_null_logger" kindref="compound">NullLogger</ref></type>
+        <definition>NullLogger Assimp::DefaultLogger::s_pNullLogger</definition>
+        <argsstring></argsstring>
+        <name>s_pNullLogger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="176" column="23" bodyfile="include/assimp/DefaultLogger.hpp" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_default_logger_1a8be3bce1f3850a619192e0561a4c6cfc" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::DefaultLogger::lastLen</definition>
+        <argsstring></argsstring>
+        <name>lastLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="183" column="12" bodyfile="include/assimp/DefaultLogger.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_default_logger_1a1951bc73596394828a33747c38317dea" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Assimp::DefaultLogger::lastMsg[MAX_LOG_MESSAGE_LENGTH *2]</definition>
+        <argsstring>[MAX_LOG_MESSAGE_LENGTH *2]</argsstring>
+        <name>lastMsg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="182" column="10" bodyfile="include/assimp/DefaultLogger.hpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_default_logger_1aa8e6680480049800a8d341bb18b44757" prot="private" static="no" mutable="no">
+        <type>StreamArray</type>
+        <definition>StreamArray Assimp::DefaultLogger::m_StreamArray</definition>
+        <argsstring></argsstring>
+        <name>m_StreamArray</name>
+        <briefdescription>
+<para>Attached streams. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="179" column="17" bodyfile="include/assimp/DefaultLogger.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_default_logger_1abbdb886a46779b97dda3b4dd7d488403" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::DefaultLogger::noRepeatMsg</definition>
+        <argsstring></argsstring>
+        <name>noRepeatMsg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="181" column="10" bodyfile="include/assimp/DefaultLogger.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1a2bd39b2a03fc2b94f8a34c02125c8f42" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_logger" kindref="compound">Logger</ref> *</type>
+        <definition>static Logger* Assimp::DefaultLogger::create</definition>
+        <argsstring>(const char *name=ASSIMP_DEFAULT_LOG_NAME, LogSeverity severity=NORMAL, unsigned int defStreams=aiDefaultLogStream_DEBUGGER|aiDefaultLogStream_FILE, IOSystem *io=nullptr)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+          <defval><ref refid="_default_logger_8hpp_1a5e31e6d6c9f8a8954134f3da38fec0a0" kindref="member">ASSIMP_DEFAULT_LOG_NAME</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6" kindref="member">LogSeverity</ref></type>
+          <declname>severity</declname>
+          <defval><ref refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6a79d16f85dc21486ee489f300027e8eda" kindref="member">NORMAL</ref></defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>defStreams</declname>
+          <defval><ref refid="types_8h_1ae4271f61a7c06cd4770fc3e11f58f9c6a424869369b939e649decec5cea6bb52c" kindref="member">aiDefaultLogStream_DEBUGGER</ref>|<ref refid="types_8h_1ae4271f61a7c06cd4770fc3e11f58f9c6a53f81f9d36437ced72e67b297dc17815" kindref="member">aiDefaultLogStream_FILE</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>io</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Creates a logging instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name for log file. Only valid in combination with the aiDefaultLogStream_FILE flag. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>severity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log severity, DEBUG turns on debug messages and VERBOSE turns on all messages. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defStreams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default log streams to be attached. Any bitwise combination of the aiDefaultLogStream enumerated values. If <ref refid="types_8h_1ae4271f61a7c06cd4770fc3e11f58f9c6a53f81f9d36437ced72e67b297dc17815" kindref="member">aiDefaultLogStream_FILE</ref> is specified but an empty string is passed for &apos;name&apos;, no log file is created at all. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>io</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> to be used to open external files (such as the log file). Pass nullptr to rely on the default implementation. This replaces the default #NullLogger with a #DefaultLogger instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="89" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1a7d0a53f2db66945ade30094330a77ba4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_logger" kindref="compound">Logger</ref> *</type>
+        <definition>static Logger* Assimp::DefaultLogger::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+<para>Getter for singleton instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Only instance. This is never null, but it could be a <ref refid="class_assimp_1_1_null_logger" kindref="compound">NullLogger</ref>. Use isNullLogger to check this. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="108" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1abebc7ee702a2a2dde765e771948400c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Assimp::DefaultLogger::isNullLogger</definition>
+        <argsstring>()</argsstring>
+        <name>isNullLogger</name>
+        <briefdescription>
+<para>Return whether a #NullLogger is currently active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the current logger is a #NullLogger. Use <ref refid="class_assimp_1_1_default_logger_1a2bd39b2a03fc2b94f8a34c02125c8f42" kindref="member">create()</ref> or <ref refid="class_assimp_1_1_default_logger_1a9daba548026045b99813c760c2842ed2" kindref="member">set()</ref> to setup a logger that does actually do something else than just rejecting all log messages. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="115" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1a0b1da096d7442af5a4a4cb5ebb2540f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::DefaultLogger::kill</definition>
+        <argsstring>()</argsstring>
+        <name>kill</name>
+        <briefdescription>
+<para>Kills the current singleton logger and replaces it with a #NullLogger instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="120" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1a9daba548026045b99813c760c2842ed2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::DefaultLogger::set</definition>
+        <argsstring>(Logger *logger)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_logger" kindref="compound">Logger</ref> *</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+<para>Setup a custom <ref refid="class_assimp_1_1_logger_1a17f4cbc042c26935e16eb204ca77c2c1" kindref="member">Logger</ref> implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this if the provided #DefaultLogger class doesn&apos;t fit into your needs. If the provided message formatting is OK for you, it&apos;s much easier to use <ref refid="class_assimp_1_1_default_logger_1a2bd39b2a03fc2b94f8a34c02125c8f42" kindref="member">create()</ref> and to attach your own custom output streams to it. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pass NULL to setup a default <ref refid="class_assimp_1_1_null_logger" kindref="compound">NullLogger</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="102" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1abc0ca7a337f8c3e38eca0eb45bb1ccf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Assimp::DefaultLogger::attachStream</definition>
+        <argsstring>(LogStream *pStream, unsigned int severity)</argsstring>
+        <name>attachStream</name>
+        <reimplements refid="class_assimp_1_1_logger_1aaf32a42b02a7e227076013d01e349871">attachStream</reimplements>
+        <param>
+          <type><ref refid="class_assimp_1_1_log_stream" kindref="compound">LogStream</ref> *</type>
+          <declname>pStream</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>severity</declname>
+        </param>
+        <briefdescription>
+<para>Attach a new log-stream. <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The logger takes ownership of the stream and is responsible for its destruction (which is done using ::delete when the logger itself is destroyed). Call detachStream to detach a stream and to gain ownership of it again. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pStream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log-stream to attach </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>severity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message filter, specified which types of log messages are dispatched to the stream. Provide a bitwise combination of the ErrorSeverity flags. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the stream has been attached, false otherwise. <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="124" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1a77373bb6aa7cb3a4b7d67b851f7b31fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Assimp::DefaultLogger::detachStream</definition>
+        <argsstring>(LogStream *pStream, unsigned int severity)</argsstring>
+        <name>detachStream</name>
+        <reimplements refid="class_assimp_1_1_logger_1a04168fe42b575cb37e71478ee0411d24">detachStream</reimplements>
+        <param>
+          <type><ref refid="class_assimp_1_1_log_stream" kindref="compound">LogStream</ref> *</type>
+          <declname>pStream</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>severity</declname>
+        </param>
+        <briefdescription>
+<para>Detach a still attached stream from the logger (or modify the filter flags bits) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pStream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log-stream instance for detaching </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>severity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provide a bitwise combination of the ErrorSeverity flags. This value is &amp;~ed with the current flags of the stream, if the result is 0 the stream is detached from the <ref refid="class_assimp_1_1_logger" kindref="compound">Logger</ref> and the caller retakes the possession of the stream. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the stream has been detached, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="129" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1ac89e8018f7e97327a6b91abbe36178e1" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::DefaultLogger::DefaultLogger</definition>
+        <argsstring>(LogSeverity severity)</argsstring>
+        <name>DefaultLogger</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6" kindref="member">LogSeverity</ref></type>
+          <declname>severity</declname>
+        </param>
+        <briefdescription>
+<para>@briefPrivate construction for internal use by <ref refid="class_assimp_1_1_default_logger_1a2bd39b2a03fc2b94f8a34c02125c8f42" kindref="member">create()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>severity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logging granularity <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="136" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1a2db9c3b56c8be09b1827d1d0522c02b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::DefaultLogger::GetThreadID</definition>
+        <argsstring>()</argsstring>
+        <name>GetThreadID</name>
+        <briefdescription>
+<para>Returns the thread id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This is an OS specific feature, if not supported, a zero will be returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="166" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1abcdc5564407fcda65b114a80969c42fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::DefaultLogger::OnDebug</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>OnDebug</name>
+        <reimplements refid="class_assimp_1_1_logger_1aded6996d20f14204877097b88bd5eac6">OnDebug</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Logs debug infos, only been written when severity level DEBUG or higher is set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="143" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1a32caf08bb38ecbc53b0f75fd983ef5ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::DefaultLogger::OnError</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>OnError</name>
+        <reimplements refid="class_assimp_1_1_logger_1ae2ea0790aba6125b90af0f2768b0759d">OnError</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Logs an error message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="155" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1a068f81f1daacd12c3b5cf9f12089b789" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::DefaultLogger::OnInfo</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>OnInfo</name>
+        <reimplements refid="class_assimp_1_1_logger_1aba81c4562ff8db83f06c6b62f2eb7983">OnInfo</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Logs an info message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="149" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1aeb61ce0a0bfa475c66a12fcd74c9e7cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::DefaultLogger::OnVerboseDebug</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>OnVerboseDebug</name>
+        <reimplements refid="class_assimp_1_1_logger_1a6bf0004c40f89a73b21633cff93c9ec0">OnVerboseDebug</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Logs debug infos, only been written when severity level VERBOSE is set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="146" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1a8de943d7b5bf39c5ae81a2a56313e4be" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::DefaultLogger::OnWarn</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>OnWarn</name>
+        <reimplements refid="class_assimp_1_1_logger_1ab8066978dd37992f711d75d49cf4607b">OnWarn</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Logs a warning message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="152" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1ac5d0ad395b5c07bbfed643b440d23316" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::DefaultLogger::WriteToStreams</definition>
+        <argsstring>(const char *message, ErrorSeverity ErrorSev)</argsstring>
+        <name>WriteToStreams</name>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6" kindref="member">ErrorSeverity</ref></type>
+          <declname>ErrorSev</declname>
+        </param>
+        <briefdescription>
+<para>Writes a message to all streams. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="159" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_logger_1ac3901fa0196c0bab25f301f471cc9b74" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::DefaultLogger::~DefaultLogger</definition>
+        <argsstring>()</argsstring>
+        <name>~DefaultLogger</name>
+        <briefdescription>
+<para>@briefDestructor <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultLogger.hpp" line="140" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CPP-API: Primary logging facility of <ref refid="namespace_assimp" kindref="compound">Assimp</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The library stores its primary <ref refid="class_assimp_1_1_logger_1a17f4cbc042c26935e16eb204ca77c2c1" kindref="member">Logger</ref> as a static member of this class. <ref refid="class_assimp_1_1_default_logger_1a7d0a53f2db66945ade30094330a77ba4" kindref="member">get()</ref> returns this primary logger. By default the underlying implementation is just a #NullLogger which rejects all log messages. By calling <ref refid="class_assimp_1_1_default_logger_1a2bd39b2a03fc2b94f8a34c02125c8f42" kindref="member">create()</ref>, logging is turned on. To capture the log output multiple log streams (#LogStream) can be attach to the logger. Some default streams for common streaming locations (such as a file, std::cout, OutputDebugString()) are also provided.</para>
+<para>If you wish to customize the logging at an even deeper level supply your own implementation of <ref refid="class_assimp_1_1_logger_1a17f4cbc042c26935e16eb204ca77c2c1" kindref="member">Logger</ref> to <ref refid="class_assimp_1_1_default_logger_1a9daba548026045b99813c760c2842ed2" kindref="member">set()</ref>. <simplesect kind="note"><para>The whole logging stuff causes a small extra overhead for all imports. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Assimp::DefaultLogger</label>
+        <link refid="class_assimp_1_1_default_logger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Assimp::Logger</label>
+        <link refid="class_assimp_1_1_logger"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Assimp::DefaultLogger</label>
+        <link refid="class_assimp_1_1_default_logger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Assimp::Logger</label>
+        <link refid="class_assimp_1_1_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/DefaultLogger.hpp" line="74" column="1" bodyfile="include/assimp/DefaultLogger.hpp" bodystart="74" bodyend="184"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_default_logger_1abc0ca7a337f8c3e38eca0eb45bb1ccf0" prot="public" virt="virtual"><scope>Assimp::DefaultLogger</scope><name>attachStream</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a12bc1531c8e28c5313e30dcf2efbe94a" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>ConstStreamIt</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a2bd39b2a03fc2b94f8a34c02125c8f42" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>create</name></member>
+      <member refid="class_assimp_1_1_logger_1a3b10454ab4c0949f251062376d9c4161" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>debug</name></member>
+      <member refid="class_assimp_1_1_logger_1aef61091ba19466b10fe9c65e8bb97623" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>debug</name></member>
+      <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6a0cb475014d27098c3423738c571d857f" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>Debugging</name></member>
+      <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6a1c233dd8bb46dc4386948a03877b8160" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>DEBUGGING</name></member>
+      <member refid="class_assimp_1_1_default_logger_1ac89e8018f7e97327a6b91abbe36178e1" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>DefaultLogger</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a77373bb6aa7cb3a4b7d67b851f7b31fe" prot="public" virt="virtual"><scope>Assimp::DefaultLogger</scope><name>detachStream</name></member>
+      <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6a71054d0b1323abcea46d050d69013d27" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>Err</name></member>
+      <member refid="class_assimp_1_1_logger_1aa8b7c3f56dc4cecfdacc8bb36ba3fac1" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>error</name></member>
+      <member refid="class_assimp_1_1_logger_1aef4163260646a7a339e7b3e5d2c56bde" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>error</name></member>
+      <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>ErrorSeverity</name></member>
+      <member refid="class_assimp_1_1_logger_1aee1bf9056b72d6b08ef44c7444f4fdc6" prot="protected" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>formatMessage</name></member>
+      <member refid="class_assimp_1_1_logger_1a56fa139549e6382941e9f747489c9f3a" prot="protected" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>formatMessage</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a7d0a53f2db66945ade30094330a77ba4" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>get</name></member>
+      <member refid="class_assimp_1_1_logger_1a4b565acf3a82915c35bb18e2a85ab43d" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>getLogSeverity</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a2db9c3b56c8be09b1827d1d0522c02b9" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>GetThreadID</name></member>
+      <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6aa3377a574928b86f7de55c5df154f461" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>Info</name></member>
+      <member refid="class_assimp_1_1_logger_1a12b8a125083c47ac0bb6056f00761e52" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>info</name></member>
+      <member refid="class_assimp_1_1_logger_1aa783a83466f9a18d9d45785cc3bbd09d" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>info</name></member>
+      <member refid="class_assimp_1_1_default_logger_1abebc7ee702a2a2dde765e771948400c6" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>isNullLogger</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a0b1da096d7442af5a4a4cb5ebb2540f7" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>kill</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a8be3bce1f3850a619192e0561a4c6cfc" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>lastLen</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a1951bc73596394828a33747c38317dea" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>lastMsg</name></member>
+      <member refid="class_assimp_1_1_logger_1a17f4cbc042c26935e16eb204ca77c2c1" prot="protected" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>Logger</name></member>
+      <member refid="class_assimp_1_1_logger_1accc0ffea63ddf0982d8c2ba7e07f0716" prot="protected" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>Logger</name></member>
+      <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>LogSeverity</name></member>
+      <member refid="class_assimp_1_1_default_logger_1ac0171ff2eb01b9f101f61ca2cf6785bb" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>m_pLogger</name></member>
+      <member refid="class_assimp_1_1_logger_1ae1c96711eb927a5b33745a6211e93f56" prot="protected" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>m_Severity</name></member>
+      <member refid="class_assimp_1_1_default_logger_1aa8e6680480049800a8d341bb18b44757" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>m_StreamArray</name></member>
+      <member refid="class_assimp_1_1_default_logger_1abbdb886a46779b97dda3b4dd7d488403" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>noRepeatMsg</name></member>
+      <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6a79d16f85dc21486ee489f300027e8eda" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>NORMAL</name></member>
+      <member refid="class_assimp_1_1_default_logger_1abcdc5564407fcda65b114a80969c42fa" prot="private" virt="virtual"><scope>Assimp::DefaultLogger</scope><name>OnDebug</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a32caf08bb38ecbc53b0f75fd983ef5ae" prot="private" virt="virtual"><scope>Assimp::DefaultLogger</scope><name>OnError</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a068f81f1daacd12c3b5cf9f12089b789" prot="private" virt="virtual"><scope>Assimp::DefaultLogger</scope><name>OnInfo</name></member>
+      <member refid="class_assimp_1_1_default_logger_1aeb61ce0a0bfa475c66a12fcd74c9e7cd" prot="private" virt="virtual"><scope>Assimp::DefaultLogger</scope><name>OnVerboseDebug</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a8de943d7b5bf39c5ae81a2a56313e4be" prot="private" virt="virtual"><scope>Assimp::DefaultLogger</scope><name>OnWarn</name></member>
+      <member refid="class_assimp_1_1_default_logger_1acf6fae3e53fe5ff63fddc00868f821d2" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>s_pNullLogger</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a9daba548026045b99813c760c2842ed2" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>set</name></member>
+      <member refid="class_assimp_1_1_logger_1a8fb4fa4c2c329a36ac39bc9c743925f1" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>setLogSeverity</name></member>
+      <member refid="class_assimp_1_1_default_logger_1a20087aa6aabd4eaba5c8db4723b68400" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>StreamArray</name></member>
+      <member refid="class_assimp_1_1_default_logger_1af5bfbd915a0c660e2c11b85fc2e62fcc" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>StreamIt</name></member>
+      <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6afc9d1d86aa82fdb80e00c99b3c1ce486" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>VERBOSE</name></member>
+      <member refid="class_assimp_1_1_logger_1a44c1da5be64b31741facfafa3ae6d8ef" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>verboseDebug</name></member>
+      <member refid="class_assimp_1_1_logger_1a44e6984efe9d55e3b5ead382f2c5a633" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>verboseDebug</name></member>
+      <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6a1279c77aaee5a3d7df835a9b9305a697" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>Warn</name></member>
+      <member refid="class_assimp_1_1_logger_1a32bc5ee4b23df13551b83b925907f1b1" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>warn</name></member>
+      <member refid="class_assimp_1_1_logger_1acc9dfd15751d1a763d23cd207dff94fc" prot="public" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>warn</name></member>
+      <member refid="class_assimp_1_1_default_logger_1ac5d0ad395b5c07bbfed643b440d23316" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>WriteToStreams</name></member>
+      <member refid="class_assimp_1_1_default_logger_1ac3901fa0196c0bab25f301f471cc9b74" prot="private" virt="non-virtual"><scope>Assimp::DefaultLogger</scope><name>~DefaultLogger</name></member>
+      <member refid="class_assimp_1_1_logger_1a27dd2bd4fd3b9cde0635ed22aad687c3" prot="public" virt="virtual"><scope>Assimp::DefaultLogger</scope><name>~Logger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

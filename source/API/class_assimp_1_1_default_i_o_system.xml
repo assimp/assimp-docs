@@ -2,16 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="class_assimp_1_1_default_i_o_system" kind="class" language="C++" prot="public">
     <compoundname>Assimp::DefaultIOSystem</compoundname>
-    <basecompoundref prot="public" virt="non-virtual">IOSystem</basecompoundref>
+    <basecompoundref refid="class_assimp_1_1_i_o_system" prot="public" virt="non-virtual">Assimp::IOSystem</basecompoundref>
     <includes local="no">DefaultIOSystem.h</includes>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1aa164cf18562082effde576752377bea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1aa164cf18562082effde576752377bea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>void Assimp::DefaultIOSystem::Close</definition>
         <argsstring>(IOStream *pFile)</argsstring>
         <name>Close</name>
+        <reimplements refid="class_assimp_1_1_i_o_system_1a8c334d60f04bceeb6bd0157d21723f3e">Close</reimplements>
         <param>
-          <type>IOStream *</type>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
           <declname>pFile</declname>
         </param>
         <briefdescription>
@@ -23,11 +24,12 @@
         </inbodydescription>
         <location file="include/assimp/DefaultIOSystem.h" line="74" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1aebbe6ef57635f1b34fae766970ca00dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1aebbe6ef57635f1b34fae766970ca00dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
         <definition>bool Assimp::DefaultIOSystem::ComparePaths</definition>
         <argsstring>(const char *one, const char *second) const</argsstring>
         <name>ComparePaths</name>
+        <reimplements refid="class_assimp_1_1_i_o_system_1a670ddf0f9ea5c8ee05dce03a89259077">ComparePaths</reimplements>
         <param>
           <type>const char *</type>
           <declname>one</declname>
@@ -45,11 +47,12 @@
         </inbodydescription>
         <location file="include/assimp/DefaultIOSystem.h" line="78" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1a1f25fcf17ac1767b47222880c462154f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1a1f25fcf17ac1767b47222880c462154f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
         <definition>bool Assimp::DefaultIOSystem::Exists</definition>
         <argsstring>(const char *pFile) const</argsstring>
         <name>Exists</name>
+        <reimplements refid="class_assimp_1_1_i_o_system_1a79f5fe8d2dbe1056c9418f7de9a72445">Exists</reimplements>
         <param>
           <type>const char *</type>
           <declname>pFile</declname>
@@ -63,11 +66,12 @@
         </inbodydescription>
         <location file="include/assimp/DefaultIOSystem.h" line="62" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1ae43cac8c1a6fba14322ee165a528a11d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1ae43cac8c1a6fba14322ee165a528a11d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>char</type>
         <definition>char Assimp::DefaultIOSystem::getOsSeparator</definition>
         <argsstring>() const</argsstring>
         <name>getOsSeparator</name>
+        <reimplements refid="class_assimp_1_1_i_o_system_1a40e412875b985bdb638f00ef0f20fff6">getOsSeparator</reimplements>
         <briefdescription>
 <para>Returns the directory separator. </para>
         </briefdescription>
@@ -77,11 +81,12 @@
         </inbodydescription>
         <location file="include/assimp/DefaultIOSystem.h" line="66" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1a9c8da3d63312f47b2dec83ec90aa2c4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>IOStream *</type>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1a9c8da3d63312f47b2dec83ec90aa2c4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
         <definition>IOStream* Assimp::DefaultIOSystem::Open</definition>
         <argsstring>(const char *pFile, const char *pMode=&quot;rb&quot;)</argsstring>
         <name>Open</name>
+        <reimplements refid="class_assimp_1_1_i_o_system_1ac512ece3b0701de5682553007a4c0816">Open</reimplements>
         <param>
           <type>const char *</type>
           <declname>pFile</declname>
@@ -158,20 +163,56 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Default implementation of IOSystem using the standard C file functions. </para>
+<para>Default implementation of <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> using the standard C file functions. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Assimp::IOSystem</label>
+        <link refid="class_assimp_1_1_i_o_system"/>
+      </node>
+      <node id="1">
+        <label>Assimp::DefaultIOSystem</label>
+        <link refid="class_assimp_1_1_default_i_o_system"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Assimp::IOSystem</label>
+        <link refid="class_assimp_1_1_i_o_system"/>
+      </node>
+      <node id="1">
+        <label>Assimp::DefaultIOSystem</label>
+        <link refid="class_assimp_1_1_default_i_o_system"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="include/assimp/DefaultIOSystem.h" line="58" column="1" bodyfile="include/assimp/DefaultIOSystem.h" bodystart="58" bodyend="94"/>
     <listofallmembers>
       <member refid="class_assimp_1_1_default_i_o_system_1af95ec2cff042a580082d463613cfe407" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>absolutePath</name></member>
-      <member refid="class_assimp_1_1_default_i_o_system_1aa164cf18562082effde576752377bea3" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>Close</name></member>
-      <member refid="class_assimp_1_1_default_i_o_system_1aebbe6ef57635f1b34fae766970ca00dc" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>ComparePaths</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a93e80760bd5d5239ba8eab3bd31efa6b" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>ChangeDirectory</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1aa164cf18562082effde576752377bea3" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>Close</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1aebbe6ef57635f1b34fae766970ca00dc" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>ComparePaths</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a26a040ad173f498f4ba71df498a61001" prot="public" virt="non-virtual" ambiguityscope="Assimp::IOSystem::"><scope>Assimp::DefaultIOSystem</scope><name>ComparePaths</name></member>
       <member refid="class_assimp_1_1_default_i_o_system_1afa9e12ddf8f7aa1a33935309b917a142" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>completeBaseName</name></member>
-      <member refid="class_assimp_1_1_default_i_o_system_1a1f25fcf17ac1767b47222880c462154f" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>Exists</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a3fc1316fdb4168cde052c95f96364d41" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>CreateDirectory</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a8885409acc1982ee4828c9ef27004642" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>CurrentDirectory</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1abdfad399fdbdc9bbf2ffd193f4107bf2" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>DeleteFile</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1a1f25fcf17ac1767b47222880c462154f" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>Exists</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a78821be348bf775ebfc9fdce07d622ac" prot="public" virt="non-virtual" ambiguityscope="Assimp::IOSystem::"><scope>Assimp::DefaultIOSystem</scope><name>Exists</name></member>
       <member refid="class_assimp_1_1_default_i_o_system_1aa01ea34e60ed8a3920979b5b4e2927ee" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>fileName</name></member>
-      <member refid="class_assimp_1_1_default_i_o_system_1ae43cac8c1a6fba14322ee165a528a11d" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>getOsSeparator</name></member>
-      <member refid="class_assimp_1_1_default_i_o_system_1a9c8da3d63312f47b2dec83ec90aa2c4d" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>Open</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1ae43cac8c1a6fba14322ee165a528a11d" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>getOsSeparator</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a2c746aa09cc29cea1d2d6a5087bc6e50" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>IOSystem</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1a9c8da3d63312f47b2dec83ec90aa2c4d" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>Open</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1aef35fabc9bd49fb83bfd4f12a94083c3" prot="public" virt="non-virtual" ambiguityscope="Assimp::IOSystem::"><scope>Assimp::DefaultIOSystem</scope><name>Open</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1aa00f3ee1c44576364e8ce00206fb9dd2" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>PopDirectory</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a07c2c93fac300df44c756174fcea71e8" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>PushDirectory</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a1f3180cefbb447b4b8c628dcaf95fc69" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>StackSize</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a617417f1c5125770606fea3b41068b36" prot="public" virt="virtual"><scope>Assimp::DefaultIOSystem</scope><name>~IOSystem</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

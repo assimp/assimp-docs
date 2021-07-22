@@ -4,18 +4,29 @@
     <compoundname>BlobIOSystem.h</compoundname>
     <includes refid="cexport_8h" local="no">assimp/cexport.h</includes>
     <includes local="no">stdint.h</includes>
-    <includes local="no">assimp/DefaultLogger.hpp</includes>
-    <includes local="no">assimp/IOStream.hpp</includes>
-    <includes local="no">assimp/IOSystem.hpp</includes>
+    <includes refid="_default_logger_8hpp" local="no">assimp/DefaultLogger.hpp</includes>
+    <includes refid="_i_o_stream_8hpp" local="no">assimp/IOStream.hpp</includes>
+    <includes refid="_i_o_system_8hpp" local="no">assimp/IOSystem.hpp</includes>
     <includes local="no">set</includes>
     <includes local="no">vector</includes>
     <incdepgraph>
+      <node id="30">
+        <label>sys/stat.h</label>
+      </node>
       <node id="16">
         <label>assimp/matrix4x4.h</label>
         <link refid="matrix4x4_8h"/>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Logger.hpp</label>
+        <link refid="_logger_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="13">
@@ -35,12 +46,18 @@
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>assimp/TinyFormatter.h</label>
+        <link refid="_tiny_formatter_8h"/>
         <childnode refid="25" relation="include">
         </childnode>
       </node>
@@ -81,11 +98,14 @@
         <childnode refid="20" relation="include">
         </childnode>
       </node>
+      <node id="28">
+        <label>assimp/IOStream.hpp</label>
+        <link refid="_i_o_stream_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
       <node id="12">
         <label>cmath</label>
-      </node>
-      <node id="22">
-        <label>assimp/IOStream.hpp</label>
       </node>
       <node id="15">
         <label>assimp/matrix3x3.h</label>
@@ -118,7 +138,16 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="31">
+        <label>unistd.h</label>
+      </node>
+      <node id="26">
+        <label>NullLogger.hpp</label>
+        <link refid="_null_logger_8hpp"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
         <label>vector</label>
       </node>
       <node id="9">
@@ -129,6 +158,29 @@
       </node>
       <node id="19">
         <label>new</label>
+      </node>
+      <node id="22">
+        <label>LogStream.hpp</label>
+        <link refid="_log_stream_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>sstream</label>
+      </node>
+      <node id="29">
+        <label>assimp/IOSystem.hpp</label>
+        <link refid="_i_o_system_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
       </node>
       <node id="14">
         <label>assimp/color4.h</label>
@@ -144,7 +196,7 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="32">
         <label>set</label>
       </node>
       <node id="2">
@@ -153,14 +205,20 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="18">
-        <label>cstring</label>
-      </node>
-      <node id="23">
-        <label>assimp/IOSystem.hpp</label>
-      </node>
       <node id="21">
         <label>assimp/DefaultLogger.hpp</label>
+        <link refid="_default_logger_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>cstring</label>
       </node>
     </incdepgraph>
     <innerclass refid="class_assimp_1_1_blob_i_o_stream" prot="public">Assimp::BlobIOStream</innerclass>
@@ -232,9 +290,9 @@
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cexport_8h" kindref="compound">assimp/cexport.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assimp/DefaultLogger.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assimp/IOStream.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assimp/IOSystem.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_default_logger_8hpp" kindref="compound">assimp/DefaultLogger.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_i_o_stream_8hpp" kindref="compound">assimp/IOStream.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_i_o_system_8hpp" kindref="compound">assimp/IOSystem.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
@@ -243,7 +301,7 @@
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------------------</highlight></codeline>
 <codeline lineno="63"><highlight class="comment"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64" refid="class_assimp_1_1_blob_i_o_stream" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_assimp_1_1_blob_i_o_stream" kindref="compound">BlobIOStream</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IOStream<sp/>{</highlight></codeline>
+<codeline lineno="64" refid="class_assimp_1_1_blob_i_o_stream" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_assimp_1_1_blob_i_o_stream" kindref="compound">BlobIOStream</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref><sp/>{</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_assimp_1_1_blob_i_o_stream_1a8f35d99f46306fe8e7b7fb02d8b09f38" kindref="member">BlobIOStream</ref>(<ref refid="class_assimp_1_1_blob_i_o_system" kindref="compound">BlobIOSystem</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;file,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>initial<sp/>=<sp/>4096)<sp/>:</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer(),</highlight></codeline>
@@ -370,7 +428,7 @@
 <codeline lineno="188"><highlight class="normal"></highlight></codeline>
 <codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------------------</highlight></codeline>
 <codeline lineno="191"><highlight class="comment"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="192" refid="class_assimp_1_1_blob_i_o_system" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_assimp_1_1_blob_i_o_system" kindref="compound">BlobIOSystem</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IOSystem<sp/>{</highlight></codeline>
+<codeline lineno="192" refid="class_assimp_1_1_blob_i_o_system" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_assimp_1_1_blob_i_o_system" kindref="compound">BlobIOSystem</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref><sp/>{</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"></highlight></codeline>
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_assimp_1_1_blob_i_o_stream" kindref="compound">BlobIOStream</ref>;</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;std::string,<sp/>aiExportDataBlob<sp/>*&gt;<sp/>BlobEntry;</highlight></codeline>
@@ -414,7 +472,7 @@
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"></highlight></codeline>
 <codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!master)<sp/>{</highlight></codeline>
-<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSIMP_LOG_ERROR(</highlight><highlight class="stringliteral">&quot;BlobIOSystem:<sp/>no<sp/>data<sp/>written<sp/>or<sp/>master<sp/>file<sp/>was<sp/>not<sp/>closed<sp/>properly.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8hpp_1af9c5f9debd2b062dec87a32121cf12dd" kindref="member">ASSIMP_LOG_ERROR</ref>(</highlight><highlight class="stringliteral">&quot;BlobIOSystem:<sp/>no<sp/>data<sp/>written<sp/>or<sp/>master<sp/>file<sp/>was<sp/>not<sp/>closed<sp/>properly.&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"></highlight></codeline>
@@ -454,7 +512,7 @@
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="274"><highlight class="normal"></highlight></codeline>
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>IOStream<sp/>*<ref refid="class_assimp_1_1_blob_i_o_system_1a9245477f681ef86a4ac048b44ec109da" kindref="member">Open</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pFile,</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref><sp/>*<ref refid="class_assimp_1_1_blob_i_o_system_1a9245477f681ef86a4ac048b44ec109da" kindref="member">Open</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pFile,</highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pMode)<sp/>{</highlight></codeline>
 <codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pMode[0]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -465,7 +523,7 @@
 <codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="285"><highlight class="normal"></highlight></codeline>
 <codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_blob_i_o_system_1a626f7f153b4f5ac39adf38b6a539bedb" kindref="member">Close</ref>(IOStream<sp/>*pFile)<sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_blob_i_o_system_1a626f7f153b4f5ac39adf38b6a539bedb" kindref="member">Close</ref>(<ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref><sp/>*pFile)<sp/>{</highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>pFile;</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="290"><highlight class="normal"></highlight></codeline>

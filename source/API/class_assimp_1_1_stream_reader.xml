@@ -112,7 +112,7 @@
         <location file="include/assimp/StreamReader.h" line="325" column="12" bodyfile="include/assimp/StreamReader.h" bodystart="325" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_assimp_1_1_stream_reader_1a01ba0b8dc9dea4dc3040213128160d66" prot="private" static="no" mutable="no">
-        <type>std::shared_ptr&lt; IOStream &gt;</type>
+        <type>std::shared_ptr&lt; <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> &gt;</type>
         <definition>std::shared_ptr&lt;IOStream&gt; Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::mStream</definition>
         <argsstring></argsstring>
         <name>mStream</name>
@@ -535,7 +535,7 @@
         <argsstring>(IOStream *stream, bool le=false)</argsstring>
         <name>StreamReader</name>
         <param>
-          <type>IOStream *</type>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
           <declname>stream</declname>
         </param>
         <param>
@@ -557,7 +557,7 @@
         <argsstring>(std::shared_ptr&lt; IOStream &gt; stream, bool le=false)</argsstring>
         <name>StreamReader</name>
         <param>
-          <type>std::shared_ptr&lt; IOStream &gt;</type>
+          <type>std::shared_ptr&lt; <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> &gt;</type>
           <declname>stream</declname>
         </param>
         <param>
@@ -623,7 +623,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Wrapper class around IOStream to allow for consistent reading of binary data in both little and big endian format. </para>
+<para>Wrapper class around <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> to allow for consistent reading of binary data in both little and big endian format. </para>
     </briefdescription>
     <detaileddescription>
 <para>Don&apos;t attempt to instance the template directly. Use StreamReaderLE to read from a little-endian stream and StreamReaderBE to read from a BE stream. The class expects that the endianness of any input data is known at compile-time, which should usually be true (#BaseImporter::ConvertToUTF8 implements runtime endianness conversions for text files).</para>

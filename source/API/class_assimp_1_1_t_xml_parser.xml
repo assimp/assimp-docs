@@ -199,7 +199,7 @@
         <argsstring>(IOStream *stream)</argsstring>
         <name>parse</name>
         <param>
-          <type>IOStream *</type>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
           <declname>stream</declname>
         </param>
         <briefdescription>

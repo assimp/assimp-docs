@@ -38,7 +38,7 @@
         <argsstring></argsstring>
         <name>Importer</name>
         <param>
-          <type>Importer</type>
+          <type><ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref></type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -107,7 +107,7 @@
         <location file="include/assimp/BaseImporter.h" line="394" column="24" bodyfile="include/assimp/BaseImporter.h" bodystart="394" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_assimp_1_1_base_importer_1aeb17ba9eee14fcdfe2c6f45bf940139d" prot="protected" static="no" mutable="no">
-        <type>ProgressHandler *</type>
+        <type><ref refid="class_assimp_1_1_progress_handler" kindref="compound">ProgressHandler</ref> *</type>
         <definition>ProgressHandler* Assimp::BaseImporter::m_progress</definition>
         <argsstring></argsstring>
         <name>m_progress</name>
@@ -146,7 +146,7 @@
           <declname>pFile</declname>
         </param>
         <param>
-          <type>IOSystem *</type>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
           <declname>pIOHandler</declname>
         </param>
         <param>
@@ -274,7 +274,7 @@
         <argsstring>(Importer *pImp, const std::string &amp;pFile, IOSystem *pIOHandler)</argsstring>
         <name>ReadFile</name>
         <param>
-          <type><ref refid="class_assimp_1_1_base_importer_1ad2d8744585dcb094644b1caed04ac9ed" kindref="member">Importer</ref> *</type>
+          <type><ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> *</type>
           <declname>pImp</declname>
         </param>
         <param>
@@ -282,7 +282,7 @@
           <declname>pFile</declname>
         </param>
         <param>
-          <type>IOSystem *</type>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
           <declname>pIOHandler</declname>
         </param>
         <briefdescription>
@@ -349,19 +349,19 @@
         <argsstring>(const Importer *pImp)</argsstring>
         <name>SetupProperties</name>
         <param>
-          <type>const <ref refid="class_assimp_1_1_base_importer_1ad2d8744585dcb094644b1caed04ac9ed" kindref="member">Importer</ref> *</type>
+          <type>const <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> *</type>
           <declname>pImp</declname>
         </param>
         <briefdescription>
 <para>Called prior to <ref refid="class_assimp_1_1_base_importer_1a44fd2695ecb3fc463e0c009ce1672da0" kindref="member">ReadFile()</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para>The function is a request to the importer to update its configuration basing on the Importer&apos;s configuration property list. <parameterlist kind="param"><parameteritem>
+<para>The function is a request to the importer to update its configuration basing on the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref>&apos;s configuration property list. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pImp</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Importer instance </para>
+<para><ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -401,7 +401,7 @@
           <declname>pScene</declname>
         </param>
         <param>
-          <type>IOSystem *</type>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
           <declname>pIOHandler</declname>
         </param>
         <briefdescription>
@@ -478,7 +478,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         <argsstring>(IOSystem *pIOHandler, const std::string &amp;pFile, const void *magic, unsigned int num, unsigned int offset=0, unsigned int size=4)</argsstring>
         <name>CheckMagicToken</name>
         <param>
-          <type>IOSystem *</type>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
           <declname>pIOHandler</declname>
         </param>
         <param>
@@ -766,7 +766,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         <argsstring>(IOSystem *pIOSystem, const std::string &amp;file, const char **tokens, unsigned int numTokens, unsigned int searchBytes=200, bool tokensSol=false, bool noAlphaBeforeTokens=false)</argsstring>
         <name>SearchFileHeaderForToken</name>
         <param>
-          <type>IOSystem *</type>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
           <declname>pIOSystem</declname>
         </param>
         <param>
@@ -922,7 +922,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         <argsstring>(IOStream *stream, std::vector&lt; char &gt; &amp;data, TextFileMode mode=FORBID_EMPTY)</argsstring>
         <name>TextFileToBuffer</name>
         <param>
-          <type>IOStream *</type>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
           <declname>stream</declname>
         </param>
         <param>
@@ -977,7 +977,7 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
         <argsstring>(Importer *pImp)</argsstring>
         <name>UpdateImporterScale</name>
         <param>
-          <type><ref refid="class_assimp_1_1_base_importer_1ad2d8744585dcb094644b1caed04ac9ed" kindref="member">Importer</ref> *</type>
+          <type><ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> *</type>
           <declname>pImp</declname>
         </param>
         <briefdescription>
@@ -995,6 +995,19 @@ This won&apos;t be checked (except by the validation step): <ref refid="namespac
     <detaileddescription>
 <para>The interface defines two functions: <ref refid="class_assimp_1_1_base_importer_1a13588d3396ba5b7ed1f1cb46e0945cfd" kindref="member">CanRead()</ref> is used to check if the importer can handle the format of the given file. If an implementation of this function returns true, the importer then calls <ref refid="class_assimp_1_1_base_importer_1a44fd2695ecb3fc463e0c009ce1672da0" kindref="member">ReadFile()</ref> which imports the given file. ReadFile is not overridable, it just calls <ref refid="class_assimp_1_1_base_importer_1ac67d9f5ceb26353d27d6be06cccad398" kindref="member">InternReadFile()</ref> and catches any ImportErrorException that might occur. </para>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Assimp::BaseImporter</label>
+        <link refid="class_assimp_1_1_base_importer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_progress</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Assimp::ProgressHandler</label>
+        <link refid="class_assimp_1_1_progress_handler"/>
+      </node>
+    </collaborationgraph>
     <location file="include/assimp/BaseImporter.h" line="85" column="1" bodyfile="include/assimp/BaseImporter.h" bodystart="85" bodyend="397"/>
     <listofallmembers>
       <member refid="class_assimp_1_1_base_importer_1a9fe6b47937a7c897536cac1513b65eb7af10ad62259d2e54eff440019b345e309" prot="public" virt="non-virtual"><scope>Assimp::BaseImporter</scope><name>ALLOW_EMPTY</name></member>

@@ -2957,7 +2957,7 @@
 <para>Set a floating-point property. </para>
         </briefdescription>
         <detaileddescription>
-<para>This is the C-version of #Assimp::Importer::SetPropertyFloat(). In the C interface, properties are always shared by all imports. It is not possible to specify them per import.</para>
+<para>This is the C-version of <ref refid="class_assimp_1_1_importer_1ad38af78d6fe4b1f132d2534d8a84deea" kindref="member">Assimp::Importer::SetPropertyFloat()</ref>. In the C interface, properties are always shared by all imports. It is not possible to specify them per import.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>store</parametername>
@@ -3010,7 +3010,7 @@
 <para>Set an integer property. </para>
         </briefdescription>
         <detaileddescription>
-<para>This is the C-version of #Assimp::Importer::SetPropertyInteger(). In the C interface, properties are always shared by all imports. It is not possible to specify them per import.</para>
+<para>This is the C-version of <ref refid="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" kindref="member">Assimp::Importer::SetPropertyInteger()</ref>. In the C interface, properties are always shared by all imports. It is not possible to specify them per import.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>store</parametername>
@@ -3063,7 +3063,7 @@
 <para>Set a matrix property. </para>
         </briefdescription>
         <detaileddescription>
-<para>This is the C-version of #Assimp::Importer::SetPropertyMatrix(). In the C interface, properties are always shared by all imports. It is not possible to specify them per import.</para>
+<para>This is the C-version of <ref refid="class_assimp_1_1_importer_1acd128e5fb5777ef238b8bd1454a9c3ad" kindref="member">Assimp::Importer::SetPropertyMatrix()</ref>. In the C interface, properties are always shared by all imports. It is not possible to specify them per import.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>store</parametername>
@@ -3116,7 +3116,7 @@
 <para>Set a string property. </para>
         </briefdescription>
         <detaileddescription>
-<para>This is the C-version of #Assimp::Importer::SetPropertyString(). In the C interface, properties are always shared by all imports. It is not possible to specify them per import.</para>
+<para>This is the C-version of <ref refid="class_assimp_1_1_importer_1a854087b213981108e3e464cf4d293fed" kindref="member">Assimp::Importer::SetPropertyString()</ref>. In the C interface, properties are always shared by all imports. It is not possible to specify them per import.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>store</parametername>

@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_null_logger" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::NullLogger</compoundname>
+    <basecompoundref refid="class_assimp_1_1_logger" prot="public" virt="non-virtual">Assimp::Logger</basecompoundref>
+    <includes local="no">NullLogger.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_null_logger_1a31c05ecaee392b5fd34fd2dfd1cca559" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Assimp::NullLogger::attachStream</definition>
+        <argsstring>(LogStream *pStream, unsigned int severity)</argsstring>
+        <name>attachStream</name>
+        <reimplements refid="class_assimp_1_1_logger_1aaf32a42b02a7e227076013d01e349871">attachStream</reimplements>
+        <param>
+          <type><ref refid="class_assimp_1_1_log_stream" kindref="compound">LogStream</ref> *</type>
+          <declname>pStream</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>severity</declname>
+        </param>
+        <briefdescription>
+<para>Detach a still attached stream from logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/NullLogger.hpp" line="90" column="10" bodyfile="include/assimp/NullLogger.hpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_null_logger_1a071c06bd70831e2e5da932ca806423d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Assimp::NullLogger::detachStream</definition>
+        <argsstring>(LogStream *pStream, unsigned int severity)</argsstring>
+        <name>detachStream</name>
+        <reimplements refid="class_assimp_1_1_logger_1a04168fe42b575cb37e71478ee0411d24">detachStream</reimplements>
+        <param>
+          <type><ref refid="class_assimp_1_1_log_stream" kindref="compound">LogStream</ref> *</type>
+          <declname>pStream</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>severity</declname>
+        </param>
+        <briefdescription>
+<para>Detach a still attached stream from logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/NullLogger.hpp" line="96" column="10" bodyfile="include/assimp/NullLogger.hpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_null_logger_1af354ebbd382b7097a55d364794a45631" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::NullLogger::OnDebug</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>OnDebug</name>
+        <reimplements refid="class_assimp_1_1_logger_1aded6996d20f14204877097b88bd5eac6">OnDebug</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Logs a debug message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/NullLogger.hpp" line="65" column="10" bodyfile="include/assimp/NullLogger.hpp" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_null_logger_1a4fbf66103757fafcff891fb04b4ee714" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::NullLogger::OnError</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>OnError</name>
+        <reimplements refid="class_assimp_1_1_logger_1ae2ea0790aba6125b90af0f2768b0759d">OnError</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Logs an error message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/NullLogger.hpp" line="85" column="10" bodyfile="include/assimp/NullLogger.hpp" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_null_logger_1a12d2b0048d17a819c8c00277ad1394c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::NullLogger::OnInfo</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>OnInfo</name>
+        <reimplements refid="class_assimp_1_1_logger_1aba81c4562ff8db83f06c6b62f2eb7983">OnInfo</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Logs an info message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/NullLogger.hpp" line="75" column="10" bodyfile="include/assimp/NullLogger.hpp" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_null_logger_1aa1817f1e94f406931d138a510b32e16e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::NullLogger::OnVerboseDebug</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>OnVerboseDebug</name>
+        <reimplements refid="class_assimp_1_1_logger_1a6bf0004c40f89a73b21633cff93c9ec0">OnVerboseDebug</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Logs a verbose debug message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/NullLogger.hpp" line="70" column="6" bodyfile="include/assimp/NullLogger.hpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_null_logger_1a9a04c2b9e3d4bc9eec8f693ed8115f24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Assimp::NullLogger::OnWarn</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>OnWarn</name>
+        <reimplements refid="class_assimp_1_1_logger_1ab8066978dd37992f711d75d49cf4607b">OnWarn</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Logs a warning message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/NullLogger.hpp" line="80" column="10" bodyfile="include/assimp/NullLogger.hpp" bodystart="80" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CPP-API: Empty logging implementation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Does nothing! Used by default if the application hasn&apos;t requested a custom logger via #DefaultLogger::set() or #DefaultLogger::create(); </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Assimp::Logger</label>
+        <link refid="class_assimp_1_1_logger"/>
+      </node>
+      <node id="1">
+        <label>Assimp::NullLogger</label>
+        <link refid="class_assimp_1_1_null_logger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Assimp::Logger</label>
+        <link refid="class_assimp_1_1_logger"/>
+      </node>
+      <node id="1">
+        <label>Assimp::NullLogger</label>
+        <link refid="class_assimp_1_1_null_logger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/NullLogger.hpp" line="59" column="1" bodyfile="include/assimp/NullLogger.hpp" bodystart="60" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_null_logger_1a31c05ecaee392b5fd34fd2dfd1cca559" prot="public" virt="virtual"><scope>Assimp::NullLogger</scope><name>attachStream</name></member>
+      <member refid="class_assimp_1_1_logger_1a3b10454ab4c0949f251062376d9c4161" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>debug</name></member>
+      <member refid="class_assimp_1_1_logger_1aef61091ba19466b10fe9c65e8bb97623" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>debug</name></member>
+      <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6a1c233dd8bb46dc4386948a03877b8160" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>DEBUGGING</name></member>
+      <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6a0cb475014d27098c3423738c571d857f" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>Debugging</name></member>
+      <member refid="class_assimp_1_1_null_logger_1a071c06bd70831e2e5da932ca806423d8" prot="public" virt="virtual"><scope>Assimp::NullLogger</scope><name>detachStream</name></member>
+      <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6a71054d0b1323abcea46d050d69013d27" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>Err</name></member>
+      <member refid="class_assimp_1_1_logger_1aa8b7c3f56dc4cecfdacc8bb36ba3fac1" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>error</name></member>
+      <member refid="class_assimp_1_1_logger_1aef4163260646a7a339e7b3e5d2c56bde" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>error</name></member>
+      <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>ErrorSeverity</name></member>
+      <member refid="class_assimp_1_1_logger_1aee1bf9056b72d6b08ef44c7444f4fdc6" prot="protected" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>formatMessage</name></member>
+      <member refid="class_assimp_1_1_logger_1a56fa139549e6382941e9f747489c9f3a" prot="protected" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>formatMessage</name></member>
+      <member refid="class_assimp_1_1_logger_1a4b565acf3a82915c35bb18e2a85ab43d" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>getLogSeverity</name></member>
+      <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6aa3377a574928b86f7de55c5df154f461" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>Info</name></member>
+      <member refid="class_assimp_1_1_logger_1a12b8a125083c47ac0bb6056f00761e52" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>info</name></member>
+      <member refid="class_assimp_1_1_logger_1aa783a83466f9a18d9d45785cc3bbd09d" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>info</name></member>
+      <member refid="class_assimp_1_1_logger_1a17f4cbc042c26935e16eb204ca77c2c1" prot="protected" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>Logger</name></member>
+      <member refid="class_assimp_1_1_logger_1accc0ffea63ddf0982d8c2ba7e07f0716" prot="protected" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>Logger</name></member>
+      <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>LogSeverity</name></member>
+      <member refid="class_assimp_1_1_logger_1ae1c96711eb927a5b33745a6211e93f56" prot="protected" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>m_Severity</name></member>
+      <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6a79d16f85dc21486ee489f300027e8eda" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>NORMAL</name></member>
+      <member refid="class_assimp_1_1_null_logger_1af354ebbd382b7097a55d364794a45631" prot="public" virt="virtual"><scope>Assimp::NullLogger</scope><name>OnDebug</name></member>
+      <member refid="class_assimp_1_1_null_logger_1a4fbf66103757fafcff891fb04b4ee714" prot="public" virt="virtual"><scope>Assimp::NullLogger</scope><name>OnError</name></member>
+      <member refid="class_assimp_1_1_null_logger_1a12d2b0048d17a819c8c00277ad1394c5" prot="public" virt="virtual"><scope>Assimp::NullLogger</scope><name>OnInfo</name></member>
+      <member refid="class_assimp_1_1_null_logger_1aa1817f1e94f406931d138a510b32e16e" prot="public" virt="virtual"><scope>Assimp::NullLogger</scope><name>OnVerboseDebug</name></member>
+      <member refid="class_assimp_1_1_null_logger_1a9a04c2b9e3d4bc9eec8f693ed8115f24" prot="public" virt="virtual"><scope>Assimp::NullLogger</scope><name>OnWarn</name></member>
+      <member refid="class_assimp_1_1_logger_1a8fb4fa4c2c329a36ac39bc9c743925f1" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>setLogSeverity</name></member>
+      <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6afc9d1d86aa82fdb80e00c99b3c1ce486" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>VERBOSE</name></member>
+      <member refid="class_assimp_1_1_logger_1a44c1da5be64b31741facfafa3ae6d8ef" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>verboseDebug</name></member>
+      <member refid="class_assimp_1_1_logger_1a44e6984efe9d55e3b5ead382f2c5a633" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>verboseDebug</name></member>
+      <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6a1279c77aaee5a3d7df835a9b9305a697" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>Warn</name></member>
+      <member refid="class_assimp_1_1_logger_1a32bc5ee4b23df13551b83b925907f1b1" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>warn</name></member>
+      <member refid="class_assimp_1_1_logger_1acc9dfd15751d1a763d23cd207dff94fc" prot="public" virt="non-virtual"><scope>Assimp::NullLogger</scope><name>warn</name></member>
+      <member refid="class_assimp_1_1_logger_1a27dd2bd4fd3b9cde0635ed22aad687c3" prot="public" virt="virtual"><scope>Assimp::NullLogger</scope><name>~Logger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

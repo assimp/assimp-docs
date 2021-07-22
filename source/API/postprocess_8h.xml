@@ -694,11 +694,11 @@ Drops normals for all faces of all meshes.</para>
 <para>Defines the flags for all possible post processing steps. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Some steps are influenced by properties set on the Assimp::Importer itself</para>
+<para><simplesect kind="note"><para>Some steps are influenced by properties set on the <ref refid="class_assimp_1_1_importer" kindref="compound">Assimp::Importer</ref> itself</para>
 </simplesect>
-<simplesect kind="see"><para>Assimp::Importer::ReadFile() </para>
+<simplesect kind="see"><para><ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">Assimp::Importer::ReadFile()</ref> </para>
 </simplesect>
-<simplesect kind="see"><para>Assimp::Importer::SetPropertyInteger() </para>
+<simplesect kind="see"><para><ref refid="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" kindref="member">Assimp::Importer::SetPropertyInteger()</ref> </para>
 </simplesect>
 <simplesect kind="see"><para><ref refid="cimport_8h_1a37baf75d55599334097f7337ce8f25c5" kindref="member">aiImportFile</ref> </para>
 </simplesect>

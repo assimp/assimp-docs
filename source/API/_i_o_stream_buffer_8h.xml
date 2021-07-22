@@ -3,7 +3,7 @@
   <compounddef id="_i_o_stream_buffer_8h" kind="file" language="C++">
     <compoundname>IOStreamBuffer.h</compoundname>
     <includes refid="types_8h" local="no">assimp/types.h</includes>
-    <includes local="no">assimp/IOStream.hpp</includes>
+    <includes refid="_i_o_stream_8hpp" local="no">assimp/IOStream.hpp</includes>
     <includes refid="_parsing_utils_8h" local="no">assimp/ParsingUtils.h</includes>
     <includes local="no">vector</includes>
     <incdepgraph>
@@ -89,11 +89,14 @@
         <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="11">
-        <label>cmath</label>
-      </node>
       <node id="20">
         <label>assimp/IOStream.hpp</label>
+        <link refid="_i_o_stream_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cmath</label>
       </node>
       <node id="14">
         <label>assimp/matrix3x3.h</label>
@@ -289,7 +292,7 @@
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="types_8h" kindref="compound">assimp/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assimp/IOStream.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_i_o_stream_8hpp" kindref="compound">assimp/IOStream.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_parsing_utils_8h" kindref="compound">assimp/ParsingUtils.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -304,7 +307,7 @@
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_assimp_1_1_i_o_stream_buffer_1a4f080570778732e58da136e28d96235d" kindref="member">~IOStreamBuffer</ref>();</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_i_o_stream_buffer_1a66c14bc6c35b33bf470be66c470e7a8f" kindref="member">open</ref>(<sp/>IOStream<sp/>*stream<sp/>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_i_o_stream_buffer_1a66c14bc6c35b33bf470be66c470e7a8f" kindref="member">open</ref>(<sp/><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref><sp/>*stream<sp/>);</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_i_o_stream_buffer_1a37d88ec985f715f926f1b37052893922" kindref="member">close</ref>();</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
@@ -327,7 +330,7 @@
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_i_o_stream_buffer_1ae4e4be6dd4284644f9b99e11b95a66a4" kindref="member">getNextBlock</ref>(<sp/>std::vector&lt;T&gt;<sp/>&amp;buffer<sp/>);</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>IOStream<sp/>*m_stream;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref><sp/>*m_stream;</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>m_filesize;</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>m_cacheSize;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>m_numBlocks;</highlight></codeline>

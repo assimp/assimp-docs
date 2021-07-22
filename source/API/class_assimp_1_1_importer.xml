@@ -1,0 +1,1338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_importer" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::Importer</compoundname>
+    <includes local="no">Importer.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_importer_1a3affe8f98fc9a3b75fc3cb4c4415b37c" prot="public" static="yes" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int Assimp::Importer::MaxLenHint</definition>
+        <argsstring></argsstring>
+        <name>MaxLenHint</name>
+        <initializer>= 200</initializer>
+        <briefdescription>
+<para>The upper limit for hints. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="127" column="31" bodyfile="include/assimp/Importer.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_importer_1a3928bb8d375fd676dd5dbe33382e46ce" prot="protected" static="no" mutable="no">
+        <type>ImporterPimpl *</type>
+        <definition>ImporterPimpl* Assimp::Importer::pimpl</definition>
+        <argsstring></argsstring>
+        <name>pimpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="644" column="19" bodyfile="include/assimp/Importer.hpp" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_importer_1aba00e5dd1cb5ed67f709e994933efb39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+        <definition>const aiScene* Assimp::Importer::ApplyCustomizedPostProcessing</definition>
+        <argsstring>(BaseProcess *rootProcess, bool requestValidation)</argsstring>
+        <name>ApplyCustomizedPostProcessing</name>
+        <param>
+          <type>BaseProcess *</type>
+          <declname>rootProcess</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>requestValidation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="469" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a5872e749c1451fee64183fc14f1fc81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+        <definition>const aiScene* Assimp::Importer::ApplyPostProcessing</definition>
+        <argsstring>(unsigned int pFlags)</argsstring>
+        <name>ApplyPostProcessing</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>pFlags</declname>
+        </param>
+        <briefdescription>
+<para>Apply post-processing to an already-imported scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is strictly equivalent to calling <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref> with the same flags. However, you can use this separate function to inspect the imported scene first to fine-tune your post-processing setup. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provide a bitwise combination of the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410" kindref="member">aiPostProcessSteps</ref> flags. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the post-processed data. This is still the same as the pointer returned by <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref>. However, if post-processing fails, the scene could now be nullptr. That&apos;s quite a rare case, post processing steps are not really designed to &apos;fail&apos;. To be exact, the #aiProcess_ValidateDS flag is currently the only post processing step which can actually cause the scene to be reset to nullptr.</para>
+</simplesect>
+<simplesect kind="note"><para>The method does nothing if no scene is currently bound to the <ref refid="class_assimp_1_1_importer_1a2c207299ed05f1db1ad1e6dab005f719" kindref="member">Importer</ref> instance. <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="467" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a53dafc3046abc33365a07c605716c5d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Importer::FreeScene</definition>
+        <argsstring>()</argsstring>
+        <name>FreeScene</name>
+        <briefdescription>
+<para>Frees the current scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function does nothing if no scene has previously been read via <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref>. <ref refid="class_assimp_1_1_importer_1a53dafc3046abc33365a07c605716c5d4" kindref="member">FreeScene()</ref> is called automatically by the destructor and <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref> itself. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="487" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a3ac36c9ab8668bd368de516c19bdcc11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* Assimp::Importer::GetErrorString</definition>
+        <argsstring>() const</argsstring>
+        <name>GetErrorString</name>
+        <briefdescription>
+<para>Returns an error description of an error that occurred in <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an empty string if no error occurred. <simplesect kind="return"><para>A description of the last error, an empty string if no error occurred. The string is never nullptr.</para>
+</simplesect>
+<simplesect kind="note"><para>The returned function remains valid until one of the following methods is called: <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref>, <ref refid="class_assimp_1_1_importer_1a53dafc3046abc33365a07c605716c5d4" kindref="member">FreeScene()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="498" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a8680d978bdafe0777f8c3e05954e55c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::exception_ptr &amp;</type>
+        <definition>const std::exception_ptr&amp; Assimp::Importer::GetException</definition>
+        <argsstring>() const</argsstring>
+        <name>GetException</name>
+        <briefdescription>
+<para>Returns an exception if one occurred during import. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The last exception which occurred.</para>
+</simplesect>
+<simplesect kind="note"><para>The returned value remains valid until one of the following methods is called: <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref>, <ref refid="class_assimp_1_1_importer_1a53dafc3046abc33365a07c605716c5d4" kindref="member">FreeScene()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="507" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1ab06927d45d5adbf909040c8f5bac1e4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Importer::GetExtensionList</definition>
+        <argsstring>(aiString &amp;szOut) const</argsstring>
+        <name>GetExtensionList</name>
+        <param>
+          <type><ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
+          <declname>szOut</declname>
+        </param>
+        <briefdescription>
+<para>Get a full list of all file extensions supported by ASSIMP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If a file extension is contained in the list this does of course not mean that ASSIMP is able to load all files with this extension <mdash/> it simply means there is an importer loaded which claims to handle files with this file extension. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to receive the extension list. Format of the list: &quot;*.3ds;*.obj;*.dae&quot;. This is useful for use with the WinAPI call GetOpenFileName(Ex). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="563" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1acdc70c6efdf1b572094fe01089ceb158" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>AI_FORCE_INLINE void Assimp::Importer::GetExtensionList</definition>
+        <argsstring>(std::string &amp;szOut) const</argsstring>
+        <name>GetExtensionList</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>szOut</declname>
+        </param>
+        <briefdescription>
+<para>Get a full list of all file extensions supported by ASSIMP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is provided for backward compatibility. See the <ref refid="structai_string" kindref="compound">aiString</ref> version for detailed and up-to-date docs. <simplesect kind="see"><para>GetExtensionList(aiString&amp;) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="571" column="17" bodyfile="include/assimp/Importer.hpp" bodystart="658" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a35d624811e9ddfcd0a898797e6263c22" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_base_importer" kindref="compound">BaseImporter</ref> *</type>
+        <definition>BaseImporter* Assimp::Importer::GetImporter</definition>
+        <argsstring>(const char *szExtension) const</argsstring>
+        <name>GetImporter</name>
+        <param>
+          <type>const char *</type>
+          <declname>szExtension</declname>
+        </param>
+        <briefdescription>
+<para>Find the importer corresponding to a specific file extension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is quite similar to <ref refid="class_assimp_1_1_importer_1a22bbe0ca29cc685b110b6853dd1e4157" kindref="member">IsExtensionSupported</ref> except a <ref refid="class_assimp_1_1_base_importer" kindref="compound">BaseImporter</ref> instance is returned. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szExtension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extension to check for. The following formats are recognized (BAH being the file extension): &quot;BAH&quot; (comparison is case-insensitive), &quot;.bah&quot;, &quot;*.bah&quot; (wild card and dot characters at the beginning of the extension are skipped). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>nullptr if no importer is found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="605" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a913543b8db0f09f286cc1b4f20bb3d35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_base_importer" kindref="compound">BaseImporter</ref> *</type>
+        <definition>BaseImporter* Assimp::Importer::GetImporter</definition>
+        <argsstring>(size_t index) const</argsstring>
+        <name>GetImporter</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Find the importer corresponding to a specific index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index to query, must be within [0,<ref refid="class_assimp_1_1_importer_1a5397c7d93358b1a6983c74c5eb5c64a6" kindref="member">GetImporterCount()</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance. nullptr if the index does not exist. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="593" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a5397c7d93358b1a6983c74c5eb5c64a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::Importer::GetImporterCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetImporterCount</name>
+        <briefdescription>
+<para>Get the number of importers currently registered with <ref refid="namespace_assimp" kindref="compound">Assimp</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="575" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1aa9158a5ec0caba90cb1a3183c065634f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::Importer::GetImporterIndex</definition>
+        <argsstring>(const char *szExtension) const</argsstring>
+        <name>GetImporterIndex</name>
+        <param>
+          <type>const char *</type>
+          <declname>szExtension</declname>
+        </param>
+        <briefdescription>
+<para>Find the importer index corresponding to a specific file extension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szExtension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extension to check for. The following formats are recognized (BAH being the file extension): &quot;BAH&quot; (comparison is case-insensitive), &quot;.bah&quot;, &quot;*.bah&quot; (wild card and dot characters at the beginning of the extension are skipped). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(size_t)-1 if no importer is found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="615" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a2f9db052a2507d3a77aec782dc8149cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref> *</type>
+        <definition>const aiImporterDesc* Assimp::Importer::GetImporterInfo</definition>
+        <argsstring>(size_t index) const</argsstring>
+        <name>GetImporterInfo</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get meta data for the importer corresponding to a specific index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For the declaration of <ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref>, include &lt;<ref refid="importerdesc_8h" kindref="compound">assimp/importerdesc.h</ref>&gt;. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index to query, must be within [0,<ref refid="class_assimp_1_1_importer_1a5397c7d93358b1a6983c74c5eb5c64a6" kindref="member">GetImporterCount()</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> meta data structure, nullptr if the index does not exist or if the importer doesn&apos;t offer meta information ( importers may do this at the cost of being hated by their peers). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="585" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a72f4d2821d38b97f630981f9236901e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+        <definition>IOSystem* Assimp::Importer::GetIOHandler</definition>
+        <argsstring>() const</argsstring>
+        <name>GetIOHandler</name>
+        <briefdescription>
+<para>Retrieves the IO handler that is currently set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>You can use <ref refid="class_assimp_1_1_importer_1ad2c940def9c4d01709e44a4e781e757d" kindref="member">IsDefaultIOHandler()</ref> to check whether the returned interface is the default IO handler provided by ASSIMP. The default handler is active as long the application doesn&apos;t supply its own custom IO handler via <ref refid="class_assimp_1_1_importer_1a1161f46318af18bb86dfe0fc3edea4df" kindref="member">SetIOHandler()</ref>. <simplesect kind="return"><para>A valid <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> interface, never nullptr. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="325" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a6d6cd3b06de9438744a17f61395a0bf0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Importer::GetMemoryRequirements</definition>
+        <argsstring>(aiMemoryInfo &amp;in) const</argsstring>
+        <name>GetMemoryRequirements</name>
+        <param>
+          <type><ref refid="structai_memory_info" kindref="compound">aiMemoryInfo</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Returns the storage allocated by ASSIMP to hold the scene data in memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This refers to the currently loaded file, see <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data structure to be filled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The returned memory statistics refer to the actual size of the use data of the <ref refid="structai_scene" kindref="compound">aiScene</ref>. Heap-related overhead is (naturally) not included. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="626" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a60eb9042fb85bfbd61a863e131a56ecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+        <definition>aiScene* Assimp::Importer::GetOrphanedScene</definition>
+        <argsstring>()</argsstring>
+        <name>GetOrphanedScene</name>
+        <briefdescription>
+<para>Returns the scene loaded by the last successful call to <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref> and releases the scene from the ownership of the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The application is now responsible for deleting the scene. Any further calls to <ref refid="class_assimp_1_1_importer_1ae5f94a29007ed7c873be138ecdb4b056" kindref="member">GetScene()</ref> or <ref refid="class_assimp_1_1_importer_1a60eb9042fb85bfbd61a863e131a56ecd" kindref="member">GetOrphanedScene()</ref> will return nullptr - until a new scene has been loaded via <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref>.</para>
+<para><simplesect kind="return"><para>Current scene or nullptr if there is currently no scene loaded </para>
+</simplesect>
+<simplesect kind="note"><para>Use this method with maximal caution, and only if you have to. By design, <ref refid="structai_scene" kindref="compound">aiScene</ref>&apos;s are exclusively maintained, allocated and deallocated by <ref refid="namespace_assimp" kindref="compound">Assimp</ref> and no one else. The reasoning behind this is the golden rule that deallocations should always be done by the module that did the original allocation because heaps are not necessarily shared. <ref refid="class_assimp_1_1_importer_1a60eb9042fb85bfbd61a863e131a56ecd" kindref="member">GetOrphanedScene()</ref> enforces you to delete the returned scene by yourself, but this will only be fine if and only if you&apos;re using the same heap as assimp. On Windows, it&apos;s typically fine provided everything is linked against the multithreaded-dll version of the runtime library. It will work as well for static linkage with <ref refid="namespace_assimp" kindref="compound">Assimp</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="534" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a14201de344db7c66fa514f7f092ae10b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_progress_handler" kindref="compound">ProgressHandler</ref> *</type>
+        <definition>ProgressHandler* Assimp::Importer::GetProgressHandler</definition>
+        <argsstring>() const</argsstring>
+        <name>GetProgressHandler</name>
+        <briefdescription>
+<para>Retrieves the progress handler that is currently set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>You can use <ref refid="class_assimp_1_1_importer_1a34062906cb6b9af8abaeda36737d14ae" kindref="member">IsDefaultProgressHandler()</ref> to check whether the returned interface is the default handler provided by ASSIMP. The default handler is active as long the application doesn&apos;t supply its own custom handler via <ref refid="class_assimp_1_1_importer_1a6a4d830ffb3f77a3c7c919e0af006920" kindref="member">SetProgressHandler()</ref>. <simplesect kind="return"><para>A valid <ref refid="class_assimp_1_1_progress_handler" kindref="compound">ProgressHandler</ref> interface, never nullptr. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="356" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a39e654c887f684cc12f792ca1daebfee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::Importer::GetPropertyBool</definition>
+        <argsstring>(const char *szName, bool bErrorReturn=false) const</argsstring>
+        <name>GetPropertyBool</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bErrorReturn</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Get a boolean configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Boolean properties are stored on the integer stack internally so it&apos;s possible to set them via <ref refid="class_assimp_1_1_importer_1a4af22a88eddf464d949a761149c72825" kindref="member">SetPropertyBool</ref> and query them with <ref refid="class_assimp_1_1_importer_1a39e654c887f684cc12f792ca1daebfee" kindref="member">GetPropertyBool</ref> and vice versa. <simplesect kind="see"><para><ref refid="class_assimp_1_1_importer_1ac6f348464e03176bc6dd790226122b36" kindref="member">GetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="271" column="10" bodyfile="include/assimp/Importer.hpp" bodystart="271" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a3a5f327bc30dfe95db6d8ff9297d4aab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real Assimp::Importer::GetPropertyFloat</definition>
+        <argsstring>(const char *szName, ai_real fErrorReturn=10e10) const</argsstring>
+        <name>GetPropertyFloat</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>fErrorReturn</declname>
+          <defval>10e10</defval>
+        </param>
+        <briefdescription>
+<para>Get a floating-point configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_importer_1ac6f348464e03176bc6dd790226122b36" kindref="member">GetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="279" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1ac6f348464e03176bc6dd790226122b36" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Assimp::Importer::GetPropertyInteger</definition>
+        <argsstring>(const char *szName, int iErrorReturn=0xffffffff) const</argsstring>
+        <name>GetPropertyInteger</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iErrorReturn</declname>
+          <defval>0xffffffff</defval>
+        </param>
+        <briefdescription>
+<para>Get a configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property. All supported properties are defined in the aiConfig.g header (all constants share the prefix AI_CONFIG_XXX). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iErrorReturn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value that is returned if the property is not found. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Current value of the property </para>
+</simplesect>
+<simplesect kind="note"><para>Property of different types (float, int, string ..) are kept on different lists, so calling <ref refid="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" kindref="member">SetPropertyInteger()</ref> for a floating-point property has no effect - the loader will call <ref refid="class_assimp_1_1_importer_1a3a5f327bc30dfe95db6d8ff9297d4aab" kindref="member">GetPropertyFloat()</ref> to read the property, but it won&apos;t be there. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="261" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a654a92d53bf06feb5961a7255be45e95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref></type>
+        <definition>aiMatrix4x4 Assimp::Importer::GetPropertyMatrix</definition>
+        <argsstring>(const char *szName, const aiMatrix4x4 &amp;sErrorReturn=aiMatrix4x4()) const</argsstring>
+        <name>GetPropertyMatrix</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref> &amp;</type>
+          <declname>sErrorReturn</declname>
+          <defval><ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Get a matrix configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The return value remains valid until the property is modified. <simplesect kind="see"><para><ref refid="class_assimp_1_1_importer_1ac6f348464e03176bc6dd790226122b36" kindref="member">GetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="297" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a80cf0cbad0d3cc17aa6a3f6f603cc38c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Assimp::Importer::GetPropertyString</definition>
+        <argsstring>(const char *szName, const std::string &amp;sErrorReturn=std::string()) const</argsstring>
+        <name>GetPropertyString</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sErrorReturn</declname>
+          <defval>std::string()</defval>
+        </param>
+        <briefdescription>
+<para>Get a string configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The return value remains valid until the property is modified. <simplesect kind="see"><para><ref refid="class_assimp_1_1_importer_1ac6f348464e03176bc6dd790226122b36" kindref="member">GetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="288" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1ae5f94a29007ed7c873be138ecdb4b056" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+        <definition>const aiScene* Assimp::Importer::GetScene</definition>
+        <argsstring>() const</argsstring>
+        <name>GetScene</name>
+        <briefdescription>
+<para>Returns the scene loaded by the last successful call to <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current scene or nullptr if there is currently no scene loaded </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="513" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a2c207299ed05f1db1ad1e6dab005f719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::Importer::Importer</definition>
+        <argsstring>()</argsstring>
+        <name>Importer</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates an empty importer object.</para>
+<para>Call <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref> to start the import process. The configuration property table is initially empty. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="136" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a31c6cd729b79d586504dabe30353e39a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::Importer::Importer</definition>
+        <argsstring>(const Importer &amp;other)=delete</argsstring>
+        <name>Importer</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This copies the configuration properties of another <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref>. If this <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> owns a scene it won&apos;t be copied. Call <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref> to start the import process. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="145" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1ad2c940def9c4d01709e44a4e781e757d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::Importer::IsDefaultIOHandler</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDefaultIOHandler</name>
+        <briefdescription>
+<para>Checks whether a default IO handler is active A default handler is active as long the application doesn&apos;t supply its own custom IO handler via <ref refid="class_assimp_1_1_importer_1a1161f46318af18bb86dfe0fc3edea4df" kindref="member">SetIOHandler()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true by default </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="333" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a34062906cb6b9af8abaeda36737d14ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::Importer::IsDefaultProgressHandler</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDefaultProgressHandler</name>
+        <briefdescription>
+<para>Checks whether a default progress handler is active A default handler is active as long the application doesn&apos;t supply its own custom progress handler via <ref refid="class_assimp_1_1_importer_1a6a4d830ffb3f77a3c7c919e0af006920" kindref="member">SetProgressHandler()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true by default </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="364" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a22bbe0ca29cc685b110b6853dd1e4157" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::Importer::IsExtensionSupported</definition>
+        <argsstring>(const char *szExtension) const</argsstring>
+        <name>IsExtensionSupported</name>
+        <param>
+          <type>const char *</type>
+          <declname>szExtension</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether a given file extension is supported by ASSIMP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szExtension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extension to be checked. Must include a trailing dot &apos;.&apos;. Example: &quot;.3ds&quot;, &quot;.md3&quot;. Cases-insensitive. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the extension is supported, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="543" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a4d49e3c8ecf28336d78f9f5e502990ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::Importer::IsExtensionSupported</definition>
+        <argsstring>(const std::string &amp;szExtension) const</argsstring>
+        <name>IsExtensionSupported</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>szExtension</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether a given file extension is supported by ASSIMP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is provided for backward compatibility. See the const char* version for detailed and up-to-date docs. <simplesect kind="see"><para>IsExtensionSupported(const char*) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="551" column="17" bodyfile="include/assimp/Importer.hpp" bodystart="664" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a5061bf192f25fb39395495bc7647b6f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> &amp;</type>
+        <definition>Importer&amp; Assimp::Importer::operator=</definition>
+        <argsstring>(const Importer &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Assignment operator has been deleted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="150" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1ac112839f323a630f83395acb74746827" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ImporterPimpl *</type>
+        <definition>ImporterPimpl* Assimp::Importer::Pimpl</definition>
+        <argsstring>()</argsstring>
+        <name>Pimpl</name>
+        <briefdescription>
+<para>Private, do not use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="639" column="19" bodyfile="include/assimp/Importer.hpp" bodystart="639" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a5a85077725374402b4d6e107b03ce845" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const ImporterPimpl *</type>
+        <definition>const ImporterPimpl* Assimp::Importer::Pimpl</definition>
+        <argsstring>() const</argsstring>
+        <name>Pimpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="640" column="25" bodyfile="include/assimp/Importer.hpp" bodystart="640" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+        <definition>const aiScene* Assimp::Importer::ReadFile</definition>
+        <argsstring>(const char *pFile, unsigned int pFlags)</argsstring>
+        <name>ReadFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pFlags</declname>
+        </param>
+        <briefdescription>
+<para>Reads the given file and returns its contents if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the call succeeds, the contents of the file are returned as a pointer to an <ref refid="structai_scene" kindref="compound">aiScene</ref> object. The returned data is intended to be read-only, the importer object keeps ownership of the data and will destroy it upon destruction. If the import fails, nullptr is returned. A human-readable error description can be retrieved by calling <ref refid="class_assimp_1_1_importer_1a3ac36c9ab8668bd368de516c19bdcc11" kindref="member">GetErrorString()</ref>. The previous scene will be deleted during this call. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path and filename to the file to be imported. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional post processing steps to be executed after a successful import. Provide a bitwise combination of the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410" kindref="member">aiPostProcessSteps</ref> flags. If you wish to inspect the imported scene first in order to fine-tune your post-processing setup, consider to use <ref refid="class_assimp_1_1_importer_1a5872e749c1451fee64183fc14f1fc81d" kindref="member">ApplyPostProcessing()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the imported data, nullptr if the import failed. The pointer to the scene remains in possession of the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance. Use <ref refid="class_assimp_1_1_importer_1a60eb9042fb85bfbd61a863e131a56ecd" kindref="member">GetOrphanedScene()</ref> to take ownership of it.</para>
+</simplesect>
+<simplesect kind="note"><para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> is able to determine the file format of a file automatically. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="402" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a339882c7acb47d5b5110bbd078d870a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+        <definition>AI_FORCE_INLINE const aiScene * Assimp::Importer::ReadFile</definition>
+        <argsstring>(const std::string &amp;pFile, unsigned int pFlags)</argsstring>
+        <name>ReadFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pFlags</declname>
+        </param>
+        <briefdescription>
+<para>Reads the given file and returns its contents if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>class <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref></para>
+<para>This function is provided for backward compatibility. See the const char* version for detailed docs. <simplesect kind="see"><para>ReadFile(const char*, pFlags) <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="477" column="19" bodyfile="include/assimp/Importer.hpp" bodystart="654" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a9b3c5e8b1042702f449e84a95b3324f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+        <definition>const aiScene* Assimp::Importer::ReadFileFromMemory</definition>
+        <argsstring>(const void *pBuffer, size_t pLength, unsigned int pFlags, const char *pHint=&quot;&quot;)</argsstring>
+        <name>ReadFileFromMemory</name>
+        <param>
+          <type>const void *</type>
+          <declname>pBuffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pLength</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pFlags</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pHint</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Reads the given file from a memory buffer and returns its contents if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the call succeeds, the contents of the file are returned as a pointer to an <ref refid="structai_scene" kindref="compound">aiScene</ref> object. The returned data is intended to be read-only, the importer object keeps ownership of the data and will destroy it upon destruction. If the import fails, nullptr is returned. A human-readable error description can be retrieved by calling <ref refid="class_assimp_1_1_importer_1a3ac36c9ab8668bd368de516c19bdcc11" kindref="member">GetErrorString()</ref>. The previous scene will be deleted during this call. Calling this method doesn&apos;t affect the active <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the file data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of pBuffer, in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional post processing steps to be executed after a successful import. Provide a bitwise combination of the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410" kindref="member">aiPostProcessSteps</ref> flags. If you wish to inspect the imported scene first in order to fine-tune your post-processing setup, consider to use <ref refid="class_assimp_1_1_importer_1a5872e749c1451fee64183fc14f1fc81d" kindref="member">ApplyPostProcessing()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pHint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An additional hint to the library. If this is a non empty string, the library looks for a loader to support the file extension specified by pHint and passes the file to the first matching loader. If this loader is unable to completely the request, the library continues and tries to determine the file format on its own, a task that may or may not be successful. Check the return value, and you&apos;ll know ... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the imported data, nullptr if the import failed. The pointer to the scene remains in possession of the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance. Use <ref refid="class_assimp_1_1_importer_1a60eb9042fb85bfbd61a863e131a56ecd" kindref="member">GetOrphanedScene()</ref> to take ownership of it.</para>
+</simplesect>
+<simplesect kind="note"><para>This is a straightforward way to decode models from memory buffers, but it doesn&apos;t handle model formats that spread their data across multiple files or even directories. Examples include OBJ or MD3, which outsource parts of their material info into external scripts. If you need full functionality, provide a custom <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> to make <ref refid="namespace_assimp" kindref="compound">Assimp</ref> find these files and use the regular <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref> API. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="443" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a3846294ffe76d91a1d3096d22d7c6b7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn Assimp::Importer::RegisterLoader</definition>
+        <argsstring>(BaseImporter *pImp)</argsstring>
+        <name>RegisterLoader</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_base_importer" kindref="compound">BaseImporter</ref> *</type>
+          <declname>pImp</declname>
+        </param>
+        <briefdescription>
+<para>Registers a new loader. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pImp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> to be added. The <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance takes ownership of the pointer, so it will be automatically deleted with the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AI_SUCCESS if the loader has been added. The registration fails if there is already a loader for a specific file extension. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="167" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a102650d3648c0e414a1e73bdad9bed35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn Assimp::Importer::RegisterPPStep</definition>
+        <argsstring>(BaseProcess *pImp)</argsstring>
+        <name>RegisterPPStep</name>
+        <param>
+          <type>BaseProcess *</type>
+          <declname>pImp</declname>
+        </param>
+        <briefdescription>
+<para>Registers a new post-process step. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>At the moment, there&apos;s a small limitation: new post processing steps are added to end of the list, or in other words, executed last, after all built-in steps. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pImp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Post-process step to be added. The <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance takes ownership of the pointer, so it will be automatically deleted with the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AI_SUCCESS if the step has been added correctly. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="191" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a9bb793072c84c784279d0f6e870bb42d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Importer::SetExtraVerbose</definition>
+        <argsstring>(bool bDo)</argsstring>
+        <name>SetExtraVerbose</name>
+        <param>
+          <type>bool</type>
+          <declname>bDo</declname>
+        </param>
+        <briefdescription>
+<para>Enables &quot;extra verbose&quot; mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&apos;Extra verbose&apos; means the data structure is validated after <emphasis>every</emphasis> single post processing step to make sure everyone modifies the data structure in a well-defined manner. This is a debug feature and not intended for use in production environments. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="635" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a1161f46318af18bb86dfe0fc3edea4df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Importer::SetIOHandler</definition>
+        <argsstring>(IOSystem *pIOHandler)</argsstring>
+        <name>SetIOHandler</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <briefdescription>
+<para>Supplies a custom IO handler to the importer to use to open and access files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If you need the importer to use custom IO logic to access the files, you need to provide a custom implementation of <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> and IOFile to the importer. Then create an instance of your custom <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> implementation and supply it by this function.</para>
+<para>The <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> takes ownership of the object and will destroy it afterwards. The previously assigned handler will be deleted. Pass nullptr to take again ownership of your <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> and reset <ref refid="namespace_assimp" kindref="compound">Assimp</ref> to use its default implementation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pIOHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IO handler to be used in all file accesses of the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="315" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a6a4d830ffb3f77a3c7c919e0af006920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Importer::SetProgressHandler</definition>
+        <argsstring>(ProgressHandler *pHandler)</argsstring>
+        <name>SetProgressHandler</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_progress_handler" kindref="compound">ProgressHandler</ref> *</type>
+          <declname>pHandler</declname>
+        </param>
+        <briefdescription>
+<para>Supplies a custom progress handler to the importer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This interface exposes an #Update() callback, which is called more or less periodically (please don&apos;t sue us if it isn&apos;t as periodically as you&apos;d like it to have ...). This can be used to implement progress bars and loading timeouts. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Progress callback interface. Pass nullptr to disable progress reporting. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Progress handlers can be used to abort the loading at almost any time. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="346" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a4af22a88eddf464d949a761149c72825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::Importer::SetPropertyBool</definition>
+        <argsstring>(const char *szName, bool value)</argsstring>
+        <name>SetPropertyBool</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a boolean configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Boolean properties are stored on the integer stack internally so it&apos;s possible to set them via <ref refid="class_assimp_1_1_importer_1a4af22a88eddf464d949a761149c72825" kindref="member">SetPropertyBool</ref> and query them with <ref refid="class_assimp_1_1_importer_1a39e654c887f684cc12f792ca1daebfee" kindref="member">GetPropertyBool</ref> and vice versa. <simplesect kind="see"><para><ref refid="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" kindref="member">SetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="226" column="10" bodyfile="include/assimp/Importer.hpp" bodystart="226" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1ad38af78d6fe4b1f132d2534d8a84deea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::Importer::SetPropertyFloat</definition>
+        <argsstring>(const char *szName, ai_real fValue)</argsstring>
+        <name>SetPropertyFloat</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>fValue</declname>
+        </param>
+        <briefdescription>
+<para>Set a floating-point configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" kindref="member">SetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="234" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::Importer::SetPropertyInteger</definition>
+        <argsstring>(const char *szName, int iValue)</argsstring>
+        <name>SetPropertyInteger</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iValue</declname>
+        </param>
+        <briefdescription>
+<para>Set an integer configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property. All supported properties are defined in the aiConfig.g header (all constants share the prefix AI_CONFIG_XXX and are simple strings). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value of the property </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the property was set before. The new value replaces the previous value in this case. </para>
+</simplesect>
+<simplesect kind="note"><para>Property of different types (float, int, string ..) are kept on different stacks, so calling <ref refid="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" kindref="member">SetPropertyInteger()</ref> for a floating-point property has no effect - the loader will call <ref refid="class_assimp_1_1_importer_1a3a5f327bc30dfe95db6d8ff9297d4aab" kindref="member">GetPropertyFloat()</ref> to read the property, but it won&apos;t be there. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="217" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1acd128e5fb5777ef238b8bd1454a9c3ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::Importer::SetPropertyMatrix</definition>
+        <argsstring>(const char *szName, const aiMatrix4x4 &amp;sValue)</argsstring>
+        <name>SetPropertyMatrix</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref> &amp;</type>
+          <declname>sValue</declname>
+        </param>
+        <briefdescription>
+<para>Set a matrix configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" kindref="member">SetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="246" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a854087b213981108e3e464cf4d293fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::Importer::SetPropertyString</definition>
+        <argsstring>(const char *szName, const std::string &amp;sValue)</argsstring>
+        <name>SetPropertyString</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sValue</declname>
+        </param>
+        <briefdescription>
+<para>Set a string configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" kindref="member">SetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="240" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a3b1f5af2c763b13aca0f324b19001722" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn Assimp::Importer::UnregisterLoader</definition>
+        <argsstring>(BaseImporter *pImp)</argsstring>
+        <name>UnregisterLoader</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_base_importer" kindref="compound">BaseImporter</ref> *</type>
+          <declname>pImp</declname>
+        </param>
+        <briefdescription>
+<para>Unregisters a loader. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pImp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> to be unregistered. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AI_SUCCESS if the loader has been removed. The function fails if the loader is currently in use (this could happen if the <ref refid="class_assimp_1_1_importer_1a2c207299ed05f1db1ad1e6dab005f719" kindref="member">Importer</ref> instance is used by more than one thread) or if it has not yet been registered. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="178" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a3a683671c7c40638b1103c5d3648d86c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn Assimp::Importer::UnregisterPPStep</definition>
+        <argsstring>(BaseProcess *pImp)</argsstring>
+        <name>UnregisterPPStep</name>
+        <param>
+          <type>BaseProcess *</type>
+          <declname>pImp</declname>
+        </param>
+        <briefdescription>
+<para>Unregisters a post-process step. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pImp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Step to be unregistered. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AI_SUCCESS if the step has been removed. The function fails if the step is currently in use (this could happen if the <ref refid="class_assimp_1_1_importer_1a2c207299ed05f1db1ad1e6dab005f719" kindref="member">Importer</ref> instance is used by more than one thread) or if it has not yet been registered. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="202" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1af0292c1603ff9b483a5deba4d183eba5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::Importer::ValidateFlags</definition>
+        <argsstring>(unsigned int pFlags) const</argsstring>
+        <name>ValidateFlags</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>pFlags</declname>
+        </param>
+        <briefdescription>
+<para>Check whether a given set of post-processing flags is supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Some flags are mutually exclusive, others are probably not available because your excluded them from your <ref refid="namespace_assimp" kindref="compound">Assimp</ref> builds. Calling this function is recommended if you&apos;re unsure.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bitwise combination of the aiPostProcess flags. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this flag combination is fine. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="378" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_importer_1a3d65af5286ba22f46220a72a6eb2a1c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::Importer::~Importer</definition>
+        <argsstring>()</argsstring>
+        <name>~Importer</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The object kept ownership of the imported data, which now will be destroyed along with the object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Importer.hpp" line="156" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CPP-API: The <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> class forms an C++ interface to the functionality of the Open Asset Import Library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Create an object of this class and call <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref> to import a file. If the import succeeds, the function returns a pointer to the imported data. The data remains property of the object, it is intended to be accessed read-only. The imported data will be destroyed along with the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> object. If the import fails, <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref> returns a nullptr pointer. In this case you can retrieve a human-readable error description be calling <ref refid="class_assimp_1_1_importer_1a3ac36c9ab8668bd368de516c19bdcc11" kindref="member">GetErrorString()</ref>. You can call <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref> multiple times with a single <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance. Actually, constructing <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> objects involves quite many allocations and may take some time, so it&apos;s better to reuse them as often as possible.</para>
+<para>If you need the <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> to do custom file handling to access the files, implement <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> and <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> and supply an instance of your custom <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> implementation by calling <ref refid="class_assimp_1_1_importer_1a1161f46318af18bb86dfe0fc3edea4df" kindref="member">SetIOHandler()</ref> before calling <ref refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kindref="member">ReadFile()</ref>. If you do not assign a custion IO handler, a default handler using the standard C++ IO logic will be used.</para>
+<para><simplesect kind="note"><para>One <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance is not thread-safe. If you use multiple threads for loading, each thread should maintain its own <ref refid="class_assimp_1_1_importer" kindref="compound">Importer</ref> instance. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/assimp/Importer.hpp" line="122" column="1" bodyfile="include/assimp/Importer.hpp" bodystart="122" bodyend="645"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_importer_1aba00e5dd1cb5ed67f709e994933efb39" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>ApplyCustomizedPostProcessing</name></member>
+      <member refid="class_assimp_1_1_importer_1a5872e749c1451fee64183fc14f1fc81d" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>ApplyPostProcessing</name></member>
+      <member refid="class_assimp_1_1_importer_1a53dafc3046abc33365a07c605716c5d4" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>FreeScene</name></member>
+      <member refid="class_assimp_1_1_importer_1a3ac36c9ab8668bd368de516c19bdcc11" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetErrorString</name></member>
+      <member refid="class_assimp_1_1_importer_1a8680d978bdafe0777f8c3e05954e55c1" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetException</name></member>
+      <member refid="class_assimp_1_1_importer_1ab06927d45d5adbf909040c8f5bac1e4d" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetExtensionList</name></member>
+      <member refid="class_assimp_1_1_importer_1acdc70c6efdf1b572094fe01089ceb158" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetExtensionList</name></member>
+      <member refid="class_assimp_1_1_importer_1a913543b8db0f09f286cc1b4f20bb3d35" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetImporter</name></member>
+      <member refid="class_assimp_1_1_importer_1a35d624811e9ddfcd0a898797e6263c22" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetImporter</name></member>
+      <member refid="class_assimp_1_1_importer_1a5397c7d93358b1a6983c74c5eb5c64a6" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetImporterCount</name></member>
+      <member refid="class_assimp_1_1_importer_1aa9158a5ec0caba90cb1a3183c065634f" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetImporterIndex</name></member>
+      <member refid="class_assimp_1_1_importer_1a2f9db052a2507d3a77aec782dc8149cf" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetImporterInfo</name></member>
+      <member refid="class_assimp_1_1_importer_1a72f4d2821d38b97f630981f9236901e8" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetIOHandler</name></member>
+      <member refid="class_assimp_1_1_importer_1a6d6cd3b06de9438744a17f61395a0bf0" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetMemoryRequirements</name></member>
+      <member refid="class_assimp_1_1_importer_1a60eb9042fb85bfbd61a863e131a56ecd" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetOrphanedScene</name></member>
+      <member refid="class_assimp_1_1_importer_1a14201de344db7c66fa514f7f092ae10b" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetProgressHandler</name></member>
+      <member refid="class_assimp_1_1_importer_1a39e654c887f684cc12f792ca1daebfee" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetPropertyBool</name></member>
+      <member refid="class_assimp_1_1_importer_1a3a5f327bc30dfe95db6d8ff9297d4aab" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetPropertyFloat</name></member>
+      <member refid="class_assimp_1_1_importer_1ac6f348464e03176bc6dd790226122b36" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetPropertyInteger</name></member>
+      <member refid="class_assimp_1_1_importer_1a654a92d53bf06feb5961a7255be45e95" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetPropertyMatrix</name></member>
+      <member refid="class_assimp_1_1_importer_1a80cf0cbad0d3cc17aa6a3f6f603cc38c" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetPropertyString</name></member>
+      <member refid="class_assimp_1_1_importer_1ae5f94a29007ed7c873be138ecdb4b056" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>GetScene</name></member>
+      <member refid="class_assimp_1_1_importer_1a2c207299ed05f1db1ad1e6dab005f719" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>Importer</name></member>
+      <member refid="class_assimp_1_1_importer_1a31c6cd729b79d586504dabe30353e39a" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>Importer</name></member>
+      <member refid="class_assimp_1_1_importer_1ad2c940def9c4d01709e44a4e781e757d" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>IsDefaultIOHandler</name></member>
+      <member refid="class_assimp_1_1_importer_1a34062906cb6b9af8abaeda36737d14ae" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>IsDefaultProgressHandler</name></member>
+      <member refid="class_assimp_1_1_importer_1a22bbe0ca29cc685b110b6853dd1e4157" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>IsExtensionSupported</name></member>
+      <member refid="class_assimp_1_1_importer_1a4d49e3c8ecf28336d78f9f5e502990ce" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>IsExtensionSupported</name></member>
+      <member refid="class_assimp_1_1_importer_1a3affe8f98fc9a3b75fc3cb4c4415b37c" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>MaxLenHint</name></member>
+      <member refid="class_assimp_1_1_importer_1a5061bf192f25fb39395495bc7647b6f5" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>operator=</name></member>
+      <member refid="class_assimp_1_1_importer_1a3928bb8d375fd676dd5dbe33382e46ce" prot="protected" virt="non-virtual"><scope>Assimp::Importer</scope><name>pimpl</name></member>
+      <member refid="class_assimp_1_1_importer_1ac112839f323a630f83395acb74746827" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>Pimpl</name></member>
+      <member refid="class_assimp_1_1_importer_1a5a85077725374402b4d6e107b03ce845" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>Pimpl</name></member>
+      <member refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>ReadFile</name></member>
+      <member refid="class_assimp_1_1_importer_1a339882c7acb47d5b5110bbd078d870a9" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>ReadFile</name></member>
+      <member refid="class_assimp_1_1_importer_1a9b3c5e8b1042702f449e84a95b3324f6" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>ReadFileFromMemory</name></member>
+      <member refid="class_assimp_1_1_importer_1a3846294ffe76d91a1d3096d22d7c6b7d" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>RegisterLoader</name></member>
+      <member refid="class_assimp_1_1_importer_1a102650d3648c0e414a1e73bdad9bed35" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>RegisterPPStep</name></member>
+      <member refid="class_assimp_1_1_importer_1a9bb793072c84c784279d0f6e870bb42d" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>SetExtraVerbose</name></member>
+      <member refid="class_assimp_1_1_importer_1a1161f46318af18bb86dfe0fc3edea4df" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>SetIOHandler</name></member>
+      <member refid="class_assimp_1_1_importer_1a6a4d830ffb3f77a3c7c919e0af006920" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>SetProgressHandler</name></member>
+      <member refid="class_assimp_1_1_importer_1a4af22a88eddf464d949a761149c72825" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>SetPropertyBool</name></member>
+      <member refid="class_assimp_1_1_importer_1ad38af78d6fe4b1f132d2534d8a84deea" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>SetPropertyFloat</name></member>
+      <member refid="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>SetPropertyInteger</name></member>
+      <member refid="class_assimp_1_1_importer_1acd128e5fb5777ef238b8bd1454a9c3ad" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>SetPropertyMatrix</name></member>
+      <member refid="class_assimp_1_1_importer_1a854087b213981108e3e464cf4d293fed" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>SetPropertyString</name></member>
+      <member refid="class_assimp_1_1_importer_1a3b1f5af2c763b13aca0f324b19001722" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>UnregisterLoader</name></member>
+      <member refid="class_assimp_1_1_importer_1a3a683671c7c40638b1103c5d3648d86c" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>UnregisterPPStep</name></member>
+      <member refid="class_assimp_1_1_importer_1af0292c1603ff9b483a5deba4d183eba5" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>ValidateFlags</name></member>
+      <member refid="class_assimp_1_1_importer_1a3d65af5286ba22f46220a72a6eb2a1c9" prot="public" virt="non-virtual"><scope>Assimp::Importer</scope><name>~Importer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

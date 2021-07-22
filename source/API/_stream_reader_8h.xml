@@ -5,7 +5,7 @@
     <includes refid="_byte_swapper_8h" local="no">assimp/ByteSwapper.h</includes>
     <includes refid="_defines_8h" local="no">assimp/Defines.h</includes>
     <includes refid="_exceptional_8h" local="no">assimp/Exceptional.h</includes>
-    <includes local="no">assimp/IOStream.hpp</includes>
+    <includes refid="_i_o_stream_8hpp" local="no">assimp/IOStream.hpp</includes>
     <includes local="no">memory</includes>
     <includedby refid="_line_splitter_8h" local="no">LineSplitter.h</includedby>
     <incdepgraph>
@@ -84,11 +84,14 @@
         <childnode refid="21" relation="include">
         </childnode>
       </node>
-      <node id="13">
-        <label>cmath</label>
-      </node>
       <node id="26">
         <label>assimp/IOStream.hpp</label>
+        <link refid="_i_o_stream_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>cmath</label>
       </node>
       <node id="30">
         <label>stdexcept</label>
@@ -289,7 +292,7 @@
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_byte_swapper_8h" kindref="compound">assimp/ByteSwapper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_defines_8h" kindref="compound">assimp/Defines.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_exceptional_8h" kindref="compound">assimp/Exceptional.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assimp/IOStream.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_i_o_stream_8hpp" kindref="compound">assimp/IOStream.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
@@ -316,7 +319,7 @@
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_assimp_1_1_stream_reader_1ac73cf126fb7fde5073141a9f2cf26d53" kindref="member">StreamReader</ref>(IOStream<sp/>*stream,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>le<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_assimp_1_1_stream_reader_1ac73cf126fb7fde5073141a9f2cf26d53" kindref="member">StreamReader</ref>(<ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref><sp/>*stream,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>le<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mStream(std::shared_ptr&lt;IOStream&gt;(stream)),</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mBuffer(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mCurrent(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>

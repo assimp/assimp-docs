@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_exporter_1_1_export_format_entry" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::Exporter::ExportFormatEntry</compoundname>
+    <includes local="no">Exporter.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_exporter_1_1_export_format_entry_1a59f8bf48e35a70ac0540c9b65d4b891d" prot="public" static="no" mutable="no">
+        <type><ref refid="structai_export_format_desc" kindref="compound">aiExportFormatDesc</ref></type>
+        <definition>aiExportFormatDesc Assimp::Exporter::ExportFormatEntry::mDescription</definition>
+        <argsstring></argsstring>
+        <name>mDescription</name>
+        <briefdescription>
+<para>Public description structure to be returned by <ref refid="cexport_8h_1adda7f2e6611f719af6c8a4a0bef0a0a2" kindref="member">aiGetExportFormatDescription()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="93" column="28" bodyfile="include/assimp/Exporter.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_exporter_1_1_export_format_entry_1aefb2d077aebc473ce9a6e38fd883f181" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::Exporter::ExportFormatEntry::mEnforcePP</definition>
+        <argsstring></argsstring>
+        <name>mEnforcePP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="99" column="22" bodyfile="include/assimp/Exporter.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_exporter_1_1_export_format_entry_1a5cf4464ae6f7f7d92aaade27f1e545f5" prot="public" static="no" mutable="no">
+        <type><ref refid="class_assimp_1_1_exporter_1a37fc9550e48e51c26478c008835846d0" kindref="member">fpExportFunc</ref></type>
+        <definition>fpExportFunc Assimp::Exporter::ExportFormatEntry::mExportFunction</definition>
+        <argsstring></argsstring>
+        <name>mExportFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="96" column="22" bodyfile="include/assimp/Exporter.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_exporter_1_1_export_format_entry_1a6a34ccd6431d47d6a9fd6d1a498d1ee5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::Exporter::ExportFormatEntry::ExportFormatEntry</definition>
+        <argsstring>()</argsstring>
+        <name>ExportFormatEntry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="110" column="9" bodyfile="include/assimp/Exporter.hpp" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_assimp_1_1_exporter_1_1_export_format_entry_1ab89610d7a5b295aa8a22bceae013d76f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::Exporter::ExportFormatEntry::ExportFormatEntry</definition>
+        <argsstring>(const char *pId, const char *pDesc, const char *pExtension, fpExportFunc pFunction, unsigned int pEnforcePP=0u)</argsstring>
+        <name>ExportFormatEntry</name>
+        <param>
+          <type>const char *</type>
+          <declname>pId</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pDesc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pExtension</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_exporter_1a37fc9550e48e51c26478c008835846d0" kindref="member">fpExportFunc</ref></type>
+          <declname>pFunction</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pEnforcePP</declname>
+          <defval>0u</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="102" column="9" bodyfile="include/assimp/Exporter.hpp" bodystart="102" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Internal description of an <ref refid="namespace_assimp" kindref="compound">Assimp</ref> export format option. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Assimp::Exporter::ExportFormatEntry</label>
+        <link refid="struct_assimp_1_1_exporter_1_1_export_format_entry"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mExportFunction</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mDescription</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>aiExportFormatDesc</label>
+        <link refid="structai_export_format_desc"/>
+      </node>
+      <node id="2">
+        <label>Assimp::IOSystem</label>
+        <link refid="class_assimp_1_1_i_o_system"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/Exporter.hpp" line="91" column="5" bodyfile="include/assimp/Exporter.hpp" bodystart="91" bodyend="117"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_exporter_1_1_export_format_entry_1ab89610d7a5b295aa8a22bceae013d76f" prot="public" virt="non-virtual"><scope>Assimp::Exporter::ExportFormatEntry</scope><name>ExportFormatEntry</name></member>
+      <member refid="struct_assimp_1_1_exporter_1_1_export_format_entry_1a6a34ccd6431d47d6a9fd6d1a498d1ee5" prot="public" virt="non-virtual"><scope>Assimp::Exporter::ExportFormatEntry</scope><name>ExportFormatEntry</name></member>
+      <member refid="struct_assimp_1_1_exporter_1_1_export_format_entry_1a59f8bf48e35a70ac0540c9b65d4b891d" prot="public" virt="non-virtual"><scope>Assimp::Exporter::ExportFormatEntry</scope><name>mDescription</name></member>
+      <member refid="struct_assimp_1_1_exporter_1_1_export_format_entry_1aefb2d077aebc473ce9a6e38fd883f181" prot="public" virt="non-virtual"><scope>Assimp::Exporter::ExportFormatEntry</scope><name>mEnforcePP</name></member>
+      <member refid="struct_assimp_1_1_exporter_1_1_export_format_entry_1a5cf4464ae6f7f7d92aaade27f1e545f5" prot="public" virt="non-virtual"><scope>Assimp::Exporter::ExportFormatEntry</scope><name>mExportFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

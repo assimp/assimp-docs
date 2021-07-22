@@ -79,7 +79,7 @@
         <location file="include/assimp/StreamWriter.h" line="284" column="10" bodyfile="include/assimp/StreamWriter.h" bodystart="284" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_assimp_1_1_stream_writer_1a9d4c3eb47138d0ec65658eeab2390c83" prot="private" static="no" mutable="no">
-        <type>std::shared_ptr&lt; IOStream &gt;</type>
+        <type>std::shared_ptr&lt; <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> &gt;</type>
         <definition>std::shared_ptr&lt;IOStream&gt; Assimp::StreamWriter&lt; SwapEndianess, RuntimeSwitch &gt;::stream</definition>
         <argsstring></argsstring>
         <name>stream</name>
@@ -99,7 +99,7 @@
         <argsstring>()</argsstring>
         <name>Flush</name>
         <briefdescription>
-<para>Flush the contents of the internal buffer, and the output IOStream. </para>
+<para>Flush the contents of the internal buffer, and the output <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -418,10 +418,10 @@
           <defval><ref refid="types_8h_1ac50fbaa57d78776ca99e42104d9b2786a94a44e681b6c891e39767c518b64b56f" kindref="member">aiOrigin_SET</ref></defval>
         </param>
         <briefdescription>
-<para>Seek to the given offset / origin in the output IOStream. </para>
+<para>Seek to the given offset / origin in the output <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para>Flushes the internal buffer and the output IOStream prior to seeking. </para>
+<para>Flushes the internal buffer and the output <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> prior to seeking. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -450,7 +450,7 @@
         <argsstring>(IOStream *stream, bool le=false)</argsstring>
         <name>StreamWriter</name>
         <param>
-          <type>IOStream *</type>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
           <declname>stream</declname>
         </param>
         <param>
@@ -472,7 +472,7 @@
         <argsstring>(std::shared_ptr&lt; IOStream &gt; stream, bool le=false)</argsstring>
         <name>StreamWriter</name>
         <param>
-          <type>std::shared_ptr&lt; IOStream &gt;</type>
+          <type>std::shared_ptr&lt; <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> &gt;</type>
           <declname>stream</declname>
         </param>
         <param>
@@ -514,10 +514,10 @@
         <argsstring>()</argsstring>
         <name>Tell</name>
         <briefdescription>
-<para>Tell the current position in the output IOStream. </para>
+<para>Tell the current position in the output <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para>First flushes the internal buffer and the output IOStream. </para>
+<para>First flushes the internal buffer and the output <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref>. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -538,7 +538,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Wrapper class around IOStream to allow for consistent writing of binary data in both little and big endian format. </para>
+<para>Wrapper class around <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> to allow for consistent writing of binary data in both little and big endian format. </para>
     </briefdescription>
     <detaileddescription>
 <para>Don&apos;t attempt to instance the template directly. Use StreamWriterLE to write to a little-endian stream and StreamWriterBE to write to a BE stream. Alternatively, there is StreamWriterAny if the endianness of the output stream is to be determined at runtime. </para>

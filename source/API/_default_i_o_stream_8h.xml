@@ -3,39 +3,41 @@
   <compounddef id="_default_i_o_stream_8h" kind="file" language="C++">
     <compoundname>DefaultIOStream.h</compoundname>
     <includes local="no">stdio.h</includes>
-    <includes local="no">assimp/IOStream.hpp</includes>
+    <includes refid="_i_o_stream_8hpp" local="no">assimp/IOStream.hpp</includes>
     <includes refid="importerdesc_8h" local="no">assimp/importerdesc.h</includes>
     <includes refid="_defines_8h" local="no">assimp/Defines.h</includes>
     <includedby refid="_exceptional_8h" local="no">Exceptional.h</includedby>
     <incdepgraph>
-      <node id="18">
+      <node id="17">
         <label>assimp/matrix4x4.h</label>
         <link refid="matrix4x4_8h"/>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>assimp/vector3.h</label>
-        <link refid="vector3_8h"/>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="14">
+        <label>assimp/vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
         <label>assimp/importerdesc.h</label>
         <link refid="importerdesc_8h"/>
-        <childnode refid="5" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="7">
         <label>stdint.h</label>
       </node>
-      <node id="5">
+      <node id="4">
         <label>assimp/types.h</label>
         <link refid="types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -46,9 +48,9 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
@@ -64,28 +66,29 @@
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
-        <label>cmath</label>
       </node>
       <node id="3">
         <label>assimp/IOStream.hpp</label>
-      </node>
-      <node id="17">
-        <label>assimp/matrix3x3.h</label>
-        <link refid="matrix3x3_8h"/>
-        <childnode refid="11" relation="include">
+        <link refid="_i_o_stream_8hpp"/>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="13">
+        <label>cmath</label>
+      </node>
+      <node id="16">
+        <label>assimp/matrix3x3.h</label>
+        <link refid="matrix3x3_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
         <label>string</label>
       </node>
-      <node id="7">
+      <node id="6">
         <label>stddef.h</label>
       </node>
-      <node id="12">
+      <node id="11">
         <label>assimp/config.h</label>
         <link refid="config_8h"/>
       </node>
@@ -96,53 +99,53 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="5">
         <label>limits.h</label>
       </node>
-      <node id="10">
+      <node id="9">
         <label>sys/types.h</label>
       </node>
-      <node id="9">
+      <node id="8">
         <label>string.h</label>
       </node>
-      <node id="19">
+      <node id="18">
         <label>assimp/quaternion.h</label>
         <link refid="quaternion_8h"/>
-        <childnode refid="11" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="11">
+      <node id="10">
         <label>assimp/defs.h</label>
         <link refid="defs_8h"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="20">
         <label>new</label>
       </node>
-      <node id="16">
+      <node id="15">
         <label>assimp/color4.h</label>
         <link refid="color4_8h"/>
-        <childnode refid="11" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="12">
         <label>assimp/vector2.h</label>
         <link refid="vector2_8h"/>
-        <childnode refid="14" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="2">
         <label>stdio.h</label>
       </node>
-      <node id="20">
+      <node id="19">
         <label>cstring</label>
       </node>
       <node id="23">
@@ -268,14 +271,14 @@
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assimp/IOStream.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_i_o_stream_8hpp" kindref="compound">assimp/IOStream.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="importerdesc_8h" kindref="compound">assimp/importerdesc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_defines_8h" kindref="compound">assimp/Defines.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_assimp" kindref="compound">Assimp</ref><sp/>{</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------------</highlight></codeline>
-<codeline lineno="65" refid="class_assimp_1_1_default_i_o_stream" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/><ref refid="class_assimp_1_1_default_i_o_stream" kindref="compound">DefaultIOStream</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IOStream<sp/>{</highlight></codeline>
+<codeline lineno="65" refid="class_assimp_1_1_default_i_o_stream" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/><ref refid="class_assimp_1_1_default_i_o_stream" kindref="compound">DefaultIOStream</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref><sp/>{</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_assimp_1_1_default_i_o_system" kindref="compound">DefaultIOSystem</ref>;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__ANDROID__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>__ANDROID_API__<sp/>&gt;<sp/>9</highlight><highlight class="normal"></highlight></codeline>

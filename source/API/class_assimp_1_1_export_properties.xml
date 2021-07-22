@@ -1,0 +1,689 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_export_properties" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::ExportProperties</compoundname>
+    <includes local="no">Exporter.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_assimp_1_1_export_properties_1ab06b379985083def27d41a9ba87c8d06" prot="public" static="no">
+        <type>std::map&lt; <ref refid="class_assimp_1_1_export_properties_1aa04b43f5e76d5f3c5431be9a35e706e6" kindref="member">KeyType</ref>, std::function&lt; void *(void *)&gt; &gt;</type>
+        <definition>typedef std::map&lt;KeyType, std::function&lt;void *(void *)&gt; &gt; Assimp::ExportProperties::CallbackPropertyMap</definition>
+        <argsstring></argsstring>
+        <name>CallbackPropertyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="334" column="22" bodyfile="include/assimp/Exporter.hpp" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_assimp_1_1_export_properties_1acc1c8ad6e55de8f9da60b907a1434c6c" prot="public" static="no">
+        <type>std::map&lt; <ref refid="class_assimp_1_1_export_properties_1aa04b43f5e76d5f3c5431be9a35e706e6" kindref="member">KeyType</ref>, <ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref> &gt;</type>
+        <definition>typedef std::map&lt;KeyType, ai_real&gt; Assimp::ExportProperties::FloatPropertyMap</definition>
+        <argsstring></argsstring>
+        <name>FloatPropertyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="331" column="22" bodyfile="include/assimp/Exporter.hpp" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_assimp_1_1_export_properties_1a5eb68bd8289eb42e495a7ce4e93d8b70" prot="public" static="no">
+        <type>std::map&lt; <ref refid="class_assimp_1_1_export_properties_1aa04b43f5e76d5f3c5431be9a35e706e6" kindref="member">KeyType</ref>, int &gt;</type>
+        <definition>typedef std::map&lt;KeyType, int&gt; Assimp::ExportProperties::IntPropertyMap</definition>
+        <argsstring></argsstring>
+        <name>IntPropertyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="330" column="22" bodyfile="include/assimp/Exporter.hpp" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_assimp_1_1_export_properties_1aa04b43f5e76d5f3c5431be9a35e706e6" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int Assimp::ExportProperties::KeyType</definition>
+        <argsstring></argsstring>
+        <name>KeyType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="326" column="26" bodyfile="include/assimp/Exporter.hpp" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_assimp_1_1_export_properties_1adc9f7b8ed897e43a287138feec6f3d64" prot="public" static="no">
+        <type>std::map&lt; <ref refid="class_assimp_1_1_export_properties_1aa04b43f5e76d5f3c5431be9a35e706e6" kindref="member">KeyType</ref>, <ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref> &gt;</type>
+        <definition>typedef std::map&lt;KeyType, aiMatrix4x4&gt; Assimp::ExportProperties::MatrixPropertyMap</definition>
+        <argsstring></argsstring>
+        <name>MatrixPropertyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="333" column="22" bodyfile="include/assimp/Exporter.hpp" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_assimp_1_1_export_properties_1a8a0ab4fafe00d7ffdffd7ad40782c218" prot="public" static="no">
+        <type>std::map&lt; <ref refid="class_assimp_1_1_export_properties_1aa04b43f5e76d5f3c5431be9a35e706e6" kindref="member">KeyType</ref>, std::string &gt;</type>
+        <definition>typedef std::map&lt;KeyType, std::string&gt; Assimp::ExportProperties::StringPropertyMap</definition>
+        <argsstring></argsstring>
+        <name>StringPropertyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="332" column="22" bodyfile="include/assimp/Exporter.hpp" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_export_properties_1ab731059370cb86ccb791cae8e13154dd" prot="public" static="no" mutable="no">
+        <type><ref refid="class_assimp_1_1_export_properties_1ab06b379985083def27d41a9ba87c8d06" kindref="member">CallbackPropertyMap</ref></type>
+        <definition>CallbackPropertyMap Assimp::ExportProperties::mCallbackProperties</definition>
+        <argsstring></argsstring>
+        <name>mCallbackProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="490" column="25" bodyfile="include/assimp/Exporter.hpp" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_export_properties_1acf10a6aec3a1d5cb6f190bebc48ed4c7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_assimp_1_1_export_properties_1acc1c8ad6e55de8f9da60b907a1434c6c" kindref="member">FloatPropertyMap</ref></type>
+        <definition>FloatPropertyMap Assimp::ExportProperties::mFloatProperties</definition>
+        <argsstring></argsstring>
+        <name>mFloatProperties</name>
+        <briefdescription>
+<para>List of floating-point properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="482" column="22" bodyfile="include/assimp/Exporter.hpp" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_export_properties_1ad69c0546b1e7faf054240f228cf5f9b6" prot="public" static="no" mutable="no">
+        <type><ref refid="class_assimp_1_1_export_properties_1a5eb68bd8289eb42e495a7ce4e93d8b70" kindref="member">IntPropertyMap</ref></type>
+        <definition>IntPropertyMap Assimp::ExportProperties::mIntProperties</definition>
+        <argsstring></argsstring>
+        <name>mIntProperties</name>
+        <briefdescription>
+<para>List of integer properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="479" column="20" bodyfile="include/assimp/Exporter.hpp" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_export_properties_1a1c7dc9cd6b7f34a98fdb1a16f37b260f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_assimp_1_1_export_properties_1adc9f7b8ed897e43a287138feec6f3d64" kindref="member">MatrixPropertyMap</ref></type>
+        <definition>MatrixPropertyMap Assimp::ExportProperties::mMatrixProperties</definition>
+        <argsstring></argsstring>
+        <name>mMatrixProperties</name>
+        <briefdescription>
+<para>List of Matrix properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="488" column="23" bodyfile="include/assimp/Exporter.hpp" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_export_properties_1aa842acefe6a2b4eb8efff24030850a4f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_assimp_1_1_export_properties_1a8a0ab4fafe00d7ffdffd7ad40782c218" kindref="member">StringPropertyMap</ref></type>
+        <definition>StringPropertyMap Assimp::ExportProperties::mStringProperties</definition>
+        <argsstring></argsstring>
+        <name>mStringProperties</name>
+        <briefdescription>
+<para>List of string properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="485" column="23" bodyfile="include/assimp/Exporter.hpp" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1aedefab9bf14c50bcd319eda39030aa0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ExportProperties::ExportProperties</definition>
+        <argsstring>()</argsstring>
+        <name>ExportProperties</name>
+        <briefdescription>
+<para>Standard constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1aedefab9bf14c50bcd319eda39030aa0e" kindref="member">ExportProperties()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="340" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1a5c91357f3ca4dcf7f7582abdb551534d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ExportProperties::ExportProperties</definition>
+        <argsstring>(const ExportProperties &amp;other)</argsstring>
+        <name>ExportProperties</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_export_properties" kindref="compound">ExportProperties</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This copies the configuration properties of another <ref refid="class_assimp_1_1_export_properties" kindref="compound">ExportProperties</ref>. <simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1a5c91357f3ca4dcf7f7582abdb551534d" kindref="member">ExportProperties(const ExportProperties&amp; other)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="348" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1abcb151b5c3da6c759b13b6f25abe65c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::GetPropertyBool</definition>
+        <argsstring>(const char *szName, bool bErrorReturn=false) const</argsstring>
+        <name>GetPropertyBool</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bErrorReturn</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Get a boolean configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Boolean properties are stored on the integer stack internally so it&apos;s possible to set them via <ref refid="class_assimp_1_1_export_properties_1a3eb3aea4da6b94da06b7dd118c864c38" kindref="member">SetPropertyBool</ref> and query them with <ref refid="class_assimp_1_1_export_properties_1abcb151b5c3da6c759b13b6f25abe65c9" kindref="member">GetPropertyBool</ref> and vice versa. <simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1a24257a57419d1f143cde1221c2300ecb" kindref="member">GetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="419" column="10" bodyfile="include/assimp/Exporter.hpp" bodystart="419" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1a74fb57ea5a33f00968829a62a9226f5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::function&lt; void *(void *)&gt;</type>
+        <definition>std::function&lt;void *(void *)&gt; Assimp::ExportProperties::GetPropertyCallback</definition>
+        <argsstring>(const char *szName) const</argsstring>
+        <name>GetPropertyCallback</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="448" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1a315d21aa9d9b78f2b5280e6216565234" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real Assimp::ExportProperties::GetPropertyFloat</definition>
+        <argsstring>(const char *szName, ai_real fErrorReturn=10e10f) const</argsstring>
+        <name>GetPropertyFloat</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>fErrorReturn</declname>
+          <defval>10e10f</defval>
+        </param>
+        <briefdescription>
+<para>Get a floating-point configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1a24257a57419d1f143cde1221c2300ecb" kindref="member">GetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="427" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1a24257a57419d1f143cde1221c2300ecb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Assimp::ExportProperties::GetPropertyInteger</definition>
+        <argsstring>(const char *szName, int iErrorReturn=0xffffffff) const</argsstring>
+        <name>GetPropertyInteger</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iErrorReturn</declname>
+          <defval>0xffffffff</defval>
+        </param>
+        <briefdescription>
+<para>Get a configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property. All supported properties are defined in the aiConfig.g header (all constants share the prefix AI_CONFIG_XXX). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iErrorReturn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value that is returned if the property is not found. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Current value of the property </para>
+</simplesect>
+<simplesect kind="note"><para>Property of different types (float, int, string ..) are kept on different lists, so calling <ref refid="class_assimp_1_1_export_properties_1a3b5953dfef79567d672c81a58b51090c" kindref="member">SetPropertyInteger()</ref> for a floating-point property has no effect - the loader will call <ref refid="class_assimp_1_1_export_properties_1a315d21aa9d9b78f2b5280e6216565234" kindref="member">GetPropertyFloat()</ref> to read the property, but it won&apos;t be there. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="409" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1ac70802b25ae02ad866c753032ae4c859" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref></type>
+        <definition>const aiMatrix4x4 Assimp::ExportProperties::GetPropertyMatrix</definition>
+        <argsstring>(const char *szName, const aiMatrix4x4 &amp;sErrorReturn=aiMatrix4x4()) const</argsstring>
+        <name>GetPropertyMatrix</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref> &amp;</type>
+          <declname>sErrorReturn</declname>
+          <defval><ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Get a matrix configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The return value remains valid until the property is modified. <simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1a24257a57419d1f143cde1221c2300ecb" kindref="member">GetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="445" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1a9ce9cd54969c247232887195b3d54cd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string Assimp::ExportProperties::GetPropertyString</definition>
+        <argsstring>(const char *szName, const std::string &amp;sErrorReturn=&quot;&quot;) const</argsstring>
+        <name>GetPropertyString</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sErrorReturn</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Get a string configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The return value remains valid until the property is modified. <simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1a24257a57419d1f143cde1221c2300ecb" kindref="member">GetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="436" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1ae1a68e0839afac468f1e30b6df43ec81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::HasPropertyBool</definition>
+        <argsstring>(const char *szName) const</argsstring>
+        <name>HasPropertyBool</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <briefdescription>
+<para>Determine a boolean configuration property has been set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1ae1a68e0839afac468f1e30b6df43ec81" kindref="member">HasPropertyBool()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="459" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1a15f9b693709bedbc94e7088a679a077c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::HasPropertyCallback</definition>
+        <argsstring>(const char *szName) const</argsstring>
+        <name>HasPropertyCallback</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="476" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1a867560a77b1c00941c2d329a4e9219cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::HasPropertyFloat</definition>
+        <argsstring>(const char *szName) const</argsstring>
+        <name>HasPropertyFloat</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <briefdescription>
+<para>Determine a boolean configuration property has been set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1a867560a77b1c00941c2d329a4e9219cf" kindref="member">HasPropertyFloat()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="464" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1aea0ef936553e641f172eb72379b5726c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::HasPropertyInteger</definition>
+        <argsstring>(const char *szName) const</argsstring>
+        <name>HasPropertyInteger</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <briefdescription>
+<para>Determine a integer configuration property has been set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1aea0ef936553e641f172eb72379b5726c" kindref="member">HasPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="454" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1aa99262953ae9812ccfae65ca6c66fd4e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::HasPropertyMatrix</definition>
+        <argsstring>(const char *szName) const</argsstring>
+        <name>HasPropertyMatrix</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <briefdescription>
+<para>Determine a Matrix configuration property has been set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1aa99262953ae9812ccfae65ca6c66fd4e" kindref="member">HasPropertyMatrix()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="474" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1aa37ac3a66f91aa3e34a3894b0fbddccf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::HasPropertyString</definition>
+        <argsstring>(const char *szName) const</argsstring>
+        <name>HasPropertyString</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <briefdescription>
+<para>Determine a String configuration property has been set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1aa37ac3a66f91aa3e34a3894b0fbddccf" kindref="member">HasPropertyString()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="469" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1a3eb3aea4da6b94da06b7dd118c864c38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::SetPropertyBool</definition>
+        <argsstring>(const char *szName, bool value)</argsstring>
+        <name>SetPropertyBool</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a boolean configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Boolean properties are stored on the integer stack internally so it&apos;s possible to set them via <ref refid="class_assimp_1_1_export_properties_1a3eb3aea4da6b94da06b7dd118c864c38" kindref="member">SetPropertyBool</ref> and query them with <ref refid="class_assimp_1_1_export_properties_1abcb151b5c3da6c759b13b6f25abe65c9" kindref="member">GetPropertyBool</ref> and vice versa. <simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1a3b5953dfef79567d672c81a58b51090c" kindref="member">SetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="372" column="10" bodyfile="include/assimp/Exporter.hpp" bodystart="372" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1aba0ec052693ed39bda46af7e05f8d7d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::SetPropertyCallback</definition>
+        <argsstring>(const char *szName, const std::function&lt; void *(void *)&gt; &amp;f)</argsstring>
+        <name>SetPropertyCallback</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const std::function&lt; void *(void *)&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="394" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1aad233a63272730b466615feae09b9a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::SetPropertyFloat</definition>
+        <argsstring>(const char *szName, ai_real fValue)</argsstring>
+        <name>SetPropertyFloat</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>fValue</declname>
+        </param>
+        <briefdescription>
+<para>Set a floating-point configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1a3b5953dfef79567d672c81a58b51090c" kindref="member">SetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="380" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1a3b5953dfef79567d672c81a58b51090c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::SetPropertyInteger</definition>
+        <argsstring>(const char *szName, int iValue)</argsstring>
+        <name>SetPropertyInteger</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iValue</declname>
+        </param>
+        <briefdescription>
+<para>Set an integer configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property. All supported properties are defined in the aiConfig.g header (all constants share the prefix AI_CONFIG_XXX and are simple strings). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value of the property </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the property was set before. The new value replaces the previous value in this case. </para>
+</simplesect>
+<simplesect kind="note"><para>Property of different types (float, int, string ..) are kept on different stacks, so calling <ref refid="class_assimp_1_1_export_properties_1a3b5953dfef79567d672c81a58b51090c" kindref="member">SetPropertyInteger()</ref> for a floating-point property has no effect - the loader will call <ref refid="class_assimp_1_1_export_properties_1a315d21aa9d9b78f2b5280e6216565234" kindref="member">GetPropertyFloat()</ref> to read the property, but it won&apos;t be there. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="363" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1ac77448b65347c90a6baa65ac4e546dbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::SetPropertyMatrix</definition>
+        <argsstring>(const char *szName, const aiMatrix4x4 &amp;sValue)</argsstring>
+        <name>SetPropertyMatrix</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref> &amp;</type>
+          <declname>sValue</declname>
+        </param>
+        <briefdescription>
+<para>Set a matrix configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1a3b5953dfef79567d672c81a58b51090c" kindref="member">SetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="392" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_export_properties_1a2be9953a8f29595fc518e7ddb2fc481b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ExportProperties::SetPropertyString</definition>
+        <argsstring>(const char *szName, const std::string &amp;sValue)</argsstring>
+        <name>SetPropertyString</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sValue</declname>
+        </param>
+        <briefdescription>
+<para>Set a string configuration property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_assimp_1_1_export_properties_1a3b5953dfef79567d672c81a58b51090c" kindref="member">SetPropertyInteger()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exporter.hpp" line="386" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/Exporter.hpp" line="323" column="1" bodyfile="include/assimp/Exporter.hpp" bodystart="323" bodyend="491"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_export_properties_1ab06b379985083def27d41a9ba87c8d06" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>CallbackPropertyMap</name></member>
+      <member refid="class_assimp_1_1_export_properties_1aedefab9bf14c50bcd319eda39030aa0e" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>ExportProperties</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a5c91357f3ca4dcf7f7582abdb551534d" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>ExportProperties</name></member>
+      <member refid="class_assimp_1_1_export_properties_1acc1c8ad6e55de8f9da60b907a1434c6c" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>FloatPropertyMap</name></member>
+      <member refid="class_assimp_1_1_export_properties_1abcb151b5c3da6c759b13b6f25abe65c9" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>GetPropertyBool</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a74fb57ea5a33f00968829a62a9226f5d" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>GetPropertyCallback</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a315d21aa9d9b78f2b5280e6216565234" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>GetPropertyFloat</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a24257a57419d1f143cde1221c2300ecb" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>GetPropertyInteger</name></member>
+      <member refid="class_assimp_1_1_export_properties_1ac70802b25ae02ad866c753032ae4c859" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>GetPropertyMatrix</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a9ce9cd54969c247232887195b3d54cd3" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>GetPropertyString</name></member>
+      <member refid="class_assimp_1_1_export_properties_1ae1a68e0839afac468f1e30b6df43ec81" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>HasPropertyBool</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a15f9b693709bedbc94e7088a679a077c" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>HasPropertyCallback</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a867560a77b1c00941c2d329a4e9219cf" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>HasPropertyFloat</name></member>
+      <member refid="class_assimp_1_1_export_properties_1aea0ef936553e641f172eb72379b5726c" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>HasPropertyInteger</name></member>
+      <member refid="class_assimp_1_1_export_properties_1aa99262953ae9812ccfae65ca6c66fd4e" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>HasPropertyMatrix</name></member>
+      <member refid="class_assimp_1_1_export_properties_1aa37ac3a66f91aa3e34a3894b0fbddccf" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>HasPropertyString</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a5eb68bd8289eb42e495a7ce4e93d8b70" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>IntPropertyMap</name></member>
+      <member refid="class_assimp_1_1_export_properties_1aa04b43f5e76d5f3c5431be9a35e706e6" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>KeyType</name></member>
+      <member refid="class_assimp_1_1_export_properties_1adc9f7b8ed897e43a287138feec6f3d64" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>MatrixPropertyMap</name></member>
+      <member refid="class_assimp_1_1_export_properties_1ab731059370cb86ccb791cae8e13154dd" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>mCallbackProperties</name></member>
+      <member refid="class_assimp_1_1_export_properties_1acf10a6aec3a1d5cb6f190bebc48ed4c7" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>mFloatProperties</name></member>
+      <member refid="class_assimp_1_1_export_properties_1ad69c0546b1e7faf054240f228cf5f9b6" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>mIntProperties</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a1c7dc9cd6b7f34a98fdb1a16f37b260f" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>mMatrixProperties</name></member>
+      <member refid="class_assimp_1_1_export_properties_1aa842acefe6a2b4eb8efff24030850a4f" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>mStringProperties</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a3eb3aea4da6b94da06b7dd118c864c38" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>SetPropertyBool</name></member>
+      <member refid="class_assimp_1_1_export_properties_1aba0ec052693ed39bda46af7e05f8d7d7" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>SetPropertyCallback</name></member>
+      <member refid="class_assimp_1_1_export_properties_1aad233a63272730b466615feae09b9a1d" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>SetPropertyFloat</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a3b5953dfef79567d672c81a58b51090c" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>SetPropertyInteger</name></member>
+      <member refid="class_assimp_1_1_export_properties_1ac77448b65347c90a6baa65ac4e546dbe" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>SetPropertyMatrix</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a2be9953a8f29595fc518e7ddb2fc481b" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>SetPropertyString</name></member>
+      <member refid="class_assimp_1_1_export_properties_1a8a0ab4fafe00d7ffdffd7ad40782c218" prot="public" virt="non-virtual"><scope>Assimp::ExportProperties</scope><name>StringPropertyMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

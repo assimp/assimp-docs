@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="class_assimp_1_1_blob_i_o_system" kind="class" language="C++" prot="public">
     <compoundname>Assimp::BlobIOSystem</compoundname>
-    <basecompoundref prot="public" virt="non-virtual">IOSystem</basecompoundref>
+    <basecompoundref refid="class_assimp_1_1_i_o_system" prot="public" virt="non-virtual">Assimp::IOSystem</basecompoundref>
     <includes local="no">BlobIOSystem.h</includes>
       <sectiondef kind="private-type">
       <memberdef kind="typedef" id="class_assimp_1_1_blob_i_o_system_1a0d8b11637fbd6d87cf839ce80c141da6" prot="private" static="no">
@@ -114,13 +114,25 @@
         <definition>virtual void Assimp::BlobIOSystem::Close</definition>
         <argsstring>(IOStream *pFile)</argsstring>
         <name>Close</name>
+        <reimplements refid="class_assimp_1_1_i_o_system_1a8c334d60f04bceeb6bd0157d21723f3e">Close</reimplements>
         <param>
-          <type>IOStream *</type>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
           <declname>pFile</declname>
         </param>
         <briefdescription>
+<para>Closes the given file and releases all resources associated with it. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file instance previously created by <ref refid="class_assimp_1_1_blob_i_o_system_1a9245477f681ef86a4ac048b44ec109da" kindref="member">Open()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -131,13 +143,27 @@
         <definition>virtual bool Assimp::BlobIOSystem::Exists</definition>
         <argsstring>(const char *pFile) const</argsstring>
         <name>Exists</name>
+        <reimplements refid="class_assimp_1_1_i_o_system_1a79f5fe8d2dbe1056c9418f7de9a72445">Exists</reimplements>
         <param>
           <type>const char *</type>
           <declname>pFile</declname>
         </param>
         <briefdescription>
+<para>Tests for the existence of a file at the given path. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if there is a file with this path, else false. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -174,19 +200,25 @@
         <definition>virtual char Assimp::BlobIOSystem::getOsSeparator</definition>
         <argsstring>() const</argsstring>
         <name>getOsSeparator</name>
+        <reimplements refid="class_assimp_1_1_i_o_system_1a40e412875b985bdb638f00ef0f20fff6">getOsSeparator</reimplements>
         <briefdescription>
+<para>Returns the system specific directory separator. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>System specific directory separator </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="include/assimp/BlobIOSystem.h" line="271" column="18" bodyfile="include/assimp/BlobIOSystem.h" bodystart="271" bodyend="273"/>
       </memberdef>
       <memberdef kind="function" id="class_assimp_1_1_blob_i_o_system_1a9245477f681ef86a4ac048b44ec109da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>IOStream *</type>
+        <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
         <definition>virtual IOStream* Assimp::BlobIOSystem::Open</definition>
         <argsstring>(const char *pFile, const char *pMode)</argsstring>
         <name>Open</name>
+        <reimplements refid="class_assimp_1_1_i_o_system_1ac512ece3b0701de5682553007a4c0816">Open</reimplements>
         <param>
           <type>const char *</type>
           <declname>pFile</declname>
@@ -196,8 +228,32 @@
           <declname>pMode</declname>
         </param>
         <briefdescription>
+<para>Open a new file with a given path. </para>
         </briefdescription>
         <detaileddescription>
+<para>When the access to the file is finished, call <ref refid="class_assimp_1_1_blob_i_o_system_1a626f7f153b4f5ac39adf38b6a539bedb" kindref="member">Close()</ref> to release all associated resources (or the virtual dtor of the <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref>).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired file I/O mode. Required are: &quot;wb&quot;, &quot;w&quot;, &quot;wt&quot;, &quot;rb&quot;, &quot;r&quot;, &quot;rt&quot;.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> interface allowing the lib to access the underlying file. </para>
+</simplesect>
+<simplesect kind="note"><para>When implementing this class to provide custom IO handling, you probably have to supply an own implementation of <ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> as well. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -241,10 +297,34 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Redirect IOSystem to a blob. </para>
+<para>Redirect <ref refid="class_assimp_1_1_i_o_system" kindref="compound">IOSystem</ref> to a blob. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Assimp::BlobIOSystem</label>
+        <link refid="class_assimp_1_1_blob_i_o_system"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Assimp::IOSystem</label>
+        <link refid="class_assimp_1_1_i_o_system"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Assimp::BlobIOSystem</label>
+        <link refid="class_assimp_1_1_blob_i_o_system"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Assimp::IOSystem</label>
+        <link refid="class_assimp_1_1_i_o_system"/>
+      </node>
+    </collaborationgraph>
     <location file="include/assimp/BlobIOSystem.h" line="192" column="1" bodyfile="include/assimp/BlobIOSystem.h" bodystart="192" bodyend="304"/>
     <listofallmembers>
       <member refid="class_assimp_1_1_blob_i_o_system_1ae6881fdeaa924a48c6458d6355446ac9" prot="private" virt="non-virtual"><scope>Assimp::BlobIOSystem</scope><name>baseName</name></member>
@@ -253,15 +333,28 @@
       <member refid="class_assimp_1_1_blob_i_o_system_1ae65eda0fd63692bceb8702684b81d22d" prot="public" virt="non-virtual"><scope>Assimp::BlobIOSystem</scope><name>BlobIOSystem</name></member>
       <member refid="class_assimp_1_1_blob_i_o_system_1ac39e6f818df7d54ca8218e0581ffbd60" prot="public" virt="non-virtual"><scope>Assimp::BlobIOSystem</scope><name>BlobIOSystem</name></member>
       <member refid="class_assimp_1_1_blob_i_o_system_1a392ae196f99a9d96ca8e74892256d3b5" prot="private" virt="non-virtual"><scope>Assimp::BlobIOSystem</scope><name>blobs</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a93e80760bd5d5239ba8eab3bd31efa6b" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>ChangeDirectory</name></member>
       <member refid="class_assimp_1_1_blob_i_o_system_1a626f7f153b4f5ac39adf38b6a539bedb" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>Close</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a670ddf0f9ea5c8ee05dce03a89259077" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>ComparePaths</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a26a040ad173f498f4ba71df498a61001" prot="public" virt="non-virtual"><scope>Assimp::BlobIOSystem</scope><name>ComparePaths</name></member>
       <member refid="class_assimp_1_1_blob_i_o_system_1ada9ff71dd9dd4e7819151db3bf52b05d" prot="private" virt="non-virtual"><scope>Assimp::BlobIOSystem</scope><name>created</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a3fc1316fdb4168cde052c95f96364d41" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>CreateDirectory</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a8885409acc1982ee4828c9ef27004642" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>CurrentDirectory</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1abdfad399fdbdc9bbf2ffd193f4107bf2" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>DeleteFile</name></member>
       <member refid="class_assimp_1_1_blob_i_o_system_1a326ffff0acf390d2ec3ae9af1509fc53" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>Exists</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a78821be348bf775ebfc9fdce07d622ac" prot="public" virt="non-virtual" ambiguityscope="Assimp::IOSystem::"><scope>Assimp::BlobIOSystem</scope><name>Exists</name></member>
       <member refid="class_assimp_1_1_blob_i_o_system_1abb21f29c5496a09471ccf2573c42f650" prot="public" virt="non-virtual"><scope>Assimp::BlobIOSystem</scope><name>GetBlobChain</name></member>
       <member refid="class_assimp_1_1_blob_i_o_system_1a32eb63a839376bf87828525b077e34f9" prot="public" virt="non-virtual"><scope>Assimp::BlobIOSystem</scope><name>GetMagicFileName</name></member>
       <member refid="class_assimp_1_1_blob_i_o_system_1ac5598af9ee9b14a5ab06d81c19241277" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>getOsSeparator</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a2c746aa09cc29cea1d2d6a5087bc6e50" prot="public" virt="non-virtual"><scope>Assimp::BlobIOSystem</scope><name>IOSystem</name></member>
       <member refid="class_assimp_1_1_blob_i_o_system_1a54d97cba240908302b508c770c11e9f0" prot="private" virt="non-virtual"><scope>Assimp::BlobIOSystem</scope><name>OnDestruct</name></member>
       <member refid="class_assimp_1_1_blob_i_o_system_1a9245477f681ef86a4ac048b44ec109da" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>Open</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1aef35fabc9bd49fb83bfd4f12a94083c3" prot="public" virt="non-virtual" ambiguityscope="Assimp::IOSystem::"><scope>Assimp::BlobIOSystem</scope><name>Open</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1aa00f3ee1c44576364e8ce00206fb9dd2" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>PopDirectory</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a07c2c93fac300df44c756174fcea71e8" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>PushDirectory</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a1f3180cefbb447b4b8c628dcaf95fc69" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>StackSize</name></member>
       <member refid="class_assimp_1_1_blob_i_o_system_1a93d18cfe33c35bc17e9a48379be5f211" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>~BlobIOSystem</name></member>
+      <member refid="class_assimp_1_1_i_o_system_1a617417f1c5125770606fea3b41068b36" prot="public" virt="virtual"><scope>Assimp::BlobIOSystem</scope><name>~IOSystem</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

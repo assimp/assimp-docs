@@ -4,7 +4,7 @@
     <compoundname>GenericProperty.h</compoundname>
     <includes refid="_hash_8h" local="no">assimp/Hash.h</includes>
     <includes refid="ai__assert_8h" local="no">assimp/ai_assert.h</includes>
-    <includes local="no">assimp/Importer.hpp</includes>
+    <includes refid="_importer_8hpp" local="no">assimp/Importer.hpp</includes>
     <includes local="no">map</includes>
     <incdepgraph>
       <node id="1">
@@ -16,21 +16,101 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>assimp/matrix4x4.h</label>
+        <link refid="matrix4x4_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>assimp/vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
       <node id="3">
         <label>stdint.h</label>
       </node>
       <node id="9">
+        <label>assimp/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>cmath</label>
+      </node>
+      <node id="17">
+        <label>assimp/matrix3x3.h</label>
+        <link refid="matrix3x3_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>string</label>
+      </node>
+      <node id="24">
         <label>map</label>
+      </node>
+      <node id="23">
+        <label>exception</label>
+      </node>
+      <node id="11">
+        <label>stddef.h</label>
       </node>
       <node id="7">
         <label>assimp/config.h</label>
         <link refid="config_8h"/>
       </node>
+      <node id="10">
+        <label>limits.h</label>
+      </node>
+      <node id="12">
+        <label>sys/types.h</label>
+      </node>
       <node id="4">
         <label>string.h</label>
+      </node>
+      <node id="19">
+        <label>assimp/quaternion.h</label>
+        <link refid="quaternion_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
       <node id="5">
         <label>assimp/ai_assert.h</label>
@@ -44,6 +124,9 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
+      <node id="21">
+        <label>new</label>
+      </node>
       <node id="2">
         <label>assimp/Hash.h</label>
         <link refid="_hash_8h"/>
@@ -54,6 +137,28 @@
       </node>
       <node id="8">
         <label>assimp/Importer.hpp</label>
+        <link refid="_importer_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>assimp/color4.h</label>
+        <link refid="color4_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>assimp/vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>cstring</label>
       </node>
     </incdepgraph>
       <sectiondef kind="define">
@@ -247,7 +352,7 @@
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_hash_8h" kindref="compound">assimp/Hash.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ai__assert_8h" kindref="compound">assimp/ai_assert.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assimp/Importer.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_importer_8hpp" kindref="compound">assimp/Importer.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>

@@ -10,26 +10,26 @@
     <includedby refid="_log_aux_8h" local="no">LogAux.h</includedby>
     <includedby refid="_stream_reader_8h" local="no">StreamReader.h</includedby>
     <incdepgraph>
-      <node id="19">
+      <node id="18">
         <label>assimp/matrix4x4.h</label>
         <link refid="matrix4x4_8h"/>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>assimp/vector3.h</label>
-        <link refid="vector3_8h"/>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="15">
+        <label>assimp/vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
         <label>assimp/importerdesc.h</label>
         <link refid="importerdesc_8h"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="25">
@@ -38,12 +38,14 @@
         <childnode refid="26" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="8">
         <label>stdint.h</label>
       </node>
-      <node id="6">
+      <node id="5">
         <label>assimp/types.h</label>
         <link refid="types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
@@ -54,9 +56,9 @@
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
@@ -72,31 +74,32 @@
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>cmath</label>
       </node>
       <node id="4">
         <label>assimp/IOStream.hpp</label>
+        <link refid="_i_o_stream_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>cmath</label>
       </node>
       <node id="27">
         <label>stdexcept</label>
       </node>
-      <node id="18">
+      <node id="17">
         <label>assimp/matrix3x3.h</label>
         <link refid="matrix3x3_8h"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="22">
         <label>string</label>
       </node>
-      <node id="8">
+      <node id="7">
         <label>stddef.h</label>
       </node>
-      <node id="13">
+      <node id="12">
         <label>assimp/config.h</label>
         <link refid="config_8h"/>
       </node>
@@ -107,30 +110,30 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="6">
         <label>limits.h</label>
       </node>
-      <node id="11">
+      <node id="10">
         <label>sys/types.h</label>
       </node>
-      <node id="10">
+      <node id="9">
         <label>string.h</label>
       </node>
-      <node id="20">
+      <node id="19">
         <label>assimp/quaternion.h</label>
         <link refid="quaternion_8h"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="11">
         <label>assimp/defs.h</label>
         <link refid="defs_8h"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -143,30 +146,30 @@
         <childnode refid="27" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="21">
         <label>new</label>
       </node>
       <node id="26">
         <label>sstream</label>
       </node>
-      <node id="17">
+      <node id="16">
         <label>assimp/color4.h</label>
         <link refid="color4_8h"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="13">
         <label>assimp/vector2.h</label>
         <link refid="vector2_8h"/>
-        <childnode refid="15" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="3">
         <label>stdio.h</label>
       </node>
-      <node id="21">
+      <node id="20">
         <label>cstring</label>
       </node>
       <node id="24">

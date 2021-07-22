@@ -4,6 +4,7 @@
     <compoundname>cexport.h</compoundname>
     <includes refid="types_8h" local="no">assimp/types.h</includes>
     <includedby refid="_blob_i_o_system_8h" local="no">BlobIOSystem.h</includedby>
+    <includedby refid="_exporter_8hpp" local="yes">Exporter.hpp</includedby>
     <incdepgraph>
       <node id="15">
         <label>assimp/matrix4x4.h</label>
@@ -130,10 +131,16 @@
         <label>BlobIOSystem.h</label>
         <link refid="_blob_i_o_system_8h"/>
       </node>
+      <node id="3">
+        <label>Exporter.hpp</label>
+        <link refid="_exporter_8hpp"/>
+      </node>
       <node id="1">
         <label>cexport.h</label>
         <link refid="cexport_8h"/>
         <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

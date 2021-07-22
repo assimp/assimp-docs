@@ -2,73 +2,87 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="_xml_parser_8h" kind="file" language="C++">
     <compoundname>XmlParser.h</compoundname>
-    <includes local="no">assimp/DefaultLogger.hpp</includes>
+    <includes refid="_default_logger_8hpp" local="no">assimp/DefaultLogger.hpp</includes>
     <includes refid="ai__assert_8h" local="no">assimp/ai_assert.h</includes>
     <includes refid="_base_importer_8h" local="yes">BaseImporter.h</includes>
-    <includes local="yes">IOStream.hpp</includes>
+    <includes refid="_i_o_stream_8hpp" local="yes">IOStream.hpp</includes>
     <includes local="no">pugixml.hpp</includes>
     <includes local="no">vector</includes>
     <incdepgraph>
-      <node id="36">
-        <label>IOStream.hpp</label>
-      </node>
-      <node id="23">
+      <node id="17">
         <label>assimp/matrix4x4.h</label>
         <link refid="matrix4x4_8h"/>
-        <childnode refid="20" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="22">
+        <label>Logger.hpp</label>
+        <link refid="_logger_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
         <label>assimp/vector3.h</label>
         <link refid="vector3_8h"/>
-        <childnode refid="19" relation="include">
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>BaseImporter.h</label>
+        <link refid="_base_importer_8h"/>
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-      </node>
-      <node id="6">
-        <label>BaseImporter.h</label>
-        <link refid="_base_importer_8h"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
       </node>
-      <node id="11">
+      <node id="33">
         <label>assimp/importerdesc.h</label>
         <link refid="importerdesc_8h"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="29">
+      <node id="23">
         <label>assimp/TinyFormatter.h</label>
         <link refid="_tiny_formatter_8h"/>
-        <childnode refid="30" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="32">
-        <label>assimp/ProgressHandler.hpp</label>
-      </node>
-      <node id="15">
+      <node id="7">
         <label>stdint.h</label>
       </node>
-      <node id="37">
+      <node id="39">
         <label>pugixml.hpp</label>
       </node>
-      <node id="12">
-        <label>assimp/types.h</label>
+      <node id="4">
+        <label>types.h</label>
         <link refid="types_8h"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
@@ -78,125 +92,134 @@
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
         <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
       </node>
-      <node id="19">
-        <label>cmath</label>
-      </node>
-      <node id="10">
+      <node id="32">
         <label>assimp/IOStream.hpp</label>
-      </node>
-      <node id="31">
-        <label>stdexcept</label>
-      </node>
-      <node id="22">
-        <label>assimp/matrix3x3.h</label>
-        <link refid="matrix3x3_8h"/>
+        <link refid="_i_o_stream_8hpp"/>
         <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="27">
-        <label>string</label>
-      </node>
-      <node id="14">
-        <label>stddef.h</label>
-      </node>
-      <node id="5">
-        <label>assimp/config.h</label>
-        <link refid="config_8h"/>
-      </node>
-      <node id="8">
-        <label>assimp/DefaultIOStream.h</label>
-        <link refid="_default_i_o_stream_8h"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
         </childnode>
       </node>
       <node id="13">
-        <label>limits.h</label>
+        <label>cmath</label>
       </node>
-      <node id="17">
-        <label>sys/types.h</label>
+      <node id="35">
+        <label>stdexcept</label>
       </node>
       <node id="16">
+        <label>assimp/matrix3x3.h</label>
+        <link refid="matrix3x3_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+      </node>
+      <node id="11">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="30">
+        <label>assimp/DefaultIOStream.h</label>
+        <link refid="_default_i_o_stream_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>limits.h</label>
+      </node>
+      <node id="9">
+        <label>sys/types.h</label>
+      </node>
+      <node id="8">
         <label>string.h</label>
       </node>
-      <node id="24">
+      <node id="18">
         <label>assimp/quaternion.h</label>
         <link refid="quaternion_8h"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="3">
+      <node id="27">
         <label>assimp/ai_assert.h</label>
         <link refid="ai__assert_8h"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="34">
-        <label>vector</label>
-      </node>
-      <node id="4">
-        <label>assimp/defs.h</label>
-        <link refid="defs_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>Exceptional.h</label>
-        <link refid="_exceptional_8h"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="31" relation="include">
+      <node id="25">
+        <label>NullLogger.hpp</label>
+        <link refid="_null_logger_8hpp"/>
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="26">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Exceptional.h</label>
+        <link refid="_exceptional_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
         <label>new</label>
       </node>
-      <node id="30">
+      <node id="3">
+        <label>LogStream.hpp</label>
+        <link refid="_log_stream_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
         <label>sstream</label>
       </node>
-      <node id="21">
+      <node id="36">
+        <label>assimp/ProgressHandler.hpp</label>
+        <link refid="_progress_handler_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
         <label>assimp/color4.h</label>
         <link refid="color4_8h"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="12">
         <label>assimp/vector2.h</label>
         <link refid="vector2_8h"/>
-        <childnode refid="19" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="33">
+      <node id="37">
         <label>set</label>
       </node>
       <node id="1">
@@ -204,30 +227,39 @@
         <link refid="_xml_parser_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-      </node>
-      <node id="9">
-        <label>stdio.h</label>
-      </node>
-      <node id="25">
-        <label>cstring</label>
       </node>
       <node id="2">
         <label>assimp/DefaultLogger.hpp</label>
+        <link refid="_default_logger_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
       </node>
-      <node id="35">
+      <node id="31">
+        <label>stdio.h</label>
+      </node>
+      <node id="19">
+        <label>cstring</label>
+      </node>
+      <node id="38">
         <label>memory</label>
       </node>
-      <node id="28">
+      <node id="34">
         <label>assimp/Defines.h</label>
         <link refid="_defines_8h"/>
       </node>
@@ -286,11 +318,11 @@
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INCLUDED_AI_IRRXML_WRAPPER</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INCLUDED_AI_IRRXML_WRAPPER</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assimp/DefaultLogger.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_default_logger_8hpp" kindref="compound">assimp/DefaultLogger.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ai__assert_8h" kindref="compound">assimp/ai_assert.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_base_importer_8h" kindref="compound">BaseImporter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;IOStream.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_o_stream_8hpp" kindref="compound">IOStream.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pugixml.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -366,16 +398,16 @@
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>!=<sp/><ref refid="class_assimp_1_1_t_xml_parser_1a6fc1466c28cf1985f224cd6c14f44dac" kindref="member">findNode</ref>(name);</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_t_xml_parser_1a832c8f496948e43402767853d25b9a4c" kindref="member">parse</ref>(IOStream<sp/>*stream)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_assimp_1_1_t_xml_parser_1a832c8f496948e43402767853d25b9a4c" kindref="member">parse</ref>(<ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref><sp/>*stream)<sp/>{</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>==<sp/>stream)<sp/>{</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSIMP_LOG_DEBUG(</highlight><highlight class="stringliteral">&quot;Stream<sp/>is<sp/>nullptr.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8hpp_1a1a20dc2c2ad4ba28557c1c53375589c9" kindref="member">ASSIMP_LOG_DEBUG</ref>(</highlight><highlight class="stringliteral">&quot;Stream<sp/>is<sp/>nullptr.&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>stream-&gt;FileSize();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>stream-&gt;<ref refid="class_assimp_1_1_i_o_stream_1aaa01183d197fb714f28d6c611b6fa058" kindref="member">FileSize</ref>();</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mData.resize(len<sp/>+<sp/>1);</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(&amp;mData[0],<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">,<sp/>len<sp/>+<sp/>1);</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream-&gt;Read(&amp;mData[0],<sp/>1,<sp/>len);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream-&gt;<ref refid="class_assimp_1_1_i_o_stream_1ae376f641020989d61863b9c6f55c7abf" kindref="member">Read</ref>(&amp;mData[0],<sp/>1,<sp/>len);</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mDoc<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>pugi::xml_document();</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pugi::xml_parse_result<sp/>parse_result<sp/>=<sp/>mDoc-&gt;load_string(&amp;mData[0],<sp/>pugi::parse_full);</highlight></codeline>
@@ -383,7 +415,7 @@
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSIMP_LOG_DEBUG(</highlight><highlight class="stringliteral">&quot;Error<sp/>while<sp/>parse<sp/>xml.&quot;</highlight><highlight class="normal">,<sp/>std::string(parse_result.description()),<sp/></highlight><highlight class="stringliteral">&quot;<sp/>@<sp/>&quot;</highlight><highlight class="normal">,<sp/>parse_result.offset);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8hpp_1a1a20dc2c2ad4ba28557c1c53375589c9" kindref="member">ASSIMP_LOG_DEBUG</ref>(</highlight><highlight class="stringliteral">&quot;Error<sp/>while<sp/>parse<sp/>xml.&quot;</highlight><highlight class="normal">,<sp/>std::string(parse_result.description()),<sp/></highlight><highlight class="stringliteral">&quot;<sp/>@<sp/>&quot;</highlight><highlight class="normal">,<sp/>parse_result.offset);</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"></highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>

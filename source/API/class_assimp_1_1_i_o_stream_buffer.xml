@@ -101,7 +101,7 @@
         <location file="include/assimp/IOStreamBuffer.h" line="124" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="124" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_assimp_1_1_i_o_stream_buffer_1ae341171f8f17789d88c0a3097d4458e3" prot="private" static="no" mutable="no">
-        <type>IOStream *</type>
+        <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
         <definition>IOStream* Assimp::IOStreamBuffer&lt; T &gt;::m_stream</definition>
         <argsstring></argsstring>
         <name>m_stream</name>
@@ -319,7 +319,7 @@
         <argsstring>(IOStream *stream)</argsstring>
         <name>open</name>
         <param>
-          <type>IOStream *</type>
+          <type><ref refid="class_assimp_1_1_i_o_stream" kindref="compound">IOStream</ref> *</type>
           <declname>stream</declname>
         </param>
         <briefdescription>

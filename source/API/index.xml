@@ -793,6 +793,95 @@
     <member refid="class_assimp_1_1_default_i_o_system_1afa9e12ddf8f7aa1a33935309b917a142" kind="function"><name>completeBaseName</name></member>
     <member refid="class_assimp_1_1_default_i_o_system_1aa01ea34e60ed8a3920979b5b4e2927ee" kind="function"><name>fileName</name></member>
   </compound>
+  <compound refid="class_assimp_1_1_default_logger" kind="class"><name>Assimp::DefaultLogger</name>
+    <member refid="class_assimp_1_1_default_logger_1a12bc1531c8e28c5313e30dcf2efbe94a" kind="typedef"><name>ConstStreamIt</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a20087aa6aabd4eaba5c8db4723b68400" kind="typedef"><name>StreamArray</name></member>
+    <member refid="class_assimp_1_1_default_logger_1af5bfbd915a0c660e2c11b85fc2e62fcc" kind="typedef"><name>StreamIt</name></member>
+    <member refid="class_assimp_1_1_default_logger_1ac0171ff2eb01b9f101f61ca2cf6785bb" kind="variable"><name>m_pLogger</name></member>
+    <member refid="class_assimp_1_1_default_logger_1acf6fae3e53fe5ff63fddc00868f821d2" kind="variable"><name>s_pNullLogger</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a8be3bce1f3850a619192e0561a4c6cfc" kind="variable"><name>lastLen</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a1951bc73596394828a33747c38317dea" kind="variable"><name>lastMsg</name></member>
+    <member refid="class_assimp_1_1_default_logger_1aa8e6680480049800a8d341bb18b44757" kind="variable"><name>m_StreamArray</name></member>
+    <member refid="class_assimp_1_1_default_logger_1abbdb886a46779b97dda3b4dd7d488403" kind="variable"><name>noRepeatMsg</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a2bd39b2a03fc2b94f8a34c02125c8f42" kind="function"><name>create</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a7d0a53f2db66945ade30094330a77ba4" kind="function"><name>get</name></member>
+    <member refid="class_assimp_1_1_default_logger_1abebc7ee702a2a2dde765e771948400c6" kind="function"><name>isNullLogger</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a0b1da096d7442af5a4a4cb5ebb2540f7" kind="function"><name>kill</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a9daba548026045b99813c760c2842ed2" kind="function"><name>set</name></member>
+    <member refid="class_assimp_1_1_default_logger_1abc0ca7a337f8c3e38eca0eb45bb1ccf0" kind="function"><name>attachStream</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a77373bb6aa7cb3a4b7d67b851f7b31fe" kind="function"><name>detachStream</name></member>
+    <member refid="class_assimp_1_1_default_logger_1ac89e8018f7e97327a6b91abbe36178e1" kind="function"><name>DefaultLogger</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a2db9c3b56c8be09b1827d1d0522c02b9" kind="function"><name>GetThreadID</name></member>
+    <member refid="class_assimp_1_1_default_logger_1abcdc5564407fcda65b114a80969c42fa" kind="function"><name>OnDebug</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a32caf08bb38ecbc53b0f75fd983ef5ae" kind="function"><name>OnError</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a068f81f1daacd12c3b5cf9f12089b789" kind="function"><name>OnInfo</name></member>
+    <member refid="class_assimp_1_1_default_logger_1aeb61ce0a0bfa475c66a12fcd74c9e7cd" kind="function"><name>OnVerboseDebug</name></member>
+    <member refid="class_assimp_1_1_default_logger_1a8de943d7b5bf39c5ae81a2a56313e4be" kind="function"><name>OnWarn</name></member>
+    <member refid="class_assimp_1_1_default_logger_1ac5d0ad395b5c07bbfed643b440d23316" kind="function"><name>WriteToStreams</name></member>
+    <member refid="class_assimp_1_1_default_logger_1ac3901fa0196c0bab25f301f471cc9b74" kind="function"><name>~DefaultLogger</name></member>
+  </compound>
+  <compound refid="class_assimp_1_1_exporter" kind="class"><name>Assimp::Exporter</name>
+    <member refid="class_assimp_1_1_exporter_1a37fc9550e48e51c26478c008835846d0" kind="typedef"><name>fpExportFunc</name></member>
+    <member refid="class_assimp_1_1_exporter_1a75bc178ae29edc192e1c1935c31c42b2" kind="variable"><name>pimpl</name></member>
+    <member refid="class_assimp_1_1_exporter_1a03adf017791ffc3694e382678f056e9c" kind="function"><name>Export</name></member>
+    <member refid="class_assimp_1_1_exporter_1af450a04bbbfa1c27a2e37e5f9bece5bd" kind="function"><name>Export</name></member>
+    <member refid="class_assimp_1_1_exporter_1ac45a55fc178256576d2d21b58bd944a0" kind="function"><name>Exporter</name></member>
+    <member refid="class_assimp_1_1_exporter_1a08e277e67a64ac81e472ccfba5886aae" kind="function"><name>ExportToBlob</name></member>
+    <member refid="class_assimp_1_1_exporter_1ad7783acdf84c9989567a8b80cb2b19b9" kind="function"><name>ExportToBlob</name></member>
+    <member refid="class_assimp_1_1_exporter_1a8200b618c21c272c839c37060a871d48" kind="function"><name>FreeBlob</name></member>
+    <member refid="class_assimp_1_1_exporter_1af6d84e8c9775de2d11666dad15c11f06" kind="function"><name>GetBlob</name></member>
+    <member refid="class_assimp_1_1_exporter_1a5033fb7490dc2f4ac4d69d4d146a690a" kind="function"><name>GetErrorString</name></member>
+    <member refid="class_assimp_1_1_exporter_1abc7d35254b0191ba97dccee597364084" kind="function"><name>GetExportFormatCount</name></member>
+    <member refid="class_assimp_1_1_exporter_1afd770d782263123f4d6c14f2f8648b04" kind="function"><name>GetExportFormatDescription</name></member>
+    <member refid="class_assimp_1_1_exporter_1a360f711e560410ce55f6bd2673a6cd85" kind="function"><name>GetIOHandler</name></member>
+    <member refid="class_assimp_1_1_exporter_1acc64a9737f5d9e0efc03088cadce0096" kind="function"><name>GetOrphanedBlob</name></member>
+    <member refid="class_assimp_1_1_exporter_1a78735bb79173a37f9d3126577244be7b" kind="function"><name>IsDefaultIOHandler</name></member>
+    <member refid="class_assimp_1_1_exporter_1ae65025d7c5a06a0c3e8655585f87e1c4" kind="function"><name>RegisterExporter</name></member>
+    <member refid="class_assimp_1_1_exporter_1a054201cf78fa352b1281ea8b484f6e3a" kind="function"><name>SetIOHandler</name></member>
+    <member refid="class_assimp_1_1_exporter_1ad62dcc1ed4fb9f2c17114e2f98b94d15" kind="function"><name>SetProgressHandler</name></member>
+    <member refid="class_assimp_1_1_exporter_1afa5956ce18138b90396c505468d1e52b" kind="function"><name>UnregisterExporter</name></member>
+    <member refid="class_assimp_1_1_exporter_1a52c3ba6c76c778fb5dd70ad30589fb2c" kind="function"><name>~Exporter</name></member>
+  </compound>
+  <compound refid="struct_assimp_1_1_exporter_1_1_export_format_entry" kind="struct"><name>Assimp::Exporter::ExportFormatEntry</name>
+    <member refid="struct_assimp_1_1_exporter_1_1_export_format_entry_1a59f8bf48e35a70ac0540c9b65d4b891d" kind="variable"><name>mDescription</name></member>
+    <member refid="struct_assimp_1_1_exporter_1_1_export_format_entry_1aefb2d077aebc473ce9a6e38fd883f181" kind="variable"><name>mEnforcePP</name></member>
+    <member refid="struct_assimp_1_1_exporter_1_1_export_format_entry_1a5cf4464ae6f7f7d92aaade27f1e545f5" kind="variable"><name>mExportFunction</name></member>
+    <member refid="struct_assimp_1_1_exporter_1_1_export_format_entry_1a6a34ccd6431d47d6a9fd6d1a498d1ee5" kind="function"><name>ExportFormatEntry</name></member>
+    <member refid="struct_assimp_1_1_exporter_1_1_export_format_entry_1ab89610d7a5b295aa8a22bceae013d76f" kind="function"><name>ExportFormatEntry</name></member>
+  </compound>
+  <compound refid="class_assimp_1_1_export_properties" kind="class"><name>Assimp::ExportProperties</name>
+    <member refid="class_assimp_1_1_export_properties_1ab06b379985083def27d41a9ba87c8d06" kind="typedef"><name>CallbackPropertyMap</name></member>
+    <member refid="class_assimp_1_1_export_properties_1acc1c8ad6e55de8f9da60b907a1434c6c" kind="typedef"><name>FloatPropertyMap</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a5eb68bd8289eb42e495a7ce4e93d8b70" kind="typedef"><name>IntPropertyMap</name></member>
+    <member refid="class_assimp_1_1_export_properties_1aa04b43f5e76d5f3c5431be9a35e706e6" kind="typedef"><name>KeyType</name></member>
+    <member refid="class_assimp_1_1_export_properties_1adc9f7b8ed897e43a287138feec6f3d64" kind="typedef"><name>MatrixPropertyMap</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a8a0ab4fafe00d7ffdffd7ad40782c218" kind="typedef"><name>StringPropertyMap</name></member>
+    <member refid="class_assimp_1_1_export_properties_1ab731059370cb86ccb791cae8e13154dd" kind="variable"><name>mCallbackProperties</name></member>
+    <member refid="class_assimp_1_1_export_properties_1acf10a6aec3a1d5cb6f190bebc48ed4c7" kind="variable"><name>mFloatProperties</name></member>
+    <member refid="class_assimp_1_1_export_properties_1ad69c0546b1e7faf054240f228cf5f9b6" kind="variable"><name>mIntProperties</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a1c7dc9cd6b7f34a98fdb1a16f37b260f" kind="variable"><name>mMatrixProperties</name></member>
+    <member refid="class_assimp_1_1_export_properties_1aa842acefe6a2b4eb8efff24030850a4f" kind="variable"><name>mStringProperties</name></member>
+    <member refid="class_assimp_1_1_export_properties_1aedefab9bf14c50bcd319eda39030aa0e" kind="function"><name>ExportProperties</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a5c91357f3ca4dcf7f7582abdb551534d" kind="function"><name>ExportProperties</name></member>
+    <member refid="class_assimp_1_1_export_properties_1abcb151b5c3da6c759b13b6f25abe65c9" kind="function"><name>GetPropertyBool</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a74fb57ea5a33f00968829a62a9226f5d" kind="function"><name>GetPropertyCallback</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a315d21aa9d9b78f2b5280e6216565234" kind="function"><name>GetPropertyFloat</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a24257a57419d1f143cde1221c2300ecb" kind="function"><name>GetPropertyInteger</name></member>
+    <member refid="class_assimp_1_1_export_properties_1ac70802b25ae02ad866c753032ae4c859" kind="function"><name>GetPropertyMatrix</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a9ce9cd54969c247232887195b3d54cd3" kind="function"><name>GetPropertyString</name></member>
+    <member refid="class_assimp_1_1_export_properties_1ae1a68e0839afac468f1e30b6df43ec81" kind="function"><name>HasPropertyBool</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a15f9b693709bedbc94e7088a679a077c" kind="function"><name>HasPropertyCallback</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a867560a77b1c00941c2d329a4e9219cf" kind="function"><name>HasPropertyFloat</name></member>
+    <member refid="class_assimp_1_1_export_properties_1aea0ef936553e641f172eb72379b5726c" kind="function"><name>HasPropertyInteger</name></member>
+    <member refid="class_assimp_1_1_export_properties_1aa99262953ae9812ccfae65ca6c66fd4e" kind="function"><name>HasPropertyMatrix</name></member>
+    <member refid="class_assimp_1_1_export_properties_1aa37ac3a66f91aa3e34a3894b0fbddccf" kind="function"><name>HasPropertyString</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a3eb3aea4da6b94da06b7dd118c864c38" kind="function"><name>SetPropertyBool</name></member>
+    <member refid="class_assimp_1_1_export_properties_1aba0ec052693ed39bda46af7e05f8d7d7" kind="function"><name>SetPropertyCallback</name></member>
+    <member refid="class_assimp_1_1_export_properties_1aad233a63272730b466615feae09b9a1d" kind="function"><name>SetPropertyFloat</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a3b5953dfef79567d672c81a58b51090c" kind="function"><name>SetPropertyInteger</name></member>
+    <member refid="class_assimp_1_1_export_properties_1ac77448b65347c90a6baa65ac4e546dbe" kind="function"><name>SetPropertyMatrix</name></member>
+    <member refid="class_assimp_1_1_export_properties_1a2be9953a8f29595fc518e7ddb2fc481b" kind="function"><name>SetPropertyString</name></member>
+  </compound>
   <compound refid="struct_assimp_1_1find__node__by__name__predicate" kind="struct"><name>Assimp::find_node_by_name_predicate</name>
     <member refid="struct_assimp_1_1find__node__by__name__predicate_1a3677b7c442c60148d2c31bade1d68258" kind="variable"><name>mName</name></member>
     <member refid="struct_assimp_1_1find__node__by__name__predicate_1a2d92cd69778af0800edce233960fcc2f" kind="function"><name>find_node_by_name_predicate</name></member>
@@ -812,6 +901,58 @@
     <member refid="class_assimp_1_1_formatter_1_1basic__formatter_1a46ae57770da014023a1cffb0cafe0f51" kind="function"><name>operator,</name></member>
     <member refid="class_assimp_1_1_formatter_1_1basic__formatter_1a7bb921e0b9a62efe237a2e23626d1f60" kind="function"><name>operator&lt;&lt;</name></member>
     <member refid="class_assimp_1_1_formatter_1_1basic__formatter_1ac433a014f29674f638923e982b528cac" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="class_assimp_1_1_importer" kind="class"><name>Assimp::Importer</name>
+    <member refid="class_assimp_1_1_importer_1a3affe8f98fc9a3b75fc3cb4c4415b37c" kind="variable"><name>MaxLenHint</name></member>
+    <member refid="class_assimp_1_1_importer_1a3928bb8d375fd676dd5dbe33382e46ce" kind="variable"><name>pimpl</name></member>
+    <member refid="class_assimp_1_1_importer_1aba00e5dd1cb5ed67f709e994933efb39" kind="function"><name>ApplyCustomizedPostProcessing</name></member>
+    <member refid="class_assimp_1_1_importer_1a5872e749c1451fee64183fc14f1fc81d" kind="function"><name>ApplyPostProcessing</name></member>
+    <member refid="class_assimp_1_1_importer_1a53dafc3046abc33365a07c605716c5d4" kind="function"><name>FreeScene</name></member>
+    <member refid="class_assimp_1_1_importer_1a3ac36c9ab8668bd368de516c19bdcc11" kind="function"><name>GetErrorString</name></member>
+    <member refid="class_assimp_1_1_importer_1a8680d978bdafe0777f8c3e05954e55c1" kind="function"><name>GetException</name></member>
+    <member refid="class_assimp_1_1_importer_1ab06927d45d5adbf909040c8f5bac1e4d" kind="function"><name>GetExtensionList</name></member>
+    <member refid="class_assimp_1_1_importer_1acdc70c6efdf1b572094fe01089ceb158" kind="function"><name>GetExtensionList</name></member>
+    <member refid="class_assimp_1_1_importer_1a35d624811e9ddfcd0a898797e6263c22" kind="function"><name>GetImporter</name></member>
+    <member refid="class_assimp_1_1_importer_1a913543b8db0f09f286cc1b4f20bb3d35" kind="function"><name>GetImporter</name></member>
+    <member refid="class_assimp_1_1_importer_1a5397c7d93358b1a6983c74c5eb5c64a6" kind="function"><name>GetImporterCount</name></member>
+    <member refid="class_assimp_1_1_importer_1aa9158a5ec0caba90cb1a3183c065634f" kind="function"><name>GetImporterIndex</name></member>
+    <member refid="class_assimp_1_1_importer_1a2f9db052a2507d3a77aec782dc8149cf" kind="function"><name>GetImporterInfo</name></member>
+    <member refid="class_assimp_1_1_importer_1a72f4d2821d38b97f630981f9236901e8" kind="function"><name>GetIOHandler</name></member>
+    <member refid="class_assimp_1_1_importer_1a6d6cd3b06de9438744a17f61395a0bf0" kind="function"><name>GetMemoryRequirements</name></member>
+    <member refid="class_assimp_1_1_importer_1a60eb9042fb85bfbd61a863e131a56ecd" kind="function"><name>GetOrphanedScene</name></member>
+    <member refid="class_assimp_1_1_importer_1a14201de344db7c66fa514f7f092ae10b" kind="function"><name>GetProgressHandler</name></member>
+    <member refid="class_assimp_1_1_importer_1a39e654c887f684cc12f792ca1daebfee" kind="function"><name>GetPropertyBool</name></member>
+    <member refid="class_assimp_1_1_importer_1a3a5f327bc30dfe95db6d8ff9297d4aab" kind="function"><name>GetPropertyFloat</name></member>
+    <member refid="class_assimp_1_1_importer_1ac6f348464e03176bc6dd790226122b36" kind="function"><name>GetPropertyInteger</name></member>
+    <member refid="class_assimp_1_1_importer_1a654a92d53bf06feb5961a7255be45e95" kind="function"><name>GetPropertyMatrix</name></member>
+    <member refid="class_assimp_1_1_importer_1a80cf0cbad0d3cc17aa6a3f6f603cc38c" kind="function"><name>GetPropertyString</name></member>
+    <member refid="class_assimp_1_1_importer_1ae5f94a29007ed7c873be138ecdb4b056" kind="function"><name>GetScene</name></member>
+    <member refid="class_assimp_1_1_importer_1a2c207299ed05f1db1ad1e6dab005f719" kind="function"><name>Importer</name></member>
+    <member refid="class_assimp_1_1_importer_1a31c6cd729b79d586504dabe30353e39a" kind="function"><name>Importer</name></member>
+    <member refid="class_assimp_1_1_importer_1ad2c940def9c4d01709e44a4e781e757d" kind="function"><name>IsDefaultIOHandler</name></member>
+    <member refid="class_assimp_1_1_importer_1a34062906cb6b9af8abaeda36737d14ae" kind="function"><name>IsDefaultProgressHandler</name></member>
+    <member refid="class_assimp_1_1_importer_1a22bbe0ca29cc685b110b6853dd1e4157" kind="function"><name>IsExtensionSupported</name></member>
+    <member refid="class_assimp_1_1_importer_1a4d49e3c8ecf28336d78f9f5e502990ce" kind="function"><name>IsExtensionSupported</name></member>
+    <member refid="class_assimp_1_1_importer_1a5061bf192f25fb39395495bc7647b6f5" kind="function"><name>operator=</name></member>
+    <member refid="class_assimp_1_1_importer_1ac112839f323a630f83395acb74746827" kind="function"><name>Pimpl</name></member>
+    <member refid="class_assimp_1_1_importer_1a5a85077725374402b4d6e107b03ce845" kind="function"><name>Pimpl</name></member>
+    <member refid="class_assimp_1_1_importer_1a174418ab41d5b8bc51a044895cb991e5" kind="function"><name>ReadFile</name></member>
+    <member refid="class_assimp_1_1_importer_1a339882c7acb47d5b5110bbd078d870a9" kind="function"><name>ReadFile</name></member>
+    <member refid="class_assimp_1_1_importer_1a9b3c5e8b1042702f449e84a95b3324f6" kind="function"><name>ReadFileFromMemory</name></member>
+    <member refid="class_assimp_1_1_importer_1a3846294ffe76d91a1d3096d22d7c6b7d" kind="function"><name>RegisterLoader</name></member>
+    <member refid="class_assimp_1_1_importer_1a102650d3648c0e414a1e73bdad9bed35" kind="function"><name>RegisterPPStep</name></member>
+    <member refid="class_assimp_1_1_importer_1a9bb793072c84c784279d0f6e870bb42d" kind="function"><name>SetExtraVerbose</name></member>
+    <member refid="class_assimp_1_1_importer_1a1161f46318af18bb86dfe0fc3edea4df" kind="function"><name>SetIOHandler</name></member>
+    <member refid="class_assimp_1_1_importer_1a6a4d830ffb3f77a3c7c919e0af006920" kind="function"><name>SetProgressHandler</name></member>
+    <member refid="class_assimp_1_1_importer_1a4af22a88eddf464d949a761149c72825" kind="function"><name>SetPropertyBool</name></member>
+    <member refid="class_assimp_1_1_importer_1ad38af78d6fe4b1f132d2534d8a84deea" kind="function"><name>SetPropertyFloat</name></member>
+    <member refid="class_assimp_1_1_importer_1a2542eed3d5f491025c4095b4e55fa068" kind="function"><name>SetPropertyInteger</name></member>
+    <member refid="class_assimp_1_1_importer_1acd128e5fb5777ef238b8bd1454a9c3ad" kind="function"><name>SetPropertyMatrix</name></member>
+    <member refid="class_assimp_1_1_importer_1a854087b213981108e3e464cf4d293fed" kind="function"><name>SetPropertyString</name></member>
+    <member refid="class_assimp_1_1_importer_1a3b1f5af2c763b13aca0f324b19001722" kind="function"><name>UnregisterLoader</name></member>
+    <member refid="class_assimp_1_1_importer_1a3a683671c7c40638b1103c5d3648d86c" kind="function"><name>UnregisterPPStep</name></member>
+    <member refid="class_assimp_1_1_importer_1af0292c1603ff9b483a5deba4d183eba5" kind="function"><name>ValidateFlags</name></member>
+    <member refid="class_assimp_1_1_importer_1a3d65af5286ba22f46220a72a6eb2a1c9" kind="function"><name>~Importer</name></member>
   </compound>
   <compound refid="struct_assimp_1_1_intern_1_1_byte_swapper" kind="struct"><name>Assimp::Intern::ByteSwapper</name>
     <member refid="struct_assimp_1_1_intern_1_1_byte_swapper_1a3531b179de4ba56b6873676b1fba0205" kind="function"><name>operator()</name></member>
@@ -840,6 +981,16 @@
   <compound refid="struct_assimp_1_1_interpolator" kind="struct"><name>Assimp::Interpolator</name>
     <member refid="struct_assimp_1_1_interpolator_1aa5653b268c00e4a779dec709ed1b619a" kind="function"><name>operator()</name></member>
   </compound>
+  <compound refid="class_assimp_1_1_i_o_stream" kind="class"><name>Assimp::IOStream</name>
+    <member refid="class_assimp_1_1_i_o_stream_1a0be5cf1642597edeffe5360025ddf50f" kind="function"><name>IOStream</name></member>
+    <member refid="class_assimp_1_1_i_o_stream_1aaa01183d197fb714f28d6c611b6fa058" kind="function"><name>FileSize</name></member>
+    <member refid="class_assimp_1_1_i_o_stream_1a7c19952446ece90924b246f087417899" kind="function"><name>Flush</name></member>
+    <member refid="class_assimp_1_1_i_o_stream_1ae376f641020989d61863b9c6f55c7abf" kind="function"><name>Read</name></member>
+    <member refid="class_assimp_1_1_i_o_stream_1a5ed0dddf418ab08cf3fc21f3f3032220" kind="function"><name>Seek</name></member>
+    <member refid="class_assimp_1_1_i_o_stream_1a316ac6cd16b5a493d1313f792c806194" kind="function"><name>Tell</name></member>
+    <member refid="class_assimp_1_1_i_o_stream_1ad0ca4aae1b8c4d00db391ac3a4171f7b" kind="function"><name>Write</name></member>
+    <member refid="class_assimp_1_1_i_o_stream_1ae4c9bcff461dba7e26631e691ad8ed2f" kind="function"><name>~IOStream</name></member>
+  </compound>
   <compound refid="class_assimp_1_1_i_o_stream_buffer" kind="class"><name>Assimp::IOStreamBuffer</name>
     <member refid="class_assimp_1_1_i_o_stream_buffer_1a9ad17f14e0a2af8f081de13fa6a6acac" kind="variable"><name>m_blockIdx</name></member>
     <member refid="class_assimp_1_1_i_o_stream_buffer_1a69244aff93931effc111c2a068ea1f14" kind="variable"><name>m_cache</name></member>
@@ -862,6 +1013,26 @@
     <member refid="class_assimp_1_1_i_o_stream_buffer_1a79cade42575d01ca83103c4c6ef999e3" kind="function"><name>readNextBlock</name></member>
     <member refid="class_assimp_1_1_i_o_stream_buffer_1abe0e9a33241889b300000424935957d7" kind="function"><name>size</name></member>
     <member refid="class_assimp_1_1_i_o_stream_buffer_1a4f080570778732e58da136e28d96235d" kind="function"><name>~IOStreamBuffer</name></member>
+  </compound>
+  <compound refid="class_assimp_1_1_i_o_system" kind="class"><name>Assimp::IOSystem</name>
+    <member refid="class_assimp_1_1_i_o_system_1a7cd62ef4bc3ef398b014e09f8c303226" kind="variable"><name>m_pathStack</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a93e80760bd5d5239ba8eab3bd31efa6b" kind="function"><name>ChangeDirectory</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a8c334d60f04bceeb6bd0157d21723f3e" kind="function"><name>Close</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a670ddf0f9ea5c8ee05dce03a89259077" kind="function"><name>ComparePaths</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a26a040ad173f498f4ba71df498a61001" kind="function"><name>ComparePaths</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a3fc1316fdb4168cde052c95f96364d41" kind="function"><name>CreateDirectory</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a8885409acc1982ee4828c9ef27004642" kind="function"><name>CurrentDirectory</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1abdfad399fdbdc9bbf2ffd193f4107bf2" kind="function"><name>DeleteFile</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a79f5fe8d2dbe1056c9418f7de9a72445" kind="function"><name>Exists</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a78821be348bf775ebfc9fdce07d622ac" kind="function"><name>Exists</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a40e412875b985bdb638f00ef0f20fff6" kind="function"><name>getOsSeparator</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a2c746aa09cc29cea1d2d6a5087bc6e50" kind="function"><name>IOSystem</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1ac512ece3b0701de5682553007a4c0816" kind="function"><name>Open</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1aef35fabc9bd49fb83bfd4f12a94083c3" kind="function"><name>Open</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1aa00f3ee1c44576364e8ce00206fb9dd2" kind="function"><name>PopDirectory</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a07c2c93fac300df44c756174fcea71e8" kind="function"><name>PushDirectory</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a1f3180cefbb447b4b8c628dcaf95fc69" kind="function"><name>StackSize</name></member>
+    <member refid="class_assimp_1_1_i_o_system_1a617417f1c5125770606fea3b41068b36" kind="function"><name>~IOSystem</name></member>
   </compound>
   <compound refid="class_assimp_1_1_line_splitter" kind="class"><name>Assimp::LineSplitter</name>
     <member refid="class_assimp_1_1_line_splitter_1aef56da1bb83d87c439d181cbce523068" kind="typedef"><name>line_idx</name></member>
@@ -898,6 +1069,48 @@
     <member refid="class_assimp_1_1_log_functions_1a077d37ba3a8303542248cccff3b3d332" kind="function"><name>LogWarn</name></member>
     <member refid="class_assimp_1_1_log_functions_1a152406e61f24c27bd2c20ecb4b3cf143" kind="function"><name>ThrowException</name></member>
     <member refid="class_assimp_1_1_log_functions_1ae9034e17bae57cfd200c6d863a1c7db6" kind="function"><name>Prefix</name></member>
+  </compound>
+  <compound refid="class_assimp_1_1_logger" kind="class"><name>Assimp::Logger</name>
+    <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6" kind="enum"><name>ErrorSeverity</name></member>
+    <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6a0cb475014d27098c3423738c571d857f" kind="enumvalue"><name>Debugging</name></member>
+    <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6aa3377a574928b86f7de55c5df154f461" kind="enumvalue"><name>Info</name></member>
+    <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6a1279c77aaee5a3d7df835a9b9305a697" kind="enumvalue"><name>Warn</name></member>
+    <member refid="class_assimp_1_1_logger_1acd0b52a87d6fc11e957ed2c6e2ad75b6a71054d0b1323abcea46d050d69013d27" kind="enumvalue"><name>Err</name></member>
+    <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6" kind="enum"><name>LogSeverity</name></member>
+    <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6a79d16f85dc21486ee489f300027e8eda" kind="enumvalue"><name>NORMAL</name></member>
+    <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6a1c233dd8bb46dc4386948a03877b8160" kind="enumvalue"><name>DEBUGGING</name></member>
+    <member refid="class_assimp_1_1_logger_1a8b6248a0fd062431e8572556350d29e6afc9d1d86aa82fdb80e00c99b3c1ce486" kind="enumvalue"><name>VERBOSE</name></member>
+    <member refid="class_assimp_1_1_logger_1ae1c96711eb927a5b33745a6211e93f56" kind="variable"><name>m_Severity</name></member>
+    <member refid="class_assimp_1_1_logger_1aaf32a42b02a7e227076013d01e349871" kind="function"><name>attachStream</name></member>
+    <member refid="class_assimp_1_1_logger_1a3b10454ab4c0949f251062376d9c4161" kind="function"><name>debug</name></member>
+    <member refid="class_assimp_1_1_logger_1aef61091ba19466b10fe9c65e8bb97623" kind="function"><name>debug</name></member>
+    <member refid="class_assimp_1_1_logger_1a04168fe42b575cb37e71478ee0411d24" kind="function"><name>detachStream</name></member>
+    <member refid="class_assimp_1_1_logger_1aa8b7c3f56dc4cecfdacc8bb36ba3fac1" kind="function"><name>error</name></member>
+    <member refid="class_assimp_1_1_logger_1aef4163260646a7a339e7b3e5d2c56bde" kind="function"><name>error</name></member>
+    <member refid="class_assimp_1_1_logger_1a4b565acf3a82915c35bb18e2a85ab43d" kind="function"><name>getLogSeverity</name></member>
+    <member refid="class_assimp_1_1_logger_1a12b8a125083c47ac0bb6056f00761e52" kind="function"><name>info</name></member>
+    <member refid="class_assimp_1_1_logger_1aa783a83466f9a18d9d45785cc3bbd09d" kind="function"><name>info</name></member>
+    <member refid="class_assimp_1_1_logger_1a8fb4fa4c2c329a36ac39bc9c743925f1" kind="function"><name>setLogSeverity</name></member>
+    <member refid="class_assimp_1_1_logger_1a44c1da5be64b31741facfafa3ae6d8ef" kind="function"><name>verboseDebug</name></member>
+    <member refid="class_assimp_1_1_logger_1a44e6984efe9d55e3b5ead382f2c5a633" kind="function"><name>verboseDebug</name></member>
+    <member refid="class_assimp_1_1_logger_1a32bc5ee4b23df13551b83b925907f1b1" kind="function"><name>warn</name></member>
+    <member refid="class_assimp_1_1_logger_1acc9dfd15751d1a763d23cd207dff94fc" kind="function"><name>warn</name></member>
+    <member refid="class_assimp_1_1_logger_1a27dd2bd4fd3b9cde0635ed22aad687c3" kind="function"><name>~Logger</name></member>
+    <member refid="class_assimp_1_1_logger_1aee1bf9056b72d6b08ef44c7444f4fdc6" kind="function"><name>formatMessage</name></member>
+    <member refid="class_assimp_1_1_logger_1a56fa139549e6382941e9f747489c9f3a" kind="function"><name>formatMessage</name></member>
+    <member refid="class_assimp_1_1_logger_1a17f4cbc042c26935e16eb204ca77c2c1" kind="function"><name>Logger</name></member>
+    <member refid="class_assimp_1_1_logger_1accc0ffea63ddf0982d8c2ba7e07f0716" kind="function"><name>Logger</name></member>
+    <member refid="class_assimp_1_1_logger_1aded6996d20f14204877097b88bd5eac6" kind="function"><name>OnDebug</name></member>
+    <member refid="class_assimp_1_1_logger_1ae2ea0790aba6125b90af0f2768b0759d" kind="function"><name>OnError</name></member>
+    <member refid="class_assimp_1_1_logger_1aba81c4562ff8db83f06c6b62f2eb7983" kind="function"><name>OnInfo</name></member>
+    <member refid="class_assimp_1_1_logger_1a6bf0004c40f89a73b21633cff93c9ec0" kind="function"><name>OnVerboseDebug</name></member>
+    <member refid="class_assimp_1_1_logger_1ab8066978dd37992f711d75d49cf4607b" kind="function"><name>OnWarn</name></member>
+  </compound>
+  <compound refid="class_assimp_1_1_log_stream" kind="class"><name>Assimp::LogStream</name>
+    <member refid="class_assimp_1_1_log_stream_1aca07b1b2d95a8ffd4c3704e033facb26" kind="function"><name>LogStream</name></member>
+    <member refid="class_assimp_1_1_log_stream_1ab0bfcb5ab9988ef65d7222a50f6e8d37" kind="function"><name>write</name></member>
+    <member refid="class_assimp_1_1_log_stream_1a2cf7080efeb4999a02689f2a31843da2" kind="function"><name>~LogStream</name></member>
+    <member refid="class_assimp_1_1_log_stream_1a60d741018b0f93d0e494e5e8a996b958" kind="function"><name>createDefaultStream</name></member>
   </compound>
   <compound refid="class_assimp_1_1_memory_i_o_stream" kind="class"><name>Assimp::MemoryIOStream</name>
     <member refid="class_assimp_1_1_memory_i_o_stream_1af95cea690be54b7d762319f47d7d947f" kind="variable"><name>buffer</name></member>
@@ -944,12 +1157,29 @@
   <compound refid="struct_assimp_1_1_node_converter" kind="struct"><name>Assimp::NodeConverter</name>
     <member refid="struct_assimp_1_1_node_converter_1a344e06e7e40ca0bde0c80b15b88f324e" kind="function"><name>to_int</name></member>
   </compound>
+  <compound refid="class_assimp_1_1_null_logger" kind="class"><name>Assimp::NullLogger</name>
+    <member refid="class_assimp_1_1_null_logger_1a31c05ecaee392b5fd34fd2dfd1cca559" kind="function"><name>attachStream</name></member>
+    <member refid="class_assimp_1_1_null_logger_1a071c06bd70831e2e5da932ca806423d8" kind="function"><name>detachStream</name></member>
+    <member refid="class_assimp_1_1_null_logger_1af354ebbd382b7097a55d364794a45631" kind="function"><name>OnDebug</name></member>
+    <member refid="class_assimp_1_1_null_logger_1a4fbf66103757fafcff891fb04b4ee714" kind="function"><name>OnError</name></member>
+    <member refid="class_assimp_1_1_null_logger_1a12d2b0048d17a819c8c00277ad1394c5" kind="function"><name>OnInfo</name></member>
+    <member refid="class_assimp_1_1_null_logger_1aa1817f1e94f406931d138a510b32e16e" kind="function"><name>OnVerboseDebug</name></member>
+    <member refid="class_assimp_1_1_null_logger_1a9a04c2b9e3d4bc9eec8f693ed8115f24" kind="function"><name>OnWarn</name></member>
+  </compound>
   <compound refid="class_assimp_1_1_profiling_1_1_profiler" kind="class"><name>Assimp::Profiling::Profiler</name>
     <member refid="class_assimp_1_1_profiling_1_1_profiler_1a8eb0cc855601dcbdf8a33a8125d27ea1" kind="typedef"><name>RegionMap</name></member>
     <member refid="class_assimp_1_1_profiling_1_1_profiler_1a8d1b7c279a2ef9ffe5d14e2118a2926a" kind="variable"><name>regions</name></member>
     <member refid="class_assimp_1_1_profiling_1_1_profiler_1a45e182494822c3c276f0508c23405d94" kind="function"><name>BeginRegion</name></member>
     <member refid="class_assimp_1_1_profiling_1_1_profiler_1a67ae536cfdd0844c67486243707d93f5" kind="function"><name>EndRegion</name></member>
     <member refid="class_assimp_1_1_profiling_1_1_profiler_1a6995b89263e75fc268b34c8419d4e5cd" kind="function"><name>Profiler</name></member>
+  </compound>
+  <compound refid="class_assimp_1_1_progress_handler" kind="class"><name>Assimp::ProgressHandler</name>
+    <member refid="class_assimp_1_1_progress_handler_1a9ce9dc7ed454b321d25ba8a57fb5d44c" kind="function"><name>ProgressHandler</name></member>
+    <member refid="class_assimp_1_1_progress_handler_1ab08a1d300d434f6dd86ca41747cba448" kind="function"><name>Update</name></member>
+    <member refid="class_assimp_1_1_progress_handler_1a0c867692ee9d1e25dec1e2f08fb5e20d" kind="function"><name>UpdateFileRead</name></member>
+    <member refid="class_assimp_1_1_progress_handler_1a9e20cd6efa21bb174e1185c6737405e9" kind="function"><name>UpdateFileWrite</name></member>
+    <member refid="class_assimp_1_1_progress_handler_1a57b30d2a9b2ae1f932918f18c30196ed" kind="function"><name>UpdatePostProcess</name></member>
+    <member refid="class_assimp_1_1_progress_handler_1a3ec465a62e1feaae00f585ca0cffb81e" kind="function"><name>~ProgressHandler</name></member>
   </compound>
   <compound refid="class_assimp_1_1_scene_combiner" kind="class"><name>Assimp::SceneCombiner</name>
     <member refid="class_assimp_1_1_scene_combiner_1a23067abcfa97c8e7dcecc4df189fc649" kind="function"><name>SceneCombiner</name></member>
@@ -1284,6 +1514,7 @@
     <member refid="namespace_assimp_1ad9aa76cdbe59a3c057f55760f3a02c0a" kind="typedef"><name>XmlNode</name></member>
     <member refid="namespace_assimp_1a6295df0173c66269feae004611f499a2" kind="typedef"><name>XmlParser</name></member>
     <member refid="namespace_assimp_1a20dc8581fd6ec886730e4cb443066f87" kind="variable"><name>BufferSize</name></member>
+    <member refid="namespace_assimp_1a81d358b0d2907db3ffe185d60f41aa83" kind="variable"><name>ExportProperties</name></member>
     <member refid="namespace_assimp_1a54a4f58b78bc7d84c70aad4cc5eb79d5" kind="variable"><name>fast_atof_table</name></member>
     <member refid="namespace_assimp_1a791c7116274a21bd2df15a70e3064676" kind="function"><name>ai_stdStrToLower</name></member>
     <member refid="namespace_assimp_1af6a0db3a1d33afe33dbfb5346ae7da70" kind="function"><name>aiCreateAnimMesh</name></member>
@@ -1345,6 +1576,8 @@
     <member refid="namespace_assimp_1_1_math_1a918eb7bddac3741e7cf72dd900a90a0c" kind="function"><name>lcm</name></member>
   </compound>
   <compound refid="namespace_assimp_1_1_profiling" kind="namespace"><name>Assimp::Profiling</name>
+  </compound>
+  <compound refid="namespace_intern" kind="namespace"><name>Intern</name>
   </compound>
   <compound refid="namespacestd" kind="namespace"><name>std</name>
   </compound>
@@ -1689,6 +1922,9 @@
   <compound refid="_default_i_o_system_8h" kind="file"><name>DefaultIOSystem.h</name>
     <member refid="_default_i_o_system_8h_1add72ed68a15ef02ed4fca6421fff9743" kind="define"><name>AI_DEFAULTIOSYSTEM_H_INC</name></member>
   </compound>
+  <compound refid="_default_logger_8hpp" kind="file"><name>DefaultLogger.hpp</name>
+    <member refid="_default_logger_8hpp_1a5e31e6d6c9f8a8954134f3da38fec0a0" kind="define"><name>ASSIMP_DEFAULT_LOG_NAME</name></member>
+  </compound>
   <compound refid="_defines_8h" kind="file"><name>Defines.h</name>
     <member refid="_defines_8h_1a57a6fff0b6635956645fdd5c6e1de1a6" kind="define"><name>AI_DEFINES_H_INC</name></member>
     <member refid="_defines_8h_1a3c75bb398badb69c7577b21486f9963f" kind="define"><name>SIZE_MAX</name></member>
@@ -1734,6 +1970,9 @@
     <member refid="_exceptional_8h_1a98cb8e1e422caa0f1052825ac667883f" kind="define"><name>ASSIMP_END_EXCEPTION_REGION</name></member>
     <member refid="_exceptional_8h_1a294c088a0b0c058f5e61e876de77e89d" kind="define"><name>ASSIMP_END_EXCEPTION_REGION_WITH_ERROR_STRING</name></member>
   </compound>
+  <compound refid="_exporter_8hpp" kind="file"><name>Exporter.hpp</name>
+    <member refid="_exporter_8hpp_1a156cbd11a9ec69bae7ccf91ec9de8222" kind="define"><name>AI_EXPORT_HPP_INC</name></member>
+  </compound>
   <compound refid="fast__atof_8h" kind="file"><name>fast_atof.h</name>
     <member refid="fast__atof_8h_1ad5c925e60f317772de6318066b4daa6a" kind="define"><name>AI_FAST_ATOF_RELAVANT_DECIMALS</name></member>
     <member refid="fast__atof_8h_1a3f8fcf19fce24f8d7fe8ee63db6cc51a" kind="define"><name>FAST_A_TO_F_H_INCLUDED</name></member>
@@ -1750,6 +1989,10 @@
     <member refid="_hash_8h_1abc7d71657be8975a51684e41029b7964" kind="define"><name>get16bits</name></member>
     <member refid="_hash_8h_1ae981f4859f21df7e68c3b7925ed35600" kind="function"><name>SuperFastHash</name></member>
   </compound>
+  <compound refid="_importer_8hpp" kind="file"><name>Importer.hpp</name>
+    <member refid="_importer_8hpp_1a5c981017bdc01cdf69aeb781344c2aff" kind="define"><name>AI_ASSIMP_HPP_INC</name></member>
+    <member refid="_importer_8hpp_1adb9160ea5bf307fd2ee2b1fb945a4468" kind="define"><name>AI_PROPERTY_WAS_NOT_EXISTING</name></member>
+  </compound>
   <compound refid="importerdesc_8h" kind="file"><name>importerdesc.h</name>
     <member refid="importerdesc_8h_1ace56c61d92c8f89d1bb82b393b73da81" kind="define"><name>AI_IMPORTER_DESC_H_INC</name></member>
     <member refid="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449" kind="enum"><name>aiImporterFlags</name></member>
@@ -1760,8 +2003,14 @@
     <member refid="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449aff5af9356317719908b4dee9b50588f3" kind="enumvalue"><name>aiImporterFlags_Experimental</name></member>
     <member refid="importerdesc_8h_1a386ceeb900d23c080961e42a422e45bc" kind="function"><name>aiGetImporterDesc</name></member>
   </compound>
+  <compound refid="_i_o_stream_8hpp" kind="file"><name>IOStream.hpp</name>
+    <member refid="_i_o_stream_8hpp_1ace19faed05e7a941220d5337528ddb9c" kind="define"><name>AI_IOSTREAM_H_INC</name></member>
+  </compound>
   <compound refid="_i_o_stream_buffer_8h" kind="file"><name>IOStreamBuffer.h</name>
     <member refid="_i_o_stream_buffer_8h_1ab640518960ab8aad9c03c63481070e8a" kind="define"><name>AI_IOSTREAMBUFFER_H_INC</name></member>
+  </compound>
+  <compound refid="_i_o_system_8hpp" kind="file"><name>IOSystem.hpp</name>
+    <member refid="_i_o_system_8hpp_1a97dd8264e55a5aac38122da34ea489e8" kind="define"><name>AI_IOSYSTEM_H_INC</name></member>
   </compound>
   <compound refid="light_8h" kind="file"><name>light.h</name>
     <member refid="light_8h_1a7f9d67609e200bdeea07a539a1433c0f" kind="define"><name>AI_LIGHT_H_INC</name></member>
@@ -1779,6 +2028,16 @@
   </compound>
   <compound refid="_log_aux_8h" kind="file"><name>LogAux.h</name>
     <member refid="_log_aux_8h_1a806d8caf5482028503dd35f25f39bdc0" kind="define"><name>INCLUDED_AI_LOGAUX_H</name></member>
+  </compound>
+  <compound refid="_logger_8hpp" kind="file"><name>Logger.hpp</name>
+    <member refid="_logger_8hpp_1a1a20dc2c2ad4ba28557c1c53375589c9" kind="define"><name>ASSIMP_LOG_DEBUG</name></member>
+    <member refid="_logger_8hpp_1af9c5f9debd2b062dec87a32121cf12dd" kind="define"><name>ASSIMP_LOG_ERROR</name></member>
+    <member refid="_logger_8hpp_1a02b8b6684736711bfc07e74805d314bd" kind="define"><name>ASSIMP_LOG_INFO</name></member>
+    <member refid="_logger_8hpp_1a2e93a38394c31960fa5a2f51a7c32da9" kind="define"><name>ASSIMP_LOG_VERBOSE_DEBUG</name></member>
+    <member refid="_logger_8hpp_1ae2042ef82dfa543c7f03ae9766067552" kind="define"><name>ASSIMP_LOG_WARN</name></member>
+    <member refid="_logger_8hpp_1a3adf7dc8e9dcfe1da6e33aa8043a80c3" kind="define"><name>MAX_LOG_MESSAGE_LENGTH</name></member>
+  </compound>
+  <compound refid="_log_stream_8hpp" kind="file"><name>LogStream.hpp</name>
   </compound>
   <compound refid="material_8h" kind="file"><name>material.h</name>
     <member refid="material_8h_1a33e111ac1601d2f4225dc135fbb48d20" kind="define"><name>AI_DEFAULT_MATERIAL_NAME</name></member>
@@ -1997,6 +2256,8 @@
     <member refid="metadata_8h_1aca6fb4caf4726c9be9d6a91365c3ebca" kind="function"><name>GetAiType</name></member>
     <member refid="metadata_8h_1a6d9f32bb67cecb8aa9d611205d0d99bd" kind="function"><name>GetAiType</name></member>
   </compound>
+  <compound refid="_null_logger_8hpp" kind="file"><name>NullLogger.hpp</name>
+  </compound>
   <compound refid="_parsing_utils_8h" kind="file"><name>ParsingUtils.h</name>
     <member refid="_parsing_utils_8h_1a1d0b610b6fd23f4a1be0957a10e10044" kind="define"><name>AI_PARSING_UTILS_H_INC</name></member>
   </compound>
@@ -2062,6 +2323,9 @@
   </compound>
   <compound refid="_profiler_8h" kind="file"><name>Profiler.h</name>
     <member refid="_profiler_8h_1a3d3972ed28c8f651be915101f12e9746" kind="define"><name>AI_INCLUDED_PROFILER_H</name></member>
+  </compound>
+  <compound refid="_progress_handler_8hpp" kind="file"><name>ProgressHandler.hpp</name>
+    <member refid="_progress_handler_8hpp_1a74460b8d99076460b57b7be247aa9814" kind="define"><name>AI_PROGRESSHANDLER_H_INC</name></member>
   </compound>
   <compound refid="pstdint_8h" kind="file"><name>pstdint.h</name>
     <member refid="pstdint_8h_1a91cbfa927fe8e3fc657296bfe67849a6" kind="define"><name>_PSTDINT_H_INCLUDED</name></member>

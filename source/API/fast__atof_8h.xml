@@ -7,21 +7,21 @@
     <includes local="no">stdint.h</includes>
     <includes refid="defs_8h" local="no">assimp/defs.h</includes>
     <includes refid="_string_comparison_8h" local="yes">StringComparison.h</includes>
-    <includes local="no">assimp/DefaultLogger.hpp</includes>
+    <includes refid="_default_logger_8hpp" local="no">assimp/DefaultLogger.hpp</includes>
     <includes refid="_exceptional_8h" local="no">assimp/Exceptional.h</includes>
     <includes refid="_string_utils_8h" local="no">assimp/StringUtils.h</includes>
     <includes refid="pstdint_8h" local="no">assimp/Compiler/pstdint.h</includes>
     <incdepgraph>
-      <node id="39">
+      <node id="43">
         <label>locale</label>
       </node>
-      <node id="40">
+      <node id="44">
         <label>iomanip</label>
       </node>
-      <node id="27">
+      <node id="23">
         <label>assimp/matrix4x4.h</label>
         <link refid="matrix4x4_8h"/>
-        <childnode refid="24" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -29,27 +29,35 @@
       <node id="3">
         <label>limits</label>
       </node>
-      <node id="34">
+      <node id="26">
+        <label>Logger.hpp</label>
+        <link refid="_logger_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
         <label>assimp/StringUtils.h</label>
         <link refid="_string_utils_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="37" relation="include">
-        </childnode>
-        <childnode refid="38" relation="include">
-        </childnode>
         <childnode refid="39" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="40" relation="include">
         </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
       </node>
-      <node id="24">
+      <node id="20">
         <label>assimp/vector3.h</label>
         <link refid="vector3_8h"/>
         <childnode refid="2" relation="include">
@@ -57,84 +65,87 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="35">
         <label>assimp/importerdesc.h</label>
         <link refid="importerdesc_8h"/>
-        <childnode refid="18" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
       <node id="9">
         <label>cstdint</label>
       </node>
-      <node id="31">
+      <node id="27">
         <label>assimp/TinyFormatter.h</label>
         <link refid="_tiny_formatter_8h"/>
-        <childnode refid="32" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
-      <node id="41">
+      <node id="45">
         <label>assimp/Compiler/pstdint.h</label>
         <link refid="pstdint_8h"/>
-        <childnode refid="20" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
       </node>
       <node id="4">
         <label>stdint.h</label>
       </node>
-      <node id="18">
-        <label>assimp/types.h</label>
+      <node id="14">
+        <label>types.h</label>
         <link refid="types_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>assimp/IOStream.hpp</label>
+        <link refid="_i_o_stream_8hpp"/>
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
       <node id="2">
         <label>cmath</label>
       </node>
-      <node id="16">
-        <label>assimp/IOStream.hpp</label>
-      </node>
-      <node id="33">
+      <node id="37">
         <label>stdexcept</label>
       </node>
-      <node id="26">
+      <node id="22">
         <label>assimp/matrix3x3.h</label>
         <link refid="matrix3x3_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="35">
+      <node id="39">
         <label>cstdarg</label>
       </node>
       <node id="11">
@@ -156,35 +167,35 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="16">
         <label>stddef.h</label>
       </node>
       <node id="6">
         <label>assimp/config.h</label>
         <link refid="config_8h"/>
       </node>
-      <node id="14">
+      <node id="32">
         <label>assimp/DefaultIOStream.h</label>
         <link refid="_default_i_o_stream_8h"/>
-        <childnode refid="15" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="15">
         <label>limits.h</label>
       </node>
-      <node id="22">
+      <node id="18">
         <label>sys/types.h</label>
       </node>
-      <node id="21">
+      <node id="17">
         <label>string.h</label>
       </node>
-      <node id="28">
+      <node id="24">
         <label>assimp/quaternion.h</label>
         <link refid="quaternion_8h"/>
         <childnode refid="5" relation="include">
@@ -196,29 +207,44 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
+      <node id="29">
+        <label>NullLogger.hpp</label>
+        <link refid="_null_logger_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vector</label>
+      </node>
       <node id="5">
         <label>assimp/defs.h</label>
         <link refid="defs_8h"/>
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="42">
+      <node id="46">
         <label>signal.h</label>
       </node>
-      <node id="13">
+      <node id="31">
         <label>assimp/Exceptional.h</label>
         <link refid="_exceptional_8h"/>
-        <childnode refid="14" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
       </node>
-      <node id="29">
+      <node id="25">
         <label>new</label>
       </node>
-      <node id="32">
+      <node id="13">
+        <label>LogStream.hpp</label>
+        <link refid="_log_stream_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
         <label>sstream</label>
       </node>
       <node id="1">
@@ -236,26 +262,26 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="45" relation="include">
         </childnode>
       </node>
-      <node id="38">
+      <node id="42">
         <label>cstdlib</label>
       </node>
-      <node id="37">
+      <node id="41">
         <label>cctype</label>
       </node>
-      <node id="25">
+      <node id="21">
         <label>assimp/color4.h</label>
         <link refid="color4_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="19">
         <label>assimp/vector2.h</label>
         <link refid="vector2_8h"/>
         <childnode refid="2" relation="include">
@@ -263,19 +289,28 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="36">
+      <node id="40">
         <label>algorithm</label>
       </node>
-      <node id="15">
+      <node id="12">
+        <label>assimp/DefaultLogger.hpp</label>
+        <link refid="_default_logger_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
         <label>stdio.h</label>
       </node>
       <node id="10">
         <label>cstring</label>
       </node>
-      <node id="12">
-        <label>assimp/DefaultLogger.hpp</label>
-      </node>
-      <node id="30">
+      <node id="36">
         <label>assimp/Defines.h</label>
         <link refid="_defines_8h"/>
       </node>
@@ -338,7 +373,7 @@
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="defs_8h" kindref="compound">assimp/defs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_string_comparison_8h" kindref="compound">StringComparison.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assimp/DefaultLogger.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_default_logger_8hpp" kindref="compound">assimp/DefaultLogger.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_exceptional_8h" kindref="compound">assimp/Exceptional.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_string_utils_8h" kindref="compound">assimp/StringUtils.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
@@ -517,7 +552,7 @@
 <codeline lineno="206"><highlight class="normal"></highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>numeric<sp/>overflow,<sp/>we<sp/>rely<sp/>on<sp/>you</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>new_value<sp/>&lt;<sp/>value<sp/>)<sp/>{</highlight></codeline>
-<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSIMP_LOG_WARN(<sp/></highlight><highlight class="stringliteral">&quot;Converting<sp/>the<sp/>string<sp/>\&quot;&quot;</highlight><highlight class="normal">,<sp/>in,<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>into<sp/>a<sp/>value<sp/>resulted<sp/>in<sp/>overflow.&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8hpp_1ae2042ef82dfa543c7f03ae9766067552" kindref="member">ASSIMP_LOG_WARN</ref>(<sp/></highlight><highlight class="stringliteral">&quot;Converting<sp/>the<sp/>string<sp/>\&quot;&quot;</highlight><highlight class="normal">,<sp/>in,<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>into<sp/>a<sp/>value<sp/>resulted<sp/>in<sp/>overflow.&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="212"><highlight class="normal"></highlight></codeline>

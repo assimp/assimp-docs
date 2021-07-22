@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_progress_handler" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Assimp::ProgressHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Intern::AllocateFromAssimpHeap</basecompoundref>
+    <includes local="no">ProgressHandler.hpp</includes>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_assimp_1_1_progress_handler_1a9ce9dc7ed454b321d25ba8a57fb5d44c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ProgressHandler::ProgressHandler</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>ProgressHandler</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ProgressHandler.hpp" line="70" column="5" bodyfile="include/assimp/ProgressHandler.hpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_progress_handler_1ab08a1d300d434f6dd86ca41747cba448" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Assimp::ProgressHandler::Update</definition>
+        <argsstring>(float percentage=-1.f)=0</argsstring>
+        <name>Update</name>
+        <param>
+          <type>float</type>
+          <declname>percentage</declname>
+          <defval>-1.f</defval>
+        </param>
+        <briefdescription>
+<para>Progress callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>percentage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An estimate of the current loading progress, in percent. Or -1.f if such an estimate is not available.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+There are restriction on what you may do from within your implementation of this method: no exceptions may be thrown and no non-const #Importer methods may be called. It is not generally possible to predict the number of callbacks fired during a single import.</para>
+<para><simplesect kind="return"><para>Return false to abort loading at the next possible occasion (loaders and <ref refid="namespace_assimp" kindref="compound">Assimp</ref> are generally allowed to perform all needed cleanup tasks prior to returning control to the caller). If the loading is aborted, #Importer::ReadFile() returns always nullptr. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ProgressHandler.hpp" line="96" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_progress_handler_1a0c867692ee9d1e25dec1e2f08fb5e20d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Assimp::ProgressHandler::UpdateFileRead</definition>
+        <argsstring>(int currentStep, int numberOfSteps)</argsstring>
+        <name>UpdateFileRead</name>
+        <param>
+          <type>int</type>
+          <declname>currentStep</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numberOfSteps</declname>
+        </param>
+        <briefdescription>
+<para>Progress callback for file loading steps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberOfSteps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of total post-processing steps </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentStep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the current post-processing step that will run, or equal to numberOfSteps if all of them has finished. This number is always strictly monotone increasing, although not necessarily linearly.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This is currently only used at the start and the end of the file parsing. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ProgressHandler.hpp" line="110" column="18" bodyfile="include/assimp/ProgressHandler.hpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_progress_handler_1a9e20cd6efa21bb174e1185c6737405e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Assimp::ProgressHandler::UpdateFileWrite</definition>
+        <argsstring>(int currentStep, int numberOfSteps)</argsstring>
+        <name>UpdateFileWrite</name>
+        <param>
+          <type>int</type>
+          <declname>currentStep</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numberOfSteps</declname>
+        </param>
+        <briefdescription>
+<para>Progress callback for export steps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberOfSteps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of total processing steps </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentStep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the current post-processing step that will run, or equal to numberOfSteps if all of them has finished. This number is always strictly monotone increasing, although not necessarily linearly. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ProgressHandler.hpp" line="139" column="18" bodyfile="include/assimp/ProgressHandler.hpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_progress_handler_1a57b30d2a9b2ae1f932918f18c30196ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Assimp::ProgressHandler::UpdatePostProcess</definition>
+        <argsstring>(int currentStep, int numberOfSteps)</argsstring>
+        <name>UpdatePostProcess</name>
+        <param>
+          <type>int</type>
+          <declname>currentStep</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numberOfSteps</declname>
+        </param>
+        <briefdescription>
+<para>Progress callback for post-processing steps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberOfSteps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of total post-processing steps </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentStep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the current post-processing step that will run, or equal to numberOfSteps if all of them has finished. This number is always strictly monotone increasing, although not necessarily linearly. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ProgressHandler.hpp" line="124" column="18" bodyfile="include/assimp/ProgressHandler.hpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_progress_handler_1a3ec465a62e1feaae00f585ca0cffb81e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Assimp::ProgressHandler::~ProgressHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~ProgressHandler</name>
+        <briefdescription>
+<para>Virtual destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ProgressHandler.hpp" line="76" column="13" bodyfile="include/assimp/ProgressHandler.hpp" bodystart="76" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CPP-API: Abstract interface for custom progress report receivers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Each #Importer instance maintains its own <ref refid="class_assimp_1_1_progress_handler_1a9ce9dc7ed454b321d25ba8a57fb5d44c" kindref="member">ProgressHandler</ref>. The default implementation provided by <ref refid="namespace_assimp" kindref="compound">Assimp</ref> doesn&apos;t do anything at all. </para>
+    </detaileddescription>
+    <location file="include/assimp/ProgressHandler.hpp" line="63" column="1" bodyfile="include/assimp/ProgressHandler.hpp" bodystart="67" bodyend="143"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_progress_handler_1a9ce9dc7ed454b321d25ba8a57fb5d44c" prot="protected" virt="non-virtual"><scope>Assimp::ProgressHandler</scope><name>ProgressHandler</name></member>
+      <member refid="class_assimp_1_1_progress_handler_1ab08a1d300d434f6dd86ca41747cba448" prot="public" virt="pure-virtual"><scope>Assimp::ProgressHandler</scope><name>Update</name></member>
+      <member refid="class_assimp_1_1_progress_handler_1a0c867692ee9d1e25dec1e2f08fb5e20d" prot="public" virt="virtual"><scope>Assimp::ProgressHandler</scope><name>UpdateFileRead</name></member>
+      <member refid="class_assimp_1_1_progress_handler_1a9e20cd6efa21bb174e1185c6737405e9" prot="public" virt="virtual"><scope>Assimp::ProgressHandler</scope><name>UpdateFileWrite</name></member>
+      <member refid="class_assimp_1_1_progress_handler_1a57b30d2a9b2ae1f932918f18c30196ed" prot="public" virt="virtual"><scope>Assimp::ProgressHandler</scope><name>UpdatePostProcess</name></member>
+      <member refid="class_assimp_1_1_progress_handler_1a3ec465a62e1feaae00f585ca0cffb81e" prot="public" virt="virtual"><scope>Assimp::ProgressHandler</scope><name>~ProgressHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
