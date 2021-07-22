@@ -1,0 +1,1122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="defs_8h" kind="file" language="C++">
+    <compoundname>defs.h</compoundname>
+    <includes refid="config_8h" local="no">assimp/config.h</includes>
+    <includedby refid="ai__assert_8h" local="no">ai_assert.h</includedby>
+    <includedby refid="_bitmap_8h" local="yes">Bitmap.h</includedby>
+    <includedby refid="color4_8h" local="no">color4.h</includedby>
+    <includedby refid="fast__atof_8h" local="no">fast_atof.h</includedby>
+    <includedby refid="matrix3x3_8h" local="no">matrix3x3.h</includedby>
+    <includedby refid="matrix4x4_8h" local="no">matrix4x4.h</includedby>
+    <includedby refid="_parsing_utils_8h" local="no">ParsingUtils.h</includedby>
+    <includedby refid="qnan_8h" local="no">qnan.h</includedby>
+    <includedby refid="quaternion_8h" local="no">quaternion.h</includedby>
+    <includedby refid="_remove_comments_8h" local="no">RemoveComments.h</includedby>
+    <includedby refid="_string_comparison_8h" local="no">StringComparison.h</includedby>
+    <includedby refid="_string_utils_8h" local="no">StringUtils.h</includedby>
+    <includedby refid="types_8h" local="no">types.h</includedby>
+    <includedby refid="vector2_8h" local="yes">vector2.h</includedby>
+    <includedby refid="vector3_8h" local="no">vector3.h</includedby>
+    <includedby refid="version_8h" local="no">version.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="1">
+        <label>defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>MemoryIOWrapper.h</label>
+        <link refid="_memory_i_o_wrapper_8h"/>
+      </node>
+      <node id="41">
+        <label>SpatialSort.h</label>
+        <link refid="_spatial_sort_8h"/>
+      </node>
+      <node id="7">
+        <label>GenericProperty.h</label>
+        <link refid="_generic_property_8h"/>
+      </node>
+      <node id="47">
+        <label>matrix4x4.h</label>
+        <link refid="matrix4x4_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>StringUtils.h</label>
+        <link refid="_string_utils_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ByteSwapper.h</label>
+        <link refid="_byte_swapper_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>BaseImporter.h</label>
+        <link refid="_base_importer_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>material.h</label>
+        <link refid="material_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>BlobIOSystem.h</label>
+        <link refid="_blob_i_o_system_8h"/>
+      </node>
+      <node id="28">
+        <label>importerdesc.h</label>
+        <link refid="importerdesc_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>LogAux.h</label>
+        <link refid="_log_aux_8h"/>
+      </node>
+      <node id="36">
+        <label>SkeletonMeshBuilder.h</label>
+        <link refid="_skeleton_mesh_builder_8h"/>
+      </node>
+      <node id="32">
+        <label>light.h</label>
+        <link refid="light_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>StandardShapes.h</label>
+        <link refid="_standard_shapes_8h"/>
+      </node>
+      <node id="26">
+        <label>cfileio.h</label>
+        <link refid="cfileio_8h"/>
+      </node>
+      <node id="23">
+        <label>camera.h</label>
+        <link refid="camera_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SceneCombiner.h</label>
+        <link refid="_scene_combiner_8h"/>
+      </node>
+      <node id="19">
+        <label>types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>CreateAnimMesh.h</label>
+        <link refid="_create_anim_mesh_8h"/>
+      </node>
+      <node id="44">
+        <label>matrix3x3.h</label>
+        <link refid="matrix3x3_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>LineSplitter.h</label>
+        <link refid="_line_splitter_8h"/>
+      </node>
+      <node id="4">
+        <label>StreamReader.h</label>
+        <link refid="_stream_reader_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Bitmap.h</label>
+        <link refid="_bitmap_8h"/>
+      </node>
+      <node id="10">
+        <label>StringComparison.h</label>
+        <link refid="_string_comparison_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>IOStreamBuffer.h</label>
+        <link refid="_i_o_stream_buffer_8h"/>
+      </node>
+      <node id="18">
+        <label>color4.inl</label>
+        <link refid="color4_8inl"/>
+      </node>
+      <node id="29">
+        <label>DefaultIOStream.h</label>
+        <link refid="_default_i_o_stream_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>SGSpatialSort.h</label>
+        <link refid="_s_g_spatial_sort_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>matrix4x4.inl</label>
+        <link refid="matrix4x4_8inl"/>
+      </node>
+      <node id="20">
+        <label>anim.h</label>
+        <link refid="anim_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>qnan.h</label>
+        <link refid="qnan_8h"/>
+      </node>
+      <node id="50">
+        <label>quaternion.inl</label>
+        <link refid="quaternion_8inl"/>
+      </node>
+      <node id="59">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="49">
+        <label>quaternion.h</label>
+        <link refid="quaternion_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>vector3.inl</label>
+        <link refid="vector3_8inl"/>
+      </node>
+      <node id="2">
+        <label>ai_assert.h</label>
+        <link refid="ai__assert_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>vector2.inl</label>
+        <link refid="vector2_8inl"/>
+      </node>
+      <node id="39">
+        <label>SmoothingGroups.inl</label>
+        <link refid="_smoothing_groups_8inl"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Exceptional.h</label>
+        <link refid="_exceptional_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>texture.h</label>
+        <link refid="texture_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>cimport.h</label>
+        <link refid="cimport_8h"/>
+      </node>
+      <node id="14">
+        <label>Vertex.h</label>
+        <link refid="_vertex_8h"/>
+      </node>
+      <node id="11">
+        <label>fast_atof.h</label>
+        <link refid="fast__atof_8h"/>
+      </node>
+      <node id="12">
+        <label>ParsingUtils.h</label>
+        <link refid="_parsing_utils_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>StreamWriter.h</label>
+        <link refid="_stream_writer_8h"/>
+      </node>
+      <node id="21">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+      </node>
+      <node id="17">
+        <label>color4.h</label>
+        <link refid="color4_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>postprocess.h</label>
+        <link refid="postprocess_8h"/>
+      </node>
+      <node id="40">
+        <label>SmoothingGroups.h</label>
+        <link refid="_smoothing_groups_8h"/>
+      </node>
+      <node id="34">
+        <label>mesh.h</label>
+        <link refid="mesh_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>XmlParser.h</label>
+        <link refid="_xml_parser_8h"/>
+      </node>
+      <node id="24">
+        <label>cexport.h</label>
+        <link refid="cexport_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>RemoveComments.h</label>
+        <link refid="_remove_comments_8h"/>
+      </node>
+      <node id="42">
+        <label>Subdivision.h</label>
+        <link refid="_subdivision_8h"/>
+      </node>
+      <node id="45">
+        <label>matrix3x3.inl</label>
+        <link refid="matrix3x3_8inl"/>
+      </node>
+      <node id="56">
+        <label>aabb.h</label>
+        <link refid="aabb_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="defs_8h_1a186d6c33f8a3f175e78d0ffea7a293b2" prot="public" static="no">
+        <name>AI_DEBUG_INVALIDATE_PTR</name>
+        <param><defname>x</defname></param>
+        <initializer>x = NULL;</initializer>
+        <briefdescription>
+<para>Helper macro to set a pointer to NULL in debug builds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="320" column="9" bodyfile="include/assimp/defs.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a57a6fff0b6635956645fdd5c6e1de1a6" prot="public" static="no">
+        <name>AI_DEFINES_H_INC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="49" column="9" bodyfile="include/assimp/defs.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ab457a997c38cb15a04238093ccb8da6b" prot="public" static="no">
+        <name>AI_DEG_TO_RAD</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) * (<ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref>)0.0174532925)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="273" column="9" bodyfile="include/assimp/defs.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" prot="public" static="no">
+        <name>AI_FORCE_INLINE</name>
+        <initializer>inline</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="173" column="11" bodyfile="include/assimp/defs.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a4d80e07f67fe2a67e11ccdddc8be8b92" prot="public" static="no">
+        <name>AI_MATH_HALF_PI</name>
+        <initializer>(<ref refid="defs_8h_1adfcdc5ae26a9eeb57918b26d8941cc9e" kindref="member">AI_MATH_PI</ref> * 0.5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="265" column="9" bodyfile="include/assimp/defs.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a94ffb29cb64e3bf37f6b7ead4ea58fb0" prot="public" static="no">
+        <name>AI_MATH_HALF_PI_F</name>
+        <initializer>(<ref refid="defs_8h_1a97016e8c63f1b2ed298875d4aa97e86d" kindref="member">AI_MATH_PI_F</ref> * 0.5f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="270" column="9" bodyfile="include/assimp/defs.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1adfcdc5ae26a9eeb57918b26d8941cc9e" prot="public" static="no">
+        <name>AI_MATH_PI</name>
+        <initializer>(3.141592653589793238462643383279)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="263" column="9" bodyfile="include/assimp/defs.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a97016e8c63f1b2ed298875d4aa97e86d" prot="public" static="no">
+        <name>AI_MATH_PI_F</name>
+        <initializer>(3.1415926538f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="268" column="9" bodyfile="include/assimp/defs.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a2ceb8d0f984e265c05f58a4c6ca0b059" prot="public" static="no">
+        <name>AI_MATH_TWO_PI</name>
+        <initializer>(<ref refid="defs_8h_1adfcdc5ae26a9eeb57918b26d8941cc9e" kindref="member">AI_MATH_PI</ref> * 2.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="264" column="9" bodyfile="include/assimp/defs.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a96203cd8c8fba9725a7ff8ea2043589c" prot="public" static="no">
+        <name>AI_MATH_TWO_PI_F</name>
+        <initializer>(<ref refid="defs_8h_1a97016e8c63f1b2ed298875d4aa97e86d" kindref="member">AI_MATH_PI_F</ref> * 2.0f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="269" column="9" bodyfile="include/assimp/defs.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a216caf4a489fc78cbd1fd3a0a7a3e614" prot="public" static="no">
+        <name>AI_MAX_ALLOC</name>
+        <param><defname>type</defname></param>
+        <initializer>((256U * 1024 * 1024) / sizeof(type))</initializer>
+        <briefdescription>
+<para>To avoid running out of memory This can be adjusted for specific use cases It&apos;s NOT a total limit, just a limit for individual allocations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="300" column="9" bodyfile="include/assimp/defs.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ae032f18edd69bf6ba935ef9feb025a96" prot="public" static="no">
+        <name>AI_NO_EXCEPT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="306" column="10" bodyfile="include/assimp/defs.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a15c69e04b926bf32df8850e528b48acc" prot="public" static="no">
+        <name>AI_RAD_TO_DEG</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) * (<ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref>)57.2957795)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="274" column="9" bodyfile="include/assimp/defs.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a6ce513786318507600657cebc16e2d36" prot="public" static="no">
+        <name>AI_WONT_RETURN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="172" column="12" bodyfile="include/assimp/defs.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a5f8ac64e167f5229d18a10636fbfdf94" prot="public" static="no">
+        <name>AI_WONT_RETURN_SUFFIX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="179" column="10" bodyfile="include/assimp/defs.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a9ae0a9a60222c7641051149005094f80" prot="public" static="no">
+        <name>ASSIMP_AI_REAL_TEXT_PRECISION</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="254" column="9" bodyfile="include/assimp/defs.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" prot="public" static="no">
+        <name>ASSIMP_API</name>
+        <initializer>__attribute__((visibility(&quot;default&quot;)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="154" column="10" bodyfile="include/assimp/defs.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a640eba33bab7b5d07a414891c55ccfe5" prot="public" static="no">
+        <name>ASSIMP_API_WINONLY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="155" column="9" bodyfile="include/assimp/defs.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ad370e0e9a958bff4c2d44dde51a32e80" prot="public" static="no">
+        <name>ASSIMP_BUILD_DEBUG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="234" column="9" bodyfile="include/assimp/defs.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1afd6bd542be74e45155c5109389e920e2" prot="public" static="no">
+        <name>ASSIMP_BUILD_NEED_UNZIP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="88" column="9" bodyfile="include/assimp/defs.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1afd6bd542be74e45155c5109389e920e2" prot="public" static="no">
+        <name>ASSIMP_BUILD_NEED_UNZIP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="93" column="9" bodyfile="include/assimp/defs.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a7cd1028d1e555b899e0324bb66b628bd" prot="public" static="no">
+        <name>ASSIMP_BUILD_NEED_Z_INFLATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="79" column="9" bodyfile="include/assimp/defs.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a7cd1028d1e555b899e0324bb66b628bd" prot="public" static="no">
+        <name>ASSIMP_BUILD_NEED_Z_INFLATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="83" column="9" bodyfile="include/assimp/defs.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a7cd1028d1e555b899e0324bb66b628bd" prot="public" static="no">
+        <name>ASSIMP_BUILD_NEED_Z_INFLATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="87" column="9" bodyfile="include/assimp/defs.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a7cd1028d1e555b899e0324bb66b628bd" prot="public" static="no">
+        <name>ASSIMP_BUILD_NEED_Z_INFLATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="92" column="9" bodyfile="include/assimp/defs.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1a790e7cf264ed0b657c5bc510fa7ad8a1" prot="public" static="no">
+        <name>ASSIMP_BUILD_SINGLETHREADED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="230" column="9" bodyfile="include/assimp/defs.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1aa8c1788fd9d096036c9e3b6cfe4b1301" prot="public" static="no">
+        <name>C_ENUM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="187" column="9" bodyfile="include/assimp/defs.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" prot="public" static="no">
+        <name>C_STRUCT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="186" column="9" bodyfile="include/assimp/defs.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="defs_8h_1adfe135d52d61e55a3303d72a41ff3ea2" prot="public" static="no">
+        <type>signed int</type>
+        <definition>typedef signed int ai_int</definition>
+        <argsstring></argsstring>
+        <name>ai_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="251" column="20" bodyfile="include/assimp/defs.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float ai_real</definition>
+        <argsstring></argsstring>
+        <name>ai_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="250" column="15" bodyfile="include/assimp/defs.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="defs_8h_1ad15b0a6a5acbde158e5631e38170c911" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int ai_uint</definition>
+        <argsstring></argsstring>
+        <name>ai_uint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="252" column="22" bodyfile="include/assimp/defs.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="defs_8h_1a5dbdaf97dbb17019316d39de4492a29c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>const ai_real ai_epsilon</definition>
+        <argsstring></argsstring>
+        <name>ai_epsilon</name>
+        <initializer>= (<ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref>)0.00001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/defs.h" line="277" column="22" bodyfile="include/assimp/defs.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> build configuration setup. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>See the notes in the comment blocks to find out how to customize <emphasis>your</emphasis> <ref refid="namespace_assimp" kindref="compound">Assimp</ref> build. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_DEFINES_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_DEFINES_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>system_header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="config_8h" kindref="compound">assimp/config.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="comment">/*<sp/>Define<sp/>ASSIMP_BUILD_NO_XX_IMPORTER<sp/>to<sp/>disable<sp/>a<sp/>specific</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/>file<sp/>format<sp/>loader.<sp/>The<sp/>loader<sp/>is<sp/>be<sp/>excluded<sp/>from<sp/>the</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/>build<sp/>in<sp/>this<sp/>case.<sp/>&apos;XX&apos;<sp/>stands<sp/>for<sp/>the<sp/>most<sp/>common<sp/>file</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>extension<sp/>of<sp/>the<sp/>file<sp/>format.<sp/>E.g.:</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>ASSIMP_BUILD_NO_X_IMPORTER<sp/>disables<sp/>the<sp/>X<sp/>loader.</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/>If<sp/>you&apos;re<sp/>unsure<sp/>about<sp/>that,<sp/>take<sp/>a<sp/>look<sp/>at<sp/>the<sp/>implementation<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/>import<sp/>plugin<sp/>you<sp/>wish<sp/>to<sp/>disable.<sp/>You&apos;ll<sp/>find<sp/>the<sp/>right<sp/>define<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/>first<sp/>lines<sp/>of<sp/>the<sp/>corresponding<sp/>unit.</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/>Other<sp/>(mixed)<sp/>configuration<sp/>switches<sp/>are<sp/>listed<sp/>here:</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>ASSIMP_BUILD_NO_COMPRESSED_X</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Disable<sp/>support<sp/>for<sp/>compressed<sp/>X<sp/>files<sp/>(zip)</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>ASSIMP_BUILD_NO_COMPRESSED_BLEND</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Disable<sp/>support<sp/>for<sp/>compressed<sp/>Blender<sp/>files<sp/>(zip)</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>ASSIMP_BUILD_NO_COMPRESSED_IFC</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Disable<sp/>support<sp/>for<sp/>IFCZIP<sp/>files<sp/>(unzip)</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*/</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ASSIMP_BUILD_NO_COMPRESSED_X</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_BUILD_NEED_Z_INFLATE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ASSIMP_BUILD_NO_COMPRESSED_BLEND</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_BUILD_NEED_Z_INFLATE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ASSIMP_BUILD_NO_COMPRESSED_IFC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_BUILD_NEED_Z_INFLATE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_BUILD_NEED_UNZIP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ASSIMP_BUILD_NO_Q3BSP_IMPORTER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_BUILD_NEED_Z_INFLATE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_BUILD_NEED_UNZIP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="comment">/*<sp/>Define<sp/>ASSIMP_BUILD_NO_XX_PROCESS<sp/>to<sp/>disable<sp/>a<sp/>specific</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*<sp/>post<sp/>processing<sp/>step.<sp/>This<sp/>is<sp/>the<sp/>current<sp/>list<sp/>of<sp/>process<sp/>names<sp/>(&apos;XX&apos;):</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*<sp/>CALCTANGENTS</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/>JOINVERTICES</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/>TRIANGULATE</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/>DROPFACENORMALS</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*<sp/>GENFACENORMALS</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*<sp/>GENVERTEXNORMALS</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*<sp/>REMOVEVC</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*<sp/>SPLITLARGEMESHES</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*<sp/>PRETRANSFORMVERTICES</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*<sp/>LIMITBONEWEIGHTS</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*<sp/>VALIDATEDS</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>*<sp/>IMPROVECACHELOCALITY</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/>*<sp/>FIXINFACINGNORMALS</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*<sp/>REMOVE_REDUNDANTMATERIALS</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/>OPTIMIZEGRAPH</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*<sp/>SORTBYPTYPE</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*<sp/>FINDINVALIDDATA</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*<sp/>TRANSFORMTEXCOORDS</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*<sp/>GENUVCOORDS</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*<sp/>ENTITYMESHBUILDER</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*<sp/>EMBEDTEXTURES</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/>*<sp/>MAKELEFTHANDED</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/>*<sp/>FLIPUVS</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/>*<sp/>FLIPWINDINGORDER</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/>*<sp/>OPTIMIZEMESHES</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/>*<sp/>OPTIMIZEANIMS</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/>*<sp/>OPTIMIZEGRAPH</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>*<sp/>GENENTITYMESHES</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*<sp/>FIXTEXTUREPATHS</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*<sp/>GENBOUNDINGBOXES<sp/>*/</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>ASSIMP_API</highlight></codeline>
+<codeline lineno="134"><highlight class="comment">/*<sp/>Define<sp/>&apos;ASSIMP_BUILD_DLL_EXPORT&apos;<sp/>to<sp/>build<sp/>a<sp/>DLL<sp/>of<sp/>the<sp/>library<sp/>*/</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor">#ifdef<sp/>ASSIMP_BUILD_DLL_EXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_API<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_API_WINONLY<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="comment">/*<sp/>Define<sp/>&apos;ASSIMP_DLL&apos;<sp/>before<sp/>including<sp/>Assimp<sp/>to<sp/>link<sp/>to<sp/>ASSIMP<sp/>in</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>an<sp/>external<sp/>DLL<sp/>under<sp/>Windows.<sp/>Default<sp/>is<sp/>static<sp/>linkage.<sp/>*/</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor">#elif<sp/>(defined<sp/>ASSIMP_DLL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_API<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_API_WINONLY<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_API_WINONLY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(SWIG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Do<sp/>nothing,<sp/>the<sp/>relevant<sp/>defines<sp/>are<sp/>all<sp/>in<sp/>AssimpSwigPort.i<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_API<sp/>__attribute__((visibility(&quot;default&quot;</highlight><highlight class="normal">)))</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_API_WINONLY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#pragma<sp/>warning(disable<sp/>:<sp/>4521<sp/>4512<sp/>4714<sp/>4127<sp/>4351<sp/>4510)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>ASSIMP_BUILD_DLL_EXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#pragma<sp/>warning(disable<sp/>:<sp/>4251)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Force<sp/>the<sp/>compiler<sp/>to<sp/>inline<sp/>a<sp/>function,<sp/>if<sp/>possible<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>AI_FORCE_INLINE<sp/>inline<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Tells<sp/>the<sp/>compiler<sp/>that<sp/>a<sp/>function<sp/>never<sp/>returns.<sp/>Used<sp/>in<sp/>code<sp/>analysis</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/><sp/><sp/>*<sp/>to<sp/>skip<sp/>dead<sp/>paths<sp/>(e.g.<sp/>after<sp/>an<sp/>assertion<sp/>evaluated<sp/>to<sp/>false).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>AI_WONT_RETURN<sp/>__declspec(noreturn)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(SWIG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Do<sp/>nothing,<sp/>the<sp/>relevant<sp/>defines<sp/>are<sp/>all<sp/>in<sp/>AssimpSwigPort.i<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>AI_WONT_RETURN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>AI_FORCE_INLINE<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>(defined<sp/>_MSC_VER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_WONT_RETURN_SUFFIX<sp/>__attribute__((noreturn))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_WONT_RETURN_SUFFIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>(defined<sp/>__clang__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>No<sp/>explicit<sp/>&apos;struct&apos;<sp/>and<sp/>&apos;enum&apos;<sp/>tags<sp/>for<sp/>C++,<sp/>this<sp/>keeps<sp/>showing<sp/>up</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>in<sp/>doxydocs.</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>C_STRUCT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>C_ENUM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="190"><highlight class="comment">/*<sp/>To<sp/>build<sp/>the<sp/>documentation,<sp/>make<sp/>sure<sp/>ASSIMP_DOXYGEN_BUILD</highlight></codeline>
+<codeline lineno="191"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>is<sp/>defined<sp/>by<sp/>Doxygen&apos;s<sp/>preprocessor.<sp/>The<sp/>corresponding</highlight></codeline>
+<codeline lineno="192"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>entries<sp/>in<sp/>the<sp/>DOXYFILE<sp/>are:<sp/>*/</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>ENABLE_PREPROCESSING<sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>MACRO_EXPANSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPAND_ONLY_PREDEF<sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>SEARCH_INCLUDES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>INCLUDE_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>INCLUDE_FILE_PATTERNS<sp/><sp/>=</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>PREDEFINED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>ASSIMP_DOXYGEN_BUILD=1</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPAND_AS_DEFINED<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="defs_8h_1aa8c1788fd9d096036c9e3b6cfe4b1301" kindref="member">C_ENUM</ref></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>SKIP_FUNCTION_MACROS<sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="206"><highlight class="comment">/*<sp/>Doxygen<sp/>gets<sp/>confused<sp/>if<sp/>we<sp/>use<sp/>c-struct<sp/>typedefs<sp/>to<sp/>avoid</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>the<sp/>explicit<sp/>&apos;struct&apos;<sp/>notation.<sp/>This<sp/>trick<sp/>here<sp/>has<sp/>the<sp/>same</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>effect<sp/>as<sp/>the<sp/>TYPEDEF_HIDES_STRUCT<sp/>option,<sp/>but<sp/>we<sp/>don&apos;t<sp/>need</highlight></codeline>
+<codeline lineno="209"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>to<sp/>typedef<sp/>all<sp/>structs/enums.<sp/>*/</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor">#if<sp/>(defined<sp/>ASSIMP_DOXYGEN_BUILD)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>C_STRUCT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>C_ENUM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>C_STRUCT<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>C_ENUM<sp/>enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(defined(__BORLANDC__)<sp/>||<sp/>defined(__BCPLUSPLUS__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>Currently,<sp/>Borland<sp/>is<sp/>unsupported.<sp/>Feel<sp/>free<sp/>to<sp/>port<sp/>Assimp.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="comment">/*<sp/>Define<sp/>ASSIMP_BUILD_SINGLETHREADED<sp/>to<sp/>compile<sp/>assimp</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>without<sp/>threading<sp/>support.<sp/>The<sp/>library<sp/>doesn&apos;t<sp/>utilize</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>threads<sp/>then<sp/>and<sp/>is<sp/>itself<sp/>not<sp/>threadsafe.<sp/>*/</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor">#ifndef<sp/>ASSIMP_BUILD_SINGLETHREADED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_BUILD_SINGLETHREADED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_DEBUG)<sp/>||<sp/>!defined(NDEBUG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_BUILD_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="comment">/*<sp/>Define<sp/>ASSIMP_DOUBLE_PRECISION<sp/>to<sp/>compile<sp/>assimp</highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>with<sp/>double<sp/>precision<sp/>support<sp/>(64-bit).<sp/>*/</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ASSIMP_DOUBLE_PRECISION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1adfe135d52d61e55a3303d72a41ff3ea2" kindref="member">ai_int</ref>;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ad15b0a6a5acbde158e5631e38170c911" kindref="member">ai_uint</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ASSIMP_AI_REAL_TEXT_PRECISION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_AI_REAL_TEXT_PRECISION<sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>ASSIMP_AI_REAL_TEXT_PRECISION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">//<sp/>ASSIMP_DOUBLE_PRECISION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1adfe135d52d61e55a3303d72a41ff3ea2" kindref="member">ai_int</ref>;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ad15b0a6a5acbde158e5631e38170c911" kindref="member">ai_uint</ref>;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ASSIMP_AI_REAL_TEXT_PRECISION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSIMP_AI_REAL_TEXT_PRECISION<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>ASSIMP_AI_REAL_TEXT_PRECISION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>ASSIMP_DOUBLE_PRECISION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="comment">/*<sp/>Useful<sp/>constants<sp/>*/</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>is<sp/>PI.<sp/>Hi<sp/>PI.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MATH_PI<sp/>(3.141592653589793238462643383279)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MATH_TWO_PI<sp/>(AI_MATH_PI<sp/>*<sp/>2.0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MATH_HALF_PI<sp/>(AI_MATH_PI<sp/>*<sp/>0.5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>And<sp/>this<sp/>is<sp/>to<sp/>avoid<sp/>endless<sp/>casts<sp/>to<sp/>float<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MATH_PI_F<sp/>(3.1415926538f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MATH_TWO_PI_F<sp/>(AI_MATH_PI_F<sp/>*<sp/>2.0f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MATH_HALF_PI_F<sp/>(AI_MATH_PI_F<sp/>*<sp/>0.5f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Tiny<sp/>macro<sp/>to<sp/>convert<sp/>from<sp/>radians<sp/>to<sp/>degrees<sp/>and<sp/>back<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_DEG_TO_RAD(x)<sp/>((x)<sp/>*<sp/>(ai_real)0.0174532925)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_RAD_TO_DEG(x)<sp/>((x)<sp/>*<sp/>(ai_real)57.2957795)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Numerical<sp/>limits<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref><sp/><ref refid="defs_8h_1a5dbdaf97dbb17019316d39de4492a29c" kindref="member">ai_epsilon</ref><sp/>=<sp/>(<ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref>)0.00001;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Support<sp/>for<sp/>big-endian<sp/>builds<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__BYTE_ORDER__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(__BYTE_ORDER__<sp/>==<sp/>__ORDER_BIG_ENDIAN__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(__BIG_ENDIAN__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__BIG_ENDIAN__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>little<sp/>endian<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__BIG_ENDIAN__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>__BIG_ENDIAN__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__BIG_ENDIAN__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_BUILD_BIG_ENDIAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MAX_ALLOC(type)<sp/>((256U<sp/>*<sp/>1024<sp/>*<sp/>1024)<sp/>/<sp/>sizeof(type))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__cplusplus<sp/>&gt;=<sp/>201103L<sp/></highlight><highlight class="comment">//<sp/>C++11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_NO_EXCEPT<sp/>noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_NO_EXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(_MSC_VER<sp/>&gt;=<sp/>1915)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_NO_EXCEPT<sp/>noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_NO_EXCEPT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(defined<sp/>ASSIMP_BUILD_DEBUG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_DEBUG_INVALIDATE_PTR(x)<sp/>x<sp/>=<sp/>NULL;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_DEBUG_INVALIDATE_PTR(x)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!!<sp/>AI_DEFINES_H_INC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/defs.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_memory_i_o_system" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::MemoryIOSystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOSystem</basecompoundref>
+    <includes local="no">MemoryIOWrapper.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_memory_i_o_system_1a1062c81a206fccfacde959270ec8eea5" prot="private" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* Assimp::MemoryIOSystem::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="242" column="19" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_memory_i_o_system_1ae2bad485993de1cc024d28e8e288b762" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; IOStream * &gt;</type>
+        <definition>std::vector&lt;IOStream*&gt; Assimp::MemoryIOSystem::created_streams</definition>
+        <argsstring></argsstring>
+        <name>created_streams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="245" column="17" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_memory_i_o_system_1ab13d817e64823ee5df4547e9638f3db4" prot="private" static="no" mutable="no">
+        <type>IOSystem *</type>
+        <definition>IOSystem* Assimp::MemoryIOSystem::existing_io</definition>
+        <argsstring></argsstring>
+        <name>existing_io</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="244" column="14" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_memory_i_o_system_1acf3bfcc151ba9e8a59f65e588514dd4c" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::MemoryIOSystem::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="243" column="12" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1aaa4197b3cfa45b6351e806f1ee4aa3ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::MemoryIOSystem::ChangeDirectory</definition>
+        <argsstring>(const std::string &amp;path) override</argsstring>
+        <name>ChangeDirectory</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="233" column="10" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="233" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1a33dedf49dab3b8d3dcb0aa944b6bd0c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::MemoryIOSystem::Close</definition>
+        <argsstring>(IOStream *pFile) override</argsstring>
+        <name>Close</name>
+        <param>
+          <type>IOStream *</type>
+          <declname>pFile</declname>
+        </param>
+        <briefdescription>
+<para>Closes the given file and releases all resources associated with it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="196" column="10" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="196" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1a72e850bf09960223104fb764d582243d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::MemoryIOSystem::ComparePaths</definition>
+        <argsstring>(const char *one, const char *second) const override</argsstring>
+        <name>ComparePaths</name>
+        <param>
+          <type>const char *</type>
+          <declname>one</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>second</declname>
+        </param>
+        <briefdescription>
+<para>Compare two paths. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="208" column="10" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="208" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1af30fb865586c39232028fdd01911b5f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::MemoryIOSystem::CreateDirectory</definition>
+        <argsstring>(const std::string &amp;path) override</argsstring>
+        <name>CreateDirectory</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="229" column="10" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="229" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1ac7830f026dcba355d539870d8f33a00b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; Assimp::MemoryIOSystem::CurrentDirectory</definition>
+        <argsstring>() const override</argsstring>
+        <name>CurrentDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="216" column="23" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1a33ab4be233b42e36da124adb9d3b3a99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::MemoryIOSystem::DeleteFile</definition>
+        <argsstring>(const std::string &amp;file) override</argsstring>
+        <name>DeleteFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="237" column="10" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="237" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1afd03643b1253dcfb8242193bf7678d3c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::MemoryIOSystem::Exists</definition>
+        <argsstring>(const char *pFile) const override</argsstring>
+        <name>Exists</name>
+        <param>
+          <type>const char *</type>
+          <declname>pFile</declname>
+        </param>
+        <briefdescription>
+<para>Tests for the existence of a file at the given path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="170" column="10" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="170" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1a991692d1cd95855d4ab950d3976a0a6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char Assimp::MemoryIOSystem::getOsSeparator</definition>
+        <argsstring>() const override</argsstring>
+        <name>getOsSeparator</name>
+        <briefdescription>
+<para>Returns the directory separator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="179" column="10" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1a23e2c3f41bfb7401985f64d697f74b2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::MemoryIOSystem::MemoryIOSystem</definition>
+        <argsstring>(const uint8_t *buff, size_t len, IOSystem *io)</argsstring>
+        <name>MemoryIOSystem</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>IOSystem *</type>
+          <declname>io</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="156" column="5" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="156" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1a3c57622f084bc13ab45632ade926eea2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IOStream *</type>
+        <definition>IOStream* Assimp::MemoryIOSystem::Open</definition>
+        <argsstring>(const char *pFile, const char *pMode=&quot;rb&quot;) override</argsstring>
+        <name>Open</name>
+        <param>
+          <type>const char *</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pMode</declname>
+          <defval>&quot;rb&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Open a new file with a given path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="186" column="14" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="186" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1a5244c63bc32ca3954e7b12c6ab468554" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::MemoryIOSystem::PopDirectory</definition>
+        <argsstring>() override</argsstring>
+        <name>PopDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="225" column="10" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="225" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1a88510dccda5de12d12e767415df3ec4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::MemoryIOSystem::PushDirectory</definition>
+        <argsstring>(const std::string &amp;path) override</argsstring>
+        <name>PushDirectory</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="212" column="10" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="212" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1ae78391f2a4e643eb7e228017caea5b78" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::MemoryIOSystem::StackSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>StackSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="221" column="12" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="221" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_system_1addb4958e6a1492b5bea1695be4ca5744" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::MemoryIOSystem::~MemoryIOSystem</definition>
+        <argsstring>()</argsstring>
+        <name>~MemoryIOSystem</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="165" column="5" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="165" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Dummy IO system to read from a memory buffer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/MemoryIOWrapper.h" line="153" column="1" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="153" bodyend="246"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_memory_i_o_system_1a1062c81a206fccfacde959270ec8eea5" prot="private" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>buffer</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1aaa4197b3cfa45b6351e806f1ee4aa3ec" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>ChangeDirectory</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1a33dedf49dab3b8d3dcb0aa944b6bd0c6" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>Close</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1a72e850bf09960223104fb764d582243d" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>ComparePaths</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1ae2bad485993de1cc024d28e8e288b762" prot="private" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>created_streams</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1af30fb865586c39232028fdd01911b5f0" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>CreateDirectory</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1ac7830f026dcba355d539870d8f33a00b" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>CurrentDirectory</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1a33ab4be233b42e36da124adb9d3b3a99" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>DeleteFile</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1ab13d817e64823ee5df4547e9638f3db4" prot="private" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>existing_io</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1afd03643b1253dcfb8242193bf7678d3c" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>Exists</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1a991692d1cd95855d4ab950d3976a0a6e" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>getOsSeparator</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1acf3bfcc151ba9e8a59f65e588514dd4c" prot="private" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>length</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1a23e2c3f41bfb7401985f64d697f74b2b" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>MemoryIOSystem</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1a3c57622f084bc13ab45632ade926eea2" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>Open</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1a5244c63bc32ca3954e7b12c6ab468554" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>PopDirectory</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1a88510dccda5de12d12e767415df3ec4a" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>PushDirectory</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1ae78391f2a4e643eb7e228017caea5b78" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>StackSize</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_system_1addb4958e6a1492b5bea1695be4ca5744" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOSystem</scope><name>~MemoryIOSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1529 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_assimp" kind="namespace" language="C++">
+    <compoundname>Assimp</compoundname>
+    <innerclass refid="struct_assimp_1_1_attachment_info" prot="public">Assimp::AttachmentInfo</innerclass>
+    <innerclass refid="class_assimp_1_1_base_importer" prot="public">Assimp::BaseImporter</innerclass>
+    <innerclass refid="class_assimp_1_1_bitmap" prot="public">Assimp::Bitmap</innerclass>
+    <innerclass refid="class_assimp_1_1_blob_i_o_stream" prot="public">Assimp::BlobIOStream</innerclass>
+    <innerclass refid="class_assimp_1_1_blob_i_o_system" prot="public">Assimp::BlobIOSystem</innerclass>
+    <innerclass refid="struct_assimp_1_1_bone_with_hash" prot="public">Assimp::BoneWithHash</innerclass>
+    <innerclass refid="class_assimp_1_1_byte_swap" prot="public">Assimp::ByteSwap</innerclass>
+    <innerclass refid="class_assimp_1_1_comment_remover" prot="public">Assimp::CommentRemover</innerclass>
+    <innerclass refid="class_assimp_1_1_default_i_o_stream" prot="public">Assimp::DefaultIOStream</innerclass>
+    <innerclass refid="class_assimp_1_1_default_i_o_system" prot="public">Assimp::DefaultIOSystem</innerclass>
+    <innerclass refid="struct_assimp_1_1find__node__by__name__predicate" prot="public">Assimp::find_node_by_name_predicate</innerclass>
+    <innerclass refid="struct_assimp_1_1_interpolator" prot="public">Assimp::Interpolator</innerclass>
+    <innerclass refid="class_assimp_1_1_i_o_stream_buffer" prot="public">Assimp::IOStreamBuffer</innerclass>
+    <innerclass refid="class_assimp_1_1_line_splitter" prot="public">Assimp::LineSplitter</innerclass>
+    <innerclass refid="class_assimp_1_1_log_functions" prot="public">Assimp::LogFunctions</innerclass>
+    <innerclass refid="class_assimp_1_1_memory_i_o_stream" prot="public">Assimp::MemoryIOStream</innerclass>
+    <innerclass refid="class_assimp_1_1_memory_i_o_system" prot="public">Assimp::MemoryIOSystem</innerclass>
+    <innerclass refid="struct_assimp_1_1_node_attachment_info" prot="public">Assimp::NodeAttachmentInfo</innerclass>
+    <innerclass refid="struct_assimp_1_1_node_converter" prot="public">Assimp::NodeConverter</innerclass>
+    <innerclass refid="class_assimp_1_1_scene_combiner" prot="public">Assimp::SceneCombiner</innerclass>
+    <innerclass refid="struct_assimp_1_1_scene_helper" prot="public">Assimp::SceneHelper</innerclass>
+    <innerclass refid="class_assimp_1_1_s_g_spatial_sort" prot="public">Assimp::SGSpatialSort</innerclass>
+    <innerclass refid="class_assimp_1_1_skeleton_mesh_builder" prot="public">Assimp::SkeletonMeshBuilder</innerclass>
+    <innerclass refid="class_assimp_1_1_small_vector" prot="public">Assimp::SmallVector</innerclass>
+    <innerclass refid="class_assimp_1_1_spatial_sort" prot="public">Assimp::SpatialSort</innerclass>
+    <innerclass refid="class_assimp_1_1_standard_shapes" prot="public">Assimp::StandardShapes</innerclass>
+    <innerclass refid="class_assimp_1_1_stream_reader" prot="public">Assimp::StreamReader</innerclass>
+    <innerclass refid="class_assimp_1_1_stream_writer" prot="public">Assimp::StreamWriter</innerclass>
+    <innerclass refid="class_assimp_1_1_subdivider" prot="public">Assimp::Subdivider</innerclass>
+    <innerclass refid="class_assimp_1_1_t_xml_parser" prot="public">Assimp::TXmlParser</innerclass>
+    <innerclass refid="class_assimp_1_1_vertex" prot="public">Assimp::Vertex</innerclass>
+    <innerclass refid="class_assimp_1_1_xml_node_iterator" prot="public">Assimp::XmlNodeIterator</innerclass>
+    <innerclass refid="class_assimp_1_1_zip_archive_i_o_system" prot="public">Assimp::ZipArchiveIOSystem</innerclass>
+    <innernamespace refid="namespace_assimp_1_1_formatter">Assimp::Formatter</innernamespace>
+    <innernamespace refid="namespace_assimp_1_1_intern">Assimp::Intern</innernamespace>
+    <innernamespace refid="namespace_assimp_1_1_math">Assimp::Math</innernamespace>
+    <innernamespace refid="namespace_assimp_1_1_profiling">Assimp::Profiling</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_assimp_1a5a6f2070082f2eff6e9ccf57539bfad2" prot="public" static="no">
+        <type>std::pair&lt; <ref refid="structai_bone" kindref="compound">aiBone</ref> *, unsigned int &gt;</type>
+        <definition>typedef std::pair&lt;aiBone *, unsigned int&gt; Assimp::BoneSrcIndex</definition>
+        <argsstring></argsstring>
+        <name>BoneSrcIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="144" column="19" bodyfile="include/assimp/SceneCombiner.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_assimp_1a8e193a5db58ec2f8e39010b733a38bea" prot="public" static="no">
+        <type><ref refid="class_assimp_1_1_stream_reader" kindref="compound">StreamReader</ref>&lt; true, true &gt;</type>
+        <definition>typedef StreamReader&lt;true, true&gt; Assimp::StreamReaderAny</definition>
+        <argsstring></argsstring>
+        <name>StreamReaderAny</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="341" column="22" bodyfile="include/assimp/StreamReader.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_assimp_1af2ff0c84f4cfd99b6c1faa01e84460a1" prot="public" static="no">
+        <type><ref refid="class_assimp_1_1_stream_reader" kindref="compound">StreamReader</ref>&lt; true &gt;</type>
+        <definition>typedef StreamReader&lt;true&gt; Assimp::StreamReaderBE</definition>
+        <argsstring></argsstring>
+        <name>StreamReaderBE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="335" column="22" bodyfile="include/assimp/StreamReader.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_assimp_1ab34515c230b8458492195a11571f266f" prot="public" static="no">
+        <type><ref refid="class_assimp_1_1_stream_reader" kindref="compound">StreamReader</ref>&lt; false &gt;</type>
+        <definition>typedef StreamReader&lt;false&gt; Assimp::StreamReaderLE</definition>
+        <argsstring></argsstring>
+        <name>StreamReaderLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="336" column="22" bodyfile="include/assimp/StreamReader.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_assimp_1a558b226631652eba1e293f9335a0e207" prot="public" static="no">
+        <type><ref refid="class_assimp_1_1_stream_writer" kindref="compound">StreamWriter</ref>&lt; true, true &gt;</type>
+        <definition>typedef StreamWriter&lt;true,true&gt; Assimp::StreamWriterAny</definition>
+        <argsstring></argsstring>
+        <name>StreamWriterAny</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamWriter.h" line="303" column="22" bodyfile="include/assimp/StreamWriter.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_assimp_1ad44bf37a916baf307c87ba3e4e939a6e" prot="public" static="no">
+        <type><ref refid="class_assimp_1_1_stream_writer" kindref="compound">StreamWriter</ref>&lt; true &gt;</type>
+        <definition>typedef StreamWriter&lt;true&gt; Assimp::StreamWriterBE</definition>
+        <argsstring></argsstring>
+        <name>StreamWriterBE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamWriter.h" line="297" column="27" bodyfile="include/assimp/StreamWriter.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_assimp_1a88e476e3981b368edc1c4c0ed44bf773" prot="public" static="no">
+        <type><ref refid="class_assimp_1_1_stream_writer" kindref="compound">StreamWriter</ref>&lt; false &gt;</type>
+        <definition>typedef StreamWriter&lt;false&gt; Assimp::StreamWriterLE</definition>
+        <argsstring></argsstring>
+        <name>StreamWriterLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamWriter.h" line="298" column="26" bodyfile="include/assimp/StreamWriter.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_assimp_1af8d3ea66e7aaa03fdf0553ab6af8a8de" prot="public" static="no">
+        <type>pugi::xml_attribute</type>
+        <definition>using Assimp::XmlAttribute = typedef pugi::xml_attribute</definition>
+        <argsstring></argsstring>
+        <name>XmlAttribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="81" column="1" bodyfile="include/assimp/XmlParser.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_assimp_1ad9aa76cdbe59a3c057f55760f3a02c0a" prot="public" static="no">
+        <type>pugi::xml_node</type>
+        <definition>using Assimp::XmlNode = typedef pugi::xml_node</definition>
+        <argsstring></argsstring>
+        <name>XmlNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="80" column="1" bodyfile="include/assimp/XmlParser.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_assimp_1a6295df0173c66269feae004611f499a2" prot="public" static="no">
+        <type><ref refid="class_assimp_1_1_t_xml_parser" kindref="compound">TXmlParser</ref>&lt; pugi::xml_node &gt;</type>
+        <definition>using Assimp::XmlParser = typedef TXmlParser&lt;pugi::xml_node&gt;</definition>
+        <argsstring></argsstring>
+        <name>XmlParser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="372" column="1" bodyfile="include/assimp/XmlParser.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_assimp_1a20dc8581fd6ec886730e4cb443066f87" prot="public" static="yes" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int Assimp::BufferSize</definition>
+        <argsstring></argsstring>
+        <name>BufferSize</name>
+        <initializer>= 4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="71" column="27" bodyfile="include/assimp/ParsingUtils.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_assimp_1a54a4f58b78bc7d84c70aad4cc5eb79d5" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double Assimp::fast_atof_table[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>fast_atof_table</name>
+        <initializer>=  {  
+    0.0,
+    0.1,
+    0.01,
+    0.001,
+    0.0001,
+    0.00001,
+    0.000001,
+    0.0000001,
+    0.00000001,
+    0.000000001,
+    0.0000000001,
+    0.00000000001,
+    0.000000000001,
+    0.0000000000001,
+    0.00000000000001,
+    0.000000000000001
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="42" column="14" bodyfile="include/assimp/fast_atof.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_assimp_1a791c7116274a21bd2df15a70e3064676" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Assimp::ai_stdStrToLower</definition>
+        <argsstring>(const std::string &amp;str)</argsstring>
+        <name>ai_stdStrToLower</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="262" column="20" bodyfile="include/assimp/ParsingUtils.h" bodystart="262" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1af6a0db3a1d33afe33dbfb5346ae7da70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> <ref refid="structai_anim_mesh" kindref="compound">aiAnimMesh</ref> *</type>
+        <definition>ASSIMP_API aiAnimMesh* Assimp::aiCreateAnimMesh</definition>
+        <argsstring>(const aiMesh *mesh, bool needPositions=true, bool needNormals=true, bool needTangents=true, bool needColors=true, bool needTexCoords=true)</argsstring>
+        <name>aiCreateAnimMesh</name>
+        <param>
+          <type>const <ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>needPositions</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>needNormals</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>needTangents</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>needColors</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>needTexCoords</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Create <ref refid="structai_anim_mesh" kindref="compound">aiAnimMesh</ref> from <ref refid="structai_mesh" kindref="compound">aiMesh</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input mesh to create an animated mesh from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>needPositions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, positions will be copied from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>needNormals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, normals will be copied from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>needTangents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, tangents and bitangents will be copied from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>needColors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, colors will be copied from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>needTexCoords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, texCoords will be copied from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new created animated mesh. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/CreateAnimMesh.h" line="68" column="23" declfile="include/assimp/CreateAnimMesh.h" declline="68" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a95de3dd4de6a42bfed3eb0a9fcea48be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::ASSIMP_itoa10</definition>
+        <argsstring>(char *out, unsigned int max, int32_t number)</argsstring>
+        <name>ASSIMP_itoa10</name>
+        <param>
+          <type>char *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para>itoa with a fixed base 10 &apos;itoa&apos; is not consistently available on all platforms so it is quite useful to have a small replacement function here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>No need to use a full sprintf() if we just want to print a number ... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of characters to be written, including &apos;\0&apos;. This parameter may not be 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number to be written </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Length of the output string, excluding the &apos;\0&apos; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringComparison.h" line="81" column="21" bodyfile="include/assimp/StringComparison.h" bodystart="81" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a780ce39f05ccc110f67a59dd76709112" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>length</declname>
+            <defname>length</defname>
+          </param>
+        </templateparamlist>
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::ASSIMP_itoa10</definition>
+        <argsstring>(char(&amp;out)[length], int32_t number)</argsstring>
+        <name>ASSIMP_itoa10</name>
+        <param>
+          <type>char(&amp;)</type>
+          <declname>out</declname>
+          <array>[length]</array>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para>itoa with a fixed base 10 (Secure template overload) The compiler should choose this function if he or she is able to determine the size of the array automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringComparison.h" line="124" column="21" bodyfile="include/assimp/StringComparison.h" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a72851b2740829d0e26ee31da7af20ce6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Assimp::ASSIMP_stricmp</definition>
+        <argsstring>(const char *s1, const char *s2)</argsstring>
+        <name>ASSIMP_stricmp</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to do platform independent string comparison. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is required since stricmp() is not consistently available on all platforms. Some platforms use the &apos;_&apos; prefix, others don&apos;t even have such a function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First input string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second input string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the given strings are identical </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringComparison.h" line="139" column="12" bodyfile="include/assimp/StringComparison.h" bodystart="139" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1abd7b0704eb33d941b05a778f916cf963" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Assimp::ASSIMP_stricmp</definition>
+        <argsstring>(const std::string &amp;a, const std::string &amp;b)</argsstring>
+        <name>ASSIMP_stricmp</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Case independent comparison of two std::strings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if a == b </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringComparison.h" line="163" column="12" bodyfile="include/assimp/StringComparison.h" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a5718d462fef0070afea1d4ac4e65d4d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Assimp::ASSIMP_strincmp</definition>
+        <argsstring>(const char *s1, const char *s2, unsigned int n)</argsstring>
+        <name>ASSIMP_strincmp</name>
+        <param>
+          <type>const char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to do platform independent string comparison. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is required since strincmp() is not consistently available on all platforms. Some platforms use the &apos;_&apos; prefix, others don&apos;t even have such a function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First input string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second input string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of characters to compare </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the given strings are identical </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringComparison.h" line="180" column="12" bodyfile="include/assimp/StringComparison.h" bodystart="180" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1aa4cf660be5711cd91b09df17e5dcf5cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ExceptionType</type>
+            <defval><ref refid="class_deadly_import_error" kindref="compound">DeadlyImportError</ref></defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real Assimp::fast_atof</definition>
+        <argsstring>(const char **inout)</argsstring>
+        <name>fast_atof</name>
+        <param>
+          <type>const char **</type>
+          <declname>inout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="376" column="9" bodyfile="include/assimp/fast_atof.h" bodystart="376" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a5528fa5dfe30cfbb445f48b469649ec8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ExceptionType</type>
+            <defval><ref refid="class_deadly_import_error" kindref="compound">DeadlyImportError</ref></defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real Assimp::fast_atof</definition>
+        <argsstring>(const char *c)</argsstring>
+        <name>fast_atof</name>
+        <param>
+          <type>const char *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="358" column="9" bodyfile="include/assimp/fast_atof.h" bodystart="358" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a94f5122c86d191932afa227e7a3fac30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ExceptionType</type>
+            <defval><ref refid="class_deadly_import_error" kindref="compound">DeadlyImportError</ref></defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>ai_real Assimp::fast_atof</definition>
+        <argsstring>(const char *c, const char **cout)</argsstring>
+        <name>fast_atof</name>
+        <param>
+          <type>const char *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>cout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="367" column="9" bodyfile="include/assimp/fast_atof.h" bodystart="367" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1aeb01ca0019835b52ca0ffe6d0f5d6a7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Real</type>
+          </param>
+          <param>
+            <type>typename ExceptionType</type>
+            <defval><ref refid="class_deadly_import_error" kindref="compound">DeadlyImportError</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>const char *</type>
+        <definition>const char* Assimp::fast_atoreal_move</definition>
+        <argsstring>(const char *c, Real &amp;out, bool check_comma=true)</argsstring>
+        <name>fast_atoreal_move</name>
+        <param>
+          <type>const char *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>Real &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>check_comma</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Provides a fast function for converting a string into a float, about 6 times faster than atof in win32. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="268" column="12" bodyfile="include/assimp/fast_atof.h" bodystart="268" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1afe5a72a3537a830b13ce020af6dd3161" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::GetNextLine</definition>
+        <argsstring>(const char_t *&amp;buffer, char_t out[BufferSize])</argsstring>
+        <name>GetNextLine</name>
+        <param>
+          <type>const char_t *&amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>char_t</type>
+          <declname>out</declname>
+          <array>[BufferSize]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="159" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="159" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a6dc54015f5b7ec09336559345d8bec9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> std::string</type>
+        <definition>AI_FORCE_INLINE std::string Assimp::GetNextToken</definition>
+        <argsstring>(const char *&amp;in)</argsstring>
+        <name>GetNextToken</name>
+        <param>
+          <type>const char *&amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="222" column="29" bodyfile="include/assimp/ParsingUtils.h" bodystart="222" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a6bb609222363ab9ba88298597056d65f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::HexDigitToDecimal</definition>
+        <argsstring>(char in)</argsstring>
+        <name>HexDigitToDecimal</name>
+        <param>
+          <type>char</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="132" column="14" bodyfile="include/assimp/fast_atof.h" bodystart="132" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a50f9e78be9d92b2140273c577d24ff47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Assimp::HexOctetToDecimal</definition>
+        <argsstring>(const char *in)</argsstring>
+        <name>HexOctetToDecimal</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="150" column="9" bodyfile="include/assimp/fast_atof.h" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a7f1165ac9e907c30dbbba7657c651b4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::integer_pow</definition>
+        <argsstring>(unsigned int base, unsigned int power)</argsstring>
+        <name>integer_pow</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>power</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates an integer power. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>todo: move somewhere where it fits better in than here </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringComparison.h" line="213" column="21" bodyfile="include/assimp/StringComparison.h" bodystart="213" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a35ef4d4a311ee5dfe8e0d4f0ebefab9c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>static AI_FORCE_INLINE bool Assimp::isEndOfCache</definition>
+        <argsstring>(size_t pos, size_t cacheSize)</argsstring>
+        <name>isEndOfCache</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>cacheSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="289" column="6" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="289" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a99092e9b63e3e8bb88dc63e141d7157f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IsLineEnd</definition>
+        <argsstring>(char_t in)</argsstring>
+        <name>IsLineEnd</name>
+        <param>
+          <type>char_t</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="94" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a9b1362fc8d49819d06aae521117255aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IsLower</definition>
+        <argsstring>(char_t in)</argsstring>
+        <name>IsLower</name>
+        <param>
+          <type>char_t</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="82" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a66776110eb3e45aecf16baebd71ca713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IsNumeric</definition>
+        <argsstring>(char_t in)</argsstring>
+        <name>IsNumeric</name>
+        <param>
+          <type>char_t</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="180" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="180" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a2dc3cfed4430c305908c17c403ced49c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IsSpace</definition>
+        <argsstring>(char_t in)</argsstring>
+        <name>IsSpace</name>
+        <param>
+          <type>char_t</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="88" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a3883df5611e6ba0bd986fd5694c47e35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IsSpaceOrNewLine</definition>
+        <argsstring>(char_t in)</argsstring>
+        <name>IsSpaceOrNewLine</name>
+        <param>
+          <type>char_t</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="100" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a704d02684243c28d97f16184ca7da160" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IsUpper</definition>
+        <argsstring>(char_t in)</argsstring>
+        <name>IsUpper</name>
+        <param>
+          <type>char_t</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="76" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1ad44995399966da4737a2afbe30e5983d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>AI_FORCE_INLINE Vertex Assimp::operator*</definition>
+        <argsstring>(ai_real f, const Vertex &amp;v0)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="291" column="24" bodyfile="include/assimp/Vertex.h" bodystart="291" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1adbfb0febd3f3ba7392e78ebd59f0c091" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>AI_FORCE_INLINE Vertex Assimp::operator*</definition>
+        <argsstring>(const Vertex &amp;v0, ai_real f)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="283" column="24" bodyfile="include/assimp/Vertex.h" bodystart="283" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a26ab9ab92b7b78ef60b4e63e0dbc2f75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>AI_FORCE_INLINE Vertex Assimp::operator+</definition>
+        <argsstring>(const Vertex &amp;v0, const Vertex &amp;v1)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="275" column="24" bodyfile="include/assimp/Vertex.h" bodystart="275" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a3b3364133e7a8b1b96d5839dcd53611c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>AI_FORCE_INLINE Vertex Assimp::operator-</definition>
+        <argsstring>(const Vertex &amp;v0, const Vertex &amp;v1)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="279" column="24" bodyfile="include/assimp/Vertex.h" bodystart="279" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1aeb258dfba56a50f59690dcae90e3db04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>AI_FORCE_INLINE Vertex Assimp::operator/</definition>
+        <argsstring>(const Vertex &amp;v0, ai_real f)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="287" column="24" bodyfile="include/assimp/Vertex.h" bodystart="287" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1ae7c92b4db3cd8a2966c709b01669835f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::SkipLine</definition>
+        <argsstring>(const char_t **inout)</argsstring>
+        <name>SkipLine</name>
+        <param>
+          <type>const char_t **</type>
+          <declname>inout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="137" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a6fd6d20616f404b05a6f90bae0ed227e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::SkipLine</definition>
+        <argsstring>(const char_t *in, const char_t **out)</argsstring>
+        <name>SkipLine</name>
+        <param>
+          <type>const char_t *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char_t **</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="122" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="122" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a05f1054ce31db2fb1ef96529e9f186fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::SkipSpaces</definition>
+        <argsstring>(const char_t **inout)</argsstring>
+        <name>SkipSpaces</name>
+        <param>
+          <type>const char_t **</type>
+          <declname>inout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="116" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a0c02640871537ab3d13415909863c27f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::SkipSpaces</definition>
+        <argsstring>(const char_t *in, const char_t **out)</argsstring>
+        <name>SkipSpaces</name>
+        <param>
+          <type>const char_t *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char_t **</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="106" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="106" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a36236d2b842108e2403870e394be2f6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::SkipSpacesAndLineEnd</definition>
+        <argsstring>(const char_t **inout)</argsstring>
+        <name>SkipSpacesAndLineEnd</name>
+        <param>
+          <type>const char_t **</type>
+          <declname>inout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="153" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a42855b2f408a9a00f870fc1bea2452d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::SkipSpacesAndLineEnd</definition>
+        <argsstring>(const char_t *in, const char_t **out)</argsstring>
+        <name>SkipSpacesAndLineEnd</name>
+        <param>
+          <type>const char_t *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char_t **</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="143" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="143" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1afcdf7e2568e40907cea2f7025b0a76a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> void</type>
+        <definition>AI_FORCE_INLINE void Assimp::SkipToken</definition>
+        <argsstring>(const char *&amp;in)</argsstring>
+        <name>SkipToken</name>
+        <param>
+          <type>const char *&amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="214" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="214" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a6712580fbbfe4f27e13815abf8e2a0e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Assimp::strtol10</definition>
+        <argsstring>(const char *in, const char **out=0)</argsstring>
+        <name>strtol10</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>out</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="158" column="5" bodyfile="include/assimp/fast_atof.h" bodystart="158" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1aa68dc5728b1b75a6010fc11e189a1f94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ExceptionType</type>
+            <defval><ref refid="class_deadly_import_error" kindref="compound">DeadlyImportError</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>int64_t</type>
+        <definition>int64_t Assimp::strtol10_64</definition>
+        <argsstring>(const char *in, const char **out=0, unsigned int *max_inout=0)</argsstring>
+        <name>strtol10_64</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>out</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>max_inout</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="245" column="9" bodyfile="include/assimp/fast_atof.h" bodystart="245" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a0b34bad3b9ad1b488391ede9b4f23c07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::strtoul10</definition>
+        <argsstring>(const char *in, const char **out=0)</argsstring>
+        <name>strtoul10</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>out</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="66" column="14" bodyfile="include/assimp/fast_atof.h" bodystart="66" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a0ceec2f2e3cbdd050b3a44a9384f4d0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ExceptionType</type>
+            <defval><ref refid="class_deadly_import_error" kindref="compound">DeadlyImportError</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>uint64_t</type>
+        <definition>uint64_t Assimp::strtoul10_64</definition>
+        <argsstring>(const char *in, const char **out=0, unsigned int *max_inout=0)</argsstring>
+        <name>strtoul10_64</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>out</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>max_inout</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="191" column="10" bodyfile="include/assimp/fast_atof.h" bodystart="191" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a358486ae5448785a4eeb0b6d9ebe929b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::strtoul16</definition>
+        <argsstring>(const char *in, const char **out=0)</argsstring>
+        <name>strtoul16</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>out</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="107" column="14" bodyfile="include/assimp/fast_atof.h" bodystart="107" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a1c1db8ffa6363c57660b3d1d0dc8ed3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::strtoul8</definition>
+        <argsstring>(const char *in, const char **out=0)</argsstring>
+        <name>strtoul8</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>out</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="87" column="14" bodyfile="include/assimp/fast_atof.h" bodystart="87" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a90b8b671fcfb5f9c2c1be40056cdef27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::strtoul_cppstyle</definition>
+        <argsstring>(const char *in, const char **out=0)</argsstring>
+        <name>strtoul_cppstyle</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>out</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/fast_atof.h" line="178" column="14" bodyfile="include/assimp/fast_atof.h" bodystart="178" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a0e0c2d9e4239076705ccee261d0c2e70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class string_type</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> unsigned int</type>
+        <definition>AI_FORCE_INLINE unsigned int Assimp::tokenize</definition>
+        <argsstring>(const string_type &amp;str, std::vector&lt; string_type &gt; &amp;tokens, const string_type &amp;delimiters)</argsstring>
+        <name>tokenize</name>
+        <param>
+          <type>const string_type &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; string_type &gt; &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <param>
+          <type>const string_type &amp;</type>
+          <declname>delimiters</declname>
+        </param>
+        <briefdescription>
+<para>Will perform a simple tokenize. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to tokenize. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tokens</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array with tokens, will be empty if no token was found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delimiters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delimiter for tokenize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of found token. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="239" column="30" bodyfile="include/assimp/ParsingUtils.h" bodystart="239" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1ae4567ff539c9f9fc2b63598edbd3d4be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::TokenMatch</definition>
+        <argsstring>(char_t *&amp;in, const char *token, unsigned int len)</argsstring>
+        <name>TokenMatch</name>
+        <param>
+          <type>char_t *&amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="186" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="186" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a3bd333f65bd8da9590190ed27987e47f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::TokenMatchI</definition>
+        <argsstring>(const char *&amp;in, const char *token, unsigned int len)</argsstring>
+        <name>TokenMatchI</name>
+        <param>
+          <type>const char *&amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Case-ignoring version of TokenMatch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Token to check for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of characters to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ParsingUtils.h" line="205" column="22" bodyfile="include/assimp/ParsingUtils.h" bodystart="205" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1a76632b7a46dd8f86685b963dac085363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Assimp::XMLEscape</definition>
+        <argsstring>(const std::string &amp;data)</argsstring>
+        <name>XMLEscape</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XMLTools.h" line="56" column="17" bodyfile="include/assimp/XMLTools.h" bodystart="56" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Some C++ utilities for inter- and extrapolation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/anim.h" line="478" column="1"/>
+  </compounddef>
+</doxygen>

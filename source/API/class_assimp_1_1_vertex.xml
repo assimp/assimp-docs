@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_vertex" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::Vertex</compoundname>
+    <includes local="no">Vertex.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_vertex_1a8022c610eb4fb8668b98f8f1fbec3f06" prot="public" static="no" mutable="no">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>aiVector3D Assimp::Vertex::bitangent</definition>
+        <argsstring></argsstring>
+        <name>bitangent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="268" column="24" bodyfile="include/assimp/Vertex.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_vertex_1a9133ffca5e2bf7a1f155df29be1ed07e" prot="public" static="no" mutable="no">
+        <type><ref refid="color4_8h_1a4badb8c19633de8f741ba2089ab79189" kindref="member">aiColor4D</ref></type>
+        <definition>aiColor4D Assimp::Vertex::colors[AI_MAX_NUMBER_OF_COLOR_SETS]</definition>
+        <argsstring>[AI_MAX_NUMBER_OF_COLOR_SETS]</argsstring>
+        <name>colors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="271" column="15" bodyfile="include/assimp/Vertex.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_vertex_1a09c4c9b9877537de3b143ecffb99408b" prot="public" static="no" mutable="no">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>aiVector3D Assimp::Vertex::normal</definition>
+        <argsstring></argsstring>
+        <name>normal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="267" column="16" bodyfile="include/assimp/Vertex.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_vertex_1a51221e3e2a5e5f15d956313f8816ee80" prot="public" static="no" mutable="no">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>aiVector3D Assimp::Vertex::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="266" column="16" bodyfile="include/assimp/Vertex.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_vertex_1ac4ecbc39eb88a5f516e357178543c3dd" prot="public" static="no" mutable="no">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>aiVector3D Assimp::Vertex::tangent</definition>
+        <argsstring></argsstring>
+        <name>tangent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="268" column="16" bodyfile="include/assimp/Vertex.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_vertex_1a3762b01faaedd03cbbeefec05ddd325c" prot="public" static="no" mutable="no">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>aiVector3D Assimp::Vertex::texcoords[AI_MAX_NUMBER_OF_TEXTURECOORDS]</definition>
+        <argsstring>[AI_MAX_NUMBER_OF_TEXTURECOORDS]</argsstring>
+        <name>texcoords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="270" column="16" bodyfile="include/assimp/Vertex.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_assimp_1_1_vertex_1a13539103c19c798c5ab14abaf80fef51" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>Vertex operator*</definition>
+        <argsstring>(ai_real, const Vertex &amp;)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <defname>v0</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="105" column="19" bodyfile="include/assimp/Vertex.h" bodystart="291" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_assimp_1_1_vertex_1a98883c8b9e323d5be429f7a81ff59c0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>Vertex operator*</definition>
+        <argsstring>(const Vertex &amp;, ai_real)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <defname>v0</defname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="103" column="19" bodyfile="include/assimp/Vertex.h" bodystart="283" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_assimp_1_1_vertex_1a63d8efb7ec1db3fdbc0a37e15f579256" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>Vertex operator+</definition>
+        <argsstring>(const Vertex &amp;, const Vertex &amp;)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <defname>v0</defname>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <defname>v1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="101" column="19" bodyfile="include/assimp/Vertex.h" bodystart="275" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_assimp_1_1_vertex_1aa083de147d357c0fb18f4424dc36d530" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>Vertex operator-</definition>
+        <argsstring>(const Vertex &amp;, const Vertex &amp;)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <defname>v0</defname>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <defname>v1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="102" column="19" bodyfile="include/assimp/Vertex.h" bodystart="279" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_assimp_1_1_vertex_1aaac6d314c7cdd0e998576b934ec41587" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>Vertex operator/</definition>
+        <argsstring>(const Vertex &amp;, ai_real)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <defname>v0</defname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="104" column="19" bodyfile="include/assimp/Vertex.h" bodystart="287" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_vertex_1a5c471696bd077300ca7b03367222ed84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+        <definition>Vertex&amp; Assimp::Vertex::operator*=</definition>
+        <argsstring>(ai_real v)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="168" column="12" bodyfile="include/assimp/Vertex.h" bodystart="168" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_vertex_1a9f6a852165ac8f2ac562aa492661c8c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+        <definition>Vertex&amp; Assimp::Vertex::operator+=</definition>
+        <argsstring>(const Vertex &amp;v)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="158" column="12" bodyfile="include/assimp/Vertex.h" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_vertex_1a649d7f8f3a80cb08ead06bf4649c180f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+        <definition>Vertex&amp; Assimp::Vertex::operator-=</definition>
+        <argsstring>(const Vertex &amp;v)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="163" column="12" bodyfile="include/assimp/Vertex.h" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_vertex_1ab5ac24f498f447b7192306c326a9f344" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+        <definition>Vertex&amp; Assimp::Vertex::operator/=</definition>
+        <argsstring>(ai_real v)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="173" column="12" bodyfile="include/assimp/Vertex.h" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_vertex_1a09d29f6cac51d56aa90ab874ad1cdc78" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Vertex::SortBack</definition>
+        <argsstring>(aiMesh *out, unsigned int idx) const</argsstring>
+        <name>SortBack</name>
+        <param>
+          <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Convert back to non-interleaved storage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="180" column="10" bodyfile="include/assimp/Vertex.h" bodystart="180" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_vertex_1acd3ba60beab8b9b44d8bd1955eb7af8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::Vertex::Vertex</definition>
+        <argsstring>()</argsstring>
+        <name>Vertex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="108" column="5" bodyfile="include/assimp/Vertex.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_vertex_1a11244d5ce8e0ef958363c8a2498dde6e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::Vertex::Vertex</definition>
+        <argsstring>(const aiAnimMesh *msh, unsigned int idx)</argsstring>
+        <name>Vertex</name>
+        <param>
+          <type>const <ref refid="structai_anim_mesh" kindref="compound">aiAnimMesh</ref> *</type>
+          <declname>msh</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Extract a particular vertex from a anim mesh and interleave all components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="136" column="14" bodyfile="include/assimp/Vertex.h" bodystart="136" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_vertex_1a033c3e271016c729f353726007b25d7e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::Vertex::Vertex</definition>
+        <argsstring>(const aiMesh *msh, unsigned int idx)</argsstring>
+        <name>Vertex</name>
+        <param>
+          <type>const <ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+          <declname>msh</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Extract a particular vertex from a mesh and interleave all components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="112" column="14" bodyfile="include/assimp/Vertex.h" bodystart="112" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_vertex_1a314edcc7b8e1db0718f1f81c5735dc1e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>template&lt; typename, typename, typename &gt; class</type>
+            <declname>op</declname>
+            <defname>op</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>static Vertex Assimp::Vertex::BinaryOp</definition>
+        <argsstring>(ai_real f, const Vertex &amp;v0)</argsstring>
+        <name>BinaryOp</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <briefdescription>
+<para>This time binary arithmetics of v0 with a floating-point number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="246" column="33" bodyfile="include/assimp/Vertex.h" bodystart="246" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_vertex_1aff95a42c53a13661da86d7a5a796629c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>template&lt; typename, typename, typename &gt; class</type>
+            <declname>op</declname>
+            <defname>op</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>static Vertex Assimp::Vertex::BinaryOp</definition>
+        <argsstring>(const Vertex &amp;v0, ai_real f)</argsstring>
+        <name>BinaryOp</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>This time binary arithmetics of v0 with a floating-point number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="226" column="33" bodyfile="include/assimp/Vertex.h" bodystart="226" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_vertex_1ab7ea8f56d26b1a55672bead13695468a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>template&lt; typename t &gt; class</type>
+            <declname>op</declname>
+            <defname>op</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>static Vertex Assimp::Vertex::BinaryOp</definition>
+        <argsstring>(const Vertex &amp;v0, const Vertex &amp;v1)</argsstring>
+        <name>BinaryOp</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <briefdescription>
+<para>Construct from two operands and a binary operation to combine them. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="206" column="33" bodyfile="include/assimp/Vertex.h" bodystart="206" bodyend="222"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Intermediate description a vertex with all possible components. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Defines a full set of operators, so you may use such a &apos;<ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref>&apos; in basic arithmetics. All operators are applied to <emphasis>all</emphasis> vertex components equally. This is useful for stuff like interpolation or subdivision, but won&apos;t work if special handling is required for some vertex components. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>aiVector3t&lt; ai_real &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+      <node id="2">
+        <label>aiColor4t&lt; ai_real &gt;</label>
+        <link refid="classai_color4t"/>
+      </node>
+      <node id="1">
+        <label>Assimp::Vertex</label>
+        <link refid="class_assimp_1_1_vertex"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>colors</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>bitangent</edgelabel>
+          <edgelabel>normal</edgelabel>
+          <edgelabel>position</edgelabel>
+          <edgelabel>tangent</edgelabel>
+          <edgelabel>texcoords</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/Vertex.h" line="100" column="1" bodyfile="include/assimp/Vertex.h" bodystart="100" bodyend="272"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_vertex_1ab7ea8f56d26b1a55672bead13695468a" prot="private" virt="non-virtual"><scope>Assimp::Vertex</scope><name>BinaryOp</name></member>
+      <member refid="class_assimp_1_1_vertex_1aff95a42c53a13661da86d7a5a796629c" prot="private" virt="non-virtual"><scope>Assimp::Vertex</scope><name>BinaryOp</name></member>
+      <member refid="class_assimp_1_1_vertex_1a314edcc7b8e1db0718f1f81c5735dc1e" prot="private" virt="non-virtual"><scope>Assimp::Vertex</scope><name>BinaryOp</name></member>
+      <member refid="class_assimp_1_1_vertex_1a8022c610eb4fb8668b98f8f1fbec3f06" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>bitangent</name></member>
+      <member refid="class_assimp_1_1_vertex_1a9133ffca5e2bf7a1f155df29be1ed07e" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>colors</name></member>
+      <member refid="class_assimp_1_1_vertex_1a09c4c9b9877537de3b143ecffb99408b" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>normal</name></member>
+      <member refid="class_assimp_1_1_vertex_1a98883c8b9e323d5be429f7a81ff59c0f" prot="private" virt="non-virtual"><scope>Assimp::Vertex</scope><name>operator*</name></member>
+      <member refid="class_assimp_1_1_vertex_1a13539103c19c798c5ab14abaf80fef51" prot="private" virt="non-virtual"><scope>Assimp::Vertex</scope><name>operator*</name></member>
+      <member refid="class_assimp_1_1_vertex_1a5c471696bd077300ca7b03367222ed84" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>operator*=</name></member>
+      <member refid="class_assimp_1_1_vertex_1a63d8efb7ec1db3fdbc0a37e15f579256" prot="private" virt="non-virtual"><scope>Assimp::Vertex</scope><name>operator+</name></member>
+      <member refid="class_assimp_1_1_vertex_1a9f6a852165ac8f2ac562aa492661c8c9" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>operator+=</name></member>
+      <member refid="class_assimp_1_1_vertex_1aa083de147d357c0fb18f4424dc36d530" prot="private" virt="non-virtual"><scope>Assimp::Vertex</scope><name>operator-</name></member>
+      <member refid="class_assimp_1_1_vertex_1a649d7f8f3a80cb08ead06bf4649c180f" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>operator-=</name></member>
+      <member refid="class_assimp_1_1_vertex_1aaac6d314c7cdd0e998576b934ec41587" prot="private" virt="non-virtual"><scope>Assimp::Vertex</scope><name>operator/</name></member>
+      <member refid="class_assimp_1_1_vertex_1ab5ac24f498f447b7192306c326a9f344" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>operator/=</name></member>
+      <member refid="class_assimp_1_1_vertex_1a51221e3e2a5e5f15d956313f8816ee80" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>position</name></member>
+      <member refid="class_assimp_1_1_vertex_1a09d29f6cac51d56aa90ab874ad1cdc78" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>SortBack</name></member>
+      <member refid="class_assimp_1_1_vertex_1ac4ecbc39eb88a5f516e357178543c3dd" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>tangent</name></member>
+      <member refid="class_assimp_1_1_vertex_1a3762b01faaedd03cbbeefec05ddd325c" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>texcoords</name></member>
+      <member refid="class_assimp_1_1_vertex_1acd3ba60beab8b9b44d8bd1955eb7af8c" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>Vertex</name></member>
+      <member refid="class_assimp_1_1_vertex_1a033c3e271016c729f353726007b25d7e" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>Vertex</name></member>
+      <member refid="class_assimp_1_1_vertex_1a11244d5ce8e0ef958363c8a2498dde6e" prot="public" virt="non-virtual"><scope>Assimp::Vertex</scope><name>Vertex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_camera" kind="struct" language="C++" prot="public">
     <compoundname>aiCamera</compoundname>
     <includes local="no">camera.h</includes>
@@ -10,12 +10,14 @@
         <argsstring></argsstring>
         <name>mAspect</name>
         <briefdescription>
-<para>Screen aspect ratio. </para>        </briefdescription>
+<para>Screen aspect ratio. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This is the ration between the width and the height of the screen. Typical values are 4/3, 1/2 or 1/1. This value is 0 if the aspect ratio is not defined in the source file. 0 is also the default value. </para>        </detaileddescription>
+<para>This is the ration between the width and the height of the screen. Typical values are 4/3, 1/2 or 1/1. This value is 0 if the aspect ratio is not defined in the source file. 0 is also the default value. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/camera.h" line="172" column="1" bodyfile="include/assimp/camera.h" bodystart="172" bodyend="-1"/>
+        <location file="include/assimp/camera.h" line="172" column="11" bodyfile="include/assimp/camera.h" bodystart="172" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_camera_1aa9ccf77e3d7ca3dc8f46df931b65172f" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -23,12 +25,14 @@
         <argsstring></argsstring>
         <name>mClipPlaneFar</name>
         <briefdescription>
-<para>Distance of the far clipping plane from the camera. </para>        </briefdescription>
+<para>Distance of the far clipping plane from the camera. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The far clipping plane must, of course, be further away than the near clipping plane. The default value is 1000.f. The ratio between the near and the far plane should not be too large (between 1000-10000 should be ok) to avoid floating-point inaccuracies which could lead to z-fighting. </para>        </detaileddescription>
+<para>The far clipping plane must, of course, be further away than the near clipping plane. The default value is 1000.f. The ratio between the near and the far plane should not be too large (between 1000-10000 should be ok) to avoid floating-point inaccuracies which could lead to z-fighting. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/camera.h" line="163" column="1" bodyfile="include/assimp/camera.h" bodystart="163" bodyend="-1"/>
+        <location file="include/assimp/camera.h" line="163" column="11" bodyfile="include/assimp/camera.h" bodystart="163" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_camera_1a720e8c94c036dcefe4b13cc1c69c521e" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -36,12 +40,14 @@
         <argsstring></argsstring>
         <name>mClipPlaneNear</name>
         <briefdescription>
-<para>Distance of the near clipping plane from the camera. </para>        </briefdescription>
+<para>Distance of the near clipping plane from the camera. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The value may not be 0.f (for arithmetic reasons to prevent a division through zero). The default value is 0.1f. </para>        </detaileddescription>
+<para>The value may not be 0.f (for arithmetic reasons to prevent a division through zero). The default value is 0.1f. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/camera.h" line="153" column="1" bodyfile="include/assimp/camera.h" bodystart="153" bodyend="-1"/>
+        <location file="include/assimp/camera.h" line="153" column="11" bodyfile="include/assimp/camera.h" bodystart="153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_camera_1adcdea73ece19ea0a9068f5544ec23592" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -49,12 +55,14 @@
         <argsstring></argsstring>
         <name>mHorizontalFOV</name>
         <briefdescription>
-<para>Horizontal field of view angle, in radians. </para>        </briefdescription>
+<para>Horizontal field of view angle, in radians. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The field of view angle is the angle between the center line of the screen and the left or right border. The default value is 1/4PI. </para>        </detaileddescription>
+<para>The field of view angle is the angle between the center line of the screen and the left or right border. The default value is 1/4PI. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/camera.h" line="146" column="1" bodyfile="include/assimp/camera.h" bodystart="146" bodyend="-1"/>
+        <location file="include/assimp/camera.h" line="146" column="11" bodyfile="include/assimp/camera.h" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_camera_1af9463249ac870e030fa435b1186cef23" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
@@ -62,12 +70,14 @@
         <argsstring></argsstring>
         <name>mLookAt</name>
         <briefdescription>
-<para>&apos;LookAt&apos; - vector of the camera coordinate system relative to the coordinate space defined by the corresponding node. </para>        </briefdescription>
+<para>&apos;LookAt&apos; - vector of the camera coordinate system relative to the coordinate space defined by the corresponding node. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This is the viewing direction of the user. The default value is 0|0|1. The vector may be normalized, but it needn&apos;t. </para>        </detaileddescription>
+<para>This is the viewing direction of the user. The default value is 0|0|1. The vector may be normalized, but it needn&apos;t. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/camera.h" line="138" column="1" bodyfile="include/assimp/camera.h" bodystart="138" bodyend="-1"/>
+        <location file="include/assimp/camera.h" line="138" column="25" bodyfile="include/assimp/camera.h" bodystart="138" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_camera_1aa6a5fe5e04b3db1b23f69eb9910c6816" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
@@ -75,12 +85,14 @@
         <argsstring></argsstring>
         <name>mName</name>
         <briefdescription>
-<para>The name of the camera. </para>        </briefdescription>
+<para>The name of the camera. </para>
+        </briefdescription>
         <detaileddescription>
-<para>There must be a node in the scenegraph with the same name. This node specifies the position of the camera in the scene hierarchy and can be animated. </para>        </detaileddescription>
+<para>There must be a node in the scenegraph with the same name. This node specifies the position of the camera in the scene hierarchy and can be animated. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/camera.h" line="111" column="1" bodyfile="include/assimp/camera.h" bodystart="111" bodyend="-1"/>
+        <location file="include/assimp/camera.h" line="111" column="23" bodyfile="include/assimp/camera.h" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_camera_1a0fecea8b33fedd82856d1e8906d3f64c" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -88,12 +100,14 @@
         <argsstring></argsstring>
         <name>mOrthographicWidth</name>
         <briefdescription>
-<para>Half horizontal orthographic width, in scene units. </para>        </briefdescription>
+<para>Half horizontal orthographic width, in scene units. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The orthographic width specifies the half width of the orthographic view box. If non-zero the camera is orthographic and the mAspect should define to the ratio between the orthographic width and height and mHorizontalFOV should be set to 0. The default value is 0 (not orthographic). </para>        </detaileddescription>
+<para>The orthographic width specifies the half width of the orthographic view box. If non-zero the camera is orthographic and the mAspect should define to the ratio between the orthographic width and height and mHorizontalFOV should be set to 0. The default value is 0 (not orthographic). </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/camera.h" line="183" column="1" bodyfile="include/assimp/camera.h" bodystart="183" bodyend="-1"/>
+        <location file="include/assimp/camera.h" line="183" column="11" bodyfile="include/assimp/camera.h" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_camera_1a518617ea192ca0698e748a4399e7c3a5" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
@@ -101,12 +115,14 @@
         <argsstring></argsstring>
         <name>mPosition</name>
         <briefdescription>
-<para>Position of the camera relative to the coordinate space defined by the corresponding node. </para>        </briefdescription>
+<para>Position of the camera relative to the coordinate space defined by the corresponding node. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The default value is 0|0|0. </para>        </detaileddescription>
+<para>The default value is 0|0|0. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/camera.h" line="118" column="1" bodyfile="include/assimp/camera.h" bodystart="118" bodyend="-1"/>
+        <location file="include/assimp/camera.h" line="118" column="25" bodyfile="include/assimp/camera.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_camera_1a7fb42b287389b4f99c883098268d6d1a" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
@@ -114,12 +130,14 @@
         <argsstring></argsstring>
         <name>mUp</name>
         <briefdescription>
-<para>&apos;Up&apos; - vector of the camera coordinate system relative to the coordinate space defined by the corresponding node. </para>        </briefdescription>
+<para>&apos;Up&apos; - vector of the camera coordinate system relative to the coordinate space defined by the corresponding node. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The &apos;right&apos; vector of the camera coordinate system is the cross product of the up and lookAt vectors. The default value is 0|1|0. The vector may be normalized, but it needn&apos;t. </para>        </detaileddescription>
+<para>The &apos;right&apos; vector of the camera coordinate system is the cross product of the up and lookAt vectors. The default value is 0|1|0. The vector may be normalized, but it needn&apos;t. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/camera.h" line="128" column="1" bodyfile="include/assimp/camera.h" bodystart="128" bodyend="-1"/>
+        <location file="include/assimp/camera.h" line="128" column="25" bodyfile="include/assimp/camera.h" bodystart="128" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -134,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/camera.h" line="186" column="1" bodyfile="include/assimp/camera.h" bodystart="186" bodyend="194"/>
+        <location file="include/assimp/camera.h" line="186" column="5" bodyfile="include/assimp/camera.h" bodystart="186" bodyend="194"/>
       </memberdef>
       <memberdef kind="function" id="structai_camera_1a868db40b018d3e5b8d1481608e859cb5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -146,24 +164,30 @@
           <declname>out</declname>
         </param>
         <briefdescription>
-<para>Get a <emphasis>right-handed</emphasis> camera matrix from me. </para>        </briefdescription>
+<para>Get a <emphasis>right-handed</emphasis> camera matrix from me. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>out</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Camera matrix to be filled </para></parameterdescription>
+<para>Camera matrix to be filled </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
-<para>todo: test ... should work, but i&apos;m not absolutely sure</para><para>We don&apos;t know whether these vectors are already normalized ... </para>        </inbodydescription>
-        <location file="include/assimp/camera.h" line="199" column="1" bodyfile="include/assimp/camera.h" bodystart="199" bodyend="226"/>
+<para>todo: test ... should work, but i&apos;m not absolutely sure</para>
+<para>We don&apos;t know whether these vectors are already normalized ...</para>
+        </inbodydescription>
+        <location file="include/assimp/camera.h" line="199" column="10" bodyfile="include/assimp/camera.h" bodystart="199" bodyend="226"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Helper structure to describe a virtual camera. </para>    </briefdescription>
+<para>Helper structure to describe a virtual camera. </para>
+    </briefdescription>
     <detaileddescription>
 <para>Cameras have a representation in the node graph and can be animated. An important aspect is that the camera itself is also part of the scene-graph. This means, any values such as the look-at vector are not <emphasis>absolute</emphasis>, they&apos;re <bold>relative</bold> to the coordinate system defined by the node which corresponds to the camera. This allows for camera animations. For static cameras parameters like the &apos;look-at&apos; or &apos;up&apos; vectors are usually specified directly in <ref refid="structai_camera" kindref="compound">aiCamera</ref>, but beware, they could also be encoded in the node transformation. The following (pseudo)code sample shows how to do it: <linebreak/>
 <linebreak/>
@@ -187,31 +211,34 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/>//<sp/>now<sp/>multiply<sp/>with<sp/>the<sp/>camera&apos;s<sp/>own<sp/>local<sp/>transform</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/>cam<sp/>=<sp/>mult-matrices<sp/>(cam,<sp/>get-camera-matrix(cmt)<sp/>)</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting></para><para><simplesect kind="note"><para>some file formats (such as 3DS, ASE) export a &quot;target point&quot; - the point the camera is looking at (it can even be animated). <ref refid="namespace_assimp" kindref="compound">Assimp</ref> writes the target point as a subnode of the camera&apos;s main node, called &quot;&lt;camName&gt;.Target&quot;. However this is just additional information then the transformation tracks of the camera main node make the camera already look in the right direction. </para></simplesect>
-</para>    </detaileddescription>
+</programlisting></para>
+<para><simplesect kind="note"><para>some file formats (such as 3DS, ASE) export a &quot;target point&quot; - the point the camera is looking at (it can even be animated). <ref refid="namespace_assimp" kindref="compound">Assimp</ref> writes the target point as a subnode of the camera&apos;s main node, called &quot;&lt;camName&gt;.Target&quot;. However this is just additional information then the transformation tracks of the camera main node make the camera already look in the right direction. </para>
+</simplesect>
+</para>
+    </detaileddescription>
     <collaborationgraph>
-      <node id="34">
+      <node id="2">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>
-      <node id="33">
+      <node id="1">
         <label>aiCamera</label>
         <link refid="structai_camera"/>
-        <childnode refid="34" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="35" relation="usage">
-          <edgelabel>mUp</edgelabel>
+        <childnode refid="3" relation="usage">
           <edgelabel>mLookAt</edgelabel>
           <edgelabel>mPosition</edgelabel>
+          <edgelabel>mUp</edgelabel>
         </childnode>
       </node>
-      <node id="35">
+      <node id="3">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>
     </collaborationgraph>
-    <location file="include/assimp/camera.h" line="104" column="1" bodyfile="include/assimp/camera.h" bodystart="103" bodyend="229"/>
+    <location file="include/assimp/camera.h" line="103" column="1" bodyfile="include/assimp/camera.h" bodystart="104" bodyend="229"/>
     <listofallmembers>
       <member refid="structai_camera_1a274978e3d08de9a18a62572bad7e0205" prot="public" virt="non-virtual"><scope>aiCamera</scope><name>aiCamera</name></member>
       <member refid="structai_camera_1a868db40b018d3e5b8d1481608e859cb5" prot="public" virt="non-virtual"><scope>aiCamera</scope><name>GetCameraMatrix</name></member>

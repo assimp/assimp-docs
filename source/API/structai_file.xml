@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_file" kind="struct" language="C++" prot="public">
     <compoundname>aiFile</compoundname>
     <includes local="no">cfileio.h</includes>
@@ -10,12 +10,13 @@
         <argsstring></argsstring>
         <name>FileSizeProc</name>
         <briefdescription>
-<para>Callback to retrieve the size of the file, in bytes. </para>        </briefdescription>
+<para>Callback to retrieve the size of the file, in bytes. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/cfileio.h" line="125" column="1" bodyfile="include/assimp/cfileio.h" bodystart="125" bodyend="-1"/>
+        <location file="include/assimp/cfileio.h" line="125" column="20" bodyfile="include/assimp/cfileio.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_file_1a1102d28d1c0be68ffed20476669bdb0d" prot="public" static="no" mutable="no">
         <type><ref refid="cfileio_8h_1a49a7a4a25167c7aa03dfe80ae5bdd959" kindref="member">aiFileFlushProc</ref></type>
@@ -23,12 +24,13 @@
         <argsstring></argsstring>
         <name>FlushProc</name>
         <briefdescription>
-<para>Callback to flush the file contents. </para>        </briefdescription>
+<para>Callback to flush the file contents. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/cfileio.h" line="134" column="1" bodyfile="include/assimp/cfileio.h" bodystart="134" bodyend="-1"/>
+        <location file="include/assimp/cfileio.h" line="134" column="21" bodyfile="include/assimp/cfileio.h" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_file_1a52287e81ca67b9d43cc1ce6142f781fa" prot="public" static="no" mutable="no">
         <type><ref refid="cfileio_8h_1a482e6ebea846d515ef23556d0f1717f4" kindref="member">aiFileReadProc</ref></type>
@@ -36,12 +38,13 @@
         <argsstring></argsstring>
         <name>ReadProc</name>
         <briefdescription>
-<para>Callback to read from a file. </para>        </briefdescription>
+<para>Callback to read from a file. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/cfileio.h" line="112" column="1" bodyfile="include/assimp/cfileio.h" bodystart="112" bodyend="-1"/>
+        <location file="include/assimp/cfileio.h" line="112" column="20" bodyfile="include/assimp/cfileio.h" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_file_1a7a07b499be4ad433669246479a4d4ad2" prot="public" static="no" mutable="no">
         <type><ref refid="cfileio_8h_1a9d44e516b1ce6ef3da4295045d6ec217" kindref="member">aiFileSeek</ref></type>
@@ -49,12 +52,13 @@
         <argsstring></argsstring>
         <name>SeekProc</name>
         <briefdescription>
-<para>Callback to set the current position of the file cursor (fseek()) </para>        </briefdescription>
+<para>Callback to set the current position of the file cursor (fseek()) </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/cfileio.h" line="130" column="1" bodyfile="include/assimp/cfileio.h" bodystart="130" bodyend="-1"/>
+        <location file="include/assimp/cfileio.h" line="130" column="16" bodyfile="include/assimp/cfileio.h" bodystart="130" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_file_1aaf2d88a3b2fcbdacf51119658283d27e" prot="public" static="no" mutable="no">
         <type><ref refid="cfileio_8h_1a30d575ddf8f46426ecb12c95f92b1686" kindref="member">aiFileTellProc</ref></type>
@@ -62,12 +66,13 @@
         <argsstring></argsstring>
         <name>TellProc</name>
         <briefdescription>
-<para>Callback to retrieve the current position of the file cursor (ftell()) </para>        </briefdescription>
+<para>Callback to retrieve the current position of the file cursor (ftell()) </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/cfileio.h" line="120" column="1" bodyfile="include/assimp/cfileio.h" bodystart="120" bodyend="-1"/>
+        <location file="include/assimp/cfileio.h" line="120" column="20" bodyfile="include/assimp/cfileio.h" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_file_1aec528fa18f4755fe4f28d604fde28aad" prot="public" static="no" mutable="no">
         <type><ref refid="cfileio_8h_1a176132d0cd51c96302089ff3f8a8ee1c" kindref="member">aiUserData</ref></type>
@@ -75,12 +80,13 @@
         <argsstring></argsstring>
         <name>UserData</name>
         <briefdescription>
-<para>User-defined, opaque data. </para>        </briefdescription>
+<para>User-defined, opaque data. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/cfileio.h" line="138" column="1" bodyfile="include/assimp/cfileio.h" bodystart="138" bodyend="-1"/>
+        <location file="include/assimp/cfileio.h" line="138" column="16" bodyfile="include/assimp/cfileio.h" bodystart="138" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_file_1ab9fca3a62e34a33592c13a6f31db7d1d" prot="public" static="no" mutable="no">
         <type><ref refid="cfileio_8h_1a21d0825136cd8be942613ff77479045d" kindref="member">aiFileWriteProc</ref></type>
@@ -88,33 +94,37 @@
         <argsstring></argsstring>
         <name>WriteProc</name>
         <briefdescription>
-<para>Callback to write to a file. </para>        </briefdescription>
+<para>Callback to write to a file. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/cfileio.h" line="115" column="1" bodyfile="include/assimp/cfileio.h" bodystart="115" bodyend="-1"/>
+        <location file="include/assimp/cfileio.h" line="115" column="21" bodyfile="include/assimp/cfileio.h" bodystart="115" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>C-API: File callbacks. </para>    </briefdescription>
+<para>C-API: File callbacks. </para>
+    </briefdescription>
     <detaileddescription>
-<para>Actually, it&apos;s a data structure to wrap a set of fXXXX (e.g fopen) replacement functions.</para><para>The default implementation of the functions utilizes the fXXX functions from the CRT. However, you can supply a custom implementation to <ref refid="namespace_assimp" kindref="compound">Assimp</ref> by delivering a custom <ref refid="structai_file_i_o" kindref="compound">aiFileIO</ref>. Use this to enable reading from other sources, such as ZIP archives or memory locations. </para>    </detaileddescription>
+<para>Actually, it&apos;s a data structure to wrap a set of fXXXX (e.g fopen) replacement functions.</para>
+<para>The default implementation of the functions utilizes the fXXX functions from the CRT. However, you can supply a custom implementation to <ref refid="namespace_assimp" kindref="compound">Assimp</ref> by delivering a custom <ref refid="structai_file_i_o" kindref="compound">aiFileIO</ref>. Use this to enable reading from other sources, such as ZIP archives or memory locations. </para>
+    </detaileddescription>
     <collaborationgraph>
-      <node id="48">
+      <node id="1">
         <label>aiFile</label>
         <link refid="structai_file"/>
-        <childnode refid="48" relation="usage">
+        <childnode refid="1" relation="usage">
           <edgelabel>FileSizeProc</edgelabel>
-          <edgelabel>TellProc</edgelabel>
-          <edgelabel>ReadProc</edgelabel>
-          <edgelabel>WriteProc</edgelabel>
-          <edgelabel>SeekProc</edgelabel>
           <edgelabel>FlushProc</edgelabel>
+          <edgelabel>ReadProc</edgelabel>
+          <edgelabel>SeekProc</edgelabel>
+          <edgelabel>TellProc</edgelabel>
+          <edgelabel>WriteProc</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/assimp/cfileio.h" line="110" column="1" bodyfile="include/assimp/cfileio.h" bodystart="109" bodyend="139"/>
+    <location file="include/assimp/cfileio.h" line="109" column="1" bodyfile="include/assimp/cfileio.h" bodystart="110" bodyend="139"/>
     <listofallmembers>
       <member refid="structai_file_1aff2fff8c0458e7ec71f7de217c3a3033" prot="public" virt="non-virtual"><scope>aiFile</scope><name>FileSizeProc</name></member>
       <member refid="structai_file_1a1102d28d1c0be68ffed20476669bdb0d" prot="public" virt="non-virtual"><scope>aiFile</scope><name>FlushProc</name></member>

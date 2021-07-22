@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_mesh" kind="struct" language="C++" prot="public">
     <compoundname>aiMesh</compoundname>
     <includes local="no">mesh.h</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="746" column="1" bodyfile="include/assimp/mesh.h" bodystart="746" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="746" column="21" bodyfile="include/assimp/mesh.h" bodystart="746" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_anim_mesh" kindref="compound">aiAnimMesh</ref> **</type>
@@ -23,12 +23,14 @@
         <argsstring></argsstring>
         <name>mAnimMeshes</name>
         <briefdescription>
-<para>Attachment meshes for this mesh, for vertex-based animation. </para>        </briefdescription>
+<para>Attachment meshes for this mesh, for vertex-based animation. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Attachment meshes carry replacement data for some of the mesh&apos;es vertex components (usually positions, normals). Note! Currently only works with Collada loader. </para>        </detaileddescription>
+<para>Attachment meshes carry replacement data for some of the mesh&apos;es vertex components (usually positions, normals). Note! Currently only works with Collada loader. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="736" column="1" bodyfile="include/assimp/mesh.h" bodystart="736" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="736" column="25" bodyfile="include/assimp/mesh.h" bodystart="736" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1ab2a81bfe1731f01271ebab274a8f01c4" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
@@ -36,13 +38,16 @@
         <argsstring></argsstring>
         <name>mBitangents</name>
         <briefdescription>
-<para>Vertex bitangents. </para>        </briefdescription>
+<para>Vertex bitangents. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The bitangent of a vertex points in the direction of the positive Y texture axis. The array contains normalized vectors, nullptr if not present. The array is mNumVertices in size. <simplesect kind="note"><para>If the mesh contains tangents, it automatically also contains bitangents. </para></simplesect>
-</para>        </detaileddescription>
+<para>The bitangent of a vertex points in the direction of the positive Y texture axis. The array contains normalized vectors, nullptr if not present. The array is mNumVertices in size. <simplesect kind="note"><para>If the mesh contains tangents, it automatically also contains bitangents. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="662" column="1" bodyfile="include/assimp/mesh.h" bodystart="662" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="662" column="25" bodyfile="include/assimp/mesh.h" bodystart="662" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1a0c0582a7f45b340b6a33552c53232539" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_bone" kindref="compound">aiBone</ref> **</type>
@@ -50,12 +55,14 @@
         <argsstring></argsstring>
         <name>mBones</name>
         <briefdescription>
-<para>The bones of this mesh. </para>        </briefdescription>
+<para>The bones of this mesh. </para>
+        </briefdescription>
         <detaileddescription>
-<para>A bone consists of a name by which it can be found in the frame hierarchy and a set of vertex weights. </para>        </detaileddescription>
+<para>A bone consists of a name by which it can be found in the frame hierarchy and a set of vertex weights. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="707" column="1" bodyfile="include/assimp/mesh.h" bodystart="707" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="707" column="21" bodyfile="include/assimp/mesh.h" bodystart="707" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1ad9215f67bd0c2277b10775a8adb66b96" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="color4_8h_1a4badb8c19633de8f741ba2089ab79189" kindref="member">aiColor4D</ref> *</type>
@@ -63,12 +70,14 @@
         <argsstring>[AI_MAX_NUMBER_OF_COLOR_SETS]</argsstring>
         <name>mColors</name>
         <briefdescription>
-<para>Vertex color sets. </para>        </briefdescription>
+<para>Vertex color sets. </para>
+        </briefdescription>
         <detaileddescription>
-<para>A mesh may contain 0 to <ref refid="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" kindref="member">AI_MAX_NUMBER_OF_COLOR_SETS</ref> vertex colors per vertex. nullptr if not present. Each array is mNumVertices in size if present. </para>        </detaileddescription>
+<para>A mesh may contain 0 to <ref refid="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" kindref="member">AI_MAX_NUMBER_OF_COLOR_SETS</ref> vertex colors per vertex. nullptr if not present. Each array is mNumVertices in size if present. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="669" column="1" bodyfile="include/assimp/mesh.h" bodystart="669" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="669" column="24" bodyfile="include/assimp/mesh.h" bodystart="669" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1a5a65fbc7fdea7f8d36f39047425ece07" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_face" kindref="compound">aiFace</ref> *</type>
@@ -76,12 +85,14 @@
         <argsstring></argsstring>
         <name>mFaces</name>
         <briefdescription>
-<para>The faces the mesh is constructed from. </para>        </briefdescription>
+<para>The faces the mesh is constructed from. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Each face refers to a number of vertices by their indices. This array is always present in a mesh, its size is given in mNumFaces. If the <ref refid="scene_8h_1ae17f4a0adb51e554db9575cc4e1126f9" kindref="member">AI_SCENE_FLAGS_NON_VERBOSE_FORMAT</ref> is NOT set each face references an unique set of vertices. </para>        </detaileddescription>
+<para>Each face refers to a number of vertices by their indices. This array is always present in a mesh, its size is given in mNumFaces. If the <ref refid="scene_8h_1ae17f4a0adb51e554db9575cc4e1126f9" kindref="member">AI_SCENE_FLAGS_NON_VERBOSE_FORMAT</ref> is NOT set each face references an unique set of vertices. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="696" column="1" bodyfile="include/assimp/mesh.h" bodystart="696" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="696" column="21" bodyfile="include/assimp/mesh.h" bodystart="696" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1aa2807c7ba172115203ed16047ad65f9e" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -89,12 +100,14 @@
         <argsstring></argsstring>
         <name>mMaterialIndex</name>
         <briefdescription>
-<para>The material used by this mesh. </para>        </briefdescription>
+<para>The material used by this mesh. </para>
+        </briefdescription>
         <detaileddescription>
-<para>A mesh uses only a single material. If an imported model uses multiple materials, the import splits up the mesh. Use this value as index into the scene&apos;s material list. </para>        </detaileddescription>
+<para>A mesh uses only a single material. If an imported model uses multiple materials, the import splits up the mesh. Use this value as index into the scene&apos;s material list. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="714" column="1" bodyfile="include/assimp/mesh.h" bodystart="714" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="714" column="18" bodyfile="include/assimp/mesh.h" bodystart="714" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1a3a6c8c5f1d6543bfdd930f6b07467665" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -102,12 +115,13 @@
         <argsstring></argsstring>
         <name>mMethod</name>
         <briefdescription>
-<para>Method of morphing when animeshes are specified. </para>        </briefdescription>
+<para>Method of morphing when animeshes are specified. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="741" column="1" bodyfile="include/assimp/mesh.h" bodystart="741" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="741" column="18" bodyfile="include/assimp/mesh.h" bodystart="741" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1a8dd9433e0c5b008e3e5aee6c801d3b74" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
@@ -115,14 +129,19 @@
         <argsstring></argsstring>
         <name>mName</name>
         <briefdescription>
-<para>Name of the mesh. </para>        </briefdescription>
+<para>Name of the mesh. </para>
+        </briefdescription>
         <detaileddescription>
 <para>Meshes can be named, but this is not a requirement and leaving this field empty is totally fine. There are mainly three uses for mesh names:<itemizedlist>
-<listitem><para>some formats name nodes and meshes independently.</para></listitem><listitem><para>importers tend to split meshes up to meet the one-material-per-mesh requirement. Assigning the same (dummy) name to each of the result meshes aids the caller at recovering the original mesh partitioning.</para></listitem><listitem><para>Vertex animations refer to meshes by their names. </para></listitem></itemizedlist>
-</para>        </detaileddescription>
+<listitem><para>some formats name nodes and meshes independently.</para>
+</listitem><listitem><para>importers tend to split meshes up to meet the one-material-per-mesh requirement. Assigning the same (dummy) name to each of the result meshes aids the caller at recovering the original mesh partitioning.</para>
+</listitem><listitem><para>Vertex animations refer to meshes by their names. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="727" column="1" bodyfile="include/assimp/mesh.h" bodystart="727" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="727" column="23" bodyfile="include/assimp/mesh.h" bodystart="727" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1aec81b496b4d93838cef038933dabe9b9" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
@@ -130,14 +149,17 @@
         <argsstring></argsstring>
         <name>mNormals</name>
         <briefdescription>
-<para>Vertex normals. </para>        </briefdescription>
+<para>Vertex normals. </para>
+        </briefdescription>
         <detaileddescription>
 <para>The array contains normalized vectors, nullptr if not present. The array is mNumVertices in size. Normals are undefined for point and line primitives. A mesh consisting of points and lines only may not have normal vectors. Meshes with mixed primitive types (i.e. lines and triangles) may have normals, but the normals for vertices that are only referenced by point or line primitives are undefined and set to QNaN (WARN: qNaN compares to inequal to <emphasis>everything</emphasis>, even to qNaN itself. Using code like this to check whether a field is qnan is: <programlisting><codeline><highlight class="normal">#define<sp/>IS_QNAN(f)<sp/>(f<sp/>!=<sp/>f)</highlight></codeline>
-</programlisting> still dangerous because even 1.f == 1.f could evaluate to false! ( remember the subtleties of IEEE754 artithmetics). Use stuff like <computeroutput>fpclassify</computeroutput> instead. <simplesect kind="note"><para>Normal vectors computed by <ref refid="namespace_assimp" kindref="compound">Assimp</ref> are always unit-length. However, this needn&apos;t apply for normals that have been taken directly from the model file. </para></simplesect>
-</para>        </detaileddescription>
+</programlisting> still dangerous because even 1.f == 1.f could evaluate to false! ( remember the subtleties of IEEE754 artithmetics). Use stuff like <computeroutput>fpclassify</computeroutput> instead. <simplesect kind="note"><para>Normal vectors computed by <ref refid="namespace_assimp" kindref="compound">Assimp</ref> are always unit-length. However, this needn&apos;t apply for normals that have been taken directly from the model file. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="639" column="1" bodyfile="include/assimp/mesh.h" bodystart="639" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="639" column="25" bodyfile="include/assimp/mesh.h" bodystart="639" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1a1692a300222b32348ae51779df4a697e" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -145,12 +167,14 @@
         <argsstring></argsstring>
         <name>mNumAnimMeshes</name>
         <briefdescription>
-<para>The number of attachment meshes. </para>        </briefdescription>
+<para>The number of attachment meshes. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Note! Currently only works with Collada loader. </para>        </detaileddescription>
+<para>Note! Currently only works with Collada loader. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="730" column="1" bodyfile="include/assimp/mesh.h" bodystart="730" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="730" column="18" bodyfile="include/assimp/mesh.h" bodystart="730" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1a0f9d5425b6300e32a842a94f943fd79e" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -158,12 +182,14 @@
         <argsstring></argsstring>
         <name>mNumBones</name>
         <briefdescription>
-<para>The number of bones this mesh contains. </para>        </briefdescription>
+<para>The number of bones this mesh contains. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Can be 0, in which case the mBones array is nullptr. </para>        </detaileddescription>
+<para>Can be 0, in which case the mBones array is nullptr. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="701" column="1" bodyfile="include/assimp/mesh.h" bodystart="701" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="701" column="18" bodyfile="include/assimp/mesh.h" bodystart="701" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1aeed22ee6963b79548f3877b3c905518e" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -171,12 +197,14 @@
         <argsstring></argsstring>
         <name>mNumFaces</name>
         <briefdescription>
-<para>The number of primitives (triangles, polygons, lines) in this mesh. </para>        </briefdescription>
+<para>The number of primitives (triangles, polygons, lines) in this mesh. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This is also the size of the mFaces array. The maximum value for this member is <ref refid="mesh_8h_1aef69217e80411f3fee5aae3dc06b68ba" kindref="member">AI_MAX_FACES</ref>. </para>        </detaileddescription>
+<para>This is also the size of the mFaces array. The maximum value for this member is <ref refid="mesh_8h_1aef69217e80411f3fee5aae3dc06b68ba" kindref="member">AI_MAX_FACES</ref>. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="611" column="1" bodyfile="include/assimp/mesh.h" bodystart="611" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="611" column="18" bodyfile="include/assimp/mesh.h" bodystart="611" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1a635c631a6e66d32989d6b25b2a892d86" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -184,13 +212,16 @@
         <argsstring>[AI_MAX_NUMBER_OF_TEXTURECOORDS]</argsstring>
         <name>mNumUVComponents</name>
         <briefdescription>
-<para>Specifies the number of components for a given UV channel. </para>        </briefdescription>
+<para>Specifies the number of components for a given UV channel. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Up to three channels are supported (UVW, for accessing volume or cube maps). If the value is 2 for a given channel n, the component p.z of mTextureCoords[n][p] is set to 0.0f. If the value is 1 for a given channel, p.y is set to 0.0f, too. <simplesect kind="note"><para>4D coords are not supported </para></simplesect>
-</para>        </detaileddescription>
+<para>Up to three channels are supported (UVW, for accessing volume or cube maps). If the value is 2 for a given channel n, the component p.z of mTextureCoords[n][p] is set to 0.0f. If the value is 1 for a given channel, p.y is set to 0.0f, too. <simplesect kind="note"><para>4D coords are not supported </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="688" column="1" bodyfile="include/assimp/mesh.h" bodystart="688" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="688" column="18" bodyfile="include/assimp/mesh.h" bodystart="688" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1ab34b7b5941e6636f1c08f615cbb072ef" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -198,12 +229,14 @@
         <argsstring></argsstring>
         <name>mNumVertices</name>
         <briefdescription>
-<para>The number of vertices in this mesh. </para>        </briefdescription>
+<para>The number of vertices in this mesh. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This is also the size of all of the per-vertex data arrays. The maximum value for this member is <ref refid="mesh_8h_1aa3997d5751b93f15e4c9d86ced093b56" kindref="member">AI_MAX_VERTICES</ref>. </para>        </detaileddescription>
+<para>This is also the size of all of the per-vertex data arrays. The maximum value for this member is <ref refid="mesh_8h_1aa3997d5751b93f15e4c9d86ced093b56" kindref="member">AI_MAX_VERTICES</ref>. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="605" column="1" bodyfile="include/assimp/mesh.h" bodystart="605" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="605" column="18" bodyfile="include/assimp/mesh.h" bodystart="605" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1a99d66ac0a444068c1b252b30265cbf53" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -211,12 +244,14 @@
         <argsstring></argsstring>
         <name>mPrimitiveTypes</name>
         <briefdescription>
-<para>Bitwise combination of the members of the <ref refid="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03f" kindref="member">aiPrimitiveType</ref> enum. </para>        </briefdescription>
+<para>Bitwise combination of the members of the <ref refid="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03f" kindref="member">aiPrimitiveType</ref> enum. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This specifies which types of primitives are present in the mesh. The &quot;SortByPrimitiveType&quot;-Step can be used to make sure the output meshes consist of one primitive type each. </para>        </detaileddescription>
+<para>This specifies which types of primitives are present in the mesh. The &quot;SortByPrimitiveType&quot;-Step can be used to make sure the output meshes consist of one primitive type each. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="599" column="1" bodyfile="include/assimp/mesh.h" bodystart="599" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="599" column="18" bodyfile="include/assimp/mesh.h" bodystart="599" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1af367ff78bd69f3e83d7edc8ad67dc5df" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
@@ -224,13 +259,16 @@
         <argsstring></argsstring>
         <name>mTangents</name>
         <briefdescription>
-<para>Vertex tangents. </para>        </briefdescription>
+<para>Vertex tangents. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The tangent of a vertex points in the direction of the positive X texture axis. The array contains normalized vectors, nullptr if not present. The array is mNumVertices in size. A mesh consisting of points and lines only may not have normal vectors. Meshes with mixed primitive types (i.e. lines and triangles) may have normals, but the normals for vertices that are only referenced by point or line primitives are undefined and set to qNaN. See the <ref refid="structai_mesh_1aec81b496b4d93838cef038933dabe9b9" kindref="member">mNormals</ref> member for a detailed discussion of qNaNs. <simplesect kind="note"><para>If the mesh contains tangents, it automatically also contains bitangents. </para></simplesect>
-</para>        </detaileddescription>
+<para>The tangent of a vertex points in the direction of the positive X texture axis. The array contains normalized vectors, nullptr if not present. The array is mNumVertices in size. A mesh consisting of points and lines only may not have normal vectors. Meshes with mixed primitive types (i.e. lines and triangles) may have normals, but the normals for vertices that are only referenced by point or line primitives are undefined and set to qNaN. See the <ref refid="structai_mesh_1aec81b496b4d93838cef038933dabe9b9" kindref="member">mNormals</ref> member for a detailed discussion of qNaNs. <simplesect kind="note"><para>If the mesh contains tangents, it automatically also contains bitangents. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="653" column="1" bodyfile="include/assimp/mesh.h" bodystart="653" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="653" column="25" bodyfile="include/assimp/mesh.h" bodystart="653" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1a4a50b11d00ef50f419c75cab0f6bddd6" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
@@ -238,12 +276,14 @@
         <argsstring>[AI_MAX_NUMBER_OF_TEXTURECOORDS]</argsstring>
         <name>mTextureCoords</name>
         <briefdescription>
-<para>Vertex texture coords, also known as UV channels. </para>        </briefdescription>
+<para>Vertex texture coords, also known as UV channels. </para>
+        </briefdescription>
         <detaileddescription>
-<para>A mesh may contain 0 to AI_MAX_NUMBER_OF_TEXTURECOORDS per vertex. nullptr if not present. The array is mNumVertices in size. </para>        </detaileddescription>
+<para>A mesh may contain 0 to AI_MAX_NUMBER_OF_TEXTURECOORDS per vertex. nullptr if not present. The array is mNumVertices in size. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="675" column="1" bodyfile="include/assimp/mesh.h" bodystart="675" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="675" column="25" bodyfile="include/assimp/mesh.h" bodystart="675" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1a3b12274d6529425fed4603fe7c6553c5" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
@@ -251,12 +291,13 @@
         <argsstring>[AI_MAX_NUMBER_OF_TEXTURECOORDS]</argsstring>
         <name>mTextureCoordsNames</name>
         <briefdescription>
-<para>Vertex stream names. </para>        </briefdescription>
+<para>Vertex stream names. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="679" column="1" bodyfile="include/assimp/mesh.h" bodystart="679" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="679" column="23" bodyfile="include/assimp/mesh.h" bodystart="679" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_1afd4588abb3e1c72821ae0234a3850662" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
@@ -264,12 +305,14 @@
         <argsstring></argsstring>
         <name>mVertices</name>
         <briefdescription>
-<para>Vertex positions. </para>        </briefdescription>
+<para>Vertex positions. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This array is always present in a mesh. The array is mNumVertices in size. </para>        </detaileddescription>
+<para>This array is always present in a mesh. The array is mNumVertices in size. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="617" column="1" bodyfile="include/assimp/mesh.h" bodystart="617" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="617" column="25" bodyfile="include/assimp/mesh.h" bodystart="617" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -279,12 +322,13 @@
         <argsstring>() AI_NO_EXCEPT</argsstring>
         <name>aiMesh</name>
         <briefdescription>
-<para>Default constructor. Initializes all members to 0. </para>        </briefdescription>
+<para>Default constructor. Initializes all members to 0. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="751" column="1" bodyfile="include/assimp/mesh.h" bodystart="751" bodyend="778"/>
+        <location file="include/assimp/mesh.h" line="751" column="5" bodyfile="include/assimp/mesh.h" bodystart="751" bodyend="778"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_1ab89f4466bbd4173320fdf610c4814f95" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned int</type>
@@ -292,12 +336,13 @@
         <argsstring>() const</argsstring>
         <name>GetNumColorChannels</name>
         <briefdescription>
-<para>Get the number of vertex color channels the mesh contains. </para>        </briefdescription>
+<para>Get the number of vertex color channels the mesh contains. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="861" column="1" bodyfile="include/assimp/mesh.h" bodystart="861" bodyend="867"/>
+        <location file="include/assimp/mesh.h" line="861" column="18" bodyfile="include/assimp/mesh.h" bodystart="861" bodyend="867"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_1af13fa7a34088f210a5104840f6a9053a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned int</type>
@@ -305,12 +350,13 @@
         <argsstring>() const</argsstring>
         <name>GetNumUVChannels</name>
         <briefdescription>
-<para>Get the number of UV channels the mesh contains. </para>        </briefdescription>
+<para>Get the number of UV channels the mesh contains. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="851" column="1" bodyfile="include/assimp/mesh.h" bodystart="851" bodyend="858"/>
+        <location file="include/assimp/mesh.h" line="851" column="18" bodyfile="include/assimp/mesh.h" bodystart="851" bodyend="858"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_1a00985c20d66c0ae4aec74b865c9420f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -318,12 +364,13 @@
         <argsstring>() const</argsstring>
         <name>HasBones</name>
         <briefdescription>
-<para>Check whether the mesh contains bones. </para>        </briefdescription>
+<para>Check whether the mesh contains bones. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="870" column="1" bodyfile="include/assimp/mesh.h" bodystart="870" bodyend="872"/>
+        <location file="include/assimp/mesh.h" line="870" column="10" bodyfile="include/assimp/mesh.h" bodystart="870" bodyend="872"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_1a810edb0359e685a75ccaac29270fcfc5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -331,12 +378,14 @@
         <argsstring>() const</argsstring>
         <name>HasFaces</name>
         <briefdescription>
-<para>Check whether the mesh contains faces. </para>        </briefdescription>
+<para>Check whether the mesh contains faces. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If no special scene flags are set this should always return true </para>        </detaileddescription>
+<para>If no special scene flags are set this should always return true </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="819" column="1" bodyfile="include/assimp/mesh.h" bodystart="819" bodyend="819"/>
+        <location file="include/assimp/mesh.h" line="819" column="10" bodyfile="include/assimp/mesh.h" bodystart="819" bodyend="819"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_1a2ca636de7d398b10a398a11694677ca7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -344,12 +393,13 @@
         <argsstring>() const</argsstring>
         <name>HasNormals</name>
         <briefdescription>
-<para>Check whether the mesh contains normal vectors. </para>        </briefdescription>
+<para>Check whether the mesh contains normal vectors. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="822" column="1" bodyfile="include/assimp/mesh.h" bodystart="822" bodyend="822"/>
+        <location file="include/assimp/mesh.h" line="822" column="10" bodyfile="include/assimp/mesh.h" bodystart="822" bodyend="822"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_1a3a07e281142ceac4a1f636314fc5f9f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -357,12 +407,14 @@
         <argsstring>() const</argsstring>
         <name>HasPositions</name>
         <briefdescription>
-<para>Check whether the mesh contains positions. </para>        </briefdescription>
+<para>Check whether the mesh contains positions. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Provided no special scene flags are set, this will always be true </para>        </detaileddescription>
+<para>Provided no special scene flags are set, this will always be true </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="815" column="1" bodyfile="include/assimp/mesh.h" bodystart="815" bodyend="815"/>
+        <location file="include/assimp/mesh.h" line="815" column="10" bodyfile="include/assimp/mesh.h" bodystart="815" bodyend="815"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_1a426391f10eec53e34e339ad9c1cee5a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -370,12 +422,14 @@
         <argsstring>() const</argsstring>
         <name>HasTangentsAndBitangents</name>
         <briefdescription>
-<para>Check whether the mesh contains tangent and bitangent vectors It is not possible that it contains tangents and no bitangents (or the other way round). </para>        </briefdescription>
+<para>Check whether the mesh contains tangent and bitangent vectors It is not possible that it contains tangents and no bitangents (or the other way round). </para>
+        </briefdescription>
         <detaileddescription>
-<para>The existence of one of them implies that the second is there, too. </para>        </detaileddescription>
+<para>The existence of one of them implies that the second is there, too. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="828" column="1" bodyfile="include/assimp/mesh.h" bodystart="828" bodyend="828"/>
+        <location file="include/assimp/mesh.h" line="828" column="10" bodyfile="include/assimp/mesh.h" bodystart="828" bodyend="828"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_1a7b3638c5bf31308289e70fe61412c7d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -387,20 +441,23 @@
           <declname>pIndex</declname>
         </param>
         <briefdescription>
-<para>Check whether the mesh contains a texture coordinate set. </para>        </briefdescription>
+<para>Check whether the mesh contains a texture coordinate set. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pIndex</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Index of the texture coordinates set </para></parameterdescription>
+<para>Index of the texture coordinates set </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="842" column="1" bodyfile="include/assimp/mesh.h" bodystart="842" bodyend="848"/>
+        <location file="include/assimp/mesh.h" line="842" column="10" bodyfile="include/assimp/mesh.h" bodystart="842" bodyend="848"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_1ace464320471c7580605357a11b18bf26" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -412,20 +469,23 @@
           <declname>pIndex</declname>
         </param>
         <briefdescription>
-<para>Check whether the mesh contains a vertex color set. </para>        </briefdescription>
+<para>Check whether the mesh contains a vertex color set. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pIndex</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Index of the vertex color set </para></parameterdescription>
+<para>Index of the vertex color set </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="832" column="1" bodyfile="include/assimp/mesh.h" bodystart="832" bodyend="838"/>
+        <location file="include/assimp/mesh.h" line="832" column="10" bodyfile="include/assimp/mesh.h" bodystart="832" bodyend="838"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_1a55d1eea2210bf95d2871d50fb48765d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -433,145 +493,151 @@
         <argsstring>()</argsstring>
         <name>~aiMesh</name>
         <briefdescription>
-<para>Deletes all storage allocated for the mesh. </para>        </briefdescription>
+<para>Deletes all storage allocated for the mesh. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="781" column="1" bodyfile="include/assimp/mesh.h" bodystart="781" bodyend="811"/>
+        <location file="include/assimp/mesh.h" line="781" column="5" bodyfile="include/assimp/mesh.h" bodystart="781" bodyend="811"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>enum aiMorphingMethod </para>    </briefdescription>
+<para>enum aiMorphingMethod </para>
+    </briefdescription>
     <detaileddescription>
-<para>A mesh represents a geometry or model with a single material.</para><para>It usually consists of a number of vertices and a series of primitives/faces referencing the vertices. In addition there might be a series of bones, each of them addressing a number of vertices with a certain weight. Vertex data is presented in channels with each channel containing a single per-vertex information such as a set of texture coords or a normal vector. If a data pointer is non-null, the corresponding data stream is present. From C++-programs you can also use the comfort functions Has*() to test for the presence of various data streams.</para><para>A Mesh uses only a single material which is referenced by a material ID. <simplesect kind="note"><para>The mPositions member is usually not optional. However, vertex positions <emphasis>could</emphasis> be missing if the <ref refid="scene_8h_1a64c3b662e066126207bb842fc406a745" kindref="member">AI_SCENE_FLAGS_INCOMPLETE</ref> flag is set in <programlisting><codeline><highlight class="normal">aiScene::mFlags</highlight></codeline>
-</programlisting> </para></simplesect>
-</para>    </detaileddescription>
+<para>A mesh represents a geometry or model with a single material.</para>
+<para>It usually consists of a number of vertices and a series of primitives/faces referencing the vertices. In addition there might be a series of bones, each of them addressing a number of vertices with a certain weight. Vertex data is presented in channels with each channel containing a single per-vertex information such as a set of texture coords or a normal vector. If a data pointer is non-null, the corresponding data stream is present. From C++-programs you can also use the comfort functions Has*() to test for the presence of various data streams.</para>
+<para>A Mesh uses only a single material which is referenced by a material ID. <simplesect kind="note"><para>The mPositions member is usually not optional. However, vertex positions <emphasis>could</emphasis> be missing if the <ref refid="scene_8h_1a64c3b662e066126207bb842fc406a745" kindref="member">AI_SCENE_FLAGS_INCOMPLETE</ref> flag is set in <programlisting><codeline><highlight class="normal">aiScene::mFlags</highlight></codeline>
+</programlisting> </para>
+</simplesect>
+</para>
+    </detaileddescription>
     <collaborationgraph>
-      <node id="77">
+      <node id="7">
         <label>aiAABB</label>
         <link refid="structai_a_a_b_b"/>
-        <childnode refid="74" relation="usage">
-          <edgelabel>mMin</edgelabel>
+        <childnode refid="5" relation="usage">
           <edgelabel>mMax</edgelabel>
+          <edgelabel>mMin</edgelabel>
         </childnode>
       </node>
-      <node id="80">
+      <node id="10">
         <label>aiNode</label>
         <link refid="structai_node"/>
-        <childnode refid="73" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="81" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>mMetaData</edgelabel>
         </childnode>
-        <childnode refid="80" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>mChildren</edgelabel>
           <edgelabel>mParent</edgelabel>
         </childnode>
-        <childnode refid="83" relation="usage">
+        <childnode refid="13" relation="usage">
           <edgelabel>mTransformation</edgelabel>
         </childnode>
       </node>
-      <node id="82">
+      <node id="12">
         <label>aiMetadataEntry</label>
         <link refid="structai_metadata_entry"/>
       </node>
-      <node id="83">
+      <node id="13">
         <label>aiMatrix4x4t&lt; TReal &gt;</label>
         <link refid="classai_matrix4x4t"/>
       </node>
-      <node id="79">
+      <node id="9">
         <label>aiVertexWeight</label>
         <link refid="structai_vertex_weight"/>
       </node>
-      <node id="81">
+      <node id="11">
         <label>aiMetadata</label>
         <link refid="structai_metadata"/>
-        <childnode refid="73" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
-        <childnode refid="82" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>mValues</edgelabel>
         </childnode>
       </node>
-      <node id="78">
+      <node id="8">
         <label>aiBone</label>
         <link refid="structai_bone"/>
-        <childnode refid="79" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>mWeights</edgelabel>
         </childnode>
-        <childnode refid="73" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="80" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>mArmature</edgelabel>
           <edgelabel>mNode</edgelabel>
         </childnode>
-        <childnode refid="83" relation="usage">
+        <childnode refid="13" relation="usage">
           <edgelabel>mOffsetMatrix</edgelabel>
         </childnode>
       </node>
-      <node id="71">
+      <node id="4">
+        <label>aiColor4t&lt; ai_real &gt;</label>
+        <link refid="classai_color4t"/>
+      </node>
+      <node id="1">
         <label>aiMesh</label>
         <link refid="structai_mesh"/>
-        <childnode refid="72" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>mAnimMeshes</edgelabel>
         </childnode>
-        <childnode refid="76" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>mFaces</edgelabel>
         </childnode>
-        <childnode refid="73" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
           <edgelabel>mTextureCoordsNames</edgelabel>
         </childnode>
-        <childnode refid="74" relation="usage">
-          <edgelabel>mTextureCoords</edgelabel>
-          <edgelabel>mVertices</edgelabel>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mColors</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
           <edgelabel>mBitangents</edgelabel>
           <edgelabel>mNormals</edgelabel>
           <edgelabel>mTangents</edgelabel>
+          <edgelabel>mTextureCoords</edgelabel>
+          <edgelabel>mVertices</edgelabel>
         </childnode>
-        <childnode refid="75" relation="usage">
-          <edgelabel>mColors</edgelabel>
-        </childnode>
-        <childnode refid="77" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>mAABB</edgelabel>
         </childnode>
-        <childnode refid="78" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>mBones</edgelabel>
         </childnode>
       </node>
-      <node id="73">
+      <node id="3">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>
-      <node id="75">
-        <label>aiColor4t&lt; TReal &gt;</label>
-        <link refid="classai_color4t"/>
-      </node>
-      <node id="74">
+      <node id="5">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>
-      <node id="72">
+      <node id="2">
         <label>aiAnimMesh</label>
         <link refid="structai_anim_mesh"/>
-        <childnode refid="73" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="74" relation="usage">
-          <edgelabel>mTextureCoords</edgelabel>
-          <edgelabel>mVertices</edgelabel>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mColors</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
           <edgelabel>mBitangents</edgelabel>
           <edgelabel>mNormals</edgelabel>
           <edgelabel>mTangents</edgelabel>
-        </childnode>
-        <childnode refid="75" relation="usage">
-          <edgelabel>mColors</edgelabel>
+          <edgelabel>mTextureCoords</edgelabel>
+          <edgelabel>mVertices</edgelabel>
         </childnode>
       </node>
-      <node id="76">
+      <node id="6">
         <label>aiFace</label>
         <link refid="structai_face"/>
       </node>

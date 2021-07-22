@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_animation_encoder" kind="interface" language="C++" prot="public">
+    <compoundname>AnimationEncoder</compoundname>
+    <includes local="no">draco_animation_web_encoder.idl</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_animation_encoder_1ad745b8752ba931b6ff54383e035e4507" prot="private" static="no" mutable="no">
+        <type><ref refid="classdraco_1_1_keyframe_animation_encoder" kindref="compound">draco::KeyframeAnimationEncoder</ref></type>
+        <definition>draco::KeyframeAnimationEncoder AnimationEncoder::encoder_</definition>
+        <argsstring></argsstring>
+        <name>encoder_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="60" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_animation_encoder_1ae7b9cebd2585450af26fd14a9ed594ff" prot="private" static="no" mutable="no">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+        <definition>long AnimationEncoder::keyframes_quantization_bits_</definition>
+        <argsstring></argsstring>
+        <name>keyframes_quantization_bits_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="62" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_animation_encoder_1a06b81bdfc4762344ce5ee1aa327ab81f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedraco_1ab66b946bef87fd44eecee018c9ce9dd3" kindref="member">draco::EncoderOptions</ref></type>
+        <definition>draco::EncoderOptions AnimationEncoder::options_</definition>
+        <argsstring></argsstring>
+        <name>options_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="63" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_animation_encoder_1ae7125ee31ed64f8ed257bc71d12e4939" prot="private" static="no" mutable="no">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+        <definition>long AnimationEncoder::timestamps_quantization_bits_</definition>
+        <argsstring></argsstring>
+        <name>timestamps_quantization_bits_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="61" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_animation_encoder_1a445272c445abdcdd61273986b4b23820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnimationEncoder::AnimationEncoder</definition>
+        <argsstring>()</argsstring>
+        <name>AnimationEncoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/draco_animation_web_encoder.idl" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_encoder_1a23fe93d6b931127c8b49659ffca3b0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AnimationEncoder::AnimationEncoder</definition>
+        <argsstring>()</argsstring>
+        <name>AnimationEncoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="51" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.cc" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_encoder_1ab745780789c563b663f9027d20746d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+        <definition>long AnimationEncoder::EncodeAnimationToDracoBuffer</definition>
+        <argsstring>(KeyframeAnimation animation, DracoInt8Array encoded_data)</argsstring>
+        <name>EncodeAnimationToDracoBuffer</name>
+        <param>
+          <type><ref refid="interface_keyframe_animation" kindref="compound">KeyframeAnimation</ref></type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type><ref refid="class_draco_int8_array" kindref="compound">DracoInt8Array</ref></type>
+          <declname>encoded_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/draco_animation_web_encoder.idl" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_encoder_1a144dc5c9784fdab9193f9d704734fc9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>int AnimationEncoder::EncodeAnimationToDracoBuffer</definition>
+        <argsstring>(draco::KeyframeAnimation *animation, DracoInt8Array *draco_buffer)</argsstring>
+        <name>EncodeAnimationToDracoBuffer</name>
+        <param>
+          <type><ref refid="classdraco_1_1_keyframe_animation" kindref="compound">draco::KeyframeAnimation</ref> *</type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type><ref refid="class_draco_int8_array" kindref="compound">DracoInt8Array</ref> *</type>
+          <declname>draco_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="56" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.cc" bodystart="66" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_encoder_1a745a8751e60c535b9c43a50960576583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnimationEncoder::SetKeyframesQuantization</definition>
+        <argsstring>(long quantization_bits)</argsstring>
+        <name>SetKeyframesQuantization</name>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+          <declname>quantization_bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/draco_animation_web_encoder.idl" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_encoder_1a745a8751e60c535b9c43a50960576583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnimationEncoder::SetKeyframesQuantization</definition>
+        <argsstring>(long quantization_bits)</argsstring>
+        <name>SetKeyframesQuantization</name>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+          <declname>quantization_bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="55" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.cc" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_encoder_1a8b1be6205f4a44288b2f3ffc8cbbc8aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnimationEncoder::SetTimestampsQuantization</definition>
+        <argsstring>(long quantization_bits)</argsstring>
+        <name>SetTimestampsQuantization</name>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+          <declname>quantization_bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/draco_animation_web_encoder.idl" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_encoder_1a8b1be6205f4a44288b2f3ffc8cbbc8aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnimationEncoder::SetTimestampsQuantization</definition>
+        <argsstring>(long quantization_bits)</argsstring>
+        <name>SetTimestampsQuantization</name>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+          <declname>quantization_bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="53" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.cc" bodystart="58" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="49" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" bodystart="49" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_animation_encoder_1a23fe93d6b931127c8b49659ffca3b0f5" prot="public" virt="non-virtual"><scope>AnimationEncoder</scope><name>AnimationEncoder</name></member>
+      <member refid="class_animation_encoder_1a445272c445abdcdd61273986b4b23820" prot="public" virt="non-virtual"><scope>AnimationEncoder</scope><name>AnimationEncoder</name></member>
+      <member refid="class_animation_encoder_1a144dc5c9784fdab9193f9d704734fc9a" prot="public" virt="non-virtual"><scope>AnimationEncoder</scope><name>EncodeAnimationToDracoBuffer</name></member>
+      <member refid="class_animation_encoder_1ab745780789c563b663f9027d20746d8e" prot="public" virt="non-virtual"><scope>AnimationEncoder</scope><name>EncodeAnimationToDracoBuffer</name></member>
+      <member refid="class_animation_encoder_1ad745b8752ba931b6ff54383e035e4507" prot="private" virt="non-virtual"><scope>AnimationEncoder</scope><name>encoder_</name></member>
+      <member refid="class_animation_encoder_1ae7b9cebd2585450af26fd14a9ed594ff" prot="private" virt="non-virtual"><scope>AnimationEncoder</scope><name>keyframes_quantization_bits_</name></member>
+      <member refid="class_animation_encoder_1a06b81bdfc4762344ce5ee1aa327ab81f" prot="private" virt="non-virtual"><scope>AnimationEncoder</scope><name>options_</name></member>
+      <member refid="class_animation_encoder_1a745a8751e60c535b9c43a50960576583" prot="public" virt="non-virtual"><scope>AnimationEncoder</scope><name>SetKeyframesQuantization</name></member>
+      <member refid="class_animation_encoder_1a745a8751e60c535b9c43a50960576583" prot="public" virt="non-virtual"><scope>AnimationEncoder</scope><name>SetKeyframesQuantization</name></member>
+      <member refid="class_animation_encoder_1a8b1be6205f4a44288b2f3ffc8cbbc8aa" prot="public" virt="non-virtual"><scope>AnimationEncoder</scope><name>SetTimestampsQuantization</name></member>
+      <member refid="class_animation_encoder_1a8b1be6205f4a44288b2f3ffc8cbbc8aa" prot="public" virt="non-virtual"><scope>AnimationEncoder</scope><name>SetTimestampsQuantization</name></member>
+      <member refid="class_animation_encoder_1ae7125ee31ed64f8ed257bc71d12e4939" prot="private" virt="non-virtual"><scope>AnimationEncoder</scope><name>timestamps_quantization_bits_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

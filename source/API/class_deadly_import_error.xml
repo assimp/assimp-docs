@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_deadly_import_error" kind="class" language="C++" prot="public">
+    <compoundname>DeadlyImportError</compoundname>
+    <basecompoundref refid="class_deadly_error_base" prot="public" virt="non-virtual">DeadlyErrorBase</basecompoundref>
+    <includes local="no">Exceptional.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_deadly_import_error_1a56646b7d96a8d9b48804165a3b7404a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DeadlyImportError::DeadlyImportError</definition>
+        <argsstring>(const char *message)</argsstring>
+        <name>DeadlyImportError</name>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exceptional.h" line="74" column="5" bodyfile="include/assimp/Exceptional.h" bodystart="74" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_deadly_import_error_1a248da94b6368c824937464f942f76bed" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>DeadlyImportError::DeadlyImportError</definition>
+        <argsstring>(T &amp;&amp;... args)</argsstring>
+        <name>DeadlyImportError</name>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exceptional.h" line="79" column="14" bodyfile="include/assimp/Exceptional.h" bodystart="79" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>FOR IMPORTER PLUGINS ONLY: Simple exception class to be thrown if an unrecoverable error occurs while importing. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Loading APIs return nullptr instead of a valid <ref refid="structai_scene" kindref="compound">aiScene</ref> then. <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DeadlyErrorBase</label>
+        <link refid="class_deadly_error_base"/>
+      </node>
+      <node id="1">
+        <label>DeadlyImportError</label>
+        <link refid="class_deadly_import_error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DeadlyErrorBase</label>
+        <link refid="class_deadly_error_base"/>
+      </node>
+      <node id="1">
+        <label>DeadlyImportError</label>
+        <link refid="class_deadly_import_error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/Exceptional.h" line="72" column="1" bodyfile="include/assimp/Exceptional.h" bodystart="72" bodyend="85"/>
+    <listofallmembers>
+      <member refid="class_deadly_error_base_1af100784aff998fbbdd4119fc8e7c45b9" prot="protected" virt="non-virtual"><scope>DeadlyImportError</scope><name>DeadlyErrorBase</name></member>
+      <member refid="class_deadly_error_base_1ac2f9ad96d4d189c7dcac25d612114095" prot="protected" virt="non-virtual"><scope>DeadlyImportError</scope><name>DeadlyErrorBase</name></member>
+      <member refid="class_deadly_import_error_1a56646b7d96a8d9b48804165a3b7404a5" prot="public" virt="non-virtual"><scope>DeadlyImportError</scope><name>DeadlyImportError</name></member>
+      <member refid="class_deadly_import_error_1a248da94b6368c824937464f942f76bed" prot="public" virt="non-virtual"><scope>DeadlyImportError</scope><name>DeadlyImportError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

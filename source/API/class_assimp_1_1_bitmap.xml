@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_bitmap" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::Bitmap</compoundname>
+    <includes local="no">Bitmap.h</includes>
+    <innerclass refid="struct_assimp_1_1_bitmap_1_1_d_i_b" prot="protected">Assimp::Bitmap::DIB</innerclass>
+    <innerclass refid="struct_assimp_1_1_bitmap_1_1_header" prot="protected">Assimp::Bitmap::Header</innerclass>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_bitmap_1ac87d8fa239ec63655a37b5530d863648" prot="protected" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t Assimp::Bitmap::mBytesPerPixel</definition>
+        <argsstring></argsstring>
+        <name>mBytesPerPixel</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="114" column="34" bodyfile="include/assimp/Bitmap.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_bitmap_1a4ffd633c25b0a544aacacb5d8fa2c1b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::Bitmap::Save</definition>
+        <argsstring>(aiTexture *texture, IOStream *file)</argsstring>
+        <name>Save</name>
+        <param>
+          <type><ref refid="structai_texture" kindref="compound">aiTexture</ref> *</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>IOStream *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="117" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_bitmap_1a6b5bfd6a8c3885686d9cdbeacdaf76c5" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::Bitmap::WriteData</definition>
+        <argsstring>(aiTexture *texture, IOStream *file)</argsstring>
+        <name>WriteData</name>
+        <param>
+          <type><ref refid="structai_texture" kindref="compound">aiTexture</ref> *</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>IOStream *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="122" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_bitmap_1aae94d6e293eb3cd30b351f85d8616a4f" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::Bitmap::WriteDIB</definition>
+        <argsstring>(DIB &amp;dib, IOStream *file)</argsstring>
+        <name>WriteDIB</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b" kindref="compound">DIB</ref> &amp;</type>
+          <declname>dib</declname>
+        </param>
+        <param>
+          <type>IOStream *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="121" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_bitmap_1a62c5d3c091161ce0879538bb9a6bb25f" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::Bitmap::WriteHeader</definition>
+        <argsstring>(Header &amp;header, IOStream *file)</argsstring>
+        <name>WriteHeader</name>
+        <param>
+          <type><ref refid="struct_assimp_1_1_bitmap_1_1_header" kindref="compound">Header</ref> &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>IOStream *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="120" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/Bitmap.h" line="67" column="1" bodyfile="include/assimp/Bitmap.h" bodystart="67" bodyend="123"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_bitmap_1ac87d8fa239ec63655a37b5530d863648" prot="protected" virt="non-virtual"><scope>Assimp::Bitmap</scope><name>mBytesPerPixel</name></member>
+      <member refid="class_assimp_1_1_bitmap_1a4ffd633c25b0a544aacacb5d8fa2c1b4" prot="public" virt="non-virtual"><scope>Assimp::Bitmap</scope><name>Save</name></member>
+      <member refid="class_assimp_1_1_bitmap_1a6b5bfd6a8c3885686d9cdbeacdaf76c5" prot="protected" virt="non-virtual"><scope>Assimp::Bitmap</scope><name>WriteData</name></member>
+      <member refid="class_assimp_1_1_bitmap_1aae94d6e293eb3cd30b351f85d8616a4f" prot="protected" virt="non-virtual"><scope>Assimp::Bitmap</scope><name>WriteDIB</name></member>
+      <member refid="class_assimp_1_1_bitmap_1a62c5d3c091161ce0879538bb9a6bb25f" prot="protected" virt="non-virtual"><scope>Assimp::Bitmap</scope><name>WriteHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_texture" kind="struct" language="C++" prot="public">
     <compoundname>aiTexture</compoundname>
     <includes local="no">texture.h</includes>
@@ -10,14 +10,20 @@
         <argsstring>[HINTMAXTEXTURELEN]</argsstring>
         <name>achFormatHint</name>
         <briefdescription>
-<para>A hint from the loader to make it easier for applications to determine the type of embedded textures. </para>        </briefdescription>
+<para>A hint from the loader to make it easier for applications to determine the type of embedded textures. </para>
+        </briefdescription>
         <detaileddescription>
 <para>If mHeight != 0 this member is show how data is packed. Hint will consist of two parts: channel order and channel bitness (count of the bits for every color channel). For simple parsing by the viewer it&apos;s better to not omit absent color channel and just use 0 for bitness. For example:<orderedlist>
-<listitem><para>Image contain RGBA and 8 bit per channel, achFormatHint == &quot;rgba8888&quot;;</para></listitem><listitem><para>Image contain ARGB and 8 bit per channel, achFormatHint == &quot;argb8888&quot;;</para></listitem><listitem><para>Image contain RGB and 5 bit for R and B channels and 6 bit for G channel, achFormatHint == &quot;rgba5650&quot;;</para></listitem><listitem><para>One color image with B channel and 1 bit for it, achFormatHint == &quot;rgba0010&quot;; If mHeight == 0 then achFormatHint is set set to &apos;\0\0\0\0&apos; if the loader has no additional information about the texture file format used OR the file extension of the format without a trailing dot. If there are multiple file extensions for a format, the shortest extension is chosen (JPEG maps to &apos;jpg&apos;, not to &apos;jpeg&apos;). E.g. &apos;dds\0&apos;, &apos;pcx\0&apos;, &apos;jpg\0&apos;. All characters are lower-case. The fourth character will always be &apos;\0&apos;. </para></listitem></orderedlist>
-</para>        </detaileddescription>
+<listitem><para>Image contain RGBA and 8 bit per channel, achFormatHint == &quot;rgba8888&quot;;</para>
+</listitem><listitem><para>Image contain ARGB and 8 bit per channel, achFormatHint == &quot;argb8888&quot;;</para>
+</listitem><listitem><para>Image contain RGB and 5 bit for R and B channels and 6 bit for G channel, achFormatHint == &quot;rgba5650&quot;;</para>
+</listitem><listitem><para>One color image with B channel and 1 bit for it, achFormatHint == &quot;rgba0010&quot;; If mHeight == 0 then achFormatHint is set set to &apos;\0\0\0\0&apos; if the loader has no additional information about the texture file format used OR the file extension of the format without a trailing dot. If there are multiple file extensions for a format, the shortest extension is chosen (JPEG maps to &apos;jpg&apos;, not to &apos;jpeg&apos;). E.g. &apos;dds\0&apos;, &apos;pcx\0&apos;, &apos;jpg\0&apos;. All characters are lower-case. The fourth character will always be &apos;\0&apos;. </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/texture.h" line="170" column="1" bodyfile="include/assimp/texture.h" bodystart="170" bodyend="-1"/>
+        <location file="include/assimp/texture.h" line="170" column="10" bodyfile="include/assimp/texture.h" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_texture_1a59dc57f450aef6e2d54d052130ed0ec3" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
@@ -25,12 +31,14 @@
         <argsstring></argsstring>
         <name>mFilename</name>
         <briefdescription>
-<para>Texture original filename. </para>        </briefdescription>
+<para>Texture original filename. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Used to get the texture reference </para>        </detaileddescription>
+<para>Used to get the texture reference </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/texture.h" line="187" column="1" bodyfile="include/assimp/texture.h" bodystart="187" bodyend="-1"/>
+        <location file="include/assimp/texture.h" line="187" column="23" bodyfile="include/assimp/texture.h" bodystart="187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_texture_1ac1e2fa6f1f646e9c55e3985d4418a752" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -38,12 +46,14 @@
         <argsstring></argsstring>
         <name>mHeight</name>
         <briefdescription>
-<para>Height of the texture, in pixels. </para>        </briefdescription>
+<para>Height of the texture, in pixels. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If this value is zero, pcData points to an compressed texture in any format (e.g. JPEG). </para>        </detaileddescription>
+<para>If this value is zero, pcData points to an compressed texture in any format (e.g. JPEG). </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/texture.h" line="149" column="1" bodyfile="include/assimp/texture.h" bodystart="149" bodyend="-1"/>
+        <location file="include/assimp/texture.h" line="149" column="18" bodyfile="include/assimp/texture.h" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_texture_1aaa3ad8cfe44fdc4dea2db91977d92234" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -51,12 +61,14 @@
         <argsstring></argsstring>
         <name>mWidth</name>
         <briefdescription>
-<para>Width of the texture, in pixels. </para>        </briefdescription>
+<para>Width of the texture, in pixels. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If mHeight is zero the texture is compressed in a format like JPEG. In this case mWidth specifies the size of the memory area pcData is pointing to, in bytes. </para>        </detaileddescription>
+<para>If mHeight is zero the texture is compressed in a format like JPEG. In this case mWidth specifies the size of the memory area pcData is pointing to, in bytes. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/texture.h" line="142" column="1" bodyfile="include/assimp/texture.h" bodystart="142" bodyend="-1"/>
+        <location file="include/assimp/texture.h" line="142" column="18" bodyfile="include/assimp/texture.h" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_texture_1aeb07528748b6e49d2d81c60006024f9a" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_texel" kindref="compound">aiTexel</ref> *</type>
@@ -64,12 +76,14 @@
         <argsstring></argsstring>
         <name>pcData</name>
         <briefdescription>
-<para>Data of the texture. </para>        </briefdescription>
+<para>Data of the texture. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Points to an array of mWidth * mHeight <ref refid="structai_texel" kindref="compound">aiTexel</ref>&apos;s. The format of the texture data is always ARGB8888 to make the implementation for user of the library as easy as possible. If mHeight = 0 this is a pointer to a memory buffer of size mWidth containing the compressed texture data. Good luck, have fun! </para>        </detaileddescription>
+<para>Points to an array of mWidth * mHeight <ref refid="structai_texel" kindref="compound">aiTexel</ref>&apos;s. The format of the texture data is always ARGB8888 to make the implementation for user of the library as easy as possible. If mHeight = 0 this is a pointer to a memory buffer of size mWidth containing the compressed texture data. Good luck, have fun! </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/texture.h" line="181" column="1" bodyfile="include/assimp/texture.h" bodystart="181" bodyend="-1"/>
+        <location file="include/assimp/texture.h" line="181" column="22" bodyfile="include/assimp/texture.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -84,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/texture.h" line="205" column="1" bodyfile="include/assimp/texture.h" bodystart="205" bodyend="211"/>
+        <location file="include/assimp/texture.h" line="205" column="5" bodyfile="include/assimp/texture.h" bodystart="205" bodyend="211"/>
       </memberdef>
       <memberdef kind="function" id="structai_texture_1a2083cf844008a8238c2fbbd2797f0d20" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -96,21 +110,25 @@
           <declname>s</declname>
         </param>
         <briefdescription>
-<para>For compressed textures (mHeight == 0): compare the format hint against a given string. </para>        </briefdescription>
+<para>For compressed textures (mHeight == 0): compare the format hint against a given string. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>s</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Input string. 3 characters are maximally processed. Example values: &quot;jpg&quot;, &quot;png&quot; </para></parameterdescription>
+<para>Input string. 3 characters are maximally processed. Example values: &quot;jpg&quot;, &quot;png&quot; </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>true if the given string matches the format hint </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>true if the given string matches the format hint </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/texture.h" line="196" column="1" bodyfile="include/assimp/texture.h" bodystart="196" bodyend="202"/>
+        <location file="include/assimp/texture.h" line="196" column="10" bodyfile="include/assimp/texture.h" bodystart="196" bodyend="202"/>
       </memberdef>
       <memberdef kind="function" id="structai_texture_1a4890306b77f90844989f74e6d37e86e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -123,31 +141,36 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/texture.h" line="214" column="1" bodyfile="include/assimp/texture.h" bodystart="214" bodyend="216"/>
+        <location file="include/assimp/texture.h" line="214" column="5" bodyfile="include/assimp/texture.h" bodystart="214" bodyend="216"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Helper structure to describe an embedded texture. </para>    </briefdescription>
+<para>Helper structure to describe an embedded texture. </para>
+    </briefdescription>
     <detaileddescription>
 <para>Normally textures are contained in external files but some file formats embed them directly in the model file. There are two types of embedded textures:<orderedlist>
-<listitem><para>Uncompressed textures. The color data is given in an uncompressed format.</para></listitem><listitem><para>Compressed textures stored in a file format like png or jpg. The raw file bytes are given so the application must utilize an image decoder (e.g. DevIL) to get access to the actual color data.</para></listitem></orderedlist>
-</para><para>Embedded textures are referenced from materials using strings like &quot;*0&quot;, &quot;*1&quot;, etc. as the texture paths (a single asterisk character followed by the zero-based index of the texture in the <ref refid="structai_scene_1a0fd0d29fbc439e3715b4975ccb68d2d3" kindref="member">aiScene::mTextures</ref> array). </para>    </detaileddescription>
+<listitem><para>Uncompressed textures. The color data is given in an uncompressed format.</para>
+</listitem><listitem><para>Compressed textures stored in a file format like png or jpg. The raw file bytes are given so the application must utilize an image decoder (e.g. DevIL) to get access to the actual color data.</para>
+</listitem></orderedlist>
+</para>
+<para>Embedded textures are referenced from materials using strings like &quot;*0&quot;, &quot;*1&quot;, etc. as the texture paths (a single asterisk character followed by the zero-based index of the texture in the <ref refid="structai_scene_1a0fd0d29fbc439e3715b4975ccb68d2d3" kindref="member">aiScene::mTextures</ref> array). </para>
+    </detaileddescription>
     <collaborationgraph>
-      <node id="165">
+      <node id="3">
         <label>aiTexel</label>
         <link refid="structai_texel"/>
       </node>
-      <node id="163">
+      <node id="1">
         <label>aiTexture</label>
         <link refid="structai_texture"/>
-        <childnode refid="164" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>mFilename</edgelabel>
         </childnode>
-        <childnode refid="165" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>pcData</edgelabel>
         </childnode>
       </node>
-      <node id="164">
+      <node id="2">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>

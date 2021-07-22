@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_assimp_1_1_formatter" kind="namespace" language="C++">
+    <compoundname>Assimp::Formatter</compoundname>
+    <innerclass refid="class_assimp_1_1_formatter_1_1basic__formatter" prot="public">Assimp::Formatter::basic_formatter</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_assimp_1_1_formatter_1a6cf94459cb125ad767209c268d4bbcd4" prot="public" static="no">
+        <type><ref refid="class_assimp_1_1_formatter_1_1basic__formatter" kindref="compound">basic_formatter</ref>&lt; char &gt;</type>
+        <definition>typedef basic_formatter&lt; char &gt; Assimp::Formatter::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/TinyFormatter.h" line="162" column="25" bodyfile="include/assimp/TinyFormatter.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_assimp_1_1_formatter_1a666d0e2f6623b5531902a03a81d4e5d2" prot="public" static="no">
+        <type><ref refid="class_assimp_1_1_formatter_1_1basic__formatter" kindref="compound">basic_formatter</ref>&lt; wchar_t &gt;</type>
+        <definition>typedef basic_formatter&lt; wchar_t &gt; Assimp::Formatter::wformat</definition>
+        <argsstring></argsstring>
+        <name>wformat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/TinyFormatter.h" line="163" column="25" bodyfile="include/assimp/TinyFormatter.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/TinyFormatter.h" line="59" column="1"/>
+  </compounddef>
+</doxygen>

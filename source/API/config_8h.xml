@@ -1,0 +1,2401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="config_8h" kind="file" language="C++">
+    <compoundname>config.h</compoundname>
+    <includedby refid="defs_8h" local="no">defs.h</includedby>
+    <invincdepgraph>
+      <node id="9">
+        <label>MemoryIOWrapper.h</label>
+        <link refid="_memory_i_o_wrapper_8h"/>
+      </node>
+      <node id="42">
+        <label>SpatialSort.h</label>
+        <link refid="_spatial_sort_8h"/>
+      </node>
+      <node id="8">
+        <label>GenericProperty.h</label>
+        <link refid="_generic_property_8h"/>
+      </node>
+      <node id="48">
+        <label>matrix4x4.h</label>
+        <link refid="matrix4x4_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>StringUtils.h</label>
+        <link refid="_string_utils_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ByteSwapper.h</label>
+        <link refid="_byte_swapper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>BaseImporter.h</label>
+        <link refid="_base_importer_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>material.h</label>
+        <link refid="material_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>BlobIOSystem.h</label>
+        <link refid="_blob_i_o_system_8h"/>
+      </node>
+      <node id="29">
+        <label>importerdesc.h</label>
+        <link refid="importerdesc_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>LogAux.h</label>
+        <link refid="_log_aux_8h"/>
+      </node>
+      <node id="37">
+        <label>SkeletonMeshBuilder.h</label>
+        <link refid="_skeleton_mesh_builder_8h"/>
+      </node>
+      <node id="33">
+        <label>light.h</label>
+        <link refid="light_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>StandardShapes.h</label>
+        <link refid="_standard_shapes_8h"/>
+      </node>
+      <node id="27">
+        <label>cfileio.h</label>
+        <link refid="cfileio_8h"/>
+      </node>
+      <node id="24">
+        <label>camera.h</label>
+        <link refid="camera_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SceneCombiner.h</label>
+        <link refid="_scene_combiner_8h"/>
+      </node>
+      <node id="20">
+        <label>types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>CreateAnimMesh.h</label>
+        <link refid="_create_anim_mesh_8h"/>
+      </node>
+      <node id="45">
+        <label>matrix3x3.h</label>
+        <link refid="matrix3x3_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>LineSplitter.h</label>
+        <link refid="_line_splitter_8h"/>
+      </node>
+      <node id="5">
+        <label>StreamReader.h</label>
+        <link refid="_stream_reader_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Bitmap.h</label>
+        <link refid="_bitmap_8h"/>
+      </node>
+      <node id="11">
+        <label>StringComparison.h</label>
+        <link refid="_string_comparison_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>IOStreamBuffer.h</label>
+        <link refid="_i_o_stream_buffer_8h"/>
+      </node>
+      <node id="19">
+        <label>color4.inl</label>
+        <link refid="color4_8inl"/>
+      </node>
+      <node id="1">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>DefaultIOStream.h</label>
+        <link refid="_default_i_o_stream_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>SGSpatialSort.h</label>
+        <link refid="_s_g_spatial_sort_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>matrix4x4.inl</label>
+        <link refid="matrix4x4_8inl"/>
+      </node>
+      <node id="21">
+        <label>anim.h</label>
+        <link refid="anim_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>qnan.h</label>
+        <link refid="qnan_8h"/>
+      </node>
+      <node id="51">
+        <label>quaternion.inl</label>
+        <link refid="quaternion_8inl"/>
+      </node>
+      <node id="60">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="50">
+        <label>quaternion.h</label>
+        <link refid="quaternion_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>vector3.inl</label>
+        <link refid="vector3_8inl"/>
+      </node>
+      <node id="3">
+        <label>ai_assert.h</label>
+        <link refid="ai__assert_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>vector2.inl</label>
+        <link refid="vector2_8inl"/>
+      </node>
+      <node id="40">
+        <label>SmoothingGroups.inl</label>
+        <link refid="_smoothing_groups_8inl"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Exceptional.h</label>
+        <link refid="_exceptional_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>texture.h</label>
+        <link refid="texture_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>cimport.h</label>
+        <link refid="cimport_8h"/>
+      </node>
+      <node id="15">
+        <label>Vertex.h</label>
+        <link refid="_vertex_8h"/>
+      </node>
+      <node id="12">
+        <label>fast_atof.h</label>
+        <link refid="fast__atof_8h"/>
+      </node>
+      <node id="13">
+        <label>ParsingUtils.h</label>
+        <link refid="_parsing_utils_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>StreamWriter.h</label>
+        <link refid="_stream_writer_8h"/>
+      </node>
+      <node id="22">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+      </node>
+      <node id="18">
+        <label>color4.h</label>
+        <link refid="color4_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>postprocess.h</label>
+        <link refid="postprocess_8h"/>
+      </node>
+      <node id="41">
+        <label>SmoothingGroups.h</label>
+        <link refid="_smoothing_groups_8h"/>
+      </node>
+      <node id="35">
+        <label>mesh.h</label>
+        <link refid="mesh_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>XmlParser.h</label>
+        <link refid="_xml_parser_8h"/>
+      </node>
+      <node id="25">
+        <label>cexport.h</label>
+        <link refid="cexport_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>RemoveComments.h</label>
+        <link refid="_remove_comments_8h"/>
+      </node>
+      <node id="43">
+        <label>Subdivision.h</label>
+        <link refid="_subdivision_8h"/>
+      </node>
+      <node id="46">
+        <label>matrix3x3.inl</label>
+        <link refid="matrix3x3_8inl"/>
+      </node>
+      <node id="57">
+        <label>aabb.h</label>
+        <link refid="aabb_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="config_8h_1af69f225a880ba22f1da37a989ab27032" prot="public" static="no">
+        <name>AI_CONFIG_ANDROID_JNI_ASSIMP_MANAGER_SUPPORT</name>
+        <initializer>&quot;AI_CONFIG_ANDROID_JNI_ASSIMP_MANAGER_SUPPORT&quot;</initializer>
+        <briefdescription>
+<para>Specifies whether the Android JNI asset extraction is supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Turn on this option if you want to manage assets in native Android application without having to keep the internal directory and asset manager pointer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="983" column="10" bodyfile="include/assimp/config.h" bodystart="983" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a045c97a0537d97e2808e50d8eb871611" prot="public" static="no">
+        <name>AI_CONFIG_APP_SCALE_KEY</name>
+        <initializer>&quot;APP_SCALE_FACTOR&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1104" column="9" bodyfile="include/assimp/config.h" bodystart="1104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a8d3547bf4c8add121f6c53544ed83fad" prot="public" static="no">
+        <name>AI_CONFIG_EXPORT_BLOB_NAME</name>
+        <initializer>&quot;EXPORT_BLOB_NAME&quot;</initializer>
+        <briefdescription>
+<para>Specifies the blob name, assimp uses for exporting. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Some formats require auxiliary files to be written, that need to be linked back into the original file. For example, OBJ files export materials to a separate MTL file and use the <computeroutput>mtllib</computeroutput> keyword to reference this file.</para>
+<para>When exporting blobs using #ExportToBlob, assimp does not know the name of the blob file and thus outputs <computeroutput>mtllib $blobfile.mtl</computeroutput>, which might not be desired, since the MTL file might be called differently.</para>
+<para>This property can be used to give the exporter a hint on how to use the magic <computeroutput>$blobfile</computeroutput> keyword. If the exporter detects the keyword and is provided with a name for the blob, it instead uses this name. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1093" column="9" bodyfile="include/assimp/config.h" bodystart="1093" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a144d6a6254fd855bdead60f1b2c61695" prot="public" static="no">
+        <name>AI_CONFIG_EXPORT_POINT_CLOUDS</name>
+        <initializer>&quot;EXPORT_POINT_CLOUDS&quot;</initializer>
+        <briefdescription>
+<para>Specifies whether the assimp export shall be able to export point clouds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When this flag is not defined the render data has to contain valid faces. Point clouds are only a collection of vertices which have nor spatial organization by a face and the validation process will remove them. Enabling this feature will switch off the flag and enable the functionality to export pure point clouds. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1076" column="9" bodyfile="include/assimp/config.h" bodystart="1076" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa24ae36e5aea62821394e234e519faef" prot="public" static="no">
+        <name>AI_CONFIG_EXPORT_XFILE_64BIT</name>
+        <initializer>&quot;EXPORT_XFILE_64BIT&quot;</initializer>
+        <briefdescription>
+<para>Specifies the xfile use double for real values of float. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Property type: Bool. Default value: false. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1067" column="9" bodyfile="include/assimp/config.h" bodystart="1067" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac19aa56fa892f712fd3fb4d95be19114" prot="public" static="no">
+        <name>AI_CONFIG_FAVOUR_SPEED</name>
+        <initializer> &quot;FAVOUR_SPEED&quot;</initializer>
+        <briefdescription>
+<para>A hint to assimp to favour speed against import quality. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enabling this option may result in faster loading, but it needn&apos;t. It represents just a hint to loaders and post-processing steps to use faster code paths, if possible. This property is expected to be an integer, != 0 stands for true. The default value is 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="541" column="9" bodyfile="include/assimp/config.h" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a586171c61b1cbe9b173247bea1725cd9" prot="public" static="no">
+        <name>AI_CONFIG_FBX_CONVERT_TO_M</name>
+        <initializer>    &quot;AI_CONFIG_FBX_CONVERT_TO_M&quot;</initializer>
+        <briefdescription>
+<para>Set wether the FBX importer shall convert the unit from cm to m. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="682" column="9" bodyfile="include/assimp/config.h" bodystart="682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ae67105a77014e256f4c242504881c261" prot="public" static="no">
+        <name>AI_CONFIG_GLOB_MEASURE_TIME</name>
+        <initializer>    &quot;GLOB_MEASURE_TIME&quot;</initializer>
+        <briefdescription>
+<para>Enables time measurements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If enabled, measures the time needed for each part of the loading process (i.e. IO time, importing, postprocessing, ..) and dumps these timings to the DefaultLogger. See the <ref refid="" kindref="compound">Performance Page</ref> for more information on this topic.</para>
+<para>Property type: bool. Default value: false. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="79" column="9" bodyfile="include/assimp/config.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac19e86162a57b100174e85f43542c410" prot="public" static="no">
+        <name>AI_CONFIG_GLOBAL_SCALE_FACTOR_DEFAULT</name>
+        <initializer>1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1101" column="12" bodyfile="include/assimp/config.h" bodystart="1101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a93baf6bd6c094cdc598b26120f4d3873" prot="public" static="no">
+        <name>AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY</name>
+        <initializer>&quot;GLOBAL_SCALE_FACTOR&quot;</initializer>
+        <briefdescription>
+<para>Specifies a gobal key factor for scale, float value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1098" column="9" bodyfile="include/assimp/config.h" bodystart="1098" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a472fc2ecd78a47d69e38ef76ddaa8aab" prot="public" static="no">
+        <name>AI_CONFIG_H_INC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="61" column="9" bodyfile="include/assimp/config.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a2fef864730c1eace9bc78a2513a5abe6" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_AC_EVAL_SUBDIVISION</name>
+        <initializer>    &quot;IMPORT_AC_EVAL_SUBDIVISION&quot;</initializer>
+        <briefdescription>
+<para>Configures whether the AC loader evaluates subdivision surfaces ( indicated by the presence of the &apos;subdiv&apos; attribute in the file). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default, <ref refid="namespace_assimp" kindref="compound">Assimp</ref> performs the subdivision using the standard Catmull-Clark algorithm</para>
+<para><itemizedlist>
+<listitem><para>Property type: bool. Default value: true. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="798" column="9" bodyfile="include/assimp/config.h" bodystart="798" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a82ea1d5c67f6202bd7719b25de1179c9" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_AC_SEPARATE_BFCULL</name>
+        <initializer>    &quot;IMPORT_AC_SEPARATE_BFCULL&quot;</initializer>
+        <briefdescription>
+<para>Configures the AC loader to collect all surfaces which have the &quot;Backface cull&quot; flag set in separate meshes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Property type: bool. Default value: true. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="787" column="9" bodyfile="include/assimp/config.h" bodystart="787" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a03e84782d043362cdf836420d7cff53c" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_ASE_RECONSTRUCT_NORMALS</name>
+        <initializer>    &quot;IMPORT_ASE_RECONSTRUCT_NORMALS&quot;</initializer>
+        <briefdescription>
+<para>Configures the ASE loader to always reconstruct normal vectors basing on the smoothing groups loaded from the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Some ASE files have carry invalid normals, other don&apos;t.<itemizedlist>
+<listitem><para>Property type: bool. Default value: true. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="830" column="9" bodyfile="include/assimp/config.h" bodystart="830" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a0592c18a068e25e47f1a4fbe00ef89d4" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_COLLADA_IGNORE_UP_DIRECTION</name>
+        <initializer>&quot;IMPORT_COLLADA_IGNORE_UP_DIRECTION&quot;</initializer>
+        <briefdescription>
+<para>Specifies whether the Collada loader will ignore the provided up direction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If this property is set to true, the up direction provided in the file header will be ignored and the file will be loaded as is. Property type: Bool. Default value: false. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1048" column="9" bodyfile="include/assimp/config.h" bodystart="1048" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ad8b4a911cc16b4d5edbb205ce4b23e44" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_COLLADA_USE_COLLADA_NAMES</name>
+        <initializer>&quot;IMPORT_COLLADA_USE_COLLADA_NAMES&quot;</initializer>
+        <briefdescription>
+<para>Specifies whether the Collada loader should use Collada names. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If this property is set to true, the Collada names will be used as the node and mesh names. The default is to use the id tag (resp. sid tag, if no id tag is present) instead. Property type: Bool. Default value: false. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1058" column="9" bodyfile="include/assimp/config.h" bodystart="1058" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac373be4ecdd1c33fa1ed95ee60efcc6e" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING</name>
+        <initializer>	&quot;AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING&quot;</initializer>
+        <briefdescription>
+<para>Set whether the fbx importer will use the legacy embedded texture naming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is false (0) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="667" column="9" bodyfile="include/assimp/config.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5b4f9cc390a8d9cf09868e19ac573655" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_OPTIMIZE_EMPTY_ANIMATION_CURVES</name>
+        <initializer>    &quot;IMPORT_FBX_OPTIMIZE_EMPTY_ANIMATION_CURVES&quot;</initializer>
+        <briefdescription>
+<para>Specifies whether the importer will drop empty animation curves or animation curves which match the bind pose transformation over their entire defined range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="658" column="9" bodyfile="include/assimp/config.h" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa288cad0d93533c7d4a06347e5096cd9" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_PRESERVE_PIVOTS</name>
+        <initializer>    &quot;IMPORT_FBX_PRESERVE_PIVOTS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the fbx importer will preserve pivot points for transformations (as extra nodes). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If set to false, pivots and offsets will be evaluated whenever possible.</para>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="647" column="9" bodyfile="include/assimp/config.h" bodystart="647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1c886c292d6da748aa5c298118bbb330" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_READ_ALL_GEOMETRY_LAYERS</name>
+        <initializer>    &quot;IMPORT_FBX_READ_ALL_GEOMETRY_LAYERS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the fbx importer will merge all geometry layers present in the source file or take only the first. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="558" column="9" bodyfile="include/assimp/config.h" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1bdbd5504eb2794f2257dacfbe9de98b" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_READ_ALL_MATERIALS</name>
+        <initializer>    &quot;IMPORT_FBX_READ_ALL_MATERIALS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the fbx importer will read all materials present in the source file or take only the referenced materials. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is void unless IMPORT_FBX_READ_MATERIALS=1.</para>
+<para>The default value is false (0) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="570" column="9" bodyfile="include/assimp/config.h" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a89f65cee36448e653e07e42263a16e09" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_READ_ANIMATIONS</name>
+        <initializer>    &quot;IMPORT_FBX_READ_ANIMATIONS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the fbx importer will read animations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="615" column="9" bodyfile="include/assimp/config.h" bodystart="615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a4b5d39fd0bfa03661de06f870c8ed60d" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_READ_CAMERAS</name>
+        <initializer>    &quot;IMPORT_FBX_READ_CAMERAS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the fbx importer will read cameras. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="597" column="9" bodyfile="include/assimp/config.h" bodystart="597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac64b303bd269641b5214f67fc6b4c7ff" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_READ_LIGHTS</name>
+        <initializer>    &quot;IMPORT_FBX_READ_LIGHTS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the fbx importer will read light sources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="606" column="9" bodyfile="include/assimp/config.h" bodystart="606" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a65ad7b34f2db3bf5d4fda9bed579d992" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_READ_MATERIALS</name>
+        <initializer>    &quot;IMPORT_FBX_READ_MATERIALS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the fbx importer will read materials. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="579" column="9" bodyfile="include/assimp/config.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a3d705f891d5c9bd86611926f634bff1c" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_READ_TEXTURES</name>
+        <initializer>    &quot;IMPORT_FBX_READ_TEXTURES&quot;</initializer>
+        <briefdescription>
+<para>Set whether the fbx importer will read embedded textures. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="588" column="9" bodyfile="include/assimp/config.h" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1add81b4566c39f22d81461c862443aaab" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_READ_WEIGHTS</name>
+        <initializer>    &quot;IMPORT_FBX_READ_WEIGHTS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the fbx importer will read weights. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="624" column="9" bodyfile="include/assimp/config.h" bodystart="624" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a79ccfadb16e9825d3f9cbc1924d73105" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_FBX_STRICT_MODE</name>
+        <initializer>    &quot;IMPORT_FBX_STRICT_MODE&quot;</initializer>
+        <briefdescription>
+<para>Set whether the fbx importer will act in strict mode in which only FBX 2013 is supported and any other sub formats are rejected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>FBX 2013 is the primary target for the importer, so this format is best supported and well-tested.</para>
+<para>The default value is false (0) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="636" column="9" bodyfile="include/assimp/config.h" bodystart="636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ad8670ee6d237f2d2f3b60c61e0dead15" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_GLOBAL_KEYFRAME</name>
+        <initializer>&quot;IMPORT_GLOBAL_KEYFRAME&quot;</initializer>
+        <briefdescription>
+<para>Set the vertex animation keyframe to be imported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>ASSIMP does not support vertex keyframes (only bone animation is supported). The library reads only one frame of models with vertex animations. By default this is the first frame. <simplesect kind="note"><para>The default value is 0. This option applies to all importers. However, it is also possible to override the global setting for a specific loader. You can use the AI_CONFIG_IMPORT_XXX_KEYFRAME options (where XXX is a placeholder for the file format for which you want to override the global setting). Property type: integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="698" column="9" bodyfile="include/assimp/config.h" bodystart="698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7ec9ae953df9409eba917b77a29c8148" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_IFC_CUSTOM_TRIANGULATION</name>
+        <initializer>&quot;IMPORT_IFC_CUSTOM_TRIANGULATION&quot;</initializer>
+        <briefdescription>
+<para>Specifies whether the IFC loader will use its own, custom triangulation algorithm to triangulate wall and floor meshes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If this property is set to false, walls will be either triangulated by <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b" kindref="member">aiProcess_Triangulate</ref> or will be passed through as huge polygons with faked holes (i.e. holes that are connected with the outer boundary using a dummy edge). It is highly recommended to set this property to true if you want triangulated data because <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b" kindref="member">aiProcess_Triangulate</ref> is known to have problems with the kind of polygons that the IFC loader spits out for complicated meshes. Property type: Bool. Default value: true. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1007" column="9" bodyfile="include/assimp/config.h" bodystart="1007" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a84ff635d176313a524db72f391dedf06" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_IFC_CYLINDRICAL_TESSELLATION</name>
+        <initializer>&quot;IMPORT_IFC_CYLINDRICAL_TESSELLATION&quot;</initializer>
+        <briefdescription>
+<para>Set the tessellation for IFC cylindrical shapes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used by the IFC importer to determine the tessellation parameter for cylindrical shapes, i.e. the number of segments used to approximate a circle. <simplesect kind="note"><para>The default value is AI_IMPORT_IFC_DEFAULT_CYLINDRICAL_TESSELLATION and the accepted values are in range [3, 180]. Property type: Integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1034" column="9" bodyfile="include/assimp/config.h" bodystart="1034" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac53f1c99fc7f86b4a555ff1f4763819b" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_IFC_SKIP_SPACE_REPRESENTATIONS</name>
+        <initializer>&quot;IMPORT_IFC_SKIP_SPACE_REPRESENTATIONS&quot;</initializer>
+        <briefdescription>
+<para>Specifies whether the IFC loader skips over IfcSpace elements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>IfcSpace elements (and their geometric representations) are used to represent, well, free space in a building storey.<linebreak/>
+ Property type: Bool. Default value: true. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="992" column="9" bodyfile="include/assimp/config.h" bodystart="992" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a68a2131eff232fad1cdfc0bca107f4ca" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_IFC_SMOOTHING_ANGLE</name>
+        <initializer>&quot;IMPORT_IFC_SMOOTHING_ANGLE&quot;</initializer>
+        <briefdescription>
+<para>Set the tessellation conic angle for IFC smoothing curves. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used by the IFC importer to determine the tessellation parameter for smoothing curves. <simplesect kind="note"><para>The default value is AI_IMPORT_IFC_DEFAULT_SMOOTHING_ANGLE and the accepted values are in range [5.0, 120.0]. Property type: Float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1018" column="9" bodyfile="include/assimp/config.h" bodystart="1018" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac0fa56e7d9a68b3e164c2cada6350d39" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_IRR_ANIM_FPS</name>
+        <initializer>    &quot;IMPORT_IRR_ANIM_FPS&quot;</initializer>
+        <briefdescription>
+<para>Defines the output frame rate of the IRR loader. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>IRR animations are difficult to convert for <ref refid="namespace_assimp" kindref="compound">Assimp</ref> and there will always be a loss of quality. This setting defines how many keys per second are returned by the converter.<linebreak/>
+ Property type: integer. Default value: 100 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="941" column="9" bodyfile="include/assimp/config.h" bodystart="941" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ae890df205a2234b5a85a6e8b3f6f5fda" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_LWO_ONE_LAYER_ONLY</name>
+        <initializer>    &quot;IMPORT_LWO_ONE_LAYER_ONLY&quot;</initializer>
+        <briefdescription>
+<para>Configures the LWO loader to load just one layer from the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LWO files consist of layers and in some cases it could be useful to load only one of them. This property can be either a string - which specifies the name of the layer - or an integer - the index of the layer. If the property is not set the whole LWO model is loaded. Loading fails if the requested layer is not available. The layer index is zero-based and the layer name may not be empty.<linebreak/>
+ Property type: Integer. Default value: all layers are loaded. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="895" column="9" bodyfile="include/assimp/config.h" bodystart="895" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a9a5d00b6e7808cfd0d21cec7c6072bdf" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_LWS_ANIM_END</name>
+        <initializer>    &quot;IMPORT_LWS_ANIM_END&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="930" column="9" bodyfile="include/assimp/config.h" bodystart="930" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a61aa54f23a5b5270c756db279b0e1c57" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_LWS_ANIM_START</name>
+        <initializer>    &quot;IMPORT_LWS_ANIM_START&quot;</initializer>
+        <briefdescription>
+<para>Defines the begin of the time range for which the LWS loader evaluates animations and computes <ref refid="structai_node_anim" kindref="compound">aiNodeAnim</ref>&apos;s. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> provides full conversion of LightWave&apos;s envelope system, including pre and post conditions. The loader computes linearly subsampled animation chanels with the frame rate given in the LWS file. This property defines the start time. Note: animation channels are only generated if a node has at least one envelope with more tan one key assigned. This property. is given in frames, &apos;0&apos; is the first frame. By default, if this property is not set, the importer takes the animation start from the input LWS file (&apos;FirstFrame&apos; line)<linebreak/>
+ Property type: Integer. Default value: taken from file.</para>
+<para><simplesect kind="see"><para><ref refid="config_8h_1a9a5d00b6e7808cfd0d21cec7c6072bdf" kindref="member">AI_CONFIG_IMPORT_LWS_ANIM_END</ref> - end of the imported time range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="928" column="9" bodyfile="include/assimp/config.h" bodystart="928" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a00845e63629bb9c20473122130a2286f" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MD2_KEYFRAME</name>
+        <initializer>&quot;IMPORT_MD2_KEYFRAME&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="701" column="9" bodyfile="include/assimp/config.h" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a77411c162d7840282c85250c92c89354" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MD3_HANDLE_MULTIPART</name>
+        <initializer>    &quot;IMPORT_MD3_HANDLE_MULTIPART&quot;</initializer>
+        <briefdescription>
+<para>Configures the M3D loader to detect and process multi-part Quake player models. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>These models usually consist of 3 files, lower.md3, upper.md3 and head.md3. If this property is set to true, <ref refid="namespace_assimp" kindref="compound">Assimp</ref> will try to load and combine all three files if one of them is loaded. Property type: bool. Default value: true. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="842" column="9" bodyfile="include/assimp/config.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ade66e668151d5d1468116ffde6954f2a" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MD3_KEYFRAME</name>
+        <initializer>&quot;IMPORT_MD3_KEYFRAME&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="700" column="9" bodyfile="include/assimp/config.h" bodystart="700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a442b397bb2b21a5e0ccc709f37017188" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MD3_LOAD_SHADERS</name>
+        <initializer>    &quot;IMPORT_MD3_LOAD_SHADERS&quot;</initializer>
+        <briefdescription>
+<para>Specify if to try load Quake 3 shader files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This also controls original surface name handling: when disabled it will be used unchanged.</para>
+<para>Property type: bool. Default value: true. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="863" column="9" bodyfile="include/assimp/config.h" bodystart="863" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a58558385cdb3cf18c66ade9fce5f738e" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MD3_SHADER_SRC</name>
+        <initializer>    &quot;IMPORT_MD3_SHADER_SRC&quot;</initializer>
+        <briefdescription>
+<para>Specify the Quake 3 shader file to be used for a particular MD3 file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can also be a search path.</para>
+<para>By default <ref refid="namespace_assimp" kindref="compound">Assimp</ref>&apos;s behaviour is as follows: If a MD3 file <computeroutput>any_path/models/any_q3_subdir/model_name/file_name.md3</computeroutput> is loaded, the library tries to locate the corresponding shader file in <computeroutput>any_path/scripts/model_name.shader</computeroutput>. This property overrides this behaviour. It can either specify a full path to the shader to be loaded or alternatively the path (relative or absolute) to the directory where the shaders for all MD3s to be loaded reside. <ref refid="namespace_assimp" kindref="compound">Assimp</ref> attempts to open <computeroutput>IMPORT_MD3_SHADER_SRC/model_name.shader</computeroutput> first, <computeroutput>IMPORT_MD3_SHADER_SRC/file_name.shader</computeroutput> is the fallback file. Note that IMPORT_MD3_SHADER_SRC should have a terminal (back)slash. Property type: String. Default value: n/a. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="881" column="9" bodyfile="include/assimp/config.h" bodystart="881" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1d2fb0e3ed40231c294fc327a822de6c" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MD3_SKIN_NAME</name>
+        <initializer>    &quot;IMPORT_MD3_SKIN_NAME&quot;</initializer>
+        <briefdescription>
+<para>Tells the MD3 loader which skin files to load. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When loading MD3 files, <ref refid="namespace_assimp" kindref="compound">Assimp</ref> checks whether a file [md3_file_name]_[skin_name].skin is existing. These files are used by Quake III to be able to assign different skins (e.g. red and blue team) to models. &apos;default&apos;, &apos;red&apos;, &apos;blue&apos; are typical skin names. Property type: String. Default value: &quot;default&quot;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="854" column="9" bodyfile="include/assimp/config.h" bodystart="854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a0854acdd45ff0752475f5ab8fe15d905" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MD5_NO_ANIM_AUTOLOAD</name>
+        <initializer>    &quot;IMPORT_MD5_NO_ANIM_AUTOLOAD&quot;</initializer>
+        <briefdescription>
+<para>Configures the MD5 loader to not load the MD5ANIM file for a MD5MESH file automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default strategy is to look for a file with the same name but the MD5ANIM extension in the same directory. If it is found, it is loaded and combined with the MD5MESH file. This configuration option can be used to disable this behaviour.</para>
+<para><itemizedlist>
+<listitem><para>Property type: bool. Default value: false. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="909" column="9" bodyfile="include/assimp/config.h" bodystart="909" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a3797029e51b77f9ef5227555f3b806b4" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MDC_KEYFRAME</name>
+        <initializer>&quot;IMPORT_MDC_KEYFRAME&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="703" column="9" bodyfile="include/assimp/config.h" bodystart="703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a243ffb53e27a913b92cdb38bb951da7d" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MDL_COLORMAP</name>
+        <initializer>    &quot;IMPORT_MDL_COLORMAP&quot;</initializer>
+        <briefdescription>
+<para>Sets the colormap (= palette) to be used to decode embedded textures in MDL (Quake or 3DGS) files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This must be a valid path to a file. The file is 768 (256*3) bytes large and contains RGB triplets for each of the 256 palette entries. The default value is colormap.lmp. If the file is not found, a default palette (from Quake 1) is used. Property type: string. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="188" column="9" bodyfile="include/assimp/config.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7347b1975d6ac63975b72177e4de101b" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MDL_HL1_READ_ANIMATION_EVENTS</name>
+        <initializer>&quot;IMPORT_MDL_HL1_READ_ANIMATION_EVENTS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the MDL (HL1) importer will read animation events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property requires AI_CONFIG_IMPORT_MDL_HL1_READ_ANIMATIONS to be set to true.</para>
+</simplesect>
+The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="722" column="9" bodyfile="include/assimp/config.h" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5d42c84aed93bdb6f672bccf233f6c13" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MDL_HL1_READ_ANIMATIONS</name>
+        <initializer>&quot;IMPORT_MDL_HL1_READ_ANIMATIONS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the MDL (HL1) importer will read animations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="713" column="9" bodyfile="include/assimp/config.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a216394fc6c2296b47e4963ac92e838cf" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MDL_HL1_READ_ATTACHMENTS</name>
+        <initializer>&quot;IMPORT_MDL_HL1_READ_ATTACHMENTS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the MDL (HL1) importer will read attachments info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="748" column="9" bodyfile="include/assimp/config.h" bodystart="748" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a8040d9ffaa15635b2b398233ce55a4a5" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MDL_HL1_READ_BLEND_CONTROLLERS</name>
+        <initializer>&quot;IMPORT_MDL_HL1_READ_BLEND_CONTROLLERS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the MDL (HL1) importer will read blend controllers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property requires AI_CONFIG_IMPORT_MDL_HL1_READ_ANIMATIONS to be set to true.</para>
+</simplesect>
+The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="731" column="9" bodyfile="include/assimp/config.h" bodystart="731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ada6f419573e61fdd7410a7bba0448ddf" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MDL_HL1_READ_BONE_CONTROLLERS</name>
+        <initializer>&quot;IMPORT_MDL_HL1_READ_BONE_CONTROLLERS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the MDL (HL1) importer will read bone controllers info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="756" column="9" bodyfile="include/assimp/config.h" bodystart="756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a2240146090dd6a6c6b333e522bd0c808" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MDL_HL1_READ_HITBOXES</name>
+        <initializer>&quot;IMPORT_MDL_HL1_READ_HITBOXES&quot;</initializer>
+        <briefdescription>
+<para>Set whether the MDL (HL1) importer will read hitboxes info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="764" column="9" bodyfile="include/assimp/config.h" bodystart="764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a00a732344107fccb736b5e8d4fd074ec" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MDL_HL1_READ_MISC_GLOBAL_INFO</name>
+        <initializer>&quot;IMPORT_MDL_HL1_READ_MISC_GLOBAL_INFO&quot;</initializer>
+        <briefdescription>
+<para>Set whether the MDL (HL1) importer will read miscellaneous global model info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="772" column="9" bodyfile="include/assimp/config.h" bodystart="772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a6a6c444044f93fd19a35a87fe7a0007c" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MDL_HL1_READ_SEQUENCE_TRANSITIONS</name>
+        <initializer>&quot;IMPORT_MDL_HL1_READ_SEQUENCE_TRANSITIONS&quot;</initializer>
+        <briefdescription>
+<para>Set whether the MDL (HL1) importer will read sequence transition graph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property requires AI_CONFIG_IMPORT_MDL_HL1_READ_ANIMATIONS to be set to true.</para>
+</simplesect>
+The default value is true (1) Property type: bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="740" column="9" bodyfile="include/assimp/config.h" bodystart="740" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5a9b8a7407fce531b8442f07de548b8e" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_MDL_KEYFRAME</name>
+        <initializer>&quot;IMPORT_MDL_KEYFRAME&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="702" column="9" bodyfile="include/assimp/config.h" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a75351a98fd8d4c367d326b914169f9d6" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_NO_SKELETON_MESHES</name>
+        <initializer>    &quot;IMPORT_NO_SKELETON_MESHES&quot;</initializer>
+        <briefdescription>
+<para>Global setting to disable generation of skeleton dummy meshes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Skeleton dummy meshes are generated as a visualization aid in cases which the input data contains no geometry, but only animation data. Property data type: bool. Default value: false </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="91" column="9" bodyfile="include/assimp/config.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1acb55d5bf44d7ee13bd03f0197ac2e4da" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_OGRE_MATERIAL_FILE</name>
+        <initializer>    &quot;IMPORT_OGRE_MATERIAL_FILE&quot;</initializer>
+        <briefdescription>
+<para>Ogre Importer will try to find referenced materials from this file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ogre meshes reference with material names, this does not tell <ref refid="namespace_assimp" kindref="compound">Assimp</ref> the file where it is located in. <ref refid="namespace_assimp" kindref="compound">Assimp</ref> will try to find the source file in the following order: &lt;material-name&gt;.material, &lt;mesh-filename-base&gt;.material and lastly the material name defined by this config property. <linebreak/>
+ Property type: String. Default value: Scene.material. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="954" column="9" bodyfile="include/assimp/config.h" bodystart="954" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1acec7a56a1defbd37b8807fcfe08ab88c" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME</name>
+        <initializer>    &quot;IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME&quot;</initializer>
+        <briefdescription>
+<para>Ogre Importer detect the texture usage from its filename. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ogre material texture units do not define texture type, the textures usage depends on the used shader or Ogre&apos;s fixed pipeline. If this config property is true <ref refid="namespace_assimp" kindref="compound">Assimp</ref> will try to detect the type from the textures filename postfix: _n, _nrm, _nrml, _normal, _normals and _normalmap for normal map, _s, _spec, _specular and _specularmap for specular map, _l, _light, _lightmap, _occ and _occlusion for light map, _disp and _displacement for displacement map. The matching is case insensitive. Post fix is taken between the last underscore and the last period. Default behavior is to detect type from lower cased texture unit name by matching against: normalmap, specularmap, lightmap and displacementmap. For both cases if no match is found aiTextureType_DIFFUSE is used. <linebreak/>
+ Property type: Bool. Default value: false. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="974" column="9" bodyfile="include/assimp/config.h" bodystart="974" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ae1662285ec29a071ff397d086ff0815f" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_REMOVE_EMPTY_BONES</name>
+        <initializer>    &quot;AI_CONFIG_IMPORT_REMOVE_EMPTY_BONES&quot;</initializer>
+        <briefdescription>
+<para>Set wether the importer shall not remove empty bones. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty bone are often used to define connections for other models. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="675" column="9" bodyfile="include/assimp/config.h" bodystart="675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa15c7351629af8e1df6ae3e4e06e5ba7" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_SMD_KEYFRAME</name>
+        <initializer>&quot;IMPORT_SMD_KEYFRAME&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="704" column="9" bodyfile="include/assimp/config.h" bodystart="704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aceebcccdf457a6f7562e06a1556a689b" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_SMD_LOAD_ANIMATION_LIST</name>
+        <initializer>&quot;IMPORT_SMD_LOAD_ANIMATION_LIST&quot;</initializer>
+        <briefdescription>
+<para>Smd load multiple animations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Property type: bool. Default value: true. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="779" column="9" bodyfile="include/assimp/config.h" bodystart="779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7ea74e123ac238824a5b60b2b6caf3f3" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_TER_MAKE_UVS</name>
+        <initializer>    &quot;IMPORT_TER_MAKE_UVS&quot;</initializer>
+        <briefdescription>
+<para>Configures the terragen import plugin to compute uv&apos;s for terrains, if not given. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Furthermore a default texture is assigned.</para>
+<para>UV coordinates for terrains are so simple to compute that you&apos;ll usually want to compute them on your own, if you need them. This option is intended for model viewers which want to offer an easy way to apply textures to terrains.<itemizedlist>
+<listitem><para>Property type: bool. Default value: false. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="820" column="9" bodyfile="include/assimp/config.h" bodystart="820" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a54dfdedf42b694596552488b31cf2a12" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_UNREAL_HANDLE_FLAGS</name>
+        <initializer>    &quot;UNREAL_HANDLE_FLAGS&quot;</initializer>
+        <briefdescription>
+<para>Configures the UNREAL 3D loader to separate faces with different surface flags (e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>two-sided vs. single-sided).</para>
+<para><itemizedlist>
+<listitem><para>Property type: bool. Default value: true. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="807" column="9" bodyfile="include/assimp/config.h" bodystart="807" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ace574a15cd1257216ec6c48acdaa91a0" prot="public" static="no">
+        <name>AI_CONFIG_IMPORT_UNREAL_KEYFRAME</name>
+        <initializer>&quot;IMPORT_UNREAL_KEYFRAME&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="705" column="9" bodyfile="include/assimp/config.h" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a17376a5a00287843581a4f668291f49d" prot="public" static="no">
+        <name>AI_CONFIG_PP_CT_MAX_SMOOTHING_ANGLE</name>
+        <initializer>    &quot;PP_CT_MAX_SMOOTHING_ANGLE&quot;</initializer>
+        <briefdescription>
+<para>Specifies the maximum angle that may be between two vertex tangents that their tangents and bi-tangents are smoothed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This applies to the CalcTangentSpace-Step. The angle is specified in degrees. The maximum value is 175. Property type: float. Default value: 45 degrees </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="149" column="9" bodyfile="include/assimp/config.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1b2fa19a9636ba523569f0106dfe2c14" prot="public" static="no">
+        <name>AI_CONFIG_PP_CT_TEXTURE_CHANNEL_INDEX</name>
+        <initializer>    &quot;PP_CT_TEXTURE_CHANNEL_INDEX&quot;</initializer>
+        <briefdescription>
+<para>Source UV channel for tangent space computation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The specified channel must exist or an error will be raised. Property type: integer. Default value: 0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="159" column="9" bodyfile="include/assimp/config.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a884736c7d7809ad88eec646e9cccbfba" prot="public" static="no">
+        <name>AI_CONFIG_PP_DB_ALL_OR_NONE</name>
+        <initializer>    &quot;PP_DB_ALL_OR_NONE&quot;</initializer>
+        <briefdescription>
+<para>Require all bones qualify for deboning before removing any. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used by the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a8e14bca58301e2ee29cf928156c3a9f9" kindref="member">aiProcess_Debone</ref> PostProcess-Step. <simplesect kind="note"><para>The default value is 0 Property type: bool. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="366" column="9" bodyfile="include/assimp/config.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a3f19ce3619d0d54a1bc51cd5e6c73e41" prot="public" static="no">
+        <name>AI_CONFIG_PP_DB_THRESHOLD</name>
+        <initializer>    &quot;PP_DB_THRESHOLD&quot;</initializer>
+        <briefdescription>
+<para>Lower the deboning threshold in order to remove more bones. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used by the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a8e14bca58301e2ee29cf928156c3a9f9" kindref="member">aiProcess_Debone</ref> PostProcess-Step. <simplesect kind="note"><para>The default value is AI_DEBONE_THRESHOLD Property type: float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="352" column="9" bodyfile="include/assimp/config.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a33d048b80565becd64af1ebd824bfd26" prot="public" static="no">
+        <name>AI_CONFIG_PP_FD_CHECKAREA</name>
+        <initializer>    &quot;PP_FD_CHECKAREA&quot;</initializer>
+        <briefdescription>
+<para>Configures the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410ae1311236ea7a55b7355c5aa535586ad0" kindref="member">aiProcess_FindDegenerates</ref> to check the area of a trinagle to be greates than e-6. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If this is not the case the triangle will be removed if <ref refid="config_8h_1a3d9c02c1676aae7baf5e079fc72e08d1" kindref="member">AI_CONFIG_PP_FD_REMOVE</ref> is set to true. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="276" column="9" bodyfile="include/assimp/config.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a3d9c02c1676aae7baf5e079fc72e08d1" prot="public" static="no">
+        <name>AI_CONFIG_PP_FD_REMOVE</name>
+        <initializer>    &quot;PP_FD_REMOVE&quot;</initializer>
+        <briefdescription>
+<para>Configures the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410ae1311236ea7a55b7355c5aa535586ad0" kindref="member">aiProcess_FindDegenerates</ref> step to remove degenerated primitives from the import - immediately. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default behaviour converts degenerated triangles to lines and degenerated lines to points. See the documentation to the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410ae1311236ea7a55b7355c5aa535586ad0" kindref="member">aiProcess_FindDegenerates</ref> step for a detailed example of the various ways to get rid of these lines and points if you don&apos;t want them. Property type: bool. Default value: false. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="267" column="9" bodyfile="include/assimp/config.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ad223c5e7e63d2937685cc704a181b950" prot="public" static="no">
+        <name>AI_CONFIG_PP_FID_ANIM_ACCURACY</name>
+        <initializer>    &quot;PP_FID_ANIM_ACCURACY&quot;</initializer>
+        <briefdescription>
+<para>Input parameter to the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a42a93fc16a7a3b6df509bab503945421" kindref="member">aiProcess_FindInvalidData</ref> step: Specifies the floating-point accuracy for animation values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The step checks for animation tracks where all frame values are absolutely equal and removes them. This tweakable controls the epsilon for floating-point comparisons - two keys are considered equal if the invariant abs(n0-n1)&gt;epsilon holds true for all vector respectively quaternion components. The default value is 0.f - comparisons are exact then. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="498" column="9" bodyfile="include/assimp/config.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a25aaab609b6e3785f302fcd09fbfaaf1" prot="public" static="no">
+        <name>AI_CONFIG_PP_FID_IGNORE_TEXTURECOORDS</name>
+        <initializer>    &quot;PP_FID_IGNORE_TEXTURECOORDS&quot;</initializer>
+        <briefdescription>
+<para>Input parameter to the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a42a93fc16a7a3b6df509bab503945421" kindref="member">aiProcess_FindInvalidData</ref> step: Set to true to ignore texture coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This may be useful if you have to assign different kind of textures like one for the summer or one for the winter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="506" column="9" bodyfile="include/assimp/config.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a412ab4b92d48adbddc81c1c9a190493f" prot="public" static="no">
+        <name>AI_CONFIG_PP_GSN_MAX_SMOOTHING_ANGLE</name>
+        <initializer>    &quot;PP_GSN_MAX_SMOOTHING_ANGLE&quot;</initializer>
+        <briefdescription>
+<para>Specifies the maximum angle that may be between two face normals at the same vertex position that their are smoothed together. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sometimes referred to as &apos;crease angle&apos;. This applies to the GenSmoothNormals-Step. The angle is specified in degrees, so 180 is PI. The default value is 175 degrees (all vertex normals are smoothed). The maximum value is 175, too. Property type: float. Warning: setting this option may cause a severe loss of performance. The performance is unaffected if the <ref refid="config_8h_1ac19aa56fa892f712fd3fb4d95be19114" kindref="member">AI_CONFIG_FAVOUR_SPEED</ref> flag is set but the output quality may be reduced. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="174" column="9" bodyfile="include/assimp/config.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a851b513ea20c4d66a1c012d63dd8e78b" prot="public" static="no">
+        <name>AI_CONFIG_PP_ICL_PTCACHE_SIZE</name>
+        <initializer>&quot;PP_ICL_PTCACHE_SIZE&quot;</initializer>
+        <briefdescription>
+<para>Set the size of the post-transform vertex cache to optimize the vertices for. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This configures the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a16979c68f93d283c6886abf580d557b1" kindref="member">aiProcess_ImproveCacheLocality</ref> step.</para>
+<para>The size is given in vertices. Of course you can&apos;t know how the vertex format will exactly look like after the import returns, but you can still guess what your meshes will probably have. <simplesect kind="note"><para>The default value is <ref refid="config_8h_1a52df90ae1346e6b39048f7218e04d2f6" kindref="member">PP_ICL_PTCACHE_SIZE</ref>. That results in slight performance improvements for most nVidia/AMD cards since 2002. Property type: integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="386" column="9" bodyfile="include/assimp/config.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a37c3ad7872523b615d42761f2dc1bdf5" prot="public" static="no">
+        <name>AI_CONFIG_PP_LBW_MAX_WEIGHTS</name>
+        <initializer>    &quot;PP_LBW_MAX_WEIGHTS&quot;</initializer>
+        <briefdescription>
+<para>Set the maximum number of bones affecting a single vertex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used by the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a9fc450a103aa2831c145c49bc56c9439" kindref="member">aiProcess_LimitBoneWeights</ref> PostProcess-Step. <simplesect kind="note"><para>The default value is AI_LMW_MAX_WEIGHTS Property type: integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="338" column="9" bodyfile="include/assimp/config.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa5943736f9c90b709c4bd819afca9798" prot="public" static="no">
+        <name>AI_CONFIG_PP_OG_EXCLUDE_LIST</name>
+        <initializer>    &quot;PP_OG_EXCLUDE_LIST&quot;</initializer>
+        <briefdescription>
+<para>Configures the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a3bf6b8cb30289fd27fb2734d67a0889f" kindref="member">aiProcess_OptimizeGraph</ref> step to preserve nodes matching a name in a given list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a list of 1 to n strings, &apos; &apos; serves as delimiter character. Identifiers containing whitespaces must be enclosed in <emphasis>single</emphasis> quotation marks. For example:<computeroutput> &quot;keep-me and_me_to anotherNodeToBeKept \&apos;name with whitespace\&apos;&quot;</computeroutput>. If a node matches on of these names, it will not be modified or removed by the postprocessing step.<linebreak/>
+ This option might be useful if you are using some magic node names to pass additional semantics through the content pipeline. This ensures they won&apos;t be optimized away, but a general optimization is still performed for nodes not contained in the list. Property type: String. Default value: n/a <simplesect kind="note"><para>Linefeeds, tabs or carriage returns are treated as whitespace. Node names are case sensitive. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="297" column="9" bodyfile="include/assimp/config.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7548eebdefb242392d23adc61f33fbb4" prot="public" static="no">
+        <name>AI_CONFIG_PP_PTV_ADD_ROOT_TRANSFORMATION</name>
+        <initializer>    &quot;PP_PTV_ADD_ROOT_TRANSFORMATION&quot;</initializer>
+        <briefdescription>
+<para>Configures the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a6e50fab95214a33996e28fae3efc7582" kindref="member">aiProcess_PreTransformVertices</ref> step to use a users defined matrix as the scene root node transformation before transforming vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Property type: bool. Default value: false. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="244" column="9" bodyfile="include/assimp/config.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a04cc3d3a549efd8db4a56eaf554fd327" prot="public" static="no">
+        <name>AI_CONFIG_PP_PTV_KEEP_HIERARCHY</name>
+        <initializer>    &quot;PP_PTV_KEEP_HIERARCHY&quot;</initializer>
+        <briefdescription>
+<para>Configures the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a6e50fab95214a33996e28fae3efc7582" kindref="member">aiProcess_PreTransformVertices</ref> step to keep the scene hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Meshes are moved to worldspace, but no optimization is performed (read: meshes with equal materials are not joined. The total number of meshes won&apos;t change).</para>
+<para>This option could be of use for you if the scene hierarchy contains important additional information which you intend to parse. For rendering, you can still render all meshes in the scene without any transformations. Property type: bool. Default value: false. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="225" column="9" bodyfile="include/assimp/config.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ad1bf07f321c6f075e9c67f26b551b323" prot="public" static="no">
+        <name>AI_CONFIG_PP_PTV_NORMALIZE</name>
+        <initializer>    &quot;PP_PTV_NORMALIZE&quot;</initializer>
+        <briefdescription>
+<para>Configures the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a6e50fab95214a33996e28fae3efc7582" kindref="member">aiProcess_PreTransformVertices</ref> step to normalize all vertex components into the [-1,1] range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>That is, a bounding box for the whole scene is computed, the maximum component is taken and all meshes are scaled appropriately (uniformly of course!). This might be useful if you don&apos;t know the spatial dimension of the input data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="235" column="9" bodyfile="include/assimp/config.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a76b170493e12273427e2b96263c9bf21" prot="public" static="no">
+        <name>AI_CONFIG_PP_PTV_ROOT_TRANSFORMATION</name>
+        <initializer>    &quot;PP_PTV_ROOT_TRANSFORMATION&quot;</initializer>
+        <briefdescription>
+<para>Configures the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a6e50fab95214a33996e28fae3efc7582" kindref="member">aiProcess_PreTransformVertices</ref> step to use a users defined matrix as the scene root node transformation before transforming vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This property correspond to the &apos;a1&apos; component of the transformation matrix. Property type: aiMatrix4x4. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="254" column="9" bodyfile="include/assimp/config.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5a7a5d8c18ffe39d29834a0737e2bce9" prot="public" static="no">
+        <name>AI_CONFIG_PP_RRM_EXCLUDE_LIST</name>
+        <initializer>    &quot;PP_RRM_EXCLUDE_LIST&quot;</initializer>
+        <briefdescription>
+<para>Configures the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a052d2921c33cd21141480b8f25524bb1" kindref="member">aiProcess_RemoveRedundantMaterials</ref> step to keep materials matching a name in a given list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a list of 1 to n strings, &apos; &apos; serves as delimiter character. Identifiers containing whitespaces must be enclosed in <emphasis>single</emphasis> quotation marks. For example:<computeroutput> &quot;keep-me and_me_to anotherMaterialToBeKept \&apos;name with whitespace\&apos;&quot;</computeroutput>. If a material matches on of these names, it will not be modified or removed by the postprocessing step nor will other materials be replaced by a reference to it. <linebreak/>
+ This option might be useful if you are using some magic material names to pass additional semantics through the content pipeline. This ensures they won&apos;t be optimized away, but a general optimization is still performed for materials not contained in the list. Property type: String. Default value: n/a <simplesect kind="note"><para>Linefeeds, tabs or carriage returns are treated as whitespace. Material names are case sensitive. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="210" column="9" bodyfile="include/assimp/config.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1afc0a4c00fb90c345eb38fe3f7d7c8637" prot="public" static="no">
+        <name>AI_CONFIG_PP_RVC_FLAGS</name>
+        <initializer>    &quot;PP_RVC_FLAGS&quot;</initializer>
+        <briefdescription>
+<para>Input parameter to the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a0ab270168bd7a707c0f279045c265e08" kindref="member">aiProcess_RemoveComponent</ref> step: Specifies the parts of the data structure to be removed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See the documentation to this step for further details. The property is expected to be an integer, a bitwise combination of the <ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3" kindref="member">aiComponent</ref> flags defined above in this header. The default value is 0. Important: if no valid mesh is remaining after the step has been executed (e.g you thought it was funny to specify ALL of the flags defined above) the import FAILS. Mainly because there is no data to work on anymore ... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="474" column="9" bodyfile="include/assimp/config.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ada7420ed15ce65797bcb1943feab2085" prot="public" static="no">
+        <name>AI_CONFIG_PP_SBBC_MAX_BONES</name>
+        <initializer>    &quot;PP_SBBC_MAX_BONES&quot;</initializer>
+        <briefdescription>
+<para>Maximum bone count per mesh for the SplitbyBoneCount step. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Meshes are split until the maximum number of bones is reached. The default value is AI_SBBC_DEFAULT_MAX_BONES, which may be altered at compile-time. Property data type: integer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="131" column="9" bodyfile="include/assimp/config.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a971e337cb0d526861142586b8341cb98" prot="public" static="no">
+        <name>AI_CONFIG_PP_SBP_REMOVE</name>
+        <initializer>    &quot;PP_SBP_REMOVE&quot;</initializer>
+        <briefdescription>
+<para>Input parameter to the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410ab4484f73635d633cd79973bac1431ed6" kindref="member">aiProcess_SortByPType</ref> step: Specifies which primitive types are removed by the step. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a bitwise combination of the aiPrimitiveType flags. Specifying all of them is illegal, of course. A typical use would be to exclude all line and point meshes from the import. This is an integer property, its default value is 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="486" column="9" bodyfile="include/assimp/config.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a28b904b69e6e5261aaae50b858316041" prot="public" static="no">
+        <name>AI_CONFIG_PP_SLM_TRIANGLE_LIMIT</name>
+        <initializer>    &quot;PP_SLM_TRIANGLE_LIMIT&quot;</initializer>
+        <briefdescription>
+<para>Set the maximum number of triangles in a mesh. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used by the &quot;SplitLargeMeshes&quot; PostProcess-Step to determine whether a mesh must be split or not. <simplesect kind="note"><para>The default value is AI_SLM_DEFAULT_MAX_TRIANGLES Property type: integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="308" column="9" bodyfile="include/assimp/config.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a67d3e772a82c3bbb921ce4d8f2448f2f" prot="public" static="no">
+        <name>AI_CONFIG_PP_SLM_VERTEX_LIMIT</name>
+        <initializer>    &quot;PP_SLM_VERTEX_LIMIT&quot;</initializer>
+        <briefdescription>
+<para>Set the maximum number of vertices in a mesh. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used by the &quot;SplitLargeMeshes&quot; PostProcess-Step to determine whether a mesh must be split or not. <simplesect kind="note"><para>The default value is AI_SLM_DEFAULT_MAX_VERTICES Property type: integer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="324" column="9" bodyfile="include/assimp/config.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a6e4d6d6bccf5407432bb137468997f90" prot="public" static="no">
+        <name>AI_CONFIG_PP_TUV_EVALUATE</name>
+        <initializer>    &quot;PP_TUV_EVALUATE&quot;</initializer>
+        <briefdescription>
+<para>Input parameter to the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a87577c60885b193571a10237341b237f" kindref="member">aiProcess_TransformUVCoords</ref> step: Specifies which UV transformations are evaluated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a bitwise combination of the AI_UVTRAFO_XXX flags (integer property, of course). By default all transformations are enabled (AI_UVTRAFO_ALL). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="529" column="9" bodyfile="include/assimp/config.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ae26293714611a49e9492b0689f74ec04" prot="public" static="no">
+        <name>AI_DEBONE_THRESHOLD</name>
+        <initializer>1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="357" column="12" bodyfile="include/assimp/config.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1abb5d9600e6a505273d4eb633ee6d9db9" prot="public" static="no">
+        <name>AI_IMPORT_IFC_DEFAULT_CYLINDRICAL_TESSELLATION</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1038" column="12" bodyfile="include/assimp/config.h" bodystart="1038" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac7bc8aad5d931d06847ce84869798524" prot="public" static="no">
+        <name>AI_IMPORT_IFC_DEFAULT_SMOOTHING_ANGLE</name>
+        <initializer>10.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="1022" column="12" bodyfile="include/assimp/config.h" bodystart="1022" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ab0dbe36911bd9df0661bdb69ecadb2e1" prot="public" static="no">
+        <name>AI_LMW_MAX_WEIGHTS</name>
+        <initializer>0x4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="343" column="12" bodyfile="include/assimp/config.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5241c80c29b4ef83683f34b58ca230dc" prot="public" static="no">
+        <name>AI_SBBC_DEFAULT_MAX_BONES</name>
+        <initializer>60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="137" column="12" bodyfile="include/assimp/config.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1abfe0ddcde0e04816e7bc9e429dcd8185" prot="public" static="no">
+        <name>AI_SLM_DEFAULT_MAX_TRIANGLES</name>
+        <initializer>1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="313" column="12" bodyfile="include/assimp/config.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a3d82573abff7d733ec1f24456662a99d" prot="public" static="no">
+        <name>AI_SLM_DEFAULT_MAX_VERTICES</name>
+        <initializer>1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="329" column="12" bodyfile="include/assimp/config.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1d13742213d0cdec9d5a123b7b58bc45" prot="public" static="no">
+        <name>AI_UVTRAFO_ALL</name>
+        <initializer>(<ref refid="config_8h_1a8b39361e58739557a51c97ce92bdf99f" kindref="member">AI_UVTRAFO_SCALING</ref> | <ref refid="config_8h_1ac0e92a0403c280ec53466de02d430921" kindref="member">AI_UVTRAFO_ROTATION</ref> | <ref refid="config_8h_1a7ae0ca81d951cb0c16daf5c1bef60de5" kindref="member">AI_UVTRAFO_TRANSLATION</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="519" column="9" bodyfile="include/assimp/config.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac0e92a0403c280ec53466de02d430921" prot="public" static="no">
+        <name>AI_UVTRAFO_ROTATION</name>
+        <initializer>0x2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="513" column="9" bodyfile="include/assimp/config.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a8b39361e58739557a51c97ce92bdf99f" prot="public" static="no">
+        <name>AI_UVTRAFO_SCALING</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="510" column="9" bodyfile="include/assimp/config.h" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7ae0ca81d951cb0c16daf5c1bef60de5" prot="public" static="no">
+        <name>AI_UVTRAFO_TRANSLATION</name>
+        <initializer>0x4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="516" column="9" bodyfile="include/assimp/config.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a35df2898d17364850ee68e2fedeb5684" prot="public" static="no">
+        <name>aiComponent_COLORSn</name>
+        <param><defname>n</defname></param>
+        <initializer>(1u &lt;&lt; (n+20u))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="457" column="9" bodyfile="include/assimp/config.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a2dbd50d22cac50370e693912448d1c56" prot="public" static="no">
+        <name>aiComponent_TEXCOORDSn</name>
+        <param><defname>n</defname></param>
+        <initializer>(1u &lt;&lt; (n+25u))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="460" column="9" bodyfile="include/assimp/config.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a52df90ae1346e6b39048f7218e04d2f6" prot="public" static="no">
+        <name>PP_ICL_PTCACHE_SIZE</name>
+        <initializer>12</initializer>
+        <briefdescription>
+<para>Default value for the <ref refid="config_8h_1a851b513ea20c4d66a1c012d63dd8e78b" kindref="member">AI_CONFIG_PP_ICL_PTCACHE_SIZE</ref> property. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="372" column="12" bodyfile="include/assimp/config.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>aiComponent</name>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a041f3a06b4266389628bbf6d7c972e16" prot="public">
+          <name>aiComponent_NORMALS</name>
+          <initializer>= 0x2u</initializer>
+          <briefdescription>
+<para>Normal vectors. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a3735667dae4d12e0573b049be86158af" prot="public">
+          <name>aiComponent_TANGENTS_AND_BITANGENTS</name>
+          <initializer>= 0x4u</initializer>
+          <briefdescription>
+<para>Tangents and bitangents go always together ... </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a66f2439356e377d9182a34e4d11b89aa" prot="public">
+          <name>aiComponent_COLORS</name>
+          <initializer>= 0x8</initializer>
+          <briefdescription>
+<para>ALL color sets Use aiComponent_COLORn(N) to specify the N&apos;th set. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a119bc187db7e081af2e5b9732060623d" prot="public">
+          <name>aiComponent_TEXCOORDS</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+<para>ALL texture UV sets aiComponent_TEXCOORDn(N) to specify the N&apos;th set <linebreak/>
+ </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3ad37e83da41d8e9b17c2634bacc42925c" prot="public">
+          <name>aiComponent_BONEWEIGHTS</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+<para>Removes all bone weights from all meshes. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The scenegraph nodes corresponding to the bones are NOT removed. use the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a3bf6b8cb30289fd27fb2734d67a0889f" kindref="member">aiProcess_OptimizeGraph</ref> step to do this </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a8affaed18f69210bcbf20adeba16050a" prot="public">
+          <name>aiComponent_ANIMATIONS</name>
+          <initializer>= 0x40</initializer>
+          <briefdescription>
+<para>Removes all node animations (<ref refid="structai_scene_1ab76fb8f38c2e7365ccce42d565b62b25" kindref="member">aiScene::mAnimations</ref>). </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The corresponding scenegraph nodes are NOT removed. use the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a3bf6b8cb30289fd27fb2734d67a0889f" kindref="member">aiProcess_OptimizeGraph</ref> step to do this </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3ab6bcf49132356c2034491b6bf367d328" prot="public">
+          <name>aiComponent_TEXTURES</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+<para>Removes all embedded textures (<ref refid="structai_scene_1a0fd0d29fbc439e3715b4975ccb68d2d3" kindref="member">aiScene::mTextures</ref>) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a9764d42f6546101a555a9e2d87c3b3d9" prot="public">
+          <name>aiComponent_LIGHTS</name>
+          <initializer>= 0x100</initializer>
+          <briefdescription>
+<para>Removes all light sources (<ref refid="structai_scene_1a2e64a69ade81cae0b3901bea90b6bb47" kindref="member">aiScene::mLights</ref>). </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The corresponding scenegraph nodes are NOT removed. use the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a3bf6b8cb30289fd27fb2734d67a0889f" kindref="member">aiProcess_OptimizeGraph</ref> step to do this </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3aa4741bd21f4259301bb326e3b74dce29" prot="public">
+          <name>aiComponent_CAMERAS</name>
+          <initializer>= 0x200</initializer>
+          <briefdescription>
+<para>Removes all cameras (<ref refid="structai_scene_1a71e7d204d96969ca4f5a931f4d636f1e" kindref="member">aiScene::mCameras</ref>). </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The corresponding scenegraph nodes are NOT removed. use the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a3bf6b8cb30289fd27fb2734d67a0889f" kindref="member">aiProcess_OptimizeGraph</ref> step to do this </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a297ca9db243a718dc3bfb3502cfc9b7a" prot="public">
+          <name>aiComponent_MESHES</name>
+          <initializer>= 0x400</initializer>
+          <briefdescription>
+<para>Removes all meshes (<ref refid="structai_scene_1ad1c7000f0f28ea747868db9f94d32a3d" kindref="member">aiScene::mMeshes</ref>). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a842d010d9211947c65eed564672677ed" prot="public">
+          <name>aiComponent_MATERIALS</name>
+          <initializer>= 0x800</initializer>
+          <briefdescription>
+<para>Removes all materials. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>One default material will be generated, so <ref refid="structai_scene_1a4277d8bffe8b8f568098af6c31d042b7" kindref="member">aiScene::mNumMaterials</ref> will be 1. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a45b57c0405db34d9394193232abb1762" prot="public">
+          <name>_aiComponent_Force32Bit</name>
+          <initializer>= 0x9fffffff</initializer>
+          <briefdescription>
+<para>This value is not used. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>It is just there to force the compiler to map this enum to a 32 Bit integer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates components of the <ref refid="structai_scene" kindref="compound">aiScene</ref> and <ref refid="structai_mesh" kindref="compound">aiMesh</ref> data structures that can be excluded from the import using the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a0ab270168bd7a707c0f279045c265e08" kindref="member">aiProcess_RemoveComponent</ref> step. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See the documentation to <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a0ab270168bd7a707c0f279045c265e08" kindref="member">aiProcess_RemoveComponent</ref> for more details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/config.h" line="394" column="1" bodyfile="include/assimp/config.h" bodystart="395" bodyend="454"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines constants for configurable properties for the library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Typically these properties are set via #Assimp::Importer::SetPropertyFloat, #Assimp::Importer::SetPropertyInteger or #Assimp::Importer::SetPropertyString, depending on the data type of a property. All properties have a default value. See the doc for the mentioned methods for more details.</para>
+<para><linebreak/>
+<linebreak/>
+ The corresponding functions for use with the plain-c API are: <ref refid="cimport_8h_1a77fe5bf63f5b7811b10fb1ea072cd995" kindref="member">aiSetImportPropertyInteger</ref>, <ref refid="cimport_8h_1a7a3fdb2a587ce72c66182b87465d664d" kindref="member">aiSetImportPropertyFloat</ref>, <ref refid="cimport_8h_1a0c6f78241e9ec7b2470d193858baf22d" kindref="member">aiSetImportPropertyString</ref> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2020,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"></highlight></codeline>
+<codeline lineno="29"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_CONFIG_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>###########################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIBRARY<sp/>SETTINGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>General,<sp/>global<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>###########################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_GLOB_MEASURE_TIME<sp/><sp/>\</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;GLOB_MEASURE_TIME&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_NO_SKELETON_MESHES<sp/>\</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_NO_SKELETON_MESHES&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>0<sp/></highlight><highlight class="comment">//<sp/>not<sp/>implemented<sp/>yet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_GLOB_MULTITHREADING<sp/><sp/>\</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;GLOB_MULTITHREADING&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/>###########################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/>POST<sp/>PROCESSING<sp/>SETTINGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Various<sp/>stuff<sp/>to<sp/>fine-tune<sp/>the<sp/>behavior<sp/>of<sp/>a<sp/>specific<sp/>post<sp/>processing<sp/>step.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">//<sp/>###########################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_SBBC_MAX_BONES<sp/>\</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_SBBC_MAX_BONES&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//<sp/>default<sp/>limit<sp/>for<sp/>bone<sp/>count</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined<sp/>AI_SBBC_DEFAULT_MAX_BONES)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AI_SBBC_DEFAULT_MAX_BONES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>60</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_CT_MAX_SMOOTHING_ANGLE<sp/>\</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_CT_MAX_SMOOTHING_ANGLE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_CT_TEXTURE_CHANNEL_INDEX<sp/>\</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_CT_TEXTURE_CHANNEL_INDEX&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_GSN_MAX_SMOOTHING_ANGLE<sp/>\</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_GSN_MAX_SMOOTHING_ANGLE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MDL_COLORMAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="189"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_MDL_COLORMAP&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="210"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_RRM_EXCLUDE_LIST<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_RRM_EXCLUDE_LIST&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_PTV_KEEP_HIERARCHY<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_PTV_KEEP_HIERARCHY&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_PTV_NORMALIZE<sp/><sp/>\</highlight></codeline>
+<codeline lineno="236"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_PTV_NORMALIZE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_PTV_ADD_ROOT_TRANSFORMATION<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_PTV_ADD_ROOT_TRANSFORMATION&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_PTV_ROOT_TRANSFORMATION<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="255"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_PTV_ROOT_TRANSFORMATION&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="267"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_FD_REMOVE<sp/>\</highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_FD_REMOVE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="276"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_FD_CHECKAREA<sp/>\</highlight></codeline>
+<codeline lineno="277"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_FD_CHECKAREA&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="297"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_OG_EXCLUDE_LIST<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="298"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_OG_EXCLUDE_LIST&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="308"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_SLM_TRIANGLE_LIMIT<sp/>\</highlight></codeline>
+<codeline lineno="309"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_SLM_TRIANGLE_LIMIT&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="comment">//<sp/>default<sp/>value<sp/>for<sp/>AI_CONFIG_PP_SLM_TRIANGLE_LIMIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined<sp/>AI_SLM_DEFAULT_MAX_TRIANGLES)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AI_SLM_DEFAULT_MAX_TRIANGLES<sp/><sp/><sp/><sp/><sp/>1000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="324"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_SLM_VERTEX_LIMIT<sp/>\</highlight></codeline>
+<codeline lineno="325"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_SLM_VERTEX_LIMIT&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="comment">//<sp/>default<sp/>value<sp/>for<sp/>AI_CONFIG_PP_SLM_VERTEX_LIMIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined<sp/>AI_SLM_DEFAULT_MAX_VERTICES)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AI_SLM_DEFAULT_MAX_VERTICES<sp/><sp/><sp/><sp/><sp/><sp/>1000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="338"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_LBW_MAX_WEIGHTS<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="339"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_LBW_MAX_WEIGHTS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="comment">//<sp/>default<sp/>value<sp/>for<sp/>AI_CONFIG_PP_LBW_MAX_WEIGHTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined<sp/>AI_LMW_MAX_WEIGHTS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AI_LMW_MAX_WEIGHTS<sp/><sp/><sp/>0x4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!!<sp/>AI_LMW_MAX_WEIGHTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="352"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_DB_THRESHOLD<sp/>\</highlight></codeline>
+<codeline lineno="353"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_DB_THRESHOLD&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight><highlight class="comment">//<sp/>default<sp/>value<sp/>for<sp/>AI_CONFIG_PP_LBW_MAX_WEIGHTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined<sp/>AI_DEBONE_THRESHOLD)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AI_DEBONE_THRESHOLD<sp/><sp/>1.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!!<sp/>AI_DEBONE_THRESHOLD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="366"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_DB_ALL_OR_NONE<sp/>\</highlight></codeline>
+<codeline lineno="367"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_DB_ALL_OR_NONE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PP_ICL_PTCACHE_SIZE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>PP_ICL_PTCACHE_SIZE<sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="386"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_ICL_PTCACHE_SIZE<sp/><sp/><sp/>&quot;PP_ICL_PTCACHE_SIZE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="394"><highlight class="comment"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3" kindref="member">aiComponent</ref></highlight></codeline>
+<codeline lineno="395"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SWIG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a041f3a06b4266389628bbf6d7c972e16" kindref="member">aiComponent_NORMALS</ref><sp/>=<sp/>0x2,</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a041f3a06b4266389628bbf6d7c972e16" kindref="member">aiComponent_NORMALS</ref><sp/>=<sp/>0x2u,</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SWIG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a3735667dae4d12e0573b049be86158af" kindref="member">aiComponent_TANGENTS_AND_BITANGENTS</ref><sp/>=<sp/>0x4,</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a3735667dae4d12e0573b049be86158af" kindref="member">aiComponent_TANGENTS_AND_BITANGENTS</ref><sp/>=<sp/>0x4u,</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a66f2439356e377d9182a34e4d11b89aa" kindref="member">aiComponent_COLORS</ref><sp/>=<sp/>0x8,</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a119bc187db7e081af2e5b9732060623d" kindref="member">aiComponent_TEXCOORDS</ref><sp/>=<sp/>0x10,</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3ad37e83da41d8e9b17c2634bacc42925c" kindref="member">aiComponent_BONEWEIGHTS</ref><sp/>=<sp/>0x20,</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a8affaed18f69210bcbf20adeba16050a" kindref="member">aiComponent_ANIMATIONS</ref><sp/>=<sp/>0x40,</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3ab6bcf49132356c2034491b6bf367d328" kindref="member">aiComponent_TEXTURES</ref><sp/>=<sp/>0x80,</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a9764d42f6546101a555a9e2d87c3b3d9" kindref="member">aiComponent_LIGHTS</ref><sp/>=<sp/>0x100,</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3aa4741bd21f4259301bb326e3b74dce29" kindref="member">aiComponent_CAMERAS</ref><sp/>=<sp/>0x200,</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a297ca9db243a718dc3bfb3502cfc9b7a" kindref="member">aiComponent_MESHES</ref><sp/>=<sp/>0x400,</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a842d010d9211947c65eed564672677ed" kindref="member">aiComponent_MATERIALS</ref><sp/>=<sp/>0x800,</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SWIG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a97ac2ef7a3967402a223f3da2640b2b3a45b57c0405db34d9394193232abb1762" kindref="member">_aiComponent_Force32Bit</ref><sp/>=<sp/>0x9fffffff</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Remove<sp/>a<sp/>specific<sp/>color<sp/>channel<sp/>&apos;n&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>aiComponent_COLORSn(n)<sp/>(1u<sp/>&lt;&lt;<sp/>(n+20u))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Remove<sp/>a<sp/>specific<sp/>UV<sp/>channel<sp/>&apos;n&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>aiComponent_TEXCOORDSn(n)<sp/>(1u<sp/>&lt;&lt;<sp/>(n+25u))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="474"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_RVC_FLAGS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="475"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_RVC_FLAGS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="486"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_SBP_REMOVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="487"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_SBP_REMOVE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="498"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_FID_ANIM_ACCURACY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="499"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_FID_ANIM_ACCURACY&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="506"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_FID_IGNORE_TEXTURECOORDS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="507"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_FID_IGNORE_TEXTURECOORDS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TransformUVCoords<sp/>evaluates<sp/>UV<sp/>scalings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_UVTRAFO_SCALING<sp/>0x1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TransformUVCoords<sp/>evaluates<sp/>UV<sp/>rotations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_UVTRAFO_ROTATION<sp/>0x2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TransformUVCoords<sp/>evaluates<sp/>UV<sp/>translation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_UVTRAFO_TRANSLATION<sp/>0x4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Everything<sp/>baked<sp/>together<sp/>-&gt;<sp/>default<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_UVTRAFO_ALL<sp/>(AI_UVTRAFO_SCALING<sp/>|<sp/>AI_UVTRAFO_ROTATION<sp/>|<sp/>AI_UVTRAFO_TRANSLATION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="529"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_PP_TUV_EVALUATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="530"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;PP_TUV_EVALUATE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="541"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_FAVOUR_SPEED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="542"><highlight class="preprocessor"><sp/>&quot;FAVOUR_SPEED&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"></highlight><highlight class="comment">//<sp/>###########################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="546"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPORTER<sp/>SETTINGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="547"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Various<sp/>stuff<sp/>to<sp/>fine-tune<sp/>the<sp/>behaviour<sp/>of<sp/>specific<sp/>importer<sp/>plugins.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight><highlight class="comment">//<sp/>###########################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="558"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_READ_ALL_GEOMETRY_LAYERS<sp/>\</highlight></codeline>
+<codeline lineno="559"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_FBX_READ_ALL_GEOMETRY_LAYERS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="570"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_READ_ALL_MATERIALS<sp/>\</highlight></codeline>
+<codeline lineno="571"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_FBX_READ_ALL_MATERIALS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="579"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_READ_MATERIALS<sp/>\</highlight></codeline>
+<codeline lineno="580"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_FBX_READ_MATERIALS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="581"><highlight class="normal"></highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="588"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_READ_TEXTURES<sp/>\</highlight></codeline>
+<codeline lineno="589"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_FBX_READ_TEXTURES&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="597"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_READ_CAMERAS<sp/>\</highlight></codeline>
+<codeline lineno="598"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_FBX_READ_CAMERAS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="606"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_READ_LIGHTS<sp/>\</highlight></codeline>
+<codeline lineno="607"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_FBX_READ_LIGHTS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="615"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_READ_ANIMATIONS<sp/>\</highlight></codeline>
+<codeline lineno="616"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_FBX_READ_ANIMATIONS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="624"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_READ_WEIGHTS<sp/>\</highlight></codeline>
+<codeline lineno="625"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_FBX_READ_WEIGHTS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="636"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_STRICT_MODE<sp/>\</highlight></codeline>
+<codeline lineno="637"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_FBX_STRICT_MODE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"></highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="647"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_PRESERVE_PIVOTS<sp/>\</highlight></codeline>
+<codeline lineno="648"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_FBX_PRESERVE_PIVOTS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal"></highlight></codeline>
+<codeline lineno="650"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="658"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_OPTIMIZE_EMPTY_ANIMATION_CURVES<sp/>\</highlight></codeline>
+<codeline lineno="659"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_FBX_OPTIMIZE_EMPTY_ANIMATION_CURVES&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="667"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING<sp/>\</highlight></codeline>
+<codeline lineno="668"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight></codeline>
+<codeline lineno="670"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="675"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_REMOVE_EMPTY_BONES<sp/>\</highlight></codeline>
+<codeline lineno="676"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;AI_CONFIG_IMPORT_REMOVE_EMPTY_BONES&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="682"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_FBX_CONVERT_TO_M<sp/>\</highlight></codeline>
+<codeline lineno="683"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;AI_CONFIG_FBX_CONVERT_TO_M&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="684"><highlight class="normal"></highlight></codeline>
+<codeline lineno="685"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="698"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_GLOBAL_KEYFRAME<sp/><sp/><sp/><sp/>&quot;IMPORT_GLOBAL_KEYFRAME&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MD3_KEYFRAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;IMPORT_MD3_KEYFRAME&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MD2_KEYFRAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;IMPORT_MD2_KEYFRAME&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MDL_KEYFRAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;IMPORT_MDL_KEYFRAME&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MDC_KEYFRAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;IMPORT_MDC_KEYFRAME&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="704"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_SMD_KEYFRAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;IMPORT_SMD_KEYFRAME&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="705"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_UNREAL_KEYFRAME<sp/><sp/><sp/><sp/>&quot;IMPORT_UNREAL_KEYFRAME&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight></codeline>
+<codeline lineno="707"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="713"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MDL_HL1_READ_ANIMATIONS<sp/>&quot;IMPORT_MDL_HL1_READ_ANIMATIONS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="722"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MDL_HL1_READ_ANIMATION_EVENTS<sp/>&quot;IMPORT_MDL_HL1_READ_ANIMATION_EVENTS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="723"><highlight class="normal"></highlight></codeline>
+<codeline lineno="724"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="731"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MDL_HL1_READ_BLEND_CONTROLLERS<sp/>&quot;IMPORT_MDL_HL1_READ_BLEND_CONTROLLERS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="732"><highlight class="normal"></highlight></codeline>
+<codeline lineno="733"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="740"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MDL_HL1_READ_SEQUENCE_TRANSITIONS<sp/>&quot;IMPORT_MDL_HL1_READ_SEQUENCE_TRANSITIONS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="741"><highlight class="normal"></highlight></codeline>
+<codeline lineno="742"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="748"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MDL_HL1_READ_ATTACHMENTS<sp/>&quot;IMPORT_MDL_HL1_READ_ATTACHMENTS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="749"><highlight class="normal"></highlight></codeline>
+<codeline lineno="750"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="756"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MDL_HL1_READ_BONE_CONTROLLERS<sp/>&quot;IMPORT_MDL_HL1_READ_BONE_CONTROLLERS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight></codeline>
+<codeline lineno="758"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="764"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MDL_HL1_READ_HITBOXES<sp/>&quot;IMPORT_MDL_HL1_READ_HITBOXES&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="765"><highlight class="normal"></highlight></codeline>
+<codeline lineno="766"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="772"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MDL_HL1_READ_MISC_GLOBAL_INFO<sp/>&quot;IMPORT_MDL_HL1_READ_MISC_GLOBAL_INFO&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="773"><highlight class="normal"></highlight></codeline>
+<codeline lineno="774"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="779"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_SMD_LOAD_ANIMATION_LIST<sp/>&quot;IMPORT_SMD_LOAD_ANIMATION_LIST&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="780"><highlight class="normal"></highlight></codeline>
+<codeline lineno="781"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="787"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_AC_SEPARATE_BFCULL<sp/>\</highlight></codeline>
+<codeline lineno="788"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_AC_SEPARATE_BFCULL&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="789"><highlight class="normal"></highlight></codeline>
+<codeline lineno="790"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="798"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_AC_EVAL_SUBDIVISION<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="799"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_AC_EVAL_SUBDIVISION&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="800"><highlight class="normal"></highlight></codeline>
+<codeline lineno="801"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="807"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_UNREAL_HANDLE_FLAGS<sp/>\</highlight></codeline>
+<codeline lineno="808"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;UNREAL_HANDLE_FLAGS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="809"><highlight class="normal"></highlight></codeline>
+<codeline lineno="810"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="820"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_TER_MAKE_UVS<sp/>\</highlight></codeline>
+<codeline lineno="821"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_TER_MAKE_UVS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="822"><highlight class="normal"></highlight></codeline>
+<codeline lineno="823"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="830"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_ASE_RECONSTRUCT_NORMALS<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="831"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_ASE_RECONSTRUCT_NORMALS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="832"><highlight class="normal"></highlight></codeline>
+<codeline lineno="833"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="842"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MD3_HANDLE_MULTIPART<sp/>\</highlight></codeline>
+<codeline lineno="843"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_MD3_HANDLE_MULTIPART&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="844"><highlight class="normal"></highlight></codeline>
+<codeline lineno="845"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="854"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MD3_SKIN_NAME<sp/>\</highlight></codeline>
+<codeline lineno="855"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_MD3_SKIN_NAME&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="856"><highlight class="normal"></highlight></codeline>
+<codeline lineno="857"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="863"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MD3_LOAD_SHADERS<sp/>\</highlight></codeline>
+<codeline lineno="864"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_MD3_LOAD_SHADERS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="865"><highlight class="normal"></highlight></codeline>
+<codeline lineno="866"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="881"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MD3_SHADER_SRC<sp/>\</highlight></codeline>
+<codeline lineno="882"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_MD3_SHADER_SRC&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="883"><highlight class="normal"></highlight></codeline>
+<codeline lineno="884"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="895"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_LWO_ONE_LAYER_ONLY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="896"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_LWO_ONE_LAYER_ONLY&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="897"><highlight class="normal"></highlight></codeline>
+<codeline lineno="898"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="909"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_MD5_NO_ANIM_AUTOLOAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="910"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_MD5_NO_ANIM_AUTOLOAD&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="911"><highlight class="normal"></highlight></codeline>
+<codeline lineno="912"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="928"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_LWS_ANIM_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="929"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_LWS_ANIM_START&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="930"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_LWS_ANIM_END<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="931"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_LWS_ANIM_END&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="932"><highlight class="normal"></highlight></codeline>
+<codeline lineno="933"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="941"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_IRR_ANIM_FPS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="942"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_IRR_ANIM_FPS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="943"><highlight class="normal"></highlight></codeline>
+<codeline lineno="944"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="954"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_OGRE_MATERIAL_FILE<sp/>\</highlight></codeline>
+<codeline lineno="955"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_OGRE_MATERIAL_FILE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="956"><highlight class="normal"></highlight></codeline>
+<codeline lineno="957"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="974"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME<sp/>\</highlight></codeline>
+<codeline lineno="975"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&quot;IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="976"><highlight class="normal"></highlight></codeline>
+<codeline lineno="983"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#define<sp/>AI_CONFIG_ANDROID_JNI_ASSIMP_MANAGER_SUPPORT<sp/>&quot;AI_CONFIG_ANDROID_JNI_ASSIMP_MANAGER_SUPPORT&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="984"><highlight class="normal"></highlight></codeline>
+<codeline lineno="985"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="992"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_IFC_SKIP_SPACE_REPRESENTATIONS<sp/>&quot;IMPORT_IFC_SKIP_SPACE_REPRESENTATIONS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="993"><highlight class="normal"></highlight></codeline>
+<codeline lineno="994"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="1007"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_IFC_CUSTOM_TRIANGULATION<sp/>&quot;IMPORT_IFC_CUSTOM_TRIANGULATION&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1008"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1009"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="1018"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_IFC_SMOOTHING_ANGLE<sp/>&quot;IMPORT_IFC_SMOOTHING_ANGLE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1019"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1020"><highlight class="normal"></highlight><highlight class="comment">//<sp/>default<sp/>value<sp/>for<sp/>AI_CONFIG_IMPORT_IFC_SMOOTHING_ANGLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1021"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined<sp/>AI_IMPORT_IFC_DEFAULT_SMOOTHING_ANGLE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1022"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AI_IMPORT_IFC_DEFAULT_SMOOTHING_ANGLE<sp/>10.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1023"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1024"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1025"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="1034"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_IFC_CYLINDRICAL_TESSELLATION<sp/>&quot;IMPORT_IFC_CYLINDRICAL_TESSELLATION&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1035"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1036"><highlight class="normal"></highlight><highlight class="comment">//<sp/>default<sp/>value<sp/>for<sp/>AI_CONFIG_IMPORT_IFC_CYLINDRICAL_TESSELLATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1037"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined<sp/>AI_IMPORT_IFC_DEFAULT_CYLINDRICAL_TESSELLATION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1038"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AI_IMPORT_IFC_DEFAULT_CYLINDRICAL_TESSELLATION<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1039"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1040"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1041"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="1048"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_COLLADA_IGNORE_UP_DIRECTION<sp/>&quot;IMPORT_COLLADA_IGNORE_UP_DIRECTION&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1049"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1050"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="1058"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_IMPORT_COLLADA_USE_COLLADA_NAMES<sp/>&quot;IMPORT_COLLADA_USE_COLLADA_NAMES&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1059"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1060"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------<sp/>All<sp/>the<sp/>Export<sp/>defines<sp/>------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1061"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1067"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_EXPORT_XFILE_64BIT<sp/>&quot;EXPORT_XFILE_64BIT&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1068"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1076"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_EXPORT_POINT_CLOUDS<sp/>&quot;EXPORT_POINT_CLOUDS&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1077"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1093"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_EXPORT_BLOB_NAME<sp/>&quot;EXPORT_BLOB_NAME&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1094"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1098"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY<sp/>&quot;GLOBAL_SCALE_FACTOR&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1099"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1100"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined<sp/>AI_CONFIG_GLOBAL_SCALE_FACTOR_DEFAULT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1101"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AI_CONFIG_GLOBAL_SCALE_FACTOR_DEFAULT<sp/><sp/>1.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!!<sp/>AI_DEBONE_THRESHOLD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1104"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_CONFIG_APP_SCALE_KEY<sp/>&quot;APP_SCALE_FACTOR&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1106"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined<sp/>AI_CONFIG_APP_SCALE_KEY)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1107"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AI_CONFIG_APP_SCALE_KEY<sp/>1.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AI_CONFIG_APP_SCALE_KEY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1111"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------<sp/>All<sp/>the<sp/>Build/Compile-time<sp/>defines<sp/>------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1118"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>ASSIMP_DOUBLE_PRECISION<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!!<sp/>AI_CONFIG_H_INC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/config.h"/>
+  </compounddef>
+</doxygen>

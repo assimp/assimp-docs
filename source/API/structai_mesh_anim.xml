@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_mesh_anim" kind="struct" language="C++" prot="public">
     <compoundname>aiMeshAnim</compoundname>
     <includes local="no">anim.h</includes>
@@ -10,12 +10,14 @@
         <argsstring></argsstring>
         <name>mKeys</name>
         <briefdescription>
-<para>Key frames of the animation. </para>        </briefdescription>
+<para>Key frames of the animation. </para>
+        </briefdescription>
         <detaileddescription>
-<para>May not be nullptr. </para>        </detaileddescription>
+<para>May not be nullptr. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="352" column="1" bodyfile="include/assimp/anim.h" bodystart="352" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="352" column="24" bodyfile="include/assimp/anim.h" bodystart="352" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_anim_1a20751a739377fdba514c676ef4bda4c7" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
@@ -23,12 +25,14 @@
         <argsstring></argsstring>
         <name>mName</name>
         <briefdescription>
-<para>Name of the mesh to be animated. </para>        </briefdescription>
+<para>Name of the mesh to be animated. </para>
+        </briefdescription>
         <detaileddescription>
-<para>An empty string is not allowed, animated meshes need to be named (not necessarily uniquely, the name can basically serve as wild-card to select a group of meshes with similar animation setup) </para>        </detaileddescription>
+<para>An empty string is not allowed, animated meshes need to be named (not necessarily uniquely, the name can basically serve as wild-card to select a group of meshes with similar animation setup) </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="346" column="1" bodyfile="include/assimp/anim.h" bodystart="346" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="346" column="23" bodyfile="include/assimp/anim.h" bodystart="346" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_anim_1aa8702d42bf619ccc8414a556f41634d8" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -36,12 +40,14 @@
         <argsstring></argsstring>
         <name>mNumKeys</name>
         <briefdescription>
-<para>Size of the <ref refid="structai_mesh_anim_1abc78e9f6d7583c541447e8c389488f1b" kindref="member">mKeys</ref> array. </para>        </briefdescription>
+<para>Size of the <ref refid="structai_mesh_anim_1abc78e9f6d7583c541447e8c389488f1b" kindref="member">mKeys</ref> array. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Must be 1, at least. </para>        </detaileddescription>
+<para>Must be 1, at least. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="349" column="1" bodyfile="include/assimp/anim.h" bodystart="349" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="349" column="18" bodyfile="include/assimp/anim.h" bodystart="349" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -56,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="356" column="1" bodyfile="include/assimp/anim.h" bodystart="356" bodyend="358"/>
+        <location file="include/assimp/anim.h" line="356" column="5" bodyfile="include/assimp/anim.h" bodystart="356" bodyend="358"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_anim_1a38512b1058e074fc8b6b4477923306bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -69,29 +75,31 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="360" column="1" bodyfile="include/assimp/anim.h" bodystart="360" bodyend="362"/>
+        <location file="include/assimp/anim.h" line="360" column="5" bodyfile="include/assimp/anim.h" bodystart="360" bodyend="362"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Describes vertex-based animations for a single mesh or a group of meshes. </para>    </briefdescription>
+<para>Describes vertex-based animations for a single mesh or a group of meshes. </para>
+    </briefdescription>
     <detaileddescription>
-<para>Meshes carry the animation data for each frame in their <ref refid="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" kindref="member">aiMesh::mAnimMeshes</ref> array. The purpose of <ref refid="structai_mesh_anim" kindref="compound">aiMeshAnim</ref> is to define keyframes linking each mesh attachment to a particular point in time. </para>    </detaileddescription>
+<para>Meshes carry the animation data for each frame in their <ref refid="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" kindref="member">aiMesh::mAnimMeshes</ref> array. The purpose of <ref refid="structai_mesh_anim" kindref="compound">aiMeshAnim</ref> is to define keyframes linking each mesh attachment to a particular point in time. </para>
+    </detaileddescription>
     <collaborationgraph>
-      <node id="85">
+      <node id="1">
         <label>aiMeshAnim</label>
         <link refid="structai_mesh_anim"/>
-        <childnode refid="86" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
-        <childnode refid="87" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
       </node>
-      <node id="86">
+      <node id="2">
         <label>aiMeshKey</label>
         <link refid="structai_mesh_key"/>
       </node>
-      <node id="87">
+      <node id="3">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>

@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_zip_archive_i_o_system" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::ZipArchiveIOSystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOSystem</basecompoundref>
+    <includes local="no">ZipArchiveIOSystem.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_zip_archive_i_o_system_1aff5665bc2c4366cd947183e884582c0b" prot="private" static="no" mutable="no">
+        <type>Implement *</type>
+        <definition>Implement* Assimp::ZipArchiveIOSystem::pImpl</definition>
+        <argsstring></argsstring>
+        <name>pImpl</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="89" column="15" bodyfile="include/assimp/ZipArchiveIOSystem.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1a134e61d232dfb82b0c21063dc0fbdff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::ZipArchiveIOSystem::Close</definition>
+        <argsstring>(IOStream *pFile) override</argsstring>
+        <name>Close</name>
+        <param>
+          <type>IOStream *</type>
+          <declname>pFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="70" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1a4a9c4014f6cd118fd2b4c14fe1285291" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ZipArchiveIOSystem::Exists</definition>
+        <argsstring>(const char *pFilename) const override</argsstring>
+        <name>Exists</name>
+        <param>
+          <type>const char *</type>
+          <declname>pFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1ac53c5af190c993280c0f90aadc002594" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::ZipArchiveIOSystem::getFileList</definition>
+        <argsstring>(std::vector&lt; std::string &gt; &amp;rFileList) const</argsstring>
+        <name>getFileList</name>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>rFileList</declname>
+        </param>
+        <briefdescription>
+<para>Get the list of all files with their simplified paths Intended for use within <ref refid="namespace_assimp" kindref="compound">Assimp</ref> library boundaries. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1a03bf74a161ba5585746a6d0c5c75887d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::ZipArchiveIOSystem::getFileListExtension</definition>
+        <argsstring>(std::vector&lt; std::string &gt; &amp;rFileList, const std::string &amp;extension) const</argsstring>
+        <name>getFileListExtension</name>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>rFileList</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+<para>Get the list of all files with extension (must be lowercase) Intended for use within <ref refid="namespace_assimp" kindref="compound">Assimp</ref> library boundaries. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1a84647786480a0704ce0acaf891724e99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char Assimp::ZipArchiveIOSystem::getOsSeparator</definition>
+        <argsstring>() const override</argsstring>
+        <name>getOsSeparator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1a164dbcbdb69cf237d525927567c78616" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::ZipArchiveIOSystem::isOpen</definition>
+        <argsstring>() const</argsstring>
+        <name>isOpen</name>
+        <briefdescription>
+<para>The file was opened and is a ZIP. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1a39fd6e16ee86ae197b4c0687644f785b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IOStream *</type>
+        <definition>IOStream* Assimp::ZipArchiveIOSystem::Open</definition>
+        <argsstring>(const char *pFilename, const char *pMode=&quot;rb&quot;) override</argsstring>
+        <name>Open</name>
+        <param>
+          <type>const char *</type>
+          <declname>pFilename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pMode</declname>
+          <defval>&quot;rb&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="69" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1a18d906305d6d694db6b2f560e94c8169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ZipArchiveIOSystem::ZipArchiveIOSystem</definition>
+        <argsstring>(IOSystem *pIOHandler, const char *pFilename, const char *pMode=&quot;r&quot;)</argsstring>
+        <name>ZipArchiveIOSystem</name>
+        <param>
+          <type>IOSystem *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pFilename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pMode</declname>
+          <defval>&quot;r&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Open a Zip using the proffered IOSystem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="64" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1aa4b863c13e508203fb602786577d9afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ZipArchiveIOSystem::ZipArchiveIOSystem</definition>
+        <argsstring>(IOSystem *pIOHandler, const std::string &amp;rFilename, const char *pMode=&quot;r&quot;)</argsstring>
+        <name>ZipArchiveIOSystem</name>
+        <param>
+          <type>IOSystem *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>rFilename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pMode</declname>
+          <defval>&quot;r&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="65" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1a90bd736eb6786f549fb4e08b35834f29" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Assimp::ZipArchiveIOSystem::~ZipArchiveIOSystem</definition>
+        <argsstring>()</argsstring>
+        <name>~ZipArchiveIOSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="66" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1a59290480213db84b102a7d978e4f0784" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Assimp::ZipArchiveIOSystem::isZipArchive</definition>
+        <argsstring>(IOSystem *pIOHandler, const char *pFilename)</argsstring>
+        <name>isZipArchive</name>
+        <param>
+          <type>IOSystem *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="84" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_zip_archive_i_o_system_1aa80c6dc4a1ac9a5e2e50889e9def68d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Assimp::ZipArchiveIOSystem::isZipArchive</definition>
+        <argsstring>(IOSystem *pIOHandler, const std::string &amp;rFilename)</argsstring>
+        <name>isZipArchive</name>
+        <param>
+          <type>IOSystem *</type>
+          <declname>pIOHandler</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>rFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ZipArchiveIOSystem.h" line="85" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/ZipArchiveIOSystem.h" line="61" column="1" bodyfile="include/assimp/ZipArchiveIOSystem.h" bodystart="61" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1a134e61d232dfb82b0c21063dc0fbdff8" prot="public" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>Close</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1a4a9c4014f6cd118fd2b4c14fe1285291" prot="public" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>Exists</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1ac53c5af190c993280c0f90aadc002594" prot="public" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>getFileList</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1a03bf74a161ba5585746a6d0c5c75887d" prot="public" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>getFileListExtension</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1a84647786480a0704ce0acaf891724e99" prot="public" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>getOsSeparator</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1a164dbcbdb69cf237d525927567c78616" prot="public" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>isOpen</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1a59290480213db84b102a7d978e4f0784" prot="public" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>isZipArchive</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1aa80c6dc4a1ac9a5e2e50889e9def68d9" prot="public" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>isZipArchive</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1a39fd6e16ee86ae197b4c0687644f785b" prot="public" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>Open</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1aff5665bc2c4366cd947183e884582c0b" prot="private" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>pImpl</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1a18d906305d6d694db6b2f560e94c8169" prot="public" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>ZipArchiveIOSystem</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1aa4b863c13e508203fb602786577d9afe" prot="public" virt="non-virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>ZipArchiveIOSystem</name></member>
+      <member refid="class_assimp_1_1_zip_archive_i_o_system_1a90bd736eb6786f549fb4e08b35834f29" prot="public" virt="virtual"><scope>Assimp::ZipArchiveIOSystem</scope><name>~ZipArchiveIOSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

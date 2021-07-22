@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_bitmap_1_1_header" kind="struct" language="C++" prot="protected">
+    <compoundname>Assimp::Bitmap::Header</compoundname>
+    <includes local="no">Bitmap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_header_1a914920645985790cb0d3891f161160c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Assimp::Bitmap::Header::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="75" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_header_1a3c1c022bfff7d79d567ef9a2c70f9b7d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Assimp::Bitmap::Header::reserved1</definition>
+        <argsstring></argsstring>
+        <name>reserved1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="73" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_header_1a1df418b87a2ed1fd5c3661fbfbb4155c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Assimp::Bitmap::Header::reserved2</definition>
+        <argsstring></argsstring>
+        <name>reserved2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="74" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_header_1a1e75ec49a56dd7846bccaed9115a39d8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Assimp::Bitmap::Header::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="72" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_header_1a06473e47eb40838c66474e3b6155d5d1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Assimp::Bitmap::Header::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="71" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_header_1a739559ab2c90a06a9757817ad6b63075" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t Assimp::Bitmap::Header::header_size</definition>
+        <argsstring></argsstring>
+        <name>header_size</name>
+        <initializer>=
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_header_1a06473e47eb40838c66474e3b6155d5d1" kindref="member">type</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_header_1a1e75ec49a56dd7846bccaed9115a39d8" kindref="member">size</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_header_1a3c1c022bfff7d79d567ef9a2c70f9b7d" kindref="member">reserved1</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_header_1a1df418b87a2ed1fd5c3661fbfbb4155c" kindref="member">reserved2</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_header_1a914920645985790cb0d3891f161160c1" kindref="member">offset</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="78" column="38" bodyfile="include/assimp/Bitmap.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/Bitmap.h" line="70" column="5" bodyfile="include/assimp/Bitmap.h" bodystart="70" bodyend="84"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_bitmap_1_1_header_1a739559ab2c90a06a9757817ad6b63075" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::Header</scope><name>header_size</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_header_1a914920645985790cb0d3891f161160c1" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::Header</scope><name>offset</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_header_1a3c1c022bfff7d79d567ef9a2c70f9b7d" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::Header</scope><name>reserved1</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_header_1a1df418b87a2ed1fd5c3661fbfbb4155c" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::Header</scope><name>reserved2</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_header_1a1e75ec49a56dd7846bccaed9115a39d8" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::Header</scope><name>size</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_header_1a06473e47eb40838c66474e3b6155d5d1" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::Header</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

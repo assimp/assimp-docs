@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_xml_node_iterator" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::XmlNodeIterator</compoundname>
+    <includes local="no">XmlParser.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_assimp_1_1_xml_node_iterator_1a8b2559c1b090867a20f54892b3391c1b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>IterationMode</name>
+        <enumvalue id="class_assimp_1_1_xml_node_iterator_1a8b2559c1b090867a20f54892b3391c1ba6e93bdfa382164189f8f2323b4536e71" prot="public">
+          <name>PreOrderMode</name>
+          <briefdescription>
+<para>Pre-ordering, get the values, continue the iteration. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_assimp_1_1_xml_node_iterator_1a8b2559c1b090867a20f54892b3391c1ba5e0113b2dfc00efb1768903c2fb4f54b" prot="public">
+          <name>PostOrderMode</name>
+          <briefdescription>
+<para>Post-ordering, continue the iteration, get the values. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The iteration mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="378" column="5" bodyfile="include/assimp/XmlParser.h" bodystart="378" bodyend="381"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_xml_node_iterator_1a91b37042a3a746e89a3a37bb2ad0f1df" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::XmlNodeIterator::mIndex</definition>
+        <argsstring></argsstring>
+        <name>mIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="462" column="12" bodyfile="include/assimp/XmlParser.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_xml_node_iterator_1a489a01672f889c92c04e27354990e900" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespace_assimp_1ad9aa76cdbe59a3c057f55760f3a02c0a" kindref="member">XmlNode</ref> &gt;</type>
+        <definition>std::vector&lt;XmlNode&gt; Assimp::XmlNodeIterator::mNodes</definition>
+        <argsstring></argsstring>
+        <name>mNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="461" column="17" bodyfile="include/assimp/XmlParser.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_xml_node_iterator_1a5ed5cce26328fa8bd34b1d08900f38d8" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_assimp_1ad9aa76cdbe59a3c057f55760f3a02c0a" kindref="member">XmlNode</ref> &amp;</type>
+        <definition>XmlNode&amp; Assimp::XmlNodeIterator::mParent</definition>
+        <argsstring></argsstring>
+        <name>mParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="460" column="13" bodyfile="include/assimp/XmlParser.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_xml_node_iterator_1a4638e2eaf70a0b64963c00735c7a15dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::XmlNodeIterator::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Will clear all collected nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="450" column="10" bodyfile="include/assimp/XmlParser.h" bodystart="450" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_xml_node_iterator_1aca9024c882f07991467e05676123d035" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::XmlNodeIterator::collectChildrenPostOrder</definition>
+        <argsstring>(XmlNode &amp;node)</argsstring>
+        <name>collectChildrenPostOrder</name>
+        <param>
+          <type><ref refid="namespace_assimp_1ad9aa76cdbe59a3c057f55760f3a02c0a" kindref="member">XmlNode</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Will iterate through all children in post-order iteration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] The nod to iterate through. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="414" column="10" bodyfile="include/assimp/XmlParser.h" bodystart="414" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_xml_node_iterator_1a71e766fc388e15793cc892f70d770c31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::XmlNodeIterator::collectChildrenPreOrder</definition>
+        <argsstring>(XmlNode &amp;node)</argsstring>
+        <name>collectChildrenPreOrder</name>
+        <param>
+          <type><ref refid="namespace_assimp_1ad9aa76cdbe59a3c057f55760f3a02c0a" kindref="member">XmlNode</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Will iterate through all children in pre-order iteration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] The nod to iterate through. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="403" column="10" bodyfile="include/assimp/XmlParser.h" bodystart="403" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_xml_node_iterator_1a5817a15765681eb544ac1e8c44ce33aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::XmlNodeIterator::getNext</definition>
+        <argsstring>(XmlNode &amp;next)</argsstring>
+        <name>getNext</name>
+        <param>
+          <type><ref refid="namespace_assimp_1ad9aa76cdbe59a3c057f55760f3a02c0a" kindref="member">XmlNode</ref> &amp;</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+<para>Will iterate through all collected nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The next node, if there is any. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, if there is a node left. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="426" column="10" bodyfile="include/assimp/XmlParser.h" bodystart="426" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_xml_node_iterator_1ac8937d559903bfe99ee6ea280025cce8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::XmlNodeIterator::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+<para>Returns true, if the node is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true, if the node is empty, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="445" column="10" bodyfile="include/assimp/XmlParser.h" bodystart="445" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_xml_node_iterator_1ac2d21217d2921169efec5f318a0c594e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::XmlNodeIterator::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Will return the number of collected nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of collected nodes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="439" column="12" bodyfile="include/assimp/XmlParser.h" bodystart="439" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_xml_node_iterator_1ac91f7e3201cb252deb653b4aaed41207" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::XmlNodeIterator::XmlNodeIterator</definition>
+        <argsstring>(XmlNode &amp;parent, IterationMode mode)</argsstring>
+        <name>XmlNodeIterator</name>
+        <param>
+          <type><ref refid="namespace_assimp_1ad9aa76cdbe59a3c057f55760f3a02c0a" kindref="member">XmlNode</ref> &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="class_assimp_1_1_xml_node_iterator_1a8b2559c1b090867a20f54892b3391c1b" kindref="member">IterationMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>The class constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] The xml parent to to iterate through. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] The iteration mode. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="385" column="14" bodyfile="include/assimp/XmlParser.h" bodystart="385" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_xml_node_iterator_1aecf2de7bbece7ef81f8b4ba7b79f70f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::XmlNodeIterator::~XmlNodeIterator</definition>
+        <argsstring>()</argsstring>
+        <name>~XmlNodeIterator</name>
+        <briefdescription>
+<para>The class destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="397" column="5" bodyfile="include/assimp/XmlParser.h" bodystart="397" bodyend="399"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class declares an iterator to loop through all children of the root node. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/XmlParser.h" line="375" column="1" bodyfile="include/assimp/XmlParser.h" bodystart="375" bodyend="463"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_xml_node_iterator_1a4638e2eaf70a0b64963c00735c7a15dd" prot="public" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>clear</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1aca9024c882f07991467e05676123d035" prot="public" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>collectChildrenPostOrder</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1a71e766fc388e15793cc892f70d770c31" prot="public" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>collectChildrenPreOrder</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1a5817a15765681eb544ac1e8c44ce33aa" prot="public" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>getNext</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1ac8937d559903bfe99ee6ea280025cce8" prot="public" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>isEmpty</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1a8b2559c1b090867a20f54892b3391c1b" prot="public" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>IterationMode</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1a91b37042a3a746e89a3a37bb2ad0f1df" prot="private" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>mIndex</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1a489a01672f889c92c04e27354990e900" prot="private" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>mNodes</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1a5ed5cce26328fa8bd34b1d08900f38d8" prot="private" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>mParent</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1a8b2559c1b090867a20f54892b3391c1ba5e0113b2dfc00efb1768903c2fb4f54b" prot="public" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>PostOrderMode</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1a8b2559c1b090867a20f54892b3391c1ba6e93bdfa382164189f8f2323b4536e71" prot="public" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>PreOrderMode</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1ac2d21217d2921169efec5f318a0c594e" prot="public" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>size</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1ac91f7e3201cb252deb653b4aaed41207" prot="public" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>XmlNodeIterator</name></member>
+      <member refid="class_assimp_1_1_xml_node_iterator_1aecf2de7bbece7ef81f8b4ba7b79f70f4" prot="public" virt="non-virtual"><scope>Assimp::XmlNodeIterator</scope><name>~XmlNodeIterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

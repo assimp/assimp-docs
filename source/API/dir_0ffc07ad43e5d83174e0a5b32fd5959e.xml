@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_0ffc07ad43e5d83174e0a5b32fd5959e" kind="dir">
+    <compoundname>Compiler</compoundname>
+    <innerfile refid="poppack1_8h">poppack1.h</innerfile>
+    <innerfile refid="pstdint_8h">pstdint.h</innerfile>
+    <innerfile refid="pushpack1_8h">pushpack1.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/Compiler/"/>
+  </compounddef>
+</doxygen>

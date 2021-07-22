@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_assimp_1_1_math" kind="namespace" language="C++">
+    <compoundname>Assimp::Math</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_assimp_1_1_math_1a9f95c3394fa9c7d61ce0c0db8e933931" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Assimp::Math::aiPi</definition>
+        <argsstring>()</argsstring>
+        <name>aiPi</name>
+        <briefdescription>
+<para>Will return the constant PI for the requested type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pi </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MathFunctions.h" line="100" column="10" bodyfile="include/assimp/MathFunctions.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1_1_math_1a35dbf295d7708e2cffd2428d8d8f109a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename IntegerType</type>
+          </param>
+        </templateparamlist>
+        <type>IntegerType</type>
+        <definition>IntegerType Assimp::Math::gcd</definition>
+        <argsstring>(IntegerType a, IntegerType b)</argsstring>
+        <name>gcd</name>
+        <param>
+          <type>IntegerType</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>IntegerType</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Will return the greatest common divisor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] Value a. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] Value b. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The greatest common divisor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MathFunctions.h" line="63" column="20" bodyfile="include/assimp/MathFunctions.h" bodystart="63" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1_1_math_1a4888f797601d1606f958740c3697e9bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Assimp::Math::getEpsilon</definition>
+        <argsstring>()</argsstring>
+        <name>getEpsilon</name>
+        <briefdescription>
+<para>Will return the smallest epsilon-value for the requested type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The numercical limit epsilon depending on its type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MathFunctions.h" line="93" column="10" bodyfile="include/assimp/MathFunctions.h" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_assimp_1_1_math_1a918eb7bddac3741e7cf72dd900a90a0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename IntegerType</type>
+          </param>
+        </templateparamlist>
+        <type>IntegerType</type>
+        <definition>IntegerType Assimp::Math::lcm</definition>
+        <argsstring>(IntegerType a, IntegerType b)</argsstring>
+        <name>lcm</name>
+        <param>
+          <type>IntegerType</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>IntegerType</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Will return the greatest common divisor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] Value a. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] Value b. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The greatest common divisor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MathFunctions.h" line="83" column="20" bodyfile="include/assimp/MathFunctions.h" bodystart="83" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/MathFunctions.h" line="56" column="1"/>
+  </compounddef>
+</doxygen>

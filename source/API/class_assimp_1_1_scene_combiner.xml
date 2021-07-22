@@ -1,0 +1,1015 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_scene_combiner" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::SceneCombiner</compoundname>
+    <includes local="no">SceneCombiner.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a23067abcfa97c8e7dcecc4df189fc649" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SceneCombiner::SceneCombiner</definition>
+        <argsstring>()</argsstring>
+        <name>SceneCombiner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="195" column="5" bodyfile="include/assimp/SceneCombiner.h" bodystart="195" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1ae12ca2d4f3272bbf5db5a5eecb51da64" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SceneCombiner::~SceneCombiner</definition>
+        <argsstring>()</argsstring>
+        <name>~SceneCombiner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="199" column="5" bodyfile="include/assimp/SceneCombiner.h" bodystart="199" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a5e4ec755bb270b894e37d20938a4a88b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::AddNodePrefixes</definition>
+        <argsstring>(aiNode *node, const char *prefix, unsigned int len)</argsstring>
+        <name>AddNodePrefixes</name>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Add a name prefix to all nodes in a scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. This function is called recursively. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefix to be added to all nodes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STring length </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="297" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a269f58bf3cd9d0e2841488a83e265785" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::AttachToGraph</definition>
+        <argsstring>(aiNode *attach, std::vector&lt; NodeAttachmentInfo &gt; &amp;srcList)</argsstring>
+        <name>AttachToGraph</name>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>attach</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_assimp_1_1_node_attachment_info" kindref="compound">NodeAttachmentInfo</ref> &gt; &amp;</type>
+          <declname>srcList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="323" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a1672dc80009a8183edbabc4ef262b5c5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::AttachToGraph</definition>
+        <argsstring>(aiScene *master, std::vector&lt; NodeAttachmentInfo &gt; &amp;srcList)</argsstring>
+        <name>AttachToGraph</name>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>master</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_assimp_1_1_node_attachment_info" kindref="compound">NodeAttachmentInfo</ref> &gt; &amp;</type>
+          <declname>srcList</declname>
+        </param>
+        <briefdescription>
+<para>Attach a list of node graphs to well-defined nodes in a master graph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a helper for <ref refid="class_assimp_1_1_scene_combiner_1ab399fdea5846bc969a021a39f5a11276" kindref="member">MergeScenes()</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>master</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Master scene </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of source scenes along with their attachment points. If an attachment point is nullptr (or does not exist in the master graph), a scene is attached to the root of the master graph (as an additional child node) @duplicates List of duplicates. If elem[n] == n the scene is not a duplicate. Otherwise elem[n] links scene n to its first occurrence. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="320" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a9bfbbbab2ece2925fc3628c587ea9dcc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::BuildUniqueBoneList</definition>
+        <argsstring>(std::list&lt; BoneWithHash &gt; &amp;asBones, std::vector&lt; aiMesh * &gt;::const_iterator it, std::vector&lt; aiMesh * &gt;::const_iterator end)</argsstring>
+        <name>BuildUniqueBoneList</name>
+        <param>
+          <type>std::list&lt; <ref refid="struct_assimp_1_1_bone_with_hash" kindref="compound">BoneWithHash</ref> &gt; &amp;</type>
+          <declname>asBones</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_mesh" kindref="compound">aiMesh</ref> * &gt;::const_iterator</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_mesh" kindref="compound">aiMesh</ref> * &gt;::const_iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Builds a list of uniquely named bones in a mesh list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>asBones</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output list </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>it</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First mesh to be processed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Last mesh to be processed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="286" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1af9d3dfc83ee46803849e3c72ba5b3f41" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiAnimation **dest, const aiAnimation *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_animation" kindref="compound">aiAnimation</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_animation" kindref="compound">aiAnimation</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="358" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1acfcbaaf94a026c06148bccb070a49d09" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiAnimMesh **dest, const aiAnimMesh *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_anim_mesh" kindref="compound">aiAnimMesh</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_anim_mesh" kindref="compound">aiAnimMesh</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="355" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a9e36195e75b13510f1d81e6b0bc53778" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiBone **dest, const aiBone *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_bone" kindref="compound">aiBone</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_bone" kindref="compound">aiBone</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="360" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a7b898d651efd801cbd13c55af0cc9e0f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiCamera **dest, const aiCamera *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_camera" kindref="compound">aiCamera</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_camera" kindref="compound">aiCamera</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="359" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a4fa124aea5032357294ecbe48f572611" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiLight **dest, const aiLight *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_light" kindref="compound">aiLight</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_light" kindref="compound">aiLight</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="361" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1ada94b6a9447bcf44b16c26517af347b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiMaterial **dest, const aiMaterial *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_material" kindref="compound">aiMaterial</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_material" kindref="compound">aiMaterial</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="356" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1aabed196fdfb16f82873ec811c6a64bfc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiMesh **dest, const aiMesh *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Get a deep copy of a mesh. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives a pointer to the destination mesh </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source mesh - remains unmodified. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="352" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a55f8edf157fec67f0c49c363ec37bad7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiMeshMorphAnim **dest, const aiMeshMorphAnim *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_mesh_morph_anim" kindref="compound">aiMeshMorphAnim</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_mesh_morph_anim" kindref="compound">aiMeshMorphAnim</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="363" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a70a442fed79eda7f99852a3daa064a0b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiMetadata **dest, const aiMetadata *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_metadata" kindref="compound">aiMetadata</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_metadata" kindref="compound">aiMetadata</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="364" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1ac6b44e00c4bab88e9c84f0a53ad14e29" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiNode **dest, const aiNode *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="367" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1afbebe1cefa45eece9ebe4bcd8c7e3e65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiNodeAnim **dest, const aiNodeAnim *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_node_anim" kindref="compound">aiNodeAnim</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_node_anim" kindref="compound">aiNodeAnim</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="362" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a5a28e4264b5449e8fa789b07649f105d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::Copy</definition>
+        <argsstring>(aiTexture **dest, const aiTexture *src)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type><ref refid="structai_texture" kindref="compound">aiTexture</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_texture" kindref="compound">aiTexture</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="357" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a855a472e4848d737ef1ff091363f3a7c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::CopyScene</definition>
+        <argsstring>(aiScene **dest, const aiScene *source, bool allocate=true)</argsstring>
+        <name>CopyScene</name>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>allocate</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Get a deep copy of a scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives a pointer to the destination scene </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source scene - remains unmodified. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="332" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1afd836d513bc02da4c40d1432bf687f3e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::CopySceneFlat</definition>
+        <argsstring>(aiScene **dest, const aiScene *source)</argsstring>
+        <name>CopySceneFlat</name>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Get a flat copy of a scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only the first hierarchy layer is copied. All pointer members of <ref refid="structai_scene" kindref="compound">aiScene</ref> are shared by source and destination scene. If the pointer doesn&apos;t point to nullptr when the function is called, the existing scene is cleared and refilled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives a pointer to the destination scene </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source scene - remains unmodified. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="344" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1aa42d5370510db89cbdd739617a617d4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::MergeBones</definition>
+        <argsstring>(aiMesh *out, std::vector&lt; aiMesh * &gt;::const_iterator it, std::vector&lt; aiMesh * &gt;::const_iterator end)</argsstring>
+        <name>MergeBones</name>
+        <param>
+          <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_mesh" kindref="compound">aiMesh</ref> * &gt;::const_iterator</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_mesh" kindref="compound">aiMesh</ref> * &gt;::const_iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Merges two or more bones. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mesh to receive the output bone list </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Currently no parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First mesh to be processed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Points to the mesh after the last mesh to be processed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="261" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a9ebdb2b454f84032f2cfb51ebd7d5716" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::MergeMaterials</definition>
+        <argsstring>(aiMaterial **dest, std::vector&lt; aiMaterial * &gt;::const_iterator begin, std::vector&lt; aiMaterial * &gt;::const_iterator end)</argsstring>
+        <name>MergeMaterials</name>
+        <param>
+          <type><ref refid="structai_material" kindref="compound">aiMaterial</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_material" kindref="compound">aiMaterial</ref> * &gt;::const_iterator</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_material" kindref="compound">aiMaterial</ref> * &gt;::const_iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Merges two or more materials. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The materials should be complementary as much as possible. In case of a property present in different materials, the first occurrence is used.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination material. Must be empty. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First material to be processed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Points to the material after the last material to be processed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="275" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a3486044d9e2213bb8c408d8e8ef906f4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::MergeMeshes</definition>
+        <argsstring>(aiMesh **dest, unsigned int flags, std::vector&lt; aiMesh * &gt;::const_iterator begin, std::vector&lt; aiMesh * &gt;::const_iterator end)</argsstring>
+        <name>MergeMeshes</name>
+        <param>
+          <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_mesh" kindref="compound">aiMesh</ref> * &gt;::const_iterator</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_mesh" kindref="compound">aiMesh</ref> * &gt;::const_iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Merges two or more meshes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The meshes should have equal vertex formats. Only components that are provided by ALL meshes will be present in the output mesh. An exception is made for VColors - they are set to black. The meshes should have the same material indices, too. The output material index is always the material index of the first mesh.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination mesh. Must be empty. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Currently no parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First mesh to be processed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Points to the mesh after the last mesh to be processed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="249" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a49af3c46e42d4da59bb1a488e517618c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::MergeScenes</definition>
+        <argsstring>(aiScene **dest, aiScene *master, std::vector&lt; AttachmentInfo &gt; &amp;src, unsigned int flags=0)</argsstring>
+        <name>MergeScenes</name>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>master</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_assimp_1_1_attachment_info" kindref="compound">AttachmentInfo</ref> &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Merges two or more scenes and attaches all scenes to a specific position in the node graph of the master scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives a pointer to the destination scene. If the pointer doesn&apos;t point to nullptr when the function is called, the existing scene is cleared and refilled. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>master</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Master scene. It will be deleted afterwards. All other scenes will be inserted in its node graph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Non-empty list of scenes to be merged along with their corresponding attachment points in the master scene. The function deletes the input scenes afterwards. There may be duplicate scenes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combination of the AI_INT_MERGE_SCENE flags defined above </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="231" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1ab399fdea5846bc969a021a39f5a11276" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::MergeScenes</definition>
+        <argsstring>(aiScene **dest, std::vector&lt; aiScene * &gt; &amp;src, unsigned int flags=0)</argsstring>
+        <name>MergeScenes</name>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> **</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structai_scene" kindref="compound">aiScene</ref> * &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Merges two or more scenes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives a pointer to the destination scene. If the pointer doesn&apos;t point to nullptr when the function is called, the existing scene is cleared and refilled. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Non-empty list of scenes to be merged. The function deletes the input scenes afterwards. There may be duplicate scenes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combination of the AI_INT_MERGE_SCENE flags defined above </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="214" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a0c52e873dfdd0c71f7f2bae06bcbb865" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::OffsetNodeMeshIndices</definition>
+        <argsstring>(aiNode *node, unsigned int offset)</argsstring>
+        <name>OffsetNodeMeshIndices</name>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Add an offset to all mesh indices in a node graph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. This function is called recursively. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset to be added to all mesh indices </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="306" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a96def0d9c1b8c8636215634a3ebb2c79" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::AddNodeHashes</definition>
+        <argsstring>(aiNode *node, std::set&lt; unsigned int &gt; &amp;hashes)</argsstring>
+        <name>AddNodeHashes</name>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::set&lt; unsigned int &gt; &amp;</type>
+          <declname>hashes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="379" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1ae91255cd5d3298b30c620c78b7862d24" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::SceneCombiner::AddNodePrefixesChecked</definition>
+        <argsstring>(aiNode *node, const char *prefix, unsigned int len, std::vector&lt; SceneHelper &gt; &amp;input, unsigned int cur)</argsstring>
+        <name>AddNodePrefixesChecked</name>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_assimp_1_1_scene_helper" kindref="compound">SceneHelper</ref> &gt; &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>cur</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="372" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_scene_combiner_1a2164d56d383c78e3144491ad034ed587" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Assimp::SceneCombiner::FindNameMatch</definition>
+        <argsstring>(const aiString &amp;name, std::vector&lt; SceneHelper &gt; &amp;input, unsigned int cur)</argsstring>
+        <name>FindNameMatch</name>
+        <param>
+          <type>const <ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_assimp_1_1_scene_helper" kindref="compound">SceneHelper</ref> &gt; &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>cur</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="383" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static helper class providing various utilities to merge two scenes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It is intended as internal utility and NOT for use by applications.</para>
+<para>The class is currently being used by various postprocessing steps and loaders (ie. LWS). </para>
+    </detaileddescription>
+    <location file="include/assimp/SceneCombiner.h" line="193" column="1" bodyfile="include/assimp/SceneCombiner.h" bodystart="193" bodyend="385"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_scene_combiner_1a96def0d9c1b8c8636215634a3ebb2c79" prot="private" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>AddNodeHashes</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a5e4ec755bb270b894e37d20938a4a88b" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>AddNodePrefixes</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1ae91255cd5d3298b30c620c78b7862d24" prot="private" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>AddNodePrefixesChecked</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a1672dc80009a8183edbabc4ef262b5c5" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>AttachToGraph</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a269f58bf3cd9d0e2841488a83e265785" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>AttachToGraph</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a9bfbbbab2ece2925fc3628c587ea9dcc" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>BuildUniqueBoneList</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1aabed196fdfb16f82873ec811c6a64bfc" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1acfcbaaf94a026c06148bccb070a49d09" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1ada94b6a9447bcf44b16c26517af347b5" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a5a28e4264b5449e8fa789b07649f105d" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1af9d3dfc83ee46803849e3c72ba5b3f41" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a7b898d651efd801cbd13c55af0cc9e0f" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a9e36195e75b13510f1d81e6b0bc53778" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a4fa124aea5032357294ecbe48f572611" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1afbebe1cefa45eece9ebe4bcd8c7e3e65" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a55f8edf157fec67f0c49c363ec37bad7" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a70a442fed79eda7f99852a3daa064a0b" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1ac6b44e00c4bab88e9c84f0a53ad14e29" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>Copy</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a855a472e4848d737ef1ff091363f3a7c" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>CopyScene</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1afd836d513bc02da4c40d1432bf687f3e" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>CopySceneFlat</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a2164d56d383c78e3144491ad034ed587" prot="private" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>FindNameMatch</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1aa42d5370510db89cbdd739617a617d4e" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>MergeBones</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a9ebdb2b454f84032f2cfb51ebd7d5716" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>MergeMaterials</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a3486044d9e2213bb8c408d8e8ef906f4" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>MergeMeshes</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1ab399fdea5846bc969a021a39f5a11276" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>MergeScenes</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a49af3c46e42d4da59bb1a488e517618c" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>MergeScenes</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a0c52e873dfdd0c71f7f2bae06bcbb865" prot="public" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>OffsetNodeMeshIndices</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1a23067abcfa97c8e7dcecc4df189fc649" prot="private" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>SceneCombiner</name></member>
+      <member refid="class_assimp_1_1_scene_combiner_1ae12ca2d4f3272bbf5db5a5eecb51da64" prot="private" virt="non-virtual"><scope>Assimp::SceneCombiner</scope><name>~SceneCombiner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

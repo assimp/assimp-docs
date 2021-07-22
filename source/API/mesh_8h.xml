@@ -1,0 +1,962 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="mesh_8h" kind="file" language="C++">
+    <compoundname>mesh.h</compoundname>
+    <includes refid="aabb_8h" local="no">assimp/aabb.h</includes>
+    <includes refid="types_8h" local="no">assimp/types.h</includes>
+    <includedby refid="_create_anim_mesh_8h" local="no">CreateAnimMesh.h</includedby>
+    <includedby refid="scene_8h" local="no">scene.h</includedby>
+    <includedby refid="_skeleton_mesh_builder_8h" local="no">SkeletonMeshBuilder.h</includedby>
+    <includedby refid="_vertex_8h" local="no">Vertex.h</includedby>
+    <incdepgraph>
+      <node id="16">
+        <label>assimp/matrix4x4.h</label>
+        <link refid="matrix4x4_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>assimp/vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stdint.h</label>
+      </node>
+      <node id="7">
+        <label>assimp/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
+      <node id="15">
+        <label>assimp/matrix3x3.h</label>
+        <link refid="matrix3x3_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+      </node>
+      <node id="6">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="8">
+        <label>limits.h</label>
+      </node>
+      <node id="12">
+        <label>sys/types.h</label>
+      </node>
+      <node id="11">
+        <label>string.h</label>
+      </node>
+      <node id="17">
+        <label>assimp/quaternion.h</label>
+        <link refid="quaternion_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>new</label>
+      </node>
+      <node id="14">
+        <label>assimp/color4.h</label>
+        <link refid="color4_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>assimp/vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mesh.h</label>
+        <link refid="mesh_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>cstring</label>
+      </node>
+      <node id="2">
+        <label>assimp/aabb.h</label>
+        <link refid="aabb_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>SkeletonMeshBuilder.h</label>
+        <link refid="_skeleton_mesh_builder_8h"/>
+      </node>
+      <node id="2">
+        <label>CreateAnimMesh.h</label>
+        <link refid="_create_anim_mesh_8h"/>
+      </node>
+      <node id="5">
+        <label>Vertex.h</label>
+        <link refid="_vertex_8h"/>
+      </node>
+      <node id="3">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+      </node>
+      <node id="1">
+        <label>mesh.h</label>
+        <link refid="mesh_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structai_anim_mesh" prot="public">aiAnimMesh</innerclass>
+    <innerclass refid="structai_bone" prot="public">aiBone</innerclass>
+    <innerclass refid="structai_face" prot="public">aiFace</innerclass>
+    <innerclass refid="structai_mesh" prot="public">aiMesh</innerclass>
+    <innerclass refid="structai_vertex_weight" prot="public">aiVertexWeight</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mesh_8h_1a565e88bbf36ef4957f1229609e51b7f6" prot="public" static="no">
+        <name>AI_MAX_BONE_WEIGHTS</name>
+        <initializer>0x7fffffff</initializer>
+        <briefdescription>
+<para>Maximum number of indices per face (polygon). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="83" column="9" bodyfile="include/assimp/mesh.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mesh_8h_1a380f3ab069e89b3a1ed975577600438b" prot="public" static="no">
+        <name>AI_MAX_FACE_INDICES</name>
+        <initializer>0x7fff</initializer>
+        <briefdescription>
+<para>Maximum number of indices per face (polygon). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="76" column="9" bodyfile="include/assimp/mesh.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mesh_8h_1aef69217e80411f3fee5aae3dc06b68ba" prot="public" static="no">
+        <name>AI_MAX_FACES</name>
+        <initializer>0x7fffffff</initializer>
+        <briefdescription>
+<para>Maximum number of faces per mesh. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="97" column="9" bodyfile="include/assimp/mesh.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" prot="public" static="no">
+        <name>AI_MAX_NUMBER_OF_COLOR_SETS</name>
+        <initializer>0x8</initializer>
+        <briefdescription>
+<para>Supported number of vertex color sets per mesh. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="104" column="9" bodyfile="include/assimp/mesh.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mesh_8h_1a335874c5058c7f1e866eb953bf192258" prot="public" static="no">
+        <name>AI_MAX_NUMBER_OF_TEXTURECOORDS</name>
+        <initializer>0x8</initializer>
+        <briefdescription>
+<para>Supported number of texture coord sets (UV(W) channels) per mesh. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="111" column="9" bodyfile="include/assimp/mesh.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mesh_8h_1aa3997d5751b93f15e4c9d86ced093b56" prot="public" static="no">
+        <name>AI_MAX_VERTICES</name>
+        <initializer>0x7fffffff</initializer>
+        <briefdescription>
+<para>Maximum number of vertices per mesh. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="90" column="9" bodyfile="include/assimp/mesh.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mesh_8h_1a36a6bf06f217a4c962f1ec24b1633482" prot="public" static="no">
+        <name>AI_MESH_H_INC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="49" column="9" bodyfile="include/assimp/mesh.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mesh_8h_1a2ec9a1223f48501cb972e3d2866c344c" prot="public" static="no">
+        <name>AI_PRIMITIVE_TYPE_FOR_N_INDICES</name>
+        <param><defname>n</defname></param>
+        <initializer>    ((n) &gt; 3 ? <ref refid="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03faea762261e9efd0313baa0b3193b43253" kindref="member">aiPrimitiveType_POLYGON</ref> : (<ref refid="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03f" kindref="member">aiPrimitiveType</ref>)(1u &lt;&lt; ((n)-1)))</initializer>
+        <briefdescription>
+<para>enum aiPrimitiveType </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="428" column="9" bodyfile="include/assimp/mesh.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="mesh_8h_1a76b77976372959451a455a148901e70e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>aiMorphingMethod</name>
+        <enumvalue id="mesh_8h_1a76b77976372959451a455a148901e70ea8a0a244056339ce87af17325ae0d6560" prot="public">
+          <name>aiMorphingMethod_VERTEX_BLEND</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+<para>Interpolation between morph targets. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mesh_8h_1a76b77976372959451a455a148901e70ea0e82e32a9452da1726eab9d4a582088e" prot="public">
+          <name>aiMorphingMethod_MORPH_NORMALIZED</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+<para>Normalized morphing between morph targets <linebreak/>
+ </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mesh_8h_1a76b77976372959451a455a148901e70ea1ae15d6a0e67d51fed037179bbfccf96" prot="public">
+          <name>aiMorphingMethod_MORPH_RELATIVE</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+<para>Relative morphing between morph targets <linebreak/>
+ </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mesh_8h_1a76b77976372959451a455a148901e70ea07c9fe9d673b15bb3a798860f330b124" prot="public">
+          <name>_aiMorphingMethod_Force32Bit</name>
+          <initializer>= INT_MAX</initializer>
+          <briefdescription>
+<para>This value is not used. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>It is just here to force the compiler to map this enum to a 32 Bit integer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the methods of mesh morphing supported by <ref refid="namespace_assimp" kindref="compound">Assimp</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="556" column="1" bodyfile="include/assimp/mesh.h" bodystart="556" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="enum" id="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>aiPrimitiveType</name>
+        <enumvalue id="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03fafb9158b4924ec9457647c759aa961053" prot="public">
+          <name>aiPrimitiveType_POINT</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+<para>A point primitive. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This is just a single vertex in the virtual world, <ref refid="structai_face" kindref="compound">aiFace</ref> contains just one index for such a primitive. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03fa724184f90f0e408b903d07aed39914b4" prot="public">
+          <name>aiPrimitiveType_LINE</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+<para>A line primitive. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This is a line defined through a start and an end position. <ref refid="structai_face" kindref="compound">aiFace</ref> contains exactly two indices for such a primitive. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03fae1875196046a6139abb8734fe97d67f5" prot="public">
+          <name>aiPrimitiveType_TRIANGLE</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+<para>A triangular primitive. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>A triangle consists of three indices. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03faea762261e9efd0313baa0b3193b43253" prot="public">
+          <name>aiPrimitiveType_POLYGON</name>
+          <initializer>= 0x8</initializer>
+          <briefdescription>
+<para>A higher-level polygon with more than 3 edges. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>A triangle is a polygon, but polygon in this context means &quot;all polygons that are not triangles&quot;. The &quot;Triangulate&quot;-Step is provided for your convenience, it splits all polygons in triangles (which are much easier to handle). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03fa9936ab10ebebd878a5cd6521b5bdc003" prot="public">
+          <name>aiPrimitiveType_NGONEncodingFlag</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+<para>A flag to determine whether this triangles only mesh is NGON encoded. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>NGON encoding is a special encoding that tells whether 2 or more consecutive triangles should be considered as a triangle fan. This is identified by looking at the first vertex index. 2 consecutive triangles with the same 1st vertex index are part of the same NGON.</para>
+<para>At the moment, only quads (concave or convex) are supported, meaning that polygons are &apos;seen&apos; as triangles, as usual after a triangulation pass.</para>
+<para>To get an NGON encoded mesh, please use the aiProcess_Triangulate post process.</para>
+<para><simplesect kind="see"><para><ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b" kindref="member">aiProcess_Triangulate</ref> <ref refid="" kindref="compound">https://github.com/KhronosGroup/glTF/pull/1620</ref></para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03fa6cc0d20689875344a59dc56d8baf08f8" prot="public">
+          <name>_aiPrimitiveType_Force32Bit</name>
+          <initializer>= INT_MAX</initializer>
+          <briefdescription>
+<para>This value is not used. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>It is just here to force the compiler to map this enum to a 32 Bit integer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the types of geometric primitives supported by <ref refid="namespace_assimp" kindref="compound">Assimp</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structai_face" kindref="compound">aiFace</ref> Face data structure </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410ab4484f73635d633cd79973bac1431ed6" kindref="member">aiProcess_SortByPType</ref> Per-primitive sorting of meshes </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b" kindref="member">aiProcess_Triangulate</ref> Automatic triangulation </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="config_8h_1a971e337cb0d526861142586b8341cb98" kindref="member">AI_CONFIG_PP_SBP_REMOVE</ref> Removal of specific primitive types. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/mesh.h" line="371" column="1" bodyfile="include/assimp/mesh.h" bodystart="371" bodyend="425"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Declares the data structures in which the imported geometry is returned by ASSIMP: <ref refid="structai_mesh" kindref="compound">aiMesh</ref>, <ref refid="structai_face" kindref="compound">aiFace</ref> and <ref refid="structai_bone" kindref="compound">aiBone</ref> data structures. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"></highlight></codeline>
+<codeline lineno="29"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_MESH_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MESH_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>system_header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable<sp/>:<sp/>4351)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="aabb_8h" kindref="compound">assimp/aabb.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="types_8h" kindref="compound">assimp/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Limits.<sp/>These<sp/>values<sp/>are<sp/>required<sp/>to<sp/>match<sp/>the<sp/>settings<sp/>Assimp<sp/>was</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>compiled<sp/>against.<sp/>Therefore,<sp/>do<sp/>not<sp/>redefine<sp/>them<sp/>unless<sp/>you<sp/>build<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>library<sp/>from<sp/>source<sp/>using<sp/>the<sp/>same<sp/>definitions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_MAX_FACE_INDICES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MAX_FACE_INDICES<sp/>0x7fff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_MAX_BONE_WEIGHTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MAX_BONE_WEIGHTS<sp/>0x7fffffff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_MAX_VERTICES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MAX_VERTICES<sp/>0x7fffffff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_MAX_FACES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MAX_FACES<sp/>0x7fffffff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_MAX_NUMBER_OF_COLOR_SETS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MAX_NUMBER_OF_COLOR_SETS<sp/>0x8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!!<sp/>AI_MAX_NUMBER_OF_COLOR_SETS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_MAX_NUMBER_OF_TEXTURECOORDS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MAX_NUMBER_OF_TEXTURECOORDS<sp/>0x8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!!<sp/>AI_MAX_NUMBER_OF_TEXTURECOORDS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="136" refid="structai_face" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_face" kindref="compound">aiFace</ref><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">mNumIndices</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_face_1a2591c15e2ce32bfac18298b9f309e0b6" kindref="member">aiFace</ref>()<sp/><ref refid="defs_8h_1ae032f18edd69bf6ba935ef9feb025a96" kindref="member">AI_NO_EXCEPT</ref></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">mNumIndices</ref>(0),</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_face_1ae95d9898f19861a2b16ecc03603c3615" kindref="member">~aiFace</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_face_1a2591c15e2ce32bfac18298b9f309e0b6" kindref="member">aiFace</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_face" kindref="compound">aiFace</ref><sp/>&amp;o)<sp/>:</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">mNumIndices</ref>(0),<sp/><ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>=<sp/>o;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_face" kindref="compound">aiFace</ref><sp/>&amp;<ref refid="structai_face_1ae775782ac91711eeedd77d54c0dcfdc9" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_face" kindref="compound">aiFace</ref><sp/>&amp;o)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;o<sp/>==<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">mNumIndices</ref><sp/>=<sp/>o.<ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">mNumIndices</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">mNumIndices</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[<ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">mNumIndices</ref>];</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::memcpy(<ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref>,<sp/>o.<ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref>,<sp/><ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">mNumIndices</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_face_1ad573038b959a464dfb145a699fd93b77" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_face" kindref="compound">aiFace</ref><sp/>&amp;o)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref><sp/>==<sp/>o.<ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>!=<sp/><ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref><sp/>&amp;&amp;<sp/><ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">mNumIndices</ref><sp/>!=<sp/>o.<ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">mNumIndices</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>==<sp/><ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>this-&gt;<ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">mNumIndices</ref>;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref>[i]<sp/>!=<sp/>o.<ref refid="structai_face_1a2026b434c40cf1636f9f464a592ec36c" kindref="member">mIndices</ref>[i])<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_face_1a3543fa78ef3b738e4a42e1e982a82e8b" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_face" kindref="compound">aiFace</ref><sp/>&amp;o)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>o);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>struct<sp/>aiFace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="217" refid="structai_vertex_weight" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_vertex_weight" kindref="compound">aiVertexWeight</ref><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_vertex_weight_1af6269cf6a0f02e5ae870a72046d58f4f" kindref="member">mVertexId</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref><sp/><ref refid="structai_vertex_weight_1a9a11636b76b90fccb204296aa2db07a7" kindref="member">mWeight</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_vertex_weight_1af5b028023bac9e8e77d15e10f8a6adbb" kindref="member">aiVertexWeight</ref>()<sp/><ref refid="defs_8h_1ae032f18edd69bf6ba935ef9feb025a96" kindref="member">AI_NO_EXCEPT</ref></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structai_vertex_weight_1af6269cf6a0f02e5ae870a72046d58f4f" kindref="member">mVertexId</ref>(0),</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_vertex_weight_1a9a11636b76b90fccb204296aa2db07a7" kindref="member">mWeight</ref>(0.0f)<sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_vertex_weight_1af5b028023bac9e8e77d15e10f8a6adbb" kindref="member">aiVertexWeight</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pID,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pWeight)<sp/>:</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_vertex_weight_1af6269cf6a0f02e5ae870a72046d58f4f" kindref="member">mVertexId</ref>(pID),<sp/><ref refid="structai_vertex_weight_1a9a11636b76b90fccb204296aa2db07a7" kindref="member">mWeight</ref>(pWeight)<sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_vertex_weight_1aa44c2ad503cc0d3a4d3449ba38d71f17" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_vertex_weight" kindref="compound">aiVertexWeight</ref><sp/>&amp;rhs)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structai_vertex_weight_1af6269cf6a0f02e5ae870a72046d58f4f" kindref="member">mVertexId</ref><sp/>==<sp/>rhs.<ref refid="structai_vertex_weight_1af6269cf6a0f02e5ae870a72046d58f4f" kindref="member">mVertexId</ref><sp/>&amp;&amp;<sp/><ref refid="structai_vertex_weight_1a9a11636b76b90fccb204296aa2db07a7" kindref="member">mWeight</ref><sp/>==<sp/>rhs.<ref refid="structai_vertex_weight_1a9a11636b76b90fccb204296aa2db07a7" kindref="member">mWeight</ref>);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_vertex_weight_1a07b264931c44818d66a6012c8d0cf8c9" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_vertex_weight" kindref="compound">aiVertexWeight</ref><sp/>&amp;rhs)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>rhs);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declare<sp/>aiNode<sp/>(pointer<sp/>use<sp/>only)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_node" kindref="compound">aiNode</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="264" refid="structai_bone" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_bone" kindref="compound">aiBone</ref><sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_string" kindref="compound">aiString</ref><sp/><ref refid="structai_bone_1acfb9bfd2a2c6302181d7c3cc1bb8bbf0" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref>;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ASSIMP_BUILD_NO_ARMATUREPOPULATE_PROCESS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>bone<sp/>armature<sp/>node<sp/>-<sp/>used<sp/>for<sp/>skeleton<sp/>conversion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>you<sp/>must<sp/>enable<sp/>aiProcess_PopulateArmatureData<sp/>to<sp/>populate<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_node" kindref="compound">aiNode</ref><sp/>*<ref refid="structai_bone_1ad8d977c1180d965e4cf6d576d156c4da" kindref="member">mArmature</ref>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>bone<sp/>node<sp/>in<sp/>the<sp/>scene<sp/>-<sp/>used<sp/>for<sp/>skeleton<sp/>conversion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>you<sp/>must<sp/>enable<sp/>aiProcess_PopulateArmatureData<sp/>to<sp/>populate<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_node" kindref="compound">aiNode</ref><sp/>*<ref refid="structai_bone_1a617fe988b25a0095bccd03a269c524ce" kindref="member">mNode</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_vertex_weight" kindref="compound">aiVertexWeight</ref><sp/>*<ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4</ref><sp/><ref refid="structai_bone_1a1dd6c4f24a1384c05da281692be3e78d" kindref="member">mOffsetMatrix</ref>;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_bone_1a769ac021a3ea788de85de3587e25af27" kindref="member">aiBone</ref>()<sp/><ref refid="defs_8h_1ae032f18edd69bf6ba935ef9feb025a96" kindref="member">AI_NO_EXCEPT</ref></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structai_bone_1acfb9bfd2a2c6302181d7c3cc1bb8bbf0" kindref="member">mName</ref>(),</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref>(0),</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1a1dd6c4f24a1384c05da281692be3e78d" kindref="member">mOffsetMatrix</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_bone_1a769ac021a3ea788de85de3587e25af27" kindref="member">aiBone</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_bone" kindref="compound">aiBone</ref><sp/>&amp;other)<sp/>:</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1acfb9bfd2a2c6302181d7c3cc1bb8bbf0" kindref="member">mName</ref>(other.<ref refid="structai_bone_1acfb9bfd2a2c6302181d7c3cc1bb8bbf0" kindref="member">mName</ref>),</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref>(other.<ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref>),</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1a1dd6c4f24a1384c05da281692be3e78d" kindref="member">mOffsetMatrix</ref>(other.<ref refid="structai_bone_1a1dd6c4f24a1384c05da281692be3e78d" kindref="member">mOffsetMatrix</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(other.<ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref><sp/>&amp;&amp;<sp/>other.<ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structai_vertex_weight" kindref="compound">aiVertexWeight</ref>[<ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref>];</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::memcpy(<ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>,<sp/>other.<ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>,<sp/><ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structai_vertex_weight" kindref="compound">aiVertexWeight</ref>));</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_bone" kindref="compound">aiBone</ref><sp/>&amp;<ref refid="structai_bone_1a24b3254a0ea55aef6e044d07ffe2efae" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_bone" kindref="compound">aiBone</ref><sp/>&amp;other)<sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>&amp;other)<sp/>{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1acfb9bfd2a2c6302181d7c3cc1bb8bbf0" kindref="member">mName</ref><sp/>=<sp/>other.<ref refid="structai_bone_1acfb9bfd2a2c6302181d7c3cc1bb8bbf0" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref><sp/>=<sp/>other.<ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref>;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1a1dd6c4f24a1384c05da281692be3e78d" kindref="member">mOffsetMatrix</ref><sp/>=<sp/>other.<ref refid="structai_bone_1a1dd6c4f24a1384c05da281692be3e78d" kindref="member">mOffsetMatrix</ref>;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(other.<ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref><sp/>&amp;&amp;<sp/>other.<ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structai_vertex_weight" kindref="compound">aiVertexWeight</ref>[<ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref>];</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::memcpy(<ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>,<sp/>other.<ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>,<sp/><ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structai_vertex_weight" kindref="compound">aiVertexWeight</ref>));</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_bone_1afc354872c3d4c36c2b747054fcab8890" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_bone" kindref="compound">aiBone</ref><sp/>&amp;rhs)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structai_bone_1acfb9bfd2a2c6302181d7c3cc1bb8bbf0" kindref="member">mName</ref><sp/>!=<sp/>rhs.<ref refid="structai_bone_1acfb9bfd2a2c6302181d7c3cc1bb8bbf0" kindref="member">mName</ref><sp/>||<sp/><ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref><sp/>!=<sp/>rhs.<ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" kindref="member">mNumWeights</ref>;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>[i]<sp/>!=<sp/>rhs.<ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>[i])<sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_bone_1a221b8e7de8e3e048c3a4100e70a28b40" kindref="member">~aiBone</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_bone_1ade36319714b58c03ad46aae30a2724a4" kindref="member">mWeights</ref>;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="371"><highlight class="comment"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03f" kindref="member">aiPrimitiveType</ref><sp/>{</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03fafb9158b4924ec9457647c759aa961053" kindref="member">aiPrimitiveType_POINT</ref><sp/>=<sp/>0x1,</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03fa724184f90f0e408b903d07aed39914b4" kindref="member">aiPrimitiveType_LINE</ref><sp/>=<sp/>0x2,</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03fae1875196046a6139abb8734fe97d67f5" kindref="member">aiPrimitiveType_TRIANGLE</ref><sp/>=<sp/>0x4,</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03faea762261e9efd0313baa0b3193b43253" kindref="member">aiPrimitiveType_POLYGON</ref><sp/>=<sp/>0x8,</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03fa9936ab10ebebd878a5cd6521b5bdc003" kindref="member">aiPrimitiveType_NGONEncodingFlag</ref><sp/>=<sp/>0x10,</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SWIG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mesh_8h_1ac352902280db7c3bd8ba64c133b7f03fa6cc0d20689875344a59dc56d8baf08f8" kindref="member">_aiPrimitiveType_Force32Bit</ref><sp/>=<sp/>INT_MAX</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal">};<sp/></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>#aiPrimitiveType<sp/>flag<sp/>for<sp/>a<sp/>specific<sp/>number<sp/>of<sp/>face<sp/>indices</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_PRIMITIVE_TYPE_FOR_N_INDICES(n)<sp/>\</highlight></codeline>
+<codeline lineno="429"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((n)<sp/>&gt;<sp/>3<sp/>?<sp/>aiPrimitiveType_POLYGON<sp/>:<sp/>(aiPrimitiveType)(1u<sp/>&lt;&lt;<sp/>((n)-1)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="442" refid="structai_anim_mesh" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_anim_mesh" kindref="compound">aiAnimMesh</ref><sp/>{</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_string" kindref="compound">aiString</ref><sp/><ref refid="structai_anim_mesh_1a09f0047d802db8b996b1a168eab0a533" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/>*<ref refid="structai_anim_mesh_1a0ac2dd4c1afd23e6a9293b1d0ded3060" kindref="member">mVertices</ref>;</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/>*<ref refid="structai_anim_mesh_1a64a07a8c5c419b1e006c5302bca4d334" kindref="member">mNormals</ref>;</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/>*<ref refid="structai_anim_mesh_1a95dcc49c6d5ecc570ceb54552a0a9625" kindref="member">mTangents</ref>;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/>*<ref refid="structai_anim_mesh_1a7d60acf4d2b4b59dcc6c88956bfae85f" kindref="member">mBitangents</ref>;</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_color4t" kindref="compound">aiColor4D</ref><sp/>*<ref refid="structai_anim_mesh_1a4f062d9fac71c6b367fdf0f8638e1ca5" kindref="member">mColors</ref>[<ref refid="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" kindref="member">AI_MAX_NUMBER_OF_COLOR_SETS</ref>];</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/>*<ref refid="structai_anim_mesh_1ad24a0451adeb845a53eb2351b9462e0a" kindref="member">mTextureCoords</ref>[<ref refid="mesh_8h_1a335874c5058c7f1e866eb953bf192258" kindref="member">AI_MAX_NUMBER_OF_TEXTURECOORDS</ref>];</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_anim_mesh_1a6bb0d45317a1bbea7f2b7f8191d0c436" kindref="member">mNumVertices</ref>;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structai_anim_mesh_1a3554843cf6bb042369be1e75a2eff88a" kindref="member">mWeight</ref>;</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_anim_mesh_1a8b7f246c13a528c79febbb75f342f6e7" kindref="member">aiAnimMesh</ref>()<sp/><ref refid="defs_8h_1ae032f18edd69bf6ba935ef9feb025a96" kindref="member">AI_NO_EXCEPT</ref></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structai_anim_mesh_1a0ac2dd4c1afd23e6a9293b1d0ded3060" kindref="member">mVertices</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_anim_mesh_1a64a07a8c5c419b1e006c5302bca4d334" kindref="member">mNormals</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_anim_mesh_1a95dcc49c6d5ecc570ceb54552a0a9625" kindref="member">mTangents</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_anim_mesh_1a7d60acf4d2b4b59dcc6c88956bfae85f" kindref="member">mBitangents</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_anim_mesh_1a4f062d9fac71c6b367fdf0f8638e1ca5" kindref="member">mColors</ref>(),</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_anim_mesh_1ad24a0451adeb845a53eb2351b9462e0a" kindref="member">mTextureCoords</ref>(),</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_anim_mesh_1a6bb0d45317a1bbea7f2b7f8191d0c436" kindref="member">mNumVertices</ref>(0),</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_anim_mesh_1a3554843cf6bb042369be1e75a2eff88a" kindref="member">mWeight</ref>(0.0f)<sp/>{</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fixme<sp/>consider<sp/>moving<sp/>this<sp/>to<sp/>the<sp/>ctor<sp/>initializer<sp/>list<sp/>as<sp/>well</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>0;<sp/>a<sp/>&lt;<sp/><ref refid="mesh_8h_1a335874c5058c7f1e866eb953bf192258" kindref="member">AI_MAX_NUMBER_OF_TEXTURECOORDS</ref>;<sp/>a++)<sp/>{</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_anim_mesh_1ad24a0451adeb845a53eb2351b9462e0a" kindref="member">mTextureCoords</ref>[a]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>0;<sp/>a<sp/>&lt;<sp/><ref refid="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" kindref="member">AI_MAX_NUMBER_OF_COLOR_SETS</ref>;<sp/>a++)<sp/>{</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_anim_mesh_1a4f062d9fac71c6b367fdf0f8638e1ca5" kindref="member">mColors</ref>[a]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_anim_mesh_1a229a1450b5a88a929602403eb2ea4750" kindref="member">~aiAnimMesh</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_anim_mesh_1a0ac2dd4c1afd23e6a9293b1d0ded3060" kindref="member">mVertices</ref>;</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_anim_mesh_1a64a07a8c5c419b1e006c5302bca4d334" kindref="member">mNormals</ref>;</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_anim_mesh_1a95dcc49c6d5ecc570ceb54552a0a9625" kindref="member">mTangents</ref>;</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_anim_mesh_1a7d60acf4d2b4b59dcc6c88956bfae85f" kindref="member">mBitangents</ref>;</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>0;<sp/>a<sp/>&lt;<sp/><ref refid="mesh_8h_1a335874c5058c7f1e866eb953bf192258" kindref="member">AI_MAX_NUMBER_OF_TEXTURECOORDS</ref>;<sp/>a++)<sp/>{</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_anim_mesh_1ad24a0451adeb845a53eb2351b9462e0a" kindref="member">mTextureCoords</ref>[a];</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>0;<sp/>a<sp/>&lt;<sp/><ref refid="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" kindref="member">AI_MAX_NUMBER_OF_COLOR_SETS</ref>;<sp/>a++)<sp/>{</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_anim_mesh_1a4f062d9fac71c6b367fdf0f8638e1ca5" kindref="member">mColors</ref>[a];</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_anim_mesh_1a48f34125fcbdabb04294f02d947f52bf" kindref="member">HasPositions</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_anim_mesh_1a0ac2dd4c1afd23e6a9293b1d0ded3060" kindref="member">mVertices</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_anim_mesh_1a38199c86e7fe2fd62b8b244073548844" kindref="member">HasNormals</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_anim_mesh_1a64a07a8c5c419b1e006c5302bca4d334" kindref="member">mNormals</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_anim_mesh_1a40e1cef9f4112b5b723f2b010237dec9" kindref="member">HasTangentsAndBitangents</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_anim_mesh_1a95dcc49c6d5ecc570ceb54552a0a9625" kindref="member">mTangents</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_anim_mesh_1a8e7f5da1d8de4a27291587d13167665b" kindref="member">HasVertexColors</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pIndex)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pIndex<sp/>&gt;=<sp/><ref refid="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" kindref="member">AI_MAX_NUMBER_OF_COLOR_SETS</ref><sp/>?<sp/>false<sp/>:<sp/><ref refid="structai_anim_mesh_1a4f062d9fac71c6b367fdf0f8638e1ca5" kindref="member">mColors</ref>[pIndex]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_anim_mesh_1a87926d84fde01c1a8b73427d2b8411d7" kindref="member">HasTextureCoords</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pIndex)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pIndex<sp/>&gt;=<sp/><ref refid="mesh_8h_1a335874c5058c7f1e866eb953bf192258" kindref="member">AI_MAX_NUMBER_OF_TEXTURECOORDS</ref><sp/>?<sp/>false<sp/>:<sp/><ref refid="structai_anim_mesh_1ad24a0451adeb845a53eb2351b9462e0a" kindref="member">mTextureCoords</ref>[pIndex]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="556"><highlight class="comment"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="mesh_8h_1a76b77976372959451a455a148901e70e" kindref="member">aiMorphingMethod</ref><sp/>{</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mesh_8h_1a76b77976372959451a455a148901e70ea8a0a244056339ce87af17325ae0d6560" kindref="member">aiMorphingMethod_VERTEX_BLEND</ref><sp/>=<sp/>0x1,</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"></highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mesh_8h_1a76b77976372959451a455a148901e70ea0e82e32a9452da1726eab9d4a582088e" kindref="member">aiMorphingMethod_MORPH_NORMALIZED</ref><sp/>=<sp/>0x2,</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mesh_8h_1a76b77976372959451a455a148901e70ea1ae15d6a0e67d51fed037179bbfccf96" kindref="member">aiMorphingMethod_MORPH_RELATIVE</ref><sp/>=<sp/>0x3,</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SWIG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mesh_8h_1a76b77976372959451a455a148901e70ea07c9fe9d673b15bb3a798860f330b124" kindref="member">_aiMorphingMethod_Force32Bit</ref><sp/>=<sp/>INT_MAX</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal">};<sp/></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="593" refid="structai_mesh" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_mesh" kindref="compound">aiMesh</ref><sp/>{</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a99d66ac0a444068c1b252b30265cbf53" kindref="member">mPrimitiveTypes</ref>;</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"></highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1ab34b7b5941e6636f1c08f615cbb072ef" kindref="member">mNumVertices</ref>;</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"></highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1aeed22ee6963b79548f3877b3c905518e" kindref="member">mNumFaces</ref>;</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/>*<ref refid="structai_mesh_1afd4588abb3e1c72821ae0234a3850662" kindref="member">mVertices</ref>;</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/>*<ref refid="structai_mesh_1aec81b496b4d93838cef038933dabe9b9" kindref="member">mNormals</ref>;</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/>*<ref refid="structai_mesh_1af367ff78bd69f3e83d7edc8ad67dc5df" kindref="member">mTangents</ref>;</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/>*<ref refid="structai_mesh_1ab2a81bfe1731f01271ebab274a8f01c4" kindref="member">mBitangents</ref>;</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_color4t" kindref="compound">aiColor4D</ref><sp/>*<ref refid="structai_mesh_1ad9215f67bd0c2277b10775a8adb66b96" kindref="member">mColors</ref>[<ref refid="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" kindref="member">AI_MAX_NUMBER_OF_COLOR_SETS</ref>];</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"></highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/>*<ref refid="structai_mesh_1a4a50b11d00ef50f419c75cab0f6bddd6" kindref="member">mTextureCoords</ref>[<ref refid="mesh_8h_1a335874c5058c7f1e866eb953bf192258" kindref="member">AI_MAX_NUMBER_OF_TEXTURECOORDS</ref>];</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_string" kindref="compound">aiString</ref><sp/><ref refid="structai_mesh_1a3b12274d6529425fed4603fe7c6553c5" kindref="member">mTextureCoordsNames</ref>[<ref refid="mesh_8h_1a335874c5058c7f1e866eb953bf192258" kindref="member">AI_MAX_NUMBER_OF_TEXTURECOORDS</ref>];</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"></highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a635c631a6e66d32989d6b25b2a892d86" kindref="member">mNumUVComponents</ref>[<ref refid="mesh_8h_1a335874c5058c7f1e866eb953bf192258" kindref="member">AI_MAX_NUMBER_OF_TEXTURECOORDS</ref>];</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_face" kindref="compound">aiFace</ref><sp/>*<ref refid="structai_mesh_1a5a65fbc7fdea7f8d36f39047425ece07" kindref="member">mFaces</ref>;</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a0f9d5425b6300e32a842a94f943fd79e" kindref="member">mNumBones</ref>;</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_bone" kindref="compound">aiBone</ref><sp/>**<ref refid="structai_mesh_1a0c0582a7f45b340b6a33552c53232539" kindref="member">mBones</ref>;</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1aa2807c7ba172115203ed16047ad65f9e" kindref="member">mMaterialIndex</ref>;</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_string" kindref="compound">aiString</ref><sp/><ref refid="structai_mesh_1a8dd9433e0c5b008e3e5aee6c801d3b74" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"></highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a1692a300222b32348ae51779df4a697e" kindref="member">mNumAnimMeshes</ref>;</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"></highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_anim_mesh" kindref="compound">aiAnimMesh</ref><sp/>**<ref refid="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" kindref="member">mAnimMeshes</ref>;</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"></highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a3a6c8c5f1d6543bfdd930f6b07467665" kindref="member">mMethod</ref>;</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"></highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_a_a_b_b" kindref="compound">aiAABB</ref><sp/><ref refid="structai_mesh_1ade5815b8f019a930e31b3824e867010d" kindref="member">mAABB</ref>;</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"></highlight></codeline>
+<codeline lineno="748"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="749"><highlight class="normal"></highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1ac2ee585398e4edea4e839708c4729be1" kindref="member">aiMesh</ref>()<sp/><ref refid="defs_8h_1ae032f18edd69bf6ba935ef9feb025a96" kindref="member">AI_NO_EXCEPT</ref></highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structai_mesh_1a99d66ac0a444068c1b252b30265cbf53" kindref="member">mPrimitiveTypes</ref>(0),</highlight></codeline>
+<codeline lineno="753"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1ab34b7b5941e6636f1c08f615cbb072ef" kindref="member">mNumVertices</ref>(0),</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1aeed22ee6963b79548f3877b3c905518e" kindref="member">mNumFaces</ref>(0),</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1afd4588abb3e1c72821ae0234a3850662" kindref="member">mVertices</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1aec81b496b4d93838cef038933dabe9b9" kindref="member">mNormals</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1af367ff78bd69f3e83d7edc8ad67dc5df" kindref="member">mTangents</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1ab2a81bfe1731f01271ebab274a8f01c4" kindref="member">mBitangents</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1ad9215f67bd0c2277b10775a8adb66b96" kindref="member">mColors</ref>(),</highlight></codeline>
+<codeline lineno="760"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1a4a50b11d00ef50f419c75cab0f6bddd6" kindref="member">mTextureCoords</ref>(),</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1a635c631a6e66d32989d6b25b2a892d86" kindref="member">mNumUVComponents</ref>(),</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1a5a65fbc7fdea7f8d36f39047425ece07" kindref="member">mFaces</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1a0f9d5425b6300e32a842a94f943fd79e" kindref="member">mNumBones</ref>(0),</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1a0c0582a7f45b340b6a33552c53232539" kindref="member">mBones</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1aa2807c7ba172115203ed16047ad65f9e" kindref="member">mMaterialIndex</ref>(0),</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1a1692a300222b32348ae51779df4a697e" kindref="member">mNumAnimMeshes</ref>(0),</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" kindref="member">mAnimMeshes</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1a3a6c8c5f1d6543bfdd930f6b07467665" kindref="member">mMethod</ref>(0),</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1ade5815b8f019a930e31b3824e867010d" kindref="member">mAABB</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>0;<sp/>a<sp/>&lt;<sp/><ref refid="mesh_8h_1a335874c5058c7f1e866eb953bf192258" kindref="member">AI_MAX_NUMBER_OF_TEXTURECOORDS</ref>;<sp/>++a)<sp/>{</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1a635c631a6e66d32989d6b25b2a892d86" kindref="member">mNumUVComponents</ref>[a]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1a4a50b11d00ef50f419c75cab0f6bddd6" kindref="member">mTextureCoords</ref>[a]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"></highlight></codeline>
+<codeline lineno="775"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>0;<sp/>a<sp/>&lt;<sp/><ref refid="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" kindref="member">AI_MAX_NUMBER_OF_COLOR_SETS</ref>;<sp/>++a)<sp/>{</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1ad9215f67bd0c2277b10775a8adb66b96" kindref="member">mColors</ref>[a]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="777"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="778"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="779"><highlight class="normal"></highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_mesh_1a55d1eea2210bf95d2871d50fb48765d9" kindref="member">~aiMesh</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_mesh_1afd4588abb3e1c72821ae0234a3850662" kindref="member">mVertices</ref>;</highlight></codeline>
+<codeline lineno="783"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_mesh_1aec81b496b4d93838cef038933dabe9b9" kindref="member">mNormals</ref>;</highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_mesh_1af367ff78bd69f3e83d7edc8ad67dc5df" kindref="member">mTangents</ref>;</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_mesh_1ab2a81bfe1731f01271ebab274a8f01c4" kindref="member">mBitangents</ref>;</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>0;<sp/>a<sp/>&lt;<sp/><ref refid="mesh_8h_1a335874c5058c7f1e866eb953bf192258" kindref="member">AI_MAX_NUMBER_OF_TEXTURECOORDS</ref>;<sp/>a++)<sp/>{</highlight></codeline>
+<codeline lineno="787"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_mesh_1a4a50b11d00ef50f419c75cab0f6bddd6" kindref="member">mTextureCoords</ref>[a];</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="789"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>0;<sp/>a<sp/>&lt;<sp/><ref refid="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" kindref="member">AI_MAX_NUMBER_OF_COLOR_SETS</ref>;<sp/>a++)<sp/>{</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_mesh_1ad9215f67bd0c2277b10775a8adb66b96" kindref="member">mColors</ref>[a];</highlight></codeline>
+<codeline lineno="791"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="792"><highlight class="normal"></highlight></codeline>
+<codeline lineno="793"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DO<sp/>NOT<sp/>REMOVE<sp/>THIS<sp/>ADDITIONAL<sp/>CHECK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="794"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structai_mesh_1a0f9d5425b6300e32a842a94f943fd79e" kindref="member">mNumBones</ref><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1a0c0582a7f45b340b6a33552c53232539" kindref="member">mBones</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>0;<sp/>a<sp/>&lt;<sp/><ref refid="structai_mesh_1a0f9d5425b6300e32a842a94f943fd79e" kindref="member">mNumBones</ref>;<sp/>a++)<sp/>{</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structai_mesh_1a0c0582a7f45b340b6a33552c53232539" kindref="member">mBones</ref>[a])<sp/>{</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a0c0582a7f45b340b6a33552c53232539" kindref="member">mBones</ref>[a];</highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_mesh_1a0c0582a7f45b340b6a33552c53232539" kindref="member">mBones</ref>;</highlight></codeline>
+<codeline lineno="801"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"></highlight></codeline>
+<codeline lineno="803"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structai_mesh_1a1692a300222b32348ae51779df4a697e" kindref="member">mNumAnimMeshes</ref><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" kindref="member">mAnimMeshes</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="804"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>0;<sp/>a<sp/>&lt;<sp/><ref refid="structai_mesh_1a1692a300222b32348ae51779df4a697e" kindref="member">mNumAnimMeshes</ref>;<sp/>a++)<sp/>{</highlight></codeline>
+<codeline lineno="805"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" kindref="member">mAnimMeshes</ref>[a];</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" kindref="member">mAnimMeshes</ref>;</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="809"><highlight class="normal"></highlight></codeline>
+<codeline lineno="810"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_mesh_1a5a65fbc7fdea7f8d36f39047425ece07" kindref="member">mFaces</ref>;</highlight></codeline>
+<codeline lineno="811"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="812"><highlight class="normal"></highlight></codeline>
+<codeline lineno="815"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a3a07e281142ceac4a1f636314fc5f9f1" kindref="member">HasPositions</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1afd4588abb3e1c72821ae0234a3850662" kindref="member">mVertices</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1ab34b7b5941e6636f1c08f615cbb072ef" kindref="member">mNumVertices</ref><sp/>&gt;<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="816"><highlight class="normal"></highlight></codeline>
+<codeline lineno="819"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a810edb0359e685a75ccaac29270fcfc5" kindref="member">HasFaces</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a5a65fbc7fdea7f8d36f39047425ece07" kindref="member">mFaces</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1aeed22ee6963b79548f3877b3c905518e" kindref="member">mNumFaces</ref><sp/>&gt;<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="820"><highlight class="normal"></highlight></codeline>
+<codeline lineno="822"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a2ca636de7d398b10a398a11694677ca7" kindref="member">HasNormals</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1aec81b496b4d93838cef038933dabe9b9" kindref="member">mNormals</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1ab34b7b5941e6636f1c08f615cbb072ef" kindref="member">mNumVertices</ref><sp/>&gt;<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="823"><highlight class="normal"></highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a426391f10eec53e34e339ad9c1cee5a2" kindref="member">HasTangentsAndBitangents</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1af367ff78bd69f3e83d7edc8ad67dc5df" kindref="member">mTangents</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1ab2a81bfe1731f01271ebab274a8f01c4" kindref="member">mBitangents</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1ab34b7b5941e6636f1c08f615cbb072ef" kindref="member">mNumVertices</ref><sp/>&gt;<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="829"><highlight class="normal"></highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1ace464320471c7580605357a11b18bf26" kindref="member">HasVertexColors</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pIndex)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="833"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pIndex<sp/>&gt;=<sp/><ref refid="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" kindref="member">AI_MAX_NUMBER_OF_COLOR_SETS</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="835"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1ad9215f67bd0c2277b10775a8adb66b96" kindref="member">mColors</ref>[pIndex]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1ab34b7b5941e6636f1c08f615cbb072ef" kindref="member">mNumVertices</ref><sp/>&gt;<sp/>0;</highlight></codeline>
+<codeline lineno="837"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="838"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="839"><highlight class="normal"></highlight></codeline>
+<codeline lineno="842"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a7b3638c5bf31308289e70fe61412c7d7" kindref="member">HasTextureCoords</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pIndex)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="843"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pIndex<sp/>&gt;=<sp/><ref refid="mesh_8h_1a335874c5058c7f1e866eb953bf192258" kindref="member">AI_MAX_NUMBER_OF_TEXTURECOORDS</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a4a50b11d00ef50f419c75cab0f6bddd6" kindref="member">mTextureCoords</ref>[pIndex]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1ab34b7b5941e6636f1c08f615cbb072ef" kindref="member">mNumVertices</ref><sp/>&gt;<sp/>0;</highlight></codeline>
+<codeline lineno="847"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="849"><highlight class="normal"></highlight></codeline>
+<codeline lineno="851"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1af13fa7a34088f210a5104840f6a9053a" kindref="member">GetNumUVChannels</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n(0);</highlight></codeline>
+<codeline lineno="853"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(n<sp/>&lt;<sp/><ref refid="mesh_8h_1a335874c5058c7f1e866eb953bf192258" kindref="member">AI_MAX_NUMBER_OF_TEXTURECOORDS</ref><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1a4a50b11d00ef50f419c75cab0f6bddd6" kindref="member">mTextureCoords</ref>[n])<sp/>{</highlight></codeline>
+<codeline lineno="854"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++n;</highlight></codeline>
+<codeline lineno="855"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="856"><highlight class="normal"></highlight></codeline>
+<codeline lineno="857"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>n;</highlight></codeline>
+<codeline lineno="858"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="859"><highlight class="normal"></highlight></codeline>
+<codeline lineno="861"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1ab89f4466bbd4173320fdf610c4814f95" kindref="member">GetNumColorChannels</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="862"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n(0);</highlight></codeline>
+<codeline lineno="863"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(n<sp/>&lt;<sp/><ref refid="mesh_8h_1a74ea1282873ac4b111b48d2380c26bdc" kindref="member">AI_MAX_NUMBER_OF_COLOR_SETS</ref><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1ad9215f67bd0c2277b10775a8adb66b96" kindref="member">mColors</ref>[n])<sp/>{</highlight></codeline>
+<codeline lineno="864"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++n;</highlight></codeline>
+<codeline lineno="865"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="866"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>n;</highlight></codeline>
+<codeline lineno="867"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="868"><highlight class="normal"></highlight></codeline>
+<codeline lineno="870"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a00985c20d66c0ae4aec74b865c9420f5" kindref="member">HasBones</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="871"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_mesh_1a0c0582a7f45b340b6a33552c53232539" kindref="member">mBones</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="structai_mesh_1a0f9d5425b6300e32a842a94f943fd79e" kindref="member">mNumBones</ref><sp/>&gt;<sp/>0;</highlight></codeline>
+<codeline lineno="872"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="873"><highlight class="normal"></highlight></codeline>
+<codeline lineno="874"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="875"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="876"><highlight class="normal"></highlight></codeline>
+<codeline lineno="877"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="878"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="879"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="880"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AI_MESH_H_INC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/mesh.h"/>
+  </compounddef>
+</doxygen>

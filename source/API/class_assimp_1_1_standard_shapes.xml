@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_standard_shapes" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::StandardShapes</compoundname>
+    <includes local="no">StandardShapes.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1a6cac633d8da21113c11841f5a61cebc7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::StandardShapes::StandardShapes</definition>
+        <argsstring>()</argsstring>
+        <name>StandardShapes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="69" column="5" bodyfile="include/assimp/StandardShapes.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1a58254efd440415bd6834c123460ae7b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::StandardShapes::MakeCircle</definition>
+        <argsstring>(ai_real radius, unsigned int tess, std::vector&lt; aiVector3D &gt; &amp;positions)</argsstring>
+        <name>MakeCircle</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>tess</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+<para>Generates a flat circle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The circle is constructed in the planned formed by the x,z axes of the cartesian coordinate system.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radius of the circle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of segments. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives output triangles. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="200" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1a416eaf5e29defb29cc9260049bb71dbc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::StandardShapes::MakeCone</definition>
+        <argsstring>(ai_real height, ai_real radius1, ai_real radius2, unsigned int tess, std::vector&lt; aiVector3D &gt; &amp;positions, bool bOpen=false)</argsstring>
+        <name>MakeCone</name>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>radius1</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>radius2</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>tess</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOpen</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Generates a cone or a cylinder, either open or closed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>|-----|<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;-<sp/>radius<sp/>1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>__x__<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;-<sp/>]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>^</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>/<sp/><sp/><sp/><sp/><sp/>\<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>height<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>/<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Y</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>/<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/>/<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">/______x______\<sp/><sp/><sp/>&lt;-<sp/>]<sp/>&lt;-<sp/>end<sp/>cap</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|-------------|<sp/><sp/><sp/>&lt;-<sp/>radius<sp/>2</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of the cone </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First radius </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second radius </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of triangles. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bOpened</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true for an open cone/cylinder. An open shape has no &apos;end caps&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives output triangles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="185" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1acf01013d5503685a07e169c364f2930f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int Assimp::StandardShapes::MakeDodecahedron</definition>
+        <argsstring>(std::vector&lt; aiVector3D &gt; &amp;positions, bool polygons=false)</argsstring>
+        <name>MakeDodecahedron</name>
+        <param>
+          <type>std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>polygons</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Generates a dodecahedron. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives output triangles </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>polygons</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If you pass true here pentagons will be returned </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of vertices per face </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="123" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1a0b650e395fdab041d561dbea624e219d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int Assimp::StandardShapes::MakeHexahedron</definition>
+        <argsstring>(std::vector&lt; aiVector3D &gt; &amp;positions, bool polygons=false)</argsstring>
+        <name>MakeHexahedron</name>
+        <param>
+          <type>std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>polygons</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Generates a hexahedron (cube) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Hexahedrons can be scaled on all axes. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives output triangles. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>polygons</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If you pass true here quads will be returned </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of vertices per face </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="102" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1a824621a9e76b3fae1edcfcd964046c32" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int Assimp::StandardShapes::MakeIcosahedron</definition>
+        <argsstring>(std::vector&lt; aiVector3D &gt; &amp;positions)</argsstring>
+        <name>MakeIcosahedron</name>
+        <param>
+          <type>std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+<para>Generates an icosahedron. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives output triangles. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of vertices per face </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="112" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1a90679447d14b87f33d8fbb64a07a6d1c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+        <definition>static aiMesh* Assimp::StandardShapes::MakeMesh</definition>
+        <argsstring>(const std::vector&lt; aiVector3D &gt; &amp;positions, unsigned int numIndices)</argsstring>
+        <name>MakeMesh</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>numIndices</declname>
+        </param>
+        <briefdescription>
+<para>Generates a mesh from an array of vertex positions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of vertex positions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numIndices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of indices per primitive </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Output mesh </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="81" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1a24152aea38226f58810354a98ed5dd1f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+        <definition>static aiMesh* Assimp::StandardShapes::MakeMesh</definition>
+        <argsstring>(unsigned int n, void(*GenerateFunc)(unsigned int, std::vector&lt; aiVector3D &gt; &amp;))</argsstring>
+        <name>MakeMesh</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>void(*)(unsigned int, std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;)</type>
+          <declname>GenerateFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="91" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1ac900a0ea1ee9a68be30c9efb7039b7d0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+        <definition>static aiMesh* Assimp::StandardShapes::MakeMesh</definition>
+        <argsstring>(unsigned int(*GenerateFunc)(std::vector&lt; aiVector3D &gt; &amp;))</argsstring>
+        <name>MakeMesh</name>
+        <param>
+          <type>unsigned int(*)(std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;)</type>
+          <declname>GenerateFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="85" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1a2f91c9122e813202363105249d1c9594" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+        <definition>static aiMesh* Assimp::StandardShapes::MakeMesh</definition>
+        <argsstring>(unsigned int(*GenerateFunc)(std::vector&lt; aiVector3D &gt; &amp;, bool))</argsstring>
+        <name>MakeMesh</name>
+        <param>
+          <type>unsigned int(*)(std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;, bool)</type>
+          <declname>GenerateFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="88" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1ac4d1eb309982e64b4677b94415879c34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int Assimp::StandardShapes::MakeOctahedron</definition>
+        <argsstring>(std::vector&lt; aiVector3D &gt; &amp;positions)</argsstring>
+        <name>MakeOctahedron</name>
+        <param>
+          <type>std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+<para>Generates an octahedron. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives output triangles. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of vertices per face </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="134" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1afdb18b4c02f60a7cab2db5a5a53f7599" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::StandardShapes::MakeSphere</definition>
+        <argsstring>(unsigned int tess, std::vector&lt; aiVector3D &gt; &amp;positions)</argsstring>
+        <name>MakeSphere</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>tess</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+<para>Generates a sphere. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of subdivions - 0 generates a octahedron </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives output triangles. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="155" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_standard_shapes_1abad174d8949a58da6c28193fc4c6c35e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int Assimp::StandardShapes::MakeTetrahedron</definition>
+        <argsstring>(std::vector&lt; aiVector3D &gt; &amp;positions)</argsstring>
+        <name>MakeTetrahedron</name>
+        <param>
+          <type>std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+<para>Generates a tetrahedron. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives output triangles. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of vertices per face </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StandardShapes.h" line="144" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper class to generate vertex buffers for standard geometric shapes, such as cylinders, cones, boxes, spheres, elipsoids ... </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/StandardShapes.h" line="66" column="1" bodyfile="include/assimp/StandardShapes.h" bodystart="67" bodyend="203"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_standard_shapes_1a58254efd440415bd6834c123460ae7b4" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeCircle</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1a416eaf5e29defb29cc9260049bb71dbc" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeCone</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1acf01013d5503685a07e169c364f2930f" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeDodecahedron</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1a0b650e395fdab041d561dbea624e219d" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeHexahedron</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1a824621a9e76b3fae1edcfcd964046c32" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeIcosahedron</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1a90679447d14b87f33d8fbb64a07a6d1c" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeMesh</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1ac900a0ea1ee9a68be30c9efb7039b7d0" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeMesh</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1a2f91c9122e813202363105249d1c9594" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeMesh</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1a24152aea38226f58810354a98ed5dd1f" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeMesh</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1ac4d1eb309982e64b4677b94415879c34" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeOctahedron</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1afdb18b4c02f60a7cab2db5a5a53f7599" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeSphere</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1abad174d8949a58da6c28193fc4c6c35e" prot="public" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>MakeTetrahedron</name></member>
+      <member refid="class_assimp_1_1_standard_shapes_1a6cac633d8da21113c11841f5a61cebc7" prot="private" virt="non-virtual"><scope>Assimp::StandardShapes</scope><name>StandardShapes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

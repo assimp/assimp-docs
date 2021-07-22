@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_profiling_1_1_profiler" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::Profiling::Profiler</compoundname>
+    <includes local="no">Profiler.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_assimp_1_1_profiling_1_1_profiler_1a8eb0cc855601dcbdf8a33a8125d27ea1" prot="private" static="no">
+        <type>std::map&lt; std::string, std::chrono::time_point&lt; std::chrono::system_clock &gt; &gt;</type>
+        <definition>typedef std::map&lt;std::string,std::chrono::time_point&lt;std::chrono::system_clock&gt; &gt; Assimp::Profiling::Profiler::RegionMap</definition>
+        <argsstring></argsstring>
+        <name>RegionMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Profiler.h" line="95" column="22" bodyfile="include/assimp/Profiler.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_profiling_1_1_profiler_1a8d1b7c279a2ef9ffe5d14e2118a2926a" prot="private" static="no" mutable="no">
+        <type>RegionMap</type>
+        <definition>RegionMap Assimp::Profiling::Profiler::regions</definition>
+        <argsstring></argsstring>
+        <name>regions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Profiler.h" line="96" column="15" bodyfile="include/assimp/Profiler.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_profiling_1_1_profiler_1a45e182494822c3c276f0508c23405d94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Profiling::Profiler::BeginRegion</definition>
+        <argsstring>(const std::string &amp;region)</argsstring>
+        <name>BeginRegion</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+<para>Start a named timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Profiler.h" line="77" column="10" bodyfile="include/assimp/Profiler.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_profiling_1_1_profiler_1a67ae536cfdd0844c67486243707d93f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Profiling::Profiler::EndRegion</definition>
+        <argsstring>(const std::string &amp;region)</argsstring>
+        <name>EndRegion</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+<para>End a specific named timer and write its end time to the log. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Profiler.h" line="84" column="10" bodyfile="include/assimp/Profiler.h" bodystart="84" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_profiling_1_1_profiler_1a6995b89263e75fc268b34c8419d4e5cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::Profiling::Profiler::Profiler</definition>
+        <argsstring>()</argsstring>
+        <name>Profiler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Profiler.h" line="71" column="5" bodyfile="include/assimp/Profiler.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple wrapper around boost::timer to simplify reporting. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Timings are automatically dumped to the log file. </para>
+    </detaileddescription>
+    <location file="include/assimp/Profiler.h" line="69" column="1" bodyfile="include/assimp/Profiler.h" bodystart="69" bodyend="97"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_profiling_1_1_profiler_1a45e182494822c3c276f0508c23405d94" prot="public" virt="non-virtual"><scope>Assimp::Profiling::Profiler</scope><name>BeginRegion</name></member>
+      <member refid="class_assimp_1_1_profiling_1_1_profiler_1a67ae536cfdd0844c67486243707d93f5" prot="public" virt="non-virtual"><scope>Assimp::Profiling::Profiler</scope><name>EndRegion</name></member>
+      <member refid="class_assimp_1_1_profiling_1_1_profiler_1a6995b89263e75fc268b34c8419d4e5cd" prot="public" virt="non-virtual"><scope>Assimp::Profiling::Profiler</scope><name>Profiler</name></member>
+      <member refid="class_assimp_1_1_profiling_1_1_profiler_1a8eb0cc855601dcbdf8a33a8125d27ea1" prot="private" virt="non-virtual"><scope>Assimp::Profiling::Profiler</scope><name>RegionMap</name></member>
+      <member refid="class_assimp_1_1_profiling_1_1_profiler_1a8d1b7c279a2ef9ffe5d14e2118a2926a" prot="private" virt="non-virtual"><scope>Assimp::Profiling::Profiler</scope><name>regions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

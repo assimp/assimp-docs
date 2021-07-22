@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_default_i_o_system" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::DefaultIOSystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOSystem</basecompoundref>
+    <includes local="no">DefaultIOSystem.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1aa164cf18562082effde576752377bea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::DefaultIOSystem::Close</definition>
+        <argsstring>(IOStream *pFile)</argsstring>
+        <name>Close</name>
+        <param>
+          <type>IOStream *</type>
+          <declname>pFile</declname>
+        </param>
+        <briefdescription>
+<para>Closes the given file and releases all resources associated with it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOSystem.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1aebbe6ef57635f1b34fae766970ca00dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::DefaultIOSystem::ComparePaths</definition>
+        <argsstring>(const char *one, const char *second) const</argsstring>
+        <name>ComparePaths</name>
+        <param>
+          <type>const char *</type>
+          <declname>one</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>second</declname>
+        </param>
+        <briefdescription>
+<para>Compare two paths. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOSystem.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1a1f25fcf17ac1767b47222880c462154f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::DefaultIOSystem::Exists</definition>
+        <argsstring>(const char *pFile) const</argsstring>
+        <name>Exists</name>
+        <param>
+          <type>const char *</type>
+          <declname>pFile</declname>
+        </param>
+        <briefdescription>
+<para>Tests for the existence of a file at the given path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOSystem.h" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1ae43cac8c1a6fba14322ee165a528a11d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char Assimp::DefaultIOSystem::getOsSeparator</definition>
+        <argsstring>() const</argsstring>
+        <name>getOsSeparator</name>
+        <briefdescription>
+<para>Returns the directory separator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOSystem.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1a9c8da3d63312f47b2dec83ec90aa2c4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IOStream *</type>
+        <definition>IOStream* Assimp::DefaultIOSystem::Open</definition>
+        <argsstring>(const char *pFile, const char *pMode=&quot;rb&quot;)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>const char *</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pMode</declname>
+          <defval>&quot;rb&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Open a new file with a given path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOSystem.h" line="70" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1af95ec2cff042a580082d463613cfe407" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Assimp::DefaultIOSystem::absolutePath</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>absolutePath</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>get the path of a full filepath example: /tmp/archive.tar.gz -&gt; /tmp/ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOSystem.h" line="93" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1afa9e12ddf8f7aa1a33935309b917a142" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Assimp::DefaultIOSystem::completeBaseName</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>completeBaseName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>get the complete base name of a full filepath example: /tmp/archive.tar.gz -&gt; archive.tar </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOSystem.h" line="88" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_system_1aa01ea34e60ed8a3920979b5b4e2927ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Assimp::DefaultIOSystem::fileName</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>fileName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>get the file name of a full filepath example: /tmp/archive.tar.gz -&gt; archive.tar.gz </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOSystem.h" line="83" column="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Default implementation of IOSystem using the standard C file functions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/DefaultIOSystem.h" line="58" column="1" bodyfile="include/assimp/DefaultIOSystem.h" bodystart="58" bodyend="94"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_default_i_o_system_1af95ec2cff042a580082d463613cfe407" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>absolutePath</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1aa164cf18562082effde576752377bea3" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>Close</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1aebbe6ef57635f1b34fae766970ca00dc" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>ComparePaths</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1afa9e12ddf8f7aa1a33935309b917a142" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>completeBaseName</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1a1f25fcf17ac1767b47222880c462154f" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>Exists</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1aa01ea34e60ed8a3920979b5b4e2927ee" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>fileName</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1ae43cac8c1a6fba14322ee165a528a11d" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>getOsSeparator</name></member>
+      <member refid="class_assimp_1_1_default_i_o_system_1a9c8da3d63312f47b2dec83ec90aa2c4d" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOSystem</scope><name>Open</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

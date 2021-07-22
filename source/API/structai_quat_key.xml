@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_quat_key" kind="struct" language="C++" prot="public">
     <compoundname>aiQuatKey</compoundname>
     <includes local="no">anim.h</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="128" column="1" bodyfile="include/assimp/anim.h" bodystart="128" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="128" column="26" bodyfile="include/assimp/anim.h" bodystart="128" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -25,12 +25,13 @@
         <argsstring></argsstring>
         <name>mTime</name>
         <briefdescription>
-<para>The time of this key. </para>        </briefdescription>
+<para>The time of this key. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="112" column="1" bodyfile="include/assimp/anim.h" bodystart="112" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="112" column="12" bodyfile="include/assimp/anim.h" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_quat_key_1a08bf706065137951fd89c5914bb5a2aa" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="quaternion_8h_1a90332e4974fbd571493e0f9b3b5ce707" kindref="member">aiQuaternion</ref></type>
@@ -38,12 +39,13 @@
         <argsstring></argsstring>
         <name>mValue</name>
         <briefdescription>
-<para>The value of this key. </para>        </briefdescription>
+<para>The value of this key. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="115" column="1" bodyfile="include/assimp/anim.h" bodystart="115" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="115" column="27" bodyfile="include/assimp/anim.h" bodystart="115" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -58,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="118" column="1" bodyfile="include/assimp/anim.h" bodystart="118" bodyend="122"/>
+        <location file="include/assimp/anim.h" line="118" column="5" bodyfile="include/assimp/anim.h" bodystart="118" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="structai_quat_key_1a74df2186e9f4b3824f558efabe40ade0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -74,12 +76,13 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Construction from a given time and key value. </para>        </briefdescription>
+<para>Construction from a given time and key value. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="125" column="1" bodyfile="include/assimp/anim.h" bodystart="125" bodyend="126"/>
+        <location file="include/assimp/anim.h" line="125" column="5" bodyfile="include/assimp/anim.h" bodystart="125" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="structai_quat_key_1a057b24b9ca9459ac523d81bff2f6ea2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -96,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="134" column="1" bodyfile="include/assimp/anim.h" bodystart="134" bodyend="136"/>
+        <location file="include/assimp/anim.h" line="134" column="10" bodyfile="include/assimp/anim.h" bodystart="134" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="structai_quat_key_1afa2d0cc41c7b5e5cbb333196e32596c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -113,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="139" column="1" bodyfile="include/assimp/anim.h" bodystart="139" bodyend="141"/>
+        <location file="include/assimp/anim.h" line="139" column="5" bodyfile="include/assimp/anim.h" bodystart="139" bodyend="141"/>
       </memberdef>
       <memberdef kind="function" id="structai_quat_key_1a6005cb8ab38f4a186583fb4d99aea1a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -130,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="131" column="1" bodyfile="include/assimp/anim.h" bodystart="131" bodyend="133"/>
+        <location file="include/assimp/anim.h" line="131" column="10" bodyfile="include/assimp/anim.h" bodystart="131" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="structai_quat_key_1a4ecb9428e0b42894d7bdef9c6a8a3941" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -147,22 +150,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="142" column="1" bodyfile="include/assimp/anim.h" bodystart="142" bodyend="144"/>
+        <location file="include/assimp/anim.h" line="142" column="10" bodyfile="include/assimp/anim.h" bodystart="142" bodyend="144"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>A time-value pair specifying a rotation for the given time. </para>    </briefdescription>
+<para>A time-value pair specifying a rotation for the given time. </para>
+    </briefdescription>
     <detaileddescription>
-<para>Rotations are expressed with quaternions. </para>    </detaileddescription>
+<para>Rotations are expressed with quaternions. </para>
+    </detaileddescription>
     <collaborationgraph>
-      <node id="122">
+      <node id="1">
         <label>aiQuatKey</label>
         <link refid="structai_quat_key"/>
-        <childnode refid="123" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>mValue</edgelabel>
         </childnode>
       </node>
-      <node id="123">
+      <node id="2">
         <label>aiQuaterniont&lt; TReal &gt;</label>
         <link refid="classai_quaterniont"/>
       </node>

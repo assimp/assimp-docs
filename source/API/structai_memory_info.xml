@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_memory_info" kind="struct" language="C++" prot="public">
     <compoundname>aiMemoryInfo</compoundname>
     <includes local="no">types.h</includes>
@@ -10,12 +10,13 @@
         <argsstring></argsstring>
         <name>animations</name>
         <briefdescription>
-<para>Storage allocated for animation data. </para>        </briefdescription>
+<para>Storage allocated for animation data. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="514" column="1" bodyfile="include/assimp/types.h" bodystart="514" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="514" column="18" bodyfile="include/assimp/types.h" bodystart="514" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1a3ddd36d7eabcf989ab72cda2dd3ff015" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -23,12 +24,13 @@
         <argsstring></argsstring>
         <name>cameras</name>
         <briefdescription>
-<para>Storage allocated for camera data. </para>        </briefdescription>
+<para>Storage allocated for camera data. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="517" column="1" bodyfile="include/assimp/types.h" bodystart="517" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="517" column="18" bodyfile="include/assimp/types.h" bodystart="517" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1afcd2ccdfab49e2fce989413a362b8d35" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -36,12 +38,13 @@
         <argsstring></argsstring>
         <name>lights</name>
         <briefdescription>
-<para>Storage allocated for light data. </para>        </briefdescription>
+<para>Storage allocated for light data. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="520" column="1" bodyfile="include/assimp/types.h" bodystart="520" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="520" column="18" bodyfile="include/assimp/types.h" bodystart="520" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1a08b2ccd0cef8dec36e47fc1beeb168f1" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -49,12 +52,14 @@
         <argsstring></argsstring>
         <name>materials</name>
         <briefdescription>
-<para>Storage allocated for material data. </para>        </briefdescription>
+<para>Storage allocated for material data <linebreak/>
+ </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="505" column="1" bodyfile="include/assimp/types.h" bodystart="505" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="505" column="18" bodyfile="include/assimp/types.h" bodystart="505" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1ac24ed2b3c141f043765b6e34783d1e24" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -62,12 +67,13 @@
         <argsstring></argsstring>
         <name>meshes</name>
         <briefdescription>
-<para>Storage allocated for mesh data. </para>        </briefdescription>
+<para>Storage allocated for mesh data. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="508" column="1" bodyfile="include/assimp/types.h" bodystart="508" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="508" column="18" bodyfile="include/assimp/types.h" bodystart="508" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1a5a084942c81a29f7bb03c9903430b033" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -75,12 +81,13 @@
         <argsstring></argsstring>
         <name>nodes</name>
         <briefdescription>
-<para>Storage allocated for node data. </para>        </briefdescription>
+<para>Storage allocated for node data. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="511" column="1" bodyfile="include/assimp/types.h" bodystart="511" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="511" column="18" bodyfile="include/assimp/types.h" bodystart="511" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1a32817d13f0e280777e49769f8c46f168" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -88,12 +95,13 @@
         <argsstring></argsstring>
         <name>textures</name>
         <briefdescription>
-<para>Storage allocated for texture data. </para>        </briefdescription>
+<para>Storage allocated for texture data. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="502" column="1" bodyfile="include/assimp/types.h" bodystart="502" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="502" column="18" bodyfile="include/assimp/types.h" bodystart="502" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_memory_info_1a590739a4cef4876901d1cf6ff48f01b3" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -101,12 +109,13 @@
         <argsstring></argsstring>
         <name>total</name>
         <briefdescription>
-<para>Total storage allocated for the full import. </para>        </briefdescription>
+<para>Total storage allocated for the full import. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="523" column="1" bodyfile="include/assimp/types.h" bodystart="523" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="523" column="18" bodyfile="include/assimp/types.h" bodystart="523" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -116,19 +125,23 @@
         <argsstring>() AI_NO_EXCEPT</argsstring>
         <name>aiMemoryInfo</name>
         <briefdescription>
-<para>Default constructor. </para>        </briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="489" column="1" bodyfile="include/assimp/types.h" bodystart="489" bodyend="497"/>
+        <location file="include/assimp/types.h" line="489" column="5" bodyfile="include/assimp/types.h" bodystart="489" bodyend="497"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Stores the memory requirements for different components (e.g. </para>    </briefdescription>
+<para>Stores the memory requirements for different components (e.g. </para>
+    </briefdescription>
     <detaileddescription>
-<para>meshes, materials, animations) of an import. All sizes are in bytes. <simplesect kind="see"><para>Importer::GetMemoryRequirements() </para></simplesect>
-</para>    </detaileddescription>
+<para>meshes, materials, animations) of an import. All sizes are in bytes. <simplesect kind="see"><para>Importer::GetMemoryRequirements() </para>
+</simplesect>
+</para>
+    </detaileddescription>
     <location file="include/assimp/types.h" line="485" column="1" bodyfile="include/assimp/types.h" bodystart="485" bodyend="524"/>
     <listofallmembers>
       <member refid="structai_memory_info_1ac33db49ed124ee37e8aa6da6ade03140" prot="public" virt="non-virtual"><scope>aiMemoryInfo</scope><name>aiMemoryInfo</name></member>

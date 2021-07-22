@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_spatial_sort" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::SpatialSort</compoundname>
+    <includes local="no">SpatialSort.h</includes>
+    <innerclass refid="struct_assimp_1_1_spatial_sort_1_1_entry" prot="protected">Assimp::SpatialSort::Entry</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_spatial_sort_1ac74b71cbd72f9868e5cd273b13a92244" prot="protected" static="no" mutable="no">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>aiVector3D Assimp::SpatialSort::mPlaneNormal</definition>
+        <argsstring></argsstring>
+        <name>mPlaneNormal</name>
+        <briefdescription>
+<para>Normal of the sorting plane, normalized. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The center is always at (0, 0, 0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SpatialSort.h" line="146" column="16" bodyfile="include/assimp/SpatialSort.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_spatial_sort_1a64c6051c20d31e1cf0482bc83168eb4b" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_assimp_1_1_spatial_sort_1_1_entry" kindref="compound">Entry</ref> &gt;</type>
+        <definition>std::vector&lt;Entry&gt; Assimp::SpatialSort::mPositions</definition>
+        <argsstring></argsstring>
+        <name>mPositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SpatialSort.h" line="170" column="17" bodyfile="include/assimp/SpatialSort.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_spatial_sort_1a1d61761820e4e7f589787501b1812166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SpatialSort::Append</definition>
+        <argsstring>(const aiVector3D *pPositions, unsigned int pNumPositions, unsigned int pElementOffset, bool pFinalize=true)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
+          <declname>pPositions</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pNumPositions</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pElementOffset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>pFinalize</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Same as <ref refid="class_assimp_1_1_spatial_sort_1a02504936066bee7dacea509132312314" kindref="member">Fill()</ref>, except the method appends to existing data in the <ref refid="class_assimp_1_1_spatial_sort_1ada2af73e6981e6dc277ac0044dc5364c" kindref="member">SpatialSort</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SpatialSort.h" line="102" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_spatial_sort_1a02504936066bee7dacea509132312314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SpatialSort::Fill</definition>
+        <argsstring>(const aiVector3D *pPositions, unsigned int pNumPositions, unsigned int pElementOffset, bool pFinalize=true)</argsstring>
+        <name>Fill</name>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
+          <declname>pPositions</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pNumPositions</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pElementOffset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>pFinalize</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Sets the input data for the <ref refid="class_assimp_1_1_spatial_sort" kindref="compound">SpatialSort</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This replaces existing data, if any. The new data receives new indices in ascending order.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pPositions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the first position vector of the array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pNumPositions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vectors to expect in that array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pElementOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset in bytes from the beginning of one vector in memory to the beginning of the next vector. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pFinalize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies whether the <ref refid="class_assimp_1_1_spatial_sort" kindref="compound">SpatialSort</ref>&apos;s internal representation is finalized after the new data has been added. Finalization is required in order to use #FindPosition() or <ref refid="class_assimp_1_1_spatial_sort_1a336c947f044df7ec093f636cb5b55a88" kindref="member">GenerateMappingTable()</ref>. If you don&apos;t finalize yet, you can use <ref refid="class_assimp_1_1_spatial_sort_1a1d61761820e4e7f589787501b1812166" kindref="member">Append()</ref> to add data from other sources. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SpatialSort.h" line="96" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_spatial_sort_1a150e2c0457fb55a6c621e75a42e70d5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SpatialSort::Finalize</definition>
+        <argsstring>()</argsstring>
+        <name>Finalize</name>
+        <briefdescription>
+<para>Finalize the spatial hash data structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be useful after multiple calls to <ref refid="class_assimp_1_1_spatial_sort_1a1d61761820e4e7f589787501b1812166" kindref="member">Append()</ref> with the pFinalize parameter set to false. This is finally required before one of <ref refid="class_assimp_1_1_spatial_sort_1a3a92120bbf54cc73feced00822bb877e" kindref="member">FindPositions()</ref> and <ref refid="class_assimp_1_1_spatial_sort_1a336c947f044df7ec093f636cb5b55a88" kindref="member">GenerateMappingTable()</ref> can be called to query the spatial sort. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SpatialSort.h" line="111" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_spatial_sort_1a1c6461ed4e8fc4304b0c59d6fbd16548" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SpatialSort::FindIdenticalPositions</definition>
+        <argsstring>(const aiVector3D &amp;pPosition, std::vector&lt; unsigned int &gt; &amp;poResults) const</argsstring>
+        <name>FindIdenticalPositions</name>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &amp;</type>
+          <declname>pPosition</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned int &gt; &amp;</type>
+          <declname>poResults</declname>
+        </param>
+        <briefdescription>
+<para>Fills an array with indices of all positions identical to the given position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In opposite to <ref refid="class_assimp_1_1_spatial_sort_1a3a92120bbf54cc73feced00822bb877e" kindref="member">FindPositions()</ref>, not an epsilon is used but a (very low) tolerance of four floating-point units. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position to look for vertices. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poResults</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The container to store the indices of the found positions. Will be emptied by the call so it may contain anything. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SpatialSort.h" line="130" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_spatial_sort_1a3a92120bbf54cc73feced00822bb877e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SpatialSort::FindPositions</definition>
+        <argsstring>(const aiVector3D &amp;pPosition, ai_real pRadius, std::vector&lt; unsigned int &gt; &amp;poResults) const</argsstring>
+        <name>FindPositions</name>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &amp;</type>
+          <declname>pPosition</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>pRadius</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned int &gt; &amp;</type>
+          <declname>poResults</declname>
+        </param>
+        <briefdescription>
+<para>Returns an iterator for all positions close to the given position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position to look for vertices. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximal distance from the position a vertex may have to be counted in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poResults</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The container to store the indices of the found positions. Will be emptied by the call so it may contain anything. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An iterator to iterate over all vertices in the given area. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SpatialSort.h" line="120" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_spatial_sort_1a336c947f044df7ec093f636cb5b55a88" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::SpatialSort::GenerateMappingTable</definition>
+        <argsstring>(std::vector&lt; unsigned int &gt; &amp;fill, ai_real pRadius) const</argsstring>
+        <name>GenerateMappingTable</name>
+        <param>
+          <type>std::vector&lt; unsigned int &gt; &amp;</type>
+          <declname>fill</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>pRadius</declname>
+        </param>
+        <briefdescription>
+<para>Compute a table that maps each vertex ID referring to a spatially close enough position to the same output ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Output IDs are assigned in ascending order from 0...n. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fill</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Will be filled with numPositions entries. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximal distance from the position a vertex may have to be counted in. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of unique vertices (n). <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SpatialSort.h" line="141" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_spatial_sort_1ada2af73e6981e6dc277ac0044dc5364c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SpatialSort::SpatialSort</definition>
+        <argsstring>()</argsstring>
+        <name>SpatialSort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SpatialSort.h" line="67" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_spatial_sort_1ab0fe4861c242d53237891bf50b6455a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SpatialSort::SpatialSort</definition>
+        <argsstring>(const aiVector3D *pPositions, unsigned int pNumPositions, unsigned int pElementOffset)</argsstring>
+        <name>SpatialSort</name>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> *</type>
+          <declname>pPositions</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pNumPositions</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pElementOffset</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a spatially sorted representation from the given position array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Supply the positions in its layout in memory, the class will only refer to them by index. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pPositions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the first position vector of the array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pNumPositions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vectors to expect in that array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pElementOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset in bytes from the beginning of one vector in memory to the beginning of the next vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SpatialSort.h" line="77" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_spatial_sort_1a78a54017e7f8957a4e7736aba3599567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SpatialSort::~SpatialSort</definition>
+        <argsstring>()</argsstring>
+        <name>~SpatialSort</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SpatialSort.h" line="81" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A little helper class to quickly find all vertices in the epsilon environment of a given position. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Construct an instance with an array of positions. The class stores the given positions by their indices and sorts them by their distance to an arbitrary chosen plane. You can then query the instance for all vertices close to a given position in an average O(log n) time, with O(n) worst case complexity when all vertices lay on the plane. The plane is chosen so that it avoids common planes in usual data sets. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>aiVector3t&lt; ai_real &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+      <node id="1">
+        <label>Assimp::SpatialSort</label>
+        <link refid="class_assimp_1_1_spatial_sort"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mPlaneNormal</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/SpatialSort.h" line="65" column="1" bodyfile="include/assimp/SpatialSort.h" bodystart="65" bodyend="171"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_spatial_sort_1a1d61761820e4e7f589787501b1812166" prot="public" virt="non-virtual"><scope>Assimp::SpatialSort</scope><name>Append</name></member>
+      <member refid="class_assimp_1_1_spatial_sort_1a02504936066bee7dacea509132312314" prot="public" virt="non-virtual"><scope>Assimp::SpatialSort</scope><name>Fill</name></member>
+      <member refid="class_assimp_1_1_spatial_sort_1a150e2c0457fb55a6c621e75a42e70d5b" prot="public" virt="non-virtual"><scope>Assimp::SpatialSort</scope><name>Finalize</name></member>
+      <member refid="class_assimp_1_1_spatial_sort_1a1c6461ed4e8fc4304b0c59d6fbd16548" prot="public" virt="non-virtual"><scope>Assimp::SpatialSort</scope><name>FindIdenticalPositions</name></member>
+      <member refid="class_assimp_1_1_spatial_sort_1a3a92120bbf54cc73feced00822bb877e" prot="public" virt="non-virtual"><scope>Assimp::SpatialSort</scope><name>FindPositions</name></member>
+      <member refid="class_assimp_1_1_spatial_sort_1a336c947f044df7ec093f636cb5b55a88" prot="public" virt="non-virtual"><scope>Assimp::SpatialSort</scope><name>GenerateMappingTable</name></member>
+      <member refid="class_assimp_1_1_spatial_sort_1ac74b71cbd72f9868e5cd273b13a92244" prot="protected" virt="non-virtual"><scope>Assimp::SpatialSort</scope><name>mPlaneNormal</name></member>
+      <member refid="class_assimp_1_1_spatial_sort_1a64c6051c20d31e1cf0482bc83168eb4b" prot="protected" virt="non-virtual"><scope>Assimp::SpatialSort</scope><name>mPositions</name></member>
+      <member refid="class_assimp_1_1_spatial_sort_1ada2af73e6981e6dc277ac0044dc5364c" prot="public" virt="non-virtual"><scope>Assimp::SpatialSort</scope><name>SpatialSort</name></member>
+      <member refid="class_assimp_1_1_spatial_sort_1ab0fe4861c242d53237891bf50b6455a1" prot="public" virt="non-virtual"><scope>Assimp::SpatialSort</scope><name>SpatialSort</name></member>
+      <member refid="class_assimp_1_1_spatial_sort_1a78a54017e7f8957a4e7736aba3599567" prot="public" virt="non-virtual"><scope>Assimp::SpatialSort</scope><name>~SpatialSort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

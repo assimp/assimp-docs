@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="texture_8h" kind="file" language="C++">
+    <compoundname>texture.h</compoundname>
+    <includes refid="types_8h" local="no">assimp/types.h</includes>
+    <includes refid="pushpack1_8h" local="yes">./Compiler/pushpack1.h</includes>
+    <includes refid="poppack1_8h" local="yes">./Compiler/poppack1.h</includes>
+    <includedby refid="scene_8h" local="no">scene.h</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>assimp/matrix4x4.h</label>
+        <link refid="matrix4x4_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>assimp/vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>./Compiler/pushpack1.h</label>
+        <link refid="pushpack1_8h"/>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>assimp/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>assimp/matrix3x3.h</label>
+        <link refid="matrix3x3_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+      <node id="7">
+        <label>sys/types.h</label>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+      <node id="16">
+        <label>assimp/quaternion.h</label>
+        <link refid="quaternion_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>new</label>
+      </node>
+      <node id="1">
+        <label>texture.h</label>
+        <link refid="texture_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>assimp/color4.h</label>
+        <link refid="color4_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>assimp/vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>cstring</label>
+      </node>
+      <node id="21">
+        <label>./Compiler/poppack1.h</label>
+        <link refid="poppack1_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>texture.h</label>
+        <link refid="texture_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structai_texel" prot="public">aiTexel</innerclass>
+    <innerclass refid="structai_texture" prot="public">aiTexture</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="texture_8h_1aa056be36fec55bdf46b5ad017a327803" prot="public" static="no">
+        <name>AI_EMBEDDED_TEXNAME_PREFIX</name>
+        <initializer>&quot;*&quot;</initializer>
+        <briefdescription>
+<para><ref refid="texture_8h_1ad04e3d073878fd1df67378e7909c5d63" kindref="member">AI_MAKE_EMBEDDED_TEXNAME</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/texture.h" line="70" column="12" bodyfile="include/assimp/texture.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="texture_8h_1ad04e3d073878fd1df67378e7909c5d63" prot="public" static="no">
+        <name>AI_MAKE_EMBEDDED_TEXNAME</name>
+        <param><defname>_n_</defname></param>
+        <initializer><ref refid="texture_8h_1aa056be36fec55bdf46b5ad017a327803" kindref="member">AI_EMBEDDED_TEXNAME_PREFIX</ref> # _n_</initializer>
+        <briefdescription>
+<para>Used to build the reserved path name used by the material system to reference textures that are embedded into their corresponding model files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The parameter specifies the index of the texture (zero-based, in the <ref refid="structai_scene_1a0fd0d29fbc439e3715b4975ccb68d2d3" kindref="member">aiScene::mTextures</ref> array) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/texture.h" line="80" column="12" bodyfile="include/assimp/texture.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="texture_8h_1a75817b311160730ec7263d75ab7b2fba" prot="public" static="no">
+        <name>AI_TEXTURE_H_INC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/texture.h" line="52" column="9" bodyfile="include/assimp/texture.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="texture_8h_1a45f24ec98ff3440bf8a1d781f8445379" prot="public" static="no">
+        <name>HINTMAXTEXTURELEN</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/texture.h" line="119" column="9" bodyfile="include/assimp/texture.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="texture_8h_1a5ecf045419c6dab991df65b2895bd6a7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structai_texel" kindref="compound">aiTexel</ref></type>
+        <definition>struct aiTexel PACK_STRUCT</definition>
+        <argsstring></argsstring>
+        <name>PACK_STRUCT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/texture.h" line="115" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines texture helper structures for the library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Used for file formats which embed their textures into the model file. Supported are both normal textures, which are stored as uncompressed pixels, and &quot;compressed&quot; textures, which are stored in a file format such as PNG or TGA. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_TEXTURE_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_TEXTURE_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>pragma<sp/>GCC<sp/>system_header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="types_8h" kindref="compound">assimp/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_EMBEDDED_TEXNAME_PREFIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AI_EMBEDDED_TEXNAME_PREFIX<sp/><sp/><sp/>&quot;*&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(!defined<sp/>AI_MAKE_EMBEDDED_TEXNAME)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>AI_MAKE_EMBEDDED_TEXNAME(_n_)<sp/>AI_EMBEDDED_TEXNAME_PREFIX<sp/>#<sp/>_n_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pushpack1_8h" kindref="compound">./Compiler/pushpack1.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="90" refid="structai_texel" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_texel" kindref="compound">aiTexel</ref><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structai_texel_1a5b4f97f69cf59cb9065af67389599ba6" kindref="member">b</ref>,<ref refid="structai_texel_1a41da3516b8241165e4ca58ea8ed68fe6" kindref="member">g</ref>,<ref refid="structai_texel_1ae9408c0d18f6ff597715cc626398a0ff" kindref="member">r</ref>,<ref refid="structai_texel_1a6d4450e83b02b29d24f7aab27958034e" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_texel_1ad3700d772be56f81fa096d3d9adef59c" kindref="member">operator== </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_texel" kindref="compound">aiTexel</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="96"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_texel_1a5b4f97f69cf59cb9065af67389599ba6" kindref="member">b</ref><sp/>==<sp/>other.<ref refid="structai_texel_1a5b4f97f69cf59cb9065af67389599ba6" kindref="member">b</ref><sp/>&amp;&amp;<sp/><ref refid="structai_texel_1ae9408c0d18f6ff597715cc626398a0ff" kindref="member">r</ref><sp/>==<sp/>other.<ref refid="structai_texel_1ae9408c0d18f6ff597715cc626398a0ff" kindref="member">r</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_texel_1a41da3516b8241165e4ca58ea8ed68fe6" kindref="member">g</ref><sp/>==<sp/>other.<ref refid="structai_texel_1a41da3516b8241165e4ca58ea8ed68fe6" kindref="member">g</ref><sp/>&amp;&amp;<sp/><ref refid="structai_texel_1a6d4450e83b02b29d24f7aab27958034e" kindref="member">a</ref><sp/>==<sp/>other.<ref refid="structai_texel_1a6d4450e83b02b29d24f7aab27958034e" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_texel_1a6fad25de1e47a75d5e69ea9ff8009ac1" kindref="member">operator!= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_texel" kindref="compound">aiTexel</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="103"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structai_texel_1a5b4f97f69cf59cb9065af67389599ba6" kindref="member">b</ref><sp/>!=<sp/>other.<ref refid="structai_texel_1a5b4f97f69cf59cb9065af67389599ba6" kindref="member">b</ref><sp/>||<sp/><ref refid="structai_texel_1ae9408c0d18f6ff597715cc626398a0ff" kindref="member">r</ref><sp/>!=<sp/>other.<ref refid="structai_texel_1ae9408c0d18f6ff597715cc626398a0ff" kindref="member">r</ref><sp/>||</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_texel_1a41da3516b8241165e4ca58ea8ed68fe6" kindref="member">g</ref><sp/>!=<sp/>other.<ref refid="structai_texel_1a41da3516b8241165e4ca58ea8ed68fe6" kindref="member">g</ref><sp/>||<sp/><ref refid="structai_texel_1a6d4450e83b02b29d24f7aab27958034e" kindref="member">a</ref><sp/>!=<sp/>other.<ref refid="structai_texel_1a6d4450e83b02b29d24f7aab27958034e" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/><ref refid="color4_8h_1a4badb8c19633de8f741ba2089ab79189" kindref="member">aiColor4D</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="110"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="color4_8h_1a4badb8c19633de8f741ba2089ab79189" kindref="member">aiColor4D</ref>(<ref refid="structai_texel_1ae9408c0d18f6ff597715cc626398a0ff" kindref="member">r</ref>/255.f,<ref refid="structai_texel_1a41da3516b8241165e4ca58ea8ed68fe6" kindref="member">g</ref>/255.f,<ref refid="structai_texel_1a5b4f97f69cf59cb9065af67389599ba6" kindref="member">b</ref>/255.f,<ref refid="structai_texel_1a6d4450e83b02b29d24f7aab27958034e" kindref="member">a</ref>/255.f);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}<sp/><ref refid="texture_8h_1a5ecf045419c6dab991df65b2895bd6a7" kindref="member">PACK_STRUCT</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="poppack1_8h" kindref="compound">./Compiler/poppack1.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HINTMAXTEXTURELEN<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="135" refid="structai_texture" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_texture" kindref="compound">aiTexture</ref><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_texture_1aaa3ad8cfe44fdc4dea2db91977d92234" kindref="member">mWidth</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_texture_1ac1e2fa6f1f646e9c55e3985d4418a752" kindref="member">mHeight</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structai_texture_1ac01ce5b148494a2d7278c29f6fcd0b0e" kindref="member">achFormatHint</ref>[<sp/><ref refid="texture_8h_1a45f24ec98ff3440bf8a1d781f8445379" kindref="member">HINTMAXTEXTURELEN</ref><sp/>];</highlight><highlight class="comment">//<sp/>8<sp/>for<sp/>string<sp/>+<sp/>1<sp/>for<sp/>terminator.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_texel" kindref="compound">aiTexel</ref>*<sp/><ref refid="structai_texture_1aeb07528748b6e49d2d81c60006024f9a" kindref="member">pcData</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_string" kindref="compound">aiString</ref><sp/><ref refid="structai_texture_1a59dc57f450aef6e2d54d052130ed0ec3" kindref="member">mFilename</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structai_texture_1a2083cf844008a8238c2fbbd2797f0d20" kindref="member">CheckFormat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>s)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>==<sp/>s)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>==<sp/>::strncmp(<ref refid="structai_texture_1ac01ce5b148494a2d7278c29f6fcd0b0e" kindref="member">achFormatHint</ref>,<sp/>s,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structai_texture_1ac01ce5b148494a2d7278c29f6fcd0b0e" kindref="member">achFormatHint</ref>)));</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Construction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_texture_1a4a46100b813458b5fdbca8e85117de01" kindref="member">aiTexture</ref>()<sp/><ref refid="defs_8h_1ae032f18edd69bf6ba935ef9feb025a96" kindref="member">AI_NO_EXCEPT</ref></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="structai_texture_1aaa3ad8cfe44fdc4dea2db91977d92234" kindref="member">mWidth</ref>(0)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="structai_texture_1ac1e2fa6f1f646e9c55e3985d4418a752" kindref="member">mHeight</ref>(0)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="structai_texture_1aeb07528748b6e49d2d81c60006024f9a" kindref="member">pcData</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="structai_texture_1a59dc57f450aef6e2d54d052130ed0ec3" kindref="member">mFilename</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(<ref refid="structai_texture_1ac01ce5b148494a2d7278c29f6fcd0b0e" kindref="member">achFormatHint</ref>,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structai_texture_1ac01ce5b148494a2d7278c29f6fcd0b0e" kindref="member">achFormatHint</ref>));</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Destruction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_texture_1a4890306b77f90844989f74e6d37e86e6" kindref="member">~aiTexture</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="structai_texture_1aeb07528748b6e49d2d81c60006024f9a" kindref="member">pcData</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AI_TEXTURE_H_INC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/texture.h"/>
+  </compounddef>
+</doxygen>

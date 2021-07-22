@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="importerdesc_8h" kind="file" language="C++">
+    <compoundname>importerdesc.h</compoundname>
+    <includes refid="types_8h" local="no">assimp/types.h</includes>
+    <includedby refid="cimport_8h" local="no">cimport.h</includedby>
+    <includedby refid="_default_i_o_stream_8h" local="no">DefaultIOStream.h</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>assimp/matrix4x4.h</label>
+        <link refid="matrix4x4_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>assimp/vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>importerdesc.h</label>
+        <link refid="importerdesc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>assimp/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>assimp/matrix3x3.h</label>
+        <link refid="matrix3x3_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+      <node id="7">
+        <label>sys/types.h</label>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+      <node id="16">
+        <label>assimp/quaternion.h</label>
+        <link refid="quaternion_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>new</label>
+      </node>
+      <node id="13">
+        <label>assimp/color4.h</label>
+        <link refid="color4_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>assimp/vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>BaseImporter.h</label>
+        <link refid="_base_importer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>importerdesc.h</label>
+        <link refid="importerdesc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>LogAux.h</label>
+        <link refid="_log_aux_8h"/>
+      </node>
+      <node id="10">
+        <label>LineSplitter.h</label>
+        <link refid="_line_splitter_8h"/>
+      </node>
+      <node id="9">
+        <label>StreamReader.h</label>
+        <link refid="_stream_reader_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>DefaultIOStream.h</label>
+        <link refid="_default_i_o_stream_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Exceptional.h</label>
+        <link refid="_exceptional_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cimport.h</label>
+        <link refid="cimport_8h"/>
+      </node>
+      <node id="7">
+        <label>fast_atof.h</label>
+        <link refid="fast__atof_8h"/>
+      </node>
+      <node id="6">
+        <label>XmlParser.h</label>
+        <link refid="_xml_parser_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structai_importer_desc" prot="public">aiImporterDesc</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="importerdesc_8h_1ace56c61d92c8f89d1bb82b393b73da81" prot="public" static="no">
+        <name>AI_IMPORTER_DESC_H_INC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="47" column="9" bodyfile="include/assimp/importerdesc.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449" prot="public" static="no" strong="no">
+        <type></type>
+        <name>aiImporterFlags</name>
+        <enumvalue id="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449a022e8627161639e2362da3ca7fff2c01" prot="public">
+          <name>aiImporterFlags_SupportTextFlavour</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+<para>Indicates that there is a textual encoding of the file format; and that it is supported. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449aa098d1efe9961ac268b8f40c85404bfc" prot="public">
+          <name>aiImporterFlags_SupportBinaryFlavour</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+<para>Indicates that there is a binary encoding of the file format; and that it is supported. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449a96b161d2bff39018f1bc626ec0bb5f5d" prot="public">
+          <name>aiImporterFlags_SupportCompressedFlavour</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+<para>Indicates that there is a compressed encoding of the file format; and that it is supported. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449a6344b2d4487c5894e20cf06e807e127f" prot="public">
+          <name>aiImporterFlags_LimitedSupport</name>
+          <initializer>= 0x8</initializer>
+          <briefdescription>
+<para>Indicates that the importer reads only a very particular subset of the file format. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This happens commonly for declarative or procedural formats which cannot easily be mapped to <ref refid="structai_scene" kindref="compound">aiScene</ref> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449aff5af9356317719908b4dee9b50588f3" prot="public">
+          <name>aiImporterFlags_Experimental</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+<para>Indicates that the importer is highly experimental and should be used with care. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This only happens for trunk (i.e. SVN) versions, experimental code is not included in releases. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Mixed set of flags for <ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref>, indicating some features common to many importers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="61" column="1" bodyfile="include/assimp/importerdesc.h" bodystart="61" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="importerdesc_8h_1a386ceeb900d23c080961e42a422e45bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> const <ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref> *</type>
+        <definition>ASSIMP_API const C_STRUCT aiImporterDesc* aiGetImporterDesc</definition>
+        <argsstring>(const char *extension)</argsstring>
+        <name>aiGetImporterDesc</name>
+        <param>
+          <type>const char *</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+<para>Returns the Importer description for a given extension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Will return a nullptr if no assigned importer desc. was found for the given extension <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>extension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] The extension to look for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer showing to the ImporterDesc, </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/importerdesc.h" line="148" column="42" declfile="include/assimp/importerdesc.h" declline="148" declcolumn="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449" kindref="member">aiImporterFlags</ref>, <ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref> implementation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_IMPORTER_DESC_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_IMPORTER_DESC_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>pragma<sp/>GCC<sp/>system_header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="types_8h" kindref="compound">assimp/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449" kindref="member">aiImporterFlags</ref><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449a022e8627161639e2362da3ca7fff2c01" kindref="member">aiImporterFlags_SupportTextFlavour</ref><sp/>=<sp/>0x1,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449aa098d1efe9961ac268b8f40c85404bfc" kindref="member">aiImporterFlags_SupportBinaryFlavour</ref><sp/>=<sp/>0x2,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449a96b161d2bff39018f1bc626ec0bb5f5d" kindref="member">aiImporterFlags_SupportCompressedFlavour</ref><sp/>=<sp/>0x4,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449a6344b2d4487c5894e20cf06e807e127f" kindref="member">aiImporterFlags_LimitedSupport</ref><sp/>=<sp/>0x8,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="importerdesc_8h_1a3c78e1208ecbd75fecdbb4e38d820449aff5af9356317719908b4dee9b50588f3" kindref="member">aiImporterFlags_Experimental</ref><sp/>=<sp/>0x10</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="structai_importer_desc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structai_importer_desc_1a2a9d5fd818c01bba1a0a782722ab9495" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structai_importer_desc_1a8e050453324b1e855701c7c082c1b24b" kindref="member">mAuthor</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structai_importer_desc_1a53bf0ecb36ce0b97018b4b6bd2748f02" kindref="member">mMaintainer</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structai_importer_desc_1a2d8ad562f6c18ee9e8bfdb2da4871118" kindref="member">mComments</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_importer_desc_1a9939db58b9f95a537f9f5a749524b6b2" kindref="member">mFlags</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_importer_desc_1aee34d348f522807f0a36607664e92a57" kindref="member">mMinMajor</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_importer_desc_1adb265dee32c6533234c45638df66ddab" kindref="member">mMinMinor</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_importer_desc_1a9d33eac3be20f7f4630f838a228ada63" kindref="member">mMaxMajor</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structai_importer_desc_1ae4c60eec7020af836b23537148f47f83" kindref="member">mMaxMinor</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structai_importer_desc_1a074bd688ffd15d7f4df32e794111a413" kindref="member">mFileExtensions</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_importer_desc" kindref="compound">aiImporterDesc</ref><sp/>*<ref refid="importerdesc_8h_1a386ceeb900d23c080961e42a422e45bc" kindref="member">aiGetImporterDesc</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*extension);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>extern<sp/>&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AI_IMPORTER_DESC_H_INC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/importerdesc.h"/>
+  </compounddef>
+</doxygen>

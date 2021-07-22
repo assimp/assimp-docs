@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_s_g_spatial_sort" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::SGSpatialSort</compoundname>
+    <includes local="no">SGSpatialSort.h</includes>
+    <innerclass refid="struct_assimp_1_1_s_g_spatial_sort_1_1_entry" prot="protected">Assimp::SGSpatialSort::Entry</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_s_g_spatial_sort_1a8b804cf9b91af01eedebca7d878cd3df" prot="protected" static="no" mutable="no">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>aiVector3D Assimp::SGSpatialSort::mPlaneNormal</definition>
+        <argsstring></argsstring>
+        <name>mPlaneNormal</name>
+        <briefdescription>
+<para>Normal of the sorting plane, normalized. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The center is always at (0, 0, 0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="115" column="16" bodyfile="include/assimp/SGSpatialSort.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_s_g_spatial_sort_1ae259b68b3d5d1161dcf2d9d71e605cd4" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_assimp_1_1_s_g_spatial_sort_1_1_entry" kindref="compound">Entry</ref> &gt;</type>
+        <definition>std::vector&lt;Entry&gt; Assimp::SGSpatialSort::mPositions</definition>
+        <argsstring></argsstring>
+        <name>mPositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="150" column="17" bodyfile="include/assimp/SGSpatialSort.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_s_g_spatial_sort_1adfe82e1689fc782166019d8f7f9b35a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SGSpatialSort::Add</definition>
+        <argsstring>(const aiVector3D &amp;vPosition, unsigned int index, unsigned int smoothingGroup)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &amp;</type>
+          <declname>vPosition</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>smoothingGroup</declname>
+        </param>
+        <briefdescription>
+<para>Add a vertex to the spatial sort. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_assimp_1_1_vertex" kindref="compound">Vertex</ref> position to be added </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the vrtex </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>smoothingGroup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SmoothingGroup for this vertex </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="84" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_s_g_spatial_sort_1ab06ebf9fdf866149666dbb5206111e87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SGSpatialSort::FindPositions</definition>
+        <argsstring>(const aiVector3D &amp;pPosition, uint32_t pSG, float pRadius, std::vector&lt; unsigned int &gt; &amp;poResults, bool exactMatch=false) const</argsstring>
+        <name>FindPositions</name>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &amp;</type>
+          <declname>pPosition</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pSG</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pRadius</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned int &gt; &amp;</type>
+          <declname>poResults</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exactMatch</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Returns an iterator for all positions close to the given position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position to look for vertices. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pSG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Only included vertices with at least one shared smooth group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximal distance from the position a vertex may have to be counted in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poResults</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The container to store the indices of the found positions. Will be emptied by the call so it may contain anything. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exactMatch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies whether smoothing groups are bit masks (false) or integral values (true). In the latter case, a vertex cannot belong to more than one smoothing group. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An iterator to iterate over all vertices in the given area. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="109" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_s_g_spatial_sort_1aeccf2ea7b7b5b0e2b3d22ff366c5fc59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SGSpatialSort::Prepare</definition>
+        <argsstring>()</argsstring>
+        <name>Prepare</name>
+        <briefdescription>
+<para>Prepare the spatial sorter for use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This step runs in O(logn) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_s_g_spatial_sort_1a8d4df2d8225cb74e6cd6342fa10da2ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SGSpatialSort::SGSpatialSort</definition>
+        <argsstring>()</argsstring>
+        <name>SGSpatialSort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="70" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_s_g_spatial_sort_1a03c330e8cdf61d8b33e6de8893e235e6" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SGSpatialSort::SGSpatialSort</definition>
+        <argsstring>(const std::vector&lt; aiVector3D &gt; &amp;vPositions)</argsstring>
+        <name>SGSpatialSort</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt; &amp;</type>
+          <declname>vPositions</declname>
+        </param>
+        <briefdescription>
+<para>Construction from a given face array, handling smoothing groups properly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="76" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_s_g_spatial_sort_1afe7e34a71c28f2e66e7d41d3fbaec0ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SGSpatialSort::~SGSpatialSort</definition>
+        <argsstring>()</argsstring>
+        <name>~SGSpatialSort</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="93" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialized version of <ref refid="class_assimp_1_1_spatial_sort" kindref="compound">SpatialSort</ref> to support smoothing groups This is used in by the 3DS, ASE and LWO loaders. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>3DS and ASE share their normal computation code in <ref refid="_smoothing_groups_8inl" kindref="compound">SmoothingGroups.inl</ref>, the LWO loader has its own implementation to handle all details of its file format correctly. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>aiVector3t&lt; ai_real &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+      <node id="1">
+        <label>Assimp::SGSpatialSort</label>
+        <link refid="class_assimp_1_1_s_g_spatial_sort"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mPlaneNormal</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/SGSpatialSort.h" line="66" column="1" bodyfile="include/assimp/SGSpatialSort.h" bodystart="67" bodyend="151"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_s_g_spatial_sort_1adfe82e1689fc782166019d8f7f9b35a5" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort</scope><name>Add</name></member>
+      <member refid="class_assimp_1_1_s_g_spatial_sort_1ab06ebf9fdf866149666dbb5206111e87" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort</scope><name>FindPositions</name></member>
+      <member refid="class_assimp_1_1_s_g_spatial_sort_1a8b804cf9b91af01eedebca7d878cd3df" prot="protected" virt="non-virtual"><scope>Assimp::SGSpatialSort</scope><name>mPlaneNormal</name></member>
+      <member refid="class_assimp_1_1_s_g_spatial_sort_1ae259b68b3d5d1161dcf2d9d71e605cd4" prot="protected" virt="non-virtual"><scope>Assimp::SGSpatialSort</scope><name>mPositions</name></member>
+      <member refid="class_assimp_1_1_s_g_spatial_sort_1aeccf2ea7b7b5b0e2b3d22ff366c5fc59" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort</scope><name>Prepare</name></member>
+      <member refid="class_assimp_1_1_s_g_spatial_sort_1a8d4df2d8225cb74e6cd6342fa10da2ed" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort</scope><name>SGSpatialSort</name></member>
+      <member refid="class_assimp_1_1_s_g_spatial_sort_1a03c330e8cdf61d8b33e6de8893e235e6" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort</scope><name>SGSpatialSort</name></member>
+      <member refid="class_assimp_1_1_s_g_spatial_sort_1afe7e34a71c28f2e66e7d41d3fbaec0ca" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort</scope><name>~SGSpatialSort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

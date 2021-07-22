@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_memory_i_o_stream" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::MemoryIOStream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOStream</basecompoundref>
+    <includes local="no">MemoryIOWrapper.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_memory_i_o_stream_1af95cea690be54b7d762319f47d7d947f" prot="private" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* Assimp::MemoryIOStream::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="146" column="19" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_memory_i_o_stream_1a82e25d4e461ff19996874d256448f7ed" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::MemoryIOStream::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="147" column="12" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_memory_i_o_stream_1af6d7b0b3af1cd363b5193f8b689f60a7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::MemoryIOStream::own</definition>
+        <argsstring></argsstring>
+        <name>own</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="148" column="10" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_memory_i_o_stream_1a0c16ab5d6b875b8be93efd8456b4abbe" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::MemoryIOStream::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="147" column="18" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_stream_1a1f01444c0abd9ccd41da73500226ff45" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::MemoryIOStream::FileSize</definition>
+        <argsstring>() const</argsstring>
+        <name>FileSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="135" column="12" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="135" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_stream_1aae4a10484dbad0604f7663dcaac94055" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::MemoryIOStream::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="141" column="10" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_stream_1af81cb12d71d2870eb5806e02a0ac05c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::MemoryIOStream::MemoryIOStream</definition>
+        <argsstring>(const uint8_t *buff, size_t len, bool own=false)</argsstring>
+        <name>MemoryIOStream</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>own</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="69" column="5" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="69" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_stream_1aa5d0cb047478d3e6f3011286d0c300c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::MemoryIOStream::Read</definition>
+        <argsstring>(void *pvBuffer, size_t pSize, size_t pCount)</argsstring>
+        <name>Read</name>
+        <param>
+          <type>void *</type>
+          <declname>pvBuffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="85" column="12" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="85" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_stream_1af81316ae35d6dd6b09a35a7591c0e96e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn Assimp::MemoryIOStream::Seek</definition>
+        <argsstring>(size_t pOffset, aiOrigin pOrigin)</argsstring>
+        <name>Seek</name>
+        <param>
+          <type>size_t</type>
+          <declname>pOffset</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1ac50fbaa57d78776ca99e42104d9b2786" kindref="member">aiOrigin</ref></type>
+          <declname>pOrigin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="107" column="14" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="107" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_stream_1a065ccd971f8c9ce1dcb23539058c486f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::MemoryIOStream::Tell</definition>
+        <argsstring>() const</argsstring>
+        <name>Tell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="129" column="12" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="129" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_stream_1a9ac5af341c3ed61137313264e1b5f964" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::MemoryIOStream::Write</definition>
+        <argsstring>(const void *, size_t, size_t)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>const void *</type>
+        </param>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type>size_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="100" column="12" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_memory_i_o_stream_1a17e680b230daa91ad9727f4dcda68e44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::MemoryIOStream::~MemoryIOStream</definition>
+        <argsstring>()</argsstring>
+        <name>~MemoryIOStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/MemoryIOWrapper.h" line="77" column="5" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="77" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementation of IOStream to read directly from a memory buffer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/MemoryIOWrapper.h" line="67" column="1" bodyfile="include/assimp/MemoryIOWrapper.h" bodystart="67" bodyend="149"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1af95cea690be54b7d762319f47d7d947f" prot="private" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>buffer</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1a1f01444c0abd9ccd41da73500226ff45" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>FileSize</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1aae4a10484dbad0604f7663dcaac94055" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>Flush</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1a82e25d4e461ff19996874d256448f7ed" prot="private" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>length</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1af81cb12d71d2870eb5806e02a0ac05c4" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>MemoryIOStream</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1af6d7b0b3af1cd363b5193f8b689f60a7" prot="private" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>own</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1a0c16ab5d6b875b8be93efd8456b4abbe" prot="private" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>pos</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1aa5d0cb047478d3e6f3011286d0c300c5" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>Read</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1af81316ae35d6dd6b09a35a7591c0e96e" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>Seek</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1a065ccd971f8c9ce1dcb23539058c486f" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>Tell</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1a9ac5af341c3ed61137313264e1b5f964" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>Write</name></member>
+      <member refid="class_assimp_1_1_memory_i_o_stream_1a17e680b230daa91ad9727f4dcda68e44" prot="public" virt="non-virtual"><scope>Assimp::MemoryIOStream</scope><name>~MemoryIOStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

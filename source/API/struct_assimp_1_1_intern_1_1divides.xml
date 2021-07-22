@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_intern_1_1divides" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::Intern::divides</compoundname>
+    <includes local="no">Vertex.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T0</type>
+      </param>
+      <param>
+        <type>typename T1</type>
+      </param>
+      <param>
+        <type>typename TRES</type>
+        <defval>T0</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_intern_1_1divides_1aee252e8d7a5bf8bab2d5b27eb99a042e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TRES</type>
+        <definition>TRES Assimp::Intern::divides&lt; T0, T1, TRES &gt;::operator()</definition>
+        <argsstring>(const T0 &amp;t0, const T1 &amp;t1) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const T0 &amp;</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="88" column="18" bodyfile="include/assimp/Vertex.h" bodystart="88" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/Vertex.h" line="87" column="26" bodyfile="include/assimp/Vertex.h" bodystart="87" bodyend="91"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_intern_1_1divides_1aee252e8d7a5bf8bab2d5b27eb99a042e" prot="public" virt="non-virtual"><scope>Assimp::Intern::divides</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

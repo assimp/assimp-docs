@@ -1,0 +1,833 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_string_utils_8h" kind="file" language="C++">
+    <compoundname>StringUtils.h</compoundname>
+    <includes refid="defs_8h" local="no">assimp/defs.h</includes>
+    <includes local="no">cstdarg</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">cctype</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">locale</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">iomanip</includes>
+    <includedby refid="fast__atof_8h" local="no">fast_atof.h</includedby>
+    <includedby refid="_parsing_utils_8h" local="no">ParsingUtils.h</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>locale</label>
+      </node>
+      <node id="10">
+        <label>iomanip</label>
+      </node>
+      <node id="1">
+        <label>StringUtils.h</label>
+        <link refid="_string_utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstdarg</label>
+      </node>
+      <node id="3">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="2">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="7">
+        <label>cstdlib</label>
+      </node>
+      <node id="6">
+        <label>cctype</label>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>StringUtils.h</label>
+        <link refid="_string_utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>LineSplitter.h</label>
+        <link refid="_line_splitter_8h"/>
+      </node>
+      <node id="4">
+        <label>IOStreamBuffer.h</label>
+        <link refid="_i_o_stream_buffer_8h"/>
+      </node>
+      <node id="2">
+        <label>fast_atof.h</label>
+        <link refid="fast__atof_8h"/>
+      </node>
+      <node id="3">
+        <label>ParsingUtils.h</label>
+        <link refid="_parsing_utils_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_string_utils_8h_1a601991d1ef362fc516bb5a9198e7a46f" prot="public" static="no">
+        <name>AI_SIZEFMT</name>
+        <initializer>&quot;%zu&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="62" column="10" bodyfile="include/assimp/StringUtils.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_string_utils_8h_1a8e0764864f0da88a7ac0b2c2d14b3cd9" prot="public" static="no">
+        <name>ai_snprintf</name>
+        <initializer>snprintf</initializer>
+        <briefdescription>
+<para>The portable version of the function snprintf ( C99 standard ), which works on visual studio compilers 2013 and earlier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outBuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer to write in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer size </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The additional arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of written characters if the buffer size was big enough. If an encoding error occurs, a negative number is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="104" column="10" bodyfile="include/assimp/StringUtils.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_string_utils_8h_1ace4a7a1a2ebe575cee232be26e1e4c1f" prot="public" static="no">
+        <name>INCLUDED_AI_STRINGUTILS_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="43" column="9" bodyfile="include/assimp/StringUtils.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_string_utils_8h_1abc745719efe55cad81e28875d786266e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> std::string</type>
+        <definition>AI_FORCE_INLINE std::string ai_decimal_to_hexa</definition>
+        <argsstring>(T toConvert)</argsstring>
+        <name>ai_decimal_to_hexa</name>
+        <param>
+          <type>T</type>
+          <declname>toConvert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="153" column="29" bodyfile="include/assimp/StringUtils.h" bodystart="153" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1a1a7d2fc0b3a1a184dea7f928c84beeb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> std::string</type>
+        <definition>AI_FORCE_INLINE std::string ai_rgba2hex</definition>
+        <argsstring>(int r, int g, int b, int a, bool with_head)</argsstring>
+        <name>ai_rgba2hex</name>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>with_head</declname>
+        </param>
+        <briefdescription>
+<para>translate RGBA to String </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aiColor.r </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aiColor.g </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aiColor.b </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aiColor.a </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>with_head</parametername>
+</parameternamelist>
+<parameterdescription>
+<para># </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The hexadecimal string, is empty in case of an error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="175" column="29" bodyfile="include/assimp/StringUtils.h" bodystart="175" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1a5a087ce7a4d31c70223ddf59fe3edec1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> std::string</type>
+        <definition>AI_FORCE_INLINE std::string ai_str_toprintable</definition>
+        <argsstring>(const char *in, int len, char placeholder=&apos;?&apos;)</argsstring>
+        <name>ai_str_toprintable</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>placeholder</declname>
+          <defval>&apos;?&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Make a string printable by replacing all non-printable characters with the specified placeholder character. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The incoming string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the incoming string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>placeholder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Placeholder character, default is a question mark. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string, with all non-printable characters replaced. Will return an empty string if in is null or len is &lt;= 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="274" column="29" bodyfile="include/assimp/StringUtils.h" bodystart="274" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1ac93475a8288137104522606ff477c4db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> std::string</type>
+        <definition>AI_FORCE_INLINE std::string ai_str_toprintable</definition>
+        <argsstring>(const std::string &amp;in, char placeholder=&apos;?&apos;)</argsstring>
+        <name>ai_str_toprintable</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>placeholder</declname>
+          <defval>&apos;?&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Make a string printable by replacing all non-printable characters with the specified placeholder character. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The incoming string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>placeholder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Placeholder character, default is a question mark. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string, with all non-printable characters replaced. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="258" column="29" bodyfile="include/assimp/StringUtils.h" bodystart="258" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1a018a0a035f5a46155edc499f03100131" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> std::string</type>
+        <definition>AI_FORCE_INLINE std::string ai_str_toupper</definition>
+        <argsstring>(const std::string &amp;in)</argsstring>
+        <name>ai_str_toupper</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Performs a ToLower-operation and return the upper-case string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The incoming string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string as uppercase. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="246" column="29" bodyfile="include/assimp/StringUtils.h" bodystart="246" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1afada1be4479aa7b430ef96fc09e08c2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> float</type>
+        <definition>AI_FORCE_INLINE float ai_strtof</definition>
+        <argsstring>(const char *begin, const char *end)</argsstring>
+        <name>ai_strtof</name>
+        <param>
+          <type>const char *</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="130" column="7" bodyfile="include/assimp/StringUtils.h" bodystart="130" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1a0621e8ddd291d29d765a02b4575a3ee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> std::string</type>
+        <definition>AI_FORCE_INLINE std::string ai_to_string</definition>
+        <argsstring>(T value)</argsstring>
+        <name>ai_to_string</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="115" column="29" bodyfile="include/assimp/StringUtils.h" bodystart="115" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1a6c4a4aa407107771391f4a48cc330efa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> char_t</type>
+        <definition>AI_FORCE_INLINE char_t ai_tolower</definition>
+        <argsstring>(char_t in)</argsstring>
+        <name>ai_tolower</name>
+        <param>
+          <type>char_t</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="219" column="24" bodyfile="include/assimp/StringUtils.h" bodystart="219" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1a910ac2392f3a9c5b3747945f7a8347ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> std::string</type>
+        <definition>AI_FORCE_INLINE std::string ai_tolower</definition>
+        <argsstring>(const std::string &amp;in)</argsstring>
+        <name>ai_tolower</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Performs a ToLower-operation and return the lower-case string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The incoming string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string as lowercase. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="228" column="29" bodyfile="include/assimp/StringUtils.h" bodystart="228" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1a55b439ee54bde741cac2be774e3e8f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class char_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> char_t</type>
+        <definition>AI_FORCE_INLINE char_t ai_toupper</definition>
+        <argsstring>(char_t in)</argsstring>
+        <name>ai_toupper</name>
+        <param>
+          <type>char_t</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="238" column="24" bodyfile="include/assimp/StringUtils.h" bodystart="238" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1a52f95a4fa5310644e58c4ad1e7037caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> std::string</type>
+        <definition>AI_FORCE_INLINE std::string ai_trim</definition>
+        <argsstring>(std::string &amp;s)</argsstring>
+        <name>ai_trim</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Performs a trim from both ends (in place). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to trim. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="209" column="29" bodyfile="include/assimp/StringUtils.h" bodystart="209" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1a1c448d6dce27b49ba113901a29fae63b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> void</type>
+        <definition>AI_FORCE_INLINE void ai_trim_left</definition>
+        <argsstring>(std::string &amp;s)</argsstring>
+        <name>ai_trim_left</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Performs a trim from start (in place) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to trim. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="188" column="22" bodyfile="include/assimp/StringUtils.h" bodystart="188" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="_string_utils_8h_1a58d10ea84557848ee4838066f6c4290b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> void</type>
+        <definition>AI_FORCE_INLINE void ai_trim_right</definition>
+        <argsstring>(std::string &amp;s)</argsstring>
+        <name>ai_trim_right</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Performs a trim from end (in place). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to trim. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StringUtils.h" line="199" column="22" bodyfile="include/assimp/StringUtils.h" bodystart="199" bodyend="203"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INCLUDED_AI_STRINGUTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INCLUDED_AI_STRINGUTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>system_header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="defs_8h" kindref="compound">assimp/defs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdarg&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cctype&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;locale&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_SIZEFMT<sp/>&quot;%Iu&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_SIZEFMT<sp/>&quot;%zu&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)<sp/>&amp;&amp;<sp/>_MSC_VER<sp/>&lt;<sp/>1900</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c99_ai_vsnprintf(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*outBuf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="namespace_assimp_1_1_formatter_1a6cf94459cb125ad767209c268d4bbcd4" kindref="member">format</ref>,<sp/>va_list<sp/>ap)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count(-1);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>!=<sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>=<sp/>_vsnprintf_s(outBuf,<sp/>size,<sp/>_TRUNCATE,<sp/><ref refid="namespace_assimp_1_1_formatter_1a6cf94459cb125ad767209c268d4bbcd4" kindref="member">format</ref>,<sp/>ap);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(count<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>=<sp/>_vscprintf(<ref refid="namespace_assimp_1_1_formatter_1a6cf94459cb125ad767209c268d4bbcd4" kindref="member">format</ref>,<sp/>ap);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_string_utils_8h_1a8e0764864f0da88a7ac0b2c2d14b3cd9" kindref="member">ai_snprintf</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*outBuf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="namespace_assimp_1_1_formatter_1a6cf94459cb125ad767209c268d4bbcd4" kindref="member">format</ref>,<sp/>...)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>va_list<sp/>ap;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>va_start(ap,<sp/><ref refid="namespace_assimp_1_1_formatter_1a6cf94459cb125ad767209c268d4bbcd4" kindref="member">format</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>count<sp/>=<sp/>c99_ai_vsnprintf(outBuf,<sp/>size,<sp/><ref refid="namespace_assimp_1_1_formatter_1a6cf94459cb125ad767209c268d4bbcd4" kindref="member">format</ref>,<sp/>ap);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>va_end(ap);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__MINGW32__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ai_snprintf<sp/>__mingw_snprintf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ai_snprintf<sp/>snprintf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/>std::string<sp/><ref refid="_string_utils_8h_1a0621e8ddd291d29d765a02b4575a3ee5" kindref="member">ai_to_string</ref>(T<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>os;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>value;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os.str();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_string_utils_8h_1afada1be4479aa7b430ef96fc09e08c2b" kindref="member">ai_strtof</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*begin,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*end)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>==<sp/>begin)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0f;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val(0.0f);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>==<sp/>end)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(::atof(begin));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string::size_type<sp/>len(end<sp/>-<sp/>begin);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>token(begin,<sp/>len);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(::atof(token.c_str()));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>val;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/>std::string<sp/><ref refid="_string_utils_8h_1abc745719efe55cad81e28875d786266e" kindref="member">ai_decimal_to_hexa</ref>(T<sp/>toConvert)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>result;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>ss;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/>std::hex<sp/>&lt;&lt;<sp/>toConvert;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>ss<sp/>&gt;&gt;<sp/>result;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>result.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result[i]<sp/>=<sp/>(char)toupper((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">)result[i]);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/>std::string<sp/><ref refid="_string_utils_8h_1a1a7d2fc0b3a1a184dea7f928c84beeb5" kindref="member">ai_rgba2hex</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>with_head)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>ss;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(with_head)<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;#&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/>std::hex<sp/>&lt;&lt;<sp/>std::setfill(</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>std::setw(8)<sp/>&lt;&lt;<sp/>(r<sp/>&lt;&lt;<sp/>24<sp/>|<sp/>g<sp/>&lt;&lt;<sp/>16<sp/>|<sp/>b<sp/>&lt;&lt;<sp/>8<sp/>|<sp/>a);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ss.str();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_string_utils_8h_1a1c448d6dce27b49ba113901a29fae63b" kindref="member">ai_trim_left</ref>(std::string<sp/>&amp;s)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>s.erase(s.begin(),<sp/>std::find_if(s.begin(),<sp/>s.end(),<sp/>[](</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>!std::isspace(ch);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}));</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="197"><highlight class="comment"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_string_utils_8h_1a58d10ea84557848ee4838066f6c4290b" kindref="member">ai_trim_right</ref>(std::string<sp/>&amp;s)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>s.erase(std::find_if(s.rbegin(),<sp/>s.rend(),<sp/>[](</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch)<sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>!std::isspace(ch);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}).base(),<sp/>s.end());</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/>std::string<sp/><ref refid="_string_utils_8h_1a52f95a4fa5310644e58c4ad1e7037caf" kindref="member">ai_trim</ref>(std::string<sp/>&amp;s)<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>out(s);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_string_utils_8h_1a1c448d6dce27b49ba113901a29fae63b" kindref="member">ai_trim_left</ref>(out);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_string_utils_8h_1a58d10ea84557848ee4838066f6c4290b" kindref="member">ai_trim_right</ref>(out);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">_t&gt;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/>char_t<sp/><ref refid="_string_utils_8h_1a6c4a4aa407107771391f4a48cc330efa" kindref="member">ai_tolower</ref>(char_t<sp/>in)<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(in<sp/>&gt;=<sp/>(char_t)</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>in<sp/>&lt;=<sp/>(char_t)</highlight><highlight class="charliteral">&apos;Z&apos;</highlight><highlight class="normal">)<sp/>?<sp/>(char_t)(in<sp/>+<sp/>0x20)<sp/>:<sp/>in;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/>std::string<sp/><ref refid="_string_utils_8h_1a6c4a4aa407107771391f4a48cc330efa" kindref="member">ai_tolower</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;in)<sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>out(in);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_string_utils_8h_1a1c448d6dce27b49ba113901a29fae63b" kindref="member">ai_trim_left</ref>(out);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_string_utils_8h_1a58d10ea84557848ee4838066f6c4290b" kindref="member">ai_trim_right</ref>(out);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>std::transform(out.begin(),<sp/>out.end(),<sp/>out.begin(),<sp/>[](</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)<sp/>{<sp/>return<sp/>ai_tolower(c);<sp/>});</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">_t&gt;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/>char_t<sp/><ref refid="_string_utils_8h_1a55b439ee54bde741cac2be774e3e8f9d" kindref="member">ai_toupper</ref>(char_t<sp/>in)<sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(in<sp/>&gt;=<sp/>(char_t)</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>in<sp/>&lt;=<sp/>(char_t)</highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal">)<sp/>?<sp/>(char_t)(in<sp/>-<sp/>0x20)<sp/>:<sp/>in;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/>std::string<sp/><ref refid="_string_utils_8h_1a018a0a035f5a46155edc499f03100131" kindref="member">ai_str_toupper</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;in)<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>out(in);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>std::transform(out.begin(),<sp/>out.end(),<sp/>out.begin(),<sp/>[](</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)<sp/>{<sp/>return<sp/>ai_toupper(c);<sp/>});</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="258"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/>std::string<sp/><ref refid="_string_utils_8h_1ac93475a8288137104522606ff477c4db" kindref="member">ai_str_toprintable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;in,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>placeholder<sp/>=<sp/></highlight><highlight class="charliteral">&apos;?&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>out(in);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>std::transform(out.begin(),<sp/>out.end(),<sp/>out.begin(),<sp/>[placeholder]<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>isprint(c)<sp/>?<sp/>(char)c<sp/>:<sp/><sp/>placeholder;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="274"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/>std::string<sp/><ref refid="_string_utils_8h_1ac93475a8288137104522606ff477c4db" kindref="member">ai_str_toprintable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>placeholder<sp/>=<sp/></highlight><highlight class="charliteral">&apos;?&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(in<sp/>&amp;&amp;<sp/>len<sp/>&gt;<sp/>0)<sp/>?<sp/><ref refid="_string_utils_8h_1ac93475a8288137104522606ff477c4db" kindref="member">ai_str_toprintable</ref>(std::string(in,<sp/>len),<sp/>placeholder)<sp/>:<sp/>std::string();</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>INCLUDED_AI_STRINGUTILS_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/StringUtils.h"/>
+  </compounddef>
+</doxygen>

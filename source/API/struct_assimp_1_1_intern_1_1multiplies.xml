@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_intern_1_1multiplies" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::Intern::multiplies</compoundname>
+    <includes local="no">Vertex.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T0</type>
+      </param>
+      <param>
+        <type>typename T1</type>
+      </param>
+      <param>
+        <type>typename TRES</type>
+        <defval>T0</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_intern_1_1multiplies_1a805f8e99c55899cbda0564a8b38155a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TRES</type>
+        <definition>TRES Assimp::Intern::multiplies&lt; T0, T1, TRES &gt;::operator()</definition>
+        <argsstring>(const T0 &amp;t0, const T1 &amp;t1) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const T0 &amp;</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Vertex.h" line="83" column="18" bodyfile="include/assimp/Vertex.h" bodystart="83" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/Vertex.h" line="82" column="26" bodyfile="include/assimp/Vertex.h" bodystart="82" bodyend="86"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_intern_1_1multiplies_1a805f8e99c55899cbda0564a8b38155a0" prot="public" virt="non-virtual"><scope>Assimp::Intern::multiplies</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

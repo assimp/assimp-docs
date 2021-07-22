@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_s_g_spatial_sort_1_1_entry" kind="struct" language="C++" prot="protected">
+    <compoundname>Assimp::SGSpatialSort::Entry</compoundname>
+    <includes local="no">SGSpatialSort.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1aa416457a5f2e109fd35bd9b86fdc5697" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Assimp::SGSpatialSort::Entry::mDistance</definition>
+        <argsstring></argsstring>
+        <name>mDistance</name>
+        <briefdescription>
+<para>Distance of this vertex to the sorting plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="126" column="15" bodyfile="include/assimp/SGSpatialSort.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1a897b84069035cee0a813a679ae375815" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::SGSpatialSort::Entry::mIndex</definition>
+        <argsstring></argsstring>
+        <name>mIndex</name>
+        <briefdescription>
+<para>The vertex referred by this entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="123" column="22" bodyfile="include/assimp/SGSpatialSort.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1a0980fe98fe23dfeb99ab9ca1c568ca48" prot="public" static="no" mutable="no">
+        <type><ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
+        <definition>aiVector3D Assimp::SGSpatialSort::Entry::mPosition</definition>
+        <argsstring></argsstring>
+        <name>mPosition</name>
+        <briefdescription>
+<para>Position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="124" column="20" bodyfile="include/assimp/SGSpatialSort.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1ad5347532e8daf914342579793fa08dbb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Assimp::SGSpatialSort::Entry::mSmoothGroups</definition>
+        <argsstring></argsstring>
+        <name>mSmoothGroups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="125" column="18" bodyfile="include/assimp/SGSpatialSort.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1a6d1ef3b109852cdf2d8af1a3bb56de6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SGSpatialSort::Entry::Entry</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>Entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="128" column="9" bodyfile="include/assimp/SGSpatialSort.h" bodystart="128" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1a9df0a8d9d8744ac95d829269531b44ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SGSpatialSort::Entry::Entry</definition>
+        <argsstring>(unsigned int pIndex, const aiVector3D &amp;pPosition, float pDistance, uint32_t pSG)</argsstring>
+        <name>Entry</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>pIndex</declname>
+        </param>
+        <param>
+          <type>const <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &amp;</type>
+          <declname>pPosition</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pDistance</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pSG</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="136" column="9" bodyfile="include/assimp/SGSpatialSort.h" bodystart="136" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1a888b45a50c1cab0568279f90c3c29813" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Assimp::SGSpatialSort::Entry::operator&lt;</definition>
+        <argsstring>(const Entry &amp;e) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="struct_assimp_1_1_s_g_spatial_sort_1_1_entry" kindref="compound">Entry</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SGSpatialSort.h" line="144" column="9" bodyfile="include/assimp/SGSpatialSort.h" bodystart="144" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An entry in a spatially sorted position array. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Consists of a vertex index, its position and its pre-calculated distance from the reference plane </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>aiVector3t&lt; ai_real &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+      <node id="1">
+        <label>Assimp::SGSpatialSort::Entry</label>
+        <link refid="struct_assimp_1_1_s_g_spatial_sort_1_1_entry"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mPosition</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/SGSpatialSort.h" line="122" column="5" bodyfile="include/assimp/SGSpatialSort.h" bodystart="122" bodyend="147"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1a6d1ef3b109852cdf2d8af1a3bb56de6c" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort::Entry</scope><name>Entry</name></member>
+      <member refid="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1a9df0a8d9d8744ac95d829269531b44ad" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort::Entry</scope><name>Entry</name></member>
+      <member refid="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1aa416457a5f2e109fd35bd9b86fdc5697" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort::Entry</scope><name>mDistance</name></member>
+      <member refid="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1a897b84069035cee0a813a679ae375815" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort::Entry</scope><name>mIndex</name></member>
+      <member refid="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1a0980fe98fe23dfeb99ab9ca1c568ca48" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort::Entry</scope><name>mPosition</name></member>
+      <member refid="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1ad5347532e8daf914342579793fa08dbb" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort::Entry</scope><name>mSmoothGroups</name></member>
+      <member refid="struct_assimp_1_1_s_g_spatial_sort_1_1_entry_1a888b45a50c1cab0568279f90c3c29813" prot="public" virt="non-virtual"><scope>Assimp::SGSpatialSort::Entry</scope><name>operator&lt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_subdivider" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Assimp::Subdivider</compoundname>
+    <includes local="no">Subdivision.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_assimp_1_1_subdivider_1a5e6b4948d6aaee509e58fb435ad02b9d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Algorithm</name>
+        <enumvalue id="class_assimp_1_1_subdivider_1a5e6b4948d6aaee509e58fb435ad02b9da49e531710b75457f61d43ec900e07e0f" prot="public">
+          <name>CATMULL_CLARKE</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates all supported subvidision algorithms. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Subdivision.h" line="66" column="5" bodyfile="include/assimp/Subdivision.h" bodystart="66" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_subdivider_1a26a77d10069201eb198942c8b7459f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Assimp::Subdivider::Subdivide</definition>
+        <argsstring>(aiMesh **smesh, size_t nmesh, aiMesh **out, unsigned int num, bool discard_input=false)=0</argsstring>
+        <name>Subdivide</name>
+        <param>
+          <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> **</type>
+          <declname>smesh</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nmesh</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> **</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>discard_input</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Subdivide multiple meshes using the selected algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This avoids erroneous smoothing on objects consisting of multiple per-material meshes. Usually, most 3d modellers smooth on a per-object base, regardless the materials assigned to the meshes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>smesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of meshes to be subdivided. Must be in verbose format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nmesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of meshes in smesh. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output meshes. The array must be sufficiently large (at least <computeroutput>nmesh</computeroutput> elements) and may not overlap the input array. Output meshes map one-to-one to their corresponding input meshes. The meshes are allocated by the function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>discard_input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true is passed, input meshes are deleted after the subdivision is complete. This can improve performance because it allows the optimization of reusing existing meshes for intermediate results. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of subdivisions to perform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>nmesh != 0, smesh and out may not overlap </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Subdivision.h" line="116" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_subdivider_1a4598b3ead068ae7f49bce239e33ee325" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Assimp::Subdivider::Subdivide</definition>
+        <argsstring>(aiMesh *mesh, aiMesh *&amp;out, unsigned int num, bool discard_input=false)=0</argsstring>
+        <name>Subdivide</name>
+        <param>
+          <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> *&amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>discard_input</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Subdivide a mesh using the selected algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First mesh to be subdivided. Must be in verbose format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives the output mesh, allocated by me. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of subdivisions to perform. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>discard_input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true is passed, the input mesh is deleted after the subdivision is complete. This can improve performance because it allows the optimization to reuse the existing mesh for intermediate results. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>out!=mesh </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Subdivision.h" line="91" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_subdivider_1aa2e01d9f8382315527fabe6b7a11063b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>Assimp::Subdivider::~Subdivider</definition>
+        <argsstring>()</argsstring>
+        <name>~Subdivider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Subdivision.h" line="70" column="13" bodyfile="include/assimp/Subdivision.h" bodystart="126" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_subdivider_1a3194a05eb864c4c771806f1d492cdc5b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_subdivider" kindref="compound">Subdivider</ref> *</type>
+        <definition>static Subdivider* Assimp::Subdivider::Create</definition>
+        <argsstring>(Algorithm algo)</argsstring>
+        <name>Create</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_subdivider_1a5e6b4948d6aaee509e58fb435ad02b9d" kindref="member">Algorithm</ref></type>
+          <declname>algo</declname>
+        </param>
+        <briefdescription>
+<para>Create a subdivider of a specific type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>algo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Algorithm to be used for subdivision </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_assimp_1_1_subdivider" kindref="compound">Subdivider</ref> instance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Subdivision.h" line="77" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper class to evaluate subdivision surfaces. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Different algorithms are provided for choice. </para>
+    </detaileddescription>
+    <location file="include/assimp/Subdivision.h" line="62" column="1" bodyfile="include/assimp/Subdivision.h" bodystart="62" bodyend="123"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_subdivider_1a5e6b4948d6aaee509e58fb435ad02b9d" prot="public" virt="non-virtual"><scope>Assimp::Subdivider</scope><name>Algorithm</name></member>
+      <member refid="class_assimp_1_1_subdivider_1a5e6b4948d6aaee509e58fb435ad02b9da49e531710b75457f61d43ec900e07e0f" prot="public" virt="non-virtual"><scope>Assimp::Subdivider</scope><name>CATMULL_CLARKE</name></member>
+      <member refid="class_assimp_1_1_subdivider_1a3194a05eb864c4c771806f1d492cdc5b" prot="public" virt="non-virtual"><scope>Assimp::Subdivider</scope><name>Create</name></member>
+      <member refid="class_assimp_1_1_subdivider_1a4598b3ead068ae7f49bce239e33ee325" prot="public" virt="pure-virtual"><scope>Assimp::Subdivider</scope><name>Subdivide</name></member>
+      <member refid="class_assimp_1_1_subdivider_1a26a77d10069201eb198942c8b7459f0f" prot="public" virt="pure-virtual"><scope>Assimp::Subdivider</scope><name>Subdivide</name></member>
+      <member refid="class_assimp_1_1_subdivider_1aa2e01d9f8382315527fabe6b7a11063b" prot="public" virt="virtual"><scope>Assimp::Subdivider</scope><name>~Subdivider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

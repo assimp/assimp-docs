@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_file_i_o" kind="struct" language="C++" prot="public">
     <compoundname>aiFileIO</compoundname>
     <includes local="no">cfileio.h</includes>
@@ -10,12 +10,13 @@
         <argsstring></argsstring>
         <name>CloseProc</name>
         <briefdescription>
-<para>Function used to close an existing file. </para>        </briefdescription>
+<para>Function used to close an existing file. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/cfileio.h" line="93" column="1" bodyfile="include/assimp/cfileio.h" bodystart="93" bodyend="-1"/>
+        <location file="include/assimp/cfileio.h" line="93" column="21" bodyfile="include/assimp/cfileio.h" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_file_i_o_1a819d9c7823039294125068d06949a6df" prot="public" static="no" mutable="no">
         <type><ref refid="cfileio_8h_1ad61b536884b9b6b7e8673edb5539d37c" kindref="member">aiFileOpenProc</ref></type>
@@ -23,12 +24,13 @@
         <argsstring></argsstring>
         <name>OpenProc</name>
         <briefdescription>
-<para>Function used to open a new file. </para>        </briefdescription>
+<para>Function used to open a new file. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/cfileio.h" line="89" column="1" bodyfile="include/assimp/cfileio.h" bodystart="89" bodyend="-1"/>
+        <location file="include/assimp/cfileio.h" line="89" column="20" bodyfile="include/assimp/cfileio.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_file_i_o_1a9c62b7f3d70fbb2f41e33ad0b9933139" prot="public" static="no" mutable="no">
         <type><ref refid="cfileio_8h_1a176132d0cd51c96302089ff3f8a8ee1c" kindref="member">aiUserData</ref></type>
@@ -36,43 +38,46 @@
         <argsstring></argsstring>
         <name>UserData</name>
         <briefdescription>
-<para>User-defined, opaque data. </para>        </briefdescription>
+<para>User-defined, opaque data. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/cfileio.h" line="96" column="1" bodyfile="include/assimp/cfileio.h" bodystart="96" bodyend="-1"/>
+        <location file="include/assimp/cfileio.h" line="96" column="16" bodyfile="include/assimp/cfileio.h" bodystart="96" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>C-API: File system callbacks. </para>    </briefdescription>
+<para>C-API: File system callbacks. </para>
+    </briefdescription>
     <detaileddescription>
-<para>Provided are functions to open and close files. Supply a custom structure to the import function. If you don&apos;t, a default implementation is used. Use custom file systems to enable reading from other sources, such as ZIPs or memory locations. </para>    </detaileddescription>
+<para>Provided are functions to open and close files. Supply a custom structure to the import function. If you don&apos;t, a default implementation is used. Use custom file systems to enable reading from other sources, such as ZIPs or memory locations. </para>
+    </detaileddescription>
     <collaborationgraph>
-      <node id="51">
+      <node id="2">
         <label>aiFile</label>
         <link refid="structai_file"/>
-        <childnode refid="51" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>FileSizeProc</edgelabel>
-          <edgelabel>TellProc</edgelabel>
-          <edgelabel>ReadProc</edgelabel>
-          <edgelabel>WriteProc</edgelabel>
-          <edgelabel>SeekProc</edgelabel>
           <edgelabel>FlushProc</edgelabel>
+          <edgelabel>ReadProc</edgelabel>
+          <edgelabel>SeekProc</edgelabel>
+          <edgelabel>TellProc</edgelabel>
+          <edgelabel>WriteProc</edgelabel>
         </childnode>
       </node>
-      <node id="50">
+      <node id="1">
         <label>aiFileIO</label>
         <link refid="structai_file_i_o"/>
-        <childnode refid="50" relation="usage">
+        <childnode refid="1" relation="usage">
           <edgelabel>CloseProc</edgelabel>
         </childnode>
-        <childnode refid="51" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>OpenProc</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/assimp/cfileio.h" line="86" column="1" bodyfile="include/assimp/cfileio.h" bodystart="85" bodyend="97"/>
+    <location file="include/assimp/cfileio.h" line="85" column="1" bodyfile="include/assimp/cfileio.h" bodystart="86" bodyend="97"/>
     <listofallmembers>
       <member refid="structai_file_i_o_1a7ec702672712b5a02dc49cb17f980a14" prot="public" virt="non-virtual"><scope>aiFileIO</scope><name>CloseProc</name></member>
       <member refid="structai_file_i_o_1a819d9c7823039294125068d06949a6df" prot="public" virt="non-virtual"><scope>aiFileIO</scope><name>OpenProc</name></member>

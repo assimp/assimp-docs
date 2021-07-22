@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_mesh_morph_key" kind="struct" language="C++" prot="public">
     <compoundname>aiMeshMorphKey</compoundname>
     <includes local="no">anim.h</includes>
@@ -10,12 +10,13 @@
         <argsstring></argsstring>
         <name>mNumValuesAndWeights</name>
         <briefdescription>
-<para>The number of values and weights. </para>        </briefdescription>
+<para>The number of values and weights. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="203" column="1" bodyfile="include/assimp/anim.h" bodystart="203" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="203" column="18" bodyfile="include/assimp/anim.h" bodystart="203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_morph_key_1a1429195df415bf1288002b45bba30994" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -23,12 +24,13 @@
         <argsstring></argsstring>
         <name>mTime</name>
         <briefdescription>
-<para>The time of this key. </para>        </briefdescription>
+<para>The time of this key. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="196" column="1" bodyfile="include/assimp/anim.h" bodystart="196" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="196" column="12" bodyfile="include/assimp/anim.h" bodystart="196" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_morph_key_1a33bdd586aca85e5bb27162203f780dc3" prot="public" static="no" mutable="no">
         <type>unsigned int *</type>
@@ -36,12 +38,13 @@
         <argsstring></argsstring>
         <name>mValues</name>
         <briefdescription>
-<para>The values and weights at the time of this key. </para>        </briefdescription>
+<para>The values and weights at the time of this key. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="199" column="1" bodyfile="include/assimp/anim.h" bodystart="199" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="199" column="18" bodyfile="include/assimp/anim.h" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_morph_key_1ad412cfcbbce810daa6ac48c0849df6d6" prot="public" static="no" mutable="no">
         <type>double *</type>
@@ -54,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="200" column="1" bodyfile="include/assimp/anim.h" bodystart="200" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="200" column="12" bodyfile="include/assimp/anim.h" bodystart="200" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -69,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="205" column="1" bodyfile="include/assimp/anim.h" bodystart="205" bodyend="210"/>
+        <location file="include/assimp/anim.h" line="205" column="5" bodyfile="include/assimp/anim.h" bodystart="205" bodyend="210"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_morph_key_1af1ee051bdb405a28fa0b4379d89ce80a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -82,11 +85,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="212" column="1" bodyfile="include/assimp/anim.h" bodystart="212" bodyend="217"/>
+        <location file="include/assimp/anim.h" line="212" column="5" bodyfile="include/assimp/anim.h" bodystart="212" bodyend="217"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Binds a morph anim mesh to a specific point in time. </para>    </briefdescription>
+<para>Binds a morph anim mesh to a specific point in time. </para>
+    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <location file="include/assimp/anim.h" line="194" column="1" bodyfile="include/assimp/anim.h" bodystart="194" bodyend="219"/>

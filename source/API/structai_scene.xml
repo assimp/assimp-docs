@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_scene" kind="struct" language="C++" prot="public">
     <compoundname>aiScene</compoundname>
     <includes local="no">scene.h</includes>
@@ -10,12 +10,14 @@
         <argsstring></argsstring>
         <name>mAnimations</name>
         <briefdescription>
-<para>The array of animations. </para>        </briefdescription>
+<para>The array of animations. </para>
+        </briefdescription>
         <detaileddescription>
-<para>All animations imported from the given file are listed here. The array is mNumAnimations in size. </para>        </detaileddescription>
+<para>All animations imported from the given file are listed here. The array is mNumAnimations in size. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="294" column="1" bodyfile="include/assimp/scene.h" bodystart="294" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="294" column="26" bodyfile="include/assimp/scene.h" bodystart="294" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a71e7d204d96969ca4f5a931f4d636f1e" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_camera" kindref="compound">aiCamera</ref> **</type>
@@ -23,12 +25,14 @@
         <argsstring></argsstring>
         <name>mCameras</name>
         <briefdescription>
-<para>The array of cameras. </para>        </briefdescription>
+<para>The array of cameras. </para>
+        </briefdescription>
         <detaileddescription>
-<para>All cameras imported from the given file are listed here. The array is mNumCameras in size. The first camera in the array (if existing) is the default camera view into the scene. </para>        </detaileddescription>
+<para>All cameras imported from the given file are listed here. The array is mNumCameras in size. The first camera in the array (if existing) is the default camera view into the scene. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="331" column="1" bodyfile="include/assimp/scene.h" bodystart="331" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="331" column="23" bodyfile="include/assimp/scene.h" bodystart="331" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a4091f10bb81e05db00ebc34f40c48f38" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -36,12 +40,14 @@
         <argsstring></argsstring>
         <name>mFlags</name>
         <briefdescription>
-<para>Any combination of the AI_SCENE_FLAGS_XXX flags. </para>        </briefdescription>
+<para>Any combination of the AI_SCENE_FLAGS_XXX flags. </para>
+        </briefdescription>
         <detaileddescription>
-<para>By default this value is 0, no flags are set. Most applications will want to reject all scenes with the AI_SCENE_FLAGS_INCOMPLETE bit set. </para>        </detaileddescription>
+<para>By default this value is 0, no flags are set. Most applications will want to reject all scenes with the AI_SCENE_FLAGS_INCOMPLETE bit set. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="251" column="1" bodyfile="include/assimp/scene.h" bodystart="251" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="251" column="18" bodyfile="include/assimp/scene.h" bodystart="251" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a2e64a69ade81cae0b3901bea90b6bb47" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_light" kindref="compound">aiLight</ref> **</type>
@@ -49,12 +55,14 @@
         <argsstring></argsstring>
         <name>mLights</name>
         <briefdescription>
-<para>The array of light sources. </para>        </briefdescription>
+<para>The array of light sources. </para>
+        </briefdescription>
         <detaileddescription>
-<para>All light sources imported from the given file are listed here. The array is mNumLights in size. </para>        </detaileddescription>
+<para>All light sources imported from the given file are listed here. The array is mNumLights in size. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="317" column="1" bodyfile="include/assimp/scene.h" bodystart="317" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="317" column="22" bodyfile="include/assimp/scene.h" bodystart="317" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a52bc7089a5b943ad7c7c386e616df35e" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_material" kindref="compound">aiMaterial</ref> **</type>
@@ -62,12 +70,14 @@
         <argsstring></argsstring>
         <name>mMaterials</name>
         <briefdescription>
-<para>The array of materials. </para>        </briefdescription>
+<para>The array of materials. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Use the index given in each <ref refid="structai_mesh" kindref="compound">aiMesh</ref> structure to access this array. The array is mNumMaterials in size. If the AI_SCENE_FLAGS_INCOMPLETE flag is not set there will always be at least ONE material. </para>        </detaileddescription>
+<para>Use the index given in each <ref refid="structai_mesh" kindref="compound">aiMesh</ref> structure to access this array. The array is mNumMaterials in size. If the AI_SCENE_FLAGS_INCOMPLETE flag is not set there will always be at least ONE material. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="284" column="1" bodyfile="include/assimp/scene.h" bodystart="284" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="284" column="25" bodyfile="include/assimp/scene.h" bodystart="284" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1ad1c7000f0f28ea747868db9f94d32a3d" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_mesh" kindref="compound">aiMesh</ref> **</type>
@@ -75,12 +85,14 @@
         <argsstring></argsstring>
         <name>mMeshes</name>
         <briefdescription>
-<para>The array of meshes. </para>        </briefdescription>
+<para>The array of meshes. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Use the indices given in the <ref refid="structai_node" kindref="compound">aiNode</ref> structure to access this array. The array is mNumMeshes in size. If the AI_SCENE_FLAGS_INCOMPLETE flag is not set there will always be at least ONE material. </para>        </detaileddescription>
+<para>Use the indices given in the <ref refid="structai_node" kindref="compound">aiNode</ref> structure to access this array. The array is mNumMeshes in size. If the AI_SCENE_FLAGS_INCOMPLETE flag is not set there will always be at least ONE material. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="272" column="1" bodyfile="include/assimp/scene.h" bodystart="272" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="272" column="21" bodyfile="include/assimp/scene.h" bodystart="272" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a68fb6f12f79fa4a090fd593740ab8b81" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_metadata" kindref="compound">aiMetadata</ref> *</type>
@@ -88,12 +100,14 @@
         <argsstring></argsstring>
         <name>mMetaData</name>
         <briefdescription>
-<para>The global metadata assigned to the scene itself. </para>        </briefdescription>
+<para>The global metadata assigned to the scene itself. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This data contains global metadata which belongs to the scene like unit-conversions, versions, vendors or other model-specific data. This can be used to store format-specific metadata as well. </para>        </detaileddescription>
+<para>This data contains global metadata which belongs to the scene like unit-conversions, versions, vendors or other model-specific data. This can be used to store format-specific metadata as well. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="340" column="1" bodyfile="include/assimp/scene.h" bodystart="340" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="340" column="25" bodyfile="include/assimp/scene.h" bodystart="340" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a796c538ed754f8f33ba6fe7164cf05ca" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
@@ -101,12 +115,13 @@
         <argsstring></argsstring>
         <name>mName</name>
         <briefdescription>
-<para>The name of the scene itself. </para>        </briefdescription>
+<para>The name of the scene itself. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="344" column="1" bodyfile="include/assimp/scene.h" bodystart="344" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="344" column="23" bodyfile="include/assimp/scene.h" bodystart="344" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1aa2af030ec218ead0dc062b6a96a7471a" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -114,12 +129,13 @@
         <argsstring></argsstring>
         <name>mNumAnimations</name>
         <briefdescription>
-<para>The number of animations in the scene. </para>        </briefdescription>
+<para>The number of animations in the scene. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="287" column="1" bodyfile="include/assimp/scene.h" bodystart="287" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="287" column="18" bodyfile="include/assimp/scene.h" bodystart="287" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a4abc432e1b22a7e01553f33c79c0592f" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -127,12 +143,14 @@
         <argsstring></argsstring>
         <name>mNumCameras</name>
         <briefdescription>
-<para>The number of cameras in the scene. </para>        </briefdescription>
+<para>The number of cameras in the scene. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Cameras are fully optional, in most cases this attribute will be 0 </para>        </detaileddescription>
+<para>Cameras are fully optional, in most cases this attribute will be 0 </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="322" column="1" bodyfile="include/assimp/scene.h" bodystart="322" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="322" column="18" bodyfile="include/assimp/scene.h" bodystart="322" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a0c90fc5f15b979e0bb0d3e8f1e246307" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -140,12 +158,14 @@
         <argsstring></argsstring>
         <name>mNumLights</name>
         <briefdescription>
-<para>The number of light sources in the scene. </para>        </briefdescription>
+<para>The number of light sources in the scene. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Light sources are fully optional, in most cases this attribute will be 0 </para>        </detaileddescription>
+<para>Light sources are fully optional, in most cases this attribute will be 0 </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="310" column="1" bodyfile="include/assimp/scene.h" bodystart="310" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="310" column="18" bodyfile="include/assimp/scene.h" bodystart="310" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a4277d8bffe8b8f568098af6c31d042b7" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -153,12 +173,13 @@
         <argsstring></argsstring>
         <name>mNumMaterials</name>
         <briefdescription>
-<para>The number of materials in the scene. </para>        </briefdescription>
+<para>The number of materials in the scene. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="275" column="1" bodyfile="include/assimp/scene.h" bodystart="275" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="275" column="18" bodyfile="include/assimp/scene.h" bodystart="275" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a1a6c1abca994c54381a28cc151e5fa4f" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -166,12 +187,13 @@
         <argsstring></argsstring>
         <name>mNumMeshes</name>
         <briefdescription>
-<para>The number of meshes in the scene. </para>        </briefdescription>
+<para>The number of meshes in the scene. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="263" column="1" bodyfile="include/assimp/scene.h" bodystart="263" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="263" column="18" bodyfile="include/assimp/scene.h" bodystart="263" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a0d61a5439edd7223097b48aea57c47dd" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -179,12 +201,13 @@
         <argsstring></argsstring>
         <name>mNumTextures</name>
         <briefdescription>
-<para>The number of textures embedded into the file. </para>        </briefdescription>
+<para>The number of textures embedded into the file. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="297" column="1" bodyfile="include/assimp/scene.h" bodystart="297" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="297" column="18" bodyfile="include/assimp/scene.h" bodystart="297" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1ad70784fdb6a34548d0056cd798f14b08" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -192,12 +215,13 @@
         <argsstring></argsstring>
         <name>mPrivate</name>
         <briefdescription>
-<para>Internal data, do not touch. </para>        </briefdescription>
+<para>Internal data, do not touch. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="432" column="1" bodyfile="include/assimp/scene.h" bodystart="432" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="432" column="10" bodyfile="include/assimp/scene.h" bodystart="432" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1ad0e9a7e68f2ed6b3120a7c19ef20307a" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
@@ -205,12 +229,14 @@
         <argsstring></argsstring>
         <name>mRootNode</name>
         <briefdescription>
-<para>The root node of the hierarchy. </para>        </briefdescription>
+<para>The root node of the hierarchy. </para>
+        </briefdescription>
         <detaileddescription>
-<para>There will always be at least the root node if the import was successful (and no special flags have been set). Presence of further nodes depends on the format and content of the imported file. </para>        </detaileddescription>
+<para>There will always be at least the root node if the import was successful (and no special flags have been set). Presence of further nodes depends on the format and content of the imported file. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="260" column="1" bodyfile="include/assimp/scene.h" bodystart="260" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="260" column="21" bodyfile="include/assimp/scene.h" bodystart="260" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_scene_1a0fd0d29fbc439e3715b4975ccb68d2d3" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_texture" kindref="compound">aiTexture</ref> **</type>
@@ -218,12 +244,14 @@
         <argsstring></argsstring>
         <name>mTextures</name>
         <briefdescription>
-<para>The array of embedded textures. </para>        </briefdescription>
+<para>The array of embedded textures. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Not many file formats embed their textures into the file. An example is Quake&apos;s MDL format (which is also used by some GameStudio versions) </para>        </detaileddescription>
+<para>Not many file formats embed their textures into the file. An example is Quake&apos;s MDL format (which is also used by some GameStudio versions) </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="305" column="1" bodyfile="include/assimp/scene.h" bodystart="305" bodyend="-1"/>
+        <location file="include/assimp/scene.h" line="305" column="24" bodyfile="include/assimp/scene.h" bodystart="305" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -233,12 +261,13 @@
         <argsstring>()</argsstring>
         <name>aiScene</name>
         <briefdescription>
-<para>Default constructor - set everything to 0/nullptr. </para>        </briefdescription>
+<para>Default constructor - set everything to 0/nullptr. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="349" column="1"/>
+        <location file="include/assimp/scene.h" line="349" column="16"/>
       </memberdef>
       <memberdef kind="function" id="structai_scene_1a54a618d47066f080a5dff9f177cc2cce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structai_texture" kindref="compound">aiTexture</ref> *</type>
@@ -250,12 +279,13 @@
           <declname>filename</declname>
         </param>
         <briefdescription>
-<para>Returns an embedded texture. </para>        </briefdescription>
+<para>Returns an embedded texture. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="397" column="1" bodyfile="include/assimp/scene.h" bodystart="397" bodyend="399"/>
+        <location file="include/assimp/scene.h" line="397" column="21" bodyfile="include/assimp/scene.h" bodystart="397" bodyend="399"/>
       </memberdef>
       <memberdef kind="function" id="structai_scene_1a5838653437af9b0813036d05243af721" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::pair&lt; const <ref refid="structai_texture" kindref="compound">aiTexture</ref> *, int &gt;</type>
@@ -267,12 +297,13 @@
           <declname>filename</declname>
         </param>
         <briefdescription>
-<para>Returns an embedded texture and its index. </para>        </briefdescription>
+<para>Returns an embedded texture and its index. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="402" column="1" bodyfile="include/assimp/scene.h" bodystart="402" bodyend="427"/>
+        <location file="include/assimp/scene.h" line="402" column="15" bodyfile="include/assimp/scene.h" bodystart="402" bodyend="427"/>
       </memberdef>
       <memberdef kind="function" id="structai_scene_1a77f0246190f9292faecf733595bc1ac2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -280,12 +311,13 @@
         <argsstring>() const</argsstring>
         <name>HasAnimations</name>
         <briefdescription>
-<para>Check whether the scene contains animations. </para>        </briefdescription>
+<para>Check whether the scene contains animations. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="382" column="1" bodyfile="include/assimp/scene.h" bodystart="382" bodyend="384"/>
+        <location file="include/assimp/scene.h" line="382" column="17" bodyfile="include/assimp/scene.h" bodystart="382" bodyend="384"/>
       </memberdef>
       <memberdef kind="function" id="structai_scene_1a2a47f23ce1ccefdbcbaa9bcc30cc8528" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -293,12 +325,13 @@
         <argsstring>() const</argsstring>
         <name>HasCameras</name>
         <briefdescription>
-<para>Check whether the scene contains cameras. </para>        </briefdescription>
+<para>Check whether the scene contains cameras. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="377" column="1" bodyfile="include/assimp/scene.h" bodystart="377" bodyend="379"/>
+        <location file="include/assimp/scene.h" line="377" column="17" bodyfile="include/assimp/scene.h" bodystart="377" bodyend="379"/>
       </memberdef>
       <memberdef kind="function" id="structai_scene_1a8c6b2bf0a79ee722f5bb11cbf7ac7ba8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -306,12 +339,13 @@
         <argsstring>() const</argsstring>
         <name>HasLights</name>
         <briefdescription>
-<para>Check whether the scene contains lights. </para>        </briefdescription>
+<para>Check whether the scene contains lights. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="367" column="1" bodyfile="include/assimp/scene.h" bodystart="367" bodyend="369"/>
+        <location file="include/assimp/scene.h" line="367" column="17" bodyfile="include/assimp/scene.h" bodystart="367" bodyend="369"/>
       </memberdef>
       <memberdef kind="function" id="structai_scene_1a5d7d04a042f1bd0c07a9a0db45f59516" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -319,12 +353,13 @@
         <argsstring>() const</argsstring>
         <name>HasMaterials</name>
         <briefdescription>
-<para>Check whether the scene contains materials Unless no special scene flags are set this will always be true. </para>        </briefdescription>
+<para>Check whether the scene contains materials Unless no special scene flags are set this will always be true. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="362" column="1" bodyfile="include/assimp/scene.h" bodystart="362" bodyend="364"/>
+        <location file="include/assimp/scene.h" line="362" column="17" bodyfile="include/assimp/scene.h" bodystart="362" bodyend="364"/>
       </memberdef>
       <memberdef kind="function" id="structai_scene_1a281226b99b0712ae9d7d743b447aa963" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -332,12 +367,13 @@
         <argsstring>() const</argsstring>
         <name>HasMeshes</name>
         <briefdescription>
-<para>Check whether the scene contains meshes Unless no special scene flags are set this will always be true. </para>        </briefdescription>
+<para>Check whether the scene contains meshes Unless no special scene flags are set this will always be true. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="356" column="1" bodyfile="include/assimp/scene.h" bodystart="356" bodyend="358"/>
+        <location file="include/assimp/scene.h" line="356" column="17" bodyfile="include/assimp/scene.h" bodystart="356" bodyend="358"/>
       </memberdef>
       <memberdef kind="function" id="structai_scene_1a4c37bb32764fa10b51f12bfbcddc1019" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -345,12 +381,13 @@
         <argsstring>() const</argsstring>
         <name>HasTextures</name>
         <briefdescription>
-<para>Check whether the scene contains textures. </para>        </briefdescription>
+<para>Check whether the scene contains textures. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="372" column="1" bodyfile="include/assimp/scene.h" bodystart="372" bodyend="374"/>
+        <location file="include/assimp/scene.h" line="372" column="17" bodyfile="include/assimp/scene.h" bodystart="372" bodyend="374"/>
       </memberdef>
       <memberdef kind="function" id="structai_scene_1a1241a9535c93ffe857dbb925a5de55dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref></type>
@@ -358,12 +395,13 @@
         <argsstring>()</argsstring>
         <name>~aiScene</name>
         <briefdescription>
-<para>Destructor. </para>        </briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="352" column="1"/>
+        <location file="include/assimp/scene.h" line="352" column="16"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -377,313 +415,316 @@
           <declname>filename</declname>
         </param>
         <briefdescription>
-<para>Returns a short filename from a full path. </para>        </briefdescription>
+<para>Returns a short filename from a full path. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/scene.h" line="387" column="1" bodyfile="include/assimp/scene.h" bodystart="387" bodyend="394"/>
+        <location file="include/assimp/scene.h" line="387" column="23" bodyfile="include/assimp/scene.h" bodystart="387" bodyend="394"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The root structure of the imported data. </para>    </briefdescription>
+<para>The root structure of the imported data. </para>
+    </briefdescription>
     <detaileddescription>
-<para>Everything that was imported from the given file can be accessed from here. Objects of this class are generally maintained and owned by <ref refid="namespace_assimp" kindref="compound">Assimp</ref>, not by the caller. You shouldn&apos;t want to instance it, nor should you ever try to delete a given scene on your own. </para>    </detaileddescription>
+<para>Everything that was imported from the given file can be accessed from here. Objects of this class are generally maintained and owned by <ref refid="namespace_assimp" kindref="compound">Assimp</ref>, not by the caller. You shouldn&apos;t want to instance it, nor should you ever try to delete a given scene on your own. </para>
+    </detaileddescription>
     <collaborationgraph>
-      <node id="136">
+      <node id="9">
         <label>aiAABB</label>
         <link refid="structai_a_a_b_b"/>
-        <childnode refid="133" relation="usage">
-          <edgelabel>mMin</edgelabel>
+        <childnode refid="7" relation="usage">
           <edgelabel>mMax</edgelabel>
+          <edgelabel>mMin</edgelabel>
         </childnode>
       </node>
-      <node id="139">
+      <node id="12">
         <label>aiNode</label>
         <link refid="structai_node"/>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="140" relation="usage">
+        <childnode refid="13" relation="usage">
           <edgelabel>mMetaData</edgelabel>
         </childnode>
-        <childnode refid="139" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>mChildren</edgelabel>
           <edgelabel>mParent</edgelabel>
         </childnode>
-        <childnode refid="142" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>mTransformation</edgelabel>
         </childnode>
       </node>
-      <node id="141">
+      <node id="14">
         <label>aiMetadataEntry</label>
         <link refid="structai_metadata_entry"/>
       </node>
-      <node id="149">
+      <node id="22">
         <label>aiQuatKey</label>
         <link refid="structai_quat_key"/>
-        <childnode refid="150" relation="usage">
+        <childnode refid="23" relation="usage">
           <edgelabel>mValue</edgelabel>
         </childnode>
       </node>
-      <node id="157">
+      <node id="30">
         <label>aiTexel</label>
         <link refid="structai_texel"/>
       </node>
-      <node id="148">
+      <node id="21">
         <label>aiNodeAnim</label>
         <link refid="structai_node_anim"/>
-        <childnode refid="149" relation="usage">
+        <childnode refid="22" relation="usage">
           <edgelabel>mRotationKeys</edgelabel>
         </childnode>
-        <childnode refid="151" relation="usage">
-          <edgelabel>mScalingKeys</edgelabel>
+        <childnode refid="24" relation="usage">
           <edgelabel>mPositionKeys</edgelabel>
+          <edgelabel>mScalingKeys</edgelabel>
         </childnode>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mNodeName</edgelabel>
         </childnode>
       </node>
-      <node id="152">
+      <node id="25">
         <label>aiMeshAnim</label>
         <link refid="structai_mesh_anim"/>
-        <childnode refid="153" relation="usage">
+        <childnode refid="26" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
       </node>
-      <node id="153">
+      <node id="26">
         <label>aiMeshKey</label>
         <link refid="structai_mesh_key"/>
       </node>
-      <node id="142">
+      <node id="15">
         <label>aiMatrix4x4t&lt; TReal &gt;</label>
         <link refid="classai_matrix4x4t"/>
       </node>
-      <node id="138">
+      <node id="11">
         <label>aiVertexWeight</label>
         <link refid="structai_vertex_weight"/>
       </node>
-      <node id="128">
+      <node id="1">
         <label>aiScene</label>
         <link refid="structai_scene"/>
-        <childnode refid="129" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>mMaterials</edgelabel>
         </childnode>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="131" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>mMeshes</edgelabel>
         </childnode>
-        <childnode refid="140" relation="usage">
+        <childnode refid="13" relation="usage">
           <edgelabel>mMetaData</edgelabel>
         </childnode>
-        <childnode refid="143" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>mCameras</edgelabel>
         </childnode>
-        <childnode refid="144" relation="usage">
+        <childnode refid="17" relation="usage">
           <edgelabel>mLights</edgelabel>
         </childnode>
-        <childnode refid="147" relation="usage">
+        <childnode refid="20" relation="usage">
           <edgelabel>mAnimations</edgelabel>
         </childnode>
-        <childnode refid="139" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>mRootNode</edgelabel>
         </childnode>
-        <childnode refid="156" relation="usage">
+        <childnode refid="29" relation="usage">
           <edgelabel>mTextures</edgelabel>
         </childnode>
       </node>
-      <node id="156">
+      <node id="29">
         <label>aiTexture</label>
         <link refid="structai_texture"/>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mFilename</edgelabel>
         </childnode>
-        <childnode refid="157" relation="usage">
+        <childnode refid="30" relation="usage">
           <edgelabel>pcData</edgelabel>
         </childnode>
       </node>
-      <node id="155">
+      <node id="28">
         <label>aiMeshMorphKey</label>
         <link refid="structai_mesh_morph_key"/>
       </node>
-      <node id="144">
+      <node id="17">
         <label>aiLight</label>
         <link refid="structai_light"/>
-        <childnode refid="145" relation="usage">
+        <childnode refid="18" relation="usage">
+          <edgelabel>mColorAmbient</edgelabel>
           <edgelabel>mColorDiffuse</edgelabel>
           <edgelabel>mColorSpecular</edgelabel>
-          <edgelabel>mColorAmbient</edgelabel>
         </childnode>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="133" relation="usage">
-          <edgelabel>mUp</edgelabel>
-          <edgelabel>mPosition</edgelabel>
+        <childnode refid="7" relation="usage">
           <edgelabel>mDirection</edgelabel>
+          <edgelabel>mPosition</edgelabel>
+          <edgelabel>mUp</edgelabel>
         </childnode>
-        <childnode refid="146" relation="usage">
+        <childnode refid="19" relation="usage">
           <edgelabel>mSize</edgelabel>
         </childnode>
       </node>
-      <node id="140">
+      <node id="13">
         <label>aiMetadata</label>
         <link refid="structai_metadata"/>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
-        <childnode refid="141" relation="usage">
+        <childnode refid="14" relation="usage">
           <edgelabel>mValues</edgelabel>
         </childnode>
       </node>
-      <node id="137">
+      <node id="10">
         <label>aiBone</label>
         <link refid="structai_bone"/>
-        <childnode refid="138" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>mWeights</edgelabel>
         </childnode>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="139" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>mArmature</edgelabel>
           <edgelabel>mNode</edgelabel>
         </childnode>
-        <childnode refid="142" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>mOffsetMatrix</edgelabel>
         </childnode>
       </node>
-      <node id="151">
+      <node id="24">
         <label>aiVectorKey</label>
         <link refid="structai_vector_key"/>
-        <childnode refid="133" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>mValue</edgelabel>
         </childnode>
       </node>
-      <node id="129">
+      <node id="2">
         <label>aiMaterial</label>
         <link refid="structai_material"/>
       </node>
-      <node id="145">
+      <node id="18">
         <label>aiColor3D</label>
         <link refid="structai_color3_d"/>
       </node>
-      <node id="150">
+      <node id="6">
+        <label>aiColor4t&lt; ai_real &gt;</label>
+        <link refid="classai_color4t"/>
+      </node>
+      <node id="23">
         <label>aiQuaterniont&lt; TReal &gt;</label>
         <link refid="classai_quaterniont"/>
       </node>
-      <node id="131">
+      <node id="4">
         <label>aiMesh</label>
         <link refid="structai_mesh"/>
-        <childnode refid="132" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>mAnimMeshes</edgelabel>
         </childnode>
-        <childnode refid="135" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>mFaces</edgelabel>
         </childnode>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
           <edgelabel>mTextureCoordsNames</edgelabel>
         </childnode>
-        <childnode refid="133" relation="usage">
-          <edgelabel>mTextureCoords</edgelabel>
-          <edgelabel>mVertices</edgelabel>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mColors</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
           <edgelabel>mBitangents</edgelabel>
           <edgelabel>mNormals</edgelabel>
           <edgelabel>mTangents</edgelabel>
+          <edgelabel>mTextureCoords</edgelabel>
+          <edgelabel>mVertices</edgelabel>
         </childnode>
-        <childnode refid="134" relation="usage">
-          <edgelabel>mColors</edgelabel>
-        </childnode>
-        <childnode refid="136" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>mAABB</edgelabel>
         </childnode>
-        <childnode refid="137" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>mBones</edgelabel>
         </childnode>
       </node>
-      <node id="130">
+      <node id="3">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>
-      <node id="154">
+      <node id="27">
         <label>aiMeshMorphAnim</label>
         <link refid="structai_mesh_morph_anim"/>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="155" relation="usage">
+        <childnode refid="28" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
       </node>
-      <node id="147">
+      <node id="20">
         <label>aiAnimation</label>
         <link refid="structai_animation"/>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="148" relation="usage">
+        <childnode refid="21" relation="usage">
           <edgelabel>mChannels</edgelabel>
         </childnode>
-        <childnode refid="152" relation="usage">
+        <childnode refid="25" relation="usage">
           <edgelabel>mMeshChannels</edgelabel>
         </childnode>
-        <childnode refid="154" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>mMorphMeshChannels</edgelabel>
         </childnode>
       </node>
-      <node id="146">
+      <node id="19">
         <label>aiVector2t&lt; TReal &gt;</label>
         <link refid="classai_vector2t"/>
       </node>
-      <node id="134">
-        <label>aiColor4t&lt; TReal &gt;</label>
-        <link refid="classai_color4t"/>
-      </node>
-      <node id="143">
+      <node id="16">
         <label>aiCamera</label>
         <link refid="structai_camera"/>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="133" relation="usage">
-          <edgelabel>mUp</edgelabel>
+        <childnode refid="7" relation="usage">
           <edgelabel>mLookAt</edgelabel>
           <edgelabel>mPosition</edgelabel>
+          <edgelabel>mUp</edgelabel>
         </childnode>
       </node>
-      <node id="133">
+      <node id="7">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>
-      <node id="132">
+      <node id="5">
         <label>aiAnimMesh</label>
         <link refid="structai_anim_mesh"/>
-        <childnode refid="130" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="133" relation="usage">
-          <edgelabel>mTextureCoords</edgelabel>
-          <edgelabel>mVertices</edgelabel>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mColors</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
           <edgelabel>mBitangents</edgelabel>
           <edgelabel>mNormals</edgelabel>
           <edgelabel>mTangents</edgelabel>
-        </childnode>
-        <childnode refid="134" relation="usage">
-          <edgelabel>mColors</edgelabel>
+          <edgelabel>mTextureCoords</edgelabel>
+          <edgelabel>mVertices</edgelabel>
         </childnode>
       </node>
-      <node id="135">
+      <node id="8">
         <label>aiFace</label>
         <link refid="structai_face"/>
       </node>
     </collaborationgraph>
-    <location file="include/assimp/scene.h" line="245" column="1" bodyfile="include/assimp/scene.h" bodystart="244" bodyend="437"/>
+    <location file="include/assimp/scene.h" line="244" column="1" bodyfile="include/assimp/scene.h" bodystart="245" bodyend="437"/>
     <listofallmembers>
       <member refid="structai_scene_1acf1b2eff19a2d0b56f5b0de00a3acd58" prot="public" virt="non-virtual"><scope>aiScene</scope><name>aiScene</name></member>
       <member refid="structai_scene_1a54a618d47066f080a5dff9f177cc2cce" prot="public" virt="non-virtual"><scope>aiScene</scope><name>GetEmbeddedTexture</name></member>

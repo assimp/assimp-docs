@@ -1,0 +1,650 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="vector3_8inl" kind="file" language="C++">
+    <compoundname>vector3.inl</compoundname>
+    <includes refid="vector3_8h" local="no">assimp/vector3.h</includes>
+    <includes local="no">cmath</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>assimp/vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cmath</label>
+      </node>
+      <node id="5">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="1">
+        <label>vector3.inl</label>
+        <link refid="vector3_8inl"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="vector3_8inl_1a7409280d1fdec1b54ab4566ef44ac17b" prot="public" static="no">
+        <name>AI_VECTOR3D_INL_INC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="47" column="9" bodyfile="include/assimp/vector3.inl" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vector3_8inl_1a6123400071083525afc70ec5a1de5af1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+        <definition>AI_FORCE_INLINE aiVector3t&lt;TReal&gt; operator*</definition>
+        <argsstring>(const aiMatrix3x3t&lt; TReal &gt; &amp;pMatrix, const aiVector3t&lt; TReal &gt; &amp;pVector)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pMatrix</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pVector</declname>
+        </param>
+        <briefdescription>
+<para>Transformation of a vector by a 3x3 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="58" column="12" bodyfile="include/assimp/vector3.inl" bodystart="58" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="vector3_8inl_1a9d872e07c51e92b1bda3fc32b79933b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+        <definition>AI_FORCE_INLINE aiVector3t&lt;TReal&gt; operator*</definition>
+        <argsstring>(const aiMatrix4x4t&lt; TReal &gt; &amp;pMatrix, const aiVector3t&lt; TReal &gt; &amp;pVector)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pMatrix</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>pVector</declname>
+        </param>
+        <briefdescription>
+<para>Transformation of a vector by a 4x4 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="70" column="12" bodyfile="include/assimp/vector3.inl" bodystart="70" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="vector3_8inl_1a65acc7c36139d49e7af4cdf978039753" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+        <definition>AI_FORCE_INLINE aiVector3t&lt;TReal&gt; operator*</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;v, TReal f)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="275" column="12" bodyfile="include/assimp/vector3.inl" bodystart="275" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="vector3_8inl_1a92d65a233930a8d99a37599717135f87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> TReal</type>
+        <definition>AI_FORCE_INLINE TReal operator*</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;v1, const aiVector3t&lt; TReal &gt; &amp;v2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="261" column="7" bodyfile="include/assimp/vector3.inl" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="vector3_8inl_1a050d635c96993e21c38d96c2b9d74dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+        <definition>AI_FORCE_INLINE aiVector3t&lt;TReal&gt; operator*</definition>
+        <argsstring>(TReal f, const aiVector3t&lt; TReal &gt; &amp;v)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>TReal</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="268" column="12" bodyfile="include/assimp/vector3.inl" bodystart="268" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="vector3_8inl_1a0dbc080b584d9f4bf84fb8a1523b5033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+        <definition>AI_FORCE_INLINE aiVector3t&lt;TReal&gt; operator+</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;v1, const aiVector3t&lt; TReal &gt; &amp;v2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="247" column="12" bodyfile="include/assimp/vector3.inl" bodystart="247" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="vector3_8inl_1a6c95bf78fd14fd0d3b5d13600b9f75c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+        <definition>AI_FORCE_INLINE aiVector3t&lt;TReal&gt; operator-</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;v)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="303" column="12" bodyfile="include/assimp/vector3.inl" bodystart="303" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="vector3_8inl_1a328389e8a0dcc36126a6331e9bc61944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+        <definition>AI_FORCE_INLINE aiVector3t&lt;TReal&gt; operator-</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;v1, const aiVector3t&lt; TReal &gt; &amp;v2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="254" column="12" bodyfile="include/assimp/vector3.inl" bodystart="254" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="vector3_8inl_1a40a0ea0c829df79c32e98e0210f3a910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+        <definition>AI_FORCE_INLINE aiVector3t&lt;TReal&gt; operator/</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;v, const aiVector3t&lt; TReal &gt; &amp;v2)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="289" column="12" bodyfile="include/assimp/vector3.inl" bodystart="289" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="vector3_8inl_1a8a74e02df57722c965846bf094ecb19c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+        <definition>AI_FORCE_INLINE aiVector3t&lt;TReal&gt; operator/</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;v, TReal f)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>TReal</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="282" column="12" bodyfile="include/assimp/vector3.inl" bodystart="282" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="vector3_8inl_1a819828bba501a91db998c4787a864890" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt;</type>
+        <definition>AI_FORCE_INLINE aiVector3t&lt;TReal&gt; operator^</definition>
+        <argsstring>(const aiVector3t&lt; TReal &gt; &amp;v1, const aiVector3t&lt; TReal &gt; &amp;v2)</argsstring>
+        <name>operator^</name>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classai_vector3t" kindref="compound">aiVector3t</ref>&lt; TReal &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/vector3.inl" line="296" column="12" bodyfile="include/assimp/vector3.inl" bodystart="296" bodyend="298"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Inline implementation of aiVector3t&lt;TReal&gt; operators. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_VECTOR3D_INL_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_VECTOR3D_INL_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="vector3_8h" kindref="compound">assimp/vector3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/><ref refid="vector3_8inl_1a6123400071083525afc70ec5a1de5af1" kindref="member">operator * </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t&lt;TReal&gt;</ref>&amp;<sp/>pMatrix,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>pVector)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/>res;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>=<sp/>pMatrix.<ref refid="classai_matrix3x3t_1aa14f0a3fcabd347fd056764dfdc30d8d" kindref="member">a1</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix3x3t_1a6d3c9e3a8133b061e59f12ee603e59cb" kindref="member">a2</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix3x3t_1a7ae74ce6d9a554dd2e4676cec06b3149" kindref="member">a3</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>=<sp/>pMatrix.<ref refid="classai_matrix3x3t_1a8109df81ad20e8344165ba13cf6e4784" kindref="member">b1</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix3x3t_1a351960b889ba9893476ef5e915fc0210" kindref="member">b2</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix3x3t_1a19073cc823415566f501ff647f4c1d94" kindref="member">b3</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref><sp/>=<sp/>pMatrix.<ref refid="classai_matrix3x3t_1a80232a766f2d2b9b501fa595d5b3e385" kindref="member">c1</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix3x3t_1aaad45bacec5b61095a1ed3c0d7770672" kindref="member">c2</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix3x3t_1aa262dcdc45069f299f070599054caa20" kindref="member">c3</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/><ref refid="vector3_8inl_1a6123400071083525afc70ec5a1de5af1" kindref="member">operator * </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t&lt;TReal&gt;</ref>&amp;<sp/>pMatrix,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>pVector)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/>res;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>=<sp/>pMatrix.<ref refid="classai_matrix4x4t_1aac24671aa7f1155e9e9f2c63e825c3ea" kindref="member">a1</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix4x4t_1ab0f0a6d456ad8430555d30b8f2ec09e4" kindref="member">a2</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix4x4t_1a5fa2f856df015c63fafc18f8b166839c" kindref="member">a3</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix4x4t_1a714f52d2ec08808a19ab753eec3b0086" kindref="member">a4</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>=<sp/>pMatrix.<ref refid="classai_matrix4x4t_1aacc93e987430e14e9697b7ca32bf92ea" kindref="member">b1</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix4x4t_1a9eb2ebc319cdf8bbc59b4023216a9a9f" kindref="member">b2</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix4x4t_1a7c12882549222d3bed5d0e6c18deac84" kindref="member">b3</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix4x4t_1adc0c7992476d884067e474da9b9d908f" kindref="member">b4</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref><sp/>=<sp/>pMatrix.<ref refid="classai_matrix4x4t_1a1079852b4ac6cf05056d3fcfae570c4d" kindref="member">c1</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix4x4t_1a1856e465411e9e3e71988eef1c47b399" kindref="member">c2</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix4x4t_1a4ae057235cd88d3b4c48ee7d9ac632ed" kindref="member">c3</ref><sp/>*<sp/>pVector.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref><sp/>+<sp/>pMatrix.<ref refid="classai_matrix4x4t_1ad205d617d5e863bdad4ca66275a1e080" kindref="member">c4</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TOther&gt;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;::operator</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TOther&gt;</ref><sp/>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TOther&gt;</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">TOther</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(x),</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">TOther</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(y),</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">TOther</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(z));</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t_1a3aa63b3a3b1220bf181e75475392666b" kindref="member">aiVector3t&lt;TReal&gt;::Set</ref>(<sp/>TReal<sp/>pX,<sp/>TReal<sp/>pY,<sp/>TReal<sp/>pZ)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>=<sp/>pX;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>=<sp/>pY;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>z<sp/>=<sp/>pZ;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">TReal<sp/><ref refid="classai_vector3t_1a2dbd68c6e54fd1ce35a1cbcccc05794e" kindref="member">aiVector3t&lt;TReal&gt;::SquareLength</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x*x<sp/>+<sp/>y*y<sp/>+<sp/>z*z;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">TReal<sp/><ref refid="classai_vector3t_1ad194e6c2a938279499e367ffe7406577" kindref="member">aiVector3t&lt;TReal&gt;::Length</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::sqrt(<sp/>SquareLength());</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/><ref refid="classai_vector3t_1ac1c8d0efc1295bc02f2dd56b8abcb9bb" kindref="member">aiVector3t&lt;TReal&gt;::Normalize</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>/=<sp/>Length();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/><ref refid="classai_vector3t_1a7bbd7d0d9a35aee17a1a5c68d7299c7b" kindref="member">aiVector3t&lt;TReal&gt;::NormalizeSafe</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>TReal<sp/>len<sp/>=<sp/>Length();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>len<sp/>&gt;<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><sp/>TReal<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/>0<sp/>)<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>/=<sp/>len;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/><ref refid="classai_vector3t_1a79ab4d3c800fbcda49727e4e3884e7e5" kindref="member">aiVector3t&lt;TReal&gt;::operator += </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>o)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>+=<sp/>o.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>+=<sp/>o.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>z<sp/>+=<sp/>o.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/><ref refid="classai_vector3t_1a2c7f4fe4189bc18c4df2b62a14514cb7" kindref="member">aiVector3t&lt;TReal&gt;::operator -= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>o)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>-=<sp/>o.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>-=<sp/>o.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>z<sp/>-=<sp/>o.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/><ref refid="classai_vector3t_1aa4d2865038aedfd61041cc578a8fb886" kindref="member">aiVector3t&lt;TReal&gt;::operator *= </ref>(TReal<sp/>f)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>*=<sp/>f;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>*=<sp/>f;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>z<sp/>*=<sp/>f;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/><ref refid="classai_vector3t_1a34d07f57df2579f8a68d8a16cf344671" kindref="member">aiVector3t&lt;TReal&gt;::operator /= </ref>(TReal<sp/>f)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>f<sp/>==<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">TReal</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(0.0))<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TReal<sp/>invF<sp/>=<sp/>(TReal)<sp/>1.0<sp/>/<sp/>f;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>*=<sp/>invF;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>*=<sp/>invF;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>z<sp/>*=<sp/>invF;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/><ref refid="classai_vector3t_1aa4d2865038aedfd61041cc578a8fb886" kindref="member">aiVector3t&lt;TReal&gt;::operator *= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t&lt;TReal&gt;</ref>&amp;<sp/>mat){</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>=<sp/><sp/>mat<sp/>*<sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/><ref refid="classai_vector3t_1aa4d2865038aedfd61041cc578a8fb886" kindref="member">aiVector3t&lt;TReal&gt;::operator *= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t&lt;TReal&gt;</ref>&amp;<sp/>mat){</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>=<sp/>mat<sp/>*<sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="180"><highlight class="normal">TReal<sp/><ref refid="classai_vector3t_1ac552ef2defc2ed1e28c188e0bc1d839b" kindref="member">aiVector3t&lt;TReal&gt;::operator[]</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(i)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>z;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">TReal&amp;<sp/><ref refid="classai_vector3t_1ac552ef2defc2ed1e28c188e0bc1d839b" kindref="member">aiVector3t&lt;TReal&gt;::operator[]</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>*(&amp;x<sp/>+<sp/>i);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(i)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>z;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t_1a694fb6371859314efa937c698bb01aa0" kindref="member">aiVector3t&lt;TReal&gt;::operator== </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>==<sp/>other.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>&amp;&amp;<sp/>y<sp/>==<sp/>other.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>&amp;&amp;<sp/>z<sp/>==<sp/>other.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t_1a7b592e19e675022cdb8f88c5aa558625" kindref="member">aiVector3t&lt;TReal&gt;::operator!= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>!=<sp/>other.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>||<sp/>y<sp/>!=<sp/>other.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>||<sp/>z<sp/>!=<sp/>other.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t_1a7b072d0bccd6a5e06ea9db589f1a18d8" kindref="member">aiVector3t&lt;TReal&gt;::Equal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>other,<sp/>TReal<sp/>epsilon)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::abs(x<sp/>-<sp/>other.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>)<sp/>&lt;=<sp/>epsilon<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::abs(y<sp/>-<sp/>other.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>)<sp/>&lt;=<sp/>epsilon<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::abs(z<sp/>-<sp/>other.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>)<sp/>&lt;=<sp/>epsilon;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t_1a29dce57b038a6e342a9772cdf0f30459" kindref="member">aiVector3t&lt;TReal&gt;::operator &lt; </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>!=<sp/>other.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>?<sp/>x<sp/>&lt;<sp/>other.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>:<sp/>y<sp/>!=<sp/>other.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>?<sp/>y<sp/>&lt;<sp/>other.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>:<sp/>z<sp/>&lt;<sp/>other.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/><ref refid="classai_vector3t_1adb78d0afcc0e65ad921aacde17da0557" kindref="member">aiVector3t&lt;TReal&gt;::SymMul</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>o)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>(x*o.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>,y*o.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>,z*o.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">//<sp/>symmetric<sp/>addition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/><ref refid="vector3_8inl_1a0dbc080b584d9f4bf84fb8a1523b5033" kindref="member">operator + </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v2)<sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>(<sp/>v1.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>+<sp/>v2.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>,<sp/>v1.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>+<sp/>v2.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>,<sp/>v1.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref><sp/>+<sp/>v2.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment">//<sp/>symmetric<sp/>subtraction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/><ref refid="vector3_8inl_1a328389e8a0dcc36126a6331e9bc61944" kindref="member">operator - </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v2)<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>(<sp/>v1.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>-<sp/>v2.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>,<sp/>v1.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>-<sp/>v2.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>,<sp/>v1.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref><sp/>-<sp/>v2.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//<sp/>scalar<sp/>product</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="261"><highlight class="normal">TReal<sp/><ref refid="vector3_8inl_1a6123400071083525afc70ec5a1de5af1" kindref="member">operator * </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v2)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v1.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>*v2.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>+<sp/>v1.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>*v2.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>+<sp/>v1.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>*v2.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">//<sp/>scalar<sp/>multiplication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/><ref refid="vector3_8inl_1a6123400071083525afc70ec5a1de5af1" kindref="member">operator * </ref>(<sp/>TReal<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>(<sp/>f*v.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>,<sp/>f*v.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>,<sp/>f*v.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>the<sp/>other<sp/>way<sp/>around</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/><ref refid="vector3_8inl_1a6123400071083525afc70ec5a1de5af1" kindref="member">operator * </ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v,<sp/>TReal<sp/>f)<sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>(<sp/>f*v.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>,<sp/>f*v.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>,<sp/>f*v.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">//<sp/>scalar<sp/>division</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/><ref refid="vector3_8inl_1a8a74e02df57722c965846bf094ecb19c" kindref="member">operator / </ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v,<sp/>TReal<sp/>f)<sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v<sp/>*<sp/>(1/f);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="comment">//<sp/>vector<sp/>division</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/><ref refid="vector3_8inl_1a8a74e02df57722c965846bf094ecb19c" kindref="member">operator / </ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v2)<sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>(v.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>/<sp/>v2.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>,v.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>/<sp/>v2.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>,v.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref><sp/>/<sp/>v2.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="comment">//<sp/>cross<sp/>product</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/><ref refid="vector3_8inl_1a819828bba501a91db998c4787a864890" kindref="member">operator ^ </ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v2)<sp/>{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>(<sp/>v1.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>*v2.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref><sp/>-<sp/>v1.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>*v2.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>,<sp/>v1.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>*v2.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref><sp/>-<sp/>v1.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>*v2.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>,<sp/>v1.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>*v2.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref><sp/>-<sp/>v1.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>*v2.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="comment">//<sp/>vector<sp/>negation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref><sp/><ref refid="vector3_8inl_1a328389e8a0dcc36126a6331e9bc61944" kindref="member">operator - </ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>(<sp/>-v.<ref refid="classai_vector3t_1af18f349ffd462a92d582f54f48f64736" kindref="member">x</ref>,<sp/>-v.<ref refid="classai_vector3t_1a93106200860fb148d6110040fb73a892" kindref="member">y</ref>,<sp/>-v.<ref refid="classai_vector3t_1ab7badef95b9544f930ce0c573bbb6bb5" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AI_VECTOR3D_INL_INC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/vector3.inl"/>
+  </compounddef>
+</doxygen>

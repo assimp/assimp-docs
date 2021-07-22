@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_blob_i_o_stream" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::BlobIOStream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOStream</basecompoundref>
+    <includes local="no">BlobIOSystem.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_blob_i_o_stream_1abee210171933e0a1cd2c220d71e3e3e7" prot="private" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* Assimp::BlobIOStream::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="180" column="13" bodyfile="include/assimp/BlobIOSystem.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_blob_i_o_stream_1ae4b96f2cdcdabf6e6444db28084606b6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_assimp_1_1_blob_i_o_system" kindref="compound">BlobIOSystem</ref> *const</type>
+        <definition>BlobIOSystem* const Assimp::BlobIOStream::creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="184" column="24" bodyfile="include/assimp/BlobIOSystem.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_blob_i_o_stream_1ae439326641887108b324b580a9d58ed5" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::BlobIOStream::cur_size</definition>
+        <argsstring></argsstring>
+        <name>cur_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="181" column="12" bodyfile="include/assimp/BlobIOSystem.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_blob_i_o_stream_1a5483134b78159cc971ce60040f6ce69f" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::BlobIOStream::cursor</definition>
+        <argsstring></argsstring>
+        <name>cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="181" column="31" bodyfile="include/assimp/BlobIOSystem.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_blob_i_o_stream_1a3514f94a363e3c628207679fe56b2ad0" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string Assimp::BlobIOStream::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="183" column="23" bodyfile="include/assimp/BlobIOSystem.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_blob_i_o_stream_1a6aee0eb61f46e2f7c7867a527dd29e38" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::BlobIOStream::file_size</definition>
+        <argsstring></argsstring>
+        <name>file_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="181" column="21" bodyfile="include/assimp/BlobIOSystem.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_blob_i_o_stream_1aea5ee46166027f83a377d8e9f1974628" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::BlobIOStream::initial</definition>
+        <argsstring></argsstring>
+        <name>initial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="181" column="38" bodyfile="include/assimp/BlobIOSystem.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_blob_i_o_stream_1a8f35d99f46306fe8e7b7fb02d8b09f38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::BlobIOStream::BlobIOStream</definition>
+        <argsstring>(BlobIOSystem *creator, const std::string &amp;file, size_t initial=4096)</argsstring>
+        <name>BlobIOStream</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_blob_i_o_system" kindref="compound">BlobIOSystem</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>initial</declname>
+          <defval>4096</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="66" column="5" bodyfile="include/assimp/BlobIOSystem.h" bodystart="66" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_blob_i_o_stream_1aef56b63298d89945d1b9cfd65379ab6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t Assimp::BlobIOStream::FileSize</definition>
+        <argsstring>() const</argsstring>
+        <name>FileSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="148" column="20" bodyfile="include/assimp/BlobIOSystem.h" bodystart="148" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_blob_i_o_stream_1aa8875a880e989b6743cbdb613e11ba76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Assimp::BlobIOStream::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="153" column="18" bodyfile="include/assimp/BlobIOSystem.h" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_blob_i_o_stream_1a2a56b4a3d41096ee4da98b859ba067fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref> *</type>
+        <definition>aiExportDataBlob* Assimp::BlobIOStream::GetBlob</definition>
+        <argsstring>()</argsstring>
+        <name>GetBlob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="81" column="22" bodyfile="include/assimp/BlobIOSystem.h" bodystart="81" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_blob_i_o_stream_1a9752238a2b888f5aaa9f3cc9c94c80d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t Assimp::BlobIOStream::Read</definition>
+        <argsstring>(void *, size_t, size_t)</argsstring>
+        <name>Read</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type>size_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="92" column="20" bodyfile="include/assimp/BlobIOSystem.h" bodystart="92" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_blob_i_o_stream_1a0339ebce4ceff0d69da349643c00d861" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>virtual aiReturn Assimp::BlobIOStream::Seek</definition>
+        <argsstring>(size_t pOffset, aiOrigin pOrigin)</argsstring>
+        <name>Seek</name>
+        <param>
+          <type>size_t</type>
+          <declname>pOffset</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1ac50fbaa57d78776ca99e42104d9b2786" kindref="member">aiOrigin</ref></type>
+          <declname>pOrigin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="115" column="22" bodyfile="include/assimp/BlobIOSystem.h" bodystart="115" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_blob_i_o_stream_1a1a0cfc06c4c448c9054c6b3cfc661b74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t Assimp::BlobIOStream::Tell</definition>
+        <argsstring>() const</argsstring>
+        <name>Tell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="143" column="20" bodyfile="include/assimp/BlobIOSystem.h" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_blob_i_o_stream_1aed9dda065eee635d2f8c9eeb8133461a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t Assimp::BlobIOStream::Write</definition>
+        <argsstring>(const void *pvBuffer, size_t pSize, size_t pCount)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>const void *</type>
+          <declname>pvBuffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="99" column="20" bodyfile="include/assimp/BlobIOSystem.h" bodystart="99" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_blob_i_o_stream_1ac7eb8b7b41296dd8003d08d4da81f95d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Assimp::BlobIOStream::~BlobIOStream</definition>
+        <argsstring>()</argsstring>
+        <name>~BlobIOStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="77" column="13" bodyfile="include/assimp/BlobIOSystem.h" bodystart="307" bodyend="310"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_blob_i_o_stream_1a9cf9828edeb38e0d70c3ff0784f46216" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::BlobIOStream::Grow</definition>
+        <argsstring>(size_t need=0)</argsstring>
+        <name>Grow</name>
+        <param>
+          <type>size_t</type>
+          <declname>need</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/BlobIOSystem.h" line="159" column="10" bodyfile="include/assimp/BlobIOSystem.h" bodystart="159" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Redirect IOStream to a blob. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/BlobIOSystem.h" line="64" column="1" bodyfile="include/assimp/BlobIOSystem.h" bodystart="64" bodyend="185"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1a8f35d99f46306fe8e7b7fb02d8b09f38" prot="public" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>BlobIOStream</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1abee210171933e0a1cd2c220d71e3e3e7" prot="private" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>buffer</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1ae4b96f2cdcdabf6e6444db28084606b6" prot="private" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>creator</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1ae439326641887108b324b580a9d58ed5" prot="private" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>cur_size</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1a5483134b78159cc971ce60040f6ce69f" prot="private" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>cursor</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1a3514f94a363e3c628207679fe56b2ad0" prot="private" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>file</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1a6aee0eb61f46e2f7c7867a527dd29e38" prot="private" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>file_size</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1aef56b63298d89945d1b9cfd65379ab6a" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>FileSize</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1aa8875a880e989b6743cbdb613e11ba76" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>Flush</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1a2a56b4a3d41096ee4da98b859ba067fd" prot="public" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>GetBlob</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1a9cf9828edeb38e0d70c3ff0784f46216" prot="private" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>Grow</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1aea5ee46166027f83a377d8e9f1974628" prot="private" virt="non-virtual"><scope>Assimp::BlobIOStream</scope><name>initial</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1a9752238a2b888f5aaa9f3cc9c94c80d6" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>Read</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1a0339ebce4ceff0d69da349643c00d861" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>Seek</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1a1a0cfc06c4c448c9054c6b3cfc661b74" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>Tell</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1aed9dda065eee635d2f8c9eeb8133461a" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>Write</name></member>
+      <member refid="class_assimp_1_1_blob_i_o_stream_1ac7eb8b7b41296dd8003d08d4da81f95d" prot="public" virt="virtual"><scope>Assimp::BlobIOStream</scope><name>~BlobIOStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

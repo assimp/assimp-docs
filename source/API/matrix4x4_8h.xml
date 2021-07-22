@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="matrix4x4_8h" kind="file" language="C++">
+    <compoundname>matrix4x4.h</compoundname>
+    <includes refid="vector3_8h" local="no">assimp/vector3.h</includes>
+    <includes refid="defs_8h" local="no">assimp/defs.h</includes>
+    <includedby refid="matrix3x3_8inl" local="no">matrix3x3.inl</includedby>
+    <includedby refid="matrix4x4_8inl" local="yes">matrix4x4.inl</includedby>
+    <includedby refid="types_8h" local="no">types.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>matrix4x4.h</label>
+        <link refid="matrix4x4_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>assimp/vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cmath</label>
+      </node>
+      <node id="5">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="4">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="35">
+        <label>SpatialSort.h</label>
+        <link refid="_spatial_sort_8h"/>
+      </node>
+      <node id="1">
+        <label>matrix4x4.h</label>
+        <link refid="matrix4x4_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ByteSwapper.h</label>
+        <link refid="_byte_swapper_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>BaseImporter.h</label>
+        <link refid="_base_importer_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>material.h</label>
+        <link refid="material_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>BlobIOSystem.h</label>
+        <link refid="_blob_i_o_system_8h"/>
+      </node>
+      <node id="18">
+        <label>importerdesc.h</label>
+        <link refid="importerdesc_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>LogAux.h</label>
+        <link refid="_log_aux_8h"/>
+      </node>
+      <node id="28">
+        <label>SkeletonMeshBuilder.h</label>
+        <link refid="_skeleton_mesh_builder_8h"/>
+      </node>
+      <node id="24">
+        <label>light.h</label>
+        <link refid="light_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>cfileio.h</label>
+        <link refid="cfileio_8h"/>
+      </node>
+      <node id="13">
+        <label>camera.h</label>
+        <link refid="camera_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>SceneCombiner.h</label>
+        <link refid="_scene_combiner_8h"/>
+      </node>
+      <node id="4">
+        <label>types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>CreateAnimMesh.h</label>
+        <link refid="_create_anim_mesh_8h"/>
+      </node>
+      <node id="11">
+        <label>LineSplitter.h</label>
+        <link refid="_line_splitter_8h"/>
+      </node>
+      <node id="10">
+        <label>StreamReader.h</label>
+        <link refid="_stream_reader_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>IOStreamBuffer.h</label>
+        <link refid="_i_o_stream_buffer_8h"/>
+      </node>
+      <node id="19">
+        <label>DefaultIOStream.h</label>
+        <link refid="_default_i_o_stream_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>SGSpatialSort.h</label>
+        <link refid="_s_g_spatial_sort_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>matrix4x4.inl</label>
+        <link refid="matrix4x4_8inl"/>
+      </node>
+      <node id="5">
+        <label>anim.h</label>
+        <link refid="anim_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>SmoothingGroups.inl</label>
+        <link refid="_smoothing_groups_8inl"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Exceptional.h</label>
+        <link refid="_exceptional_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>texture.h</label>
+        <link refid="texture_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>cimport.h</label>
+        <link refid="cimport_8h"/>
+      </node>
+      <node id="29">
+        <label>Vertex.h</label>
+        <link refid="_vertex_8h"/>
+      </node>
+      <node id="21">
+        <label>fast_atof.h</label>
+        <link refid="fast__atof_8h"/>
+      </node>
+      <node id="12">
+        <label>StreamWriter.h</label>
+        <link refid="_stream_writer_8h"/>
+      </node>
+      <node id="6">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+      </node>
+      <node id="30">
+        <label>postprocess.h</label>
+        <link refid="postprocess_8h"/>
+      </node>
+      <node id="34">
+        <label>SmoothingGroups.h</label>
+        <link refid="_smoothing_groups_8h"/>
+      </node>
+      <node id="26">
+        <label>mesh.h</label>
+        <link refid="mesh_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>XmlParser.h</label>
+        <link refid="_xml_parser_8h"/>
+      </node>
+      <node id="14">
+        <label>cexport.h</label>
+        <link refid="cexport_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Subdivision.h</label>
+        <link refid="_subdivision_8h"/>
+      </node>
+      <node id="2">
+        <label>matrix3x3.inl</label>
+        <link refid="matrix3x3_8inl"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classai_matrix4x4t" prot="public">aiMatrix4x4t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="matrix4x4_8h_1aa85c005ba717f92919de6c4b4bcb6dc9" prot="public" static="no">
+        <name>AI_MATRIX4X4_H_INC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="48" column="9" bodyfile="include/assimp/matrix4x4.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" prot="public" static="no">
+        <type><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&lt; <ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref> &gt;</type>
+        <definition>typedef aiMatrix4x4t&lt;ai_real&gt; aiMatrix4x4</definition>
+        <argsstring></argsstring>
+        <name>aiMatrix4x4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/matrix4x4.h" line="262" column="22" bodyfile="include/assimp/matrix4x4.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>4x4 matrix structure, including operators when compiling in C++ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_MATRIX4X4_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_MATRIX4X4_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>pragma<sp/>GCC<sp/>system_header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="vector3_8h" kindref="compound">assimp/vector3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="defs_8h" kindref="compound">assimp/defs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="73" refid="classai_matrix4x4t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t_1ad7df5d6d154bd90f77737ca940ad5fee" kindref="member">aiMatrix4x4t</ref>()<sp/><ref refid="defs_8h_1ae032f18edd69bf6ba935ef9feb025a96" kindref="member">AI_NO_EXCEPT</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t_1ad7df5d6d154bd90f77737ca940ad5fee" kindref="member">aiMatrix4x4t</ref><sp/>(<sp/><sp/>TReal<sp/>_a1,<sp/>TReal<sp/>_a2,<sp/>TReal<sp/>_a3,<sp/>TReal<sp/>_a4,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TReal<sp/>_b1,<sp/>TReal<sp/>_b2,<sp/>TReal<sp/>_b3,<sp/>TReal<sp/>_b4,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TReal<sp/>_c1,<sp/>TReal<sp/>_c2,<sp/>TReal<sp/>_c3,<sp/>TReal<sp/>_c4,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TReal<sp/>_d1,<sp/>TReal<sp/>_d2,<sp/>TReal<sp/>_d3,<sp/>TReal<sp/>_d4);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t_1ad7df5d6d154bd90f77737ca940ad5fee" kindref="member">aiMatrix4x4t</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_matrix3x3t" kindref="compound">aiMatrix3x3t&lt;TReal&gt;</ref>&amp;<sp/>m);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t_1ad7df5d6d154bd90f77737ca940ad5fee" kindref="member">aiMatrix4x4t</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>scaling,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont&lt;TReal&gt;</ref>&amp;<sp/>rotation,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>position);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>array<sp/>access<sp/>operators</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>TReal*<sp/><ref refid="classai_matrix4x4t_1ac1401c94d941835defd7799ee9c600e7" kindref="member">operator[]       </ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_iIndex);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TReal*<sp/><ref refid="classai_matrix4x4t_1ac1401c94d941835defd7799ee9c600e7" kindref="member">operator[] </ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_iIndex)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>comparison<sp/>operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t_1a1c4b0769ce92db066078922ef40f77ab" kindref="member">operator== </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>m)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t_1a2d7b88fe50dad0f2a68a377e5faec94f" kindref="member">operator!= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>m)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t_1a4c11efb37b1686c6c4ff3d48de35598d" kindref="member">Equal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>m,<sp/>TReal<sp/>epsilon<sp/>=<sp/>1e-6)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>matrix<sp/>multiplication.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1a7bde7a38d2771b07fe964e66a2599997" kindref="member">operator *= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>m);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref><sp/><sp/><ref refid="classai_matrix4x4t_1a68cd60a63a7bf19b103f46dff9bb9677" kindref="member">operator *  </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>m)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref><sp/><ref refid="classai_matrix4x4t_1a68cd60a63a7bf19b103f46dff9bb9677" kindref="member">operator * </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TReal&amp;<sp/>aFloat)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref><sp/><ref refid="classai_matrix4x4t_1a8f55b61cda62dfcf83f592d970b8899e" kindref="member">operator + </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>aMatrix)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TOther&gt;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t&lt;TOther&gt;</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1a6ddba727b978f74e862ecba33745825d" kindref="member">Transpose</ref>();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1ae398d4516cf8d297f150c8817f6b71d3" kindref="member">Inverse</ref>();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>TReal<sp/><ref refid="classai_matrix4x4t_1af7f1b5133c989c74e4570cbb0598b238" kindref="member">Determinant</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t_1a8b2cacfd0733057daba12160b24bbd23" kindref="member">IsIdentity</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t_1a2aa8546c78e6efb21931c437a3fd3604" kindref="member">Decompose</ref><sp/>(<ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>scaling,<sp/><ref refid="classai_quaterniont" kindref="compound">aiQuaterniont&lt;TReal&gt;</ref>&amp;<sp/>rotation,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>position)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t_1a2aa8546c78e6efb21931c437a3fd3604" kindref="member">Decompose</ref>(<ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>pScaling,<sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>pRotation,<sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>pPosition)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t_1a2aa8546c78e6efb21931c437a3fd3604" kindref="member">Decompose</ref>(<ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>pScaling,<sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>pRotationAxis,<sp/>TReal&amp;<sp/>pRotationAngle,<sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>pPosition)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t_1aad23f9488d17d5c163c59ddd08a1fa87" kindref="member">DecomposeNoScaling</ref><sp/>(<ref refid="classai_quaterniont" kindref="compound">aiQuaterniont&lt;TReal&gt;</ref>&amp;<sp/>rotation,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>position)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="190"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1aabc60f572da97861d167b05d09a3cf54" kindref="member">FromEulerAnglesXYZ</ref>(TReal<sp/>x,<sp/>TReal<sp/>y,<sp/>TReal<sp/>z);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1aabc60f572da97861d167b05d09a3cf54" kindref="member">FromEulerAnglesXYZ</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>blubb);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1a020f1deeedfe27986ada0e6894014318" kindref="member">RotationX</ref>(TReal<sp/>a,<sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1afd7512d141a3ffe9d1df0aeccd58ac4c" kindref="member">RotationY</ref>(TReal<sp/>a,<sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="215"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1a6d33ed3f5a46f733d86b186036968824" kindref="member">RotationZ</ref>(TReal<sp/>a,<sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1a3c15acce7e3c717153a0705f6bdc032d" kindref="member">Rotation</ref>(TReal<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>axis,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1a35257396435143df32b04cf3b33b8daa" kindref="member">Translation</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v,<sp/></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1a0ad873fd5fa86e44fa57901f1bc32d71" kindref="member">Scaling</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>v,<sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/><ref refid="classai_matrix4x4t_1a6fb7fe21fb2ceba9467e72642979a268" kindref="member">FromToMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>from,</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3t&lt;TReal&gt;</ref>&amp;<sp/>to,<sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t</ref>&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>TReal<sp/><ref refid="classai_matrix4x4t_1aac24671aa7f1155e9e9f2c63e825c3ea" kindref="member">a1</ref>,<sp/><ref refid="classai_matrix4x4t_1ab0f0a6d456ad8430555d30b8f2ec09e4" kindref="member">a2</ref>,<sp/><ref refid="classai_matrix4x4t_1a5fa2f856df015c63fafc18f8b166839c" kindref="member">a3</ref>,<sp/><ref refid="classai_matrix4x4t_1a714f52d2ec08808a19ab753eec3b0086" kindref="member">a4</ref>;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>TReal<sp/><ref refid="classai_matrix4x4t_1aacc93e987430e14e9697b7ca32bf92ea" kindref="member">b1</ref>,<sp/><ref refid="classai_matrix4x4t_1a9eb2ebc319cdf8bbc59b4023216a9a9f" kindref="member">b2</ref>,<sp/><ref refid="classai_matrix4x4t_1a7c12882549222d3bed5d0e6c18deac84" kindref="member">b3</ref>,<sp/><ref refid="classai_matrix4x4t_1adc0c7992476d884067e474da9b9d908f" kindref="member">b4</ref>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>TReal<sp/><ref refid="classai_matrix4x4t_1a1079852b4ac6cf05056d3fcfae570c4d" kindref="member">c1</ref>,<sp/><ref refid="classai_matrix4x4t_1a1856e465411e9e3e71988eef1c47b399" kindref="member">c2</ref>,<sp/><ref refid="classai_matrix4x4t_1a4ae057235cd88d3b4c48ee7d9ac632ed" kindref="member">c3</ref>,<sp/><ref refid="classai_matrix4x4t_1ad205d617d5e863bdad4ca66275a1e080" kindref="member">c4</ref>;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>TReal<sp/><ref refid="classai_matrix4x4t_1aa709c601ce6fc98c92a8802e58d80fc2" kindref="member">d1</ref>,<sp/><ref refid="classai_matrix4x4t_1a1becaa4733b3b666e1b631efbb5843b2" kindref="member">d2</ref>,<sp/><ref refid="classai_matrix4x4t_1aea9e249dc63f328cd180a94e73043cc8" kindref="member">d3</ref>,<sp/><ref refid="classai_matrix4x4t_1ab4533b358b7e1f56e9f3037b0fb8f1ae" kindref="member">d4</ref>;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4t&lt;ai_real&gt;</ref><sp/><ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="classai_matrix4x4t" kindref="compound">aiMatrix4x4</ref><sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref><sp/><ref refid="classai_matrix4x4t_1aac24671aa7f1155e9e9f2c63e825c3ea" kindref="member">a1</ref>,<sp/><ref refid="classai_matrix4x4t_1ab0f0a6d456ad8430555d30b8f2ec09e4" kindref="member">a2</ref>,<sp/><ref refid="classai_matrix4x4t_1a5fa2f856df015c63fafc18f8b166839c" kindref="member">a3</ref>,<sp/><ref refid="classai_matrix4x4t_1a714f52d2ec08808a19ab753eec3b0086" kindref="member">a4</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref><sp/><ref refid="classai_matrix4x4t_1aacc93e987430e14e9697b7ca32bf92ea" kindref="member">b1</ref>,<sp/><ref refid="classai_matrix4x4t_1a9eb2ebc319cdf8bbc59b4023216a9a9f" kindref="member">b2</ref>,<sp/><ref refid="classai_matrix4x4t_1a7c12882549222d3bed5d0e6c18deac84" kindref="member">b3</ref>,<sp/><ref refid="classai_matrix4x4t_1adc0c7992476d884067e474da9b9d908f" kindref="member">b4</ref>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref><sp/><ref refid="classai_matrix4x4t_1a1079852b4ac6cf05056d3fcfae570c4d" kindref="member">c1</ref>,<sp/><ref refid="classai_matrix4x4t_1a1856e465411e9e3e71988eef1c47b399" kindref="member">c2</ref>,<sp/><ref refid="classai_matrix4x4t_1a4ae057235cd88d3b4c48ee7d9ac632ed" kindref="member">c3</ref>,<sp/><ref refid="classai_matrix4x4t_1ad205d617d5e863bdad4ca66275a1e080" kindref="member">c4</ref>;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref><sp/><ref refid="classai_matrix4x4t_1aa709c601ce6fc98c92a8802e58d80fc2" kindref="member">d1</ref>,<sp/><ref refid="classai_matrix4x4t_1a1becaa4733b3b666e1b631efbb5843b2" kindref="member">d2</ref>,<sp/><ref refid="classai_matrix4x4t_1aea9e249dc63f328cd180a94e73043cc8" kindref="member">d3</ref>,<sp/><ref refid="classai_matrix4x4t_1ab4533b358b7e1f56e9f3037b0fb8f1ae" kindref="member">d4</ref>;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AI_MATRIX4X4_H_INC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/matrix4x4.h"/>
+  </compounddef>
+</doxygen>

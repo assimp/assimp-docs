@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_intern_1_1_getter" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::Intern::Getter</compoundname>
+    <includes local="no">ByteSwapper.h</includes>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>SwapEndianess</declname>
+        <defname>SwapEndianess</defname>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>RuntimeSwitch</declname>
+        <defname>RuntimeSwitch</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_intern_1_1_getter_1a73b63da5d00911e9c11664244a53b17b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Intern::Getter&lt; SwapEndianess, T, RuntimeSwitch &gt;::operator()</definition>
+        <argsstring>(T *inout, bool le)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>T *</type>
+          <declname>inout</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>le</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="268" column="10" bodyfile="include/assimp/ByteSwapper.h" bodystart="268" bodyend="278"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/ByteSwapper.h" line="267" column="1" bodyfile="include/assimp/ByteSwapper.h" bodystart="267" bodyend="279"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_intern_1_1_getter_1a73b63da5d00911e9c11664244a53b17b" prot="public" virt="non-virtual"><scope>Assimp::Intern::Getter</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_face" kind="struct" language="C++" prot="public">
     <compoundname>aiFace</compoundname>
     <includes local="no">mesh.h</includes>
@@ -10,12 +10,13 @@
         <argsstring></argsstring>
         <name>mIndices</name>
         <briefdescription>
-<para>Pointer to the indices array. Size of the array is given in numIndices. </para>        </briefdescription>
+<para>Pointer to the indices array. Size of the array is given in numIndices. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="142" column="1" bodyfile="include/assimp/mesh.h" bodystart="142" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="142" column="18" bodyfile="include/assimp/mesh.h" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_face_1adda2698cec0ebfe651572f4a5701360b" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -23,12 +24,14 @@
         <argsstring></argsstring>
         <name>mNumIndices</name>
         <briefdescription>
-<para>Number of indices defining this face. </para>        </briefdescription>
+<para>Number of indices defining this face. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The maximum value for this member is <ref refid="mesh_8h_1a380f3ab069e89b3a1ed975577600438b" kindref="member">AI_MAX_FACE_INDICES</ref>. </para>        </detaileddescription>
+<para>The maximum value for this member is <ref refid="mesh_8h_1a380f3ab069e89b3a1ed975577600438b" kindref="member">AI_MAX_FACE_INDICES</ref>. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="139" column="1" bodyfile="include/assimp/mesh.h" bodystart="139" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="139" column="18" bodyfile="include/assimp/mesh.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -38,12 +41,13 @@
         <argsstring>() AI_NO_EXCEPT</argsstring>
         <name>aiFace</name>
         <briefdescription>
-<para>Default constructor. </para>        </briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="147" column="1" bodyfile="include/assimp/mesh.h" bodystart="147" bodyend="151"/>
+        <location file="include/assimp/mesh.h" line="147" column="5" bodyfile="include/assimp/mesh.h" bodystart="147" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="structai_face_1a096eb4f96e15861fe3c8299d5bee4c78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -55,12 +59,13 @@
           <declname>o</declname>
         </param>
         <briefdescription>
-<para>Copy constructor. Copy the index array. </para>        </briefdescription>
+<para>Copy constructor. Copy the index array. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="159" column="1" bodyfile="include/assimp/mesh.h" bodystart="159" bodyend="162"/>
+        <location file="include/assimp/mesh.h" line="159" column="5" bodyfile="include/assimp/mesh.h" bodystart="159" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="structai_face_1a3543fa78ef3b738e4a42e1e982a82e8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -72,12 +77,14 @@
           <declname>o</declname>
         </param>
         <briefdescription>
-<para>Inverse comparison operator. </para>        </briefdescription>
+<para>Inverse comparison operator. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Checks whether the index array of two faces is NOT identical </para>        </detaileddescription>
+<para>Checks whether the index array of two faces is NOT identical </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="208" column="1" bodyfile="include/assimp/mesh.h" bodystart="208" bodyend="210"/>
+        <location file="include/assimp/mesh.h" line="208" column="10" bodyfile="include/assimp/mesh.h" bodystart="208" bodyend="210"/>
       </memberdef>
       <memberdef kind="function" id="structai_face_1ae775782ac91711eeedd77d54c0dcfdc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structai_face" kindref="compound">aiFace</ref> &amp;</type>
@@ -89,12 +96,13 @@
           <declname>o</declname>
         </param>
         <briefdescription>
-<para>Assignment operator. Copy the index array. </para>        </briefdescription>
+<para>Assignment operator. Copy the index array. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="165" column="1" bodyfile="include/assimp/mesh.h" bodystart="165" bodyend="180"/>
+        <location file="include/assimp/mesh.h" line="165" column="12" bodyfile="include/assimp/mesh.h" bodystart="165" bodyend="180"/>
       </memberdef>
       <memberdef kind="function" id="structai_face_1ad573038b959a464dfb145a699fd93b77" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -106,12 +114,14 @@
           <declname>o</declname>
         </param>
         <briefdescription>
-<para>Comparison operator. </para>        </briefdescription>
+<para>Comparison operator. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Checks whether the index array of two faces is identical </para>        </detaileddescription>
+<para>Checks whether the index array of two faces is identical </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="184" column="1" bodyfile="include/assimp/mesh.h" bodystart="184" bodyend="204"/>
+        <location file="include/assimp/mesh.h" line="184" column="10" bodyfile="include/assimp/mesh.h" bodystart="184" bodyend="204"/>
       </memberdef>
       <memberdef kind="function" id="structai_face_1ae95d9898f19861a2b16ecc03603c3615" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -119,21 +129,25 @@
         <argsstring>()</argsstring>
         <name>~aiFace</name>
         <briefdescription>
-<para>Default destructor. Delete the index array. </para>        </briefdescription>
+<para>Default destructor. Delete the index array. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="154" column="1" bodyfile="include/assimp/mesh.h" bodystart="154" bodyend="156"/>
+        <location file="include/assimp/mesh.h" line="154" column="5" bodyfile="include/assimp/mesh.h" bodystart="154" bodyend="156"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>A single face in a mesh, referring to multiple vertices. </para>    </briefdescription>
+<para>A single face in a mesh, referring to multiple vertices. </para>
+    </briefdescription>
     <detaileddescription>
 <para>If mNumIndices is 3, we call the face &apos;triangle&apos;, for mNumIndices &gt; 3 it&apos;s called &apos;polygon&apos; (hey, that&apos;s just a definition!). <linebreak/>
  <ref refid="structai_mesh_1a99d66ac0a444068c1b252b30265cbf53" kindref="member">aiMesh::mPrimitiveTypes</ref> can be queried to quickly examine which types of primitive are actually present in a mesh. The <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410ab4484f73635d633cd79973bac1431ed6" kindref="member">aiProcess_SortByPType</ref> flag executes a special post-processing algorithm which splits meshes with <emphasis>different</emphasis> primitive types mixed up (e.g. lines and triangles) in several &apos;clean&apos; submeshes. Furthermore there is a configuration option ( <ref refid="config_8h_1a971e337cb0d526861142586b8341cb98" kindref="member">AI_CONFIG_PP_SBP_REMOVE</ref>) to force <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410ab4484f73635d633cd79973bac1431ed6" kindref="member">aiProcess_SortByPType</ref> to remove specific kinds of primitives from the imported scene, completely and forever. In many cases you&apos;ll probably want to set this setting to <programlisting><codeline><highlight class="normal">aiPrimitiveType_LINE|aiPrimitiveType_POINT</highlight></codeline>
-</programlisting> Together with the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b" kindref="member">aiProcess_Triangulate</ref> flag you can then be sure that <ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">aiFace::mNumIndices</ref> is always 3. <simplesect kind="note"><para>Take a look at the <ref refid="" kindref="compound">Data Structures page </ref> for more information on the layout and winding order of a face. </para></simplesect>
-</para>    </detaileddescription>
+</programlisting> Together with the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b" kindref="member">aiProcess_Triangulate</ref> flag you can then be sure that <ref refid="structai_face_1adda2698cec0ebfe651572f4a5701360b" kindref="member">aiFace::mNumIndices</ref> is always 3. <simplesect kind="note"><para>Take a look at the <ref refid="" kindref="compound">Data Structures page </ref> for more information on the layout and winding order of a face. </para>
+</simplesect>
+</para>
+    </detaileddescription>
     <location file="include/assimp/mesh.h" line="136" column="1" bodyfile="include/assimp/mesh.h" bodystart="136" bodyend="212"/>
     <listofallmembers>
       <member refid="structai_face_1a2591c15e2ce32bfac18298b9f309e0b6" prot="public" virt="non-virtual"><scope>aiFace</scope><name>aiFace</name></member>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_deadly_export_error" kind="class" language="C++" prot="public">
+    <compoundname>DeadlyExportError</compoundname>
+    <basecompoundref refid="class_deadly_error_base" prot="public" virt="non-virtual">DeadlyErrorBase</basecompoundref>
+    <includes local="no">Exceptional.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_deadly_export_error_1a6ad6cb9df4baa6a7bbf175e4d53fd7a2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>DeadlyExportError::DeadlyExportError</definition>
+        <argsstring>(T &amp;&amp;... args)</argsstring>
+        <name>DeadlyExportError</name>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exceptional.h" line="91" column="14" bodyfile="include/assimp/Exceptional.h" bodystart="91" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>DeadlyExportError</label>
+        <link refid="class_deadly_export_error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DeadlyErrorBase</label>
+        <link refid="class_deadly_error_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>DeadlyExportError</label>
+        <link refid="class_deadly_export_error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DeadlyErrorBase</label>
+        <link refid="class_deadly_error_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/Exceptional.h" line="87" column="1" bodyfile="include/assimp/Exceptional.h" bodystart="87" bodyend="97"/>
+    <listofallmembers>
+      <member refid="class_deadly_error_base_1af100784aff998fbbdd4119fc8e7c45b9" prot="protected" virt="non-virtual"><scope>DeadlyExportError</scope><name>DeadlyErrorBase</name></member>
+      <member refid="class_deadly_error_base_1ac2f9ad96d4d189c7dcac25d612114095" prot="protected" virt="non-virtual"><scope>DeadlyExportError</scope><name>DeadlyErrorBase</name></member>
+      <member refid="class_deadly_export_error_1a6ad6cb9df4baa6a7bbf175e4d53fd7a2" prot="public" virt="non-virtual"><scope>DeadlyExportError</scope><name>DeadlyExportError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

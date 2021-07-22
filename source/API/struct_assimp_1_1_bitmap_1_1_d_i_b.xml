@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_bitmap_1_1_d_i_b" kind="struct" language="C++" prot="protected">
+    <compoundname>Assimp::Bitmap::DIB</compoundname>
+    <includes local="no">Bitmap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1afb807e26fa867909098491735d7cbc86" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Assimp::Bitmap::DIB::bits_per_pixel</definition>
+        <argsstring></argsstring>
+        <name>bits_per_pixel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="91" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1a8f44512e4507b2f2f574f5a75ed752a3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Assimp::Bitmap::DIB::compression</definition>
+        <argsstring></argsstring>
+        <name>compression</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="92" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1a574c072f98b3b3728ab6d2cd46c9510a" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Assimp::Bitmap::DIB::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="89" column="17" bodyfile="include/assimp/Bitmap.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1af7dd8666a096cd433e80b9a3ef6103f7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Assimp::Bitmap::DIB::image_size</definition>
+        <argsstring></argsstring>
+        <name>image_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="93" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1af440f5fced97b6be82466ecbf0402b0e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Assimp::Bitmap::DIB::nb_colors</definition>
+        <argsstring></argsstring>
+        <name>nb_colors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="96" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1af1293883ac6b8e3d384e32a2a15fb5e5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Assimp::Bitmap::DIB::nb_important_colors</definition>
+        <argsstring></argsstring>
+        <name>nb_important_colors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="97" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1a94b97deb6d6cfa4453fd701055fc2c5b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Assimp::Bitmap::DIB::planes</definition>
+        <argsstring></argsstring>
+        <name>planes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="90" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1a3f900bb044bf5acdb15df11b01d6d1fc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Assimp::Bitmap::DIB::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="87" column="18" bodyfile="include/assimp/Bitmap.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1aaf07cdb2ea0ec2281c658dcf16d11fa1" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Assimp::Bitmap::DIB::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="88" column="17" bodyfile="include/assimp/Bitmap.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1af6ea407698b3210b9cb20c2f9346d4e9" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Assimp::Bitmap::DIB::x_resolution</definition>
+        <argsstring></argsstring>
+        <name>x_resolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="94" column="17" bodyfile="include/assimp/Bitmap.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1a762d6e3c0911dd1aef2a6d0ceea0421f" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Assimp::Bitmap::DIB::y_resolution</definition>
+        <argsstring></argsstring>
+        <name>y_resolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="95" column="17" bodyfile="include/assimp/Bitmap.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_bitmap_1_1_d_i_b_1a0a5faa8d3093a2f626ebfd85abe8bc94" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t Assimp::Bitmap::DIB::dib_size</definition>
+        <argsstring></argsstring>
+        <name>dib_size</name>
+        <initializer>=
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1a3f900bb044bf5acdb15df11b01d6d1fc" kindref="member">size</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1aaf07cdb2ea0ec2281c658dcf16d11fa1" kindref="member">width</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1a574c072f98b3b3728ab6d2cd46c9510a" kindref="member">height</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1a94b97deb6d6cfa4453fd701055fc2c5b" kindref="member">planes</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1afb807e26fa867909098491735d7cbc86" kindref="member">bits_per_pixel</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1a8f44512e4507b2f2f574f5a75ed752a3" kindref="member">compression</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1af7dd8666a096cd433e80b9a3ef6103f7" kindref="member">image_size</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1af6ea407698b3210b9cb20c2f9346d4e9" kindref="member">x_resolution</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1a762d6e3c0911dd1aef2a6d0ceea0421f" kindref="member">y_resolution</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1af440f5fced97b6be82466ecbf0402b0e" kindref="member">nb_colors</ref>) +
+            sizeof(<ref refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1af1293883ac6b8e3d384e32a2a15fb5e5" kindref="member">nb_important_colors</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Bitmap.h" line="100" column="38" bodyfile="include/assimp/Bitmap.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/Bitmap.h" line="86" column="5" bodyfile="include/assimp/Bitmap.h" bodystart="86" bodyend="112"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1afb807e26fa867909098491735d7cbc86" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>bits_per_pixel</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1a8f44512e4507b2f2f574f5a75ed752a3" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>compression</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1a0a5faa8d3093a2f626ebfd85abe8bc94" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>dib_size</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1a574c072f98b3b3728ab6d2cd46c9510a" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>height</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1af7dd8666a096cd433e80b9a3ef6103f7" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>image_size</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1af440f5fced97b6be82466ecbf0402b0e" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>nb_colors</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1af1293883ac6b8e3d384e32a2a15fb5e5" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>nb_important_colors</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1a94b97deb6d6cfa4453fd701055fc2c5b" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>planes</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1a3f900bb044bf5acdb15df11b01d6d1fc" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>size</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1aaf07cdb2ea0ec2281c658dcf16d11fa1" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>width</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1af6ea407698b3210b9cb20c2f9346d4e9" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>x_resolution</name></member>
+      <member refid="struct_assimp_1_1_bitmap_1_1_d_i_b_1a762d6e3c0911dd1aef2a6d0ceea0421f" prot="public" virt="non-virtual"><scope>Assimp::Bitmap::DIB</scope><name>y_resolution</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_metadata" kind="struct" language="C++" prot="public">
     <compoundname>aiMetadata</compoundname>
     <includes local="no">metadata.h</includes>
@@ -10,12 +10,14 @@
         <argsstring></argsstring>
         <name>mKeys</name>
         <briefdescription>
-<para>Arrays of keys, may not be NULL. </para>        </briefdescription>
+<para>Arrays of keys, may not be NULL. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Entries in this array may not be NULL as well. </para>        </detaileddescription>
+<para>Entries in this array may not be NULL as well. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="151" column="1" bodyfile="include/assimp/metadata.h" bodystart="151" bodyend="-1"/>
+        <location file="include/assimp/metadata.h" line="151" column="23" bodyfile="include/assimp/metadata.h" bodystart="151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_metadata_1a32c4587c53dd402a5878ffc94088e528" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -23,12 +25,13 @@
         <argsstring></argsstring>
         <name>mNumProperties</name>
         <briefdescription>
-<para>Length of the mKeys and mValues arrays, respectively. </para>        </briefdescription>
+<para>Length of the mKeys and mValues arrays, respectively. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="148" column="1" bodyfile="include/assimp/metadata.h" bodystart="148" bodyend="-1"/>
+        <location file="include/assimp/metadata.h" line="148" column="18" bodyfile="include/assimp/metadata.h" bodystart="148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_metadata_1a34b515fcb5b806c471d3c6ce7bc76beb" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_metadata_entry" kindref="compound">aiMetadataEntry</ref> *</type>
@@ -36,12 +39,14 @@
         <argsstring></argsstring>
         <name>mValues</name>
         <briefdescription>
-<para>Arrays of values, may not be NULL. </para>        </briefdescription>
+<para>Arrays of values, may not be NULL. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Entries in this array may be NULL if the corresponding property key has no assigned value. </para>        </detaileddescription>
+<para>Entries in this array may be NULL if the corresponding property key has no assigned value. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="155" column="1" bodyfile="include/assimp/metadata.h" bodystart="155" bodyend="-1"/>
+        <location file="include/assimp/metadata.h" line="155" column="30" bodyfile="include/assimp/metadata.h" bodystart="155" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -69,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="309" column="1" bodyfile="include/assimp/metadata.h" bodystart="309" bodyend="327"/>
+        <location file="include/assimp/metadata.h" line="309" column="17" bodyfile="include/assimp/metadata.h" bodystart="309" bodyend="327"/>
       </memberdef>
       <memberdef kind="function" id="structai_metadata_1ac4583cdf1340784d45cb9161132a6db3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -77,12 +82,13 @@
         <argsstring>() AI_NO_EXCEPT</argsstring>
         <name>aiMetadata</name>
         <briefdescription>
-<para>The default constructor, set all members to zero by default. </para>        </briefdescription>
+<para>The default constructor, set all members to zero by default. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="162" column="1" bodyfile="include/assimp/metadata.h" bodystart="162" bodyend="167"/>
+        <location file="include/assimp/metadata.h" line="162" column="5" bodyfile="include/assimp/metadata.h" bodystart="162" bodyend="167"/>
       </memberdef>
       <memberdef kind="function" id="structai_metadata_1aeccd7ad2d44580c937e7f23af6f730c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -99,33 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="169" column="1" bodyfile="include/assimp/metadata.h" bodystart="169" bodyend="225"/>
-      </memberdef>
-      <memberdef kind="function" id="structai_metadata_1a6956b6967753529bec94389b5aaf0772" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename T</type>
-          </param>
-        </templateparamlist>
-        <type>bool</type>
-        <definition>bool aiMetadata::Get</definition>
-        <argsstring>(unsigned index, T &amp;value) const</argsstring>
-        <name>Get</name>
-        <param>
-          <type>unsigned</type>
-          <declname>index</declname>
-        </param>
-        <param>
-          <type>T &amp;</type>
-          <declname>value</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/assimp/metadata.h" line="382" column="1" bodyfile="include/assimp/metadata.h" bodystart="382" bodyend="399"/>
+        <location file="include/assimp/metadata.h" line="169" column="5" bodyfile="include/assimp/metadata.h" bodystart="169" bodyend="225"/>
       </memberdef>
       <memberdef kind="function" id="structai_metadata_1ace324236fccfe13485a5e6b296399bc7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -151,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="402" column="1" bodyfile="include/assimp/metadata.h" bodystart="402" bodyend="410"/>
+        <location file="include/assimp/metadata.h" line="402" column="17" bodyfile="include/assimp/metadata.h" bodystart="402" bodyend="410"/>
       </memberdef>
       <memberdef kind="function" id="structai_metadata_1a9d53312d00abb8caa9b471f184226b76" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -177,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="413" column="1" bodyfile="include/assimp/metadata.h" bodystart="413" bodyend="415"/>
+        <location file="include/assimp/metadata.h" line="413" column="17" bodyfile="include/assimp/metadata.h" bodystart="413" bodyend="415"/>
       </memberdef>
       <memberdef kind="function" id="structai_metadata_1ae507218f64a6e1bbfd137c884aa7a7ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -197,35 +177,67 @@
           <declname>entry</declname>
         </param>
         <briefdescription>
-<para>Return metadata entry for analyzing it by user. </para>        </briefdescription>
+<para>Return metadata entry for analyzing it by user. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">pIndex</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>- index of the entry. </para></parameterdescription>
+<para>- index of the entry. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="out">pKey</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>- pointer to the key value. </para></parameterdescription>
+<para>- pointer to the key value. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="out">pEntry</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>- pointer to the entry: type and value. </para></parameterdescription>
+<para>- pointer to the entry: type and value. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>false - if pIndex is out of range, else - true. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>false - if pIndex is out of range, else - true. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="422" column="1" bodyfile="include/assimp/metadata.h" bodystart="422" bodyend="431"/>
+        <location file="include/assimp/metadata.h" line="422" column="17" bodyfile="include/assimp/metadata.h" bodystart="422" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_metadata_1a6956b6967753529bec94389b5aaf0772" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool aiMetadata::Get</definition>
+        <argsstring>(unsigned index, T &amp;value) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/metadata.h" line="382" column="17" bodyfile="include/assimp/metadata.h" bodystart="382" bodyend="399"/>
       </memberdef>
       <memberdef kind="function" id="structai_metadata_1aed0a22ed52ef1e2d9940f24be0279077" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -237,20 +249,23 @@
           <declname>key</declname>
         </param>
         <briefdescription>
-<para>Check whether there is a metadata entry for the given key. </para>        </briefdescription>
+<para>Check whether there is a metadata entry for the given key. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">Key</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>- the key value value to check for. </para></parameterdescription>
+<para>- the key value value to check for. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="435" column="1" bodyfile="include/assimp/metadata.h" bodystart="435" bodyend="447"/>
+        <location file="include/assimp/metadata.h" line="435" column="17" bodyfile="include/assimp/metadata.h" bodystart="435" bodyend="447"/>
       </memberdef>
       <memberdef kind="function" id="structai_metadata_1a7891ba9b1854655f9dd3bc5cb0f138c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structai_metadata" kindref="compound">aiMetadata</ref> &amp;</type>
@@ -267,7 +282,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="227" column="1" bodyfile="include/assimp/metadata.h" bodystart="227" bodyend="233"/>
+        <location file="include/assimp/metadata.h" line="227" column="16" bodyfile="include/assimp/metadata.h" bodystart="227" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_metadata_1a703b11525a55529d7c695770a0b3cc34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool aiMetadata::Set</definition>
+        <argsstring>(const std::string &amp;key, const T &amp;value)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/metadata.h" line="364" column="17" bodyfile="include/assimp/metadata.h" bodystart="364" bodyend="379"/>
       </memberdef>
       <memberdef kind="function" id="structai_metadata_1aaa9fe8c2b317d77bfa3507b49e24812b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -297,33 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="330" column="1" bodyfile="include/assimp/metadata.h" bodystart="330" bodyend="361"/>
-      </memberdef>
-      <memberdef kind="function" id="structai_metadata_1a703b11525a55529d7c695770a0b3cc34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename T</type>
-          </param>
-        </templateparamlist>
-        <type>bool</type>
-        <definition>bool aiMetadata::Set</definition>
-        <argsstring>(const std::string &amp;key, const T &amp;value)</argsstring>
-        <name>Set</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>key</declname>
-        </param>
-        <param>
-          <type>const T &amp;</type>
-          <declname>value</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/assimp/metadata.h" line="364" column="1" bodyfile="include/assimp/metadata.h" bodystart="364" bodyend="379"/>
+        <location file="include/assimp/metadata.h" line="330" column="17" bodyfile="include/assimp/metadata.h" bodystart="330" bodyend="361"/>
       </memberdef>
       <memberdef kind="function" id="structai_metadata_1a4feb99ae4652398da6aa6ce9c39c2781" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -331,12 +346,13 @@
         <argsstring>()</argsstring>
         <name>~aiMetadata</name>
         <briefdescription>
-<para>The destructor. </para>        </briefdescription>
+<para>The destructor. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="238" column="1" bodyfile="include/assimp/metadata.h" bodystart="238" bodyend="282"/>
+        <location file="include/assimp/metadata.h" line="238" column="5" bodyfile="include/assimp/metadata.h" bodystart="238" bodyend="282"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -350,20 +366,23 @@
           <declname>numProperties</declname>
         </param>
         <briefdescription>
-<para>Allocates property fields + keys. </para>        </briefdescription>
+<para>Allocates property fields + keys. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>numProperties</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Number of requested properties. </para></parameterdescription>
+<para>Number of requested properties. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="288" column="1" bodyfile="include/assimp/metadata.h" bodystart="288" bodyend="299"/>
+        <location file="include/assimp/metadata.h" line="288" column="30" bodyfile="include/assimp/metadata.h" bodystart="288" bodyend="299"/>
       </memberdef>
       <memberdef kind="function" id="structai_metadata_1a179a0fbb56184068d375594317dde6b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -375,17 +394,18 @@
           <declname>metadata</declname>
         </param>
         <briefdescription>
-<para>Deallocates property fields + keys. </para>        </briefdescription>
+<para>Deallocates property fields + keys. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="304" column="1" bodyfile="include/assimp/metadata.h" bodystart="304" bodyend="306"/>
+        <location file="include/assimp/metadata.h" line="304" column="24" bodyfile="include/assimp/metadata.h" bodystart="304" bodyend="306"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="structai_metadata_1a5dd145dc077a5f9b2c40b84ffadc8f67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>friend bool</type>
+        <type>bool</type>
         <definition>bool CompareKeys</definition>
         <argsstring>(const aiMetadata &amp;lhs, const aiMetadata &amp;rhs)</argsstring>
         <name>CompareKeys</name>
@@ -403,10 +423,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="449" column="1" bodyfile="include/assimp/metadata.h" bodystart="449" bodyend="460"/>
+        <location file="include/assimp/metadata.h" line="449" column="17" bodyfile="include/assimp/metadata.h" bodystart="449" bodyend="460"/>
       </memberdef>
       <memberdef kind="friend" id="structai_metadata_1ab4f75dc3ddd93ad6ee6aead4a24db53a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>friend bool</type>
+        <type>bool</type>
         <definition>bool CompareValues</definition>
         <argsstring>(const aiMetadata &amp;lhs, const aiMetadata &amp;rhs)</argsstring>
         <name>CompareValues</name>
@@ -424,10 +444,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="462" column="1" bodyfile="include/assimp/metadata.h" bodystart="462" bodyend="522"/>
+        <location file="include/assimp/metadata.h" line="462" column="17" bodyfile="include/assimp/metadata.h" bodystart="462" bodyend="522"/>
       </memberdef>
       <memberdef kind="friend" id="structai_metadata_1a3fef075ac212c41caa6eff97114a6006" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>friend bool</type>
+        <type>bool</type>
         <definition>bool operator!=</definition>
         <argsstring>(const aiMetadata &amp;lhs, const aiMetadata &amp;rhs)</argsstring>
         <name>operator!=</name>
@@ -445,10 +465,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="528" column="1" bodyfile="include/assimp/metadata.h" bodystart="528" bodyend="530"/>
+        <location file="include/assimp/metadata.h" line="528" column="17" bodyfile="include/assimp/metadata.h" bodystart="528" bodyend="530"/>
       </memberdef>
       <memberdef kind="friend" id="structai_metadata_1abaad6120f22524f5680ce1234149da1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>friend bool</type>
+        <type>bool</type>
         <definition>bool operator==</definition>
         <argsstring>(const aiMetadata &amp;lhs, const aiMetadata &amp;rhs)</argsstring>
         <name>operator==</name>
@@ -466,29 +486,31 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/metadata.h" line="524" column="1" bodyfile="include/assimp/metadata.h" bodystart="524" bodyend="526"/>
+        <location file="include/assimp/metadata.h" line="524" column="17" bodyfile="include/assimp/metadata.h" bodystart="524" bodyend="526"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Container for holding metadata. </para>    </briefdescription>
+<para>Container for holding metadata. </para>
+    </briefdescription>
     <detaileddescription>
-<para>Metadata is a key-value store using string keys and values. </para>    </detaileddescription>
+<para>Metadata is a key-value store using string keys and values. </para>
+    </detaileddescription>
     <collaborationgraph>
-      <node id="99">
+      <node id="3">
         <label>aiMetadataEntry</label>
         <link refid="structai_metadata_entry"/>
       </node>
-      <node id="97">
+      <node id="1">
         <label>aiMetadata</label>
         <link refid="structai_metadata"/>
-        <childnode refid="98" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
-        <childnode refid="99" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mValues</edgelabel>
         </childnode>
       </node>
-      <node id="98">
+      <node id="2">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>

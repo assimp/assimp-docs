@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="light_8h" kind="file" language="C++">
+    <compoundname>light.h</compoundname>
+    <includes refid="types_8h" local="no">assimp/types.h</includes>
+    <includedby refid="scene_8h" local="no">scene.h</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>assimp/matrix4x4.h</label>
+        <link refid="matrix4x4_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>assimp/vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>light.h</label>
+        <link refid="light_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>assimp/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>assimp/matrix3x3.h</label>
+        <link refid="matrix3x3_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+      <node id="7">
+        <label>sys/types.h</label>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+      <node id="16">
+        <label>assimp/quaternion.h</label>
+        <link refid="quaternion_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>new</label>
+      </node>
+      <node id="13">
+        <label>assimp/color4.h</label>
+        <link refid="color4_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>assimp/vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>light.h</label>
+        <link refid="light_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structai_light" prot="public">aiLight</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="light_8h_1a7f9d67609e200bdeea07a539a1433c0f" prot="public" static="no">
+        <name>AI_LIGHT_H_INC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/light.h" line="50" column="9" bodyfile="include/assimp/light.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="light_8h_1a7a75cb224d903e71e8daede432449766" prot="public" static="no" strong="no">
+        <type></type>
+        <name>aiLightSourceType</name>
+        <enumvalue id="light_8h_1a7a75cb224d903e71e8daede432449766a7c7578b784f98cab23cbefcf242758eb" prot="public">
+          <name>aiLightSource_UNDEFINED</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="light_8h_1a7a75cb224d903e71e8daede432449766ab2dd8e6f09a9ca0efcf22457da2e8724" prot="public">
+          <name>aiLightSource_DIRECTIONAL</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+<para>A directional light source has a well-defined direction but is infinitely far away. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>That&apos;s quite a good approximation for sun light. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="light_8h_1a7a75cb224d903e71e8daede432449766a0f5bf9437cd16516e15c095309476d37" prot="public">
+          <name>aiLightSource_POINT</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+<para>A point light source has a well-defined position in space but no direction - it emits light in all directions. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>A normal bulb is a point light. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="light_8h_1a7a75cb224d903e71e8daede432449766a05ef88df7bae63499a8ed950c995e392" prot="public">
+          <name>aiLightSource_SPOT</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+<para>A spot light source emits light in a specific angle. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>It has a position and a direction it is pointing to. A good example for a spot light is a light spot in sport arenas. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="light_8h_1a7a75cb224d903e71e8daede432449766a586dc7f849733364cb5b28c403759bf3" prot="public">
+          <name>aiLightSource_AMBIENT</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+<para>The generic light level of the world, including the bounces of all other light sources. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Typically, there&apos;s at most one ambient light in a scene. This light type doesn&apos;t have a valid position, direction, or other properties, just a color. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="light_8h_1a7a75cb224d903e71e8daede432449766a835d706047f460d4a70bf6a4b5b334b1" prot="public">
+          <name>aiLightSource_AREA</name>
+          <initializer>= 0x5</initializer>
+          <briefdescription>
+<para>An area light is a rectangle with predefined size that uniformly emits light from one of its sides. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The position is center of the rectangle and direction is its normal vector. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="light_8h_1a7a75cb224d903e71e8daede432449766a110c3b047ed41a1656849921d75e83a1" prot="public">
+          <name>_aiLightSource_Force32Bit</name>
+          <initializer>= INT_MAX</initializer>
+          <briefdescription>
+<para>This value is not used. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>It is just there to force the compiler to map this enum to a 32 Bit integer. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates all supported types of light sources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/light.h" line="65" column="1" bodyfile="include/assimp/light.h" bodystart="66" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines the <ref refid="structai_light" kindref="compound">aiLight</ref> data structure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_LIGHT_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_LIGHT_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>pragma<sp/>GCC<sp/>system_header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="types_8h" kindref="compound">assimp/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="light_8h_1a7a75cb224d903e71e8daede432449766" kindref="member">aiLightSourceType</ref></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="light_8h_1a7a75cb224d903e71e8daede432449766a7c7578b784f98cab23cbefcf242758eb" kindref="member">aiLightSource_UNDEFINED</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="light_8h_1a7a75cb224d903e71e8daede432449766ab2dd8e6f09a9ca0efcf22457da2e8724" kindref="member">aiLightSource_DIRECTIONAL</ref><sp/><sp/><sp/>=<sp/>0x1,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="light_8h_1a7a75cb224d903e71e8daede432449766a0f5bf9437cd16516e15c095309476d37" kindref="member">aiLightSource_POINT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x2,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="light_8h_1a7a75cb224d903e71e8daede432449766a05ef88df7bae63499a8ed950c995e392" kindref="member">aiLightSource_SPOT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x3,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="light_8h_1a7a75cb224d903e71e8daede432449766a586dc7f849733364cb5b28c403759bf3" kindref="member">aiLightSource_AMBIENT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x4,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="light_8h_1a7a75cb224d903e71e8daede432449766a835d706047f460d4a70bf6a4b5b334b1" kindref="member">aiLightSource_AREA</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x5,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SWIG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="light_8h_1a7a75cb224d903e71e8daede432449766a110c3b047ed41a1656849921d75e83a1" kindref="member">_aiLightSource_Force32Bit</ref><sp/>=<sp/>INT_MAX</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="118" refid="structai_light" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_light" kindref="compound">aiLight</ref></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_string" kindref="compound">aiString</ref><sp/><ref refid="structai_light_1a92806413f16230728b04e5f379fd00c0" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1aa8c1788fd9d096036c9e3b6cfe4b1301" kindref="member">C_ENUM</ref><sp/><ref refid="light_8h_1a7a75cb224d903e71e8daede432449766" kindref="member">aiLightSourceType</ref><sp/><ref refid="structai_light_1a4cba1741875dd92724ff55be91c60c2b" kindref="member">mType</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/><ref refid="structai_light_1a5daf9c9ad2613603b847a527123611f0" kindref="member">mPosition</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/><ref refid="structai_light_1af3776d5e4e6065cb6dd7e10dc656dada" kindref="member">mDirection</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector3t" kindref="compound">aiVector3D</ref><sp/><ref refid="structai_light_1ac6d03040085bf88979bc55e19ff3a7d6" kindref="member">mUp</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structai_light_1ae8804b3c309527ca0f85d676bab55710" kindref="member">mAttenuationConstant</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structai_light_1aefda311eaa785ea345782dfa95be817c" kindref="member">mAttenuationLinear</ref>;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structai_light_1ab4fb07bfa40a807661b1ed1791838a6d" kindref="member">mAttenuationQuadratic</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref><sp/><ref refid="structai_light_1a22e7feebbfaf53adf73bd9f581636efd" kindref="member">mColorDiffuse</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref><sp/><ref refid="structai_light_1aa79ae6ad6a10f0cb9c740e23b6bb01bf" kindref="member">mColorSpecular</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_color3_d" kindref="compound">aiColor3D</ref><sp/><ref refid="structai_light_1a5188b60e6fbaf1635fa780913508e3cd" kindref="member">mColorAmbient</ref>;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structai_light_1abad0466811938623e98bf1d334143f9a" kindref="member">mAngleInnerCone</ref>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structai_light_1a20fd332a5f9d8e8cb94816ff2b0ae7f4" kindref="member">mAngleOuterCone</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="classai_vector2t" kindref="compound">aiVector2D</ref><sp/><ref refid="structai_light_1ae2494aac85acce5e4fa3920b92b9d7b5" kindref="member">mSize</ref>;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_light_1acf9b5fec217330b5f75eab56b552d0d9" kindref="member">aiLight</ref>()<sp/><ref refid="defs_8h_1ae032f18edd69bf6ba935ef9feb025a96" kindref="member">AI_NO_EXCEPT</ref></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><sp/><sp/><ref refid="structai_light_1a4cba1741875dd92724ff55be91c60c2b" kindref="member">mType</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="light_8h_1a7a75cb224d903e71e8daede432449766a7c7578b784f98cab23cbefcf242758eb" kindref="member">aiLightSource_UNDEFINED</ref>)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><ref refid="structai_light_1ae8804b3c309527ca0f85d676bab55710" kindref="member">mAttenuationConstant</ref><sp/><sp/>(0.f)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><ref refid="structai_light_1aefda311eaa785ea345782dfa95be817c" kindref="member">mAttenuationLinear</ref><sp/><sp/><sp/><sp/>(1.f)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><ref refid="structai_light_1ab4fb07bfa40a807661b1ed1791838a6d" kindref="member">mAttenuationQuadratic</ref><sp/>(0.f)</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><ref refid="structai_light_1abad0466811938623e98bf1d334143f9a" kindref="member">mAngleInnerCone</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<ref refid="defs_8h_1a2ceb8d0f984e265c05f58a4c6ca0b059" kindref="member">AI_MATH_TWO_PI</ref>)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><ref refid="structai_light_1a20fd332a5f9d8e8cb94816ff2b0ae7f4" kindref="member">mAngleOuterCone</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<ref refid="defs_8h_1a2ceb8d0f984e265c05f58a4c6ca0b059" kindref="member">AI_MATH_TWO_PI</ref>)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><ref refid="structai_light_1ae2494aac85acce5e4fa3920b92b9d7b5" kindref="member">mSize</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0.f,<sp/>0.f)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!!<sp/>AI_LIGHT_H_INC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/light.h"/>
+  </compounddef>
+</doxygen>

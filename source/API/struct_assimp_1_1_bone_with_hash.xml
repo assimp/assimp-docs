@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_bone_with_hash" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::BoneWithHash</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::pair&lt; uint32_t, aiString * &gt;</basecompoundref>
+    <includes local="no">SceneCombiner.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_bone_with_hash_1afd0ae0a14a4ba9e747425fabc56b8024" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespace_assimp_1a5a6f2070082f2eff6e9ccf57539bfad2" kindref="member">BoneSrcIndex</ref> &gt;</type>
+        <definition>std::vector&lt;BoneSrcIndex&gt; Assimp::BoneWithHash::pSrcBones</definition>
+        <argsstring></argsstring>
+        <name>pSrcBones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="150" column="17" bodyfile="include/assimp/SceneCombiner.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper data structure for <ref refid="class_assimp_1_1_scene_combiner_1aa42d5370510db89cbdd739617a617d4e" kindref="member">SceneCombiner::MergeBones</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/SceneCombiner.h" line="149" column="1" bodyfile="include/assimp/SceneCombiner.h" bodystart="149" bodyend="151"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_bone_with_hash_1afd0ae0a14a4ba9e747425fabc56b8024" prot="public" virt="non-virtual"><scope>Assimp::BoneWithHash</scope><name>pSrcBones</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

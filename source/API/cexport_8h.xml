@@ -1,0 +1,668 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="cexport_8h" kind="file" language="C++">
+    <compoundname>cexport.h</compoundname>
+    <includes refid="types_8h" local="no">assimp/types.h</includes>
+    <includedby refid="_blob_i_o_system_8h" local="no">BlobIOSystem.h</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>assimp/matrix4x4.h</label>
+        <link refid="matrix4x4_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>assimp/vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>assimp/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>assimp/matrix3x3.h</label>
+        <link refid="matrix3x3_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+      <node id="7">
+        <label>sys/types.h</label>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+      <node id="16">
+        <label>assimp/quaternion.h</label>
+        <link refid="quaternion_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>new</label>
+      </node>
+      <node id="13">
+        <label>assimp/color4.h</label>
+        <link refid="color4_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>assimp/vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>cexport.h</label>
+        <link refid="cexport_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>BlobIOSystem.h</label>
+        <link refid="_blob_i_o_system_8h"/>
+      </node>
+      <node id="1">
+        <label>cexport.h</label>
+        <link refid="cexport_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structai_export_data_blob" prot="public">aiExportDataBlob</innerclass>
+    <innerclass refid="structai_export_format_desc" prot="public">aiExportFormatDesc</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="cexport_8h_1a22b1433c06c08cfaa37ab39c72a4e183" prot="public" static="no">
+        <name>AI_EXPORT_H_INC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="47" column="9" bodyfile="include/assimp/cexport.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cexport_8h_1a3b462a882e970cd7f492e293e5dee4fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> void</type>
+        <definition>ASSIMP_API void aiCopyScene</definition>
+        <argsstring>(const C_STRUCT aiScene *pIn, C_STRUCT aiScene **pOut)</argsstring>
+        <name>aiCopyScene</name>
+        <param>
+          <type>const <ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pIn</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_scene" kindref="compound">aiScene</ref> **</type>
+          <declname>pOut</declname>
+        </param>
+        <briefdescription>
+<para>Create a modifiable copy of a scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is useful to import files via <ref refid="namespace_assimp" kindref="compound">Assimp</ref>, change their topology and export them again. Since the scene returned by the various importer functions is const, a modifiable copy is needed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valid scene to be copied </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Receives a modifyable copy of the scene. Use <ref refid="cexport_8h_1a59c30a6f75b024ae2da8bd4c4854320c" kindref="member">aiFreeScene()</ref> to delete it again. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="118" column="17" declfile="include/assimp/cexport.h" declline="118" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="cexport_8h_1a9615510b8430a9da4f435a72148128dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> <ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>ASSIMP_API aiReturn aiExportScene</definition>
+        <argsstring>(const C_STRUCT aiScene *pScene, const char *pFormatId, const char *pFileName, unsigned int pPreprocessing)</argsstring>
+        <name>aiExportScene</name>
+        <param>
+          <type>const <ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pFormatId</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pFileName</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pPreprocessing</declname>
+        </param>
+        <briefdescription>
+<para>Exports the given scene to a chosen file format and writes the result file(s) to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pScene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene to export. Stays in possession of the caller, is not changed by the function. The scene is expected to conform to <ref refid="namespace_assimp" kindref="compound">Assimp</ref>&apos;s Importer output format as specified in the <ref refid="" kindref="compound">Data Structures Page </ref>. In short, this means the model data should use a right-handed coordinate systems, face winding should be counter-clockwise and the UV coordinate origin is assumed to be in the upper left. If your input data uses different conventions, have a look at the last parameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pFormatId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID string to specify to which format you want to export to. Use <ref refid="cexport_8h_1a59cfffbc5b436da8ed8542108102b502" kindref="member">aiGetExportFormatCount()</ref> / <ref refid="cexport_8h_1adda7f2e6611f719af6c8a4a0bef0a0a2" kindref="member">aiGetExportFormatDescription()</ref> to learn which export formats are available. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pPreprocessing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Accepts any choice of the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410" kindref="member">aiPostProcessSteps</ref> enumerated flags, but in reality only a subset of them makes sense here. Specifying &apos;preprocessing&apos; flags is useful if the input scene does not conform to <ref refid="namespace_assimp" kindref="compound">Assimp</ref>&apos;s default conventions as specified in the <ref refid="" kindref="compound">Data Structures Page </ref>. In short, this means the geometry data should use a right-handed coordinate systems, face winding should be counter-clockwise and the UV coordinate origin is assumed to be in the upper left. The <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a133fd1162674e68bf8cd17070898a936" kindref="member">aiProcess_MakeLeftHanded</ref>, <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a06922b6a1f1cd8186f9fdafb471c813e" kindref="member">aiProcess_FlipUVs</ref> and <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a429a11bf7ace46f039f55de895505d4a" kindref="member">aiProcess_FlipWindingOrder</ref> flags are used in the import side to allow users to have those defaults automatically adapted to their conventions. Specifying those flags for exporting has the opposite effect, respectively. Some other of the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410" kindref="member">aiPostProcessSteps</ref> enumerated values may be useful as well, but you&apos;ll need to try out what their effect on the exported file is. Many formats impose their own restrictions on the structure of the geometry stored therein, so some preprocessing may have little or no effect at all, or may be redundant as exporters would apply them anyhow. A good example is triangulation - whilst you can enforce it by specifying the <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a9c3de834f0307f31fa2b1b6d05dd592b" kindref="member">aiProcess_Triangulate</ref> flag, most export formats support only triangulate data so they would run the step anyway.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+If assimp detects that the input scene was directly taken from the importer side of the library (i.e. not copied using aiCopyScene and potentially modified afterwards), any post-processing steps already applied to the scene will not be applied again, unless they show non-idempotent behavior (<ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a133fd1162674e68bf8cd17070898a936" kindref="member">aiProcess_MakeLeftHanded</ref>, <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a06922b6a1f1cd8186f9fdafb471c813e" kindref="member">aiProcess_FlipUVs</ref> and <ref refid="postprocess_8h_1a64795260b95f5a4b3f3dc1be4f52e410a429a11bf7ace46f039f55de895505d4a" kindref="member">aiProcess_FlipWindingOrder</ref>). <simplesect kind="return"><para>a status code indicating the result of the export </para>
+</simplesect>
+<simplesect kind="note"><para>Use <ref refid="cexport_8h_1a3b462a882e970cd7f492e293e5dee4fe" kindref="member">aiCopyScene()</ref> to get a modifiable copy of a previously imported scene. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="164" column="21" declfile="include/assimp/cexport.h" declline="164" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="cexport_8h_1a94fe06ba0fe03e934d387f2ed6e407d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> <ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>ASSIMP_API aiReturn aiExportSceneEx</definition>
+        <argsstring>(const C_STRUCT aiScene *pScene, const char *pFormatId, const char *pFileName, C_STRUCT aiFileIO *pIO, unsigned int pPreprocessing)</argsstring>
+        <name>aiExportSceneEx</name>
+        <param>
+          <type>const <ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pFormatId</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pFileName</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_file_i_o" kindref="compound">aiFileIO</ref> *</type>
+          <declname>pIO</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pPreprocessing</declname>
+        </param>
+        <briefdescription>
+<para>Exports the given scene to a chosen file format using custom IO logic supplied by you. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pScene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene to export. Stays in possession of the caller, is not changed by the function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pFormatId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID string to specify to which format you want to export to. Use <ref refid="cexport_8h_1a59cfffbc5b436da8ed8542108102b502" kindref="member">aiGetExportFormatCount()</ref> / <ref refid="cexport_8h_1adda7f2e6611f719af6c8a4a0bef0a0a2" kindref="member">aiGetExportFormatDescription()</ref> to learn which export formats are available. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>custom IO implementation to be used. Use this if you use your own storage methods. If none is supplied, a default implementation using standard file IO is used. Note that <ref refid="cexport_8h_1a33b02f2dbfd79980bf29e62f3a64139f" kindref="member">aiExportSceneToBlob</ref> is provided as convenience function to export to memory buffers. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pPreprocessing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Please see the documentation for <ref refid="cexport_8h_1a9615510b8430a9da4f435a72148128dd" kindref="member">aiExportScene</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a status code indicating the result of the export </para>
+</simplesect>
+<simplesect kind="note"><para>Include &lt;aiFileIO.h&gt; for the definition of <ref refid="structai_file_i_o" kindref="compound">aiFileIO</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para>Use <ref refid="cexport_8h_1a3b462a882e970cd7f492e293e5dee4fe" kindref="member">aiCopyScene()</ref> to get a modifiable copy of a previously imported scene. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="184" column="21" declfile="include/assimp/cexport.h" declline="184" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="cexport_8h_1a33b02f2dbfd79980bf29e62f3a64139f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> const <ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref> *</type>
+        <definition>ASSIMP_API const C_STRUCT aiExportDataBlob* aiExportSceneToBlob</definition>
+        <argsstring>(const C_STRUCT aiScene *pScene, const char *pFormatId, unsigned int pPreprocessing)</argsstring>
+        <name>aiExportSceneToBlob</name>
+        <param>
+          <type>const <ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pFormatId</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pPreprocessing</declname>
+        </param>
+        <briefdescription>
+<para>Exports the given scene to a chosen file format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the exported data as a binary blob which you can write into a file or something. When you&apos;re done with the data, use <ref refid="cexport_8h_1a0998064849f2ef5544f6fd30cda0b964" kindref="member">aiReleaseExportBlob()</ref> to free the resources associated with the export. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pScene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene to export. Stays in possession of the caller, is not changed by the function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pFormatId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID string to specify to which format you want to export to. Use <ref refid="cexport_8h_1a59cfffbc5b436da8ed8542108102b502" kindref="member">aiGetExportFormatCount()</ref> / <ref refid="cexport_8h_1adda7f2e6611f719af6c8a4a0bef0a0a2" kindref="member">aiGetExportFormatDescription()</ref> to learn which export formats are available. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pPreprocessing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Please see the documentation for <ref refid="cexport_8h_1a9615510b8430a9da4f435a72148128dd" kindref="member">aiExportScene</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the exported data or NULL in case of error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="258" column="44" declfile="include/assimp/cexport.h" declline="258" declcolumn="44"/>
+      </memberdef>
+      <memberdef kind="function" id="cexport_8h_1a59c30a6f75b024ae2da8bd4c4854320c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> void</type>
+        <definition>ASSIMP_API void aiFreeScene</definition>
+        <argsstring>(const C_STRUCT aiScene *pIn)</argsstring>
+        <name>aiFreeScene</name>
+        <param>
+          <type>const <ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pIn</declname>
+        </param>
+        <briefdescription>
+<para>Frees a scene copy created using <ref refid="cexport_8h_1a3b462a882e970cd7f492e293e5dee4fe" kindref="member">aiCopyScene()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="123" column="17" declfile="include/assimp/cexport.h" declline="123" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="cexport_8h_1a59cfffbc5b436da8ed8542108102b502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> size_t</type>
+        <definition>ASSIMP_API size_t aiGetExportFormatCount</definition>
+        <argsstring>(void)</argsstring>
+        <name>aiGetExportFormatCount</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the number of export file formats available in the current <ref refid="namespace_assimp" kindref="compound">Assimp</ref> build. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="cexport_8h_1adda7f2e6611f719af6c8a4a0bef0a0a2" kindref="member">aiGetExportFormatDescription()</ref> to retrieve infos of a specific export format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="90" column="19" declfile="include/assimp/cexport.h" declline="90" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="cexport_8h_1adda7f2e6611f719af6c8a4a0bef0a0a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> const <ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_export_format_desc" kindref="compound">aiExportFormatDesc</ref> *</type>
+        <definition>ASSIMP_API const C_STRUCT aiExportFormatDesc* aiGetExportFormatDescription</definition>
+        <argsstring>(size_t pIndex)</argsstring>
+        <name>aiGetExportFormatDescription</name>
+        <param>
+          <type>size_t</type>
+          <declname>pIndex</declname>
+        </param>
+        <briefdescription>
+<para>Returns a description of the nth export file format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="cexport_8h_1a59cfffbc5b436da8ed8542108102b502" kindref="member">aiGetExportFormatCount()</ref> to learn how many export formats are supported. The description must be released by calling aiReleaseExportFormatDescription afterwards. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the export format to retrieve information for. Valid range is 0 to <ref refid="cexport_8h_1a59cfffbc5b436da8ed8542108102b502" kindref="member">aiGetExportFormatCount()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A description of that specific export format. NULL if pIndex is out of range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="100" column="46" declfile="include/assimp/cexport.h" declline="100" declcolumn="46"/>
+      </memberdef>
+      <memberdef kind="function" id="cexport_8h_1a0998064849f2ef5544f6fd30cda0b964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> void</type>
+        <definition>ASSIMP_API void aiReleaseExportBlob</definition>
+        <argsstring>(const C_STRUCT aiExportDataBlob *pData)</argsstring>
+        <name>aiReleaseExportBlob</name>
+        <param>
+          <type>const <ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref> *</type>
+          <declname>pData</declname>
+        </param>
+        <briefdescription>
+<para>Releases the memory associated with the given exported data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this function to free a data blob returned by <ref refid="cexport_8h_1a9615510b8430a9da4f435a72148128dd" kindref="member">aiExportScene()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data blob returned by <ref refid="cexport_8h_1a33b02f2dbfd79980bf29e62f3a64139f" kindref="member">aiExportSceneToBlob</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="266" column="17" declfile="include/assimp/cexport.h" declline="266" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="cexport_8h_1aaac746cd3f93f8d46b047b21b5d51d99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> void</type>
+        <definition>ASSIMP_API void aiReleaseExportFormatDescription</definition>
+        <argsstring>(const C_STRUCT aiExportFormatDesc *desc)</argsstring>
+        <name>aiReleaseExportFormatDescription</name>
+        <param>
+          <type>const <ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_export_format_desc" kindref="compound">aiExportFormatDesc</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+<para>Release a description of the nth export file format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Must be returned by aiGetExportFormatDescription <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cexport.h" line="107" column="17" declfile="include/assimp/cexport.h" declline="107" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines the C-API for the <ref refid="namespace_assimp" kindref="compound">Assimp</ref> export interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_EXPORT_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_EXPORT_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>system_header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ASSIMP_BUILD_NO_EXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="types_8h" kindref="compound">assimp/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_scene" kindref="compound">aiScene</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_file_i_o" kindref="compound">aiFileIO</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="72" refid="structai_export_format_desc" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_export_format_desc" kindref="compound">aiExportFormatDesc</ref><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structai_export_format_desc_1afe216eaea3a04abca041e5c253f94bbf" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structai_export_format_desc_1a9c84c4b07c5177fb6539b9bdf90236fb" kindref="member">description</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structai_export_format_desc_1a589d08d526f253176d09886787cd6b22" kindref="member">fileExtension</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="cexport_8h_1a59cfffbc5b436da8ed8542108102b502" kindref="member">aiGetExportFormatCount</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_export_format_desc" kindref="compound">aiExportFormatDesc</ref><sp/>*<ref refid="cexport_8h_1adda7f2e6611f719af6c8a4a0bef0a0a2" kindref="member">aiGetExportFormatDescription</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>pIndex);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cexport_8h_1aaac746cd3f93f8d46b047b21b5d51d99" kindref="member">aiReleaseExportFormatDescription</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_export_format_desc" kindref="compound">aiExportFormatDesc</ref><sp/>*desc);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cexport_8h_1a3b462a882e970cd7f492e293e5dee4fe" kindref="member">aiCopyScene</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_scene" kindref="compound">aiScene</ref><sp/>*pIn,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_scene" kindref="compound">aiScene</ref><sp/>**pOut);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cexport_8h_1a59c30a6f75b024ae2da8bd4c4854320c" kindref="member">aiFreeScene</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_scene" kindref="compound">aiScene</ref><sp/>*pIn);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref><sp/><ref refid="cexport_8h_1a9615510b8430a9da4f435a72148128dd" kindref="member">aiExportScene</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_scene" kindref="compound">aiScene</ref><sp/>*pScene,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pFormatId,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pFileName,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pPreprocessing);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref><sp/><ref refid="cexport_8h_1a94fe06ba0fe03e934d387f2ed6e407d2" kindref="member">aiExportSceneEx</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_scene" kindref="compound">aiScene</ref><sp/>*pScene,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pFormatId,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pFileName,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_file_i_o" kindref="compound">aiFileIO</ref><sp/>*pIO,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pPreprocessing);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="200" refid="structai_export_data_blob" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref><sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structai_export_data_blob_1a339bfaacc70396b2f99f94c1bc3b808f" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structai_export_data_blob_1ac080c780dad92077b42447d77a1a9ed1" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_string" kindref="compound">aiString</ref><sp/><ref refid="structai_export_data_blob_1af7f006ac5ad818c0d81d520a84f74c3e" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref><sp/>*<ref refid="structai_export_data_blob_1a3e98fa760f45983ff1bccec6715f3817" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_export_data_blob_1ace04b45cf3fdaa6b4ed7f43370e87408" kindref="member">aiExportDataBlob</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_export_data_blob_1a339bfaacc70396b2f99f94c1bc3b808f" kindref="member">size</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structai_export_data_blob_1ac080c780dad92077b42447d77a1a9ed1" kindref="member">data</ref><sp/>=<sp/><ref refid="structai_export_data_blob_1a3e98fa760f45983ff1bccec6715f3817" kindref="member">next</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_export_data_blob_1adcf6c28f8c4b14e1c779007d45b9ce7e" kindref="member">~aiExportDataBlob</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="structai_export_data_blob_1ac080c780dad92077b42447d77a1a9ed1" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="structai_export_data_blob_1a3e98fa760f45983ff1bccec6715f3817" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_export_data_blob_1ace04b45cf3fdaa6b4ed7f43370e87408" kindref="member">aiExportDataBlob</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref><sp/>&amp;<ref refid="structai_export_data_blob_1a1049269eb019cb9c935cbeb2d9e30387" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="258"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref><sp/>*<ref refid="cexport_8h_1a33b02f2dbfd79980bf29e62f3a64139f" kindref="member">aiExportSceneToBlob</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_scene" kindref="compound">aiScene</ref><sp/>*pScene,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pFormatId,</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pPreprocessing);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cexport_8h_1a0998064849f2ef5544f6fd30cda0b964" kindref="member">aiReleaseExportBlob</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_export_data_blob" kindref="compound">aiExportDataBlob</ref><sp/>*pData);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>ASSIMP_BUILD_NO_EXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AI_EXPORT_H_INC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/cexport.h"/>
+  </compounddef>
+</doxygen>

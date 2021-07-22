@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_mesh_key" kind="struct" language="C++" prot="public">
     <compoundname>aiMeshKey</compoundname>
     <includes local="no">anim.h</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="171" column="1" bodyfile="include/assimp/anim.h" bodystart="171" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="171" column="26" bodyfile="include/assimp/anim.h" bodystart="171" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -25,12 +25,13 @@
         <argsstring></argsstring>
         <name>mTime</name>
         <briefdescription>
-<para>The time of this key. </para>        </briefdescription>
+<para>The time of this key. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="152" column="1" bodyfile="include/assimp/anim.h" bodystart="152" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="152" column="12" bodyfile="include/assimp/anim.h" bodystart="152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_mesh_key_1abdd5914697609a9d876f63b6ca090a18" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -38,12 +39,14 @@
         <argsstring></argsstring>
         <name>mValue</name>
         <briefdescription>
-<para>Index into the <ref refid="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" kindref="member">aiMesh::mAnimMeshes</ref> array of the mesh corresponding to the <ref refid="structai_mesh_anim" kindref="compound">aiMeshAnim</ref> hosting this key frame. </para>        </briefdescription>
+<para>Index into the <ref refid="structai_mesh_1a5078f7db7e99ed05db89dfa412f0e990" kindref="member">aiMesh::mAnimMeshes</ref> array of the mesh corresponding to the <ref refid="structai_mesh_anim" kindref="compound">aiMeshAnim</ref> hosting this key frame. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The referenced anim mesh is evaluated according to the rules defined in the docs for <ref refid="structai_anim_mesh" kindref="compound">aiAnimMesh</ref>. </para>        </detaileddescription>
+<para>The referenced anim mesh is evaluated according to the rules defined in the docs for <ref refid="structai_anim_mesh" kindref="compound">aiAnimMesh</ref>. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="158" column="1" bodyfile="include/assimp/anim.h" bodystart="158" bodyend="-1"/>
+        <location file="include/assimp/anim.h" line="158" column="18" bodyfile="include/assimp/anim.h" bodystart="158" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -58,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="162" column="1" bodyfile="include/assimp/anim.h" bodystart="162" bodyend="165"/>
+        <location file="include/assimp/anim.h" line="162" column="5" bodyfile="include/assimp/anim.h" bodystart="162" bodyend="165"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_key_1a7124aaa1cdfa525fe19d8a77b5554296" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -74,12 +77,13 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Construction from a given time and key value. </para>        </briefdescription>
+<para>Construction from a given time and key value. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="168" column="1" bodyfile="include/assimp/anim.h" bodystart="168" bodyend="169"/>
+        <location file="include/assimp/anim.h" line="168" column="5" bodyfile="include/assimp/anim.h" bodystart="168" bodyend="169"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_key_1a06745bfef9269d3c4b7b378cb8b90c32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -96,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="177" column="1" bodyfile="include/assimp/anim.h" bodystart="177" bodyend="179"/>
+        <location file="include/assimp/anim.h" line="177" column="10" bodyfile="include/assimp/anim.h" bodystart="177" bodyend="179"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_key_1ae51d320da82497d3b93429e8485134e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -113,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="182" column="1" bodyfile="include/assimp/anim.h" bodystart="182" bodyend="184"/>
+        <location file="include/assimp/anim.h" line="182" column="5" bodyfile="include/assimp/anim.h" bodystart="182" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_key_1af2fc9cbc8b56ef64b0beb24de15516fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -130,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="174" column="1" bodyfile="include/assimp/anim.h" bodystart="174" bodyend="176"/>
+        <location file="include/assimp/anim.h" line="174" column="10" bodyfile="include/assimp/anim.h" bodystart="174" bodyend="176"/>
       </memberdef>
       <memberdef kind="function" id="structai_mesh_key_1aab2b5817350a9ab44aef748a2d9b612f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -147,11 +151,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/anim.h" line="185" column="1" bodyfile="include/assimp/anim.h" bodystart="185" bodyend="187"/>
+        <location file="include/assimp/anim.h" line="185" column="10" bodyfile="include/assimp/anim.h" bodystart="185" bodyend="187"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Binds a anim-mesh to a specific point in time. </para>    </briefdescription>
+<para>Binds a anim-mesh to a specific point in time. </para>
+    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <location file="include/assimp/anim.h" line="150" column="1" bodyfile="include/assimp/anim.h" bodystart="150" bodyend="190"/>

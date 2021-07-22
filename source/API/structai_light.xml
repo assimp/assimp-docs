@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_light" kind="struct" language="C++" prot="public">
     <compoundname>aiLight</compoundname>
     <includes local="no">light.h</includes>
@@ -10,12 +10,14 @@
         <argsstring></argsstring>
         <name>mAngleInnerCone</name>
         <briefdescription>
-<para>Inner angle of a spot light&apos;s light cone. </para>        </briefdescription>
+<para>Inner angle of a spot light&apos;s light cone. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The spot light has maximum influence on objects inside this angle. The angle is given in radians. It is 2PI for point lights and undefined for directional lights. </para>        </detaileddescription>
+<para>The spot light has maximum influence on objects inside this angle. The angle is given in radians. It is 2PI for point lights and undefined for directional lights. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="225" column="1" bodyfile="include/assimp/light.h" bodystart="225" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="225" column="11" bodyfile="include/assimp/light.h" bodystart="225" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1a20fd332a5f9d8e8cb94816ff2b0ae7f4" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -23,12 +25,14 @@
         <argsstring></argsstring>
         <name>mAngleOuterCone</name>
         <briefdescription>
-<para>Outer angle of a spot light&apos;s light cone. </para>        </briefdescription>
+<para>Outer angle of a spot light&apos;s light cone. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The spot light does not affect objects outside this angle. The angle is given in radians. It is 2PI for point lights and undefined for directional lights. The outer angle must be greater than or equal to the inner angle. It is assumed that the application uses a smooth interpolation between the inner and the outer cone of the spot light. </para>        </detaileddescription>
+<para>The spot light does not affect objects outside this angle. The angle is given in radians. It is 2PI for point lights and undefined for directional lights. The outer angle must be greater than or equal to the inner angle. It is assumed that the application uses a smooth interpolation between the inner and the outer cone of the spot light. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="237" column="1" bodyfile="include/assimp/light.h" bodystart="237" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="237" column="11" bodyfile="include/assimp/light.h" bodystart="237" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1ae8804b3c309527ca0f85d676bab55710" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -36,13 +40,15 @@
         <argsstring></argsstring>
         <name>mAttenuationConstant</name>
         <briefdescription>
-<para>Constant light attenuation factor. </para>        </briefdescription>
+<para>Constant light attenuation factor. </para>
+        </briefdescription>
         <detaileddescription>
 <para>The intensity of the light source at a given distance &apos;d&apos; from the light&apos;s position is <programlisting><codeline><highlight class="normal">Atten<sp/>=<sp/>1/(<sp/>att0<sp/>+<sp/>att1<sp/>*<sp/>d<sp/>+<sp/>att2<sp/>*<sp/>d*d)</highlight></codeline>
-</programlisting> This member corresponds to the att0 variable in the equation. Naturally undefined for directional lights. </para>        </detaileddescription>
+</programlisting> This member corresponds to the att0 variable in the equation. Naturally undefined for directional lights. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="167" column="1" bodyfile="include/assimp/light.h" bodystart="167" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="167" column="11" bodyfile="include/assimp/light.h" bodystart="167" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1aefda311eaa785ea345782dfa95be817c" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -50,13 +56,15 @@
         <argsstring></argsstring>
         <name>mAttenuationLinear</name>
         <briefdescription>
-<para>Linear light attenuation factor. </para>        </briefdescription>
+<para>Linear light attenuation factor. </para>
+        </briefdescription>
         <detaileddescription>
 <para>The intensity of the light source at a given distance &apos;d&apos; from the light&apos;s position is <programlisting><codeline><highlight class="normal">Atten<sp/>=<sp/>1/(<sp/>att0<sp/>+<sp/>att1<sp/>*<sp/>d<sp/>+<sp/>att2<sp/>*<sp/>d*d)</highlight></codeline>
-</programlisting> This member corresponds to the att1 variable in the equation. Naturally undefined for directional lights. </para>        </detaileddescription>
+</programlisting> This member corresponds to the att1 variable in the equation. Naturally undefined for directional lights. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="179" column="1" bodyfile="include/assimp/light.h" bodystart="179" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="179" column="11" bodyfile="include/assimp/light.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1ab4fb07bfa40a807661b1ed1791838a6d" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -64,13 +72,15 @@
         <argsstring></argsstring>
         <name>mAttenuationQuadratic</name>
         <briefdescription>
-<para>Quadratic light attenuation factor. </para>        </briefdescription>
+<para>Quadratic light attenuation factor. </para>
+        </briefdescription>
         <detaileddescription>
 <para>The intensity of the light source at a given distance &apos;d&apos; from the light&apos;s position is <programlisting><codeline><highlight class="normal">Atten<sp/>=<sp/>1/(<sp/>att0<sp/>+<sp/>att1<sp/>*<sp/>d<sp/>+<sp/>att2<sp/>*<sp/>d*d)</highlight></codeline>
-</programlisting> This member corresponds to the att2 variable in the equation. Naturally undefined for directional lights. </para>        </detaileddescription>
+</programlisting> This member corresponds to the att2 variable in the equation. Naturally undefined for directional lights. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="191" column="1" bodyfile="include/assimp/light.h" bodystart="191" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="191" column="11" bodyfile="include/assimp/light.h" bodystart="191" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1a5188b60e6fbaf1635fa780913508e3cd" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
@@ -78,12 +88,14 @@
         <argsstring></argsstring>
         <name>mColorAmbient</name>
         <briefdescription>
-<para>Ambient color of the light source. </para>        </briefdescription>
+<para>Ambient color of the light source. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The ambient light color is multiplied with the ambient material color to obtain the final color that contributes to the ambient shading term. Most renderers will ignore this value it, is just a remaining of the fixed-function pipeline that is still supported by quite many file formats. </para>        </detaileddescription>
+<para>The ambient light color is multiplied with the ambient material color to obtain the final color that contributes to the ambient shading term. Most renderers will ignore this value it, is just a remaining of the fixed-function pipeline that is still supported by quite many file formats. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="217" column="1" bodyfile="include/assimp/light.h" bodystart="217" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="217" column="24" bodyfile="include/assimp/light.h" bodystart="217" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1a22e7feebbfaf53adf73bd9f581636efd" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
@@ -91,12 +103,14 @@
         <argsstring></argsstring>
         <name>mColorDiffuse</name>
         <briefdescription>
-<para>Diffuse color of the light source. </para>        </briefdescription>
+<para>Diffuse color of the light source. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The diffuse light color is multiplied with the diffuse material color to obtain the final color that contributes to the diffuse shading term. </para>        </detaileddescription>
+<para>The diffuse light color is multiplied with the diffuse material color to obtain the final color that contributes to the diffuse shading term. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="199" column="1" bodyfile="include/assimp/light.h" bodystart="199" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="199" column="24" bodyfile="include/assimp/light.h" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1aa79ae6ad6a10f0cb9c740e23b6bb01bf" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_color3_d" kindref="compound">aiColor3D</ref></type>
@@ -104,12 +118,14 @@
         <argsstring></argsstring>
         <name>mColorSpecular</name>
         <briefdescription>
-<para>Specular color of the light source. </para>        </briefdescription>
+<para>Specular color of the light source. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The specular light color is multiplied with the specular material color to obtain the final color that contributes to the specular shading term. </para>        </detaileddescription>
+<para>The specular light color is multiplied with the specular material color to obtain the final color that contributes to the specular shading term. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="207" column="1" bodyfile="include/assimp/light.h" bodystart="207" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="207" column="24" bodyfile="include/assimp/light.h" bodystart="207" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1af3776d5e4e6065cb6dd7e10dc656dada" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
@@ -117,12 +133,15 @@
         <argsstring></argsstring>
         <name>mDirection</name>
         <briefdescription>
-<para>Direction of the light source in space. </para>        </briefdescription>
+<para>Direction of the light source in space. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Relative to the transformation of the node corresponding to the light.</para><para>The direction is undefined for point lights. The vector may be normalized, but it needn&apos;t. </para>        </detaileddescription>
+<para>Relative to the transformation of the node corresponding to the light.</para>
+<para>The direction is undefined for point lights. The vector may be normalized, but it needn&apos;t. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="147" column="1" bodyfile="include/assimp/light.h" bodystart="147" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="147" column="25" bodyfile="include/assimp/light.h" bodystart="147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1a92806413f16230728b04e5f379fd00c0" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
@@ -130,12 +149,14 @@
         <argsstring></argsstring>
         <name>mName</name>
         <briefdescription>
-<para>The name of the light source. </para>        </briefdescription>
+<para>The name of the light source. </para>
+        </briefdescription>
         <detaileddescription>
-<para>There must be a node in the scenegraph with the same name. This node specifies the position of the light in the scene hierarchy and can be animated. </para>        </detaileddescription>
+<para>There must be a node in the scenegraph with the same name. This node specifies the position of the light in the scene hierarchy and can be animated. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="126" column="1" bodyfile="include/assimp/light.h" bodystart="126" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="126" column="23" bodyfile="include/assimp/light.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1a5daf9c9ad2613603b847a527123611f0" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
@@ -143,12 +164,15 @@
         <argsstring></argsstring>
         <name>mPosition</name>
         <briefdescription>
-<para>Position of the light source in space. </para>        </briefdescription>
+<para>Position of the light source in space. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Relative to the transformation of the node corresponding to the light.</para><para>The position is undefined for directional lights. </para>        </detaileddescription>
+<para>Relative to the transformation of the node corresponding to the light.</para>
+<para>The position is undefined for directional lights. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="139" column="1" bodyfile="include/assimp/light.h" bodystart="139" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="139" column="25" bodyfile="include/assimp/light.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1ae2494aac85acce5e4fa3920b92b9d7b5" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector2_8h_1a0ac1a29f53f3c10ae2e522525f8e311f" kindref="member">aiVector2D</ref></type>
@@ -156,12 +180,13 @@
         <argsstring></argsstring>
         <name>mSize</name>
         <briefdescription>
-<para>Size of area light source. </para>        </briefdescription>
+<para>Size of area light source. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="240" column="1" bodyfile="include/assimp/light.h" bodystart="240" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="240" column="25" bodyfile="include/assimp/light.h" bodystart="240" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1a4cba1741875dd92724ff55be91c60c2b" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1aa8c1788fd9d096036c9e3b6cfe4b1301" kindref="member">C_ENUM</ref> <ref refid="light_8h_1a7a75cb224d903e71e8daede432449766" kindref="member">aiLightSourceType</ref></type>
@@ -169,12 +194,14 @@
         <argsstring></argsstring>
         <name>mType</name>
         <briefdescription>
-<para>The type of the light source. </para>        </briefdescription>
+<para>The type of the light source. </para>
+        </briefdescription>
         <detaileddescription>
-<para>aiLightSource_UNDEFINED is not a valid value for this member. </para>        </detaileddescription>
+<para>aiLightSource_UNDEFINED is not a valid value for this member. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="132" column="1" bodyfile="include/assimp/light.h" bodystart="132" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="132" column="30" bodyfile="include/assimp/light.h" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_light_1ac6d03040085bf88979bc55e19ff3a7d6" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
@@ -182,12 +209,15 @@
         <argsstring></argsstring>
         <name>mUp</name>
         <briefdescription>
-<para>Up direction of the light source in space. </para>        </briefdescription>
+<para>Up direction of the light source in space. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Relative to the transformation of the node corresponding to the light.</para><para>The direction is undefined for point lights. The vector may be normalized, but it needn&apos;t. </para>        </detaileddescription>
+<para>Relative to the transformation of the node corresponding to the light.</para>
+<para>The direction is undefined for point lights. The vector may be normalized, but it needn&apos;t. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="155" column="1" bodyfile="include/assimp/light.h" bodystart="155" bodyend="-1"/>
+        <location file="include/assimp/light.h" line="155" column="25" bodyfile="include/assimp/light.h" bodystart="155" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -202,52 +232,54 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/light.h" line="244" column="1" bodyfile="include/assimp/light.h" bodystart="244" bodyend="253"/>
+        <location file="include/assimp/light.h" line="244" column="5" bodyfile="include/assimp/light.h" bodystart="244" bodyend="253"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Helper structure to describe a light source. </para>    </briefdescription>
+<para>Helper structure to describe a light source. </para>
+    </briefdescription>
     <detaileddescription>
-<para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> supports multiple sorts of light sources, including directional, point and spot lights. All of them are defined with just a single structure and distinguished by their parameters. Note - some file formats (such as 3DS, ASE) export a &quot;target point&quot; - the point a spot light is looking at (it can even be animated). <ref refid="namespace_assimp" kindref="compound">Assimp</ref> writes the target point as a subnode of a spotlights&apos;s main node, called &quot;&lt;spotName&gt;.Target&quot;. However, this is just additional information then, the transformation tracks of the main node make the spot light already point in the right direction. </para>    </detaileddescription>
+<para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> supports multiple sorts of light sources, including directional, point and spot lights. All of them are defined with just a single structure and distinguished by their parameters. Note - some file formats (such as 3DS, ASE) export a &quot;target point&quot; - the point a spot light is looking at (it can even be animated). <ref refid="namespace_assimp" kindref="compound">Assimp</ref> writes the target point as a subnode of a spotlights&apos;s main node, called &quot;&lt;spotName&gt;.Target&quot;. However, this is just additional information then, the transformation tracks of the main node make the spot light already point in the right direction. </para>
+    </detaileddescription>
     <collaborationgraph>
-      <node id="55">
+      <node id="1">
         <label>aiLight</label>
         <link refid="structai_light"/>
-        <childnode refid="56" relation="usage">
+        <childnode refid="2" relation="usage">
+          <edgelabel>mColorAmbient</edgelabel>
           <edgelabel>mColorDiffuse</edgelabel>
           <edgelabel>mColorSpecular</edgelabel>
-          <edgelabel>mColorAmbient</edgelabel>
         </childnode>
-        <childnode refid="57" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="58" relation="usage">
-          <edgelabel>mUp</edgelabel>
-          <edgelabel>mPosition</edgelabel>
+        <childnode refid="4" relation="usage">
           <edgelabel>mDirection</edgelabel>
+          <edgelabel>mPosition</edgelabel>
+          <edgelabel>mUp</edgelabel>
         </childnode>
-        <childnode refid="59" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>mSize</edgelabel>
         </childnode>
       </node>
-      <node id="56">
+      <node id="2">
         <label>aiColor3D</label>
         <link refid="structai_color3_d"/>
       </node>
-      <node id="57">
+      <node id="3">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>
-      <node id="59">
+      <node id="5">
         <label>aiVector2t&lt; TReal &gt;</label>
         <link refid="classai_vector2t"/>
       </node>
-      <node id="58">
+      <node id="4">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>
     </collaborationgraph>
-    <location file="include/assimp/light.h" line="119" column="1" bodyfile="include/assimp/light.h" bodystart="118" bodyend="256"/>
+    <location file="include/assimp/light.h" line="118" column="1" bodyfile="include/assimp/light.h" bodystart="119" bodyend="256"/>
     <listofallmembers>
       <member refid="structai_light_1acf9b5fec217330b5f75eab56b552d0d9" prot="public" virt="non-virtual"><scope>aiLight</scope><name>aiLight</name></member>
       <member refid="structai_light_1abad0466811938623e98bf1d334143f9a" prot="public" virt="non-virtual"><scope>aiLight</scope><name>mAngleInnerCone</name></member>

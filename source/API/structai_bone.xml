@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_bone" kind="struct" language="C++" prot="public">
     <compoundname>aiBone</compoundname>
     <includes local="no">mesh.h</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="275" column="1" bodyfile="include/assimp/mesh.h" bodystart="275" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="275" column="21" bodyfile="include/assimp/mesh.h" bodystart="275" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_bone_1acfb9bfd2a2c6302181d7c3cc1bb8bbf0" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_string" kindref="compound">aiString</ref></type>
@@ -23,12 +23,13 @@
         <argsstring></argsstring>
         <name>mName</name>
         <briefdescription>
-<para>The name of the bone. </para>        </briefdescription>
+<para>The name of the bone. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="266" column="1" bodyfile="include/assimp/mesh.h" bodystart="266" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="266" column="23" bodyfile="include/assimp/mesh.h" bodystart="266" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_bone_1a617fe988b25a0095bccd03a269c524ce" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
@@ -41,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="279" column="1" bodyfile="include/assimp/mesh.h" bodystart="279" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="279" column="21" bodyfile="include/assimp/mesh.h" bodystart="279" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_bone_1a87a79d42a0132753aac66397ad6f9b71" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -49,12 +50,14 @@
         <argsstring></argsstring>
         <name>mNumWeights</name>
         <briefdescription>
-<para>The number of vertices affected by this bone. </para>        </briefdescription>
+<para>The number of vertices affected by this bone. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The maximum value for this member is <ref refid="mesh_8h_1a565e88bbf36ef4957f1229609e51b7f6" kindref="member">AI_MAX_BONE_WEIGHTS</ref>. </para>        </detaileddescription>
+<para>The maximum value for this member is <ref refid="mesh_8h_1a565e88bbf36ef4957f1229609e51b7f6" kindref="member">AI_MAX_BONE_WEIGHTS</ref>. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="270" column="1" bodyfile="include/assimp/mesh.h" bodystart="270" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="270" column="18" bodyfile="include/assimp/mesh.h" bodystart="270" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_bone_1a1dd6c4f24a1384c05da281692be3e78d" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="matrix4x4_8h_1a372a3e0c9500833063c8d410de82b6cd" kindref="member">aiMatrix4x4</ref></type>
@@ -62,12 +65,15 @@
         <argsstring></argsstring>
         <name>mOffsetMatrix</name>
         <briefdescription>
-<para>Matrix that transforms from bone space to mesh space in bind pose. </para>        </briefdescription>
+<para>Matrix that transforms from bone space to mesh space in bind pose. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This matrix describes the position of the mesh in the local space of this bone when the skeleton was bound. Thus it can be used directly to determine a desired vertex position, given the world-space transform of the bone when animated, and the position of the vertex in mesh space.</para><para>It is sometimes called an inverse-bind matrix, or inverse bind pose matrix. </para>        </detaileddescription>
+<para>This matrix describes the position of the mesh in the local space of this bone when the skeleton was bound. Thus it can be used directly to determine a desired vertex position, given the world-space transform of the bone when animated, and the position of the vertex in mesh space.</para>
+<para>It is sometimes called an inverse-bind matrix, or inverse bind pose matrix. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="296" column="1" bodyfile="include/assimp/mesh.h" bodystart="296" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="296" column="26" bodyfile="include/assimp/mesh.h" bodystart="296" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_bone_1ade36319714b58c03ad46aae30a2724a4" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_vertex_weight" kindref="compound">aiVertexWeight</ref> *</type>
@@ -75,12 +81,13 @@
         <argsstring></argsstring>
         <name>mWeights</name>
         <briefdescription>
-<para>The influence weights of this bone, by vertex index. </para>        </briefdescription>
+<para>The influence weights of this bone, by vertex index. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="283" column="1" bodyfile="include/assimp/mesh.h" bodystart="283" bodyend="-1"/>
+        <location file="include/assimp/mesh.h" line="283" column="29" bodyfile="include/assimp/mesh.h" bodystart="283" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -90,12 +97,13 @@
         <argsstring>() AI_NO_EXCEPT</argsstring>
         <name>aiBone</name>
         <briefdescription>
-<para>Default constructor. </para>        </briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="301" column="1" bodyfile="include/assimp/mesh.h" bodystart="301" bodyend="307"/>
+        <location file="include/assimp/mesh.h" line="301" column="5" bodyfile="include/assimp/mesh.h" bodystart="301" bodyend="307"/>
       </memberdef>
       <memberdef kind="function" id="structai_bone_1a9a0e27779c9c512a46d669e038f4c783" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -107,12 +115,13 @@
           <declname>other</declname>
         </param>
         <briefdescription>
-<para>Copy constructor. </para>        </briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="310" column="1" bodyfile="include/assimp/mesh.h" bodystart="310" bodyend="319"/>
+        <location file="include/assimp/mesh.h" line="310" column="5" bodyfile="include/assimp/mesh.h" bodystart="310" bodyend="319"/>
       </memberdef>
       <memberdef kind="function" id="structai_bone_1a24b3254a0ea55aef6e044d07ffe2efae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structai_bone" kindref="compound">aiBone</ref> &amp;</type>
@@ -124,12 +133,13 @@
           <declname>other</declname>
         </param>
         <briefdescription>
-<para>Assignment operator. </para>        </briefdescription>
+<para>Assignment operator. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="322" column="1" bodyfile="include/assimp/mesh.h" bodystart="322" bodyend="341"/>
+        <location file="include/assimp/mesh.h" line="322" column="12" bodyfile="include/assimp/mesh.h" bodystart="322" bodyend="341"/>
       </memberdef>
       <memberdef kind="function" id="structai_bone_1afc354872c3d4c36c2b747054fcab8890" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -146,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="343" column="1" bodyfile="include/assimp/mesh.h" bodystart="343" bodyend="355"/>
+        <location file="include/assimp/mesh.h" line="343" column="10" bodyfile="include/assimp/mesh.h" bodystart="343" bodyend="355"/>
       </memberdef>
       <memberdef kind="function" id="structai_bone_1a221b8e7de8e3e048c3a4100e70a28b40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -154,76 +164,79 @@
         <argsstring>()</argsstring>
         <name>~aiBone</name>
         <briefdescription>
-<para>Destructor - deletes the array of vertex weights. </para>        </briefdescription>
+<para>Destructor - deletes the array of vertex weights. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/mesh.h" line="357" column="1" bodyfile="include/assimp/mesh.h" bodystart="357" bodyend="359"/>
+        <location file="include/assimp/mesh.h" line="357" column="5" bodyfile="include/assimp/mesh.h" bodystart="357" bodyend="359"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>A single bone of a mesh. </para>    </briefdescription>
+<para>A single bone of a mesh. </para>
+    </briefdescription>
     <detaileddescription>
-<para>A bone has a name by which it can be found in the frame hierarchy and by which it can be addressed by animations. In addition it has a number of influences on vertices, and a matrix relating the mesh position to the position of the bone at the time of binding. </para>    </detaileddescription>
+<para>A bone has a name by which it can be found in the frame hierarchy and by which it can be addressed by animations. In addition it has a number of influences on vertices, and a matrix relating the mesh position to the position of the bone at the time of binding. </para>
+    </detaileddescription>
     <collaborationgraph>
-      <node id="28">
+      <node id="4">
         <label>aiNode</label>
         <link refid="structai_node"/>
-        <childnode refid="27" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="29" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>mMetaData</edgelabel>
         </childnode>
-        <childnode refid="28" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>mChildren</edgelabel>
           <edgelabel>mParent</edgelabel>
         </childnode>
-        <childnode refid="31" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>mTransformation</edgelabel>
         </childnode>
       </node>
-      <node id="30">
+      <node id="6">
         <label>aiMetadataEntry</label>
         <link refid="structai_metadata_entry"/>
       </node>
-      <node id="31">
+      <node id="7">
         <label>aiMatrix4x4t&lt; TReal &gt;</label>
         <link refid="classai_matrix4x4t"/>
       </node>
-      <node id="26">
+      <node id="2">
         <label>aiVertexWeight</label>
         <link refid="structai_vertex_weight"/>
       </node>
-      <node id="29">
+      <node id="5">
         <label>aiMetadata</label>
         <link refid="structai_metadata"/>
-        <childnode refid="27" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mKeys</edgelabel>
         </childnode>
-        <childnode refid="30" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>mValues</edgelabel>
         </childnode>
       </node>
-      <node id="25">
+      <node id="1">
         <label>aiBone</label>
         <link refid="structai_bone"/>
-        <childnode refid="26" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>mWeights</edgelabel>
         </childnode>
-        <childnode refid="27" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>mName</edgelabel>
         </childnode>
-        <childnode refid="28" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>mArmature</edgelabel>
           <edgelabel>mNode</edgelabel>
         </childnode>
-        <childnode refid="31" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>mOffsetMatrix</edgelabel>
         </childnode>
       </node>
-      <node id="27">
+      <node id="3">
         <label>aiString</label>
         <link refid="structai_string"/>
       </node>

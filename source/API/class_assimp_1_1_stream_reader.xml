@@ -1,0 +1,671 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_stream_reader" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::StreamReader</compoundname>
+    <includes local="no">StreamReader.h</includes>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>SwapEndianess</declname>
+        <defname>SwapEndianess</defname>
+        <defval>false</defval>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>RuntimeSwitch</declname>
+        <defname>RuntimeSwitch</defname>
+        <defval>false</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_assimp_1_1_stream_reader_1a610cc3716f1747ab0016aff84c39c1a8" prot="public" static="no">
+        <type>size_t</type>
+        <definition>using Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::diff =  size_t</definition>
+        <argsstring></argsstring>
+        <name>diff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="75" column="5" bodyfile="include/assimp/StreamReader.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_assimp_1_1_stream_reader_1a65f86ec50927b09740308165b7eff6f0" prot="public" static="no">
+        <type>size_t</type>
+        <definition>using Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::pos =  size_t</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="76" column="5" bodyfile="include/assimp/StreamReader.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_stream_reader_1abd8539081200944b7e08630b992c97f5" prot="private" static="no" mutable="no">
+        <type>int8_t *</type>
+        <definition>int8_t* Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::mBuffer</definition>
+        <argsstring></argsstring>
+        <name>mBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="322" column="12" bodyfile="include/assimp/StreamReader.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_stream_reader_1a6771553748c31d9197f8cc61947ec112" prot="private" static="no" mutable="no">
+        <type>int8_t *</type>
+        <definition>int8_t* Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::mCurrent</definition>
+        <argsstring></argsstring>
+        <name>mCurrent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="323" column="12" bodyfile="include/assimp/StreamReader.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_stream_reader_1af0da39d72de69a10e182fc555356f6b5" prot="private" static="no" mutable="no">
+        <type>int8_t *</type>
+        <definition>int8_t* Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::mEnd</definition>
+        <argsstring></argsstring>
+        <name>mEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="324" column="12" bodyfile="include/assimp/StreamReader.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_stream_reader_1ae5cc780f19e5225926d5e7a9feba2e8c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::mLe</definition>
+        <argsstring></argsstring>
+        <name>mLe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="326" column="10" bodyfile="include/assimp/StreamReader.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_stream_reader_1a3d1f5a8e699d9dd131053d8975b60515" prot="private" static="no" mutable="no">
+        <type>int8_t *</type>
+        <definition>int8_t* Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::mLimit</definition>
+        <argsstring></argsstring>
+        <name>mLimit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="325" column="12" bodyfile="include/assimp/StreamReader.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_stream_reader_1a01ba0b8dc9dea4dc3040213128160d66" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; IOStream &gt;</type>
+        <definition>std::shared_ptr&lt;IOStream&gt; Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::mStream</definition>
+        <argsstring></argsstring>
+        <name>mStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="321" column="21" bodyfile="include/assimp/StreamReader.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a1f2f70172ac9209ff4b460b751676f0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::CopyAndAdvance</definition>
+        <argsstring>(void *out, size_t bytes)</argsstring>
+        <name>CopyAndAdvance</name>
+        <param>
+          <type>void *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+<para>Copy n bytes to an external buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination for copying </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to copy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="226" column="10" bodyfile="include/assimp/StreamReader.h" bodystart="226" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a2bb6d0e3bd6f453fb77c065fa5492b56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+<para>Generic read method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>ByteSwap::Swap(T*) <emphasis>must</emphasis> be defined </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="288" column="7" bodyfile="include/assimp/StreamReader.h" bodystart="288" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a438a8b796d633c3b2be0b64cde3cb5b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetCurrentPos</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCurrentPos</name>
+        <briefdescription>
+<para>Get the current offset from the beginning of the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="234" column="9" bodyfile="include/assimp/StreamReader.h" bodystart="234" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a18b3a260ede09eb5ff17fd434a561c9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetF4</definition>
+        <argsstring>()</argsstring>
+        <name>GetF4</name>
+        <briefdescription>
+<para>Read a float from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="122" column="11" bodyfile="include/assimp/StreamReader.h" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a5d9bec46e411692e25e7c6990cc12632" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetF8</definition>
+        <argsstring>()</argsstring>
+        <name>GetF8</name>
+        <briefdescription>
+<para>Read a double from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="128" column="12" bodyfile="include/assimp/StreamReader.h" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1ab348116fba75cabbb3dd88549883f09f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetI1</definition>
+        <argsstring>()</argsstring>
+        <name>GetI1</name>
+        <briefdescription>
+<para>Read a signed 8 bit integer from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="140" column="12" bodyfile="include/assimp/StreamReader.h" bodystart="140" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1ab05996b2c53aa1e0e972ab599923aaac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetI2</definition>
+        <argsstring>()</argsstring>
+        <name>GetI2</name>
+        <briefdescription>
+<para>Read a signed 16 bit integer from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="134" column="13" bodyfile="include/assimp/StreamReader.h" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a1b01096125ddbfe94d6420e35494fb19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetI4</definition>
+        <argsstring>()</argsstring>
+        <name>GetI4</name>
+        <briefdescription>
+<para>Read an signed 32 bit integer from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="146" column="13" bodyfile="include/assimp/StreamReader.h" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1aea1503888f1d091cb68d7345b8639fad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetI8</definition>
+        <argsstring>()</argsstring>
+        <name>GetI8</name>
+        <briefdescription>
+<para>Read a signed 64 bit integer from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="152" column="13" bodyfile="include/assimp/StreamReader.h" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a13aacfd2fb4f8f117e73e7c6cb70d567" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int8_t *</type>
+        <definition>int8_t* Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPtr</name>
+        <briefdescription>
+<para>Get the current file pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="205" column="12" bodyfile="include/assimp/StreamReader.h" bodystart="205" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a1e09c51088be6538c2eb5c0a42bcc3b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetReadLimit</definition>
+        <argsstring>() const</argsstring>
+        <name>GetReadLimit</name>
+        <briefdescription>
+<para>Get the current read limit in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reading over this limit accidentally raises an exception. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="266" column="18" bodyfile="include/assimp/StreamReader.h" bodystart="266" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1aea3ccec98287727191889fcd19cdbb09" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetRemainingSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRemainingSize</name>
+        <briefdescription>
+<para>Get the remaining stream size (to the end of the stream) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="182" column="12" bodyfile="include/assimp/StreamReader.h" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1aad42dcfef7b67fa95f195affa8a1468c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetRemainingSizeToLimit</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRemainingSizeToLimit</name>
+        <briefdescription>
+<para>Get the remaining stream size (to the current read limit). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The return value is the remaining size of the stream if no custom read limit has been set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="190" column="12" bodyfile="include/assimp/StreamReader.h" bodystart="190" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a50b0bd037f370571a0f2d978f9bb0fe2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetU1</definition>
+        <argsstring>()</argsstring>
+        <name>GetU1</name>
+        <briefdescription>
+<para>Read a unsigned 8 bit integer from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="164" column="13" bodyfile="include/assimp/StreamReader.h" bodystart="164" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1ae64755a9b2c09770eedc43e14ce755b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetU2</definition>
+        <argsstring>()</argsstring>
+        <name>GetU2</name>
+        <briefdescription>
+<para>Read a unsigned 16 bit integer from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="158" column="14" bodyfile="include/assimp/StreamReader.h" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a7275f6d13d5018eacd766af6cf195689" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetU4</definition>
+        <argsstring>()</argsstring>
+        <name>GetU4</name>
+        <briefdescription>
+<para>Read an unsigned 32 bit integer from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="170" column="14" bodyfile="include/assimp/StreamReader.h" bodystart="170" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a44ed65e0c214b9622a2b064ce98b0a76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::GetU8</definition>
+        <argsstring>()</argsstring>
+        <name>GetU8</name>
+        <briefdescription>
+<para>Read a unsigned 64 bit integer from the stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="176" column="14" bodyfile="include/assimp/StreamReader.h" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1acb14681435190e35ffbdbd3f4239c774" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::IncPtr</definition>
+        <argsstring>(intptr_t plus)</argsstring>
+        <name>IncPtr</name>
+        <param>
+          <type><ref refid="pstdint_8h_1ac2abfb965e6a308c5912f9e749740d4a" kindref="member">intptr_t</ref></type>
+          <declname>plus</declname>
+        </param>
+        <briefdescription>
+<para>Increase the file pointer (relative seeking) <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="196" column="10" bodyfile="include/assimp/StreamReader.h" bodystart="196" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1ade5d5559bd60ca0144d8b1f2bfd06918" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_assimp_1_1_stream_reader" kindref="compound">StreamReader</ref> &amp;</type>
+        <definition>StreamReader&amp; Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::operator&gt;&gt;</definition>
+        <argsstring>(T &amp;f)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>overload operator&gt;&gt; and allow chaining of &gt;&gt; ops. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="280" column="18" bodyfile="include/assimp/StreamReader.h" bodystart="280" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a9a9b3117562c26c9cc4f8b4c1b9f2a06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::SetCurrentPos</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>SetCurrentPos</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="238" column="10" bodyfile="include/assimp/StreamReader.h" bodystart="238" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a5311305e17f4a50159abede1c8ac0a1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::SetPtr</definition>
+        <argsstring>(int8_t *p)</argsstring>
+        <name>SetPtr</name>
+        <param>
+          <type>int8_t *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Set current file pointer (Get it from <ref refid="class_assimp_1_1_stream_reader_1a13aacfd2fb4f8f117e73e7c6cb70d567" kindref="member">GetPtr</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is if you prefer to do pointer arithmetics on your own or want to copy large chunks of data at once. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new pointer, which is validated against the size limit and buffer boundaries. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="215" column="10" bodyfile="include/assimp/StreamReader.h" bodystart="215" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1af9fce06af7ad88c1636dbd95f2bc25e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::SetReadLimit</definition>
+        <argsstring>(unsigned int _limit)</argsstring>
+        <name>SetReadLimit</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>_limit</declname>
+        </param>
+        <briefdescription>
+<para>Setup a temporary read limit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of bytes to be read from the beginning of the file. Specifying UINT_MAX resets the limit to the original end of the stream. Returns the previously set limit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="249" column="18" bodyfile="include/assimp/StreamReader.h" bodystart="249" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1aa4117eb3976f7ffc49ee2d671d7eca25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::SkipToReadLimit</definition>
+        <argsstring>()</argsstring>
+        <name>SkipToReadLimit</name>
+        <briefdescription>
+<para>Skip to the read limit in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reading over this limit accidentally raises an exception. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="273" column="10" bodyfile="include/assimp/StreamReader.h" bodystart="273" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a05ab8a7f9bd0dea892c363fb550d93ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::StreamReader</definition>
+        <argsstring>(IOStream *stream, bool le=false)</argsstring>
+        <name>StreamReader</name>
+        <param>
+          <type>IOStream *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>le</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="102" column="5" bodyfile="include/assimp/StreamReader.h" bodystart="102" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1ac73cf126fb7fde5073141a9f2cf26d53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::StreamReader</definition>
+        <argsstring>(std::shared_ptr&lt; IOStream &gt; stream, bool le=false)</argsstring>
+        <name>StreamReader</name>
+        <param>
+          <type>std::shared_ptr&lt; IOStream &gt;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>le</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Construction from a given stream with a well-defined endianness. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="class_assimp_1_1_stream_reader" kindref="compound">StreamReader</ref> holds a permanent strong reference to the stream, which is released upon destruction. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input stream. The stream is not restarted if its file pointer is not at 0. Instead, the stream reader reads from the current position to the end of the stream. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>le</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If <computeroutput>RuntimeSwitch</computeroutput> is true: specifies whether the stream is in little endian byte order. Otherwise the endianness information is contained in the <computeroutput>SwapEndianess</computeroutput> template parameter and this parameter is meaningless. <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="90" column="5" bodyfile="include/assimp/StreamReader.h" bodystart="90" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a03b6c55c6b469bef78781255dd6de8e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::~StreamReader</definition>
+        <argsstring>()</argsstring>
+        <name>~StreamReader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="114" column="5" bodyfile="include/assimp/StreamReader.h" bodystart="114" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_stream_reader_1a58639192d218b4f2e010121cbac72f5b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::StreamReader&lt; SwapEndianess, RuntimeSwitch &gt;::InternBegin</definition>
+        <argsstring>()</argsstring>
+        <name>InternBegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/StreamReader.h" line="303" column="10" bodyfile="include/assimp/StreamReader.h" bodystart="303" bodyend="318"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wrapper class around IOStream to allow for consistent reading of binary data in both little and big endian format. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Don&apos;t attempt to instance the template directly. Use StreamReaderLE to read from a little-endian stream and StreamReaderBE to read from a BE stream. The class expects that the endianness of any input data is known at compile-time, which should usually be true (#BaseImporter::ConvertToUTF8 implements runtime endianness conversions for text files).</para>
+<para>XXX switch from unsigned int for size types to size_t? or ptrdiff_t? </para>
+    </detaileddescription>
+    <location file="include/assimp/StreamReader.h" line="73" column="1" bodyfile="include/assimp/StreamReader.h" bodystart="73" bodyend="327"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_stream_reader_1a1f2f70172ac9209ff4b460b751676f0b" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>CopyAndAdvance</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a610cc3716f1747ab0016aff84c39c1a8" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>diff</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a2bb6d0e3bd6f453fb77c065fa5492b56" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>Get</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a438a8b796d633c3b2be0b64cde3cb5b2" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetCurrentPos</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a18b3a260ede09eb5ff17fd434a561c9b" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetF4</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a5d9bec46e411692e25e7c6990cc12632" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetF8</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1ab348116fba75cabbb3dd88549883f09f" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetI1</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1ab05996b2c53aa1e0e972ab599923aaac" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetI2</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a1b01096125ddbfe94d6420e35494fb19" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetI4</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1aea1503888f1d091cb68d7345b8639fad" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetI8</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a13aacfd2fb4f8f117e73e7c6cb70d567" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetPtr</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a1e09c51088be6538c2eb5c0a42bcc3b1" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetReadLimit</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1aea3ccec98287727191889fcd19cdbb09" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetRemainingSize</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1aad42dcfef7b67fa95f195affa8a1468c" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetRemainingSizeToLimit</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a50b0bd037f370571a0f2d978f9bb0fe2" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetU1</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1ae64755a9b2c09770eedc43e14ce755b6" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetU2</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a7275f6d13d5018eacd766af6cf195689" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetU4</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a44ed65e0c214b9622a2b064ce98b0a76" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>GetU8</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1acb14681435190e35ffbdbd3f4239c774" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>IncPtr</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a58639192d218b4f2e010121cbac72f5b" prot="private" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>InternBegin</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1abd8539081200944b7e08630b992c97f5" prot="private" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>mBuffer</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a6771553748c31d9197f8cc61947ec112" prot="private" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>mCurrent</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1af0da39d72de69a10e182fc555356f6b5" prot="private" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>mEnd</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1ae5cc780f19e5225926d5e7a9feba2e8c" prot="private" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>mLe</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a3d1f5a8e699d9dd131053d8975b60515" prot="private" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>mLimit</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a01ba0b8dc9dea4dc3040213128160d66" prot="private" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>mStream</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1ade5d5559bd60ca0144d8b1f2bfd06918" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a65f86ec50927b09740308165b7eff6f0" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>pos</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a9a9b3117562c26c9cc4f8b4c1b9f2a06" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>SetCurrentPos</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a5311305e17f4a50159abede1c8ac0a1a" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>SetPtr</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1af9fce06af7ad88c1636dbd95f2bc25e7" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>SetReadLimit</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1aa4117eb3976f7ffc49ee2d671d7eca25" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>SkipToReadLimit</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1ac73cf126fb7fde5073141a9f2cf26d53" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>StreamReader</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a05ab8a7f9bd0dea892c363fb550d93ea" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>StreamReader</name></member>
+      <member refid="class_assimp_1_1_stream_reader_1a03b6c55c6b469bef78781255dd6de8e9" prot="public" virt="non-virtual"><scope>Assimp::StreamReader</scope><name>~StreamReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

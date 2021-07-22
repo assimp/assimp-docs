@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_animation_decoder" kind="interface" language="C++" prot="public">
+    <compoundname>AnimationDecoder</compoundname>
+    <includes local="no">draco_animation_web_decoder.idl</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_animation_decoder_1a3052270da6c1d171052974bf2dfdbfff" prot="private" static="no" mutable="no">
+        <type><ref refid="classdraco_1_1_keyframe_animation_decoder" kindref="compound">draco::KeyframeAnimationDecoder</ref></type>
+        <definition>draco::KeyframeAnimationDecoder AnimationDecoder::decoder_</definition>
+        <argsstring></argsstring>
+        <name>decoder_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.h" line="69" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_animation_decoder_1a7db8734f9a2d0c3c92bf94240fda336a" prot="private" static="no" mutable="no">
+        <type><ref refid="classdraco_1_1_status" kindref="compound">draco::Status</ref></type>
+        <definition>draco::Status AnimationDecoder::last_status_</definition>
+        <argsstring></argsstring>
+        <name>last_status_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.h" line="70" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_animation_decoder_1a0967a327a5d9fde77a9390464fe39c99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnimationDecoder::AnimationDecoder</definition>
+        <argsstring>()</argsstring>
+        <name>AnimationDecoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/draco_animation_web_decoder.idl" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_decoder_1a3de99fb74852a35ac9d0f127fc35c628" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AnimationDecoder::AnimationDecoder</definition>
+        <argsstring>()</argsstring>
+        <name>AnimationDecoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.h" line="56" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.cc" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_decoder_1a719456bc398445c8582bac582e079375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_status" kindref="compound">Status</ref></type>
+        <definition>Status AnimationDecoder::DecodeBufferToKeyframeAnimation</definition>
+        <argsstring>(DecoderBuffer in_buffer, KeyframeAnimation animation)</argsstring>
+        <name>DecodeBufferToKeyframeAnimation</name>
+        <param>
+          <type><ref refid="interface_decoder_buffer" kindref="compound">DecoderBuffer</ref></type>
+          <declname>in_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_keyframe_animation" kindref="compound">KeyframeAnimation</ref></type>
+          <declname>animation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/draco_animation_web_decoder.idl" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_decoder_1a324cb6e8472e86287852c6db2a14d047" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classdraco_1_1_status" kindref="compound">draco::Status</ref> *</type>
+        <definition>const draco::Status * AnimationDecoder::DecodeBufferToKeyframeAnimation</definition>
+        <argsstring>(draco::DecoderBuffer *in_buffer, draco::KeyframeAnimation *animation)</argsstring>
+        <name>DecodeBufferToKeyframeAnimation</name>
+        <param>
+          <type><ref refid="classdraco_1_1_decoder_buffer" kindref="compound">draco::DecoderBuffer</ref> *</type>
+          <declname>in_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classdraco_1_1_keyframe_animation" kindref="compound">draco::KeyframeAnimation</ref> *</type>
+          <declname>animation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.h" line="59" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.cc" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_decoder_1a3553df93aa5887d9b715a2671d8df122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean AnimationDecoder::GetKeyframes</definition>
+        <argsstring>([Ref, Const] KeyframeAnimation animation, long keyframes_id, DracoFloat32Array animation_data)</argsstring>
+        <name>GetKeyframes</name>
+        <param>
+          <attributes>[Ref, Const]</attributes>
+          <type><ref refid="interface_keyframe_animation" kindref="compound">KeyframeAnimation</ref></type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+          <declname>keyframes_id</declname>
+        </param>
+        <param>
+          <type><ref refid="class_draco_float32_array" kindref="compound">DracoFloat32Array</ref></type>
+          <declname>animation_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/draco_animation_web_decoder.idl" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_decoder_1a5177cac1878e6bd0a4606545ac09fdc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean AnimationDecoder::GetTimestamps</definition>
+        <argsstring>([Ref, Const] KeyframeAnimation animation, DracoFloat32Array timestamp)</argsstring>
+        <name>GetTimestamps</name>
+        <param>
+          <attributes>[Ref, Const]</attributes>
+          <type><ref refid="interface_keyframe_animation" kindref="compound">KeyframeAnimation</ref></type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type><ref refid="class_draco_float32_array" kindref="compound">DracoFloat32Array</ref></type>
+          <declname>timestamp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/draco_animation_web_decoder.idl" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_animation_decoder_1a1ff0476c7e7cb7b0c146d5a43fa66457" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AnimationDecoder::GetKeyframes</definition>
+        <argsstring>(const draco::KeyframeAnimation &amp;animation, int keyframes_id, DracoFloat32Array *animation_data)</argsstring>
+        <name>GetKeyframes</name>
+        <param>
+          <type>const <ref refid="classdraco_1_1_keyframe_animation" kindref="compound">draco::KeyframeAnimation</ref> &amp;</type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+          <declname>keyframes_id</declname>
+        </param>
+        <param>
+          <type><ref refid="class_draco_float32_array" kindref="compound">DracoFloat32Array</ref> *</type>
+          <declname>animation_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.h" line="65" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.cc" bodystart="72" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_decoder_1a47c67b8fd5a728e59c15db71940b3eae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AnimationDecoder::GetTimestamps</definition>
+        <argsstring>(const draco::KeyframeAnimation &amp;animation, DracoFloat32Array *timestamp)</argsstring>
+        <name>GetTimestamps</name>
+        <param>
+          <type>const <ref refid="classdraco_1_1_keyframe_animation" kindref="compound">draco::KeyframeAnimation</ref> &amp;</type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type><ref refid="class_draco_float32_array" kindref="compound">DracoFloat32Array</ref> *</type>
+          <declname>timestamp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.h" line="62" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.cc" bodystart="50" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.h" line="54" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_decoder_webidl_wrapper.h" bodystart="54" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_animation_decoder_1a3de99fb74852a35ac9d0f127fc35c628" prot="public" virt="non-virtual"><scope>AnimationDecoder</scope><name>AnimationDecoder</name></member>
+      <member refid="class_animation_decoder_1a0967a327a5d9fde77a9390464fe39c99" prot="public" virt="non-virtual"><scope>AnimationDecoder</scope><name>AnimationDecoder</name></member>
+      <member refid="class_animation_decoder_1a324cb6e8472e86287852c6db2a14d047" prot="public" virt="non-virtual"><scope>AnimationDecoder</scope><name>DecodeBufferToKeyframeAnimation</name></member>
+      <member refid="class_animation_decoder_1a719456bc398445c8582bac582e079375" prot="public" virt="non-virtual"><scope>AnimationDecoder</scope><name>DecodeBufferToKeyframeAnimation</name></member>
+      <member refid="class_animation_decoder_1a3052270da6c1d171052974bf2dfdbfff" prot="private" virt="non-virtual"><scope>AnimationDecoder</scope><name>decoder_</name></member>
+      <member refid="class_animation_decoder_1a1ff0476c7e7cb7b0c146d5a43fa66457" prot="public" virt="non-virtual"><scope>AnimationDecoder</scope><name>GetKeyframes</name></member>
+      <member refid="class_animation_decoder_1a3553df93aa5887d9b715a2671d8df122" prot="public" virt="non-virtual"><scope>AnimationDecoder</scope><name>GetKeyframes</name></member>
+      <member refid="class_animation_decoder_1a47c67b8fd5a728e59c15db71940b3eae" prot="public" virt="non-virtual"><scope>AnimationDecoder</scope><name>GetTimestamps</name></member>
+      <member refid="class_animation_decoder_1a5177cac1878e6bd0a4606545ac09fdc5" prot="public" virt="non-virtual"><scope>AnimationDecoder</scope><name>GetTimestamps</name></member>
+      <member refid="class_animation_decoder_1a7db8734f9a2d0c3c92bf94240fda336a" prot="private" virt="non-virtual"><scope>AnimationDecoder</scope><name>last_status_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

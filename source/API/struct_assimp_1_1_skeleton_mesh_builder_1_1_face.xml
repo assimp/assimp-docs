@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_skeleton_mesh_builder_1_1_face" kind="struct" language="C++" prot="protected">
+    <compoundname>Assimp::SkeletonMeshBuilder::Face</compoundname>
+    <includes local="no">SkeletonMeshBuilder.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_skeleton_mesh_builder_1_1_face_1a2e38536f110748db8a32bd7e995a8bdb" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::SkeletonMeshBuilder::Face::mIndices[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>mIndices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SkeletonMeshBuilder.h" line="111" column="22" bodyfile="include/assimp/SkeletonMeshBuilder.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_skeleton_mesh_builder_1_1_face_1a298da8f02cfd0b838bd1087fd90dd456" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SkeletonMeshBuilder::Face::Face</definition>
+        <argsstring>()</argsstring>
+        <name>Face</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SkeletonMeshBuilder.h" line="112" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_assimp_1_1_skeleton_mesh_builder_1_1_face_1a7fc75208520cf77334eef02bc3d437f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SkeletonMeshBuilder::Face::Face</definition>
+        <argsstring>(unsigned int p0, unsigned int p1, unsigned int p2)</argsstring>
+        <name>Face</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SkeletonMeshBuilder.h" line="113" column="9" bodyfile="include/assimp/SkeletonMeshBuilder.h" bodystart="113" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>faces </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/SkeletonMeshBuilder.h" line="110" column="5" bodyfile="include/assimp/SkeletonMeshBuilder.h" bodystart="110" bodyend="118"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_skeleton_mesh_builder_1_1_face_1a298da8f02cfd0b838bd1087fd90dd456" prot="public" virt="non-virtual"><scope>Assimp::SkeletonMeshBuilder::Face</scope><name>Face</name></member>
+      <member refid="struct_assimp_1_1_skeleton_mesh_builder_1_1_face_1a7fc75208520cf77334eef02bc3d437f1" prot="public" virt="non-virtual"><scope>Assimp::SkeletonMeshBuilder::Face</scope><name>Face</name></member>
+      <member refid="struct_assimp_1_1_skeleton_mesh_builder_1_1_face_1a2e38536f110748db8a32bd7e995a8bdb" prot="public" virt="non-virtual"><scope>Assimp::SkeletonMeshBuilder::Face</scope><name>mIndices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_line_splitter" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::LineSplitter</compoundname>
+    <includes local="no">LineSplitter.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_assimp_1_1_line_splitter_1aef56da1bb83d87c439d181cbce523068" prot="public" static="no">
+        <type>size_t</type>
+        <definition>typedef size_t Assimp::LineSplitter::line_idx</definition>
+        <argsstring></argsstring>
+        <name>line_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="82" column="20" bodyfile="include/assimp/LineSplitter.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_line_splitter_1a7cde4e6ddd5f2c450790c80281d62669" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Assimp::LineSplitter::mCur</definition>
+        <argsstring></argsstring>
+        <name>mCur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="142" column="17" bodyfile="include/assimp/LineSplitter.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_line_splitter_1ac442e59062c37d5b886a9d5e619100bb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_assimp_1_1_line_splitter_1aef56da1bb83d87c439d181cbce523068" kindref="member">line_idx</ref></type>
+        <definition>line_idx Assimp::LineSplitter::mIdx</definition>
+        <argsstring></argsstring>
+        <name>mIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="141" column="14" bodyfile="include/assimp/LineSplitter.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_line_splitter_1a088e3e7bbe43c4a30c9bbbcd2b80182a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::LineSplitter::mSkip_empty_lines</definition>
+        <argsstring></argsstring>
+        <name>mSkip_empty_lines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="144" column="19" bodyfile="include/assimp/LineSplitter.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_line_splitter_1a29afcd368f3d0756265721ad233c8b66" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_assimp_1ab34515c230b8458492195a11571f266f" kindref="member">StreamReaderLE</ref> &amp;</type>
+        <definition>StreamReaderLE&amp; Assimp::LineSplitter::mStream</definition>
+        <argsstring></argsstring>
+        <name>mStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="143" column="20" bodyfile="include/assimp/LineSplitter.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_line_splitter_1a5ca2516ae7da68064fe06b702d0c0e70" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::LineSplitter::mSwallow</definition>
+        <argsstring></argsstring>
+        <name>mSwallow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="144" column="10" bodyfile="include/assimp/LineSplitter.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_line_splitter_1a7058917cd5f7103fd9941509ef80fd0c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::LineSplitter::mTrim</definition>
+        <argsstring></argsstring>
+        <name>mTrim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="144" column="37" bodyfile="include/assimp/LineSplitter.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1ab1696c3d2355b38f7beb5fb2a2497b2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_line_splitter_1aef56da1bb83d87c439d181cbce523068" kindref="member">line_idx</ref></type>
+        <definition>AI_FORCE_INLINE LineSplitter::line_idx Assimp::LineSplitter::get_index</definition>
+        <argsstring>() const</argsstring>
+        <name>get_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="122" column="14" bodyfile="include/assimp/LineSplitter.h" bodystart="266" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1ae919ea1da66a85422681c0fbcb4986fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_assimp_1ab34515c230b8458492195a11571f266f" kindref="member">StreamReaderLE</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE StreamReaderLE &amp; Assimp::LineSplitter::get_stream</definition>
+        <argsstring>()</argsstring>
+        <name>get_stream</name>
+        <briefdescription>
+<para>access the underlying stream object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="126" column="20" bodyfile="include/assimp/LineSplitter.h" bodystart="271" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1a05e6ea1868bc931c754ef332a4866ae3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Assimp::LineSplitter::get_tokens</definition>
+        <argsstring>(const char *(&amp;tokens)[N]) const</argsstring>
+        <name>get_tokens</name>
+        <param>
+          <type>const char *(&amp;)</type>
+          <declname>tokens</declname>
+          <array>[N]</array>
+        </param>
+        <briefdescription>
+<para>extract the start positions of N tokens from the current line </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="106" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1ae158d72bee4278a3cc78db1f92b58be6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> void</type>
+        <definition>AI_FORCE_INLINE void Assimp::LineSplitter::get_tokens</definition>
+        <argsstring>(const char *(&amp;tokens)[N]) const</argsstring>
+        <name>get_tokens</name>
+        <param>
+          <type>const char *(&amp;)</type>
+          <declname>tokens</declname>
+          <array>[N]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="230" column="6" bodyfile="include/assimp/LineSplitter.h" bodystart="230" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1a99db4079d27847780cc22c6d395b96b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::LineSplitter::LineSplitter</definition>
+        <argsstring>(const LineSplitter &amp;)=delete</argsstring>
+        <name>LineSplitter</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_line_splitter" kindref="compound">LineSplitter</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="136" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1a7f8159192166a79badfb4f2cfaea5fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::LineSplitter::LineSplitter</definition>
+        <argsstring>(LineSplitter &amp;&amp;)=delete</argsstring>
+        <name>LineSplitter</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_line_splitter" kindref="compound">LineSplitter</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="137" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1a04e78a827cbd501d920a9bb8245b817f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AI_FORCE_INLINE Assimp::LineSplitter::LineSplitter</definition>
+        <argsstring>(StreamReaderLE &amp;stream, bool skip_empty_lines=true, bool trim=true)</argsstring>
+        <name>LineSplitter</name>
+        <param>
+          <type><ref refid="namespace_assimp_1ab34515c230b8458492195a11571f266f" kindref="member">StreamReaderLE</ref> &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skip_empty_lines</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>trim</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>construct from existing stream reader note: trim is <emphasis>always</emphasis> assumed true if skyp_empty_lines==true </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="88" column="5" bodyfile="include/assimp/LineSplitter.h" bodystart="148" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1a8606ba6e4f8ce5601dcfe46d98d5b643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::LineSplitter::match_start</definition>
+        <argsstring>(const char *check)</argsstring>
+        <name>match_start</name>
+        <param>
+          <type>const char *</type>
+          <declname>check</declname>
+        </param>
+        <briefdescription>
+<para>!strcmp((*this)-&gt;substr(0,strlen(check)),check) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="130" column="10" bodyfile="include/assimp/LineSplitter.h" bodystart="276" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1aa7e5e843fc2b8623fcd869d358a424aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AI_FORCE_INLINE Assimp::LineSplitter::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+<para>boolean context </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="116" column="5" bodyfile="include/assimp/LineSplitter.h" bodystart="256" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1a4192fd5557f07dc9d4c6d137858e4592" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AI_FORCE_INLINE Assimp::LineSplitter::operator line_idx</definition>
+        <argsstring>() const</argsstring>
+        <name>operator line_idx</name>
+        <briefdescription>
+<para>line indices are zero-based, empty lines are included </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="120" column="5" bodyfile="include/assimp/LineSplitter.h" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1a903381cf5cbc7a1684116ddd71604ae5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>AI_FORCE_INLINE std::string Assimp::LineSplitter::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="112" column="17" bodyfile="include/assimp/LineSplitter.h" bodystart="251" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1a1ba3e0ed296b5604153bef3fac798517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_line_splitter" kindref="compound">LineSplitter</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE LineSplitter &amp; Assimp::LineSplitter::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>pseudo-iterator increment </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="94" column="18" bodyfile="include/assimp/LineSplitter.h" bodystart="166" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1af41717d32478918c52051c4d2f1c2788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_line_splitter" kindref="compound">LineSplitter</ref> &amp;</type>
+        <definition>AI_FORCE_INLINE LineSplitter &amp; Assimp::LineSplitter::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="97" column="18" bodyfile="include/assimp/LineSplitter.h" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1a175ad7f4d2d0316ceb762259fbe62d26" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string *</type>
+        <definition>AI_FORCE_INLINE const std::string * Assimp::LineSplitter::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+<para>member access </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="110" column="23" bodyfile="include/assimp/LineSplitter.h" bodystart="246" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1a42ef612e85e4a8b5c83a28b2ab360509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_line_splitter" kindref="compound">LineSplitter</ref> &amp;</type>
+        <definition>LineSplitter&amp; Assimp::LineSplitter::operator=</definition>
+        <argsstring>(const LineSplitter &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_line_splitter" kindref="compound">LineSplitter</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="138" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1ac6ba3911a72d452fb8930a812fea6d7e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>AI_FORCE_INLINE const char * Assimp::LineSplitter::operator[]</definition>
+        <argsstring>(size_t idx) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>get a pointer to the beginning of a particular token </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="101" column="16" bodyfile="include/assimp/LineSplitter.h" bodystart="212" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1a8efabfd26849a7f1379dfda1eeb44c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>AI_FORCE_INLINE void Assimp::LineSplitter::swallow_next_increment</definition>
+        <argsstring>()</argsstring>
+        <name>swallow_next_increment</name>
+        <briefdescription>
+<para>swallow the next call to ++, return the previous value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="134" column="10" bodyfile="include/assimp/LineSplitter.h" bodystart="283" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_line_splitter_1ad67462843cc4774d43c1eb2cb45991df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AI_FORCE_INLINE Assimp::LineSplitter::~LineSplitter</definition>
+        <argsstring>()</argsstring>
+        <name>~LineSplitter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LineSplitter.h" line="90" column="5" bodyfile="include/assimp/LineSplitter.h" bodystart="161" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Usage: </para>
+    </briefdescription>
+    <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">for(LineSplitter<sp/>splitter(stream);splitter;++splitter)<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(*splitter<sp/>==<sp/>&quot;hi!&quot;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>else<sp/>if<sp/>(splitter-&gt;substr(0,5)<sp/>==<sp/>&quot;hello&quot;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>access<sp/>the<sp/>third<sp/>token<sp/>in<sp/>the<sp/>line<sp/>(tokens<sp/>are<sp/>space-separated)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(strtol(splitter[2])<sp/>&gt;<sp/>5)<sp/>{<sp/>..<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSIMP_LOG_VERBOSE_DEBUG(&quot;Current<sp/>line<sp/>is:<sp/>&quot;,<sp/>splitter.get_index());</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="include/assimp/LineSplitter.h" line="80" column="1" bodyfile="include/assimp/LineSplitter.h" bodystart="80" bodyend="145"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_line_splitter_1ab1696c3d2355b38f7beb5fb2a2497b2d" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>get_index</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1ae919ea1da66a85422681c0fbcb4986fe" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>get_stream</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a05e6ea1868bc931c754ef332a4866ae3" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>get_tokens</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1ae158d72bee4278a3cc78db1f92b58be6" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>get_tokens</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1aef56da1bb83d87c439d181cbce523068" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>line_idx</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a04e78a827cbd501d920a9bb8245b817f" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>LineSplitter</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a99db4079d27847780cc22c6d395b96b9" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>LineSplitter</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a7f8159192166a79badfb4f2cfaea5fde" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>LineSplitter</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a8606ba6e4f8ce5601dcfe46d98d5b643" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>match_start</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a7cde4e6ddd5f2c450790c80281d62669" prot="private" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>mCur</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1ac442e59062c37d5b886a9d5e619100bb" prot="private" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>mIdx</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a088e3e7bbe43c4a30c9bbbcd2b80182a" prot="private" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>mSkip_empty_lines</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a29afcd368f3d0756265721ad233c8b66" prot="private" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>mStream</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a5ca2516ae7da68064fe06b702d0c0e70" prot="private" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>mSwallow</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a7058917cd5f7103fd9941509ef80fd0c" prot="private" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>mTrim</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1aa7e5e843fc2b8623fcd869d358a424aa" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>operator bool</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a4192fd5557f07dc9d4c6d137858e4592" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>operator line_idx</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a903381cf5cbc7a1684116ddd71604ae5" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>operator*</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a1ba3e0ed296b5604153bef3fac798517" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>operator++</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1af41717d32478918c52051c4d2f1c2788" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>operator++</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a175ad7f4d2d0316ceb762259fbe62d26" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>operator-&gt;</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a42ef612e85e4a8b5c83a28b2ab360509" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>operator=</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1ac6ba3911a72d452fb8930a812fea6d7e" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>operator[]</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1a8efabfd26849a7f1379dfda1eeb44c0c" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>swallow_next_increment</name></member>
+      <member refid="class_assimp_1_1_line_splitter_1ad67462843cc4774d43c1eb2cb45991df" prot="public" virt="non-virtual"><scope>Assimp::LineSplitter</scope><name>~LineSplitter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

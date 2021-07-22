@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="version_8h" kind="file" language="C++">
+    <compoundname>version.h</compoundname>
+    <includes refid="defs_8h" local="no">assimp/defs.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="1">
+        <label>version.h</label>
+        <link refid="version_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="version_8h_1a08530d08a9940c47256a93a133e0fa70" prot="public" static="no">
+        <name>AI_VERSION_H_INC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="48" column="9" bodyfile="include/assimp/version.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a83a4c4d9c344bc3bd80a3c31c027c079" prot="public" static="no">
+        <name>ASSIMP_CFLAGS_DEBUG</name>
+        <initializer>0x4</initializer>
+        <briefdescription>
+<para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> was compiled as a debug build. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="102" column="9" bodyfile="include/assimp/version.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a0bf18a2fa19dd4c3280343b579a1ba56" prot="public" static="no">
+        <name>ASSIMP_CFLAGS_DOUBLE_SUPPORT</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+<para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> was compiled with ASSIMP_BUILD_SINGLETHREADED defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="109" column="9" bodyfile="include/assimp/version.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a4246a70502fdc483b02c47beabd99dde" prot="public" static="no">
+        <name>ASSIMP_CFLAGS_NOBOOST</name>
+        <initializer>0x8</initializer>
+        <briefdescription>
+<para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> was compiled with ASSIMP_BUILD_BOOST_WORKAROUND defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="105" column="9" bodyfile="include/assimp/version.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a8a8c659a20a5df0d3800ad5af79a763d" prot="public" static="no">
+        <name>ASSIMP_CFLAGS_SHARED</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+<para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> was compiled as a shared object (Windows: DLL) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="98" column="9" bodyfile="include/assimp/version.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a53c3bace283262b93fbd962ecf0b0e5b" prot="public" static="no">
+        <name>ASSIMP_CFLAGS_SINGLETHREADED</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+<para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> was compiled with ASSIMP_BUILD_SINGLETHREADED defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="107" column="9" bodyfile="include/assimp/version.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="version_8h_1a54bfd06fb81e44854813dd9ce29fa2bd" prot="public" static="no">
+        <name>ASSIMP_CFLAGS_STLPORT</name>
+        <initializer>0x2</initializer>
+        <briefdescription>
+<para><ref refid="namespace_assimp" kindref="compound">Assimp</ref> was compiled against STLport. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="100" column="9" bodyfile="include/assimp/version.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="version_8h_1a20dc4c61736a3283be7faa5961446a42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> const char *</type>
+        <definition>ASSIMP_API const char* aiGetBranchName</definition>
+        <argsstring>()</argsstring>
+        <name>aiGetBranchName</name>
+        <briefdescription>
+<para>Returns the branch-name of the <ref refid="namespace_assimp" kindref="compound">Assimp</ref> runtime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current branch name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="95" column="23" declfile="include/assimp/version.h" declline="95" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="version_8h_1ac914a32bb053cb6572032668562873f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> unsigned int</type>
+        <definition>ASSIMP_API unsigned int aiGetCompileFlags</definition>
+        <argsstring>(void)</argsstring>
+        <name>aiGetCompileFlags</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns assimp&apos;s compile flags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Any bitwise combination of the ASSIMP_CFLAGS_xxx constants. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="115" column="25" declfile="include/assimp/version.h" declline="115" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="version_8h_1aae8020339846d0d9e7e5d2756148c87c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> const char *</type>
+        <definition>ASSIMP_API const char* aiGetLegalString</definition>
+        <argsstring>(void)</argsstring>
+        <name>aiGetLegalString</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns a string with legal copyright and licensing information about <ref refid="namespace_assimp" kindref="compound">Assimp</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The string may include multiple lines. <simplesect kind="return"><para>Pointer to static string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="61" column="24" declfile="include/assimp/version.h" declline="61" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="version_8h_1a4e3809928b7b55d303af0f01f379667a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> unsigned int</type>
+        <definition>ASSIMP_API unsigned int aiGetVersionMajor</definition>
+        <argsstring>(void)</argsstring>
+        <name>aiGetVersionMajor</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the current major version number of <ref refid="namespace_assimp" kindref="compound">Assimp</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Major version of the <ref refid="namespace_assimp" kindref="compound">Assimp</ref> runtime the application was linked/built against </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="82" column="25" declfile="include/assimp/version.h" declline="82" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="version_8h_1a875b57215e9763ffaf075cf9950ae4c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> unsigned int</type>
+        <definition>ASSIMP_API unsigned int aiGetVersionMinor</definition>
+        <argsstring>(void)</argsstring>
+        <name>aiGetVersionMinor</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the current minor version number of <ref refid="namespace_assimp" kindref="compound">Assimp</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Minor version of the <ref refid="namespace_assimp" kindref="compound">Assimp</ref> runtime the application was linked/built against </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="75" column="25" declfile="include/assimp/version.h" declline="75" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="version_8h_1abd867b51ffc5e75c3eb1152070c90dc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> unsigned int</type>
+        <definition>ASSIMP_API unsigned int aiGetVersionPatch</definition>
+        <argsstring>(void)</argsstring>
+        <name>aiGetVersionPatch</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the current patch version number of <ref refid="namespace_assimp" kindref="compound">Assimp</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Patch version of the <ref refid="namespace_assimp" kindref="compound">Assimp</ref> runtime the application was linked/built against </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="68" column="25" declfile="include/assimp/version.h" declline="68" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="version_8h_1a8865df81b23f4978fc06e4401c5ea4f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref> unsigned int</type>
+        <definition>ASSIMP_API unsigned int aiGetVersionRevision</definition>
+        <argsstring>(void)</argsstring>
+        <name>aiGetVersionRevision</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the repository revision of the <ref refid="namespace_assimp" kindref="compound">Assimp</ref> runtime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>SVN Repository revision number of the <ref refid="namespace_assimp" kindref="compound">Assimp</ref> runtime the application was linked/built against. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/version.h" line="89" column="25" declfile="include/assimp/version.h" declline="89" declcolumn="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions to query the version of the <ref refid="namespace_assimp" kindref="compound">Assimp</ref> runtime, check compile flags, ... </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_VERSION_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_VERSION_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="defs_8h" kindref="compound">assimp/defs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><ref refid="version_8h_1aae8020339846d0d9e7e5d2756148c87c" kindref="member">aiGetLegalString</ref><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="version_8h_1abd867b51ffc5e75c3eb1152070c90dc7" kindref="member">aiGetVersionPatch</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="version_8h_1a875b57215e9763ffaf075cf9950ae4c5" kindref="member">aiGetVersionMinor</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="version_8h_1a4e3809928b7b55d303af0f01f379667a" kindref="member">aiGetVersionMajor</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="version_8h_1a8865df81b23f4978fc06e4401c5ea4f5" kindref="member">aiGetVersionRevision</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="version_8h_1a20dc4c61736a3283be7faa5961446a42" kindref="member">aiGetBranchName</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor">#define<sp/>ASSIMP_CFLAGS_SHARED<sp/><sp/>0x1</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor">#define<sp/>ASSIMP_CFLAGS_STLPORT<sp/>0x2</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor">#define<sp/>ASSIMP_CFLAGS_DEBUG<sp/><sp/><sp/>0x4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor">#define<sp/>ASSIMP_CFLAGS_NOBOOST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor">#define<sp/>ASSIMP_CFLAGS_SINGLETHREADED<sp/><sp/><sp/><sp/>0x10</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor">#define<sp/>ASSIMP_CFLAGS_DOUBLE_SUPPORT<sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a7d617d307e656cb6ff315ba71ff958d4" kindref="member">ASSIMP_API</ref><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="version_8h_1ac914a32bb053cb6572032668562873f2" kindref="member">aiGetCompileFlags</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>extern<sp/>&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!!<sp/>#ifndef<sp/>AI_VERSION_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/version.h"/>
+  </compounddef>
+</doxygen>

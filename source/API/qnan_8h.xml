@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="qnan_8h" kind="file" language="C++">
+    <compoundname>qnan.h</compoundname>
+    <includes refid="defs_8h" local="no">assimp/defs.h</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>limits</label>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="1">
+        <label>qnan.h</label>
+        <link refid="qnan_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="union___i_e_e_e_double" prot="public">_IEEEDouble</innerclass>
+    <innerclass refid="union___i_e_e_e_single" prot="public">_IEEESingle</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="qnan_8h_1af6b38ad2b40bc1f7f630a965dd70003b" prot="public" static="no">
+        <name>AI_QNAN_H_INCLUDED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="55" column="9" bodyfile="include/assimp/qnan.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="qnan_8h_1a1563bfa01954df98282cbaaf632dc95a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+        <definition>AI_FORCE_INLINE ai_real get_qnan</definition>
+        <argsstring>()</argsstring>
+        <name>get_qnan</name>
+        <briefdescription>
+<para>Get a fresh qnan. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="158" column="25" bodyfile="include/assimp/qnan.h" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="qnan_8h_1a4b93a2d042b065c5b0c068626dc54ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class TReal</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool is_not_qnan</definition>
+        <argsstring>(TReal in)</argsstring>
+        <name>is_not_qnan</name>
+        <param>
+          <type>TReal</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Check whether a float is NOT qNaN. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="152" column="22" bodyfile="include/assimp/qnan.h" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="qnan_8h_1a682b18f4d3112793d4f7dd5c1a117c67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool is_qnan</definition>
+        <argsstring>(double in)</argsstring>
+        <name>is_qnan</name>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Check whether a given double is qNaN. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="112" column="22" bodyfile="include/assimp/qnan.h" bodystart="112" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="qnan_8h_1aba07171feddf4c9513c2424a630b03a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool is_qnan</definition>
+        <argsstring>(float in)</argsstring>
+        <name>is_qnan</name>
+        <param>
+          <type>float</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Check whether a given float is qNaN. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="95" column="22" bodyfile="include/assimp/qnan.h" bodystart="95" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="qnan_8h_1abefbb78762da57066abee01f541de2be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool is_special_float</definition>
+        <argsstring>(double in)</argsstring>
+        <name>is_special_float</name>
+        <param>
+          <type>double</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>check whether a double is either NaN or (+/-) INF. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Denorms return false, they&apos;re treated like normal values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="142" column="22" bodyfile="include/assimp/qnan.h" bodystart="142" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="qnan_8h_1ae81ad0f99eba1f73bad78e48a16df827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> bool</type>
+        <definition>AI_FORCE_INLINE bool is_special_float</definition>
+        <argsstring>(float in)</argsstring>
+        <name>is_special_float</name>
+        <param>
+          <type>float</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>check whether a float is either NaN or (+/-) INF. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Denorms return false, they&apos;re treated like normal values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/qnan.h" line="131" column="22" bodyfile="include/assimp/qnan.h" bodystart="131" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Some utilities for our dealings with qnans. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Some loaders use qnans to mark invalid values tempoarily, also <ref refid="namespace_assimp" kindref="compound">Assimp</ref> explicitly enforces undefined normals to be set to qnan. qnan utilities are available in standard libraries (C99 for example) but last time I checked compiler coverage was so bad that I decided to reinvent the wheel. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_QNAN_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_QNAN_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>pragma<sp/>GCC<sp/>system_header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="defs_8h" kindref="compound">assimp/defs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="69" refid="union___i_e_e_e_single" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="union___i_e_e_e_single" kindref="compound">_IEEESingle</ref><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="union___i_e_e_e_single_1a2bcb6ba7009268e6bba2224df222c3e9" kindref="member">Float</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="union___i_e_e_e_single_1adcd54aa25c466765e6373a7d30c75ba8" kindref="member">Frac</ref><sp/>:<sp/>23;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="union___i_e_e_e_single_1a25a112d44e8141e8d48d19ee9b04c1a6" kindref="member">Exp</ref><sp/><sp/>:<sp/>8;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="union___i_e_e_e_single_1a7b114f4e020630ceffceaba8a2afadab" kindref="member">Sign</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="union___i_e_e_e_single_1ad941018694253218d0619bceaab70393" kindref="member">IEEE</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="82" refid="union___i_e_e_e_double" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="union___i_e_e_e_double" kindref="compound">_IEEEDouble</ref><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="union___i_e_e_e_double_1a27117ca968c03c76473d67288a285488" kindref="member">Double</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="union___i_e_e_e_double_1a7ebfdf18ddf00a59e4d1c2258741dfa7" kindref="member">Frac</ref><sp/>:<sp/>52;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="union___i_e_e_e_double_1a64ddbe7950921cfb931e07b8e46fc13b" kindref="member">Exp</ref><sp/><sp/>:<sp/>11;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="union___i_e_e_e_double_1ae9e25b85a3d7bf29f13cdf5fd3bc478f" kindref="member">Sign</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="union___i_e_e_e_double_1a1a09927bca7f7d213294ba5ccdcb1f7b" kindref="member">IEEE</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="qnan_8h_1aba07171feddf4c9513c2424a630b03a5" kindref="member">is_qnan</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>in)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>straightforward<sp/>solution<sp/>does<sp/>not<sp/>work:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>return<sp/>(in<sp/>!=<sp/>in);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>compiler<sp/>generates<sp/>code<sp/>like<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>load<sp/>&lt;in&gt;<sp/>to<sp/>&lt;register-with-different-width&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>compare<sp/>&lt;register-with-different-width&gt;<sp/>against<sp/>&lt;in&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FIXME:<sp/>Use<sp/>&lt;float&gt;<sp/>stuff<sp/>instead?<sp/>I<sp/>think<sp/>fpclassify<sp/>needs<sp/>C99</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="union___i_e_e_e_single" kindref="compound">_IEEESingle</ref><sp/>temp;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(&amp;temp,<sp/>&amp;in,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(temp.<ref refid="union___i_e_e_e_single_1ad941018694253218d0619bceaab70393" kindref="member">IEEE</ref>.<ref refid="union___i_e_e_e_single_1a25a112d44e8141e8d48d19ee9b04c1a6" kindref="member">Exp</ref><sp/>==<sp/>(1u<sp/>&lt;&lt;<sp/>8)-1<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp.<ref refid="union___i_e_e_e_single_1ad941018694253218d0619bceaab70393" kindref="member">IEEE</ref>.<ref refid="union___i_e_e_e_single_1adcd54aa25c466765e6373a7d30c75ba8" kindref="member">Frac</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="qnan_8h_1aba07171feddf4c9513c2424a630b03a5" kindref="member">is_qnan</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>in)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>straightforward<sp/>solution<sp/>does<sp/>not<sp/>work:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>return<sp/>(in<sp/>!=<sp/>in);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>compiler<sp/>generates<sp/>code<sp/>like<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>load<sp/>&lt;in&gt;<sp/>to<sp/>&lt;register-with-different-width&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>compare<sp/>&lt;register-with-different-width&gt;<sp/>against<sp/>&lt;in&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FIXME:<sp/>Use<sp/>&lt;float&gt;<sp/>stuff<sp/>instead?<sp/>I<sp/>think<sp/>fpclassify<sp/>needs<sp/>C99</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="union___i_e_e_e_double" kindref="compound">_IEEEDouble</ref><sp/>temp;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(&amp;temp,<sp/>&amp;in,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(in));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(temp.<ref refid="union___i_e_e_e_double_1a1a09927bca7f7d213294ba5ccdcb1f7b" kindref="member">IEEE</ref>.<ref refid="union___i_e_e_e_double_1a64ddbe7950921cfb931e07b8e46fc13b" kindref="member">Exp</ref><sp/>==<sp/>(1u<sp/>&lt;&lt;<sp/>11)-1<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp.<ref refid="union___i_e_e_e_double_1a1a09927bca7f7d213294ba5ccdcb1f7b" kindref="member">IEEE</ref>.<ref refid="union___i_e_e_e_double_1a7ebfdf18ddf00a59e4d1c2258741dfa7" kindref="member">Frac</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="qnan_8h_1ae81ad0f99eba1f73bad78e48a16df827" kindref="member">is_special_float</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>in)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="union___i_e_e_e_single" kindref="compound">_IEEESingle</ref><sp/>temp;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(&amp;temp,<sp/>&amp;in,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(temp.<ref refid="union___i_e_e_e_single_1ad941018694253218d0619bceaab70393" kindref="member">IEEE</ref>.<ref refid="union___i_e_e_e_single_1a25a112d44e8141e8d48d19ee9b04c1a6" kindref="member">Exp</ref><sp/>==<sp/>(1u<sp/>&lt;&lt;<sp/>8)-1);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="qnan_8h_1ae81ad0f99eba1f73bad78e48a16df827" kindref="member">is_special_float</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>in)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><ref refid="union___i_e_e_e_single" kindref="compound">_IEEESingle</ref><sp/>temp;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(&amp;temp,<sp/>&amp;in,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(temp.<ref refid="union___i_e_e_e_single_1ad941018694253218d0619bceaab70393" kindref="member">IEEE</ref>.<ref refid="union___i_e_e_e_single_1a25a112d44e8141e8d48d19ee9b04c1a6" kindref="member">Exp</ref><sp/>==<sp/>(1u<sp/>&lt;&lt;<sp/>11)-1);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>TReal&gt;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="qnan_8h_1a4b93a2d042b065c5b0c068626dc54ed2" kindref="member">is_not_qnan</ref>(TReal<sp/>in)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="qnan_8h_1aba07171feddf4c9513c2424a630b03a5" kindref="member">is_qnan</ref>(in);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"></highlight><highlight class="normal"><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref><sp/><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref><sp/><ref refid="qnan_8h_1a1563bfa01954df98282cbaaf632dc95a" kindref="member">get_qnan</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::numeric_limits&lt;ai_real&gt;::quiet_NaN();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!!<sp/>AI_QNAN_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/qnan.h"/>
+  </compounddef>
+</doxygen>

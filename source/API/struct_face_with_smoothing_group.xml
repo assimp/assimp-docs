@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_face_with_smoothing_group" kind="struct" language="C++" prot="public">
+    <compoundname>FaceWithSmoothingGroup</compoundname>
+    <includes local="no">SmoothingGroups.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_face_with_smoothing_group_1a686bc8272adeb1b5c376483ebfab3ec1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FaceWithSmoothingGroup::iSmoothGroup</definition>
+        <argsstring></argsstring>
+        <name>iSmoothGroup</name>
+        <briefdescription>
+<para>specifies to which smoothing group the face belongs to </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmoothingGroups.h" line="80" column="14" bodyfile="include/assimp/SmoothingGroups.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_face_with_smoothing_group_1a3d786b58423df98555929f67c3b80606" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FaceWithSmoothingGroup::mIndices[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>mIndices</name>
+        <briefdescription>
+<para>Indices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>.3ds is using uint16. However, after an unique vertex set has been generated, individual index values might exceed 2^16 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmoothingGroups.h" line="77" column="14" bodyfile="include/assimp/SmoothingGroups.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_face_with_smoothing_group_1a738863875f8b39cbe2876db1497b4266" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FaceWithSmoothingGroup::FaceWithSmoothingGroup</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>FaceWithSmoothingGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmoothingGroups.h" line="62" column="5" bodyfile="include/assimp/SmoothingGroups.h" bodystart="62" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper structure representing a face with smoothing groups assigned. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/SmoothingGroups.h" line="61" column="1" bodyfile="include/assimp/SmoothingGroups.h" bodystart="61" bodyend="81"/>
+    <listofallmembers>
+      <member refid="struct_face_with_smoothing_group_1a738863875f8b39cbe2876db1497b4266" prot="public" virt="non-virtual"><scope>FaceWithSmoothingGroup</scope><name>FaceWithSmoothingGroup</name></member>
+      <member refid="struct_face_with_smoothing_group_1a686bc8272adeb1b5c376483ebfab3ec1" prot="public" virt="non-virtual"><scope>FaceWithSmoothingGroup</scope><name>iSmoothGroup</name></member>
+      <member refid="struct_face_with_smoothing_group_1a3d786b58423df98555929f67c3b80606" prot="public" virt="non-virtual"><scope>FaceWithSmoothingGroup</scope><name>mIndices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

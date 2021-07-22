@@ -1,13 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classai_color4t" kind="class" language="C++" prot="public">
     <compoundname>aiColor4t</compoundname>
     <includes local="no">color4.h</includes>
     <templateparamlist>
       <param>
-        <type>typename</type>
-        <declname>TReal</declname>
-        <defname>TReal</defname>
+        <type>typename TReal</type>
       </param>
     </templateparamlist>
       <sectiondef kind="public-attrib">
@@ -22,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="90" column="1" bodyfile="include/assimp/color4.h" bodystart="90" bodyend="-1"/>
+        <location file="include/assimp/color4.h" line="90" column="17" bodyfile="include/assimp/color4.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classai_color4t_1a4e0d4475cd107cc62b41d31b01cf8250" prot="public" static="no" mutable="no">
         <type>TReal</type>
@@ -35,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="90" column="1" bodyfile="include/assimp/color4.h" bodystart="90" bodyend="-1"/>
+        <location file="include/assimp/color4.h" line="90" column="15" bodyfile="include/assimp/color4.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classai_color4t_1ab0308badb3f7322781db38a51e52c921" prot="public" static="no" mutable="no">
         <type>TReal</type>
@@ -48,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="90" column="1" bodyfile="include/assimp/color4.h" bodystart="90" bodyend="-1"/>
+        <location file="include/assimp/color4.h" line="90" column="13" bodyfile="include/assimp/color4.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classai_color4t_1a8032f2a2c3613c0761161ae971fb2c41" prot="public" static="no" mutable="no">
         <type>TReal</type>
@@ -61,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="90" column="1" bodyfile="include/assimp/color4.h" bodystart="90" bodyend="-1"/>
+        <location file="include/assimp/color4.h" line="90" column="11" bodyfile="include/assimp/color4.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -76,7 +74,41 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="65" column="1" bodyfile="include/assimp/color4.h" bodystart="65" bodyend="65"/>
+        <location file="include/assimp/color4.h" line="65" column="5" bodyfile="include/assimp/color4.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_color4t_1aaf142f7dba3f25dbd1e851329bb126bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>aiColor4t&lt; TReal &gt;::aiColor4t</definition>
+        <argsstring>(const aiColor4t &amp;o)=default</argsstring>
+        <name>aiColor4t</name>
+        <param>
+          <type>const <ref refid="classai_color4t" kindref="compound">aiColor4t</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/color4.h" line="69" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_color4t_1aeca9a1ccc0fc27ffdec465436216f1cd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>aiColor4t&lt; TReal &gt;::aiColor4t</definition>
+        <argsstring>(TReal _r)</argsstring>
+        <name>aiColor4t</name>
+        <param>
+          <type>TReal</type>
+          <declname>_r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/color4.h" line="68" column="14" bodyfile="include/assimp/color4.h" bodystart="68" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classai_color4t_1a05b7243f07dd3150992152167fed2ded" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -105,41 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="66" column="1" bodyfile="include/assimp/color4.h" bodystart="66" bodyend="67"/>
-      </memberdef>
-      <memberdef kind="function" id="classai_color4t_1aeca9a1ccc0fc27ffdec465436216f1cd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>aiColor4t&lt; TReal &gt;::aiColor4t</definition>
-        <argsstring>(TReal _r)</argsstring>
-        <name>aiColor4t</name>
-        <param>
-          <type>TReal</type>
-          <declname>_r</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/assimp/color4.h" line="68" column="1" bodyfile="include/assimp/color4.h" bodystart="68" bodyend="68"/>
-      </memberdef>
-      <memberdef kind="function" id="classai_color4t_1aaf142f7dba3f25dbd1e851329bb126bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>aiColor4t&lt; TReal &gt;::aiColor4t</definition>
-        <argsstring>(const aiColor4t &amp;o)=default</argsstring>
-        <name>aiColor4t</name>
-        <param>
-          <type>const <ref refid="classai_color4t" kindref="compound">aiColor4t</ref> &amp;</type>
-          <declname>o</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/assimp/color4.h" line="69" column="1"/>
+        <location file="include/assimp/color4.h" line="66" column="5" bodyfile="include/assimp/color4.h" bodystart="66" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="classai_color4t_1a13d103612df5e001fa8ce776a07f5e79" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -147,12 +145,13 @@
         <argsstring>() const</argsstring>
         <name>IsBlack</name>
         <briefdescription>
-<para>check whether a color is (close to) black </para>        </briefdescription>
+<para>check whether a color is (close to) black </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="87" column="1" bodyfile="include/assimp/color4.inl" bodystart="244" bodyend="248"/>
+        <location file="include/assimp/color4.h" line="87" column="17" bodyfile="include/assimp/color4.inl" bodystart="244" bodyend="248"/>
       </memberdef>
       <memberdef kind="function" id="classai_color4t_1a20ad4b42bcae13bd261122ec1be0bfe8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -169,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="79" column="1" bodyfile="include/assimp/color4.inl" bodystart="147" bodyend="149"/>
+        <location file="include/assimp/color4.h" line="79" column="10" bodyfile="include/assimp/color4.inl" bodystart="147" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="classai_color4t_1a7bdfa2166a28eca334ef26cfb6fbab37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classai_color4t" kindref="compound">aiColor4t</ref> &amp;</type>
@@ -186,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="74" column="1" bodyfile="include/assimp/color4.inl" bodystart="83" bodyend="90"/>
+        <location file="include/assimp/color4.h" line="74" column="21" bodyfile="include/assimp/color4.inl" bodystart="83" bodyend="90"/>
       </memberdef>
       <memberdef kind="function" id="classai_color4t_1a092e3d6740453cd4a2b22479919807f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classai_color4t" kindref="compound">aiColor4t</ref> &amp;</type>
@@ -203,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="72" column="1" bodyfile="include/assimp/color4.inl" bodystart="61" bodyend="68"/>
+        <location file="include/assimp/color4.h" line="72" column="21" bodyfile="include/assimp/color4.inl" bodystart="61" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classai_color4t_1afbc773cfac1d84f4779c4e60794ccd46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classai_color4t" kindref="compound">aiColor4t</ref> &amp;</type>
@@ -220,7 +219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="73" column="1" bodyfile="include/assimp/color4.inl" bodystart="72" bodyend="79"/>
+        <location file="include/assimp/color4.h" line="73" column="21" bodyfile="include/assimp/color4.inl" bodystart="72" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classai_color4t_1a29068290fc4da64ea6a2c960516b8b26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classai_color4t" kindref="compound">aiColor4t</ref> &amp;</type>
@@ -237,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="75" column="1" bodyfile="include/assimp/color4.inl" bodystart="94" bodyend="101"/>
+        <location file="include/assimp/color4.h" line="75" column="21" bodyfile="include/assimp/color4.inl" bodystart="94" bodyend="101"/>
       </memberdef>
       <memberdef kind="function" id="classai_color4t_1a4f1ba7293e201ce8a608b544462fa202" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -254,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="80" column="1" bodyfile="include/assimp/color4.inl" bodystart="153" bodyend="167"/>
+        <location file="include/assimp/color4.h" line="80" column="5" bodyfile="include/assimp/color4.inl" bodystart="153" bodyend="167"/>
       </memberdef>
       <memberdef kind="function" id="classai_color4t_1a623187ac74cb9bed5ce0e1ca4e234d24" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -271,24 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="78" column="1" bodyfile="include/assimp/color4.inl" bodystart="141" bodyend="143"/>
-      </memberdef>
-      <memberdef kind="function" id="classai_color4t_1a2db0c57f84f9562b780caa5eb47245d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>TReal</type>
-        <definition>AI_FORCE_INLINE TReal aiColor4t&lt; TReal &gt;::operator[]</definition>
-        <argsstring>(unsigned int i) const</argsstring>
-        <name>operator[]</name>
-        <param>
-          <type>unsigned int</type>
-          <declname>i</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/assimp/color4.h" line="83" column="1" bodyfile="include/assimp/color4.inl" bodystart="105" bodyend="119"/>
+        <location file="include/assimp/color4.h" line="78" column="10" bodyfile="include/assimp/color4.inl" bodystart="141" bodyend="143"/>
       </memberdef>
       <memberdef kind="function" id="classai_color4t_1a5ebae0688eb188c11150ef53dbc87330" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>TReal &amp;</type>
@@ -305,13 +287,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/color4.h" line="84" column="1" bodyfile="include/assimp/color4.inl" bodystart="123" bodyend="137"/>
+        <location file="include/assimp/color4.h" line="84" column="18" bodyfile="include/assimp/color4.inl" bodystart="123" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classai_color4t_1a2db0c57f84f9562b780caa5eb47245d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TReal</type>
+        <definition>AI_FORCE_INLINE TReal aiColor4t&lt; TReal &gt;::operator[]</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/color4.h" line="83" column="18" bodyfile="include/assimp/color4.inl" bodystart="105" bodyend="119"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Represents a color in Red-Green-Blue space including an alpha component. </para>    </briefdescription>
+<para>Represents a color in Red-Green-Blue space including an alpha component. </para>
+    </briefdescription>
     <detaileddescription>
-<para>Color values range from 0 to 1. </para>    </detaileddescription>
+<para>Color values range from 0 to 1. </para>
+    </detaileddescription>
     <location file="include/assimp/color4.h" line="63" column="1" bodyfile="include/assimp/color4.h" bodystart="63" bodyend="91"/>
     <listofallmembers>
       <member refid="classai_color4t_1a8e81e26e8bd226985310eff4fea16adc" prot="public" virt="non-virtual"><scope>aiColor4t</scope><name>a</name></member>

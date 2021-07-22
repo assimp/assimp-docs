@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_mesh_with_smoothing_groups" kind="struct" language="C++" prot="public">
+    <compoundname>MeshWithSmoothingGroups</compoundname>
+    <includes local="no">SmoothingGroups.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mesh_with_smoothing_groups_1aa85873c9e454c314e05f0dc6f4bf22e9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; MeshWithSmoothingGroups&lt; T &gt;::mFaces</definition>
+        <argsstring></argsstring>
+        <name>mFaces</name>
+        <briefdescription>
+<para>Face lists. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmoothingGroups.h" line="98" column="17" bodyfile="include/assimp/SmoothingGroups.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mesh_with_smoothing_groups_1a3ea96b42a7cf37d64dfa38307018ecdc" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt;</type>
+        <definition>std::vector&lt;aiVector3D&gt; MeshWithSmoothingGroups&lt; T &gt;::mNormals</definition>
+        <argsstring></argsstring>
+        <name>mNormals</name>
+        <briefdescription>
+<para>List of normal vectors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmoothingGroups.h" line="101" column="17" bodyfile="include/assimp/SmoothingGroups.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mesh_with_smoothing_groups_1a06bfcf700c819e3a14e3bc1df88b729e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt;</type>
+        <definition>std::vector&lt;aiVector3D&gt; MeshWithSmoothingGroups&lt; T &gt;::mPositions</definition>
+        <argsstring></argsstring>
+        <name>mPositions</name>
+        <briefdescription>
+<para>Vertex positions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmoothingGroups.h" line="95" column="17" bodyfile="include/assimp/SmoothingGroups.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper structure representing a mesh whose faces have smoothing groups assigned. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This allows us to reuse the code for normal computations from smoothings groups for several loaders (3DS, ASE). All of them use face structures which inherit from <ref refid="struct_face_with_smoothing_group" kindref="compound">FaceWithSmoothingGroup</ref>, but as they add extra members and need to be copied by value we need to use a template here. </para>
+    </detaileddescription>
+    <location file="include/assimp/SmoothingGroups.h" line="92" column="1" bodyfile="include/assimp/SmoothingGroups.h" bodystart="93" bodyend="102"/>
+    <listofallmembers>
+      <member refid="struct_mesh_with_smoothing_groups_1aa85873c9e454c314e05f0dc6f4bf22e9" prot="public" virt="non-virtual"><scope>MeshWithSmoothingGroups</scope><name>mFaces</name></member>
+      <member refid="struct_mesh_with_smoothing_groups_1a3ea96b42a7cf37d64dfa38307018ecdc" prot="public" virt="non-virtual"><scope>MeshWithSmoothingGroups</scope><name>mNormals</name></member>
+      <member refid="struct_mesh_with_smoothing_groups_1a06bfcf700c819e3a14e3bc1df88b729e" prot="public" virt="non-virtual"><scope>MeshWithSmoothingGroups</scope><name>mPositions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

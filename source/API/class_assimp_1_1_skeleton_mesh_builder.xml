@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_skeleton_mesh_builder" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::SkeletonMeshBuilder</compoundname>
+    <includes local="no">SkeletonMeshBuilder.h</includes>
+    <innerclass refid="struct_assimp_1_1_skeleton_mesh_builder_1_1_face" prot="protected">Assimp::SkeletonMeshBuilder::Face</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_skeleton_mesh_builder_1a415794b8adfd9f57ab00a2b163b82a59" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structai_bone" kindref="compound">aiBone</ref> * &gt;</type>
+        <definition>std::vector&lt;aiBone *&gt; Assimp::SkeletonMeshBuilder::mBones</definition>
+        <argsstring></argsstring>
+        <name>mBones</name>
+        <briefdescription>
+<para>bones </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SkeletonMeshBuilder.h" line="122" column="17" bodyfile="include/assimp/SkeletonMeshBuilder.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_skeleton_mesh_builder_1a7deb8fedf47de5150a54f8825fad62e8" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_assimp_1_1_skeleton_mesh_builder_1_1_face" kindref="compound">Face</ref> &gt;</type>
+        <definition>std::vector&lt;Face&gt; Assimp::SkeletonMeshBuilder::mFaces</definition>
+        <argsstring></argsstring>
+        <name>mFaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SkeletonMeshBuilder.h" line="119" column="17" bodyfile="include/assimp/SkeletonMeshBuilder.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_skeleton_mesh_builder_1a7c11e753afce4016fdb94d70b9b32ec9" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::SkeletonMeshBuilder::mKnobsOnly</definition>
+        <argsstring></argsstring>
+        <name>mKnobsOnly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SkeletonMeshBuilder.h" line="124" column="10" bodyfile="include/assimp/SkeletonMeshBuilder.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_skeleton_mesh_builder_1a3536442452bd5f00b8de9e34d6556ab0" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref> &gt;</type>
+        <definition>std::vector&lt;aiVector3D&gt; Assimp::SkeletonMeshBuilder::mVertices</definition>
+        <argsstring></argsstring>
+        <name>mVertices</name>
+        <briefdescription>
+<para>space to assemble the mesh data: points </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SkeletonMeshBuilder.h" line="107" column="17" bodyfile="include/assimp/SkeletonMeshBuilder.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_skeleton_mesh_builder_1a4b10beaafb523e6b5e838f8a979a9759" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SkeletonMeshBuilder::SkeletonMeshBuilder</definition>
+        <argsstring>(aiScene *pScene, aiNode *root=nullptr, bool bKnobsOnly=false)</argsstring>
+        <name>SkeletonMeshBuilder</name>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>pScene</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>root</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bKnobsOnly</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>The constructor processes the given scene and adds a mesh there. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Does nothing if the scene already has mesh data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pScene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scene for which a skeleton mesh should be constructed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node to start with. nullptr is the scene root </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bKnobsOnly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set this to true if you don&apos;t want the connectors between the knobs representing the nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SkeletonMeshBuilder.h" line="84" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_assimp_1_1_skeleton_mesh_builder_1acd4f082475e9fe7c0d6f76025d961908" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SkeletonMeshBuilder::CreateGeometry</definition>
+        <argsstring>(const aiNode *pNode)</argsstring>
+        <name>CreateGeometry</name>
+        <param>
+          <type>const <ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>pNode</declname>
+        </param>
+        <briefdescription>
+<para>Recursively builds a simple mesh representation for the given node and also creates a joint for the node that affects this part of the mesh. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node to build geometry for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SkeletonMeshBuilder.h" line="94" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_skeleton_mesh_builder_1ae24b1e3d17cdd65c906ac535bc916a6f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_material" kindref="compound">aiMaterial</ref> *</type>
+        <definition>aiMaterial* Assimp::SkeletonMeshBuilder::CreateMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>CreateMaterial</name>
+        <briefdescription>
+<para>Creates a dummy material and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SkeletonMeshBuilder.h" line="103" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_skeleton_mesh_builder_1a666340e0ca74d8294f9019cc5635aa50" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structai_mesh" kindref="compound">aiMesh</ref> *</type>
+        <definition>aiMesh* Assimp::SkeletonMeshBuilder::CreateMesh</definition>
+        <argsstring>()</argsstring>
+        <name>CreateMesh</name>
+        <briefdescription>
+<para>Creates the mesh from the internally accumulated stuff and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SkeletonMeshBuilder.h" line="99" column="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This little helper class constructs a dummy mesh for a given scene the resembles the node hierarchy. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is useful for file formats that don&apos;t carry any mesh data but only animation data. </para>
+    </detaileddescription>
+    <location file="include/assimp/SkeletonMeshBuilder.h" line="73" column="1" bodyfile="include/assimp/SkeletonMeshBuilder.h" bodystart="73" bodyend="125"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_skeleton_mesh_builder_1acd4f082475e9fe7c0d6f76025d961908" prot="protected" virt="non-virtual"><scope>Assimp::SkeletonMeshBuilder</scope><name>CreateGeometry</name></member>
+      <member refid="class_assimp_1_1_skeleton_mesh_builder_1ae24b1e3d17cdd65c906ac535bc916a6f" prot="protected" virt="non-virtual"><scope>Assimp::SkeletonMeshBuilder</scope><name>CreateMaterial</name></member>
+      <member refid="class_assimp_1_1_skeleton_mesh_builder_1a666340e0ca74d8294f9019cc5635aa50" prot="protected" virt="non-virtual"><scope>Assimp::SkeletonMeshBuilder</scope><name>CreateMesh</name></member>
+      <member refid="class_assimp_1_1_skeleton_mesh_builder_1a415794b8adfd9f57ab00a2b163b82a59" prot="protected" virt="non-virtual"><scope>Assimp::SkeletonMeshBuilder</scope><name>mBones</name></member>
+      <member refid="class_assimp_1_1_skeleton_mesh_builder_1a7deb8fedf47de5150a54f8825fad62e8" prot="protected" virt="non-virtual"><scope>Assimp::SkeletonMeshBuilder</scope><name>mFaces</name></member>
+      <member refid="class_assimp_1_1_skeleton_mesh_builder_1a7c11e753afce4016fdb94d70b9b32ec9" prot="protected" virt="non-virtual"><scope>Assimp::SkeletonMeshBuilder</scope><name>mKnobsOnly</name></member>
+      <member refid="class_assimp_1_1_skeleton_mesh_builder_1a3536442452bd5f00b8de9e34d6556ab0" prot="protected" virt="non-virtual"><scope>Assimp::SkeletonMeshBuilder</scope><name>mVertices</name></member>
+      <member refid="class_assimp_1_1_skeleton_mesh_builder_1a4b10beaafb523e6b5e838f8a979a9759" prot="public" virt="non-virtual"><scope>Assimp::SkeletonMeshBuilder</scope><name>SkeletonMeshBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

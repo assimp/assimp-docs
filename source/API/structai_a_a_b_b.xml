@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_a_a_b_b" kind="struct" language="C++" prot="public">
     <compoundname>aiAABB</compoundname>
     <includes local="no">aabb.h</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/aabb.h" line="54" column="1" bodyfile="include/assimp/aabb.h" bodystart="54" bodyend="-1"/>
+        <location file="include/assimp/aabb.h" line="54" column="25" bodyfile="include/assimp/aabb.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_a_a_b_b_1af0f45858a8e2454c99db0e68663db48f" prot="public" static="no" mutable="no">
         <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="vector3_8h_1af90f71b9e287bdc258b1dd86656d8dfe" kindref="member">aiVector3D</ref></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/aabb.h" line="53" column="1" bodyfile="include/assimp/aabb.h" bodystart="53" bodyend="-1"/>
+        <location file="include/assimp/aabb.h" line="53" column="25" bodyfile="include/assimp/aabb.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/aabb.h" line="58" column="1" bodyfile="include/assimp/aabb.h" bodystart="58" bodyend="62"/>
+        <location file="include/assimp/aabb.h" line="58" column="5" bodyfile="include/assimp/aabb.h" bodystart="58" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="structai_a_a_b_b_1af1f867c5709e39fe3314fa6f5c201e47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/aabb.h" line="64" column="1" bodyfile="include/assimp/aabb.h" bodystart="64" bodyend="68"/>
+        <location file="include/assimp/aabb.h" line="64" column="5" bodyfile="include/assimp/aabb.h" bodystart="64" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="structai_a_a_b_b_1adc258de19d4f68433b3930070fc217ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/aabb.h" line="70" column="1" bodyfile="include/assimp/aabb.h" bodystart="70" bodyend="72"/>
+        <location file="include/assimp/aabb.h" line="70" column="5" bodyfile="include/assimp/aabb.h" bodystart="70" bodyend="72"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -85,15 +85,15 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="5">
+      <node id="1">
         <label>aiAABB</label>
         <link refid="structai_a_a_b_b"/>
-        <childnode refid="6" relation="usage">
-          <edgelabel>mMin</edgelabel>
+        <childnode refid="2" relation="usage">
           <edgelabel>mMax</edgelabel>
+          <edgelabel>mMin</edgelabel>
         </childnode>
       </node>
-      <node id="6">
+      <node id="2">
         <label>aiVector3t&lt; TReal &gt;</label>
         <link refid="classai_vector3t"/>
       </node>

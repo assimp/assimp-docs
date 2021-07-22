@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_2a3ab8ae23d2cffc0bffa70c4703d52b" kind="dir">
+    <compoundname>assimp</compoundname>
+    <innerdir refid="dir_0ffc07ad43e5d83174e0a5b32fd5959e">Compiler</innerdir>
+    <innerdir refid="dir_2ff4f67a8f1d44142a27828bada93ab6">port</innerdir>
+    <innerfile refid="aabb_8h">aabb.h</innerfile>
+    <innerfile refid="ai__assert_8h">ai_assert.h</innerfile>
+    <innerfile refid="anim_8h">anim.h</innerfile>
+    <innerfile refid="_base_importer_8h">BaseImporter.h</innerfile>
+    <innerfile refid="_bitmap_8h">Bitmap.h</innerfile>
+    <innerfile refid="_blob_i_o_system_8h">BlobIOSystem.h</innerfile>
+    <innerfile refid="_byte_swapper_8h">ByteSwapper.h</innerfile>
+    <innerfile refid="camera_8h">camera.h</innerfile>
+    <innerfile refid="cexport_8h">cexport.h</innerfile>
+    <innerfile refid="cfileio_8h">cfileio.h</innerfile>
+    <innerfile refid="cimport_8h">cimport.h</innerfile>
+    <innerfile refid="_collada_meta_data_8h">ColladaMetaData.h</innerfile>
+    <innerfile refid="color4_8h">color4.h</innerfile>
+    <innerfile refid="color4_8inl">color4.inl</innerfile>
+    <innerfile refid="common_meta_data_8h">commonMetaData.h</innerfile>
+    <innerfile refid="config_8h">config.h</innerfile>
+    <innerfile refid="_create_anim_mesh_8h">CreateAnimMesh.h</innerfile>
+    <innerfile refid="_default_i_o_stream_8h">DefaultIOStream.h</innerfile>
+    <innerfile refid="_default_i_o_system_8h">DefaultIOSystem.h</innerfile>
+    <innerfile refid="_defines_8h">Defines.h</innerfile>
+    <innerfile refid="defs_8h">defs.h</innerfile>
+    <innerfile refid="_exceptional_8h">Exceptional.h</innerfile>
+    <innerfile refid="fast__atof_8h">fast_atof.h</innerfile>
+    <innerfile refid="_generic_property_8h">GenericProperty.h</innerfile>
+    <innerfile refid="_hash_8h">Hash.h</innerfile>
+    <innerfile refid="importerdesc_8h">importerdesc.h</innerfile>
+    <innerfile refid="_i_o_stream_buffer_8h">IOStreamBuffer.h</innerfile>
+    <innerfile refid="light_8h">light.h</innerfile>
+    <innerfile refid="_line_splitter_8h">LineSplitter.h</innerfile>
+    <innerfile refid="_log_aux_8h">LogAux.h</innerfile>
+    <innerfile refid="material_8h">material.h</innerfile>
+    <innerfile refid="material_8inl">material.inl</innerfile>
+    <innerfile refid="_math_functions_8h">MathFunctions.h</innerfile>
+    <innerfile refid="matrix3x3_8h">matrix3x3.h</innerfile>
+    <innerfile refid="matrix3x3_8inl">matrix3x3.inl</innerfile>
+    <innerfile refid="matrix4x4_8h">matrix4x4.h</innerfile>
+    <innerfile refid="matrix4x4_8inl">matrix4x4.inl</innerfile>
+    <innerfile refid="_memory_i_o_wrapper_8h">MemoryIOWrapper.h</innerfile>
+    <innerfile refid="mesh_8h">mesh.h</innerfile>
+    <innerfile refid="metadata_8h">metadata.h</innerfile>
+    <innerfile refid="_parsing_utils_8h">ParsingUtils.h</innerfile>
+    <innerfile refid="pbrmaterial_8h">pbrmaterial.h</innerfile>
+    <innerfile refid="postprocess_8h">postprocess.h</innerfile>
+    <innerfile refid="_profiler_8h">Profiler.h</innerfile>
+    <innerfile refid="qnan_8h">qnan.h</innerfile>
+    <innerfile refid="quaternion_8h">quaternion.h</innerfile>
+    <innerfile refid="quaternion_8inl">quaternion.inl</innerfile>
+    <innerfile refid="_remove_comments_8h">RemoveComments.h</innerfile>
+    <innerfile refid="scene_8h">scene.h</innerfile>
+    <innerfile refid="_scene_combiner_8h">SceneCombiner.h</innerfile>
+    <innerfile refid="_s_g_spatial_sort_8h">SGSpatialSort.h</innerfile>
+    <innerfile refid="_skeleton_mesh_builder_8h">SkeletonMeshBuilder.h</innerfile>
+    <innerfile refid="_small_vector_8h">SmallVector.h</innerfile>
+    <innerfile refid="_smoothing_groups_8h">SmoothingGroups.h</innerfile>
+    <innerfile refid="_smoothing_groups_8inl">SmoothingGroups.inl</innerfile>
+    <innerfile refid="_spatial_sort_8h">SpatialSort.h</innerfile>
+    <innerfile refid="_standard_shapes_8h">StandardShapes.h</innerfile>
+    <innerfile refid="_stream_reader_8h">StreamReader.h</innerfile>
+    <innerfile refid="_stream_writer_8h">StreamWriter.h</innerfile>
+    <innerfile refid="_string_comparison_8h">StringComparison.h</innerfile>
+    <innerfile refid="_string_utils_8h">StringUtils.h</innerfile>
+    <innerfile refid="_subdivision_8h">Subdivision.h</innerfile>
+    <innerfile refid="texture_8h">texture.h</innerfile>
+    <innerfile refid="_tiny_formatter_8h">TinyFormatter.h</innerfile>
+    <innerfile refid="types_8h">types.h</innerfile>
+    <innerfile refid="vector2_8h">vector2.h</innerfile>
+    <innerfile refid="vector2_8inl">vector2.inl</innerfile>
+    <innerfile refid="vector3_8h">vector3.h</innerfile>
+    <innerfile refid="vector3_8inl">vector3.inl</innerfile>
+    <innerfile refid="version_8h">version.h</innerfile>
+    <innerfile refid="_vertex_8h">Vertex.h</innerfile>
+    <innerfile refid="_xml_parser_8h">XmlParser.h</innerfile>
+    <innerfile refid="_x_m_l_tools_8h">XMLTools.h</innerfile>
+    <innerfile refid="_zip_archive_i_o_system_8h">ZipArchiveIOSystem.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/"/>
+  </compounddef>
+</doxygen>

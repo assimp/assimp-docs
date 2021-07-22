@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_small_vector" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::SmallVector</compoundname>
+    <includes local="no">SmallVector.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>Capacity</declname>
+        <defname>Capacity</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_small_vector_1acad4a4a43ad4076a317fec639292c9e8" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::SmallVector&lt; T, Capacity &gt;::mCapacity</definition>
+        <argsstring></argsstring>
+        <name>mCapacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="158" column="12" bodyfile="include/assimp/SmallVector.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_small_vector_1a43d5ca0db0d6a4e548766a2cf4f647af" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Assimp::SmallVector&lt; T, Capacity &gt;::mInplaceStorage[Capacity]</definition>
+        <argsstring>[Capacity]</argsstring>
+        <name>mInplaceStorage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="159" column="7" bodyfile="include/assimp/SmallVector.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_small_vector_1a0b386a0282d15d986273581a8b7049da" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::SmallVector&lt; T, Capacity &gt;::mSize</definition>
+        <argsstring></argsstring>
+        <name>mSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="157" column="12" bodyfile="include/assimp/SmallVector.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_small_vector_1a2ebd786d1a73f88be129944640405ac6" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* Assimp::SmallVector&lt; T, Capacity &gt;::mStorage</definition>
+        <argsstring></argsstring>
+        <name>mStorage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="156" column="7" bodyfile="include/assimp/SmallVector.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1afa97de129ab6e16f49a2573a33f28197" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Assimp::SmallVector&lt; T, Capacity &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Returns a pointer to the first item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The first item as a pointer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="108" column="7" bodyfile="include/assimp/SmallVector.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1a126a3666aa8797baee3e227a1ed24258" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Assimp::SmallVector&lt; T, Capacity &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Returns a const pointer to the first item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The first item as a const pointer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="120" column="7" bodyfile="include/assimp/SmallVector.h" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1ac7db598be81b69b556a87691b3745f1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Assimp::SmallVector&lt; T, Capacity &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Returns a pointer to the end. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The end as a pointer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="114" column="7" bodyfile="include/assimp/SmallVector.h" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1aa6794581a6b45e1728c3e764b50d48a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Assimp::SmallVector&lt; T, Capacity &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Returns a const pointer to the end. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The end as a const pointer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="126" column="7" bodyfile="include/assimp/SmallVector.h" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1a1a8b0797b57ae204274329e13e8eb803" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_small_vector" kindref="compound">SmallVector</ref> &amp;</type>
+        <definition>SmallVector&amp; Assimp::SmallVector&lt; T, Capacity &gt;::operator=</definition>
+        <argsstring>(const SmallVector &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_small_vector" kindref="compound">SmallVector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="132" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1acc1812e06af9c7c0cbc3601d428ab546" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_assimp_1_1_small_vector" kindref="compound">SmallVector</ref> &amp;</type>
+        <definition>SmallVector&amp; Assimp::SmallVector&lt; T, Capacity &gt;::operator=</definition>
+        <argsstring>(SmallVector &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_small_vector" kindref="compound">SmallVector</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="133" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1a1544011b738929bb369217f7e6e3df47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SmallVector&lt; T, Capacity &gt;::push_back</definition>
+        <argsstring>(const T &amp;item)</argsstring>
+        <name>push_back</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Will push a new item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The capacity will grow in case of a too small capacity. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] The item to push at the end of the vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="82" column="10" bodyfile="include/assimp/SmallVector.h" bodystart="82" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1a1a659256b65ddde4bfef0723d9fbbafc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SmallVector&lt; T, Capacity &gt;::resize</definition>
+        <argsstring>(size_t newSize)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>size_t</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+<para>Will resize the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] The new size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="93" column="10" bodyfile="include/assimp/SmallVector.h" bodystart="93" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1ac845a91db64e039ca0d1de37e71b6e51" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::SmallVector&lt; T, Capacity &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Returns the current size of the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current size. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="102" column="12" bodyfile="include/assimp/SmallVector.h" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1ab6b4d98296422f1b560058951a921026" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SmallVector&lt; T, Capacity &gt;::SmallVector</definition>
+        <argsstring>()</argsstring>
+        <name>SmallVector</name>
+        <briefdescription>
+<para>The default class constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="66" column="5" bodyfile="include/assimp/SmallVector.h" bodystart="66" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1aab3b7e9b56e7f458e8edc88b3d0f6a7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SmallVector&lt; T, Capacity &gt;::SmallVector</definition>
+        <argsstring>(const SmallVector &amp;)=delete</argsstring>
+        <name>SmallVector</name>
+        <param>
+          <type>const <ref refid="class_assimp_1_1_small_vector" kindref="compound">SmallVector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="130" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1aaaf0e894e1bc957b9d7701bf87e1ba11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SmallVector&lt; T, Capacity &gt;::SmallVector</definition>
+        <argsstring>(SmallVector &amp;&amp;)=delete</argsstring>
+        <name>SmallVector</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_small_vector" kindref="compound">SmallVector</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="131" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1a5ed292445a3b5900534b964f720a01e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SmallVector&lt; T, Capacity &gt;::~SmallVector</definition>
+        <argsstring>()</argsstring>
+        <name>~SmallVector</name>
+        <briefdescription>
+<para>The class destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="74" column="5" bodyfile="include/assimp/SmallVector.h" bodystart="74" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1ad1c59d5742847b6629e5d96f162f543d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SmallVector&lt; T, Capacity &gt;::grow</definition>
+        <argsstring>(size_t newCapacity)</argsstring>
+        <name>grow</name>
+        <param>
+          <type>size_t</type>
+          <declname>newCapacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="136" column="10" bodyfile="include/assimp/SmallVector.h" bodystart="136" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_small_vector_1af2061ae69594731a9499bac28b3dcbbb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::SmallVector&lt; T, Capacity &gt;::push_back_and_grow</definition>
+        <argsstring>(const T &amp;item)</argsstring>
+        <name>push_back_and_grow</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SmallVector.h" line="150" column="10" bodyfile="include/assimp/SmallVector.h" bodystart="150" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Small vector with inplace storage. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Reduces heap allocations when list is shorter. It uses a small array for a dedicated size. When the growing gets bigger than this small cache a dynamic growing algorithm will be used. </para>
+    </detaileddescription>
+    <location file="include/assimp/SmallVector.h" line="63" column="1" bodyfile="include/assimp/SmallVector.h" bodystart="63" bodyend="160"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_small_vector_1afa97de129ab6e16f49a2573a33f28197" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>begin</name></member>
+      <member refid="class_assimp_1_1_small_vector_1a126a3666aa8797baee3e227a1ed24258" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>begin</name></member>
+      <member refid="class_assimp_1_1_small_vector_1ac7db598be81b69b556a87691b3745f1e" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>end</name></member>
+      <member refid="class_assimp_1_1_small_vector_1aa6794581a6b45e1728c3e764b50d48a8" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>end</name></member>
+      <member refid="class_assimp_1_1_small_vector_1ad1c59d5742847b6629e5d96f162f543d" prot="private" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>grow</name></member>
+      <member refid="class_assimp_1_1_small_vector_1acad4a4a43ad4076a317fec639292c9e8" prot="private" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>mCapacity</name></member>
+      <member refid="class_assimp_1_1_small_vector_1a43d5ca0db0d6a4e548766a2cf4f647af" prot="private" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>mInplaceStorage</name></member>
+      <member refid="class_assimp_1_1_small_vector_1a0b386a0282d15d986273581a8b7049da" prot="private" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>mSize</name></member>
+      <member refid="class_assimp_1_1_small_vector_1a2ebd786d1a73f88be129944640405ac6" prot="private" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>mStorage</name></member>
+      <member refid="class_assimp_1_1_small_vector_1a1a8b0797b57ae204274329e13e8eb803" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>operator=</name></member>
+      <member refid="class_assimp_1_1_small_vector_1acc1812e06af9c7c0cbc3601d428ab546" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>operator=</name></member>
+      <member refid="class_assimp_1_1_small_vector_1a1544011b738929bb369217f7e6e3df47" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>push_back</name></member>
+      <member refid="class_assimp_1_1_small_vector_1af2061ae69594731a9499bac28b3dcbbb" prot="private" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>push_back_and_grow</name></member>
+      <member refid="class_assimp_1_1_small_vector_1a1a659256b65ddde4bfef0723d9fbbafc" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>resize</name></member>
+      <member refid="class_assimp_1_1_small_vector_1ac845a91db64e039ca0d1de37e71b6e51" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>size</name></member>
+      <member refid="class_assimp_1_1_small_vector_1ab6b4d98296422f1b560058951a921026" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>SmallVector</name></member>
+      <member refid="class_assimp_1_1_small_vector_1aab3b7e9b56e7f458e8edc88b3d0f6a7d" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>SmallVector</name></member>
+      <member refid="class_assimp_1_1_small_vector_1aaaf0e894e1bc957b9d7701bf87e1ba11" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>SmallVector</name></member>
+      <member refid="class_assimp_1_1_small_vector_1a5ed292445a3b5900534b964f720a01e1" prot="public" virt="non-virtual"><scope>Assimp::SmallVector</scope><name>~SmallVector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

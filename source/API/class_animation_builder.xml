@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_animation_builder" kind="interface" language="C++" prot="public">
+    <compoundname>AnimationBuilder</compoundname>
+    <includes local="no">draco_animation_web_encoder.idl</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_animation_builder_1a4ca05baab7703fa36b56fe3bf4af02c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+        <definition>long AnimationBuilder::AddKeyframes</definition>
+        <argsstring>(KeyframeAnimation animation, long num_frames, long num_components, [Const] float[] animation_data)</argsstring>
+        <name>AddKeyframes</name>
+        <param>
+          <type><ref refid="interface_keyframe_animation" kindref="compound">KeyframeAnimation</ref></type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+          <declname>num_frames</declname>
+        </param>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+          <declname>num_components</declname>
+        </param>
+        <param>
+          <attributes>[Const]</attributes>
+          <type>float []</type>
+          <declname>animation_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/draco_animation_web_encoder.idl" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_builder_1a6d664582db0382c74cf305c4456c8c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a787fa3cf048117ba7123753c1e74fcd6" kindref="member">int</ref></type>
+        <definition>int AnimationBuilder::AddKeyframes</definition>
+        <argsstring>(draco::KeyframeAnimation *animation, long num_frames, long num_components, const float *animation_data)</argsstring>
+        <name>AddKeyframes</name>
+        <param>
+          <type><ref refid="classdraco_1_1_keyframe_animation" kindref="compound">draco::KeyframeAnimation</ref> *</type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+          <declname>num_frames</declname>
+        </param>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+          <declname>num_components</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>animation_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="45" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.cc" bodystart="41" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_builder_1a8cc901a98787336209927ecd4215a843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnimationBuilder::AnimationBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>AnimationBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/draco_animation_web_encoder.idl" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_builder_1a91e3e000fb17d00424f1ecc1d0d602bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AnimationBuilder::AnimationBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>AnimationBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="40" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.cc" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_builder_1aa65e3ae065a801b76b7781d9b69554dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean AnimationBuilder::SetTimestamps</definition>
+        <argsstring>(KeyframeAnimation animation, long num_frames, [Const] float[] timestamps)</argsstring>
+        <name>SetTimestamps</name>
+        <param>
+          <type><ref refid="interface_keyframe_animation" kindref="compound">KeyframeAnimation</ref></type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+          <declname>num_frames</declname>
+        </param>
+        <param>
+          <attributes>[Const]</attributes>
+          <type>float []</type>
+          <declname>timestamps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/draco_animation_web_encoder.idl" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_builder_1ab9f7599a62710cf259935f2f01be7bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AnimationBuilder::SetTimestamps</definition>
+        <argsstring>(draco::KeyframeAnimation *animation, long num_frames, const float *timestamps)</argsstring>
+        <name>SetTimestamps</name>
+        <param>
+          <type><ref refid="classdraco_1_1_keyframe_animation" kindref="compound">draco::KeyframeAnimation</ref> *</type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type><ref refid="zlib_2contrib_2minizip_2ioapi_8h_1a3c7b35ad9dab18b8310343c201f7b27e" kindref="member">long</ref></type>
+          <declname>num_frames</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>timestamps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="42" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.cc" bodystart="31" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" line="38" column="1" bodyfile="contrib/draco/src/draco/javascript/emscripten/animation_encoder_webidl_wrapper.h" bodystart="38" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_animation_builder_1a6d664582db0382c74cf305c4456c8c69" prot="public" virt="non-virtual"><scope>AnimationBuilder</scope><name>AddKeyframes</name></member>
+      <member refid="class_animation_builder_1a4ca05baab7703fa36b56fe3bf4af02c8" prot="public" virt="non-virtual"><scope>AnimationBuilder</scope><name>AddKeyframes</name></member>
+      <member refid="class_animation_builder_1a91e3e000fb17d00424f1ecc1d0d602bf" prot="public" virt="non-virtual"><scope>AnimationBuilder</scope><name>AnimationBuilder</name></member>
+      <member refid="class_animation_builder_1a8cc901a98787336209927ecd4215a843" prot="public" virt="non-virtual"><scope>AnimationBuilder</scope><name>AnimationBuilder</name></member>
+      <member refid="class_animation_builder_1ab9f7599a62710cf259935f2f01be7bd7" prot="public" virt="non-virtual"><scope>AnimationBuilder</scope><name>SetTimestamps</name></member>
+      <member refid="class_animation_builder_1aa65e3ae065a801b76b7781d9b69554dd" prot="public" virt="non-virtual"><scope>AnimationBuilder</scope><name>SetTimestamps</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

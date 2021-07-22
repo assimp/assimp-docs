@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_property_store" kind="struct" language="C++" prot="public">
     <compoundname>aiPropertyStore</compoundname>
     <includes local="no">cimport.h</includes>
@@ -15,20 +15,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/cimport.h" line="92" column="1" bodyfile="include/assimp/cimport.h" bodystart="92" bodyend="-1"/>
+        <location file="include/assimp/cimport.h" line="92" column="10" bodyfile="include/assimp/cimport.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>C-API: Represents an opaque set of settings to be used during importing. </para>    </briefdescription>
+<para>C-API: Represents an opaque set of settings to be used during importing. </para>
+    </briefdescription>
     <detaileddescription>
-<para><simplesect kind="see"><para><ref refid="cimport_8h_1a523d3d8b510203fb1a80d8702283f8c9" kindref="member">aiCreatePropertyStore</ref> </para></simplesect>
-<simplesect kind="see"><para><ref refid="cimport_8h_1a579dddd75dbba5621c235df780ffc3e6" kindref="member">aiReleasePropertyStore</ref> </para></simplesect>
-<simplesect kind="see"><para><ref refid="cimport_8h_1a9ec6845e46be4043cedb579bb85fcc0c" kindref="member">aiImportFileExWithProperties</ref> </para></simplesect>
-<simplesect kind="see"><para>aiSetPropertyInteger </para></simplesect>
-<simplesect kind="see"><para>aiSetPropertyFloat </para></simplesect>
-<simplesect kind="see"><para>aiSetPropertyString </para></simplesect>
-<simplesect kind="see"><para>aiSetPropertyMatrix </para></simplesect>
-</para>    </detaileddescription>
+<para><simplesect kind="see"><para><ref refid="cimport_8h_1a523d3d8b510203fb1a80d8702283f8c9" kindref="member">aiCreatePropertyStore</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="cimport_8h_1a579dddd75dbba5621c235df780ffc3e6" kindref="member">aiReleasePropertyStore</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="cimport_8h_1a9ec6845e46be4043cedb579bb85fcc0c" kindref="member">aiImportFileExWithProperties</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>aiSetPropertyInteger </para>
+</simplesect>
+<simplesect kind="see"><para>aiSetPropertyFloat </para>
+</simplesect>
+<simplesect kind="see"><para>aiSetPropertyString </para>
+</simplesect>
+<simplesect kind="see"><para>aiSetPropertyMatrix </para>
+</simplesect>
+</para>
+    </detaileddescription>
     <location file="include/assimp/cimport.h" line="91" column="1" bodyfile="include/assimp/cimport.h" bodystart="91" bodyend="93"/>
     <listofallmembers>
       <member refid="structai_property_store_1a53e97983bdbe38c596c7879555dc42a3" prot="public" virt="non-virtual"><scope>aiPropertyStore</scope><name>sentinel</name></member>

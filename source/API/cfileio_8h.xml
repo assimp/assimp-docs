@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="cfileio_8h" kind="file" language="C++">
+    <compoundname>cfileio.h</compoundname>
+    <includes refid="types_8h" local="no">assimp/types.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>assimp/matrix4x4.h</label>
+        <link refid="matrix4x4_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>assimp/vector3.h</label>
+        <link refid="vector3_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>cfileio.h</label>
+        <link refid="cfileio_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>assimp/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>assimp/matrix3x3.h</label>
+        <link refid="matrix3x3_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>assimp/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="3">
+        <label>limits.h</label>
+      </node>
+      <node id="7">
+        <label>sys/types.h</label>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+      <node id="16">
+        <label>assimp/quaternion.h</label>
+        <link refid="quaternion_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>assimp/defs.h</label>
+        <link refid="defs_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>new</label>
+      </node>
+      <node id="13">
+        <label>assimp/color4.h</label>
+        <link refid="color4_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>assimp/vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structai_file" prot="public">aiFile</innerclass>
+    <innerclass refid="structai_file_i_o" prot="public">aiFileIO</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="cfileio_8h_1ae0c842cece18608e0566cbe270c97d2e" prot="public" static="no">
+        <name>AI_FILEIO_H_INC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="49" column="9" bodyfile="include/assimp/cfileio.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="cfileio_8h_1ab6e7f26b63f2d1ed9655e97bd4ebd38c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* aiFileCloseProc) (C_STRUCT aiFileIO *, C_STRUCT aiFile *)</definition>
+        <argsstring>)(C_STRUCT aiFileIO *, C_STRUCT aiFile *)</argsstring>
+        <name>aiFileCloseProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="73" column="9" bodyfile="include/assimp/cfileio.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="cfileio_8h_1a49a7a4a25167c7aa03dfe80ae5bdd959" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* aiFileFlushProc) (C_STRUCT aiFile *)</definition>
+        <argsstring>)(C_STRUCT aiFile *)</argsstring>
+        <name>aiFileFlushProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="68" column="9" bodyfile="include/assimp/cfileio.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="cfileio_8h_1ad61b536884b9b6b7e8673edb5539d37c" prot="public" static="no">
+        <type><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref> <ref refid="structai_file" kindref="compound">aiFile</ref> *(*</type>
+        <definition>typedef C_STRUCT aiFile*(* aiFileOpenProc) (C_STRUCT aiFileIO *, const char *, const char *)</definition>
+        <argsstring>)(C_STRUCT aiFileIO *, const char *, const char *)</argsstring>
+        <name>aiFileOpenProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="72" column="18" bodyfile="include/assimp/cfileio.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="cfileio_8h_1a482e6ebea846d515ef23556d0f1717f4" prot="public" static="no">
+        <type>size_t(*</type>
+        <definition>typedef size_t(* aiFileReadProc) (C_STRUCT aiFile *, char *, size_t, size_t)</definition>
+        <argsstring>)(C_STRUCT aiFile *, char *, size_t, size_t)</argsstring>
+        <name>aiFileReadProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="66" column="9" bodyfile="include/assimp/cfileio.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="cfileio_8h_1a9d44e516b1ce6ef3da4295045d6ec217" prot="public" static="no">
+        <type><ref refid="defs_8h_1aa8c1788fd9d096036c9e3b6cfe4b1301" kindref="member">C_ENUM</ref> <ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref>(*</type>
+        <definition>typedef C_ENUM aiReturn(* aiFileSeek) (C_STRUCT aiFile *, size_t, C_ENUM aiOrigin)</definition>
+        <argsstring>)(C_STRUCT aiFile *, size_t, C_ENUM aiOrigin)</argsstring>
+        <name>aiFileSeek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="69" column="16" bodyfile="include/assimp/cfileio.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="cfileio_8h_1a30d575ddf8f46426ecb12c95f92b1686" prot="public" static="no">
+        <type>size_t(*</type>
+        <definition>typedef size_t(* aiFileTellProc) (C_STRUCT aiFile *)</definition>
+        <argsstring>)(C_STRUCT aiFile *)</argsstring>
+        <name>aiFileTellProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="67" column="9" bodyfile="include/assimp/cfileio.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="cfileio_8h_1a21d0825136cd8be942613ff77479045d" prot="public" static="no">
+        <type>size_t(*</type>
+        <definition>typedef size_t(* aiFileWriteProc) (C_STRUCT aiFile *, const char *, size_t, size_t)</definition>
+        <argsstring>)(C_STRUCT aiFile *, const char *, size_t, size_t)</argsstring>
+        <name>aiFileWriteProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="65" column="9" bodyfile="include/assimp/cfileio.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="cfileio_8h_1a176132d0cd51c96302089ff3f8a8ee1c" prot="public" static="no">
+        <type>char *</type>
+        <definition>typedef char* aiUserData</definition>
+        <argsstring></argsstring>
+        <name>aiUserData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/cfileio.h" line="76" column="14" bodyfile="include/assimp/cfileio.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines generic C routines to access memory-mapped files. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Open<sp/>Asset<sp/>Import<sp/>Library<sp/>(assimp)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2006-2021,<sp/>assimp<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>of<sp/>this<sp/>software<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">with<sp/>or<sp/>without<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>assimp<sp/>team,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>written<sp/>permission<sp/>of<sp/>the<sp/>assimp<sp/>team.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_FILEIO_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AI_FILEIO_H_INC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>pragma<sp/>GCC<sp/>system_header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="types_8h" kindref="compound">assimp/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_file_i_o" kindref="compound">aiFileIO</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_file" kindref="compound">aiFile</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>aiFile<sp/>callbacks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>size_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*<ref refid="cfileio_8h_1a21d0825136cd8be942613ff77479045d" kindref="member">aiFileWriteProc</ref>)<sp/>(<ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_file" kindref="compound">aiFile</ref>*,<sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/>size_t,<sp/>size_t);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>size_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*<ref refid="cfileio_8h_1a482e6ebea846d515ef23556d0f1717f4" kindref="member">aiFileReadProc</ref>)<sp/><sp/>(<ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_file" kindref="compound">aiFile</ref>*,<sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/>size_t,size_t);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>size_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*<ref refid="cfileio_8h_1a30d575ddf8f46426ecb12c95f92b1686" kindref="member">aiFileTellProc</ref>)<sp/><sp/>(<ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_file" kindref="compound">aiFile</ref>*);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*<ref refid="cfileio_8h_1a49a7a4a25167c7aa03dfe80ae5bdd959" kindref="member">aiFileFlushProc</ref>)<sp/>(<ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_file" kindref="compound">aiFile</ref>*);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1aa8c1788fd9d096036c9e3b6cfe4b1301" kindref="member">C_ENUM</ref><sp/><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref><sp/>(*<ref refid="cfileio_8h_1a9d44e516b1ce6ef3da4295045d6ec217" kindref="member">aiFileSeek</ref>)<sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_file" kindref="compound">aiFile</ref>*,<sp/>size_t,<sp/><ref refid="defs_8h_1aa8c1788fd9d096036c9e3b6cfe4b1301" kindref="member">C_ENUM</ref><sp/><ref refid="types_8h_1ac50fbaa57d78776ca99e42104d9b2786" kindref="member">aiOrigin</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>aiFileIO<sp/>callbacks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_file" kindref="compound">aiFile</ref>*<sp/>(*aiFileOpenProc)<sp/><sp/>(<ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_file_i_o" kindref="compound">aiFileIO</ref>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*<ref refid="cfileio_8h_1ab6e7f26b63f2d1ed9655e97bd4ebd38c" kindref="member">aiFileCloseProc</ref>)<sp/>(<ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_file_i_o" kindref="compound">aiFileIO</ref>*,<sp/><ref refid="defs_8h_1ab51df4230ceb602bbc1bc109c432a6a0" kindref="member">C_STRUCT</ref><sp/><ref refid="structai_file" kindref="compound">aiFile</ref>*);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Represents<sp/>user-defined<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="cfileio_8h_1a176132d0cd51c96302089ff3f8a8ee1c" kindref="member">aiUserData</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="85" refid="structai_file_i_o" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_file_i_o" kindref="compound">aiFileIO</ref></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cfileio_8h_1ad61b536884b9b6b7e8673edb5539d37c" kindref="member">aiFileOpenProc</ref><sp/><ref refid="structai_file_i_o_1a819d9c7823039294125068d06949a6df" kindref="member">OpenProc</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cfileio_8h_1ab6e7f26b63f2d1ed9655e97bd4ebd38c" kindref="member">aiFileCloseProc</ref><sp/><ref refid="structai_file_i_o_1a7ec702672712b5a02dc49cb17f980a14" kindref="member">CloseProc</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cfileio_8h_1a176132d0cd51c96302089ff3f8a8ee1c" kindref="member">aiUserData</ref><sp/><ref refid="structai_file_i_o_1a9c62b7f3d70fbb2f41e33ad0b9933139" kindref="member">UserData</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="109" refid="structai_file" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structai_file" kindref="compound">aiFile</ref></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cfileio_8h_1a482e6ebea846d515ef23556d0f1717f4" kindref="member">aiFileReadProc</ref><sp/><ref refid="structai_file_1a52287e81ca67b9d43cc1ce6142f781fa" kindref="member">ReadProc</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cfileio_8h_1a21d0825136cd8be942613ff77479045d" kindref="member">aiFileWriteProc</ref><sp/><ref refid="structai_file_1ab9fca3a62e34a33592c13a6f31db7d1d" kindref="member">WriteProc</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cfileio_8h_1a30d575ddf8f46426ecb12c95f92b1686" kindref="member">aiFileTellProc</ref><sp/><ref refid="structai_file_1aaf2d88a3b2fcbdacf51119658283d27e" kindref="member">TellProc</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cfileio_8h_1a30d575ddf8f46426ecb12c95f92b1686" kindref="member">aiFileTellProc</ref><sp/><ref refid="structai_file_1aff2fff8c0458e7ec71f7de217c3a3033" kindref="member">FileSizeProc</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cfileio_8h_1a9d44e516b1ce6ef3da4295045d6ec217" kindref="member">aiFileSeek</ref><sp/><ref refid="structai_file_1a7a07b499be4ad433669246479a4d4ad2" kindref="member">SeekProc</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cfileio_8h_1a49a7a4a25167c7aa03dfe80ae5bdd959" kindref="member">aiFileFlushProc</ref><sp/><ref refid="structai_file_1a1102d28d1c0be68ffed20476669bdb0d" kindref="member">FlushProc</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cfileio_8h_1a176132d0cd51c96302089ff3f8a8ee1c" kindref="member">aiUserData</ref><sp/><ref refid="structai_file_1aec528fa18f4755fe4f28d604fde28aad" kindref="member">UserData</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AI_FILEIO_H_INC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/cfileio.h"/>
+  </compounddef>
+</doxygen>

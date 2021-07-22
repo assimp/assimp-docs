@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="poppack1_8h" kind="file" language="C++">
+    <compoundname>poppack1.h</compoundname>
+    <includedby refid="material_8h" local="yes">material.h</includedby>
+    <includedby refid="texture_8h" local="yes">texture.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>material.h</label>
+        <link refid="material_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>texture.h</label>
+        <link refid="texture_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+      </node>
+      <node id="1">
+        <label>poppack1.h</label>
+        <link refid="poppack1_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>===============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>May<sp/>be<sp/>included<sp/>multiple<sp/>times<sp/>-<sp/>resets<sp/>structure<sp/>packing<sp/>to<sp/>the<sp/>defaults<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>all<sp/>supported<sp/>compilers.<sp/>Reverts<sp/>the<sp/>changes<sp/>made<sp/>by<sp/>#include<sp/>&lt;pushpack1.h&gt;<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Currently<sp/>this<sp/>works<sp/>on<sp/>the<sp/>following<sp/>compilers:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MSVC<sp/>7,8,9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GCC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>BORLAND<sp/>(complains<sp/>about<sp/>&apos;pack<sp/>state<sp/>changed<sp/>but<sp/>not<sp/>reverted&apos;,<sp/>but<sp/>works)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>===============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AI_PUSHPACK_IS_DEFINED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>error<sp/>pushpack1.h<sp/>must<sp/>be<sp/>included<sp/>after<sp/>poppack1.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>reset<sp/>packing<sp/>to<sp/>the<sp/>original<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(defined(_MSC_VER)<sp/>&amp;&amp;<sp/>!defined(__clang__))<sp/>||<sp/><sp/>defined(__BORLANDC__)<sp/>||<sp/>defined<sp/>(__BCPLUSPLUS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>pragma<sp/>pack(<sp/>pop<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PACK_STRUCT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>AI_PUSHPACK_IS_DEFINED</highlight></codeline>
+    </programlisting>
+    <location file="include/assimp/Compiler/poppack1.h"/>
+  </compounddef>
+</doxygen>

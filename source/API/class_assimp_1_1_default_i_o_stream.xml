@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_default_i_o_stream" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::DefaultIOStream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOStream</basecompoundref>
+    <includes local="no">DefaultIOStream.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_assimp_1_1_default_i_o_stream_1ae4aad25be16105455337feeb4abb954e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class DefaultIOSystem</definition>
+        <argsstring></argsstring>
+        <name>DefaultIOSystem</name>
+        <param>
+          <type><ref refid="class_assimp_1_1_default_i_o_system" kindref="compound">DefaultIOSystem</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="66" column="5" bodyfile="include/assimp/DefaultIOStream.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_default_i_o_stream_1a80e2e6a838234a5b41afcfe6543516a2" prot="private" static="no" mutable="yes">
+        <type>size_t</type>
+        <definition>size_t Assimp::DefaultIOStream::mCachedSize</definition>
+        <argsstring></argsstring>
+        <name>mCachedSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="115" column="20" bodyfile="include/assimp/DefaultIOStream.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_default_i_o_stream_1a7fd7038a1abd75384a3ff6b5d92bfdb0" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* Assimp::DefaultIOStream::mFile</definition>
+        <argsstring></argsstring>
+        <name>mFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="113" column="10" bodyfile="include/assimp/DefaultIOStream.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_default_i_o_stream_1a8cd5be44f72dd038471403cf9ec060b7" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Assimp::DefaultIOStream::mFilename</definition>
+        <argsstring></argsstring>
+        <name>mFilename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="114" column="17" bodyfile="include/assimp/DefaultIOStream.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_stream_1ab8c2f3d94762e9d9e766d0cb194df304" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AI_FORCE_INLINE Assimp::DefaultIOStream::DefaultIOStream</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>DefaultIOStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="76" column="5" bodyfile="include/assimp/DefaultIOStream.h" bodystart="120" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_stream_1a758137bbfd20a2127820b87f17ec9697" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AI_FORCE_INLINE Assimp::DefaultIOStream::DefaultIOStream</definition>
+        <argsstring>(FILE *pFile, const std::string &amp;strFilename)</argsstring>
+        <name>DefaultIOStream</name>
+        <param>
+          <type>FILE *</type>
+          <declname>pFile</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>strFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="77" column="5" bodyfile="include/assimp/DefaultIOStream.h" bodystart="129" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_stream_1a308268ea6efa13b82fd980cd467fafdc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::DefaultIOStream::FileSize</definition>
+        <argsstring>() const</argsstring>
+        <name>FileSize</name>
+        <briefdescription>
+<para>Get size of file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="106" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_stream_1aebb62f6522d15c0b194a6ef1b32f46e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::DefaultIOStream::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <briefdescription>
+<para>Flush file contents. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="110" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_stream_1aa45b659531f179122c7e7852ad6f5f14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::DefaultIOStream::Read</definition>
+        <argsstring>(void *pvBuffer, size_t pSize, size_t pCount)</argsstring>
+        <name>Read</name>
+        <param>
+          <type>void *</type>
+          <declname>pvBuffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pCount</declname>
+        </param>
+        <briefdescription>
+<para>Read from stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="85" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_stream_1a1f4b8aa9afaaa2b300d6cee6165a6a6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="types_8h_1a1f78dfb65090aa930cabb984c8abe711" kindref="member">aiReturn</ref></type>
+        <definition>aiReturn Assimp::DefaultIOStream::Seek</definition>
+        <argsstring>(size_t pOffset, aiOrigin pOrigin)</argsstring>
+        <name>Seek</name>
+        <param>
+          <type>size_t</type>
+          <declname>pOffset</declname>
+        </param>
+        <param>
+          <type><ref refid="types_8h_1ac50fbaa57d78776ca99e42104d9b2786" kindref="member">aiOrigin</ref></type>
+          <declname>pOrigin</declname>
+        </param>
+        <briefdescription>
+<para>Seek specific position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="97" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_stream_1a8996598fb9b666b6ddae4c93f0253a25" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::DefaultIOStream::Tell</definition>
+        <argsstring>() const</argsstring>
+        <name>Tell</name>
+        <briefdescription>
+<para>Get current seek position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="102" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_stream_1a05de25f9ac717801fbd0aad06499657a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Assimp::DefaultIOStream::Write</definition>
+        <argsstring>(const void *pvBuffer, size_t pSize, size_t pCount)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>const void *</type>
+          <declname>pvBuffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pCount</declname>
+        </param>
+        <briefdescription>
+<para>Write to stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="91" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_default_i_o_stream_1ad21769a2e865f8522ba2ebd97b75beda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::DefaultIOStream::~DefaultIOStream</definition>
+        <argsstring>()</argsstring>
+        <name>~DefaultIOStream</name>
+        <briefdescription>
+<para>Destructor public to allow simple deletion to close the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/DefaultIOStream.h" line="81" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Default IO implementation, use standard IO operations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>An instance of this class can exist without a valid file handle attached to it. All calls fail, but the instance can nevertheless be used with no restrictions. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/assimp/DefaultIOStream.h" line="65" column="1" bodyfile="include/assimp/DefaultIOStream.h" bodystart="65" bodyend="116"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_default_i_o_stream_1ab8c2f3d94762e9d9e766d0cb194df304" prot="protected" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>DefaultIOStream</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1a758137bbfd20a2127820b87f17ec9697" prot="protected" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>DefaultIOStream</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1ae4aad25be16105455337feeb4abb954e" prot="private" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>DefaultIOSystem</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1a308268ea6efa13b82fd980cd467fafdc" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>FileSize</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1aebb62f6522d15c0b194a6ef1b32f46e0" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>Flush</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1a80e2e6a838234a5b41afcfe6543516a2" prot="private" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>mCachedSize</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1a7fd7038a1abd75384a3ff6b5d92bfdb0" prot="private" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>mFile</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1a8cd5be44f72dd038471403cf9ec060b7" prot="private" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>mFilename</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1aa45b659531f179122c7e7852ad6f5f14" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>Read</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1a1f4b8aa9afaaa2b300d6cee6165a6a6d" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>Seek</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1a8996598fb9b666b6ddae4c93f0253a25" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>Tell</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1a05de25f9ac717801fbd0aad06499657a" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>Write</name></member>
+      <member refid="class_assimp_1_1_default_i_o_stream_1ad21769a2e865f8522ba2ebd97b75beda" prot="public" virt="non-virtual"><scope>Assimp::DefaultIOStream</scope><name>~DefaultIOStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

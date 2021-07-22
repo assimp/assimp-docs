@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_node_converter" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::NodeConverter</compoundname>
+    <includes local="no">XmlParser.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class TNodeType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_assimp_1_1_node_converter_1a344e06e7e40ca0bde0c80b15b88f324e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Assimp::NodeConverter&lt; TNodeType &gt;::to_int</definition>
+        <argsstring>(TNodeType &amp;node, const char *attribName)</argsstring>
+        <name>to_int</name>
+        <param>
+          <type>TNodeType &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>attribName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/XmlParser.h" line="74" column="16" bodyfile="include/assimp/XmlParser.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Will convert an attribute to its int value. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TNodeType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="include/assimp/XmlParser.h" line="72" column="1" bodyfile="include/assimp/XmlParser.h" bodystart="72" bodyend="78"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_node_converter_1a344e06e7e40ca0bde0c80b15b88f324e" prot="public" virt="non-virtual"><scope>Assimp::NodeConverter</scope><name>to_int</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

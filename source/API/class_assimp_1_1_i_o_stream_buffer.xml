@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_i_o_stream_buffer" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::IOStreamBuffer</compoundname>
+    <includes local="no">IOStreamBuffer.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assimp_1_1_i_o_stream_buffer_1a9ad17f14e0a2af8f081de13fa6a6acac" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::IOStreamBuffer&lt; T &gt;::m_blockIdx</definition>
+        <argsstring></argsstring>
+        <name>m_blockIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="125" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_i_o_stream_buffer_1a69244aff93931effc111c2a068ea1f14" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; Assimp::IOStreamBuffer&lt; T &gt;::m_cache</definition>
+        <argsstring></argsstring>
+        <name>m_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="126" column="17" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_i_o_stream_buffer_1adefab0d8500357e16340fc7b70260c93" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::IOStreamBuffer&lt; T &gt;::m_cachePos</definition>
+        <argsstring></argsstring>
+        <name>m_cachePos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="127" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_i_o_stream_buffer_1a876891a1872a0b72ba2475d813eeff03" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::IOStreamBuffer&lt; T &gt;::m_cacheSize</definition>
+        <argsstring></argsstring>
+        <name>m_cacheSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="123" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_i_o_stream_buffer_1ac3955f56ef4fa91322d6f3fe3b22f24d" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::IOStreamBuffer&lt; T &gt;::m_filePos</definition>
+        <argsstring></argsstring>
+        <name>m_filePos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="128" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_i_o_stream_buffer_1aa3a2b47a4a80305f39c2141f1f9f6c0a" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::IOStreamBuffer&lt; T &gt;::m_filesize</definition>
+        <argsstring></argsstring>
+        <name>m_filesize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="122" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_i_o_stream_buffer_1a2f2c798b0f353460c988d9db5c0ec5d4" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::IOStreamBuffer&lt; T &gt;::m_numBlocks</definition>
+        <argsstring></argsstring>
+        <name>m_numBlocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="124" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assimp_1_1_i_o_stream_buffer_1ae341171f8f17789d88c0a3097d4458e3" prot="private" static="no" mutable="no">
+        <type>IOStream *</type>
+        <definition>IOStream* Assimp::IOStreamBuffer&lt; T &gt;::m_stream</definition>
+        <argsstring></argsstring>
+        <name>m_stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="121" column="14" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1a9bc1e05e0c6d26151b9185ba0f949756" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>AI_FORCE_INLINE size_t Assimp::IOStreamBuffer&lt; T &gt;::cacheSize</definition>
+        <argsstring>() const</argsstring>
+        <name>cacheSize</name>
+        <briefdescription>
+<para>Returns the cache size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The cache size. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="87" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1a37d88ec985f715f926f1b37052893922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IOStreamBuffer&lt; T &gt;::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Will close the cached access. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="79" column="10" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="183" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1a6d2b4c96f23ef78f912389195efe974d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>AI_FORCE_INLINE size_t Assimp::IOStreamBuffer&lt; T &gt;::getCurrentBlockIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentBlockIndex</name>
+        <briefdescription>
+<para>Returns the current block index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current block index. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="99" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="237" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1a7e830d938c2e8eae737e1151e0b72f4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>AI_FORCE_INLINE size_t Assimp::IOStreamBuffer&lt; T &gt;::getFilePos</definition>
+        <argsstring>() const</argsstring>
+        <name>getFilePos</name>
+        <briefdescription>
+<para>Returns the current file pos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current file pos. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="103" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="243" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1ae4e4be6dd4284644f9b99e11b95a66a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IOStreamBuffer&lt; T &gt;::getNextBlock</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;buffer)</argsstring>
+        <name>getNextBlock</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Will read the next block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer for the next block. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="118" column="10" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="335" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1adaa7761b2120cf17f8ac802bf732baf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IOStreamBuffer&lt; T &gt;::getNextDataLine</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;buffer, T continuationToken)</argsstring>
+        <name>getNextDataLine</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>continuationToken</declname>
+        </param>
+        <briefdescription>
+<para>Will read the next line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer for the next line. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="108" column="10" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="249" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1ad25f465cec695363c75b218ab21d9d08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IOStreamBuffer&lt; T &gt;::getNextLine</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;buffer)</argsstring>
+        <name>getNextLine</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Will read the next line ascii or binary end line char. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer for the next line. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="113" column="10" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="295" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1aa94a8c9a0c831793c95f08297bfd2333" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>AI_FORCE_INLINE size_t Assimp::IOStreamBuffer&lt; T &gt;::getNumBlocks</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumBlocks</name>
+        <briefdescription>
+<para>Returns the number of blocks to read. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of blocks. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="95" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="231" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1ad360ca023c5112f6f8f25ded92c3c9f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AI_FORCE_INLINE Assimp::IOStreamBuffer&lt; T &gt;::IOStreamBuffer</definition>
+        <argsstring>(size_t cache=4096 *4096)</argsstring>
+        <name>IOStreamBuffer</name>
+        <param>
+          <type>size_t</type>
+          <declname>cache</declname>
+          <defval>4096 *4096</defval>
+        </param>
+        <briefdescription>
+<para>The class constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="67" column="5" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="133" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1a66c14bc6c35b33bf470be66c470e7a8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IOStreamBuffer&lt; T &gt;::open</definition>
+        <argsstring>(IOStream *stream)</argsstring>
+        <name>open</name>
+        <param>
+          <type>IOStream *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Will open the cached access for a given stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stream to cache. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="75" column="10" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="153" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1a79cade42575d01ca83103c4c6ef999e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>AI_FORCE_INLINE bool Assimp::IOStreamBuffer&lt; T &gt;::readNextBlock</definition>
+        <argsstring>()</argsstring>
+        <name>readNextBlock</name>
+        <briefdescription>
+<para>Will read the next block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="91" column="10" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="213" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1abe0e9a33241889b300000424935957d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>AI_FORCE_INLINE size_t Assimp::IOStreamBuffer&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Returns the file-size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The file-size. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="83" column="12" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="201" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_i_o_stream_buffer_1a4f080570778732e58da136e28d96235d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AI_FORCE_INLINE Assimp::IOStreamBuffer&lt; T &gt;::~IOStreamBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>~IOStreamBuffer</name>
+        <briefdescription>
+<para>The class destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/IOStreamBuffer.h" line="70" column="5" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="147" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementation of a cached stream buffer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/IOStreamBuffer.h" line="64" column="1" bodyfile="include/assimp/IOStreamBuffer.h" bodystart="64" bodyend="129"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1a9bc1e05e0c6d26151b9185ba0f949756" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>cacheSize</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1a37d88ec985f715f926f1b37052893922" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>close</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1a6d2b4c96f23ef78f912389195efe974d" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>getCurrentBlockIndex</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1a7e830d938c2e8eae737e1151e0b72f4f" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>getFilePos</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1ae4e4be6dd4284644f9b99e11b95a66a4" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>getNextBlock</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1adaa7761b2120cf17f8ac802bf732baf6" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>getNextDataLine</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1ad25f465cec695363c75b218ab21d9d08" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>getNextLine</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1aa94a8c9a0c831793c95f08297bfd2333" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>getNumBlocks</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1ad360ca023c5112f6f8f25ded92c3c9f6" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>IOStreamBuffer</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1a9ad17f14e0a2af8f081de13fa6a6acac" prot="private" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>m_blockIdx</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1a69244aff93931effc111c2a068ea1f14" prot="private" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>m_cache</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1adefab0d8500357e16340fc7b70260c93" prot="private" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>m_cachePos</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1a876891a1872a0b72ba2475d813eeff03" prot="private" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>m_cacheSize</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1ac3955f56ef4fa91322d6f3fe3b22f24d" prot="private" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>m_filePos</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1aa3a2b47a4a80305f39c2141f1f9f6c0a" prot="private" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>m_filesize</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1a2f2c798b0f353460c988d9db5c0ec5d4" prot="private" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>m_numBlocks</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1ae341171f8f17789d88c0a3097d4458e3" prot="private" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>m_stream</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1a66c14bc6c35b33bf470be66c470e7a8f" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>open</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1a79cade42575d01ca83103c4c6ef999e3" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>readNextBlock</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1abe0e9a33241889b300000424935957d7" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>size</name></member>
+      <member refid="class_assimp_1_1_i_o_stream_buffer_1a4f080570778732e58da136e28d96235d" prot="public" virt="non-virtual"><scope>Assimp::IOStreamBuffer</scope><name>~IOStreamBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

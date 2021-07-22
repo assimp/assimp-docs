@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_interpolator" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::Interpolator</compoundname>
+    <includes local="no">anim.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_interpolator_1aa5653b268c00e4a779dec709ed1b619a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assimp::Interpolator&lt; T &gt;::operator()</definition>
+        <argsstring>(T &amp;anim_out, const T &amp;a, const T &amp;b, ai_real d) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>anim_out</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="defs_8h_1af221f9bbc3e0dc43a46efaaac6dab067" kindref="member">ai_real</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Get the result of the interpolation between a,b. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The interpolation algorithm depends on the type of the operands. aiQuaternion&apos;s and <ref refid="structai_quat_key" kindref="compound">aiQuatKey</ref>&apos;s SLERP, the rest does a simple linear interpolation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/anim.h" line="495" column="10" bodyfile="include/assimp/anim.h" bodystart="495" bodyend="497"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CPP-API: Utility class to simplify interpolations of various data types. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The type of interpolation is chosen automatically depending on the types of the arguments. </para>
+    </detaileddescription>
+    <location file="include/assimp/anim.h" line="488" column="1" bodyfile="include/assimp/anim.h" bodystart="488" bodyend="498"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_interpolator_1aa5653b268c00e4a779dec709ed1b619a" prot="public" virt="non-virtual"><scope>Assimp::Interpolator</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

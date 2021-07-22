@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_node_attachment_info" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::NodeAttachmentInfo</compoundname>
+    <includes local="no">SceneCombiner.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_node_attachment_info_1a0251d495cd3c45897e153ecf3a5b7436" prot="public" static="no" mutable="no">
+        <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+        <definition>aiNode* Assimp::NodeAttachmentInfo::attachToNode</definition>
+        <argsstring></argsstring>
+        <name>attachToNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="109" column="12" bodyfile="include/assimp/SceneCombiner.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_node_attachment_info_1a7de12d8780fc31c69c9abc95ff4662d8" prot="public" static="no" mutable="no">
+        <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+        <definition>aiNode* Assimp::NodeAttachmentInfo::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="108" column="12" bodyfile="include/assimp/SceneCombiner.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_node_attachment_info_1aa07184db24c9825bf472cc0e2600685f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assimp::NodeAttachmentInfo::resolved</definition>
+        <argsstring></argsstring>
+        <name>resolved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="110" column="10" bodyfile="include/assimp/SceneCombiner.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_node_attachment_info_1a2b23573e4d700ade25f347734d1ce4cd" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Assimp::NodeAttachmentInfo::src_idx</definition>
+        <argsstring></argsstring>
+        <name>src_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="111" column="12" bodyfile="include/assimp/SceneCombiner.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_node_attachment_info_1a780337eceb42e4f8299e9363d5fcc5aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::NodeAttachmentInfo::NodeAttachmentInfo</definition>
+        <argsstring>()</argsstring>
+        <name>NodeAttachmentInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="99" column="5" bodyfile="include/assimp/SceneCombiner.h" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_assimp_1_1_node_attachment_info_1a298323abc2277b4b2b64893c0bad8135" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::NodeAttachmentInfo::NodeAttachmentInfo</definition>
+        <argsstring>(aiNode *_scene, aiNode *_attachToNode, size_t idx)</argsstring>
+        <name>NodeAttachmentInfo</name>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <param>
+          <type><ref refid="structai_node" kindref="compound">aiNode</ref> *</type>
+          <declname>_attachToNode</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="105" column="5" bodyfile="include/assimp/SceneCombiner.h" bodystart="105" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>aiNode</label>
+        <link refid="structai_node"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mMetaData</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mChildren</edgelabel>
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mTransformation</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>aiMetadataEntry</label>
+        <link refid="structai_metadata_entry"/>
+      </node>
+      <node id="6">
+        <label>aiMatrix4x4t&lt; TReal &gt;</label>
+        <link refid="classai_matrix4x4t"/>
+      </node>
+      <node id="4">
+        <label>aiMetadata</label>
+        <link refid="structai_metadata"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mKeys</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mValues</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>aiString</label>
+        <link refid="structai_string"/>
+      </node>
+      <node id="1">
+        <label>Assimp::NodeAttachmentInfo</label>
+        <link refid="struct_assimp_1_1_node_attachment_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>attachToNode</edgelabel>
+          <edgelabel>node</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/SceneCombiner.h" line="98" column="1" bodyfile="include/assimp/SceneCombiner.h" bodystart="98" bodyend="112"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_node_attachment_info_1a0251d495cd3c45897e153ecf3a5b7436" prot="public" virt="non-virtual"><scope>Assimp::NodeAttachmentInfo</scope><name>attachToNode</name></member>
+      <member refid="struct_assimp_1_1_node_attachment_info_1a7de12d8780fc31c69c9abc95ff4662d8" prot="public" virt="non-virtual"><scope>Assimp::NodeAttachmentInfo</scope><name>node</name></member>
+      <member refid="struct_assimp_1_1_node_attachment_info_1a780337eceb42e4f8299e9363d5fcc5aa" prot="public" virt="non-virtual"><scope>Assimp::NodeAttachmentInfo</scope><name>NodeAttachmentInfo</name></member>
+      <member refid="struct_assimp_1_1_node_attachment_info_1a298323abc2277b4b2b64893c0bad8135" prot="public" virt="non-virtual"><scope>Assimp::NodeAttachmentInfo</scope><name>NodeAttachmentInfo</name></member>
+      <member refid="struct_assimp_1_1_node_attachment_info_1aa07184db24c9825bf472cc0e2600685f" prot="public" virt="non-virtual"><scope>Assimp::NodeAttachmentInfo</scope><name>resolved</name></member>
+      <member refid="struct_assimp_1_1_node_attachment_info_1a2b23573e4d700ade25f347734d1ce4cd" prot="public" virt="non-virtual"><scope>Assimp::NodeAttachmentInfo</scope><name>src_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_comment_remover" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::CommentRemover</compoundname>
+    <includes local="no">RemoveComments.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_comment_remover_1a4f54fa4405a24de535307f98a835eae2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::CommentRemover::CommentRemover</definition>
+        <argsstring>()</argsstring>
+        <name>CommentRemover</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/RemoveComments.h" line="66" column="5" bodyfile="include/assimp/RemoveComments.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_comment_remover_1a6c43b3571d2af5353985801c3cbf21cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::CommentRemover::RemoveLineComments</definition>
+        <argsstring>(const char *szComment, char *szBuffer, char chReplacement=&apos; &apos;)</argsstring>
+        <name>RemoveLineComments</name>
+        <param>
+          <type>const char *</type>
+          <declname>szComment</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szBuffer</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>chReplacement</declname>
+          <defval>&apos; &apos;</defval>
+        </param>
+        <briefdescription>
+<para>Remove single-line comments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The end of a line is expected to be either NL or CR or NLCR. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szComment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start sequence of the comment, e.g. &quot;//&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>szBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to work with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chReplacement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Character to be used as replacement for commented lines. By default this is &apos; &apos; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/RemoveComments.h" line="76" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_comment_remover_1a774b3a2ca208590a9575848e13c6e83e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::CommentRemover::RemoveMultiLineComments</definition>
+        <argsstring>(const char *szCommentStart, const char *szCommentEnd, char *szBuffer, char chReplacement=&apos; &apos;)</argsstring>
+        <name>RemoveMultiLineComments</name>
+        <param>
+          <type>const char *</type>
+          <declname>szCommentStart</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>szCommentEnd</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szBuffer</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>chReplacement</declname>
+          <defval>&apos; &apos;</defval>
+        </param>
+        <briefdescription>
+<para>Remove multi-line comments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The end of a line is expected to be either NL or CR or NLCR. Multi-line comments may not be nested (as in C). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szCommentStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start sequence of the comment, e.g. &quot;/*&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>szCommentEnd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The end sequence of the comment, e.g. &quot;*&amp;zwj;/&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>szBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to work with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chReplacement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Character to be used as replacement for commented lines. By default this is &apos; &apos; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/RemoveComments.h" line="87" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper class to remove single and multi line comments from a file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Some mesh formats like MD5 have comments that are quite similar to those in C or C++ so this code has been moved to a separate module. </para>
+    </detaileddescription>
+    <location file="include/assimp/RemoveComments.h" line="64" column="1" bodyfile="include/assimp/RemoveComments.h" bodystart="64" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_comment_remover_1a4f54fa4405a24de535307f98a835eae2" prot="private" virt="non-virtual"><scope>Assimp::CommentRemover</scope><name>CommentRemover</name></member>
+      <member refid="class_assimp_1_1_comment_remover_1a6c43b3571d2af5353985801c3cbf21cf" prot="public" virt="non-virtual"><scope>Assimp::CommentRemover</scope><name>RemoveLineComments</name></member>
+      <member refid="class_assimp_1_1_comment_remover_1a774b3a2ca208590a9575848e13c6e83e" prot="public" virt="non-virtual"><scope>Assimp::CommentRemover</scope><name>RemoveMultiLineComments</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

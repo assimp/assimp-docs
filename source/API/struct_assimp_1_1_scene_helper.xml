@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_assimp_1_1_scene_helper" kind="struct" language="C++" prot="public">
+    <compoundname>Assimp::SceneHelper</compoundname>
+    <includes local="no">SceneCombiner.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_assimp_1_1_scene_helper_1ad9ea0d3ab7f5634fdc2699efd1494fbb" prot="public" static="no" mutable="no">
+        <type>std::set&lt; unsigned int &gt;</type>
+        <definition>std::set&lt;unsigned int&gt; Assimp::SceneHelper::hashes</definition>
+        <argsstring></argsstring>
+        <name>hashes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="182" column="14" bodyfile="include/assimp/SceneCombiner.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_scene_helper_1a3ce2b197cc27b22619ce5096e037bd6c" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Assimp::SceneHelper::id[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="176" column="10" bodyfile="include/assimp/SceneCombiner.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_scene_helper_1a3853430382eab7d36d6dcee26e4ab883" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Assimp::SceneHelper::idlen</definition>
+        <argsstring></argsstring>
+        <name>idlen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="179" column="18" bodyfile="include/assimp/SceneCombiner.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_assimp_1_1_scene_helper_1a87029a59f6a08573bee6c80659f3a2e9" prot="public" static="no" mutable="no">
+        <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+        <definition>aiScene* Assimp::SceneHelper::scene</definition>
+        <argsstring></argsstring>
+        <name>scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="173" column="13" bodyfile="include/assimp/SceneCombiner.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_assimp_1_1_scene_helper_1ae2ebd7e3a0b634c9787f86adbc4cd6cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="defs_8h_1a61d239a320b58eca56bacc46fc2c79b8" kindref="member">AI_FORCE_INLINE</ref> <ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+        <definition>AI_FORCE_INLINE aiScene* Assimp::SceneHelper::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="168" column="29" bodyfile="include/assimp/SceneCombiner.h" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_assimp_1_1_scene_helper_1a583cb53e7766eb63f778af5db3b9fffb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SceneHelper::SceneHelper</definition>
+        <argsstring>()</argsstring>
+        <name>SceneHelper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="157" column="5" bodyfile="include/assimp/SceneCombiner.h" bodystart="157" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_assimp_1_1_scene_helper_1a494def1cee5aee3098275b04acad6aa3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::SceneHelper::SceneHelper</definition>
+        <argsstring>(aiScene *_scene)</argsstring>
+        <name>SceneHelper</name>
+        <param>
+          <type><ref refid="structai_scene" kindref="compound">aiScene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/SceneCombiner.h" line="163" column="14" bodyfile="include/assimp/SceneCombiner.h" bodystart="163" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Utility for <ref refid="class_assimp_1_1_scene_combiner" kindref="compound">SceneCombiner</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>aiAABB</label>
+        <link refid="structai_a_a_b_b"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mMax</edgelabel>
+          <edgelabel>mMin</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>aiNode</label>
+        <link refid="structai_node"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>mMetaData</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mChildren</edgelabel>
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mTransformation</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>aiMetadataEntry</label>
+        <link refid="structai_metadata_entry"/>
+      </node>
+      <node id="23">
+        <label>aiQuatKey</label>
+        <link refid="structai_quat_key"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>aiTexel</label>
+        <link refid="structai_texel"/>
+      </node>
+      <node id="22">
+        <label>aiNodeAnim</label>
+        <link refid="structai_node_anim"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>mRotationKeys</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>mPositionKeys</edgelabel>
+          <edgelabel>mScalingKeys</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mNodeName</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Assimp::SceneHelper</label>
+        <link refid="struct_assimp_1_1_scene_helper"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>aiMeshAnim</label>
+        <link refid="structai_mesh_anim"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>mKeys</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>aiMeshKey</label>
+        <link refid="structai_mesh_key"/>
+      </node>
+      <node id="16">
+        <label>aiMatrix4x4t&lt; TReal &gt;</label>
+        <link refid="classai_matrix4x4t"/>
+      </node>
+      <node id="12">
+        <label>aiVertexWeight</label>
+        <link refid="structai_vertex_weight"/>
+      </node>
+      <node id="2">
+        <label>aiScene</label>
+        <link refid="structai_scene"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mMaterials</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mMeshes</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>mMetaData</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mCameras</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mLights</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mAnimations</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mRootNode</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>mTextures</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>aiTexture</label>
+        <link refid="structai_texture"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mFilename</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>pcData</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>aiMeshMorphKey</label>
+        <link refid="structai_mesh_morph_key"/>
+      </node>
+      <node id="18">
+        <label>aiLight</label>
+        <link refid="structai_light"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mColorAmbient</edgelabel>
+          <edgelabel>mColorDiffuse</edgelabel>
+          <edgelabel>mColorSpecular</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mDirection</edgelabel>
+          <edgelabel>mPosition</edgelabel>
+          <edgelabel>mUp</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mSize</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>aiMetadata</label>
+        <link refid="structai_metadata"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mKeys</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mValues</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>aiBone</label>
+        <link refid="structai_bone"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mWeights</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mArmature</edgelabel>
+          <edgelabel>mNode</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mOffsetMatrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>aiVectorKey</label>
+        <link refid="structai_vector_key"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>aiMaterial</label>
+        <link refid="structai_material"/>
+      </node>
+      <node id="19">
+        <label>aiColor3D</label>
+        <link refid="structai_color3_d"/>
+      </node>
+      <node id="7">
+        <label>aiColor4t&lt; ai_real &gt;</label>
+        <link refid="classai_color4t"/>
+      </node>
+      <node id="24">
+        <label>aiQuaterniont&lt; TReal &gt;</label>
+        <link refid="classai_quaterniont"/>
+      </node>
+      <node id="5">
+        <label>aiMesh</label>
+        <link refid="structai_mesh"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mAnimMeshes</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mFaces</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mName</edgelabel>
+          <edgelabel>mTextureCoordsNames</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mColors</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mBitangents</edgelabel>
+          <edgelabel>mNormals</edgelabel>
+          <edgelabel>mTangents</edgelabel>
+          <edgelabel>mTextureCoords</edgelabel>
+          <edgelabel>mVertices</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mAABB</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mBones</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>aiString</label>
+        <link refid="structai_string"/>
+      </node>
+      <node id="28">
+        <label>aiMeshMorphAnim</label>
+        <link refid="structai_mesh_morph_anim"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>mKeys</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>aiAnimation</label>
+        <link refid="structai_animation"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mChannels</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mMeshChannels</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>mMorphMeshChannels</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>aiVector2t&lt; TReal &gt;</label>
+        <link refid="classai_vector2t"/>
+      </node>
+      <node id="17">
+        <label>aiCamera</label>
+        <link refid="structai_camera"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mLookAt</edgelabel>
+          <edgelabel>mPosition</edgelabel>
+          <edgelabel>mUp</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>aiVector3t&lt; TReal &gt;</label>
+        <link refid="classai_vector3t"/>
+      </node>
+      <node id="6">
+        <label>aiAnimMesh</label>
+        <link refid="structai_anim_mesh"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mName</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mColors</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mBitangents</edgelabel>
+          <edgelabel>mNormals</edgelabel>
+          <edgelabel>mTangents</edgelabel>
+          <edgelabel>mTextureCoords</edgelabel>
+          <edgelabel>mVertices</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>aiFace</label>
+        <link refid="structai_face"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/assimp/SceneCombiner.h" line="156" column="1" bodyfile="include/assimp/SceneCombiner.h" bodystart="156" bodyend="183"/>
+    <listofallmembers>
+      <member refid="struct_assimp_1_1_scene_helper_1ad9ea0d3ab7f5634fdc2699efd1494fbb" prot="public" virt="non-virtual"><scope>Assimp::SceneHelper</scope><name>hashes</name></member>
+      <member refid="struct_assimp_1_1_scene_helper_1a3ce2b197cc27b22619ce5096e037bd6c" prot="public" virt="non-virtual"><scope>Assimp::SceneHelper</scope><name>id</name></member>
+      <member refid="struct_assimp_1_1_scene_helper_1a3853430382eab7d36d6dcee26e4ab883" prot="public" virt="non-virtual"><scope>Assimp::SceneHelper</scope><name>idlen</name></member>
+      <member refid="struct_assimp_1_1_scene_helper_1ae2ebd7e3a0b634c9787f86adbc4cd6cb" prot="public" virt="non-virtual"><scope>Assimp::SceneHelper</scope><name>operator-&gt;</name></member>
+      <member refid="struct_assimp_1_1_scene_helper_1a87029a59f6a08573bee6c80659f3a2e9" prot="public" virt="non-virtual"><scope>Assimp::SceneHelper</scope><name>scene</name></member>
+      <member refid="struct_assimp_1_1_scene_helper_1a583cb53e7766eb63f778af5db3b9fffb" prot="public" virt="non-virtual"><scope>Assimp::SceneHelper</scope><name>SceneHelper</name></member>
+      <member refid="struct_assimp_1_1_scene_helper_1a494def1cee5aee3098275b04acad6aa3" prot="public" virt="non-virtual"><scope>Assimp::SceneHelper</scope><name>SceneHelper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

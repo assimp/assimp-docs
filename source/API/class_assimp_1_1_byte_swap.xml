@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_byte_swap" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::ByteSwap</compoundname>
+    <includes local="no">ByteSwapper.h</includes>
+    <innerclass refid="struct_assimp_1_1_byte_swap_1_1__swapper" prot="private">Assimp::ByteSwap::_swapper</innerclass>
+    <innerclass refid="struct_assimp_1_1_byte_swap_1_1__swapper_3_01_t_00_012_01_4" prot="public">Assimp::ByteSwap::_swapper&lt; T, 2 &gt;</innerclass>
+    <innerclass refid="struct_assimp_1_1_byte_swap_1_1__swapper_3_01_t_00_014_01_4" prot="public">Assimp::ByteSwap::_swapper&lt; T, 4 &gt;</innerclass>
+    <innerclass refid="struct_assimp_1_1_byte_swap_1_1__swapper_3_01_t_00_018_01_4" prot="public">Assimp::ByteSwap::_swapper&lt; T, 8 &gt;</innerclass>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1adb219a78bfe086b440d3fd25704b374e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assimp::ByteSwap::ByteSwap</definition>
+        <argsstring>() AI_NO_EXCEPT</argsstring>
+        <name>ByteSwap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="69" column="5" bodyfile="include/assimp/ByteSwapper.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1a388a44886b50f43198f575918bfe3c7f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::ByteSwap::Swap</definition>
+        <argsstring>(double *fOut)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type>double *</type>
+          <declname>fOut</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_assimp_1_1_byte_swap" kindref="compound">ByteSwap</ref> a double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Not a joke. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">fOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ehm. .. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="135" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="135" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1a6e60cdda6ebc1db17759106023f38270" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::ByteSwap::Swap</definition>
+        <argsstring>(float *fOut)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type>float *</type>
+          <declname>fOut</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_assimp_1_1_byte_swap" kindref="compound">ByteSwap</ref> a float. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Not a joke. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">fOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ehm. .. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="128" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1a3ea83a13aef538fa962eabd313ab3d3f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::ByteSwap::Swap</definition>
+        <argsstring>(int16_t *fOut)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>fOut</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_assimp_1_1_byte_swap" kindref="compound">ByteSwap</ref> an int16t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Not a joke. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">fOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ehm. .. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="143" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1ad29a3964bab3f260c8a9933e0d85ef10" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::ByteSwap::Swap</definition>
+        <argsstring>(int32_t *fOut)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>fOut</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_assimp_1_1_byte_swap" kindref="compound">ByteSwap</ref> an int32t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Not a joke. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">fOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ehm. .. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="154" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1a1532aae48d9c5d782ed52a6ca900e71b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::ByteSwap::Swap</definition>
+        <argsstring>(int64_t *fOut)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type>int64_t *</type>
+          <declname>fOut</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_assimp_1_1_byte_swap" kindref="compound">ByteSwap</ref> an int64t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Not a joke. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">fOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ehm. .. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="165" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1a1aef62ff32cb526202f493f8148b2fb5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::ByteSwap::Swap</definition>
+        <argsstring>(uint16_t *fOut)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>fOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="147" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1a80873669c59df2c0ba8dd38409786164" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::ByteSwap::Swap</definition>
+        <argsstring>(uint32_t *fOut)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type>uint32_t *</type>
+          <declname>fOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="158" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1ab4df852754e09255c4bf6cbd12a1b1a1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::ByteSwap::Swap</definition>
+        <argsstring>(uint64_t *fOut)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type>uint64_t *</type>
+          <declname>fOut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="169" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1abacbb767ce53adb84d19e6adae7d5b1d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::ByteSwap::Swap2</definition>
+        <argsstring>(void *_szOut)</argsstring>
+        <name>Swap2</name>
+        <param>
+          <type>void *</type>
+          <declname>_szOut</declname>
+        </param>
+        <briefdescription>
+<para>Swap two bytes of data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_szOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A void* to save the reintcasts for the caller. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="76" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="76" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1a6717939ed8be817f262515c3c1ae2d77" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::ByteSwap::Swap4</definition>
+        <argsstring>(void *_szOut)</argsstring>
+        <name>Swap4</name>
+        <param>
+          <type>void *</type>
+          <declname>_szOut</declname>
+        </param>
+        <briefdescription>
+<para>Swap four bytes of data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_szOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A void* to save the reintcasts for the caller. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="92" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="92" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1a2bc7200bc6ead695450266621ee114e3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Assimp::ByteSwap::Swap8</definition>
+        <argsstring>(void *_szOut)</argsstring>
+        <name>Swap8</name>
+        <param>
+          <type>void *</type>
+          <declname>_szOut</declname>
+        </param>
+        <briefdescription>
+<para>Swap eight bytes of data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_szOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A void* to save the reintcasts for the caller. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="109" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="109" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_byte_swap_1a9b627a52b5fa630c20fc5bb6a5cd455e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Type</type>
+          </param>
+        </templateparamlist>
+        <type>Type</type>
+        <definition>static Type Assimp::ByteSwap::Swapped</definition>
+        <argsstring>(Type tOut)</argsstring>
+        <name>Swapped</name>
+        <param>
+          <type>Type</type>
+          <declname>tOut</declname>
+        </param>
+        <briefdescription>
+<para>Templatized <ref refid="class_assimp_1_1_byte_swap" kindref="compound">ByteSwap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>param tOut as swapped </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/ByteSwapper.h" line="177" column="24" bodyfile="include/assimp/ByteSwapper.h" bodystart="177" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines some useful byte order swap routines. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is required to read big-endian model formats on little-endian machines, and vice versa. Direct use of this class is DEPRECATED. Use #StreamReader instead. </para>
+    </detaileddescription>
+    <location file="include/assimp/ByteSwapper.h" line="68" column="1" bodyfile="include/assimp/ByteSwapper.h" bodystart="68" bodyend="185"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_byte_swap_1adb219a78bfe086b440d3fd25704b374e" prot="private" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>ByteSwap</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1a6e60cdda6ebc1db17759106023f38270" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swap</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1a388a44886b50f43198f575918bfe3c7f" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swap</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1a3ea83a13aef538fa962eabd313ab3d3f" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swap</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1a1aef62ff32cb526202f493f8148b2fb5" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swap</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1ad29a3964bab3f260c8a9933e0d85ef10" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swap</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1a80873669c59df2c0ba8dd38409786164" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swap</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1a1532aae48d9c5d782ed52a6ca900e71b" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swap</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1ab4df852754e09255c4bf6cbd12a1b1a1" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swap</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1abacbb767ce53adb84d19e6adae7d5b1d" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swap2</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1a6717939ed8be817f262515c3c1ae2d77" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swap4</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1a2bc7200bc6ead695450266621ee114e3" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swap8</name></member>
+      <member refid="class_assimp_1_1_byte_swap_1a9b627a52b5fa630c20fc5bb6a5cd455e" prot="public" virt="non-virtual"><scope>Assimp::ByteSwap</scope><name>Swapped</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

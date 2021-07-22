@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_assimp_1_1_log_functions" kind="class" language="C++" prot="public">
+    <compoundname>Assimp::LogFunctions</compoundname>
+    <includes local="no">LogAux.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class TDeriving</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_log_functions_1aab00c04699f94932eb8561a0cd2382e4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void Assimp::LogFunctions&lt; TDeriving &gt;::LogDebug</definition>
+        <argsstring>(T &amp;&amp;... args)</argsstring>
+        <name>LogDebug</name>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LogAux.h" line="96" column="17" bodyfile="include/assimp/LogAux.h" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_log_functions_1a4f0f372bc912ff87a7340b29e2d9dec0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void Assimp::LogFunctions&lt; TDeriving &gt;::LogError</definition>
+        <argsstring>(T &amp;&amp;... args)</argsstring>
+        <name>LogError</name>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LogAux.h" line="80" column="17" bodyfile="include/assimp/LogAux.h" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_log_functions_1ab66b363e82aade628aff56e7a05854c4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void Assimp::LogFunctions&lt; TDeriving &gt;::LogInfo</definition>
+        <argsstring>(T &amp;&amp;... args)</argsstring>
+        <name>LogInfo</name>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LogAux.h" line="88" column="17" bodyfile="include/assimp/LogAux.h" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_log_functions_1a952b0df256d133fb4bf6ebfa6bc3203b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void Assimp::LogFunctions&lt; TDeriving &gt;::LogVerboseDebug</definition>
+        <argsstring>(T &amp;&amp;... args)</argsstring>
+        <name>LogVerboseDebug</name>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LogAux.h" line="104" column="17" bodyfile="include/assimp/LogAux.h" bodystart="104" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_log_functions_1a077d37ba3a8303542248cccff3b3d332" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void Assimp::LogFunctions&lt; TDeriving &gt;::LogWarn</definition>
+        <argsstring>(T &amp;&amp;... args)</argsstring>
+        <name>LogWarn</name>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LogAux.h" line="72" column="17" bodyfile="include/assimp/LogAux.h" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assimp_1_1_log_functions_1a152406e61f24c27bd2c20ecb4b3cf143" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void Assimp::LogFunctions&lt; TDeriving &gt;::ThrowException</definition>
+        <argsstring>(T &amp;&amp;... args)</argsstring>
+        <name>ThrowException</name>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LogAux.h" line="65" column="17" bodyfile="include/assimp/LogAux.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_assimp_1_1_log_functions_1ae9034e17bae57cfd200c6d863a1c7db6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* Assimp::LogFunctions&lt; TDeriving &gt;::Prefix</definition>
+        <argsstring>()</argsstring>
+        <name>Prefix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/LogAux.h" line="111" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/LogAux.h" line="61" column="1" bodyfile="include/assimp/LogAux.h" bodystart="61" bodyend="113"/>
+    <listofallmembers>
+      <member refid="class_assimp_1_1_log_functions_1aab00c04699f94932eb8561a0cd2382e4" prot="public" virt="non-virtual"><scope>Assimp::LogFunctions</scope><name>LogDebug</name></member>
+      <member refid="class_assimp_1_1_log_functions_1a4f0f372bc912ff87a7340b29e2d9dec0" prot="public" virt="non-virtual"><scope>Assimp::LogFunctions</scope><name>LogError</name></member>
+      <member refid="class_assimp_1_1_log_functions_1ab66b363e82aade628aff56e7a05854c4" prot="public" virt="non-virtual"><scope>Assimp::LogFunctions</scope><name>LogInfo</name></member>
+      <member refid="class_assimp_1_1_log_functions_1a952b0df256d133fb4bf6ebfa6bc3203b" prot="public" virt="non-virtual"><scope>Assimp::LogFunctions</scope><name>LogVerboseDebug</name></member>
+      <member refid="class_assimp_1_1_log_functions_1a077d37ba3a8303542248cccff3b3d332" prot="public" virt="non-virtual"><scope>Assimp::LogFunctions</scope><name>LogWarn</name></member>
+      <member refid="class_assimp_1_1_log_functions_1ae9034e17bae57cfd200c6d863a1c7db6" prot="private" virt="non-virtual"><scope>Assimp::LogFunctions</scope><name>Prefix</name></member>
+      <member refid="class_assimp_1_1_log_functions_1a152406e61f24c27bd2c20ecb4b3cf143" prot="public" virt="non-virtual"><scope>Assimp::LogFunctions</scope><name>ThrowException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

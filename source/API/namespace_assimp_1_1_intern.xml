@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_assimp_1_1_intern" kind="namespace" language="C++">
+    <compoundname>Assimp::Intern</compoundname>
+    <innerclass refid="struct_assimp_1_1_intern_1_1_byte_swapper" prot="public">Assimp::Intern::ByteSwapper</innerclass>
+    <innerclass refid="struct_assimp_1_1_intern_1_1_byte_swapper_3_01_t_00_01false_01_4" prot="public">Assimp::Intern::ByteSwapper&lt; T, false &gt;</innerclass>
+    <innerclass refid="struct_assimp_1_1_intern_1_1divides" prot="public">Assimp::Intern::divides</innerclass>
+    <innerclass refid="struct_assimp_1_1_intern_1_1_getter" prot="public">Assimp::Intern::Getter</innerclass>
+    <innerclass refid="struct_assimp_1_1_intern_1_1_getter_3_01_swap_endianess_00_01_t_00_01false_01_4" prot="public">Assimp::Intern::Getter&lt; SwapEndianess, T, false &gt;</innerclass>
+    <innerclass refid="struct_assimp_1_1_intern_1_1minus" prot="public">Assimp::Intern::minus</innerclass>
+    <innerclass refid="struct_assimp_1_1_intern_1_1multiplies" prot="public">Assimp::Intern::multiplies</innerclass>
+    <innerclass refid="struct_assimp_1_1_intern_1_1plus" prot="public">Assimp::Intern::plus</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/ByteSwapper.h" line="249" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="union___i_e_e_e_double" kind="union" language="C++" prot="public">
     <compoundname>_IEEEDouble</compoundname>
     <includes local="no">qnan.h</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/qnan.h" line="83" column="1" bodyfile="include/assimp/qnan.h" bodystart="83" bodyend="-1"/>
+        <location file="include/assimp/qnan.h" line="83" column="12" bodyfile="include/assimp/qnan.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="union___i_e_e_e_double_1a64ddbe7950921cfb931e07b8e46fc13b" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/qnan.h" line="87" column="1" bodyfile="include/assimp/qnan.h" bodystart="87" bodyend="-1"/>
+        <location file="include/assimp/qnan.h" line="87" column="18" bodyfile="include/assimp/qnan.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="union___i_e_e_e_double_1a7ebfdf18ddf00a59e4d1c2258741dfa7" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
@@ -43,11 +43,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/qnan.h" line="86" column="1" bodyfile="include/assimp/qnan.h" bodystart="86" bodyend="-1"/>
+        <location file="include/assimp/qnan.h" line="86" column="18" bodyfile="include/assimp/qnan.h" bodystart="86" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="union___i_e_e_e_double_1ab18832cb39643b889bbd26f80115d038" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="union___i_e_e_e_double_1a1a09927bca7f7d213294ba5ccdcb1f7b" prot="public" static="no" mutable="no">
         <type>struct _IEEEDouble::@1</type>
-        <definition>struct _IEEEDouble::@1  _IEEEDouble::IEEE</definition>
+        <definition>struct _IEEEDouble::@1 _IEEEDouble::IEEE</definition>
         <argsstring></argsstring>
         <name>IEEE</name>
         <briefdescription>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/qnan.h" line="89" column="1"/>
+        <location file="include/assimp/qnan.h" line="89" column="10"/>
       </memberdef>
       <memberdef kind="variable" id="union___i_e_e_e_double_1ae9e25b85a3d7bf29f13cdf5fd3bc478f" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
@@ -70,11 +70,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/qnan.h" line="88" column="1" bodyfile="include/assimp/qnan.h" bodystart="88" bodyend="-1"/>
+        <location file="include/assimp/qnan.h" line="88" column="18" bodyfile="include/assimp/qnan.h" bodystart="88" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Data structure to represent the bit pattern of a 64 Bit IEEE 754 floating-point number. </para>    </briefdescription>
+<para>Data structure to represent the bit pattern of a 64 Bit IEEE 754 floating-point number. </para>
+    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <location file="include/assimp/qnan.h" line="82" column="1" bodyfile="include/assimp/qnan.h" bodystart="82" bodyend="90"/>
@@ -82,7 +83,7 @@
       <member refid="union___i_e_e_e_double_1a27117ca968c03c76473d67288a285488" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>Double</name></member>
       <member refid="union___i_e_e_e_double_1a64ddbe7950921cfb931e07b8e46fc13b" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>Exp</name></member>
       <member refid="union___i_e_e_e_double_1a7ebfdf18ddf00a59e4d1c2258741dfa7" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>Frac</name></member>
-      <member refid="union___i_e_e_e_double_1ab18832cb39643b889bbd26f80115d038" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>IEEE</name></member>
+      <member refid="union___i_e_e_e_double_1a1a09927bca7f7d213294ba5ccdcb1f7b" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>IEEE</name></member>
       <member refid="union___i_e_e_e_double_1ae9e25b85a3d7bf29f13cdf5fd3bc478f" prot="public" virt="non-virtual"><scope>_IEEEDouble</scope><name>Sign</name></member>
     </listofallmembers>
   </compounddef>

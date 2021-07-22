@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structai_string" kind="struct" language="C++" prot="public">
     <compoundname>aiString</compoundname>
     <includes local="no">types.h</includes>
@@ -10,12 +10,14 @@
         <argsstring>[MAXLEN]</argsstring>
         <name>data</name>
         <briefdescription>
-<para>String buffer. </para>        </briefdescription>
+<para>String buffer. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Size limit is MAXLEN </para>        </detaileddescription>
+<para>Size limit is MAXLEN </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="393" column="1" bodyfile="include/assimp/types.h" bodystart="393" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="393" column="10" bodyfile="include/assimp/types.h" bodystart="393" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structai_string_1aed051e2996a96ca3a53e069f9b93da0c" prot="public" static="no" mutable="no">
         <type><ref refid="types_8h_1a62b54a3ae3ae350c86fe848e22cb5b0a" kindref="member">ai_uint32</ref></type>
@@ -23,12 +25,14 @@
         <argsstring></argsstring>
         <name>length</name>
         <briefdescription>
-<para>Binary length of the string excluding the terminal 0. </para>        </briefdescription>
+<para>Binary length of the string excluding the terminal 0. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This is NOT the logical length of strings containing UTF-8 multi-byte sequences! It&apos;s the number of bytes from the beginning of the string to its end. </para>        </detaileddescription>
+<para>This is NOT the logical length of strings containing UTF-8 multi-byte sequences! It&apos;s the number of bytes from the beginning of the string to its end. </para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="390" column="1" bodyfile="include/assimp/types.h" bodystart="390" bodyend="-1"/>
+        <location file="include/assimp/types.h" line="390" column="15" bodyfile="include/assimp/types.h" bodystart="390" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -38,12 +42,13 @@
         <argsstring>() AI_NO_EXCEPT</argsstring>
         <name>aiString</name>
         <briefdescription>
-<para>Default constructor, the string is set to have zero length. </para>        </briefdescription>
+<para>Default constructor, the string is set to have zero length. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="269" column="1" bodyfile="include/assimp/types.h" bodystart="269" bodyend="277"/>
+        <location file="include/assimp/types.h" line="269" column="5" bodyfile="include/assimp/types.h" bodystart="269" bodyend="277"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1a7b202e9e72e65099a6df0de7bc879163" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -55,12 +60,13 @@
           <declname>rOther</declname>
         </param>
         <briefdescription>
-<para>Copy constructor. </para>        </briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="280" column="1" bodyfile="include/assimp/types.h" bodystart="280" bodyend="286"/>
+        <location file="include/assimp/types.h" line="280" column="5" bodyfile="include/assimp/types.h" bodystart="280" bodyend="286"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1ad977e1aea2f681e47e45e8a81c63c4a2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -72,12 +78,13 @@
           <declname>pString</declname>
         </param>
         <briefdescription>
-<para>Constructor from std::string. </para>        </briefdescription>
+<para>Constructor from std::string. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="289" column="1" bodyfile="include/assimp/types.h" bodystart="289" bodyend="294"/>
+        <location file="include/assimp/types.h" line="289" column="14" bodyfile="include/assimp/types.h" bodystart="289" bodyend="294"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1a9ed045854a503b2e414ee7c756e39a6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -89,12 +96,13 @@
           <declname>app</declname>
         </param>
         <briefdescription>
-<para>Append a string to the string. </para>        </briefdescription>
+<para>Append a string to the string. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="356" column="1" bodyfile="include/assimp/types.h" bodystart="356" bodyend="367"/>
+        <location file="include/assimp/types.h" line="356" column="10" bodyfile="include/assimp/types.h" bodystart="356" bodyend="367"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1a9cf5865516f6cb96df25c833d3fdfef0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const char *</type>
@@ -102,12 +110,13 @@
         <argsstring>() const</argsstring>
         <name>C_Str</name>
         <briefdescription>
-<para>Returns a pointer to the underlying zero-terminated array of characters. </para>        </briefdescription>
+<para>Returns a pointer to the underlying zero-terminated array of characters. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="381" column="1" bodyfile="include/assimp/types.h" bodystart="381" bodyend="383"/>
+        <location file="include/assimp/types.h" line="381" column="16" bodyfile="include/assimp/types.h" bodystart="381" bodyend="383"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1aa51cd987f420804340c75fd929b25b4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -115,12 +124,13 @@
         <argsstring>()</argsstring>
         <name>Clear</name>
         <briefdescription>
-<para>Clear the string - reset its length to zero. </para>        </briefdescription>
+<para>Clear the string - reset its length to zero. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="370" column="1" bodyfile="include/assimp/types.h" bodystart="370" bodyend="378"/>
+        <location file="include/assimp/types.h" line="370" column="10" bodyfile="include/assimp/types.h" bodystart="370" bodyend="378"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1a292dadc0d6e2e0577925fa625c0e5558" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -132,12 +142,13 @@
           <declname>other</declname>
         </param>
         <briefdescription>
-<para>Inverse comparison operator. </para>        </briefdescription>
+<para>Inverse comparison operator. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="351" column="1" bodyfile="include/assimp/types.h" bodystart="351" bodyend="353"/>
+        <location file="include/assimp/types.h" line="351" column="10" bodyfile="include/assimp/types.h" bodystart="351" bodyend="353"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1afd3945aafa4bb32101cce6a9024c65b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
@@ -149,12 +160,13 @@
           <declname>rOther</declname>
         </param>
         <briefdescription>
-<para>Assignment operator. </para>        </briefdescription>
+<para>Assignment operator. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="318" column="1" bodyfile="include/assimp/types.h" bodystart="318" bodyend="331"/>
+        <location file="include/assimp/types.h" line="318" column="14" bodyfile="include/assimp/types.h" bodystart="318" bodyend="331"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1a1da831142e75271700267742677be0ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
@@ -166,12 +178,13 @@
           <declname>sz</declname>
         </param>
         <briefdescription>
-<para>Assign a const char* to the string. </para>        </briefdescription>
+<para>Assign a const char* to the string. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="334" column="1" bodyfile="include/assimp/types.h" bodystart="334" bodyend="337"/>
+        <location file="include/assimp/types.h" line="334" column="14" bodyfile="include/assimp/types.h" bodystart="334" bodyend="337"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1a0aca35abc50bf79952cd729d35d9dd4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structai_string" kindref="compound">aiString</ref> &amp;</type>
@@ -183,12 +196,13 @@
           <declname>pString</declname>
         </param>
         <briefdescription>
-<para>Assign a cstd::string to the string. </para>        </briefdescription>
+<para>Assign a cstd::string to the string. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="340" column="1" bodyfile="include/assimp/types.h" bodystart="340" bodyend="343"/>
+        <location file="include/assimp/types.h" line="340" column="14" bodyfile="include/assimp/types.h" bodystart="340" bodyend="343"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1ad4f052a18a0ee4e7fab8a254c009b969" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -200,29 +214,13 @@
           <declname>other</declname>
         </param>
         <briefdescription>
-<para>Comparison operator. </para>        </briefdescription>
+<para>Comparison operator. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="346" column="1" bodyfile="include/assimp/types.h" bodystart="346" bodyend="348"/>
-      </memberdef>
-      <memberdef kind="function" id="structai_string_1aea4f745fc87cc28175dbc3b7e33411f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void aiString::Set</definition>
-        <argsstring>(const std::string &amp;pString)</argsstring>
-        <name>Set</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>pString</declname>
-        </param>
-        <briefdescription>
-<para>Copy a std::string to the <ref refid="structai_string" kindref="compound">aiString</ref>. </para>        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/assimp/types.h" line="297" column="1" bodyfile="include/assimp/types.h" bodystart="297" bodyend="304"/>
+        <location file="include/assimp/types.h" line="346" column="10" bodyfile="include/assimp/types.h" bodystart="346" bodyend="348"/>
       </memberdef>
       <memberdef kind="function" id="structai_string_1a3149bea05889488dd2664b50be364a05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -234,18 +232,42 @@
           <declname>sz</declname>
         </param>
         <briefdescription>
-<para>Copy a const char* to the <ref refid="structai_string" kindref="compound">aiString</ref>. </para>        </briefdescription>
+<para>Copy a const char* to the <ref refid="structai_string" kindref="compound">aiString</ref>. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/assimp/types.h" line="307" column="1" bodyfile="include/assimp/types.h" bodystart="307" bodyend="315"/>
+        <location file="include/assimp/types.h" line="307" column="10" bodyfile="include/assimp/types.h" bodystart="307" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="structai_string_1aea4f745fc87cc28175dbc3b7e33411f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void aiString::Set</definition>
+        <argsstring>(const std::string &amp;pString)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pString</declname>
+        </param>
+        <briefdescription>
+<para>Copy a std::string to the <ref refid="structai_string" kindref="compound">aiString</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/types.h" line="297" column="10" bodyfile="include/assimp/types.h" bodystart="297" bodyend="304"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Represents an UTF-8 string, zero byte terminated. </para>    </briefdescription>
+<para>Represents an UTF-8 string, zero byte terminated. </para>
+    </briefdescription>
     <detaileddescription>
-<para>The character set of an <ref refid="structai_string" kindref="compound">aiString</ref> is explicitly defined to be UTF-8. This Unicode transformation was chosen in the belief that most strings in 3d files are limited to ASCII, thus the character set needed to be strictly ASCII compatible.</para><para>Most text file loaders provide proper Unicode input file handling, special unicode characters are correctly transcoded to UTF8 and are kept throughout the libraries&apos; import pipeline.</para><para>For most applications, it will be absolutely sufficient to interpret the <ref refid="structai_string" kindref="compound">aiString</ref> as ASCII data and work with it as one would work with a plain char*. Windows users in need of proper support for i.e asian characters can use the MultiByteToWideChar(), WideCharToMultiByte() WinAPI functionality to convert the UTF-8 strings to their working character set (i.e. MBCS, WideChar).</para><para>We use this representation instead of std::string to be C-compatible. The (binary) length of such a string is limited to MAXLEN characters (including the the terminating zero). </para>    </detaileddescription>
+<para>The character set of an <ref refid="structai_string" kindref="compound">aiString</ref> is explicitly defined to be UTF-8. This Unicode transformation was chosen in the belief that most strings in 3d files are limited to ASCII, thus the character set needed to be strictly ASCII compatible.</para>
+<para>Most text file loaders provide proper Unicode input file handling, special unicode characters are correctly transcoded to UTF8 and are kept throughout the libraries&apos; import pipeline.</para>
+<para>For most applications, it will be absolutely sufficient to interpret the <ref refid="structai_string" kindref="compound">aiString</ref> as ASCII data and work with it as one would work with a plain char*. Windows users in need of proper support for i.e asian characters can use the MultiByteToWideChar(), WideCharToMultiByte() WinAPI functionality to convert the UTF-8 strings to their working character set (i.e. MBCS, WideChar).</para>
+<para>We use this representation instead of std::string to be C-compatible. The (binary) length of such a string is limited to MAXLEN characters (including the the terminating zero). </para>
+    </detaileddescription>
     <location file="include/assimp/types.h" line="266" column="1" bodyfile="include/assimp/types.h" bodystart="266" bodyend="394"/>
     <listofallmembers>
       <member refid="structai_string_1a05c8eff36c3868199a7263b6d6b39b47" prot="public" virt="non-virtual"><scope>aiString</scope><name>aiString</name></member>

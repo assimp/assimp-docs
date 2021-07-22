@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_exception_swallower_3_01_t_01_5_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>ExceptionSwallower&lt; T * &gt;</compoundname>
+    <includes local="no">Exceptional.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_exception_swallower_3_01_t_01_5_01_4_1a7e67713c3796f0234e01936b83f23088" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* ExceptionSwallower&lt; T * &gt;::operator()</definition>
+        <argsstring>() const</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/assimp/Exceptional.h" line="114" column="7" bodyfile="include/assimp/Exceptional.h" bodystart="114" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/assimp/Exceptional.h" line="113" column="1" bodyfile="include/assimp/Exceptional.h" bodystart="113" bodyend="117"/>
+    <listofallmembers>
+      <member refid="struct_exception_swallower_3_01_t_01_5_01_4_1a7e67713c3796f0234e01936b83f23088" prot="public" virt="non-virtual"><scope>ExceptionSwallower&lt; T * &gt;</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
