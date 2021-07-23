@@ -83,6 +83,15 @@ Import/Export API
 .. doxygenclass:: Assimp::BaseImporter
       :members:
 
+.. doxygenclass:: Assimp::Importer
+      :members:
+
+.. doxygenclass:: Assimp::Exporter
+      :members:
+
+      
+      
+
 
       
 
