@@ -38,6 +38,11 @@ Common Datatypes
 .. doxygenstruct:: aiMetadata
       :members:
 
+.. doxygenstruct:: aiTexture
+      :members:
+
+.. doxygenclass:: Assimp::SmallVector
+      :members:
 
 Scene Datatypes
 ---------------
@@ -76,6 +81,55 @@ Animation Datatypes
 .. doxygenstruct:: aiNodeAnim
       :members:
 
+Logging API
+-----------
+
+.. doxygenclass:: Assimp::Logger
+      :members:
+
+.. doxygenclass:: Assimp::LogStream
+      :members:
+
+.. doxygenclass:: Assimp::DefaultLogger
+      :members:
+
+.. doxygenclass:: Assimp::NullLogger
+      :members:
+
+
+IO-System API
+-------------
+
+.. doxygenclass:: Assimp::IOSystem
+      :members:
+
+.. doxygenclass:: Assimp::IOStream
+      :members:
+
+.. doxygenclass:: Assimp::IOStreamBuffer
+      :members:
+
+.. doxygenclass:: Assimp::MemoryIOStream
+      :members:
+
+.. doxygenclass:: Assimp::DefaultIOSystem
+      :members:
+
+.. doxygenclass:: Assimp::DefaultIOStream
+      :members:
+
+.. doxygenclass:: Assimp::MemoryIOSystem
+      :members:
+
+.. doxygenclass:: Assimp::MemoryIOStream
+      :members:
+
+.. doxygenclass:: Assimp::BlobIOStream
+      :members:
+
+.. doxygenclass:: Assimp::BlobIOSystem
+      :members:
+
 
 Import/Export API
 -----------------
@@ -90,9 +144,8 @@ Import/Export API
       :members:
 
       
-      
+Parsing API
+-----------
 
-
-      
-
- 
+.. doxygenclass:: Assimp::TXmlParser
+      :members:
