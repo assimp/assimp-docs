@@ -41,8 +41,12 @@ Common Datatypes
 .. doxygenstruct:: aiTexture
       :members:
 
+.. doxygenstruct:: aiAABB
+      :members:
+
 .. doxygenclass:: Assimp::SmallVector
       :members:
+
 
 Scene Datatypes
 ---------------
@@ -80,6 +84,22 @@ Animation Datatypes
 
 .. doxygenstruct:: aiNodeAnim
       :members:
+
+.. doxygenstruct:: aiMeshKey
+      :members:
+
+.. doxygenstruct:: aiBone
+      :members:
+      
+Exceptions
+----------
+
+.. doxygenclass:: DeadlyImportError
+      :members:
+
+.. doxygenclass:: DeadlyExportError
+      :members:
+
 
 Logging API
 -----------
