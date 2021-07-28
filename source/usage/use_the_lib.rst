@@ -333,7 +333,7 @@ Introduction
 The assimp library returns the imported data in a collection of structures. aiScene forms the root
 of the data, from here you gain access to all the nodes, meshes, materials, animations or textures
 that were read from the imported file. The aiScene is returned from a successful call to
-assimp::Importer::ReadFile(), aiImportFile() or aiImportFileEx() - see the @link usage Usage page @endlink
+Assimp::Importer::ReadFile(), aiImportFile() or aiImportFileEx() - see the @link usage Usage page @endlink
 for further information on how to use the library.
 
 By default, all 3D data is provided in a right-handed coordinate system such as OpenGL uses. In
@@ -1079,8 +1079,8 @@ Transformations
 ---------------
 
  This diagram shows how you can calculate your transformationmatrices for an animated character:
- <img src="AnimationOverview.png" />
-
+ .. image:: ../images/AnimationOverview.png
+ 
 
 .. _ai_perf:
 
