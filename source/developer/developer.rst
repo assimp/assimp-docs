@@ -1,15 +1,11 @@
 .. image:: http://assimp.org/images/splash.png
 
 .. _developer_guide:
+.. _ai_extend:
 
 ===================
 The Developer Guide
 ===================
-
-.. _ai_extend:
-
-Extending the Library
----------------------
 
 .. _ai_general:
 
