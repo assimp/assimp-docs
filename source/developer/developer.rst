@@ -9,8 +9,8 @@ The Developer Guide
 
 .. _ai_general:
 
-General
--------
+Write your own importer
+-----------------------
 
 In this chapter you will learn how to write your own importers. You just need to implement the #Assimp::BaseImporter class,
 which defines a few abstract methods, register your loader, test it carefully and provide test models for it.
@@ -74,6 +74,12 @@ Wrap the same guard around your .cpp!
 * Provide some _free_ test models in <root>/test/models/<FormatName> and credit their authors.
   Test files for a file format shouldn't be too large (*~500 KiB in total*), and not too repetive. Try to cover all format features with test data.
 * Done! Please, share your loader that everyone can profit from it!
+
+Write your own exporter
+-----------------------
+
+ToDo!
+
 
 Parser tools
 ------------
