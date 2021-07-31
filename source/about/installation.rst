@@ -2,8 +2,9 @@
 
 .. _ai_main_install:
 
+************
 Installation
-------------
+************
 
 The Assimp-Lib can be used in two ways:
 
