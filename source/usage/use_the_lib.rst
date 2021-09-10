@@ -47,7 +47,7 @@ results and then simply let it go out of scope.
         aiProcess_SortByPType);
 
       // If the import failed, report it
-      if( !scene) {
+      if (nullptr != scene) {
         DoTheErrorLogging( importer.GetErrorString());
         return false;
       }
@@ -1246,7 +1246,7 @@ Blender
 
 This section contains implementation notes for the Blender3D importer.
 
-.. _aibl_overview:
+.. _ai_bl_overview:
 
 Overview
 --------
@@ -1269,7 +1269,7 @@ The Blender loader does not support animations yet, but is apart from that consi
 
 When filing bugs on the Blender loader, always give the Blender version (or, even better, post the file caused the error).
 
-.. _ai_ifc:
+.. _ai_ifc_overview:
 
 IFC
 ---
