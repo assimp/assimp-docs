@@ -1,4 +1,4 @@
-.. image:: https://assimp.org/images/splash.png
+.. image:: https://github.com/assimp/assimp-web/blob/master/images/splash-color.png
 
 .. _ai_main_install:
 
