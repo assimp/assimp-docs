@@ -6,7 +6,7 @@
 Installation
 ************
 
-The Assimp-Lib can be used in two ways:
+The Asset-Importer-Library can be used in your applications by two ways:
 
 * Using it by installing pre-built libraries 
 * Integrate the library into your project via cmake.
