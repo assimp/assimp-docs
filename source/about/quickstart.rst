@@ -101,12 +101,12 @@ The Assimp-package can be built as DLL. You just need to run the default cmake r
 Assimp static lib
 -----------------
 
-The Assimp-package can be build as a static library as well. Do do so just set the configuration variable **BUILD_SHARED_LIBS**
+The Assimp-package can be build as a static library as well. To do so just set the configuration variable **BUILD_SHARED_LIBS**
 to off during the cmake run. For example:
 
 ::
 
-    cmake CMakeLists.txt -G "Ninja" -BUILD_SHARED_LIBS=ON
+    cmake CMakeLists.txt -G "Ninja" -BUILD_SHARED_LIBS=OFF
 
 will generate a static library buid by Ninja.
 
