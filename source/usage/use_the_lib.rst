@@ -97,7 +97,7 @@ imported scene to clean up all resources associated with the import.
         aiProcess_SortByPType);
 
       // If the import failed, report it
-      if( NULL != scene) {
+      if( NULL == scene) {
         DoTheErrorLogging( aiGetErrorString());
         return false;
       }
