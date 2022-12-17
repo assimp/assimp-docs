@@ -1178,10 +1178,12 @@ postprocessing steps. A wise selection of postprocessing steps is therefore esse
 Of course this depends on the individual requirements of your application, in many of the typical use cases of assimp performance won't
 matter (i.e. in an offline content pipeline).
 
-.._ai_threading:
+.. _ai_threading:
 
 Threading
 ---------
+YOu can use the Asset-Importer-Library in a separate thread context. Just make sure that the resources used by the thread are not shared. 
+At this momment, assimp will not make sure that it is safe over different thread contexts.
 
 .. _ai_overview:
 
