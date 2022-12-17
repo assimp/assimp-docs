@@ -20,6 +20,7 @@ Usage
 
 When you're done integrating the library into your IDE/project, you can now start using it. There are two separate
 interfaces by which you can access the library: 
+
 * A C++ interface 
 * A C interface using flat functions. 
 
