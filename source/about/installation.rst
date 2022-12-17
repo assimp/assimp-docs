@@ -19,7 +19,9 @@ Usage
 -----
 
 When you're done integrating the library into your IDE/project, you can now start using it. There are two separate
-interfaces by which you can access the library: a C++ interface and a C interface using flat functions. While the former
-is easier to handle, the latter also forms a point where other programming languages can connect to. Up to the moment, though,
-there are no bindings for any other language provided. Have a look at the :ref:`Use the library-Section <_ai_access_cpp>`_ for a detailed
-explanation and code examples.
+interfaces by which you can access the library: 
+* A C++ interface 
+* A C interface using flat functions. 
+
+The C++-API supports a RTTI-based approach. If you want to work with c++ using these interface is strongy recommended.
+The C-API shall help to generate any language binding more easily.
