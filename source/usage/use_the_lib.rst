@@ -46,7 +46,7 @@ results and then simply let it go out of scope.
         aiProcess_SortByPType);
 
       // If the import failed, report it
-      if (nullptr != scene) {
+      if (nullptr == scene) {
         DoTheErrorLogging( importer.GetErrorString());
         return false;
       }
