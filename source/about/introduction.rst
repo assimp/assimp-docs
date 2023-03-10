@@ -4,17 +4,17 @@
 Introduction
 ------------
 
-The Asset-Importer-Lib (in short assimp) is a library to load and process geometric scenes from various 3D-Dataformats. It 
+The Asset-Importer-Lib (in short assimp) is a library to load and process geometric scenes from various 3D-data formats. It 
 is mostly tailored at typical game scenarios by supporting a node hierarchy, static or skinned meshes, materials, bone animations 
 and potential texture data. But also some 3D-printing- and CAD-format are supported.
-The library is *not* designed for speed, it is primarily useful for importing assets from various 
-sources once and storing it in a engine-specific format for easy and fast every-day-loading. assimp is also able to apply 
-various post processing steps to the imported data such as conversion to indexed meshes, calculation of normals or 
-tangents/bitangents or conversion from right-handed to left-handed coordinate systems.
+It is primarily useful for importing assets from various sources once and storing it in a intermediate format for easy and fast 
+every-day-loading. The Asset-Importer-Lib is also able to apply various post processing steps to the imported like:
 
-The Assimp-Lib currently supports the following file formats (note that some loaders lack some features of their formats because
-some file formats contain data not supported by assimp, some stuff would require so much conversion work
-that it has not been implemented yet and some (most ...) formats lack proper specifications):
+* Model Validation
+* Pretransforming
+* Bounding-Box generation and more
+
+The Assimp-Lib currently supports the following file formats:
 
 * **3D Manufacturing Format** (.3mf)
 * **Collada** (.dae, .xml)
