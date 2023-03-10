@@ -34,6 +34,7 @@ The Assimp-Lib currently supports the following file formats:
 * **Stanford Polygon Library** (.ply)
 * **AutoCAD DXF** (.dxf)
 * **IFC-STEP** (.ifc)
+* **IQM-Format** (.iqm)
 * **Neutral File Format** (.nff)
 * **Sense8 WorldToolkit** (.nff)
 * **Valve Model** (.smd, .vta)
