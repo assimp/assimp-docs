@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: https://github.com/assimp/assimp-web/blob/master/images/splash-color.png
+.. image:: https://www.assimp.org/common/images/splash-color.png
 
 The Asset-Importer-Lib Documentation
 =====================================
