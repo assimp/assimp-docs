@@ -1,4 +1,4 @@
-.. image:: https://assimp.org/images/splash.png
+.. image:: https://www.assimp.org/common/images/splash-color.png
 
 
 =====================
