@@ -63,14 +63,15 @@ Wrap the same guard around your .cpp!
             return false;
         }
             
-        void InternReadFile()       {}
-        
+        void InternReadFile() {
+            // Add your code here
+        }
     };
 
 ::
 
 * Make sure that your loader compiles against all build configurations on all supported platforms. You can use our CI-build to check several platforms 
-  like Windows and Linux ( 32 bit and 64 bit ).
+  like Windows and Linux (32 bit and 64 bit).
 * Provide some _free_ test models in <root>/test/models/<FormatName> and credit their authors.
   Test files for a file format shouldn't be too large (*~500 KiB in total*), and not too repetive. Try to cover all format features with test data.
 * Done! Please, share your loader that everyone can profit from it!
