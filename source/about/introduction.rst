@@ -78,7 +78,7 @@ with game engines and a C-based interface to allow bindings to other programming
 runs on any little-endian platform including **X86/Windows/Linux/Mac** and **X64/Windows/Linux/Mac**. Special attention
 was paid to keep the library as free as possible from dependencies.
 
-Big-endian systems like PPC-based Macs ( if you still have one) or PPC-Linux systems are supported as well.
+Big-endian systems like PPC-based Macs (if you still have one) or PPC-Linux systems are supported as well.
 
 The assimp linker library and viewer application are provided under the BSD 3-clause license. This basically means
 that you are free to use it in open- or closed-source projects, for commercial or non-commercial purposes as you like
