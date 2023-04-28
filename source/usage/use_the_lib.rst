@@ -72,10 +72,10 @@ Access by plain-c function interface
 ------------------------------------
 
 The plain function interface is just as simple, but requires you to manually call the clean-up
-after you're done with the imported data. To start the import process, call aiImportFile()
+after you're done with the imported data. To start the import process, call **aiImportFile()**
 with the filename in question and the desired postprocessing flags like above. If the call
 is successful, an aiScene pointer with the imported data is handed back to you. When you're
-done with the extraction of the data you're interested in, call aiReleaseImport() on the
+done with the extraction of the data you're interested in, call **aiReleaseImport()** on the
 imported scene to clean up all resources associated with the import.
 
 *C-Example:*
@@ -226,9 +226,9 @@ At first you have to create the default-logger-instance (create). Now you are re
 little bit around. After that you should kill it to release the singleton instance.
 
 If you want to integrate the assimp-log into your own GUI it my be helpful to have a mechanism writing
-the logs into your own log windows. The logger interface provides this by implementing an interface called LogStream.
+the logs into your own log windows. The logger interface provides this by implementing an interface called **LogStream**.
 You can attach and detach this log stream to the default-logger instance or any implementation derived from Logger.
-Just derivate your own logger from the abstract base class LogStream and overwrite the write-method:
+Just derivate your own logger from the abstract base-class **LogStream** and overwrite the write-method:
 
 ::
 
@@ -263,7 +263,7 @@ flag set:
 
 
 If you want to implement your own logger just derive from the abstract base class
-#Logger and overwrite the methods debug, info, warn and error.
+**Logger** and overwrite the methods debug, info, warn and error.
 
 If you want to see the debug-messages in a debug-configured build, the Logger-interface
 provides a logging-severity. You can set it calling the following method:
@@ -317,7 +317,6 @@ The following file formats are currently supported:
 * x3d
 * fbx
 * fbxa
-* m3d
 * m3da
 * 3mf
 * pbrt
@@ -332,7 +331,7 @@ Introduction
 The assimp library returns the imported data in a collection of structures. aiScene forms the root
 of the data, from here you gain access to all the nodes, meshes, materials, animations or textures
 that were read from the imported file. The aiScene is returned from a successful call to
-Assimp::Importer::ReadFile(), aiImportFile() or aiImportFileEx() - see the @link usage Usage page @endlink
+**Assimp::Importer::ReadFile()**, **aiImportFile()** or **aiImportFileEx()** - see the :ref:`ai_usage`
 for further information on how to use the library.
 
 By default, all 3D data is provided in a right-handed coordinate system such as OpenGL uses. In
@@ -341,7 +340,7 @@ towards the viewer. Several modeling packages such as 3D Studio Max use this coo
 (or a rotated variant of it).
 By contrast, some other environments use left-handed coordinate systems, a prominent example being
 DirectX. If you need the imported data to be in a left-handed coordinate system, supply the
-#aiProcess_MakeLeftHanded flag to the ReadFile() function call.
+#aiProcess_MakeLeftHanded flag to the **ReadFile()** function call.
 
 The output face winding is counter clockwise. Use #aiProcess_FlipWindingOrder to get CW data.
 
@@ -481,7 +480,7 @@ the bone information is described later on.
 Materials
 ---------
 
-See the @link materials Material System Page. @endlink
+See the :ref:`ai_material` Material System Page.
 
 .. _ai_bones:
 
@@ -1100,8 +1099,7 @@ Profiling
 
 Assimp has built-in support for <i>very</i> basic profiling and time measurement. To turn it on, set the <tt>GLOB_MEASURE_TIME</tt>
 configuration switch to <tt>true</tt> (nonzero). Results are dumped to the log file, so you need to setup
-an appropriate logger implementation with at least one output stream first (see the @link logging Logging Page @endlink
-for the details.).
+an appropriate logger implementation with at least one output stream first (see the @:ref:`ai_logging` for the details.).
 
 Note that these measurements are based on a single run of the importer and each of the post processing steps, so
 a single result set is far away from being significant in a statistic sense. While precision can be improved
@@ -1182,7 +1180,7 @@ matter (i.e. in an offline content pipeline).
 
 Threading
 ---------
-YOu can use the Asset-Importer-Library in a separate thread context. Just make sure that the resources used by the thread are not shared. 
+You can use the Asset-Importer-Library in a separate thread context. Just make sure that the resources used by the thread are not shared. 
 At this momment, assimp will not make sure that it is safe over different thread contexts.
 
 .. _ai_overview:
@@ -1201,7 +1199,8 @@ Thread-safety / using Assimp concurrently from several threads
 The library can be accessed by multiple threads simultaneously, as long as the
 following prerequisites are fulfilled:
 
- * Users of the C++-API should ensure that they use a dedicated #Assimp::Importer instance for each thread. Constructing instances of #Assimp::Importer is expensive, so it might be a good idea to
+ * Users of the C++-API should ensure that they use a dedicated #Assimp::Importer instance for each thread. 
+   Constructing instances of #Assimp::Importer is expensive, so it might be a good idea to
    let every thread maintain its own thread-local instance (which can be used to
    load as many files as necessary).
  * The C-API is thread safe.
@@ -1322,7 +1321,7 @@ IFC file properties (IfcPropertySet) are kept as per-node metadata, see aiNode::
 Ogre
 ----
 
-*ATTENTION*: The Ogre-Loader is currently under development, many things have changed after this documentation was written, but they are not final enough to rewrite the documentation. So things may have changed by now!
+**ATTENTION**: The Ogre-Loader is currently under development, many things have changed after this documentation was written, but they are not final enough to rewrite the documentation. So things may have changed by now!
 
 This section contains implementations notes for the OgreXML importer.
 
@@ -1433,7 +1432,7 @@ Notes for text importers
 * Try to make your parser as flexible as possible. Don't rely on particular layout, whitespace/tab style,
   except if the file format has a strict definition, in which case you should always warn about spec violations.
   But the general rule of thumb is *be strict in what you write and tolerant in what you accept*.
-* Call Assimp::BaseImporter::ConvertToUTF8() before you parse anything to convert foreign encodings to UTF-8.
+* Call **Assimp::BaseImporter::ConvertToUTF8()** before you parse anything to convert foreign encodings to UTF-8.
   That's not necessary for XML importers, which must use the provided XML-Parser for reading. 
 
 
@@ -1474,7 +1473,7 @@ Mixed stuff for internal use by loaders, mostly documented (most of them are alr
 Filling materials
 -----------------
 
-The required definitions zo set/remove/query keys in #aiMaterial structures are declared in *MaterialSystem.h*, in a
+The required definitions zo set/remove/query keys in #ai_material structures are declared in *MaterialSystem.h*, in a
 #aiMaterial derivate called #aiMaterial. The header is included by AssimpPCH.h, so you don't need to bother.
 
 ::
