@@ -16,7 +16,7 @@ Extending the library
 There are many 3d file formats in the world, and we're happy to support as many as possible. If you need support for
 a particular file format, why not implement it yourself and add it to the library? Writing importer plugins for
 assimp is considerably easy, as the whole postprocessing infrastructure is available and does much of the work for you.
-See the :ref:`ai_extend` extend Extending the library @endlink page for more information.
+See the :ref:`ai_extend` extend Extending the library page for more information.
 
 
 .. _ai_main_support:
@@ -34,7 +34,7 @@ a mailing list, `assimp-discussions <https://github.com/assimp/assimp/discussion
 Using the pre-built libraries with Visual-Studio
 ------------------------------------------------
 
-If you develop at Visual Studio 2015, 2017 or 2019, you can simply use the pre-built linker libraries provided in the distribution.
+If you develop at Visual Studio 2015, 2017, 2019 or 2022 you can simply use the pre-built linker libraries provided in the distribution.
 Extract all files to a place of your choice. A directory called "assimp" will be created there. Add the assimp/include path
 to your include paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Include files)
 and the assimp/lib/&lt;Compiler&gt; path to your linker paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Library files).
@@ -86,7 +86,7 @@ to build the library just open a command-prompt / bash, navigate into the repo-f
 
     cmake CMakeLists.txt
 
-A project-file of your default make-system ( like gnu-make on linux or Visual-Studio on Windows ) will be generated. 
+A project-file of your default make-system (like gnu-make on linux or Visual-Studio on Windows) will be generated. 
 Run the build and you are done. You can find the libs at assimp/lib and the dll's / so's at bin.
 
 .. _ai_assimp_dll:
