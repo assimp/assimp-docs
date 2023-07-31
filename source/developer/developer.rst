@@ -39,7 +39,7 @@ Wrap the same guard around your .cpp!
 * Implement the **Assimp::BaseImporter::CanRead()** : here the format detection will be perfoormed. You can detect the format by its extension or by parsing some token of the file content
 * Implement **Assimp::BaseImporter::InternReadFile()**: Here you have to parse the file format and convert it into an aiScene-Instance:
 * Implement **Assimp::BaseImporter::GetExtensionList()**: here you have to add the provided extensions (for the Wavefront-Files add .obj for instance).
-* For error handling, throw a dynamic allocated **ImportErrorException** (see Appendix A) for critical errors, and log errors, warnings, infos, and debug info
+* For error handling, throw a dynamic allocated **ImportErrorException** (see Appendix A) for critical errors, and log errors, warnings, info, and debug info
   with **DefaultLogger::get()->[error, warn, debug, info]**.
 * A simple example:
 
@@ -83,7 +83,7 @@ ToDo!
 
 Write your own unit / integration-test
 --------------------------------------
-After the importer and the exporter is ready you need to test them. The common way for doing this will be explained in this chapter. Assimp does provide 
+After the importer and the exporter is ready you need to test them. The common way of doing this will be explained in this chapter. Assimp does provide 
 some useful test utilities for importer and exporter testing. 
 
 Start writing test code for your importer and exporter by creating a test class at **test/unit/ImportExport/<YourImporterName>**. 
