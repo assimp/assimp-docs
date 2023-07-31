@@ -35,7 +35,7 @@ Using the pre-built libraries with Visual-Studio
 ------------------------------------------------
 
 If you develop at Visual Studio 2015, 2017, 2019, or 2022 you can simply use the pre-built linker libraries provided in the distribution.
-Extract all files to a place of your choice. A directory called "assimp" will be created there. Add the assimp/include path
+Extract all files to a place of your choice. A directory called "assimp" will be created there. Add the **assimp/include** path
 to your include paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Include files)
 and the assimp/lib/&lt;Compiler&gt; path to your linker paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Library files).
 This is necessary only once to set up all paths inside your IDE.
