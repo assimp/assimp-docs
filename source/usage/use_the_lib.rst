@@ -1,9 +1,9 @@
 .. image:: https://www.assimp.org/common/images/splash-color.png
 .. _ai_access_cpp:
 
-==============================
-Working with Asset-ImporterLib
-==============================
+===================================
+Working with the Asset-Importer-Lib
+===================================
 
 Importing Data
 ==============
