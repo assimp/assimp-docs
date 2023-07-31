@@ -81,6 +81,42 @@ Write your own exporter
 
 ToDo!
 
+Write your own unit / integration-test
+--------------------------------------
+After the importer and the exporter is ready you need to test them. The common way for doing this will be explained in this chapter. Assimp does provide 
+some useful test utilities for importer and exporter testing. 
+
+Start writing test-code for your importer and exporter by creating a test-class at **test/unit/ImportExport/<YourImporterName>** . 
+Check the following example to get a better understanding how your test class shall look like:
+
+::
+
+    #include "AbstractImportExportBase.h"
+    #include "UnitTestPCH.h"
+    // Add more depending includes based on your test
+
+    class utMyImporter : public AbstractImportExportBase {
+    public:
+        bool importerTest() override {
+            Assimp::Importer importer;
+            const aiScene *scene = importer.ReadFile(ASSIMP_TEST_MODELS_DIR "/MyFormat/Wuson.myformat", aiProcess_ValidateDataStructure);
+            return nullptr != scene;
+        }
+    };
+
+    TEST_F(utMyImporter, importTest) {
+        EXPECT_TRUE(importerTest());
+    }
+
+
+Add this to the **CMakeLists.txt** at **test/unit/CMakeLists.txt** and run the build. Add your basic testfile at **test/models/MyFormat** .
+Now you can run the test:
+* Navigate into the binary folder
+* Execute the application **unit** or **unit.exe** on Windows-Platforms.
+* Check your result and fix it until all tests are green again.
+
+These tests will run for each PR as a test. The CI will also check your code for leaks or undefined behaviours.
+
 
 Parser tools
 ------------
