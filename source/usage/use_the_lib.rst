@@ -487,7 +487,7 @@ See the :ref:`ai_material` Material System Page.
 Bones
 -----
 
-A mesh may have a set of bones in the form of aiBone objects. Bones are a means to deform a mesh
+A mesh may have a set of bones in the form of instance from the aiBone objects. Bones are a means to deform a mesh
 according to the movement of a skeleton. Each bone has a name and a set of vertices on which it has influence.
 Its offset matrix declares the transformation needed to transform from mesh space to the local space of this bone.
 
