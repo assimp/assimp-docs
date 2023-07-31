@@ -4,11 +4,11 @@
 Introduction
 ------------
 
-The Asset-Importer-Lib (in short assimp) is a library to load and process geometric scenes from various 3D-data formats. It 
+The **Asset-Importer-Lib** (in short **Assimp**, we will use this term for the library) is a library to load and process geometric scenes from various 3D-data formats. It 
 is mostly tailored to typical game scenarios by supporting a node hierarchy, static or skinned meshes, materials, bone animations,
 and potential texture data. But also some 3D-printing- and CAD-format are supported.
 It is primarily useful for importing assets from various sources once and storing them in an intermediate format for easy and fast 
-every-day-loading. The Asset-Importer-Lib is also able to apply various post processing steps to the imported like:
+every-day-loading. The Asset-Importer-Lib is also able to apply various post-processing steps to the imported like:
 
 * Model Validation
 * Pretransforming
@@ -80,7 +80,7 @@ was paid to keeping the library as free as possible from dependencies.
 
 Big-endian systems like PPC-based Macs (if you still have one) or PPC-Linux systems are supported as well.
 
-The assimp linker library and viewer application are provided under the BSD 3-clause license. This basically means
+The **Assimp** linker library and viewer application are provided under the BSD 3-clause license. This basically means
 that you are free to use it in open- or closed-source projects, for commercial or non-commercial purposes as you like
 as long as you retain the license information and take your own responsibility for what you do with it. For details see
 the LICENSE file.
