@@ -47,13 +47,13 @@ Wrap the same guard around your .cpp!
 
     class MyyImporter : public BaseImporter {
     public:
-        MyyImporter() : BaseImporter {}
+        MyyImporter() : BaseImporter = default;
         
-        MyyImporter() override {}
+        MyyImporter() override = default;
         
         bool CanRead(const std::string &filename, IOSystem *pIOHandler, bool checkSig) const override {
             if (checkSig) {
-                // Check the signature and return result
+                // Check the signature and return the result
             } else {
                 const std::string extension = GetExtension(filename));
                 if ( extension == "myExt) {
@@ -159,7 +159,7 @@ You can also iterate over all children nodes via an Iterator interface:
     XmlNodeIterator xmlIt(node, XmlNodeIterator::PreOrderMode);
     XmlNode currentNode;
     while (xmlIt.getNext(currentNode)) {
-      // all node will be iterated level wise
+      // all nodes will be iterated level wise
     }
 
 ::
