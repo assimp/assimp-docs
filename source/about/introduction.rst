@@ -4,11 +4,11 @@
 Introduction
 ------------
 
-The Asset-Importer-Lib (in short assimp) is a library to load and process geometric scenes from various 3D-data formats. It 
-is mostly tailored at typical game scenarios by supporting a node hierarchy, static or skinned meshes, materials, bone animations 
+The **Asset-Importer-Lib** (in short **Assimp**, we will use this term for the library) is a library to load and process geometric scenes from various 3D-data formats. It 
+is mostly tailored to typical game scenarios by supporting a node hierarchy, static or skinned meshes, materials, bone animations,
 and potential texture data. But also some 3D-printing- and CAD-format are supported.
-It is primarily useful for importing assets from various sources once and storing it in a intermediate format for easy and fast 
-every-day-loading. The Asset-Importer-Lib is also able to apply various post processing steps to the imported like:
+It is primarily useful for importing assets from various sources once and storing them in an intermediate format for easy and fast 
+every-day-loading. The Asset-Importer-Lib is also able to apply various post-processing steps to the imported like:
 
 * Model Validation
 * Pretransforming
@@ -68,7 +68,7 @@ The Assimp-Lib currently supports the following file formats:
 * **TrueSpace** (.cob, .scn)
 * **XGL-3D-Format** (.xgl)
 
-See the :ref:`ai_importer_notes` for information, what a specific importer can do and what not.
+See the:ref:`ai_importer_notes` for information, on what a specific importer can do and what not.
 Note that although this paper claims to be the official documentation,
 `README.md <https://github.com/assimp/assimp/blob/master/Readme.md>`_
 is usually the most up-to-date list of file formats supported by the library.
@@ -76,17 +76,17 @@ is usually the most up-to-date list of file formats supported by the library.
 Assimp is independent of the Operating System by nature, providing a C++ interface for easy integration
 with game engines and a C-based interface to allow bindings to other programming languages. At the moment the library 
 runs on any little-endian platform including **X86/Windows/Linux/Mac** and **X64/Windows/Linux/Mac**. Special attention
-was paid to keep the library as free as possible from dependencies.
+was paid to keeping the library as free as possible from dependencies.
 
 Big-endian systems like PPC-based Macs (if you still have one) or PPC-Linux systems are supported as well.
 
-The assimp linker library and viewer application are provided under the BSD 3-clause license. This basically means
+The **Assimp** linker library and viewer application are provided under the BSD 3-clause license. This basically means
 that you are free to use it in open- or closed-source projects, for commercial or non-commercial purposes as you like
-as long as you retain the license information and take own responsibility for what you do with it. For details see
+as long as you retain the license information and take your own responsibility for what you do with it. For details see
 the LICENSE file.
 
 You can find test models for almost all formats in the **<assimp_root>/test/models** directory. Beware, they're *free*,
-but not all of them are **open-source**. If there's an accompagning **'<file>\source.txt'** file don't forget to read it.
+but not all of them are **open-source**. If there's an accompanying **'<file>\source.txt'** file don't forget to read it.
 
 Dependencies
 ------------

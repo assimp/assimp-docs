@@ -12,7 +12,7 @@ Access by C++ class interface
 -----------------------------
 
 The Asset-Importer-Lib can be accessed by both a class or flat function interface. The C++ class
-interface is the preferred way of interaction: you create an instance of class Assimp::Importer,
+the interface is the preferred way of interaction: you create an instance of the class Assimp::Importer,
 maybe adjust some settings of it and then just call 
 ::
 
@@ -20,7 +20,7 @@ maybe adjust some settings of it and then just call
     
 The class will read the files and process its data, handing back the imported data as a pointer to an aiScene
 to you. You can now extract the data you need from the file. The importer manages all the resources
-for itsself. If the importer is destroyed, all the data that was created/read by it will be
+for itself. If the importer is destroyed, all the data that was created/read by it will be
 destroyed, too. So the easiest way to use the Importer is to create an instance locally, use its
 results and then simply let it go out of scope.
 
@@ -58,11 +58,11 @@ results and then simply let it go out of scope.
       return true;
     }
 
-What exactly is read from the files and how you interpret it is described at the  :ref:`ai_data`.
-The post processing steps that the assimp library can apply to the
+What exactly is read from the files and how you interpret it is described at the:ref:`ai_data`.
+The post-processing steps that the Assimp library can apply to the
 imported data are listed at #aiPostProcessSteps. See the @ref pp Post processing page for more details.
 
-Note that the aiScene data structure returned is declared 'const'. Yes, you can get rid of
+Note that the **aiScene** data structure returned is declared 'const'. Yes, you can get rid of
 these 5 letters with a simple cast. Yes, you may do that. No, it's not recommended (and it's
 suicide in DLL builds if you try to use new or delete on any of the arrays in the scene).
 
@@ -71,7 +71,7 @@ suicide in DLL builds if you try to use new or delete on any of the arrays in th
 Access by plain-c function interface
 ------------------------------------
 
-The plain function interface is just as simple, but requires you to manually call the clean-up
+The plain function interface is just as simple but requires you to manually call the clean-up
 after you're done with the imported data. To start the import process, call **aiImportFile()**
 with the filename in question and the desired postprocessing flags like above. If the call
 is successful, an aiScene pointer with the imported data is handed back to you. When you're
@@ -115,7 +115,7 @@ imported scene to clean up all resources associated with the import.
 Using custom IO logic with the C++ class interface
 --------------------------------------------------
 
-The assimp library needs to access files internally. This of course applies to the file you want
+The Assimp library needs to access files internally. This of course applies to the file you want
 to read, but also to additional files in the same folder for certain file formats. By default,
 standard C/C++ IO logic is used to access these files. If your application works in a special
 environment where custom logic is needed to access the specified files, you have to supply
@@ -195,19 +195,19 @@ surely enough for almost any purpose. The process is simple:
 
 
 * Include cfileio.h
-* Fill an aiFileIO structure with custom file system callbacks (they're self-explanatory as they work similar to the CRT's fXXX functions)
-* and pass it as parameter to #aiImportFileEx
+* Fill an aiFileIO structure with custom file system callbacks (they're self-explanatory as they work similarly to the CRT's fXXX functions)
+* and pass it as a parameter to #aiImportFileEx
 
 .. _ai_logging:
 
 Logging
 -------
 
-The assimp library provides an easy mechanism to log messages. For instance if you want to check the state of your
-import and you just want to see, after which preprocessing step the import-process was aborted you can take a look
+The Assimp-library provides an easy mechanism to log messages. For instance, if you want to check the state of your
+import and you just want to see, after which preprocessing step the import process was aborted you can take a look
 into the log.
-Per default the assimp-library provides a default log implementation, where you can log your user specific message
-by calling it as a singleton with the requested logging-type. To see how this works take a look to this:
+Per default, the Assimp-library provides a default log implementation, where you can log your user-specific message
+by calling it a singleton with the requested logging type. To see how this works take a look at this:
 
 ::
 
@@ -222,20 +222,20 @@ by calling it as a singleton with the requested logging-type. To see how this wo
     // Kill it after the work is done
     DefaultLogger::kill();
 
-At first you have to create the default-logger-instance (create). Now you are ready to rock and can log a
-little bit around. After that you should kill it to release the singleton instance.
+At first, you have to create the default-logger-instance (create). Now you are ready to rock and can log a
+little bit around. After that, you should kill it to release the singleton instance.
 
-If you want to integrate the assimp-log into your own GUI it my be helpful to have a mechanism writing
+If you want to integrate the assimp-log into your own GUI it may be helpful to have a mechanism writing
 the logs into your own log windows. The logger interface provides this by implementing an interface called **LogStream**.
 You can attach and detach this log stream to the default-logger instance or any implementation derived from Logger.
-Just derivate your own logger from the abstract base-class **LogStream** and overwrite the write-method:
+Just derivate your own logger from the abstract base-class **LogStream** and overwrite the write method:
 
 ::
 
     // Example stream
     class myStream : public LogStream {
     public:
-        // Write womethink using your own functionality
+        // Write something using your own functionality
         void write(const char* message) {
             ::printf("%s\n", message);
         }
@@ -250,7 +250,7 @@ Just derivate your own logger from the abstract base-class **LogStream** and ove
 The severity level controls the kind of message which will be written into
 the attached stream. If you just want to log errors and warnings set the warn
 and error severity flag for those severities. It is also possible to remove
-a self defined logstream from an error severity by detaching it with the severity
+a self-defined log stream from an error severity by detaching it with the severity
 flag set:
 
 ::
@@ -258,24 +258,24 @@ flag set:
     unsigned int severity = 0;
     severity |= Logger::Debugging;
 
-    // Detach debug messages from you self defined stream
+    // Detach debug messages from your self defined stream
     Assimp::DefaultLogger::get()->attachStream( new myStream, severity );
 
 
 If you want to implement your own logger just derive from the abstract base class
-**Logger** and overwrite the methods debug, info, warn and error.
+**Logger** and overwrite the methods debug, info, warn, and error.
 
-If you want to see the debug-messages in a debug-configured build, the Logger-interface
-provides a logging-severity. You can set it calling the following method:
+If you want to see the debug messages in a debug-configured build, the Logger-interface
+provides a logging severity. You can set it by calling the following method:
 
 ::
 
     Assimp::DefaultLogger::get()->setLogSeverity( LogSeverity log_severity );
 
 
-The normal logging severity supports just the basic stuff like, info, warnings and errors.
+The normal logging severity supports just the basic stuff like info, warnings, and errors.
 In the verbose level very fine-grained debug messages will be logged, too. Note that this
-kind kind of logging might decrease import performance.
+kind of logging might decrease import performance.
 
 .. _ai_data:
 
@@ -328,9 +328,9 @@ Data Structures
 Introduction
 ------------
 
-The assimp library returns the imported data in a collection of structures. aiScene forms the root
-of the data, from here you gain access to all the nodes, meshes, materials, animations or textures
-that were read from the imported file. The aiScene is returned from a successful call to
+The Assimp-Library returns the imported data in a collection of structures. **aiScene** forms the root
+of the data, from here you gain access to all the nodes, meshes, materials, animations, or textures
+that was read from the imported file. The **aiScene** is returned from a successful call to
 **Assimp::Importer::ReadFile()**, **aiImportFile()** or **aiImportFileEx()** - see the :ref:`ai_usage`
 for further information on how to use the library.
 
@@ -342,7 +342,7 @@ By contrast, some other environments use left-handed coordinate systems, a promi
 DirectX. If you need the imported data to be in a left-handed coordinate system, supply the
 #aiProcess_MakeLeftHanded flag to the **ReadFile()** function call.
 
-The output face winding is counter clockwise. Use #aiProcess_FlipWindingOrder to get CW data.
+The output face winding is counterclockwise. Use #aiProcess_FlipWindingOrder to get CW data.
 
 ::
 
@@ -388,7 +388,7 @@ matrices end with <tt>[..., T1, T2, T3, 1]</tt>), whereas the translation in an 
 the offsets 3, 7 and 11 (spread across the matrix). You can transpose an Assimp matrix to end up with
 the format that OpenGL and DirectX mandate. To be very precise: The transposition has nothing
 to do with a left-handed or right-handed coordinate system but 'converts' between row-major and
-column-major storage format.
+column-major storage formats.
 
 <b>11.24.09:</b> We changed the orientation of our quaternions to the most common convention to avoid confusion.
 However, if you're a previous user of Assimp and you update the library to revisions beyond SVNREV 502,
@@ -399,21 +399,21 @@ you have to adapt your animation loading code to match the new quaternion orient
 The Node-Hierarchy
 ------------------
 
-Nodes are little named entities in the scene that have a place and orientation relative to their parents.
+Nodes are little-named entities in the scene that have a place and orientation relative to their parents.
 Starting from the scene's root node all nodes can have 0 to x child nodes, thus forming a hierarchy.
-They form the base on which the scene is built on: a node can refer to 0..x meshes, can be referred to
-by a bone of a mesh or can be animated by a key sequence of an animation. DirectX calls them "frames",
-others call them "objects", we call them aiNode.
+They form the base on which the scene is built: a node can refer to 0..x meshes, can be referred to
+by a bone of a mesh, or can be animated by a key sequence of animation. DirectX calls them "frames",
+others call them "objects", and we call them **aiNode**.
 
 A node can potentially refer to single or multiple meshes. The meshes are not stored inside the node, but
-instead in an array of aiMesh inside the aiScene. A node only refers to them by their array index. This also means
+instead in an array of **aiMesh** inside the aiScene. A node only refers to them by their array index. This also means
 that multiple nodes can refer to the same mesh, which provides a simple form of instancing. A mesh referred to
-by this way lives in the node's local coordinate system. If you want the mesh's orientation in global
+in this way lives in the node's local coordinate system. If you want the mesh's orientation in global
 space, you'd have to concatenate the transformations from the referring node and all of its parents.
 
 Most of the file formats don't really support complex scenes, though, but a single model only. But there are
-more complex formats such as .3ds, .x or .collada scenes which may contain an arbitrary complex
-hierarchy of nodes and meshes. I for myself would suggest a recursive filter function such as the
+more complex formats such as .3ds, .x, or .collada scenes which may contain an arbitrarily complex
+hierarchy of nodes and meshes. I myself would suggest a recursive filter function such as the
 following pseudocode:
 
 ::
@@ -422,14 +422,14 @@ following pseudocode:
 	  SceneObject parent;
 	  Matrix4x4 transform;
 
-	  // if node has meshes, create a new scene object for it
+	  //If node has meshes, create a new scene object for it
 	  if( node.mNumMeshes > 0) {
 		SceneObjekt newObject = new SceneObject;
 		targetParent.addChild( newObject);
 		// copy the meshes
 		CopyMeshes( node, newObject);
 
-		// the new object is the parent for all child nodes
+		//The new object is the parent for all child nodes
 		parent = newObject;
 		transform.SetUnity();
 	  } else {
@@ -446,7 +446,7 @@ following pseudocode:
 	
 This function copies a node into the scene graph if it has children. If yes, a new scene object
 is created for the import node and the node's meshes are copied over. If not, no object is created.
-Potential child objects will be added to the old targetParent, but there transformation will be correct
+Potential child objects will be added to the old targetParent, but their transformation will be correct
 in respect to the global space. This function also works great in filtering the bone nodes - nodes
 that form the bone hierarchy for another mesh/node, but don't have any mesh themselves.
 
@@ -456,23 +456,23 @@ Meshes
 ------
 
 All meshes of an imported scene are stored in an array of aiMesh* inside the aiScene. Nodes refer
-to them by their index in the array and providing the coordinate system for them, too. One mesh uses
+to them by their index in the array and provide the coordinate system for them, too. One mesh uses
 only a single material everywhere - if parts of the model use a different material, this part is
 moved to a separate mesh at the same node. The mesh refers to its material in the same way as the
-node refers to its meshes: materials are stored in an array inside aiScene, the mesh stores only
+node refers to its meshes: materials are stored in an array inside **aiScene**, and the mesh stores only
 an index into this array.
 
-An aiMesh is defined by a series of data channels. The presence of these data channels is defined
-by the contents of the imported file: by default there are only those data channels present in the mesh
+An **aiMesh** is defined by a series of data channels. The presence of these data channels is defined
+by the contents of the imported file: by default, there are only those data channels present in the mesh
 that were also found in the file. The only channels guaranteed to be always present are aiMesh::mVertices
 and aiMesh::mFaces. You can test for the presence of other data by testing the pointers against NULL
-or use the helper functions provided by aiMesh. You may also specify several post processing flags
-at Importer::ReadFile() to let assimp calculate or recalculate additional data channels for you.
+or using the helper functions provided by **aiMesh**. You may also specify several post-processing flags
+at Importer::ReadFile() to let Assimp calculate or recalculate additional data channels for you.
 
 At the moment, a single aiMesh may contain a set of triangles and polygons. A single vertex does always
-have a position. In addition it may have one normal, one tangent and bitangent, zero to AI_MAX_NUMBER_OF_TEXTURECOORDS
-(4 at the moment) texture coords and zero to AI_MAX_NUMBER_OF_COLOR_SETS (4) vertex colors. In addition
-a mesh may or may not have a set of bones described by an array of aiBone structures. How to interpret
+have a position. In addition, it may have one normal, one tangent, and bitangent, zero to **AI_MAX_NUMBER_OF_TEXTURECOORDS**
+(4 at the moment) texture coords and zero to AI_MAX_NUMBER_OF_COLOR_SETS (4) vertex colors. In addition,
+a mesh may or may not have a set of bones described by an array of **aiBone** structures. How to interpret
 the bone information is described later on.
 
 .. _ai_material:
@@ -480,25 +480,25 @@ the bone information is described later on.
 Materials
 ---------
 
-See the :ref:`ai_material` Material System Page.
+See the:ref:`ai_material` Material System Page.
 
 .. _ai_bones:
 
 Bones
 -----
 
-A mesh may have a set of bones in the form of aiBone objects. Bones are a means to deform a mesh
+A mesh may have a set of bones in the form of instances from the **aiBone** objects. Bones are a means to deform a mesh
 according to the movement of a skeleton. Each bone has a name and a set of vertices on which it has influence.
 Its offset matrix declares the transformation needed to transform from mesh space to the local space of this bone.
 
 Using the bones name you can find the corresponding node in the node hierarchy. This node in relation
-to the other bones' nodes defines the skeleton of the mesh. Unfortunately there might also be
-nodes which are not used by a bone in the mesh, but still affect the pose of the skeleton because
+to the other bones' nodes defines the skeleton of the mesh. Unfortunately, there might also be
+nodes that are not used by a bone in the mesh but still affect the pose of the skeleton because
 they have child nodes which are bones. So when creating the skeleton hierarchy for a mesh I
 suggest the following method:
 
 a. Create a map or a similar container to store which nodes are necessary for
-the skeleton. Pre-initialise it for all nodes with a "no".
+the skeleton. Pre-initialize it for all nodes with a "no".
 
 b. For each bone in the mesh:
 
@@ -519,9 +519,9 @@ c2. If the node is marked as not necessary, skip it and do not iterate over its 
 
 
 Reasons: you need all the parent nodes to keep the transformation chain intact. For most
-file formats and modelling packages the node hierarchy of the skeleton is either a child
+file formats and modeling packages, the node hierarchy of the skeleton is either a child
 of the mesh node or a sibling of the mesh node but this is by no means a requirement so you shouldn't rely on it.
-The node closest to the root node is your skeleton root, from there you
+The node closest to the root node is your skeleton root, from there, you
 start copying the hierarchy. You can skip every branch without a node being a bone in the mesh -
 that's why the algorithm skips the whole branch if the node is marked as "not necessary".
 
@@ -532,34 +532,34 @@ You should now have a mesh in your engine with a skeleton that is a subset of th
 Animations
 ----------
 
-An imported scene may contain zero to x aiAnimation entries. An animation in this context is a set
+An imported scene may contain zero to n **aiAnimation** entries. An animation in this context is a set
 of keyframe sequences where each sequence describes the orientation of a single node in the hierarchy
 over a limited time span. Animations of this kind are usually used to animate the skeleton of
 a skinned mesh, but there are other uses as well.
 
-An aiAnimation has a duration. The duration as well as all time stamps are given in ticks. To get
-the correct timing, all time stamp thus have to be divided by aiAnimation::mTicksPerSecond. Beware,
+An **aiAnimation** has a duration. The duration as well as all time stamps are given in ticks. To get
+the correct timing, all time stamps thus have to be divided by aiAnimation::mTicksPerSecond. Beware,
 though, that certain combinations of file format and exporter don't always store this information
 in the exported file. In this case, mTicksPerSecond is set to 0 to indicate the lack of knowledge.
 
-The aiAnimation consists of a series of aiNodeAnim's. Each bone animation affects a single node in
+The **aiAnimation** consists of a series of **aiNodeAnim**. Each bone animation affects a single node in
 the node hierarchy only, the name specifying which node is affected. For this node the structure
 stores three separate key sequences: a vector key sequence for the position, a quaternion key sequence
-for the rotation and another vector key sequence for the scaling. All 3d data is local to the
-coordinate space of the node's parent, that means in the same space as the node's transformation matrix.
+for the rotation, and another vector key sequence for the scaling. All 3d data is local to the
+coordinate space of the node's parent, which means in the same space as the node's transformation matrix.
 There might be cases where animation tracks refer to a non-existent node by their name, but this
-should not be the case in your every-day data.
+should not be the case in your everyday data.
 
 To apply such an animation you need to identify the animation tracks that refer to actual bones
 in your mesh. Then for every track:
 * Find the keys that lay right before the current anim time.
 * Optional: interpolate between these and the following keys.
-* Combine the calculated position, rotation and scaling to a transformation matrix
+* Combine the calculated position, rotation, and scaling into a transformation matrix
 * Set the affected node's transformation to the calculated matrix.
 
 If you need hints on how to convert to or from quaternions, have a look at the
 `Matrix & Quaternion FAQ <http://www.j3d.org/matrix_faq/matrfaq_latest.html>`_. I suggest
-using logarithmic interpolation for the scaling keys if you happen to need them - usually you don't
+using logarithmic interpolation for the scaling keys if you happen to need them - usually, you don't
 need them at all.
 
 .. _ai_textures:
@@ -575,34 +575,34 @@ Textures
 
 Normally textures used by assets are stored in separate files, however,
 there are file formats embedding their textures directly into the model file.
-Such textures are loaded into an aiTexture structure.
+Such textures are loaded into an **aiTexture** structure.
 
 In previous versions, the path from the query for `AI_MATKEY_TEXTURE(textureType, index)` would be
 `*<index>` where `<index>` is the index of the texture in aiScene::mTextures. Now this call will
 return a file path for embedded textures in FBX files. To test if it is an embedded texture use
-aiScene::GetEmbeddedTexture. If the returned pointer is not null, it is embedded und can be loaded
+aiScene::GetEmbeddedTexture. If the returned pointer is not null, it is embedded and can be loaded
 from the data structure. If it is null, search for a separate file. Other file types still use the
-old behaviour.
+old behavior.
 
-If your rely on the old behaviour, you can use Assimp::Importer::SetPropertyBool with the key
-#AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING to force the old behaviour.
+If you rely on the old behavior, you can use Assimp::Importer::SetPropertyBool with the key
+#AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING to force the old behavior.
 
 There are two cases:
- * The texture is NOT compressed. Its color data is directly stored in the aiTexture structure as an array of 
+ * The texture is NOT compressed. Its color data is directly stored in the **aiTexture** structure as an array of 
    aiTexture::mWidth * aiTexture::mHeight 
-   aiTexel structures. Each aiTexel represents a
+   **aiTexel** structures. Each **aiTexel** represents a
    pixel (or "texel") of the texture image. The color data is stored in an unsigned RGBA8888 format,
    which can be easily used for both Direct3D and OpenGL (swizzling the order of the color
    components might be necessary).  RGBA8888 has been chosen because it is well-known, easy to use
-   and natively supported by nearly all graphics APIs.
- * This applies if aiTexture::mHeight == 0 is fulfilled. Then, texture is stored in a compressed
+   , and natively supported by nearly all graphics APIs.
+ * This applies if aiTexture::mHeight == 0 is fulfilled. Then, the texture is stored in a compressed
    format such as DDS or PNG. The term "compressed" does not mean that the texture data must
-   actually be compressed, however the texture was found in the model file as if it was stored in a
-   separate file on the harddisk. Appropriate decoders (such as libjpeg, libpng, D3DX, DevIL) are
-   required to load theses textures.  aiTexture::mWidth specifies the size of the texture data in
+   actually be compressed, however, the texture was found in the model file as if it was stored in a
+   separate file on the hard disk. Appropriate decoders (such as libjpeg, libpng, D3DX, DevIL) are
+   required to load these textures.  aiTexture::mWidth specifies the size of the texture data in
    bytes, aiTexture::pcData is a pointer to the raw image data and aiTexture::achFormatHint is
    either zeroed or contains the most common file extension of the embedded texture's format. This
-   value is only set if assimp is able to determine the file format.
+   value is only set if Assimp is able to determine the file format.
    
 .. _ai_materials:
 
@@ -612,13 +612,13 @@ Material-System
 General Overview
 ################################
 
-All materials are stored in an array of aiMaterial inside the aiScene.
+All materials are stored in an array of **aiMaterial** inside the aiScene.
 
 Each aiMesh refers to one
 material by its index in the array. Due to the vastly diverging definitions and usages of material
-parameters there is no hard definition of a material structure. Instead a material is defined by
+parameters, there is no hard definition of a material structure. Instead, a material is defined by
 a set of properties accessible by their names. Have a look at assimp/material.h to see what types of
-properties are defined. In this file there are also various functions defined to test for the
+properties are defined. In this file, there are also various functions defined to test for the
 presence of certain properties in a material and retrieve their values.
 
 .. _ai_mat_tex:
@@ -927,19 +927,19 @@ For completeness, the following is a very rough pseudo-code sample showing how t
 shading pipeline. You'll probably want to limit your handling of all those material keys to a reasonable subset suitable for your purposes
 (for example most 3d engines won't support highly complex multi-layer materials, but many 3d modellers do).
 
-Also note that this sample is targeted at a (shader-based) rendering pipeline for real time graphics.
+Also note that this sample is targeted at a (shader-based) rendering pipeline for real-time graphics.
 
 ::
 
 	// ---------------------------------------------------------------------------------------
 	// Evaluate multiple textures stacked on top of each other
 	float3 EvaluateStack(stack) {
-          // For the 'diffuse' stack stack.base_color would be COLOR_DIFFUSE
+          // For the 'diffuse' stack.base_color would be COLOR_DIFFUSE
 	  // and TEXTURE(aiTextureType_DIFFUSE,n) the n'th texture.
 
 	  float3 base = stack.base_color;
-	  for (every texture in stack) {
-	    // assuming we have explicit & pretransformed UVs for this texture
+	  for (every texture in the stack) {
+	    // assuming we have explicit & pre transformed UVs for this texture
 	    float3 color = SampleTexture(texture,uv);
 	
 	    // scale by texture blend factor
@@ -1068,15 +1068,15 @@ Animation Overview
 
 <a href="http://ogldev.atspace.co.uk/www/tutorial38/tutorial38.html">This external tutorial</a>
 has working code to get started implementing animations using bone matrix array in the vertex shader.
-(If using glm OpenGL math library, cross-reference with <a href="http://www.xphere.me/2019/05/bones-animation-with-openglassimpglm/">this page</a>
-which has useful tips on converting between assimp and glm objects)
+(If using **glm** (OpenGL math library), cross-reference with <a href="http://www.xphere.me/2019/05/bones-animation-with-openglassimpglm/">this page</a>
+which has useful tips on converting between **Assimp** and **glm** objects)
 
 .. _ai_Transformations:
 
 Transformations
 ---------------
 
- This diagram shows how you can calculate your transformationmatrices for an animated character:
+ This diagram shows how you can calculate your transformation matrices for an animated character:
  .. image:: ../images/AnimationOverview.png
  
 
@@ -1090,7 +1090,7 @@ Performance
 Overview
 --------
 
-This page discusses general performance issues related to assimp.
+This page discusses general performance issues related to **Assimp**.
 
 .. _ai_perf_profile:
 
@@ -1098,11 +1098,11 @@ Profiling
 ---------
 
 Assimp has built-in support for <i>very</i> basic profiling and time measurement. To turn it on, set the <tt>GLOB_MEASURE_TIME</tt>
-configuration switch to <tt>true</tt> (nonzero). Results are dumped to the log file, so you need to setup
+configuration switch to <tt>true</tt> (nonzero). Results are dumped to the log file, so you need to set up
 an appropriate logger implementation with at least one output stream first (see the @:ref:`ai_logging` for the details.).
 
-Note that these measurements are based on a single run of the importer and each of the post processing steps, so
-a single result set is far away from being significant in a statistic sense. While precision can be improved
+Note that these measurements are based on a single run of the importer and each of the post-processing steps, so
+a single result set is far away from being significant in a statistical sense. While precision can be improved
 by running the test multiple times, the low accuracy of the timings may render the results useless
 for smaller files.
 
@@ -1181,14 +1181,14 @@ matter (i.e. in an offline content pipeline).
 Threading
 ---------
 You can use the Asset-Importer-Library in a separate thread context. Just make sure that the resources used by the thread are not shared. 
-At this momment, assimp will not make sure that it is safe over different thread contexts.
+At this moment, assimp will not make sure that it is safe over different thread contexts.
 
 .. _ai_overview:
 
 Overview
 --------
 
-This page discusses both assimps scalability in threaded environments and the precautions to be taken in order to
+This page discusses both **Assimp** scalability in threaded environments and the precautions to be taken in order to
 use it from multiple threads concurrently.
 
 .. _ai_threadsafety:
@@ -1203,12 +1203,12 @@ following prerequisites are fulfilled:
    Constructing instances of #Assimp::Importer is expensive, so it might be a good idea to
    let every thread maintain its own thread-local instance (which can be used to
    load as many files as necessary).
- * The C-API is thread safe.
+ * The C-API is thread-safe.
  * When supplying custom IO logic, one must make sure the underlying implementation is thread-safe.
  * Custom log streams or logger replacements have to be thread-safe, too.
 
 Multiple concurrent imports may or may not be beneficial, however. For certain file formats in conjunction with
-little or no post processing IO times tend to be the performance bottleneck. Intense post processing together
+little or no post-processing IO times tend to be the performance bottleneck. Intense post-processing together
 with 'slow' file formats like X or Collada might scale well with multiple concurrent imports.
 
 
@@ -1224,15 +1224,15 @@ Internal multi-threading is not currently implemented.
 Resources
 ---------
 
-This page lists some useful resources for assimp. Note that, even though the core team has an eye on them,
+This page lists some useful resources for **Assimp**. Note that, even though the core team has an eye on them,
 we cannot guarantee the accuracy of third-party information. If in doubt, it's best to ask either on the
 mailing list or on our forums on SF.net.
 
- * assimp comes with some sample applications, these can be found in the <i>./samples</i> folder. Don't forget to read the <i>README</i> file.
+ * **Assimp** comes with some sample applications, these can be found in the <i>./samples</i> folder. Don't forget to read the <i>README</i> file.
  * `Assimp-GL-Demo <http://www.drivenbynostalgia.com/files/AssimpOpenGLDemo.rar>`_ - OpenGl animation sample using the library's animation import facilities.
  * `Assimp-Animation-Loader <http://nolimitsdesigns.com/game-design/open-asset-import-library-animation-loader/>`_ is another utility to
    simplify animation playback.
- * `Assimp-Animations <http://ogldev.atspace.co.uk/www/tutorial22/tutorial22.html>`_ - Tutorial "Loading models using the Open Asset Import Library", out of a series of OpenGl tutorials.
+ * `Assimp-Animations <http://ogldev.atspace.co.uk/www/tutorial22/tutorial22.html>`_ - Tutorial "Loading models using the Open Asset Import Library", out of a series of OpenGL tutorials.
 
 .. _ai_importer_notes:
 
@@ -1251,12 +1251,12 @@ This section contains implementation notes for the Blender3D importer.
 Overview
 --------
 
-assimp provides a self-contained reimplementation of Blender's so called SDNA system ( `Notes on SDNA http://www.blender.org/development/architecture/notes-on-sdna/`_ ).
-SDNA allows Blender to be fully backward and forward compatible and to exchange
+**Assimp** provides a self-contained reimplementation of Blender's so-called SDNA system ( `Notes on SDNA http://www.blender.org/development/architecture/notes-on-sdna/`_ ).
+SDNA allows Blender to be fully backward and forward-compatible and to exchange
 files across all platforms. The BLEND format is thus a non-trivial binary monster and the loader tries to read the most of it,
 naturally limited by the scope of the #aiScene output data structure.
-Consequently, if Blender is the only modeling tool in your asset work flow, consider writing a
-custom exporter from Blender if assimps format coverage does not meet the requirements.
+Consequently, if Blender is the only modeling tool in your asset workflow, consider writing a
+custom exporter from Blender if **Assimp** format coverage does not meet the requirements.
 
 .. _ai_bl_status:
 
@@ -1267,7 +1267,7 @@ The Blender loader does not support animations yet, but is apart from that consi
 
 @subsection bl_notes Notes
 
-When filing bugs on the Blender loader, always give the Blender version (or, even better, post the file caused the error).
+When filing bugs on the Blender loader, always give the Blender version (or, even better, post the file that caused the error).
 
 .. _ai_ifc_overview:
 
@@ -1301,7 +1301,7 @@ Notes
 - Only the STEP-based encoding is supported. IFCZIP and IFCXML are not (but IFCZIP can simply be unzipped to get a STEP file).
 - The importer leaves vertex coordinates untouched, but applies a global scaling to the root transform to
   convert from whichever unit the IFC file uses to <i>metres</i>.
-- If multiple geometric representations are provided, the choice which one to load is based on how expensive a representation seems
+- If multiple geometric representations are provided, the choice of which one to load is based on how expensive a representation seems
   to be in terms of import time. The loader also avoids representation types for which it has known deficits.
 - Not supported are arbitrary binary operations (binary clipping is implemented, though).
 - Of the various relationship types that IFC knows, only aggregation, containment and material assignment are resolved and mapped to
@@ -1330,17 +1330,17 @@ This section contains implementations notes for the OgreXML importer.
 Overview
 --------
 
-Ogre importer is currently optimized for the Blender Ogre exporter, because that's the only one that I use. You can find the Blender Ogre exporter at: `OGRE3D forum <http://www.ogre3d.org/forums/viewtopic.php?f=8&t=45922>`_
+Ogre importer is currently optimized for the Blender Ogre exporter because that's the only one that I use. You can find the Blender Ogre exporter at: `OGRE3D forum <http://www.ogre3d.org/forums/viewtopic.php?f=8&t=45922>`_
 
 .. _ai_what:
 
 What will be loaded?
 --------------------
 
-Mesh: Faces, Positions, Normals and all TexCoords. The Materialname will be used to load the material.
+Mesh: Faces, Positions, Normals, and all TexCoords. The Materialname will be used to load the material.
 
 Material: The right material in the file will be searched, the importer should work with materials who
-have 1 technique and 1 pass in this technique. From there, the texturename (for 1 color- and 1 normalmap) and the
+have 1 technique and 1 pass in this technique. From there, the texture name (for 1 color- and 1 normal map) and the
 materialcolors (but not in custom materials) will be loaded. Also, the materialname will be set.
 
 Skeleton: Skeleton with Bone hierarchy (Position and Rotation, but no Scaling in the skeleton is supported), names and transformations,
@@ -1351,7 +1351,7 @@ animations with rotation, translation and scaling keys.
 How to export Files from Blender
 --------------------------------
 
-You can find information about how to use the Ogreexporter by your own, so here are just some options that you need, so the assimp
+You can find information about how to use the Ogreexporter on your own, so here are just some options that you need, so the assimp
 importer will load everything correctly:
 
 - Use either "Rendering Material" or "Custom Material" see @ref material
@@ -1364,11 +1364,11 @@ importer will load everything correctly:
 XML-Format
 ----------
 
-There is a binary and a XML mesh Format from Ogre. This loader can only
-Handle xml files, but don't panic, there is a command line converter, which you can use
+There is a binary and an XML mesh Format from Ogre. This loader can only
+Handle XML files, but don't panic, there is a command line converter, which you can use
 to create XML files from Binary Files. Just look on the Ogre page for it.
 
-Currently you can only load meshes. So you will need to import the .mesh.xml file, the loader will
+Currently, you can only load meshes. So you will need to import the .mesh.xml file, the loader will
 try to find the appendant material and skeleton file.
 
 The skeleton file must have the same name as the mesh file, e.g. fish.mesh.xml and fish.skeleton.xml.
@@ -1382,8 +1382,8 @@ or you can use
 
 	Importer::Importer::SetPropertyString(AI_CONFIG_IMPORT_OGRE_MATERIAL_FILE, "materiafile.material")
     
-to specify the name of the material file. This is especially useful if multiply materials a stored in a single file.
-The importer will first try to load the material with the same name as the mesh and only if this can't be open try
+to specify the name of the material file. This is especially useful if multiple materials a stored in a single file.
+The importer will first try to load the material with the same name as the mesh and only if this can't be opened try
 to load the alternate material file. The default material filename is "Scene.material".
 
 We suggest that you use custom materials, because they support multiple textures (like colormap and normalmap). First of all you
