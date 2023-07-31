@@ -25,7 +25,7 @@ Support & Feedback
 ------------------
 
 If you have any questions/comments/suggestions/bug reports you're welcome to post them in our
-`Github-Issue-Tracker <https://github.com/assimp/assimp/issues>`_. Alternatively there's
+`Github-Issue-Tracker <https://github.com/assimp/assimp/issues>`_. Alternatively, there's
 a mailing list, `assimp-discussions <https://github.com/assimp/assimp/discussions>`_
 .
 
@@ -34,11 +34,11 @@ a mailing list, `assimp-discussions <https://github.com/assimp/assimp/discussion
 Using the pre-built libraries with Visual-Studio
 ------------------------------------------------
 
-If you develop at Visual Studio 2015, 2017, 2019 or 2022 you can simply use the pre-built linker libraries provided in the distribution.
+If you develop at Visual Studio 2015, 2017, 2019, or 2022 you can simply use the pre-built linker libraries provided in the distribution.
 Extract all files to a place of your choice. A directory called "assimp" will be created there. Add the assimp/include path
 to your include paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Include files)
 and the assimp/lib/&lt;Compiler&gt; path to your linker paths (Menu-&gt;Extras-&gt;Options-&gt;Projects and Solutions-&gt;VC++ Directories-&gt;Library files).
-This is necessary only once to setup all paths inside you IDE.
+This is necessary only once to set up all paths inside your IDE.
 
 To use the library in your C++ project you can simply generate a project file via cmake. One way is to add the assimp-folder 
 as a subdirectory via the cmake-command
@@ -54,7 +54,7 @@ Now just add the assimp-dependency to your application:
     TARGET_LINK_LIBRARIES(my_game assimp)
 
 
-If done correctly you should now be able to compile, link, run and use the application. 
+If done correctly you should now be able to compile, link, run, and use the application. 
 
 .. _ai_install_prebuilt_vcpg:
 
@@ -79,14 +79,14 @@ The assimp port in vcpkg is kept up to date by Microsoft team members and commun
 Building the library from scratch
 ---------------------------------
 
-First you need to install cmake. Now just get the code from github or download the latest version from the webside.
-to build the library just open a command-prompt / bash, navigate into the repo-folder and run cmake via:
+First, you need to install cmake. Now just get the code from github or download the latest version from the website.
+to build the library just open a command-prompt / bash, navigate into the repo folder and run cmake via:
 
 ::
 
     cmake CMakeLists.txt
 
-A project-file of your default make-system (like gnu-make on linux or Visual-Studio on Windows) will be generated. 
+A project file of your default make-system (like gnu-make on Linux or Visual-Studio on Windows) will be generated. 
 Run the build and you are done. You can find the libs at assimp/lib and the dll's / so's at bin.
 
 .. _ai_assimp_dll:
@@ -101,7 +101,7 @@ The Assimp-package can be built as DLL. You just need to run the default cmake r
 Assimp static lib
 -----------------
 
-The Assimp-package can be build as a static library as well. To do so just set the configuration variable **BUILD_SHARED_LIBS**
+The Assimp-package can be built as a static library as well. To do so just set the configuration variable **BUILD_SHARED_LIBS**
 to off during the cmake run. For example:
 
 ::
@@ -118,10 +118,10 @@ The Android build
 This module provides a facade for the io-stream-access to files behind the android-asset-management within 
 an Android-native application.
 - It is built as a static library
-- It requires Android NDK with android API > 9 support.
+- It requires Android NDK with Android API > 9 support.
 
 - Building:
-To use this module please provide following cmake defines:
+To use this module please provide the following cmake defines:
 
 ::
 
@@ -134,7 +134,7 @@ The build script for this port is based on `Android-CMake <https://github.com/ta
 See its documentation for more Android-specific cmake options (e.g. **-DANDROID_ABI** for the target ABI).
 
 - Code-Example:
-A small example how to wrap assimp for Android:
+A small example of how to wrap assimp for Android:
 
 ::
 
