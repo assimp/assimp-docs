@@ -18,7 +18,6 @@ The Assimp-Lib currently supports the following file formats:
 
 * **3D Manufacturing Format** (.3mf)
 * **Collada** (.dae, .xml)
-* **Blender** (.blend)
 * **Biovision BVH** (.bvh) 
 * **3D Studio Max 3DS** (.3ds)
 * **3D Studio Max ASE** (.ase)
@@ -67,6 +66,10 @@ The Assimp-Lib currently supports the following file formats:
 * **Stanford Ply** ( .ply )
 * **TrueSpace** (.cob, .scn)
 * **XGL-3D-Format** (.xgl)
+
+**Important:  Blender (.blend) support is deprecated.**
+**To import a model from Blender, export the model from Blender to glTF.**
+**Sorry for the inconvenience!**
 
 See the:ref:`ai_importer_notes` for information, on what a specific importer can do and what not.
 Note that although this paper claims to be the official documentation,
