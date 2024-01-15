@@ -364,7 +364,7 @@ The output UV coordinate system has its origin in the lower-left corner:
      |                |
     0x|0y ---------- 1x|0y
 
-Use the #aiProcess_FlipUVs flag to get UV coordinates with the upper-left corner als origin.
+Use the #aiProcess_FlipUVs flag to get UV coordinates with the upper-left corner as origin.
 
 A typical 4x4 matrix including a translational part looks like this:
 
