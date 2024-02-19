@@ -1246,6 +1246,8 @@ Blender
 
 This section contains implementation notes for the Blender3D importer.
 
+**Important:  the Blender importer is deprecated.**
+
 .. _ai_bl_overview:
 
 Overview
