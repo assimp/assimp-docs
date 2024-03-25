@@ -424,7 +424,7 @@ following pseudocode:
 
 	  //If node has meshes, create a new scene object for it
 	  if( node.mNumMeshes > 0) {
-		SceneObjekt newObject = new SceneObject;
+		SceneObject newObject = new SceneObject;
 		targetParent.addChild( newObject);
 		// copy the meshes
 		CopyMeshes( node, newObject);
