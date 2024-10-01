@@ -10,9 +10,13 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+import sphinx
 import os
 import sys
 
+# -- General configuration ------------------------------------------------
+
+needs_sphinx = "1.3"
 
 # You can specify multiple suffix as a list of string: ['.rst', '.md']
 source_suffix = '.rst'
@@ -24,11 +28,11 @@ master_doc = 'index'
 # -- Project information -----------------------------------------------------
 
 project = 'Asset-Importer-Lib'
-copyright = '2020-2022, Kim Kulling'
+copyright = '2020-2024, Kim Kulling'
 author = 'Kim Kulling'
 
 # The full version, including alpha/beta/rc tags
-release = 'March 2022 v5.2.3'
+release = 'March 2022 v5.4.3'
 
 # -- General configuration ---------------------------------------------------
 
