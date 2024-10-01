@@ -39,8 +39,10 @@ release = 'March 2022 v5.4.3'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+sys.path.append("/home/me/docproj/ext/breathe/")
+
 extensions = [
-  "breathe"
+  'sphinx.ext.pngmath', 'sphinx.ext.todo', 'breathe'
 ]
 
 breathe_projects = { "AssetImporterLib": "API/" }
