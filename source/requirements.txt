@@ -1,4 +1,4 @@
 # docs/requirements.txt
-sphinx==3.2.1
-sphinx_rtd_theme==0.5.2
-breathe==4.24.1
+sphinx==4.4.0
+sphinx_rtd_theme==1.1.1
+breathe==4.28.0
