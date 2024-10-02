@@ -32,12 +32,8 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
-    'breathe'
+    'sphinx.ext.intersphinx'
 ]
-
-breathe_projects = { "AssetImporterLib": "API/" }
-breathe_default_project = "AssetImporterLib"
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
