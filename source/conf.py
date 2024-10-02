@@ -1,15 +1,3 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# http://www.sphinx-doc.org/en/master/config
-
-# -- Path setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
 import sphinx
 import os
 import sys
@@ -42,11 +30,22 @@ release = 'March 2022 v5.4.3'
 sys.path.append("/home/me/docproj/ext/breathe/")
 
 extensions = [
-  'sphinx.ext.pngmath', 'sphinx.ext.todo', 'breathe'
+    'sphinx.ext.duration',
+    'sphinx.ext.doctest',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.intersphinx',
+    'breathe'
 ]
 
 breathe_projects = { "AssetImporterLib": "API/" }
 breathe_default_project = "AssetImporterLib"
+
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3/', None),
+    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+}
+intersphinx_disabled_domains = ['std']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
