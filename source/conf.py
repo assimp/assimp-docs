@@ -4,8 +4,6 @@ import sys
 
 # -- General configuration ------------------------------------------------
 
-needs_sphinx = "1.3"
-
 # You can specify multiple suffix as a list of string: ['.rst', '.md']
 source_suffix = '.rst'
 source_encoding = 'utf-8-sig'
