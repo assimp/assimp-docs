@@ -8,7 +8,7 @@ Installation
 
 The **Asset-Importer-Library** can be used in your applications in two ways:
 
-* Using it by installing pre-built libraries 
+* Using it by installing the pre-built libraries, when tey are available for your platform.
 * Integrate the library into your project via **cmake**.
 
 Both ways are described at `Build instructions <https://github.com/assimp/assimp/blob/master/Build.md>`_
