@@ -6,7 +6,8 @@ Usage
    :name: toc-about
 
    use_the_lib
- 
+   animations
+
 .. history
 .. authors
 .. license
