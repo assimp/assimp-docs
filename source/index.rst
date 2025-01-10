@@ -32,6 +32,13 @@ The Asset-Importer-Lib Documentation
     :name: sec-developer
 
     developer/developer
+
+.. toctree::
+    :maxdepth: 1
+    :caption: API-Reference
+    :name: sec-api
+
+    API/API-Documentation
     
 .. Indices and tables
 .. ==================
