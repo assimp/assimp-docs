@@ -19,7 +19,11 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'breathe',
 ]
+
+breathe_projects = { "AssetImporterLib": "API/" }
+breathe_default_project = "AssetImporterLib"
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
