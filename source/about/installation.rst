@@ -6,23 +6,22 @@
 Installation
 ============
 
-The **Asset-Importer-Library** can be used in your applications in two ways:
+The **Asset-Importer-Library** can be integated in your applications in two ways:
 
-* Using it by installing the pre-built libraries, when tey are available for your platform.
-* Integrate the library into your project via **cmake**.
+* By installing pre-built libraries, if available for your platform.
+* By integrating the library directly into your project using [CMake](https://cmake.org/) .
 
-Both ways are described at `Build instructions <https://github.com/assimp/assimp/blob/master/Build.md>`_
+Detailed instructions for both methods can be found in the Build Instructions.
 
 .. _ai_main_usage:
 
 Usage
 -----
 
-When you're done integrating the library into your IDE/project, you can now start using it. There are two separate
-interfaces by which you can access the library: 
+Once the library is integrated into your IDE or project, you can start using it through one of two interfaces:
 
-* A C++ interface 
-* A C interface using flat functions. 
+- A C++ interface
+- A C interface with flat functions
 
-The C++-API supports an RTTI-based approach. If you want to work with C++ using these interfaces is strongly recommended.
-The C-API shall help to generate any language binding more easily.
+The C++ API offers an RTTI-based approach and is strongly recommended if you're working in C++.
+The C API, on the other hand, simplifies the creation of language bindings for other programming languages.
