@@ -5,7 +5,7 @@ import sys
 # -- Project information -----------------------------------------------------
 
 project = 'Asset-Importer-Lib'
-copyright = '2020-2024, Kim Kulling'
+copyright = '2020-2025, Kim Kulling'
 author = 'Kim Kulling'
 
 # The full version, including alpha/beta/rc tags
