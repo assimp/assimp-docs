@@ -103,6 +103,7 @@ about their installation. All of them are part of the repo or can be installed v
 * **rapijson**
 * **clipper**
 * **draco**
+* **earcut-hpp**
 * **gtest**
 * **stb_image**
 * **utf8cpp**
