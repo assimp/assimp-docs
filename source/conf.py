@@ -9,7 +9,7 @@ copyright = '2020-2025, Kim Kulling'
 author = 'Kim Kulling'
 
 # The full version, including alpha/beta/rc tags
-release = 'March 2022 v5.4.3'
+release = 'March 2022 v6.0.2'
 
 # -- General configuration ---------------------------------------------------
 
