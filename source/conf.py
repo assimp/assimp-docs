@@ -18,8 +18,8 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
-    'breathe',
+    'sphinx.ext.intersphinx'#,
+    #'breathe',
 ]
 
 breathe_projects = { "AssetImporterLib": "API/" }
