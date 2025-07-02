@@ -20,8 +20,8 @@ Usage
 
 Once the library is integrated into your IDE or project, you can start using it through one of two interfaces:
 
-- A C++ interface
-- A C interface with flat functions
+- A C++-based interface
+- A C-based interface with flat functions
 
 The C++ API offers an RTTI-based approach and is strongly recommended if you're working in C++.
 The C API, on the other hand, simplifies the creation of language bindings for other programming languages.
