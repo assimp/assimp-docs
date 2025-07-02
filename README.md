@@ -2,6 +2,7 @@
 The official Asset-Importer-Lib Documentation repository. 
 
 Current build status: [![Documentation Status](https://the-asset-importer-lib-documentation.readthedocs.io/en/latest/?badge=latest)
+
 [Latest version from master](https://the-asset-importer-lib-documentation.readthedocs.io/en/latest/)
 
 ## How to contribute
