@@ -1,9 +1,9 @@
 # The Asset-Importer-Lib Docs
 The official Asset-Importer-Lib Documentation repository. 
 
-Current build status: [![Documentation Status](https://the-asset-importer-lib-documentation.readthedocs.io/en/latest/)](https://assimp-docs.readthedocs.io/en/latest/?badge=latest)
+Current build status: [![Documentation Status](https://the-asset-importer-lib-documentation.readthedocs.io/en/latest/)]([https://assimp-docs.readthedocs.io/en/latest](https://the-asset-importer-lib-documentation.readthedocs.io/en/latest/?badge=latest)
 
-[Latest version from master](https://assimp-docs.readthedocs.io/en/latest/)
+[Latest version from master]([https://assimp-docs.readthedocs.io/en/latest/](https://the-asset-importer-lib-documentation.readthedocs.io/en/latest/))
 
 ## How to contribute
 - Clone or create a fork from this repository 
