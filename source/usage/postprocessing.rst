@@ -15,17 +15,17 @@ The Post-Processing Steps
 	:header-rows: 1
 
   * - Name
-	  - Description
+	- Description
 
   * - aiProcess_CalcTangentSpace
-	  - Calculates the tangents and bitangents for the imported meshes.
+	- Calculates the tangents and bitangents for the imported meshes.
       Does nothing if a mesh does not have normals. You might want this post processing step to be executed 
       if you plan to use tangent space calculations such as normal mapping  applied to the meshes. There's 
       an importer property, **#AI_CONFIG_PP_CT_MAX_SMOOTHING_ANGLE**, which allows you to specify a maximum 
       smoothing angle for the algorithm. However, usually you'll want to leave it at the default value.
 
   * - aiProcess_JoinIdenticalVertices
-	  - Identifies and joins identical vertex data sets within all imported meshes.
+	- Identifies and joins identical vertex data sets within all imported meshes.
       After this step is run, each mesh contains unique vertices so a vertex may be used by multiple faces. You 
       usually want to use this post processing step. If your application deals with indexed geometry, this step
       is compulsory or you'll just waste rendering time. **If this flag is not specified**, no vertices are 
