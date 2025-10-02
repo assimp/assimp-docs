@@ -25,6 +25,7 @@ The Asset-Importer-Lib Documentation
    :name: sec-learn
 
    usage/use_the_lib
+   usage/postprocessing
 
 .. toctree::
     :maxdepth: 1
