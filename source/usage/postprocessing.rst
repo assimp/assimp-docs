@@ -208,256 +208,188 @@ The Post-Processing Steps
     exclude lines and points, which are rarely used, from the import.
 
 * - aiProcess_FindDegenerates
-  -
-    // -------------------------------------------------------------------------
-    /** <hr>This step searches all meshes for degenerate primitives and
-     *  converts them to proper lines or points.
-     *
-     * A face is 'degenerate' if one or more of its points are identical.
-     * To have the degenerate stuff not only detected and collapsed but
-     * removed, try one of the following procedures:
-     * <br><b>1.</b> (if you support lines and points for rendering but don't
-     *    want the degenerates)<br>
-     * <ul>
-     *   <li>Specify the #aiProcess_FindDegenerates flag.
-     *   </li>
-     *   <li>Set the <tt>#AI_CONFIG_PP_FD_REMOVE</tt> importer property to
-     *       1. This will cause the step to remove degenerate triangles from the
-     *       import as soon as they're detected. They won't pass any further
-     *       pipeline steps.
-     *   </li>
-     * </ul>
-     * <br><b>2.</b>(if you don't support lines and points at all)<br>
-     * <ul>
-     *   <li>Specify the #aiProcess_FindDegenerates flag.
-     *   </li>
-     *   <li>Specify the #aiProcess_SortByPType flag. This moves line and
-     *     point primitives to separate meshes.
-     *   </li>
-     *   <li>Set the <tt>#AI_CONFIG_PP_SBP_REMOVE</tt> importer property to
-     *       @code aiPrimitiveType_POINT | aiPrimitiveType_LINE
-     *       @endcode to cause SortByPType to reject point
-     *       and line meshes from the scene.
-     *   </li>
-     * </ul>
-     *
-     * This step also removes very small triangles with a surface area smaller
-     * than 10^-6. If you rely on having these small triangles, or notice holes
-     * in your model, set the property <tt>#AI_CONFIG_PP_FD_CHECKAREA</tt> to
-     * false.
-     * @note Degenerate polygons are not necessarily evil and that's why
-     * they're not removed by default. There are several file formats which
-     * don't support lines or points, and some exporters bypass the
-     * format specification and write them as degenerate triangles instead.
-    */
-     = 0x10000,
+  - This step searches all meshes for degenerate primitives and
+    converts them to proper lines or points.
+    A face is 'degenerate' if one or more of its points are identical.
+    To have the degenerate stuff not only detected and collapsed but
+    removed, try one of the following procedures:
+    <br><b>1.</b> (if you support lines and points for rendering but don't
+    want the degenerates)<br>
+    
+     - Specify the #aiProcess_FindDegenerates flag.
+       - Set the <tt>#AI_CONFIG_PP_FD_REMOVE</tt> importer property to
+         1. This will cause the step to remove degenerate triangles from the
+            import as soon as they're detected. They won't pass any further
+            pipeline steps.
+         2.>(if you don't support lines and points at all)
+       - Specify the #aiProcess_FindDegenerates flag.
+       - Specify the #aiProcess_SortByPType flag. This moves line and point primitives to separate meshes.
+       - Set the <tt>#AI_CONFIG_PP_SBP_REMOVE</tt> importer property to
+             @code aiPrimitiveType_POINT | aiPrimitiveType_LINE
+             @endcode to cause SortByPType to reject point
+             and line meshes from the scene.
+       This step also removes very small triangles with a surface area smaller
+       than 10^-6. If you rely on having these small triangles, or notice holes
+       in your model, set the property <tt>#AI_CONFIG_PP_FD_CHECKAREA</tt> to
+       false.
+       @note Degenerate polygons are not necessarily evil and that's why
+       they're not removed by default. There are several file formats which
+       don't support lines or points, and some exporters bypass the
+       format specification and write them as degenerate triangles instead.
+* - aiProcess_FindInvalidData
+  - This step searches all meshes for invalid data, such as zeroed  normal vectors 
+    or invalid UV coords and removes/fixes them. This is
+    intended to get rid of some common exporter errors.
+    This is especially useful for normals. If they are invalid, and
+    the step recognizes this, they will be removed and can later
+    be recomputed, i.e. by the #aiProcess_GenSmoothNormals flag.<br>
+    The step will also remove meshes that are infinitely small and reduce
+    animation tracks consisting of hundreds if redundant keys to a single
+    key. The <tt>AI_CONFIG_PP_FID_ANIM_ACCURACY</tt> config property decides
+    the accuracy of the check for duplicate animation tracks.
+* - aiProcess_GenUVCoords
+  - This step converts non-UV mappings (such as spherical or
+    cylindrical mapping) to proper texture coordinate channels.
+    Most applications will support UV mapping only, so you will
+    probably want to specify this step in every case. Note that Assimp is not
+    always able to match the original mapping implementation of the
+    3D app which produced a model perfectly. It's always better to let the
+    modelling app compute the UV channels - 3ds max, Maya, Blender,
+    LightWave, and Modo do this for example.
+    @note If this step is not requested, you'll need to process the
+    <tt>#AI_MATKEY_MAPPING</tt> material property in order to display all assets
+    properly.
 
-    // -------------------------------------------------------------------------
-    /** <hr>This step searches all meshes for invalid data, such as zeroed
-     *  normal vectors or invalid UV coords and removes/fixes them. This is
-     *  intended to get rid of some common exporter errors.
-     *
-     * This is especially useful for normals. If they are invalid, and
-     * the step recognizes this, they will be removed and can later
-     * be recomputed, i.e. by the #aiProcess_GenSmoothNormals flag.<br>
-     * The step will also remove meshes that are infinitely small and reduce
-     * animation tracks consisting of hundreds if redundant keys to a single
-     * key. The <tt>AI_CONFIG_PP_FID_ANIM_ACCURACY</tt> config property decides
-     * the accuracy of the check for duplicate animation tracks.
-    */
-    aiProcess_FindInvalidData = 0x20000,
+* - aiProcess_TransformUVCoords
+  - This step applies per-texture UV transformations and bakes
+    them into stand-alone vtexture coordinate channels.
+    UV transformations are specified per-texture - see the
+    <tt>#AI_MATKEY_UVTRANSFORM</tt> material key for more information.
+    This step processes all textures with
+    transformed input UV coordinates and generates a new (pre-transformed) UV channel
+    which replaces the old channel. Most applications won't support UV
+    transformations, so you will probably want to specify this step.
+    @note UV transformations are usually implemented in real-time apps by
+          transforming texture coordinates at vertex shader stage with a 3x3
+          (homogeneous) transformation matrix.
+* - aiProcess_FindInstances
+  - This step searches for duplicate meshes and replaces them
+    with references to the first mesh.
+    This step takes a while, so don't use it if speed is a concern.
+    Its main purpose is to workaround the fact that many export
+    file formats don't support instanced meshes, so exporters need to
+    duplicate meshes. This step removes the duplicates again. Please
+    note that Assimp does not currently support per-node material
+    assignment to meshes, which means that identical meshes with
+    different materials are currently *not* joined, although this is
+    planned for future versions.
 
-    // -------------------------------------------------------------------------
-    /** <hr>This step converts non-UV mappings (such as spherical or
-     *  cylindrical mapping) to proper texture coordinate channels.
-     *
-     * Most applications will support UV mapping only, so you will
-     * probably want to specify this step in every case. Note that Assimp is not
-     * always able to match the original mapping implementation of the
-     * 3D app which produced a model perfectly. It's always better to let the
-     * modelling app compute the UV channels - 3ds max, Maya, Blender,
-     * LightWave, and Modo do this for example.
-     *
-     * @note If this step is not requested, you'll need to process the
-     * <tt>#AI_MATKEY_MAPPING</tt> material property in order to display all assets
-     * properly.
-     */
-    aiProcess_GenUVCoords = 0x40000,
+* - aiProcess_OptimizeMeshes
+  - A post-processing step to reduce the number of meshes.
+    This will, in fact, reduce the number of draw calls.
+    This is a very effective optimization and is recommended to be used
+    together with #aiProcess_OptimizeGraph, if possible. The flag is fully
+    compatible with both #aiProcess_SplitLargeMeshes and #aiProcess_SortByPType.
 
-    // -------------------------------------------------------------------------
-    /** <hr>This step applies per-texture UV transformations and bakes
-     *  them into stand-alone vtexture coordinate channels.
-     *
-     * UV transformations are specified per-texture - see the
-     * <tt>#AI_MATKEY_UVTRANSFORM</tt> material key for more information.
-     * This step processes all textures with
-     * transformed input UV coordinates and generates a new (pre-transformed) UV channel
-     * which replaces the old channel. Most applications won't support UV
-     * transformations, so you will probably want to specify this step.
-     *
-     * @note UV transformations are usually implemented in real-time apps by
-     * transforming texture coordinates at vertex shader stage with a 3x3
-     * (homogeneous) transformation matrix.
-    */
-    aiProcess_TransformUVCoords = 0x80000,
+* - aiProcess_OptimizeGraph
+  - A post-processing step to optimize the scene hierarchy.
+    Nodes without animations, bones, lights or cameras assigned are
+    collapsed and joined.
+    Node names can be lost during this step. If you use special 'tag nodes'
+    to pass additional information through your content pipeline, use the
+    <tt>#AI_CONFIG_PP_OG_EXCLUDE_LIST</tt> importer property to specify a
+    list of node names you want to be kept. Nodes matching one of the names
+    in this list won't be touched or modified.
+    Use this flag with caution. Most simple files will be collapsed to a
+    single node, so complex hierarchies are usually completely lost. This is not
+    useful for editor environments, but probably a very effective
+    optimization if you just want to get the model data, convert it to your
+    own format, and render it as fast as possible.
+    This flag is designed to be used with #aiProcess_OptimizeMeshes for best
+    results.
+    @note 'Crappy' scenes with thousands of extremely small meshes packed
+    in deeply nested nodes exist for almost all file formats.
+    #aiProcess_OptimizeMeshes in combination with #aiProcess_OptimizeGraph
+    usually fixes them all and makes them renderable.
 
-    // -------------------------------------------------------------------------
-    /** <hr>This step searches for duplicate meshes and replaces them
-     *  with references to the first mesh.
-     *
-     *  This step takes a while, so don't use it if speed is a concern.
-     *  Its main purpose is to workaround the fact that many export
-     *  file formats don't support instanced meshes, so exporters need to
-     *  duplicate meshes. This step removes the duplicates again. Please
-     *  note that Assimp does not currently support per-node material
-     *  assignment to meshes, which means that identical meshes with
-     *  different materials are currently *not* joined, although this is
-     *  planned for future versions.
-     */
-    aiProcess_FindInstances = 0x100000,
+* - aiProcess_FlipUVs
+  - This step flips all UV coordinates along the y-axis and adjusts
+    material settings and bitangents accordingly.
+    Output UV coordinate system:
+    @code
+    0x|0y ---------- 1x|0y
+      |                 |
+      |                 |
+      |                 |
+    0x|1y ---------- 1x|1y
+    @endcode
+    You'll probably want to consider this flag if you use Direct3D for
+    rendering. The #aiProcess_ConvertToLeftHanded flag supersedes this
+    setting and bundles all conversions typically required for D3D-based
+    applications.
 
-    // -------------------------------------------------------------------------
-    /** <hr>A post-processing step to reduce the number of meshes.
-     *
-     *  This will, in fact, reduce the number of draw calls.
-     *
-     *  This is a very effective optimization and is recommended to be used
-     *  together with #aiProcess_OptimizeGraph, if possible. The flag is fully
-     *  compatible with both #aiProcess_SplitLargeMeshes and #aiProcess_SortByPType.
-    */
-    aiProcess_OptimizeMeshes  = 0x200000,
+* - aiProcess_FlipWindingOrder
+  - This step adjusts the output face winding order to be CW.
+    The default face winding order is counter clockwise (CCW).
+     Output face order:
+     @code
+           x2
+                             x0
+      x1
+     @endcode
 
+* - aiProcess_SplitByBoneCount
+  -  This step splits meshes with many bones into sub-meshes so that each
+     sub-mesh has fewer or as many bones as a given limit.
 
-    // -------------------------------------------------------------------------
-    /** <hr>A post-processing step to optimize the scene hierarchy.
-     *
-     *  Nodes without animations, bones, lights or cameras assigned are
-     *  collapsed and joined.
-     *
-     *  Node names can be lost during this step. If you use special 'tag nodes'
-     *  to pass additional information through your content pipeline, use the
-     *  <tt>#AI_CONFIG_PP_OG_EXCLUDE_LIST</tt> importer property to specify a
-     *  list of node names you want to be kept. Nodes matching one of the names
-     *  in this list won't be touched or modified.
-     *
-     *  Use this flag with caution. Most simple files will be collapsed to a
-     *  single node, so complex hierarchies are usually completely lost. This is not
-     *  useful for editor environments, but probably a very effective
-     *  optimization if you just want to get the model data, convert it to your
-     *  own format, and render it as fast as possible.
-     *
-     *  This flag is designed to be used with #aiProcess_OptimizeMeshes for best
-     *  results.
-     *
-     *  @note 'Crappy' scenes with thousands of extremely small meshes packed
-     *  in deeply nested nodes exist for almost all file formats.
-     *  #aiProcess_OptimizeMeshes in combination with #aiProcess_OptimizeGraph
-     *  usually fixes them all and makes them renderable.
-    */
-    aiProcess_OptimizeGraph  = 0x400000,
+* - aiProcess_Debone
+  - This step removes bones losslessly or according to some threshold.
+    In some cases (i.e. formats that require it) exporters are forced to
+    assign dummy bone weights to otherwise static meshes assigned to
+    animated meshes. Full, weight-based skinning is expensive while
+    animating nodes is extremely cheap, so this step is offered to clean up
+    the data in that regard.
+    Use <tt>#AI_CONFIG_PP_DB_THRESHOLD</tt> to control this.
+    Use <tt>#AI_CONFIG_PP_DB_ALL_OR_NONE</tt> if you want bones removed if and
+    only if all bones within the scene qualify for removal.
 
-    // -------------------------------------------------------------------------
-    /** <hr>This step flips all UV coordinates along the y-axis and adjusts
-     * material settings and bitangents accordingly.
-     *
-     * <b>Output UV coordinate system:</b>
-     * @code
-     * 0x|0y ---------- 1x|0y
-     * |                 |
-     * |                 |
-     * |                 |
-     * 0x|1y ---------- 1x|1y
-     * @endcode
-     *
-     * You'll probably want to consider this flag if you use Direct3D for
-     * rendering. The #aiProcess_ConvertToLeftHanded flag supersedes this
-     * setting and bundles all conversions typically required for D3D-based
-     * applications.
-    */
-    aiProcess_FlipUVs = 0x800000,
+* - aiProcess_GlobalScale
+  - This step will perform a global scale of the model.
+    Some importers are providing a mechanism to define a scaling unit for the
+    model. This post processing step can be used to do so. You need to get the
+    global scaling from your importer settings like in FBX. Use the flag
+    AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY from the global property table to configure this.
+    Use <tt>#AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY</tt> to setup the global scaling factor.
 
-    // -------------------------------------------------------------------------
-    /** <hr>This step adjusts the output face winding order to be CW.
-     *
-     * The default face winding order is counter clockwise (CCW).
-     *
-     * <b>Output face order:</b>
-     * @code
-     *       x2
-     *
-     *                         x0
-     *  x1
-     * @endcode
-    */
-    aiProcess_FlipWindingOrder  = 0x1000000,
+* - aiProcess_EmbedTextures
+  - A postprocessing step to embed of textures.
+    This will remove external data dependencies for textures.
+    If a texture's file does not exist at the specified path
+    (due, for instance, to an absolute path generated on another system),
+    it will check if a file with the same name exists at the root folder
+    of the imported model. And if so, it uses that.
 
-    // -------------------------------------------------------------------------
-    /** <hr>This step splits meshes with many bones into sub-meshes so that each
-     * sub-mesh has fewer or as many bones as a given limit.
-    */
-    aiProcess_SplitByBoneCount  = 0x2000000,
+* - aiProcess_GenEntityMeshes
+  - todo
 
-    // -------------------------------------------------------------------------
-    /** <hr>This step removes bones losslessly or according to some threshold.
-     *
-     *  In some cases (i.e. formats that require it) exporters are forced to
-     *  assign dummy bone weights to otherwise static meshes assigned to
-     *  animated meshes. Full, weight-based skinning is expensive while
-     *  animating nodes is extremely cheap, so this step is offered to clean up
-     *  the data in that regard.
-     *
-     *  Use <tt>#AI_CONFIG_PP_DB_THRESHOLD</tt> to control this.
-     *  Use <tt>#AI_CONFIG_PP_DB_ALL_OR_NONE</tt> if you want bones removed if and
-     *  only if all bones within the scene qualify for removal.
-    */
-    aiProcess_Debone  = 0x4000000,
+* - aiProcess_OptimizeAnimations
+  - todo
 
+* - aiProcess_FixTexturePaths
+  - todo
 
+* - aiProcess_ForceGenNormals
+  - todo
 
-    // -------------------------------------------------------------------------
-    /** <hr>This step will perform a global scale of the model.
-    *
-    *  Some importers are providing a mechanism to define a scaling unit for the
-    *  model. This post processing step can be used to do so. You need to get the
-    *  global scaling from your importer settings like in FBX. Use the flag
-    *  AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY from the global property table to configure this.
-    *
-    *  Use <tt>#AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY</tt> to setup the global scaling factor.
-    */
-    aiProcess_GlobalScale = 0x8000000,
+* - aiProcess_DropNormals
+  - Drops normals for all faces of all meshes.
+    This is ignored if no normals are present.
+    Face normals are shared between all points of a single face,
+    so a single point can have multiple normals, which
+    forces the library to duplicate vertices in some cases.
+    #aiProcess_JoinIdenticalVertices is *senseless* then.
+    This process gives sense back to aiProcess_JoinIdenticalVertices
 
-    // -------------------------------------------------------------------------
-    /** <hr>A postprocessing step to embed of textures.
-     *
-     *  This will remove external data dependencies for textures.
-     *  If a texture's file does not exist at the specified path
-     *  (due, for instance, to an absolute path generated on another system),
-     *  it will check if a file with the same name exists at the root folder
-     *  of the imported model. And if so, it uses that.
-     */
-    aiProcess_EmbedTextures  = 0x10000000,
+* - aiProcess_GenBoundingBoxes
+  - todo!
 
-    // aiProcess_GenEntityMeshes = 0x100000,
-    // aiProcess_OptimizeAnimations = 0x200000
-    // aiProcess_FixTexturePaths = 0x200000
-
-
-    aiProcess_ForceGenNormals = 0x20000000,
-
-    // -------------------------------------------------------------------------
-    /** <hr>Drops normals for all faces of all meshes.
-     *
-     * This is ignored if no normals are present.
-     * Face normals are shared between all points of a single face,
-     * so a single point can have multiple normals, which
-     * forces the library to duplicate vertices in some cases.
-     * #aiProcess_JoinIdenticalVertices is *senseless* then.
-     * This process gives sense back to aiProcess_JoinIdenticalVertices
-     */
-    aiProcess_DropNormals = 0x40000000,
-
-    // -------------------------------------------------------------------------
-    /**
-     */
-    aiProcess_GenBoundingBoxes = 0x80000000
-};
