@@ -6,6 +6,7 @@ Usage
    :name: toc-about
 
    use_the_lib
+   postprocessing
    animations
 
 .. history
